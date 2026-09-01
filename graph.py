@@ -199,7 +199,7 @@ class TopologicalGraph:
             trans = wp["transition"]
             kf = wp["keyframe"]
             if trans == "ARRIVED (Goal Destination)":
-                print(f" Step {step}: Reach [{node}] -> 🎯 {trans} (Keyframe: {kf})")
+                print(f" Step {step}: Reach [{node}] -> {trans} (Keyframe: {kf})")
             else:
                 print(f" Step {step}: In [{node}] -> Transition via corridor [{trans}] (Keyframe: {kf})")
         print(f"=======================================================\n")

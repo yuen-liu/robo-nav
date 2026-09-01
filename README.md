@@ -12,7 +12,7 @@ metric scale calibration: anchors spatial predictions to physical meters using e
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 1. **Self-Contained LingBot-Map Core Engine (`lingbot_map/`)**:
    - Streaming inference (`gct_stream.py`) with causal KV cache.
@@ -37,7 +37,7 @@ metric scale calibration: anchors spatial predictions to physical meters using e
 
 ---
 
-## 📥 Installation & Setup
+## Installation & Setup
 
 ### 1. Environment & Setup
 ```bash
@@ -66,7 +66,7 @@ mkdir -p checkpoints/
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ### 1. Streaming / Windowed 3D Reconstruction Demo (`demo.py`)
 ```bash
@@ -112,7 +112,7 @@ print(f"Metric scale alpha: {alpha:.6f}")
 
 ---
 
-## 📁 Repository Layout
+## Repository Layout
 
 ```
 robo-nav/
