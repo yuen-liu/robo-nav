@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robo-nav"
+version = "0.1.0"
+description = "Metric-Scaled Visual Relocalization and 3D Spatial Geometry Navigation"
+authors = [{ name = "Robotics & Vision Team" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "torch",
+    "torchvision",
+    "numpy",
+    "pillow",
+    "tqdm",
+    "opencv-python",
+]

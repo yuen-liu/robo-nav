@@ -1,0 +1,9 @@
+torch
+torchvision
+numpy
+pillow
+tqdm
+opencv-python
+dinov2
+viser
+onnxruntime
