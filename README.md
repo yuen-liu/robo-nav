@@ -37,6 +37,35 @@ metric scale calibration: anchors spatial predictions to physical meters using e
 
 ---
 
+## 📥 Installation & Setup
+
+### 1. Environment & Setup
+```bash
+git clone https://github.com/your-org/robo-nav.git
+cd robo-nav
+
+conda create -n robo-nav python=3.10 -y
+conda activate robo-nav
+```
+
+### 2. Dependencies
+```bash
+# Install PyTorch with CUDA support (adjust for your CUDA version if needed)
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+
+# Install requirements & package in editable mode
+pip install -r requirements.txt
+pip install -e .
+```
+
+### 3. Model Checkpoints
+```bash
+mkdir -p checkpoints/
+# Place LingBot-Map model checkpoint at checkpoints/lingbot-map-long.pt
+```
+
+---
+
 ## 🚀 Quickstart
 
 ### 1. Streaming / Windowed 3D Reconstruction Demo (`demo.py`)
