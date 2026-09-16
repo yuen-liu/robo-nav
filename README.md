@@ -1,4 +1,4 @@
-# robo-nav (or some other name)
+# robo-nav
 
 `robo-nav` end goal: light weight engine for robots to perform visual navigation and relocalization using egocentric data
 
