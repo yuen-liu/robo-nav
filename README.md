@@ -27,9 +27,14 @@ metric scale calibration: anchors spatial predictions to physical meters using e
    - Rescales all predicted point clouds, depth maps, and camera positions $\mathbf{t}_{\text{metric}} = \alpha \cdot \mathbf{t}_{\text{predicted}}$.
 
 3. **Coarse-to-Fine Metric 6DoF Relocalization (`localize.py`)**:
-   - Stage 1: Fast GPU batched DINOv2 visual similarity matching.
-   - Stage 2: Local subsequence 6DoF relative pose inference.
-   - Stage 3: Full map reconstruction integrated with metric scale calibration ($\alpha$).
+   - Stage 1: Fast GPU batched DINOv2 visual similarity matching, with blur/quality gating
+     (drops low-sharpness map frames before they can corrupt retrieval) and retrieval-confidence
+     gating (flags ambiguous top1/top2 similarity margins).
+   - Stage 2: Full map reconstruction integrated with metric scale calibration ($\alpha$).
+   - Stage 3: k-independent-hypothesis local 6DoF pose estimation — one relative-pose estimate
+     per top-k retrieved reference, fused via distance-based consensus (outlier references that
+     disagree with the rest are discarded rather than trusted blindly). The result includes a
+     `low_confidence` flag combining retrieval ambiguity and consensus disagreement.
 
 4. **Standalone Demos**:
    - `demo.py`: Run streaming or windowed 3D reconstruction on image folders or MP4 video (from the original lingbot repo, plus some extra flags to choose .png from).
@@ -85,7 +90,19 @@ python localize.py /path/to/query.jpg /path/to/map_frames/ \
   --metric_cue_type translation_step \
   --metric_val 0.50 \
   --frame_idx_a 0 --frame_idx_b 1
+
+# Tune retrieval/consensus/blur gating (defaults shown)
+python localize.py /path/to/query.jpg /path/to/map_frames/ \
+  --top_k 4 \
+  --margin_threshold 0.05 \
+  --blur_threshold 30.0 \
+  --consensus_radius 0.3
 ```
+- `--margin_threshold`: top1/top2 DINOv2 similarity gap below which retrieval is flagged ambiguous.
+- `--blur_threshold`: Laplacian-variance sharpness cutoff; map frames below it are dropped before
+  retrieval (`0` disables gating). The default is a mild heuristic — tune per camera/lighting setup.
+- `--consensus_radius`: max pairwise disagreement (meters) between the k independent pose
+  hypotheses for them to be treated as agreeing; outliers beyond this are discarded during fusion.
 
 ### 3. Python API for Metric Scale Solver
 ```python
