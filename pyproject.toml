@@ -17,3 +17,6 @@ dependencies = [
     "tqdm",
     "opencv-python",
 ]
+
+[tool.setuptools.packages.find]
+include = ["robo_nav*", "lingbot_map*"]
