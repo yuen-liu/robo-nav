@@ -8,3 +8,5 @@ dist/
 build/
 checkpoints/
 *.onnx
+tm4_data
+tm4_data 6
