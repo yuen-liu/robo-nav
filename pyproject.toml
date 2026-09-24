@@ -15,7 +15,7 @@ dependencies = [
     "numpy",
     "pillow",
     "tqdm",
-    "opencv-python",
+    "opencv-python-headless",
 ]
 
 [tool.setuptools.packages.find]

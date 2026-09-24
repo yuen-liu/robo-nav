@@ -3,7 +3,7 @@ torchvision
 numpy
 pillow
 tqdm
-opencv-python
+opencv-python-headless
 dinov2
 viser
 onnxruntime
