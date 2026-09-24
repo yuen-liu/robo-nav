@@ -443,6 +443,11 @@ def localize_query(
         T_map_anchor = map_c2w[cand_map_idx]
         T_map_query = T_map_anchor @ delta_T_scaled
 
+        print(f"    Hypothesis map_idx={cand_map_idx} (sim={sim:.4f}): "
+              f"rel_scale_factor={rel_scale_factor:.4f}, "
+              f"raw_delta_t={delta_T[:3, 3]}, scaled_delta_t={delta_T_scaled[:3, 3]}, "
+              f"anchor_pos={T_map_anchor[:3, 3]}, query_pos={T_map_query[:3, 3]}")
+
         hypotheses.append({
             "map_idx": cand_map_idx,
             "map_path": cand_map_path,
