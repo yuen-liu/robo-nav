@@ -6,8 +6,11 @@ robo-nav's MetricScaleSolver (solving metric scale alpha via 1 metric cue).
 
 Pipeline Stages:
 1. Stage 1 (GPU Batched DINOv2 Coarse Search): Rapid visual similarity keyframe
-   retrieval, with blur/quality gating to drop low-sharpness map frames and
-   retrieval-confidence gating (margin/entropy) to flag ambiguous matches.
+   retrieval, with blur/quality gating to exclude low-sharpness frames from
+   *retrieval eligibility* (they can still anchor map reconstruction — dropping
+   them from the map itself would leave a gap and shift the reconstructed
+   geometry) and retrieval-confidence gating (margin/entropy) to flag ambiguous
+   matches.
 2. Stage 2 (Full Map Reconstruction + Metric Scale Calibration): Reconstructs
    the full map and solves scale scalar alpha (converting predictions to meters).
 3. Stage 3 (k-Hypothesis Local Pose Estimation + Consensus Fusion): Computes an
@@ -26,7 +29,7 @@ import glob
 import time
 import argparse
 import shutil
-from typing import Optional, Tuple, Dict, Any, List
+from typing import Optional, Dict, Any, List
 
 import cv2
 import torch
@@ -117,28 +120,6 @@ def compute_image_sharpness(image_path: str) -> float:
     if img is None:
         return 0.0
     return float(cv2.Laplacian(img, cv2.CV_64F).var())
-
-
-def filter_blurry_frames(
-    paths: List[str],
-    blur_threshold: float,
-) -> Tuple[List[str], List[Tuple[str, float]]]:
-    """
-    Blur/quality gating at ingestion: drops map frames whose Laplacian-variance
-    sharpness falls below blur_threshold, before they can silently corrupt
-    downstream retrieval or pose estimation.
-
-    Returns:
-        (kept_paths, dropped) where dropped is a list of (path, sharpness_score).
-    """
-    kept, dropped = [], []
-    for p in paths:
-        score = compute_image_sharpness(p)
-        if score < blur_threshold:
-            dropped.append((p, score))
-        else:
-            kept.append(p)
-    return kept, dropped
 
 
 def average_rotations(rotations: List[np.ndarray]) -> np.ndarray:
@@ -319,20 +300,24 @@ def localize_query(
                 all_candidates.append(os.path.join(root, f))
     all_candidates = sorted(list(set(all_candidates)))
     map_candidate_paths = all_candidates[:max_map_frames] if max_map_frames else all_candidates
-
-    # Blur/quality gating at ingestion: drop low-sharpness map frames before they can
-    # silently corrupt retrieval or downstream pose estimation.
-    if blur_threshold > 0:
-        map_candidate_paths, dropped = filter_blurry_frames(map_candidate_paths, blur_threshold)
-        if dropped:
-            dropped_names = [os.path.basename(p) for p, _ in dropped[:5]]
-            print(f"  Blur gating: dropped {len(dropped)}/{len(dropped) + len(map_candidate_paths)} "
-                  f"low-sharpness map frames (threshold={blur_threshold}): {dropped_names}"
-                  f"{' ...' if len(dropped) > 5 else ''}")
     if not map_candidate_paths:
-        raise ValueError(
-            "No map frames remain after blur gating; lower --blur_threshold or check map_folder."
-        )
+        raise ValueError(f"No map frames found in {map_folder}.")
+
+    # Blur/quality gating: exclude low-sharpness frames from *retrieval eligibility*
+    # only. They're still kept in map_candidate_paths and used for Stage 2/3 map
+    # reconstruction — dropping frames from reconstruction leaves a gap in the
+    # sequence and shifts the reconstructed geometry, rather than just filtering
+    # which frames can be matched against.
+    blurry_idxs = set()
+    if blur_threshold > 0:
+        sharpness_scores = [compute_image_sharpness(p) for p in map_candidate_paths]
+        blurry_idxs = {i for i, s in enumerate(sharpness_scores) if s < blur_threshold}
+        if blurry_idxs:
+            dropped_names = [os.path.basename(map_candidate_paths[i]) for i in sorted(blurry_idxs)[:5]]
+            print(f"  Blur gating: excluding {len(blurry_idxs)}/{len(map_candidate_paths)} "
+                  f"low-sharpness frames from retrieval matching (threshold={blur_threshold}, "
+                  f"still used for map reconstruction): {dropped_names}"
+                  f"{' ...' if len(blurry_idxs) > 5 else ''}")
 
     dinov2 = torch.hub.load('facebookresearch/dinov2', 'dinov2_vits14').to(device).eval()
 
@@ -361,8 +346,13 @@ def localize_query(
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
 
-    # Rank candidate keyframes by visual similarity
-    sims = [(float(sim_scores[idx]), idx, p) for idx, p in enumerate(map_candidate_paths)]
+    # Rank candidate keyframes by visual similarity, excluding blur-gated frames from
+    # eligibility as retrieval matches (they remain part of the reconstructed map above).
+    sims = [(float(sim_scores[idx]), idx, p) for idx, p in enumerate(map_candidate_paths)
+            if idx not in blurry_idxs]
+    if not sims:
+        print("  ⚠️  All candidate frames were blur-gated; falling back to the full candidate pool.")
+        sims = [(float(sim_scores[idx]), idx, p) for idx, p in enumerate(map_candidate_paths)]
     sims.sort(key=lambda x: x[0], reverse=True)
     top_k_candidates = sims[:top_k]
     best_sim, best_map_idx, best_map_path = top_k_candidates[0]
@@ -572,7 +562,7 @@ if __name__ == "__main__":
     parser.add_argument("--model_path", type=str, default="checkpoints/lingbot-map-long.pt", help="Path to model checkpoint")
     parser.add_argument("--top_k", type=int, default=4, help="Number of top visual candidates to retrieve and fuse via consensus")
     parser.add_argument("--margin_threshold", type=float, default=0.05, help="Top1/top2 similarity margin below which retrieval is flagged ambiguous")
-    parser.add_argument("--blur_threshold", type=float, default=30.0, help="Laplacian-variance sharpness threshold; map frames below this are dropped at ingestion (0 disables)")
+    parser.add_argument("--blur_threshold", type=float, default=30.0, help="Laplacian-variance sharpness threshold; frames below this are excluded from retrieval matching but still used for map reconstruction (0 disables)")
     parser.add_argument("--consensus_radius", type=float, default=0.3, help="Max pairwise disagreement (meters) between pose hypotheses to be treated as consensus inliers")
     parser.add_argument("--metric_cue_type", type=str, default=None, choices=["depth_point", "translation_step", "stereo_baseline"], help="Metric cue type for scale calibration")
     parser.add_argument("--metric_val", type=float, default=None, help="Physical metric cue value in meters")

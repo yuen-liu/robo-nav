@@ -99,8 +99,9 @@ python localize.py /path/to/query.jpg /path/to/map_frames/ \
   --consensus_radius 0.3
 ```
 - `--margin_threshold`: top1/top2 DINOv2 similarity gap below which retrieval is flagged ambiguous.
-- `--blur_threshold`: Laplacian-variance sharpness cutoff; map frames below it are dropped before
-  retrieval (`0` disables gating). The default is a mild heuristic — tune per camera/lighting setup.
+- `--blur_threshold`: Laplacian-variance sharpness cutoff; frames below it are excluded from
+  retrieval matching only — they're still used for map reconstruction, so the map stays gapless
+  (`0` disables gating). The default is a mild heuristic — tune per camera/lighting setup.
 - `--consensus_radius`: max pairwise disagreement (meters) between the k independent pose
   hypotheses for them to be treated as agreeing; outliers beyond this are discarded during fusion.
 
