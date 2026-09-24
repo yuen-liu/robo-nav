@@ -504,6 +504,53 @@ def localize_query(
         print(f" ⚠️  LOW CONFIDENCE localization — verify before acting on this pose.")
     print("=======================================================")
 
+    # ── Interactive 3D Viewer ───────────────────────────────────────────────
+    if visualize:
+        try:
+            from lingbot_map.vis import PointCloudViewer
+            import viser.transforms as tf
+
+            print(f"\n Launching 3D viewer on port {port}...")
+            vis_pred_dict = demo_prepare_vis(map_preds_post, map_images_cpu)
+            viewer = PointCloudViewer(
+                pred_dict=vis_pred_dict,
+                port=port,
+                vis_threshold=1.5,
+                image_folder=map_folder,
+            )
+
+            # Highlight the consensus-fused query pose as a distinct frustum,
+            # separate from the map's own per-frame cameras.
+            intrinsic_np = map_preds_post["intrinsic"]
+            if isinstance(intrinsic_np, torch.Tensor):
+                intrinsic_np = intrinsic_np.detach().cpu().numpy()
+            focal = float(intrinsic_np[best_map_idx, 0, 0])
+            pp = (float(intrinsic_np[best_map_idx, 0, 2]), float(intrinsic_np[best_map_idx, 1, 2]))
+            fov = 2 * np.arctan(pp[0] / focal)
+            aspect = pp[0] / pp[1]
+            query_wxyz = tf.SO3.from_matrix(query_rot).wxyz
+
+            viewer.server.scene.add_camera_frustum(
+                name="/query/camera",
+                fov=fov,
+                aspect=aspect,
+                wxyz=query_wxyz,
+                position=query_pos,
+                scale=0.08,
+                color=(255, 0, 0) if not low_confidence else (255, 165, 0),
+            )
+            viewer.server.scene.add_label(
+                "/query/label",
+                text=f"QUERY: {os.path.basename(query_path)}"
+                     f"{' (LOW CONFIDENCE)' if low_confidence else ''}",
+                position=query_pos,
+            )
+            print(f" Viewer ready — open http://localhost:{port} "
+                  f"(tunnel with: ssh -L {port}:localhost:{port} <cluster>)")
+            viewer.run()
+        except ImportError:
+            print("viser not installed. Install with: pip install viser")
+
     return {
         "query_path": query_path,
         "anchor_keyframe": best_map_path,
@@ -531,6 +578,9 @@ if __name__ == "__main__":
     parser.add_argument("--metric_val", type=float, default=None, help="Physical metric cue value in meters")
     parser.add_argument("--frame_idx_a", type=int, default=0, help="First frame index for metric cue")
     parser.add_argument("--frame_idx_b", type=int, default=1, help="Second frame index for metric cue")
+    parser.add_argument("--port", type=int, default=8080, help="Viser port for the interactive 3D viewer")
+    parser.add_argument("--visualize", action=argparse.BooleanOptionalAction, default=True,
+                        help="Launch the interactive 3D viewer after localizing (on by default; use --no-visualize to skip)")
     args = parser.parse_args()
 
     metric_cue = None
@@ -551,5 +601,6 @@ if __name__ == "__main__":
         blur_threshold=args.blur_threshold,
         consensus_radius=args.consensus_radius,
         metric_cue=metric_cue,
-        visualize=False,
+        visualize=args.visualize,
+        port=args.port,
     )

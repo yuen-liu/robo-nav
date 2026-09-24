@@ -13,9 +13,18 @@ dependencies = [
     "torch",
     "torchvision",
     "numpy",
+    "scipy",
     "pillow",
     "tqdm",
+    "einops",
     "opencv-python-headless",
+    "viser",
+    "onnxruntime",
+    "matplotlib",
+    "typing_extensions",
+    "trimesh",
+    "requests",
+    "huggingface_hub",
 ]
 
 [tool.setuptools.packages.find]

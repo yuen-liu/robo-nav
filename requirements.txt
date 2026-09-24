@@ -1,9 +1,15 @@
 torch
 torchvision
 numpy
+scipy
 pillow
 tqdm
+einops
 opencv-python-headless
-dinov2
 viser
 onnxruntime
+matplotlib
+typing_extensions
+trimesh
+requests
+huggingface_hub
