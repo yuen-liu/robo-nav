@@ -29,7 +29,7 @@ import glob
 import time
 import argparse
 import shutil
-from typing import Optional, Dict, Any, List
+from typing import Optional, Tuple, Dict, Any, List
 
 import cv2
 import torch
@@ -260,7 +260,11 @@ def localize_query(
     margin_threshold: float = 0.05,
     blur_threshold: float = 30.0,
     consensus_radius: float = 0.3,
+    window_radius: int = 2,
     metric_cue: Optional[MetricCue] = None,
+    moge_checkpoint: Optional[str] = None,
+    moge_pixel: Optional[Tuple[int, int]] = None,
+    moge_frame_idx: int = 0,
     use_sdpa: Optional[bool] = None,
     visualize: bool = True,
     port: int = 8080,
@@ -358,6 +362,15 @@ def localize_query(
     best_sim, best_map_idx, best_map_path = top_k_candidates[0]
     print(f"  Stage 1 GPU coarse match completed in {time.time() - t0:.2f}s!")
 
+    # Retrieval diagnostics: a global descriptor that can't separate distinct places in
+    # this scene shows up as a narrow similarity band across all candidates.
+    print(f"  Similarity distribution over {len(sim_scores)} map frames: "
+          f"min={sim_scores.min():.4f} max={sim_scores.max():.4f} "
+          f"mean={sim_scores.mean():.4f} std={sim_scores.std():.4f}")
+    print("  Top-10 retrieval ranking:")
+    for rank, (s, idx, p) in enumerate(sims[:10]):
+        print(f"    #{rank + 1:<2} idx={idx:<4} sim={s:.4f}  {os.path.basename(p)}")
+
     # Retrieval-quality gating: flag ambiguous top-1/top-2 similarity margins before
     # committing to a match — never trust coarse retrieval as a final answer alone.
     retrieval_confidence = compute_confidence_and_uncertainty(
@@ -380,6 +393,15 @@ def localize_query(
 
     # Solve metric scale factor alpha (X_metric = alpha * X_unit) if a metric cue is provided
     metric_alpha = 1.0
+    if metric_cue is None and moge_checkpoint is not None and moge_pixel is not None:
+        from robo_nav.moge_cue import moge_metric_cue
+        anchor_path = map_candidate_paths[moge_frame_idx]
+        print(f"  Deriving metric cue from MoGe-3 depth at pixel {moge_pixel} in map frame "
+              f"#{moge_frame_idx} ({os.path.basename(anchor_path)})...")
+        metric_cue = moge_metric_cue(
+            anchor_path, moge_pixel, frame_idx_a=moge_frame_idx, checkpoint_path=moge_checkpoint,
+        )
+        print(f"  MoGe-3 metric cue: {metric_cue.metric_val:.4f} m")
     if metric_cue is not None:
         solver = MetricScaleSolver()
         metric_alpha = solver.solve_scale(map_preds_post, metric_cue)
@@ -403,7 +425,6 @@ def localize_query(
     # ── STAGE 3: k-Independent-Hypothesis Local Pose Estimation + Consensus ───
     print(f"\n [Stage 3] Computing {len(top_k_candidates)} independent pose hypotheses "
           f"for consensus fusion...")
-    window_radius = 2
     stream_args = DemoArgs(model_path=model_path, mode="streaming", use_sdpa=use_sdpa)
     gct_stream_model = demo_load_model(stream_args, device)
 
@@ -434,7 +455,9 @@ def localize_query(
         sub_depths_all = prepare_array(sub_preds["depth"])
         anchor_map_depth = map_depths_all[cand_map_idx]
         anchor_sub_depth = sub_depths_all[anchor_sub_idx]
-        rel_scale_factor = float(np.median(anchor_map_depth) / np.median(anchor_sub_depth))
+        anchor_map_depth_median = float(np.median(anchor_map_depth))
+        anchor_sub_depth_median = float(np.median(anchor_sub_depth))
+        rel_scale_factor = anchor_map_depth_median / anchor_sub_depth_median
 
         delta_T_scaled = delta_T.copy()
         delta_T_scaled[:3, 3] = delta_T[:3, 3] * rel_scale_factor
@@ -444,6 +467,8 @@ def localize_query(
         T_map_query = T_map_anchor @ delta_T_scaled
 
         print(f"    Hypothesis map_idx={cand_map_idx} (sim={sim:.4f}): "
+              f"anchor_map_depth_median={anchor_map_depth_median:.4f} (Stage 2 windowed), "
+              f"anchor_sub_depth_median={anchor_sub_depth_median:.4f} (Stage 3 streaming), "
               f"rel_scale_factor={rel_scale_factor:.4f}, "
               f"raw_delta_t={delta_T[:3, 3]}, scaled_delta_t={delta_T_scaled[:3, 3]}, "
               f"anchor_pos={T_map_anchor[:3, 3]}, query_pos={T_map_query[:3, 3]}")
@@ -569,10 +594,18 @@ if __name__ == "__main__":
     parser.add_argument("--margin_threshold", type=float, default=0.05, help="Top1/top2 similarity margin below which retrieval is flagged ambiguous")
     parser.add_argument("--blur_threshold", type=float, default=30.0, help="Laplacian-variance sharpness threshold; frames below this are excluded from retrieval matching but still used for map reconstruction (0 disables)")
     parser.add_argument("--consensus_radius", type=float, default=0.3, help="Max pairwise disagreement (meters) between pose hypotheses to be treated as consensus inliers")
+    parser.add_argument("--window_radius", type=int, default=2, help="Number of map frames before each top-k candidate to include in its local pose-estimation window (window = window_radius map frames + candidate + query)")
     parser.add_argument("--metric_cue_type", type=str, default=None, choices=["depth_point", "translation_step", "stereo_baseline"], help="Metric cue type for scale calibration")
     parser.add_argument("--metric_val", type=float, default=None, help="Physical metric cue value in meters")
     parser.add_argument("--frame_idx_a", type=int, default=0, help="First frame index for metric cue")
     parser.add_argument("--frame_idx_b", type=int, default=1, help="Second frame index for metric cue")
+    parser.add_argument("--moge_checkpoint", type=str, default=None,
+                        help="Path to a MoGe-3 checkpoint; if given (and no --metric_cue_type/--metric_val), "
+                             "the metric cue is derived automatically from MoGe-3's depth instead of a manual measurement")
+    parser.add_argument("--moge_pixel", type=int, nargs=2, default=None, metavar=("Y", "X"),
+                        help="Pixel (y x) to sample MoGe-3 depth at, for --moge_checkpoint")
+    parser.add_argument("--moge_frame_idx", type=int, default=0,
+                        help="Map frame index to run MoGe-3 on, for --moge_checkpoint (default: 0)")
     parser.add_argument("--port", type=int, default=8080, help="Viser port for the interactive 3D viewer")
     parser.add_argument("--visualize", action=argparse.BooleanOptionalAction, default=True,
                         help="Launch the interactive 3D viewer after localizing (on by default; use --no-visualize to skip)")
@@ -595,7 +628,11 @@ if __name__ == "__main__":
         margin_threshold=args.margin_threshold,
         blur_threshold=args.blur_threshold,
         consensus_radius=args.consensus_radius,
+        window_radius=args.window_radius,
         metric_cue=metric_cue,
+        moge_checkpoint=args.moge_checkpoint,
+        moge_pixel=tuple(args.moge_pixel) if args.moge_pixel else None,
+        moge_frame_idx=args.moge_frame_idx,
         visualize=args.visualize,
         port=args.port,
     )

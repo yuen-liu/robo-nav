@@ -28,13 +28,16 @@ metric scale calibration: anchors spatial predictions to physical meters using e
 
 3. **Coarse-to-Fine Metric 6DoF Relocalization (`localize.py`)**:
    - Stage 1: Fast GPU batched DINOv2 visual similarity matching, with blur/quality gating
-     (drops low-sharpness map frames before they can corrupt retrieval) and retrieval-confidence
+     (excludes low-sharpness frames from *retrieval eligibility* only — they remain part of the
+     reconstructed map, so gating never leaves a gap in the geometry) and retrieval-confidence
      gating (flags ambiguous top1/top2 similarity margins).
    - Stage 2: Full map reconstruction integrated with metric scale calibration ($\alpha$).
    - Stage 3: k-independent-hypothesis local 6DoF pose estimation — one relative-pose estimate
      per top-k retrieved reference, fused via distance-based consensus (outlier references that
      disagree with the rest are discarded rather than trusted blindly). The result includes a
      `low_confidence` flag combining retrieval ambiguity and consensus disagreement.
+   - See [Confidence Gating & Diagnostics](#confidence-gating--diagnostics) below for the exact
+     scores, thresholds, and how they combine into `low_confidence`.
 
 4. **Standalone Demos**:
    - `demo.py`: Run streaming or windowed 3D reconstruction on image folders or MP4 video (from the original lingbot repo, plus some extra flags to choose .png from).
@@ -96,7 +99,8 @@ python localize.py /path/to/query.jpg /path/to/map_frames/ \
   --top_k 4 \
   --margin_threshold 0.05 \
   --blur_threshold 30.0 \
-  --consensus_radius 0.3
+  --consensus_radius 0.3 \
+  --window_radius 2
 ```
 - `--margin_threshold`: top1/top2 DINOv2 similarity gap below which retrieval is flagged ambiguous.
 - `--blur_threshold`: Laplacian-variance sharpness cutoff; frames below it are excluded from
@@ -104,6 +108,50 @@ python localize.py /path/to/query.jpg /path/to/map_frames/ \
   (`0` disables gating). The default is a mild heuristic — tune per camera/lighting setup.
 - `--consensus_radius`: max pairwise disagreement (meters) between the k independent pose
   hypotheses for them to be treated as agreeing; outliers beyond this are discarded during fusion.
+- `--window_radius`: number of map frames before each top-k candidate to include in its local
+  Stage 3 pose-estimation window (window = `window_radius` map frames + the candidate + the
+  query). Larger values give the local streaming pass more frames/parallax to estimate depth
+  and pose from.
+
+### Confidence Gating & Diagnostics
+
+`localize.py` never returns a bare pose — every result comes with the scores that produced it,
+so a caller can decide whether to trust it. Two independent gates feed the final flag:
+
+**1. Retrieval-margin gating (Stage 1)** — computed by `compute_confidence_and_uncertainty()`:
+| Score | Meaning |
+|---|---|
+| `top1_similarity` / `top2_similarity` | Best and runner-up DINOv2 cosine similarity among map candidates. |
+| `margin` | `top1_similarity - top2_similarity`. |
+| `margin_ratio` | `margin / top1_similarity`. |
+| `is_ambiguous` | `True` if `margin < --margin_threshold` (default `0.05`) — multiple map locations look visually similar. |
+| `softmax_entropy` | Shannon entropy of the temperature-scaled (`tau=0.1`) similarity distribution over *all* map candidates — high entropy means no single frame stands out. |
+| `spatial_covariance` / `spatial_trace` / `spatial_std` | Covariance of the top-k hypotheses' 3D positions (computed after Stage 3) — spread-out hypotheses indicate the retrieved candidates don't agree on where the query actually is. |
+
+**2. Consensus-fusion gating (Stage 3)** — computed by `fuse_pose_hypotheses()`:
+- Each of the `top_k` retrieved candidates produces an independent 6DoF pose hypothesis.
+- Hypotheses within `--consensus_radius` meters of the largest mutually-agreeing cluster are kept
+  as inliers; the rest are discarded as outliers rather than averaged in blindly.
+- Returns `num_inliers` / `num_hypotheses` and the discarded `outlier_map_indices`.
+
+**Final flag**: `low_confidence = is_ambiguous OR (num_inliers <= max(1, num_hypotheses // 2))` —
+i.e. it trips if retrieval itself was ambiguous, *or* if half or more of the k pose hypotheses
+disagreed enough to be thrown out during consensus fusion. Either condition alone is enough to
+flag the result — always check `result["low_confidence"]` before acting on `result["position"]`.
+
+### Blur/Quality Gating
+
+`compute_image_sharpness()` scores each map frame via OpenCV's Laplacian-variance heuristic
+(`cv2.Laplacian(image, cv2.CV_64F).var()` — lower means blurrier). Frames scoring below
+`--blur_threshold` are excluded from *retrieval eligibility* in Stage 1 only: they can never
+become the top-k matched keyframe, but Stage 2/3 map reconstruction always uses the full,
+ungapped frame set. (Earlier versions dropped blurry frames from reconstruction too, which left
+gaps in the sequence and shifted the reconstructed geometry — this is why gating is retrieval-only
+now.) Set `--blur_threshold 0` to disable gating entirely.
+
+> **Test coverage note**: neither the blur-sharpness scoring nor the confidence-gating functions
+> above have unit tests yet (`tests/` currently only covers `MetricScaleSolver`). They've been
+> validated by inspecting real run output, not by an automated test suite.
 
 ### 3. Python API for Metric Scale Solver
 ```python
