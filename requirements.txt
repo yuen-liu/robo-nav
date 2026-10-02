@@ -13,3 +13,4 @@ typing_extensions
 trimesh
 requests
 huggingface_hub
+websockets
