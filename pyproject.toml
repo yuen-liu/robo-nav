@@ -25,6 +25,7 @@ dependencies = [
     "trimesh",
     "requests",
     "huggingface_hub",
+    "websockets",
 ]
 
 [tool.setuptools.packages.find]
