@@ -178,6 +178,36 @@ print(f"Metric scale alpha: {alpha:.6f}")
 
 ---
 
+## LightNav-0 Sim Navigation
+
+robo-nav does the global, room-level planning (`graph.py` over the house's room/door graph) and
+hands [LightNav-0](https://github.com/lightorigins/LightNav-0) one room-to-room hop at a time
+("Go through the doorway ahead on your right, about 5 meters away, into the bedroom."), in
+LightNav-0's MuJoCo demo house. Localization is currently the sim's ground-truth pose.
+
+```bash
+# 1. LightNav-0 server on a GPU box (see their docs/DEPLOYMENT.md), tunneled to localhost:8050
+ssh -N -L 8050:localhost:8050 <gpu-host>
+
+# 2. The MuJoCo demo, with wall/furniture collisions (the stock TurtleBot drives through walls)
+git clone https://github.com/lightorigins/LightNav-0.git && cd LightNav-0
+git checkout 3015508 && git apply ../robo-nav/sim/lightnav0_turtlebot_collisions.patch
+cd mujoco_demo && ./run.sh --vln-server ws://127.0.0.1:8050      # UI: http://127.0.0.1:8088
+
+# 3. Navigate (scene = mujoco_demo/vln_mujoco/assets/scenes/procthor-10k-val/val_2.json)
+python -m robo_nav.sim_nav bedroom_1 --reset --scene $SCENE \
+    --out sim_data/runs/bedroom_1.json --video sim_data/runs/bedroom_1.mp4
+python -m robo_nav.sim_summary sim_data/runs                       # success-rate table
+```
+
+- `robo_nav/sim_nav.py`: plan → instruct → re-instruct when LightNav stops or a hop times out;
+  replans after wrong turns. Episodes end as `success`, `gave_up`, `timeout`, or as
+  `wall_crossing` / `left_house` (sanity checks for runs without the collision patch).
+  `--hint none` sends plain "Go to the X." instead of doorway directions.
+- `robo_nav/sim_video.py`: episode MP4s (robot cam + chase cam + floor plan with route/trajectory).
+- `robo_nav/sim_record.py`: records keyframes + GT pose + room label while you drive (mapping data).
+- `robo_nav/lightnav_client.py`: minimal LightNav-0 WebSocket client for open-loop runs on recorded video (`--show` for a live overlay).
+
 ## Repository Layout
 
 ```

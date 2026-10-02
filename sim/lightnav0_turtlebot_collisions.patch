@@ -1,0 +1,76 @@
+diff --git a/mujoco_demo/vln_mujoco/robots/turtlebot.py b/mujoco_demo/vln_mujoco/robots/turtlebot.py
+index 142f20b..9a09b6c 100644
+--- a/mujoco_demo/vln_mujoco/robots/turtlebot.py
++++ b/mujoco_demo/vln_mujoco/robots/turtlebot.py
+@@ -13,6 +13,10 @@ CAMERA_NAME = "robot_rgb"
+ THIRD_PERSON_CAMERA_NAME = "robot_third_person"
+ WHEEL_RADIUS = 0.033
+ WHEEL_TRACK = 0.160
++# Kinematic stepping teleports the base, so contacts never push back on their own. Instead a
++# step that drives the chassis deeper into scene geometry is rejected (or reduced to a slide
++# along one axis), which makes walls and furniture block the robot.
++PENETRATION_TOLERANCE = 2e-3
+ 
+ 
+ def _robot_body() -> ET.Element:
+@@ -83,9 +87,26 @@ class TurtleBotBackend:
+         self._right_qpos = self.model.jnt_qposadr[self._right_joint]
+         self._left_dof = self.model.jnt_dofadr[self._left_joint]
+         self._right_dof = self.model.jnt_dofadr[self._right_joint]
++        self._chassis_geom = self.model.geom("base_collision").id
+         self._yaw = 0.0
+         mujoco.mj_forward(self.model, self.data)
+ 
++    def _penetration(self) -> float:
++        """Deepest overlap (m) between the chassis cylinder and anything else, after mj_forward."""
++        depth = 0.0
++        for i in range(self.data.ncon):
++            contact = self.data.contact[i]
++            if self._chassis_geom in (contact.geom1, contact.geom2):
++                depth = max(depth, -float(contact.dist))
++        return depth
++
++    def _blocked(self, before: float) -> bool:
++        mujoco.mj_forward(self.model, self.data)
++        # Never deeper than the tolerance; if already deeper (e.g. spawned overlapping), only allow
++        # moves that do not increase it -- a relative tolerance would let the robot creep in.
++        after = self._penetration()
++        return after > PENETRATION_TOLERANCE and after > before
++
+     def reset(self) -> None:
+         mujoco.mj_resetData(self.model, self.data)
+         self._yaw = 0.0
+@@ -99,14 +120,31 @@ class TurtleBotBackend:
+             math.cos(previous_yaw + angular * PHYSICS_DT),
+         )
+         heading = previous_yaw + angular * PHYSICS_DT / 2.0
+-        self.data.qpos[self._base_qpos] += linear * math.cos(heading) * PHYSICS_DT
+-        self.data.qpos[self._base_qpos + 1] += linear * math.sin(heading) * PHYSICS_DT
++        before = self._penetration()
++        x0 = float(self.data.qpos[self._base_qpos])
++        y0 = float(self.data.qpos[self._base_qpos + 1])
++        dx = linear * math.cos(heading) * PHYSICS_DT
++        dy = linear * math.sin(heading) * PHYSICS_DT
++        # The chassis is a z-axis cylinder, so turning in place can never collide.
+         self.data.qpos[self._base_qpos + 3 : self._base_qpos + 7] = (
+             math.cos(self._yaw / 2.0),
+             0.0,
+             0.0,
+             math.sin(self._yaw / 2.0),
+         )
++        moved = (0.0, 0.0)
++        for step_x, step_y in ((dx, dy), (dx, 0.0), (0.0, dy)):
++            if step_x == 0.0 and step_y == 0.0:
++                continue
++            self.data.qpos[self._base_qpos] = x0 + step_x
++            self.data.qpos[self._base_qpos + 1] = y0 + step_y
++            if not self._blocked(before):
++                moved = (step_x, step_y)
++                break
++        self.data.qpos[self._base_qpos] = x0 + moved[0]
++        self.data.qpos[self._base_qpos + 1] = y0 + moved[1]
++        # Report what actually happened so odometry/MPC see a stalled robot, not the command
++        linear = math.hypot(*moved) / PHYSICS_DT * (1.0 if linear >= 0 else -1.0)
+ 
+         left = (linear - angular * WHEEL_TRACK / 2.0) / WHEEL_RADIUS
+         right = (linear + angular * WHEEL_TRACK / 2.0) / WHEEL_RADIUS
