@@ -9,6 +9,12 @@ Methods (pick with --methods):
   dinov2_full      same, but the whole 16:9 frame (no center crop)
   dinov2_look      dinov2 on all look-around views; votes pooled across views
   dinov2_full_look dinov2_full on all look-around views
+  salad[_look]     DINOv2 + SALAD descriptor (trained for visual place recognition)
+  anyloc[_look]    AnyLoc-VLAD-DINOv2 (ViT-G/14, indoor vocabulary) -- GPU strongly advised
+  salad_lg[_look]  SALAD top-10 shortlist re-ranked by SuperPoint+LightGlue verified inliers;
+                   heading refined from the essential matrix
+  vlm_text[_look]  Claude matches the view against per-room text descriptions (see loc_vlm.py)
+  vlm_images[_look] Claude matches the view against 6 labeled exemplar frames per room
 
   python -m robo_nav.loc_eval sim_data/loc/val2 --methods prior dinov2 dinov2_full dinov2_look
 """
@@ -53,39 +59,98 @@ def angle_err_deg(a, b):
 
 # --------------------------------------------------------------------------- DINOv2 retrieval
 
-class DinoEmbedder:
-    def __init__(self, crop: bool, device: str, cache_dir: str):
+class GlobalEmbedder:
+    """Whole-image place-recognition descriptors, L2-normalized, cached per dataset.
+
+    dinov2_crop  DINOv2 ViT-S/14 CLS, Resize(518)+CenterCrop(518) -- exactly localize.py
+    dinov2_full  same model, whole 16:9 frame at 518x294
+    salad        DINOv2-B + SALAD aggregation (Izquierdo & Civera, CVPR'24), 322x322 as in its eval
+    anyloc       AnyLoc-VLAD-DINOv2 (ViT-G/14 layer 31 value facet, 32 indoor clusters), 518x294
+    """
+
+    def __init__(self, kind: str, device: str, cache_dir: str):
         import torch
         from torchvision import transforms
-        self.torch, self.device = torch, device
-        self.model = torch.hub.load("facebookresearch/dinov2", "dinov2_vits14").to(device).eval()
+        self.torch, self.device, self.kind, self.cache_dir = torch, device, kind, cache_dir
         norm = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-        if crop:  # exactly localize.py
+        if kind == "dinov2_crop":
+            self.model = torch.hub.load("facebookresearch/dinov2", "dinov2_vits14").to(device).eval()
             self.tf = transforms.Compose([transforms.Resize(518), transforms.CenterCrop(518), transforms.ToTensor(), norm])
-        else:     # keep the full 16:9 frame; both sides multiples of the 14 px patch
+        elif kind == "dinov2_full":
+            self.model = torch.hub.load("facebookresearch/dinov2", "dinov2_vits14").to(device).eval()
             self.tf = transforms.Compose([transforms.Resize((294, 518)), transforms.ToTensor(), norm])
-        self.tag = "dinov2_crop" if crop else "dinov2_full"
-        self.cache_dir = cache_dir
+        elif kind == "salad":
+            self.model = torch.hub.load("serizba/salad", "dinov2_salad", trust_repo=True).to(device).eval()
+            self.tf = transforms.Compose([transforms.Resize((322, 322)), transforms.ToTensor(), norm])
+        elif kind == "anyloc":
+            self.model = torch.hub.load("AnyLoc/DINO", "get_vlad_model", trust_repo=True, domain="indoor",
+                                        backbone="DINOv2", device=device)
+            self.tf = transforms.Compose([transforms.Resize((294, 518)), transforms.ToTensor(), norm])
+        else:
+            raise ValueError(kind)
 
     def embed(self, paths: List[str], cache_name: str = None, batch: int = 32) -> np.ndarray:
         from PIL import Image
-        if cache_name:
-            cache = os.path.join(self.cache_dir, f"{self.tag}_{cache_name}.npy")
-            if os.path.exists(cache):
-                feats = np.load(cache)
-                if len(feats) == len(paths):
-                    return feats
+        cache = os.path.join(self.cache_dir, f"{self.kind}_{cache_name}.npy") if cache_name else None
+        if cache and os.path.exists(cache):
+            feats = np.load(cache)
+            if len(feats) == len(paths):
+                return feats
+        batch = 4 if self.kind == "anyloc" else batch
         out = []
         with self.torch.no_grad():
             for i in range(0, len(paths), batch):
                 x = self.torch.stack([self.tf(Image.open(p).convert("RGB")) for p in paths[i:i + batch]]).to(self.device)
-                f = self.torch.nn.functional.normalize(self.model(x), dim=-1)
-                out.append(f.float().cpu().numpy())
+                f = self.torch.nn.functional.normalize(self.model(x).float(), dim=-1)
+                out.append(f.cpu().numpy())
         feats = np.concatenate(out)
-        if cache_name:
+        if cache:
             os.makedirs(self.cache_dir, exist_ok=True)
             np.save(cache, feats)
         return feats
+
+
+class LightGlueVerifier:
+    """SuperPoint + LightGlue matches, verified with an essential-matrix RANSAC (intrinsics are
+    known). Score = inlier count; the recovered rotation gives the query's heading relative to
+    the matched map frame."""
+
+    def __init__(self, device: str, intrinsics: dict, max_kp: int = 1024):
+        import torch
+        from lightglue import LightGlue, SuperPoint
+        self.torch, self.device = torch, device
+        self.extractor = SuperPoint(max_num_keypoints=max_kp).eval().to(device)
+        self.matcher = LightGlue(features="superpoint").eval().to(device)
+        self.K = np.array([[intrinsics["fx"], 0, intrinsics["cx"]], [0, intrinsics["fy"], intrinsics["cy"]], [0, 0, 1]])
+        self._cache: Dict[str, dict] = {}
+
+    def features(self, path: str) -> dict:
+        if path not in self._cache:
+            from lightglue.utils import load_image
+            with self.torch.no_grad():
+                self._cache[path] = self.extractor.extract(load_image(path).to(self.device))
+        return self._cache[path]
+
+    def verify(self, query_path: str, map_path: str):
+        """-> (inliers, yaw_offset_rad) with query_yaw = map_yaw + yaw_offset (CCW +)."""
+        import cv2
+        from lightglue.utils import rbd
+        f0, f1 = self.features(map_path), self.features(query_path)
+        with self.torch.no_grad():
+            m = rbd(self.matcher({"image0": f0, "image1": f1}))["matches"].cpu().numpy()
+        if len(m) < 8:
+            return len(m), 0.0
+        p0 = rbd(f0)["keypoints"].cpu().numpy()[m[:, 0]].astype(np.float64)
+        p1 = rbd(f1)["keypoints"].cpu().numpy()[m[:, 1]].astype(np.float64)
+        E, mask = cv2.findEssentialMat(p0, p1, self.K, cv2.RANSAC, 0.999, 1.0)
+        if E is None or E.shape != (3, 3):
+            return 0, 0.0
+        n_in, R, _, _ = cv2.recoverPose(E, p0, p1, self.K, mask=mask)
+        # R maps map-camera coords to query-camera coords (OpenCV: x right, y down, z forward).
+        # Pan angle of the query relative to the map camera, signed so a CCW (leftward) robot
+        # turn is positive (checked against renders with known offsets)
+        yaw_offset = math.atan2(-R[2, 0], R[0, 0])
+        return int(mask.sum()), yaw_offset
 
 
 def retrieval_predict(ds: dict, map_feats: np.ndarray, q_feats: np.ndarray, top_k: int, temp: float = 0.02) -> dict:
@@ -114,6 +179,31 @@ def retrieval_predict(ds: dict, map_feats: np.ndarray, q_feats: np.ndarray, top_
             "margin": float(top2[1] - top2[0])}
 
 
+def verified_predict(ds: dict, verifier: LightGlueVerifier, map_feats: np.ndarray, q_feats: np.ndarray,
+                     q_paths: List[str], shortlist: int, min_inliers: int = 15) -> dict:
+    """Shortlist by global descriptor, rerank by verified inliers; rooms vote with inlier counts
+    pooled over every view. Falls back to the plain retrieval vote if nothing verifies."""
+    sims = q_feats @ map_feats.T
+    votes: Dict[str, float] = defaultdict(float)
+    hits = []
+    for v, s in enumerate(sims):
+        for j in np.argsort(-s)[:shortlist]:
+            n_in, dyaw = verifier.verify(q_paths[v], ds["map_paths"][j])
+            if n_in >= min_inliers:
+                votes[ds["map_room"][j]] += n_in
+                hits.append((n_in, j, v, dyaw))
+    if not hits:
+        return retrieval_predict(ds, map_feats, q_feats, top_k=5)
+    ranked = sorted(votes.items(), key=lambda kv: -kv[1])
+    room = ranked[0][0]
+    in_room = [h for h in hits if ds["map_room"][h[1]] == room]
+    w = np.array([h[0] for h in in_room], dtype=float)
+    xy = (ds["map_xy"][[h[1] for h in in_room]] * w[:, None]).sum(0) / w.sum()
+    n_in, j, v, dyaw = max(hits)
+    yaw = ds["map_yaw"][j] + dyaw - 2 * math.pi * v / max(1, ds["views"])
+    return {"room": room, "xy": xy, "yaw": yaw, "conf": ranked[0][1] / sum(votes.values()), "inliers": n_in}
+
+
 # --------------------------------------------------------------------------- evaluation
 
 def evaluate(ds: dict, method: str, args) -> List[dict]:
@@ -122,17 +212,33 @@ def evaluate(ds: dict, method: str, args) -> List[dict]:
         room = Counter(ds["map_room"]).most_common(1)[0][0]
         return [{"room": room, "xy": None, "yaw": None, "conf": 0.0} for _ in range(n)]
 
-    if method.startswith("dinov2"):
-        crop = not method.startswith("dinov2_full")
-        look = method.endswith("_look")
-        key = "crop" if crop else "full"
-        if key not in args.embedders:
-            args.embedders[key] = DinoEmbedder(crop, args.device, os.path.join(ds["root"], "cache"))
-        emb = args.embedders[key]
+    if method.startswith("vlm"):
+        from robo_nav.loc_vlm import evaluate_vlm
+        return evaluate_vlm(ds, method)
+
+    base = method.replace("_look", "").replace("_lg", "")
+    kinds = {"dinov2": "dinov2_crop", "dinov2_full": "dinov2_full", "salad": "salad", "anyloc": "anyloc"}
+    if base in kinds:
+        look, verify = method.endswith("_look"), "_lg" in method
+        kind = kinds[base]
+        if kind not in args.embedders:
+            args.embedders[kind] = GlobalEmbedder(kind, args.device, os.path.join(ds["root"], "cache"))
+        emb = args.embedders[kind]
         map_feats = emb.embed(ds["map_paths"], "map")
         flat = [p for views in ds["q_paths"] for p in views]
         q_all = emb.embed(flat, "queries").reshape(n, ds["views"], -1)
-        return [retrieval_predict(ds, map_feats, q_all[i] if look else q_all[i, :1], args.top_k) for i in range(n)]
+        nv = ds["views"] if look else 1
+        if not verify:
+            return [retrieval_predict(ds, map_feats, q_all[i, :nv], args.top_k) for i in range(n)]
+        if args.verifier is None:
+            with open(os.path.join(ds["root"], "intrinsics.json")) as f:
+                args.verifier = LightGlueVerifier(args.device, json.load(f))
+        preds = []
+        for i in range(n):
+            preds.append(verified_predict(ds, args.verifier, map_feats, q_all[i, :nv], ds["q_paths"][i][:nv], args.shortlist))
+            if (i + 1) % 20 == 0:
+                print(f"  {method}: {i + 1}/{n}", flush=True)
+        return preds
 
     raise SystemExit(f"unknown method {method}")
 
@@ -161,13 +267,14 @@ def main():
     parser.add_argument("dataset", type=str)
     parser.add_argument("--methods", nargs="+", default=["prior", "dinov2", "dinov2_full", "dinov2_look", "dinov2_full_look"])
     parser.add_argument("--top_k", type=int, default=5)
+    parser.add_argument("--shortlist", type=int, default=10, help="Candidates per view re-ranked by LightGlue")
     parser.add_argument("--device", type=str, default=None)
     parser.add_argument("--out", type=str, default=None, help="Results JSON (default <dataset>/results.json)")
     args = parser.parse_args()
     if args.device is None:
         import torch
         args.device = "cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu")
-    args.embedders = {}
+    args.embedders, args.verifier = {}, None
 
     ds = load_dataset(args.dataset)
     print(f"{len(ds['map_paths'])} map frames, {len(ds['q_room'])} queries x {ds['views']} views, device={args.device}")
