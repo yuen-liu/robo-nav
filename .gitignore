@@ -13,3 +13,4 @@ tm4_data 6
 .DS_Store
 sim_data/
 
+.venv*/
