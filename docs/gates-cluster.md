@@ -87,11 +87,49 @@ between the `_look` variants is noise.
 `sim_data/landmark/val2/landmark_map.md` — 42 landmarks, 24 connections, from 149 keyframes
 (`--every 10`, 6 chunks). Holds the no-rooms constraint throughout.
 
-## In progress: 12-episode pilot
+## Done: 12-episode pilot
 
-`sim_data/landmark/runs/pilot`, 2 starts x 2 goals x 3 modes
-(zeroshot, zeroshot_retry, landmark).
+`sim_data/landmark/runs/pilot`, 2 starts x 2 goals x 3 modes. Success = within 1.5 m of the goal
+object and in the same room.
 
-Known non-fatal noise: OpenCV picks the `h264_v4l2m2m` encoder, which has no device on these
-nodes, so `EpisodeRecorder` logs "Failed to initialize VideoWriter" per episode. Episodes still
-run and score; only the per-episode videos are lost.
+| mode | success | median final | median closest | median time |
+|---|---|---|---|---|
+| landmark | **2/4** | 6.41 m | 4.65 m | 300.1 s |
+| zeroshot | 0/4 | 9.81 m | 7.09 m | 14.3 s |
+| zeroshot_retry | 0/4 | 6.97 m | 5.81 m | 85.4 s |
+
+| start | goal | zeroshot | zeroshot_retry | landmark |
+|---|---|---|---|---|
+| q23 livingroom_2 | fridge | 13.34 m | 6.90 m | **0.91 m OK** |
+| q23 livingroom_2 | laundry hamper | 9.81 m | 6.97 m | 12.46 m (timeout) |
+| q8 kitchen | dog bed | 5.82 m | 7.50 m | 6.41 m (timeout) |
+| q8 kitchen | armchair | 4.28 m | 3.39 m | **0.73 m OK** |
+
+Landmark mode is the only mode that ever arrives (2/4 vs 0/4 and 0/4), and when it does it is
+decisive — 0.73-0.91 m, ending on Claude's own `arrived`. The medians understate this: they are
+dominated by the two timeouts, so landmark's 6.41 m median looks worse than zeroshot_retry's
+6.97 m despite being the only mode with successes. n=4 per mode — directional only.
+
+Reading the traces (full `where_am_i`/`instruction` sequences in the episode JSONs):
+
+- Both successes took 3 planner calls, no `look_around`, no backtracking.
+- **Both failures are instruction execution, not planning or localization.** `where_am_i` stays
+  accurate throughout and Claude diagnoses its own errors ("This is not on the route to the
+  hamper") and re-plans correctly, but the robot keeps ending up back in the counter area. The
+  hamper episode issues the same "through the plain brown-trimmed doorway" instruction four times
+  (65 s, 158 s, 207 s, 249 s) and twice reports being physically stuck — "blocked by the door frame
+  post", "wedged between the open white glass-panel door and the end of the black TV stand".
+- `look_around` works as designed: used twice in the dog-bed run, both after genuinely losing
+  track, and recovered a confident position each time.
+
+### Two issues found, neither fixed (both would need repo changes)
+
+1. **`--timeout 300.0` is the binding constraint for landmark mode.** Both failures hit it while
+   still progressing sensibly — the dog-bed run's final instruction at 305 s was correctly aimed at
+   the goal. Zero-shot finishes in 5-25 s, so the default was never tested against a mode that
+   costs a planner call plus a drive segment per step. A larger timeout is an experiment-design
+   decision.
+2. **Video recording fails on every episode** (non-fatal). OpenCV picks the `h264_v4l2m2m` encoder,
+   which has no device on these nodes: `Could not open codec h264_v4l2m2m` ->
+   `Failed to initialize VideoWriter`. Episodes run and score normally; only the per-episode videos
+   are lost. Fixing it means changing the encoder in `robo_nav/sim/video.py`.
