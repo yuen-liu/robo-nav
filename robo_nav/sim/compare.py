@@ -13,6 +13,8 @@ import argparse
 import cv2
 import numpy as np
 
+from robo_nav.sim.video import open_video_writer
+
 FONT = cv2.FONT_HERSHEY_SIMPLEX
 BG = (32, 28, 26)
 
@@ -55,7 +57,7 @@ def main():
     header = 56
     gap = 8
     size = (2 * pw + gap, ph + header)
-    writer = cv2.VideoWriter(args.out, cv2.VideoWriter_fourcc(*"avc1"), args.fps, size)
+    writer = open_video_writer(args.out, args.fps, size)
 
     duration = max(len(lf) / lfps, len(rf) / rfps) / args.speed + args.hold
     for i in range(int(duration * args.fps)):

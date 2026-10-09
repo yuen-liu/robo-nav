@@ -27,6 +27,17 @@ ROBOT = (255, 255, 255)
 OUTCOME_COLORS = {"success": (90, 210, 90)}
 
 
+def open_video_writer(path: str, fps: float, size: tuple) -> "cv2.VideoWriter":
+    """H.264 where OpenCV can encode it (plays everywhere), else MPEG-4 Part 2. Some Linux OpenCV
+    builds map 'avc1' to a hardware encoder (h264_v4l2m2m) that has no device and fails to open."""
+    for fourcc in ("avc1", "mp4v"):
+        writer = cv2.VideoWriter(path, cv2.VideoWriter_fourcc(*fourcc), fps, size)
+        if writer.isOpened():
+            return writer
+        writer.release()
+    raise RuntimeError(f"no working video encoder for {path}")
+
+
 def text(img, s, org, scale=0.55, color=(235, 235, 235), thick=1):
     cv2.putText(img, s, org, FONT, scale, (0, 0, 0), thick + 3, cv2.LINE_AA)
     cv2.putText(img, s, org, FONT, scale, color, thick, cv2.LINE_AA)
@@ -83,7 +94,7 @@ class EpisodeRecorder:
         self.fps = fps
         self.trail: List[tuple] = []
         self.size = (CAM_W + MAP_SIZE, MAP_SIZE + CAPTION_H)
-        self.writer = cv2.VideoWriter(path, cv2.VideoWriter_fourcc(*"avc1"), fps, self.size)
+        self.writer = open_video_writer(path, fps, self.size)
         self.session = requests.Session()
         self.last = None
         self.t0 = None

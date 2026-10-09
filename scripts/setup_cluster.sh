@@ -3,6 +3,10 @@
 #
 #   ROOT=~/robonav bash setup_cluster.sh        # both repos end up under $ROOT
 #
+# Run it on a GPU node (on SLURM clusters the login node usually has no GPU).
+# The vLLM wheels need glibc >= 2.31; on older systems (e.g. RHEL 8) run the LightNav server env
+# inside a container instead -- see scripts/gates/ if present.
+#
 # Creates two environments:
 #   $ROOT/LightNav-0/.venv     LightNav-0 model server (vLLM)
 #   $ROOT/robo-nav/.venv-loc   everything else: sim, robo-nav experiments, localization methods
@@ -39,6 +43,12 @@ uv pip install --python .venv/bin/python -e ".[vllm,video]"
 echo "== robo-nav eval env"
 cd "$ROOT/robo-nav"
 [ -d .venv-loc ] || uv venv .venv-loc --python 3.11
+# Pin a CUDA build the driver can run: a bare `torch` pulls the newest CUDA build, which on an older
+# driver (e.g. 535 / CUDA 12.2) makes torch.cuda.is_available() silently False. Override TORCH_INDEX
+# for other drivers (https://download.pytorch.org/whl/cu126, ...).
+TORCH_INDEX=${TORCH_INDEX:-https://download.pytorch.org/whl/cu128}
+uv pip install --python .venv-loc/bin/python --index-url "$TORCH_INDEX" --reinstall-package torch \
+  torch torchvision
 uv pip install --python .venv-loc/bin/python -r requirements.txt \
   mujoco scipy anthropic kornia einops psutil faiss-cpu fast_pytorch_kmeans \
   pytorch_lightning pytorch_metric_learning \
@@ -49,6 +59,7 @@ echo "== smoke test"
 MUJOCO_GL=egl .venv-loc/bin/python -c "
 import torch, mujoco, vln_mujoco, robo_nav.sim.render, robo_nav.loc.benchmark
 print('torch', torch.__version__, 'cuda', torch.cuda.is_available(), '| mujoco', mujoco.__version__)
+assert torch.cuda.is_available(), 'torch cannot see a GPU: wrong CUDA build for this driver (set TORCH_INDEX), or no GPU on this node'
 from robo_nav.sim.render import OfflineCamera
 OfflineCamera().render(6.5, 13.8, 0.0); print('headless sim render ok')
 "
