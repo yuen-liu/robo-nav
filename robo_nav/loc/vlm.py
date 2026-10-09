@@ -11,7 +11,6 @@ Needs Anthropic credentials (ANTHROPIC_API_KEY or an `ant auth login` profile). 
 cached per query in <dataset>/cache/vlm_<method>.jsonl, so reruns don't re-spend.
 """
 
-import base64
 import json
 import os
 import threading
@@ -20,15 +19,7 @@ from typing import Dict, List
 
 import numpy as np
 
-MODEL = "claude-opus-5-5"
-FALLBACK_BETA = "server-side-fallback-2026-07-01"
-
-
-def image_block(path: str) -> dict:
-    with open(path, "rb") as f:
-        data = base64.standard_b64encode(f.read()).decode("utf-8")
-    return {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": data}}
-
+from robo_nav.claude import ask_json as ask, client as make_client, image_block
 
 def exemplars(ds: dict, per_room: int) -> Dict[str, List[str]]:
     """Evenly spaced map frames per room (the tour order spreads them over the room)."""
@@ -38,22 +29,6 @@ def exemplars(ds: dict, per_room: int) -> Dict[str, List[str]]:
         pick = np.linspace(0, len(idx) - 1, per_room).round().astype(int)
         out[room] = [ds["map_paths"][idx[k]] for k in pick]
     return out
-
-
-def ask(client, content: list, schema: dict, system: str = None, max_tokens: int = 4000) -> dict:
-    kwargs = {"system": system} if system else {}
-    response = client.beta.messages.create(
-        model=MODEL,
-        max_tokens=max_tokens,
-        betas=[FALLBACK_BETA],
-        fallbacks="default",
-        output_config={"effort": "medium", "format": {"type": "json_schema", "schema": schema}},
-        messages=[{"role": "user", "content": content}],
-        **kwargs,
-    )
-    if response.stop_reason == "refusal":
-        raise RuntimeError(f"refused: {response.stop_details}")
-    return json.loads(next(b.text for b in response.content if b.type == "text"))
 
 
 def room_descriptions(client, ds: dict, cache_dir: str, per_room: int = 8) -> Dict[str, str]:
@@ -84,8 +59,7 @@ def room_descriptions(client, ds: dict, cache_dir: str, per_room: int = 8) -> Di
 
 
 def evaluate_vlm(ds: dict, method: str, workers: int = 8) -> List[dict]:
-    import anthropic
-    client = anthropic.Anthropic()
+    client = make_client()
     look = method.endswith("_look")
     rooms = sorted(set(ds["map_room"]) - {""})
     cache_dir = os.path.join(ds["root"], "cache")

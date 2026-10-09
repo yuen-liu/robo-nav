@@ -109,15 +109,21 @@ class EpisodeRecorder:
         frame = np.full((self.size[1], self.size[0], 3), BG, np.uint8)
         frame[:CAM_H, :CAM_W] = first
         frame[CAM_H:2 * CAM_H, :CAM_W] = third
-        frame[:MAP_SIZE, CAM_W:] = self.plan.draw(st.get("goal"), st.get("route", []), self.trail, pose)
+        plan_img = self.plan.draw(st.get("goal"), st.get("route", []), self.trail, pose)
+        if st.get("goal_xy"):  # goal object (landmark runs): star on the floor plan
+            cv2.drawMarker(plan_img, self.plan.px(*st["goal_xy"]), (80, 220, 255), cv2.MARKER_STAR, 22, 2, cv2.LINE_AA)
+        frame[:MAP_SIZE, CAM_W:] = plan_img
         text(frame, "robot camera", (8, 20), 0.5)
         text(frame, "chase camera", (8, CAM_H + 20), 0.5)
 
         y0 = MAP_SIZE
         to_go = f"rooms to go: {st['to_go']}" if st.get("to_go") is not None else ""
-        header = f"goal: {st.get('goal', '')}   in: {st.get('room') or '?'}   {to_go}   t={elapsed:4.1f}s"
+        header = f"goal: {st.get('goal_label') or st.get('goal', '')}   in: {st.get('room') or '?'}   {to_go}   t={elapsed:4.1f}s"
         text(frame, header, (10, y0 + 26), 0.55, (200, 200, 200))
-        text(frame, f"LightNav-0: \"{st.get('instruction', '')}\"", (10, y0 + 58), 0.6, ROUTE)
+        instr = st.get("instruction", "")
+        if len(instr) > 95:
+            instr = instr[:92] + "..."
+        text(frame, f"LightNav-0: \"{instr}\"", (10, y0 + 58), 0.6, ROUTE)
 
         if st.get("outcome"):
             label = st["outcome"].upper().replace("_", " ")

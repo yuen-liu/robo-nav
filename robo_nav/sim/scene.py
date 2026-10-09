@@ -68,3 +68,17 @@ def locate(x: float, y: float, rooms: List[dict]) -> Optional[dict]:
 
 def angle_diff(a: float, b: float) -> float:
     return abs(math.atan2(math.sin(a - b), math.cos(a - b)))
+
+
+def load_objects(scene_json: str) -> List[dict]:
+    """Every placed object (children included) with its type and sim (x, y) position."""
+    with open(scene_json) as f:
+        house = json.load(f)
+
+    def walk(objs):
+        for o in objs:
+            yield o
+            yield from walk(o.get("children", []))
+
+    return [{"id": o["id"], "type": o["id"].split("|")[0], "x": o["position"]["x"], "y": o["position"]["z"]}
+            for o in walk(house["objects"])]
