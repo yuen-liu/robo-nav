@@ -191,21 +191,35 @@ ssh -N -L 8050:localhost:8050 <gpu-host>
 
 # 2. The MuJoCo demo, with wall/furniture collisions (the stock TurtleBot drives through walls)
 git clone https://github.com/lightorigins/LightNav-0.git && cd LightNav-0
-git checkout 3015508 && git apply ../robo-nav/sim/lightnav0_turtlebot_collisions.patch
+git checkout 3015508 && git apply ../robo-nav/patches/lightnav0_sim.patch
 cd mujoco_demo && ./run.sh --vln-server ws://127.0.0.1:8050      # UI: http://127.0.0.1:8088
 
 # 3. Navigate (scene = mujoco_demo/vln_mujoco/assets/scenes/procthor-10k-val/val_2.json)
-python -m robo_nav.sim_nav bedroom_1 --reset --scene $SCENE \
+python -m robo_nav.sim.nav bedroom_1 --reset --scene $SCENE \
     --out sim_data/runs/bedroom_1.json --video sim_data/runs/bedroom_1.mp4
-python -m robo_nav.sim_summary sim_data/runs                       # success-rate table
+python -m robo_nav.sim.summary sim_data/runs                       # success-rate table
 ```
 
-- `robo_nav/sim_nav.py`: plan → instruct → re-instruct when LightNav stops or a hop times out;
+**Everything on one GPU box (no laptop needed):** `ROOT=~/robonav bash scripts/setup_cluster.sh`
+(clones both repos, applies the patch, builds the LightNav server env and `.venv-loc`), then
+`GPU=0 bash scripts/start_stack.sh` (LightNav server + headless sim in tmux sessions `lightnav` / `sim`).
+
+Code layout:
+
+| Path | What |
+|---|---|
+| `robo_nav/sim/` | MuJoCo-house tooling: `scene.py` (GT rooms/doors/camera), `nav.py` (planner + LightNav loop), `video.py`, `compare.py`, `summary.py`, `record.py` (record while driving), `render.py` (offline GT dataset) |
+| `robo_nav/loc/` | kidnapped-robot localization benchmark: `benchmark.py` (DINOv2 / SALAD / AnyLoc / LightGlue), `vlm.py` (Claude) |
+| `robo_nav/landmark/` | landmark-only navigation (no GT, no room names): LLM-annotated house video + LightNav |
+| `patches/lightnav0_sim.patch` | LightNav-0 sim changes: wall/furniture collisions, `set_pose` for evaluation starts |
+| `scripts/` | cluster setup and launch |
+
+- `robo_nav/sim/nav.py`: plan → instruct → re-instruct when LightNav stops or a hop times out;
   replans after wrong turns. Episodes end as `success`, `gave_up`, `timeout`, or as
   `wall_crossing` / `left_house` (sanity checks for runs without the collision patch).
   `--hint none` sends plain "Go to the X." instead of doorway directions.
-- `robo_nav/sim_video.py`: episode MP4s (robot cam + chase cam + floor plan with route/trajectory).
-- `robo_nav/sim_record.py`: records keyframes + GT pose + room label while you drive (mapping data).
+- `robo_nav/sim/video.py`: episode MP4s (robot cam + chase cam + floor plan with route/trajectory).
+- `robo_nav/sim/record.py`: records keyframes + GT pose + room label while you drive (mapping data).
 - `robo_nav/lightnav_client.py`: minimal LightNav-0 WebSocket client for open-loop runs on recorded video (`--show` for a live overlay).
 
 ## Repository Layout

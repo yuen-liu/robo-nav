@@ -1,5 +1,5 @@
 diff --git a/mujoco_demo/vln_mujoco/robots/turtlebot.py b/mujoco_demo/vln_mujoco/robots/turtlebot.py
-index 142f20b..9a09b6c 100644
+index 142f20b..473a71c 100644
 --- a/mujoco_demo/vln_mujoco/robots/turtlebot.py
 +++ b/mujoco_demo/vln_mujoco/robots/turtlebot.py
 @@ -13,6 +13,10 @@ CAMERA_NAME = "robot_rgb"
@@ -13,7 +13,7 @@ index 142f20b..9a09b6c 100644
  
  
  def _robot_body() -> ET.Element:
-@@ -83,9 +87,26 @@ class TurtleBotBackend:
+@@ -83,14 +87,44 @@ class TurtleBotBackend:
          self._right_qpos = self.model.jnt_qposadr[self._right_joint]
          self._left_dof = self.model.jnt_dofadr[self._left_joint]
          self._right_dof = self.model.jnt_dofadr[self._right_joint]
@@ -40,7 +40,25 @@ index 142f20b..9a09b6c 100644
      def reset(self) -> None:
          mujoco.mj_resetData(self.model, self.data)
          self._yaw = 0.0
-@@ -99,14 +120,31 @@ class TurtleBotBackend:
+         mujoco.mj_forward(self.model, self.data)
+ 
++    def set_pose(self, x: float, y: float, yaw: float) -> None:
++        """Teleport the base (used for evaluation starts); wheels and velocities reset."""
++        mujoco.mj_resetData(self.model, self.data)
++        self.data.qpos[self._base_qpos : self._base_qpos + 2] = (x, y)
++        self._yaw = math.atan2(math.sin(yaw), math.cos(yaw))
++        self.data.qpos[self._base_qpos + 3 : self._base_qpos + 7] = (
++            math.cos(self._yaw / 2.0),
++            0.0,
++            0.0,
++            math.sin(self._yaw / 2.0),
++        )
++        mujoco.mj_forward(self.model, self.data)
++
+     def step(self, command: Twist2D) -> None:
+         linear, angular = command
+         previous_yaw = self._yaw
+@@ -99,14 +133,31 @@ class TurtleBotBackend:
              math.cos(previous_yaw + angular * PHYSICS_DT),
          )
          heading = previous_yaw + angular * PHYSICS_DT / 2.0
@@ -74,3 +92,48 @@ index 142f20b..9a09b6c 100644
  
          left = (linear - angular * WHEEL_TRACK / 2.0) / WHEEL_RADIUS
          right = (linear + angular * WHEEL_TRACK / 2.0) / WHEEL_RADIUS
+diff --git a/mujoco_demo/vln_mujoco/server.py b/mujoco_demo/vln_mujoco/server.py
+index 668b6c4..4741580 100644
+--- a/mujoco_demo/vln_mujoco/server.py
++++ b/mujoco_demo/vln_mujoco/server.py
+@@ -223,6 +223,23 @@ class VlnMujocoServer:
+             self.simulation.reset()
+             await self.result(socket, True, "simulation reset")
+             return
++        if kind == "set_pose":
++            try:
++                x, y, yaw = (float(payload[key]) for key in ("x", "y", "yaw"))
++            except (KeyError, TypeError, ValueError):
++                await self.result(socket, False, "set_pose needs numeric x, y, yaw")
++                return
++            if not all(math.isfinite(value) for value in (x, y, yaw)):
++                await self.result(socket, False, "pose must be finite")
++                return
++            if not hasattr(self.simulation.robot, "set_pose"):
++                await self.result(socket, False, "robot backend cannot set its pose")
++                return
++            self.manual_owner = None
++            self.stop_vln()
++            self.simulation.set_pose(x, y, yaw)
++            await self.result(socket, True, "pose set")
++            return
+         await self.result(socket, False, "unknown command")
+ 
+     def stop_vln(self) -> None:
+diff --git a/mujoco_demo/vln_mujoco/simulation.py b/mujoco_demo/vln_mujoco/simulation.py
+index 9a2b39b..922f3d5 100644
+--- a/mujoco_demo/vln_mujoco/simulation.py
++++ b/mujoco_demo/vln_mujoco/simulation.py
+@@ -65,6 +65,12 @@ class Simulation:
+             self._command = (0.0, 0.0)
+             self._command_at = 0.0
+ 
++    def set_pose(self, x: float, y: float, yaw: float) -> None:
++        with self._lock:
++            self.robot.set_pose(x, y, yaw)
++            self._command = (0.0, 0.0)
++            self._command_at = 0.0
++
+     def set_velocity(self, linear: float, angular: float) -> None:
+         # Physical sanity bound only; per-mode VLN limits live in the MPC.
+         linear = max(-TRACK_V_MAX, min(TRACK_V_MAX, float(linear)))

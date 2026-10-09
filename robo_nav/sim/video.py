@@ -1,5 +1,5 @@
 """
-Episode video for `sim_nav`: robot camera + chase camera on the left, a top-down floor plan on
+Episode video for `robo_nav.sim.nav`: robot camera + chase camera on the left, a top-down floor plan on
 the right (room polygons, doorways, planned route, driven trajectory), and a caption with the
 current instruction. Frames come from the sim's /api/camera.jpg and /api/third-person.jpg.
 """

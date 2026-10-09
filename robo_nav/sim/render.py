@@ -14,7 +14,7 @@ Output (<out>/):
   intrinsics.json, rooms.json, overview.png         (overview: floor plan + tour + query starts)
 
 Run with an env that has both robo-nav and LightNav-0's `vln_mujoco` (patched TurtleBot):
-  python -m robo_nav.sim_render sim_data/loc/val2 --scene $SCENE
+  python -m robo_nav.sim.render sim_data/loc/val2 --scene $SCENE
 On headless Linux prefix with MUJOCO_GL=egl.
 """
 
@@ -32,8 +32,8 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 
-from robo_nav.sim_record import camera_intrinsics, load_rooms, locate, point_in_polygon
-from robo_nav.sim_video import FloorPlan
+from robo_nav.sim.scene import camera_intrinsics, load_rooms, locate, point_in_polygon
+from robo_nav.sim.video import FloorPlan
 
 GRID_RES = 0.1  # m per occupancy cell
 

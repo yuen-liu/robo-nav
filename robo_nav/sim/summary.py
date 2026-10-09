@@ -1,8 +1,8 @@
 """
-Summarize a directory of `sim_nav --out` episode logs: success rate per hint mode, broken down
+Summarize a directory of `robo_nav.sim.nav --out` episode logs: success rate per hint mode, broken down
 by route length (rooms on the plan), plus how the failures ended.
 
-  python -m robo_nav.sim_summary sim_data/runs/batch2
+  python -m robo_nav.sim.summary sim_data/runs/batch2
 """
 
 import argparse

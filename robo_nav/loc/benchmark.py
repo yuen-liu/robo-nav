@@ -1,5 +1,5 @@
 """
-Kidnapped-robot localization benchmark on a `sim_render` dataset: for every query start, each
+Kidnapped-robot localization benchmark on a `robo_nav.sim.render` dataset: for every query start, each
 method predicts the room (and, where it can, the position/heading); scored against GT.
 
 Methods (pick with --methods):
@@ -13,10 +13,10 @@ Methods (pick with --methods):
   anyloc[_look]    AnyLoc-VLAD-DINOv2 (ViT-G/14, indoor vocabulary) -- GPU strongly advised
   salad_lg[_look]  SALAD top-10 shortlist re-ranked by SuperPoint+LightGlue verified inliers;
                    heading refined from the essential matrix
-  vlm_text[_look]  Claude matches the view against per-room text descriptions (see loc_vlm.py)
+  vlm_text[_look]  Claude matches the view against per-room text descriptions (see loc/vlm.py)
   vlm_images[_look] Claude matches the view against 6 labeled exemplar frames per room
 
-  python -m robo_nav.loc_eval sim_data/loc/val2 --methods prior dinov2 dinov2_full dinov2_look
+  python -m robo_nav.loc.benchmark sim_data/loc/val2 --methods prior dinov2 dinov2_full dinov2_look
 """
 
 import argparse
@@ -213,7 +213,7 @@ def evaluate(ds: dict, method: str, args) -> List[dict]:
         return [{"room": room, "xy": None, "yaw": None, "conf": 0.0} for _ in range(n)]
 
     if method.startswith("vlm"):
-        from robo_nav.loc_vlm import evaluate_vlm
+        from robo_nav.loc.vlm import evaluate_vlm
         return evaluate_vlm(ds, method)
 
     base = method.replace("_look", "").replace("_lg", "")

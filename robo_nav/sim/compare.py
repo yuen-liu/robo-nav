@@ -1,9 +1,9 @@
 """
-Side-by-side, sped-up comparison of two `sim_nav --video` episodes. Both play at the same speed
+Side-by-side, sped-up comparison of two `robo_nav.sim.nav --video` episodes. Both play at the same speed
 from t=0, so the shorter episode finishes first and holds its final frame (outcome banner) while
 the other keeps going: the time difference stays visible.
 
-  python -m robo_nav.sim_compare sim_data/runs/batch2/kitchen_direction_r1.mp4 \
+  python -m robo_nav.sim.compare sim_data/runs/batch2/kitchen_direction_r1.mp4 \
       sim_data/runs/batch2/kitchen_none_r1.mp4 -o kitchen_compare.mp4 \
       --left_title "With room-graph directions" --right_title "Plain instruction"
 """

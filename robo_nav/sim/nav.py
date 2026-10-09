@@ -15,7 +15,7 @@ against the door graph: crossing anywhere but a connecting doorway ends the epis
 polygon ends it as "left_house".
 
 Usage (sim on :8088 configured with the LightNav server, tunnel up):
-  python -m robo_nav.sim_nav bathroom_1 \
+  python -m robo_nav.sim.nav bathroom_1 \
       --scene ~/Desktop/projects/LightNav-0/mujoco_demo/vln_mujoco/assets/scenes/procthor-10k-val/val_2.json
 Release manual control on the sim page first (the sim lets only one client drive).
 """
@@ -31,10 +31,10 @@ from typing import Dict, List, Optional
 
 import websockets
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))  # repo root, for graph.py
 from graph import TopologicalGraph  # noqa: E402
-from robo_nav.sim_record import load_rooms, locate  # noqa: E402
-from robo_nav.sim_video import EpisodeRecorder, FloorPlan  # noqa: E402
+from robo_nav.sim.scene import load_rooms, locate  # noqa: E402
+from robo_nav.sim.video import EpisodeRecorder, FloorPlan  # noqa: E402
 
 
 def build_graph(rooms: List[dict], doors: List[dict]) -> TopologicalGraph:

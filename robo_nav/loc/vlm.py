@@ -1,5 +1,5 @@
 """
-Vision-language localization for `loc_eval`: Claude picks the room from the robot's camera view.
+Vision-language localization for `robo_nav.loc.benchmark`: Claude picks the room from the robot's camera view.
 
   vlm_text    the map is only text: Claude first writes one distinguishing description per room
               from a few map frames (cached to <dataset>/cache/vlm_room_descriptions.json), then
