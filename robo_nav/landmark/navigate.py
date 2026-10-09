@@ -7,7 +7,10 @@ instruction at a time ("go forward past the grey couch toward the wooden doors")
 Modes (all start from the same random poses, set with the sim's set_pose):
   zeroshot        LightNav-0 alone: "Go to the <goal>." once; ends when it stops
   zeroshot_retry  same instruction, re-sent whenever LightNav stops (no map, no planner)
-  landmark        Claude + landmark map -> step-by-step landmark instructions -> LightNav-0
+  landmark        Claude + landmark map -> step-by-step landmark instructions -> LightNav-0; when a
+                  step ends with the robot wedged (stopped moving), back up ~0.3 m and turn a little
+                  before the next planner call (no pose needed -- a real robot can do this blind)
+  landmark_nounstick  same, without the unstick move (measures what getting stuck costs)
 
 Ground truth is used only to score (final distance to the goal object, same room) and to draw
 the floor-plan panel in the episode videos -- never in what the robot or Claude sees.
@@ -125,6 +128,18 @@ class Episode:
         await self.sim.command({"type": "release_control"})
         return views
 
+    async def unstick(self, turn_left: bool):
+        """Blind recovery after a stall: reverse ~0.3 m, then turn ~30 deg."""
+        await self.sim.command({"type": "acquire_control"})
+        for linear, angular, secs in ((-0.15, 0.0, 2.0), (0.0, 1.0 if turn_left else -1.0, 0.5)):
+            t_end = time.monotonic() + secs
+            while time.monotonic() < t_end:
+                await self.sim.ws.send(json.dumps({"type": "twist", "linear": linear, "angular": angular}))
+                await asyncio.sleep(0.05)
+                self.track()
+        await self.sim.ws.send(json.dumps({"type": "twist", "linear": 0.0, "angular": 0.0}))
+        await self.sim.command({"type": "release_control"})
+
     async def drive(self, instruction: str) -> str:
         """Run one instruction on LightNav until it stops itself, stalls, or times out."""
         self.status["instruction"] = instruction
@@ -160,7 +175,7 @@ class Episode:
                 return "timeout"
         return "done"
 
-    async def run_landmark(self, cl, system: List[dict]) -> str:
+    async def run_landmark(self, cl, system: List[dict], unstick: bool) -> str:
         history: List[str] = []
         views = await self.look_around()
         calls = 0
@@ -189,6 +204,10 @@ class Episode:
                 continue
             ended = await self.drive(plan["instruction"])
             self.event("step_end", how=ended)
+            if ended == "stalled" and unstick:
+                await self.unstick(turn_left=calls % 2 == 0)
+                self.event("unstick")
+                ended = "stalled (backed up and turned)"
             history.append(f"{len(history) + 1}. \"{plan['instruction']}\" -> driver {ended}; "
                            f"you had seen: {plan['observation']}")
             views = [await asyncio.to_thread(self.camera)]
@@ -235,7 +254,7 @@ async def run(args):
     os.makedirs(args.out, exist_ok=True)
     sim_http = args.sim_ws.replace("ws://", "http://").rsplit("/ws", 1)[0]
     cl, system = None, None
-    if "landmark" in args.modes:
+    if any(m.startswith("landmark") for m in args.modes):
         with open(os.path.join(args.map, "landmark_map.md")) as f:
             system = planner_system(f.read())
         cl = make_client()
@@ -244,6 +263,8 @@ async def run(args):
 
     async with SimSession(args.sim_ws) as sim:
         for i, ep in enumerate(episodes):
+            if i % args.shards != args.shard:
+                continue
             for mode in args.modes:
                 name = f"e{i:02d}_{ep['goal'].replace(' ', '_')}_{mode}"
                 path = os.path.join(args.out, name + ".json")
@@ -261,8 +282,8 @@ async def run(args):
                 rec = EpisodeRecorder(os.path.join(args.out, name + ".mp4"), sim_http, plan_view, e.status, lambda: sim.pose)
                 rec.start()
                 try:
-                    if mode == "landmark":
-                        ended = await e.run_landmark(cl, system)
+                    if mode.startswith("landmark"):
+                        ended = await e.run_landmark(cl, system, unstick=mode == "landmark")
                     else:
                         ended = await e.run_zeroshot(retry=mode == "zeroshot_retry")
                 except Exception as exc:  # keep the batch going; the episode is recorded as an error
@@ -301,19 +322,25 @@ def main():
     parser.add_argument("--n_starts", type=int, default=10)
     parser.add_argument("--goals_per_start", type=int, default=2)
     parser.add_argument("--modes", nargs="+", default=["zeroshot", "zeroshot_retry", "landmark"],
-                        choices=["zeroshot", "zeroshot_retry", "landmark"])
+                        choices=["zeroshot", "zeroshot_retry", "landmark", "landmark_nounstick"])
     parser.add_argument("--out", type=str, required=True)
     parser.add_argument("--sim_ws", type=str, default="ws://127.0.0.1:8088/ws")
-    parser.add_argument("--timeout", type=float, default=300.0, help="Episode limit (s)")
+    parser.add_argument("--timeout", type=float, default=600.0, help="Episode limit (s)")
     parser.add_argument("--step_timeout", type=float, default=45.0, help="Limit per LightNav instruction (s)")
     parser.add_argument("--stall_s", type=float, default=12.0, help="End a step after this long without moving")
     parser.add_argument("--max_instructions", type=int, default=6, help="zeroshot_retry re-sends")
     parser.add_argument("--max_planner_calls", type=int, default=20)
     parser.add_argument("--effort", type=str, default="medium")
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--shard", type=int, default=0, help="Run only start/goal pairs with index %% shards == shard")
+    parser.add_argument("--shards", type=int, default=1, help="Parallel workers sharing --out (one sim each)")
+    parser.add_argument("--summarize", action="store_true", help="Only print the summary of --out")
     args = parser.parse_args()
-    if "landmark" in args.modes and not args.map:
-        parser.error("--map is required for landmark mode")
+    if args.summarize:
+        summarize(args.out)
+        return
+    if any(m.startswith("landmark") for m in args.modes) and not args.map:
+        parser.error("--map is required for landmark modes")
     asyncio.run(run(args))
 
 
