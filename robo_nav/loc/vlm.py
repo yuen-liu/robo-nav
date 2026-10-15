@@ -8,7 +8,7 @@ Vision-language localization for `robo_nav.loc.benchmark`: Claude picks the room
   *_look      the query is the 8-view look-around instead of a single frame
 
 Needs Anthropic credentials (ANTHROPIC_API_KEY or an `ant auth login` profile). Answers are
-cached per query in <dataset>/cache/vlm_<method>.jsonl, so reruns don't re-spend.
+cached per query in <dataset>/cache/vlm_<method>[_gemini].jsonl, so reruns don't re-spend.
 """
 
 import json
@@ -19,7 +19,12 @@ from typing import Dict, List
 
 import numpy as np
 
-from robo_nav.claude import ask_json as ask, client as make_client, image_block
+from robo_nav.claude import ask_json as ask, backend, client as make_client, image_block
+
+def _tag() -> str:
+    """Cache-name suffix so Gemini answers never mix with the existing (Claude) caches."""
+    return "" if backend() == "claude" else f"_{backend()}"
+
 
 def exemplars(ds: dict, per_room: int) -> Dict[str, List[str]]:
     """Evenly spaced map frames per room (the tour order spreads them over the room)."""
@@ -32,7 +37,7 @@ def exemplars(ds: dict, per_room: int) -> Dict[str, List[str]]:
 
 
 def room_descriptions(client, ds: dict, cache_dir: str, per_room: int = 8) -> Dict[str, str]:
-    path = os.path.join(cache_dir, "vlm_room_descriptions.json")
+    path = os.path.join(cache_dir, f"vlm_room_descriptions{_tag()}.json")
     if os.path.exists(path):
         with open(path) as f:
             return json.load(f)
@@ -87,7 +92,7 @@ def evaluate_vlm(ds: dict, method: str, workers: int = 8) -> List[dict]:
             prefix.extend(image_block(p) for p in paths)
         prefix[-1] = {**prefix[-1], "cache_control": {"type": "ephemeral"}}  # reuse across queries
 
-    cache_path = os.path.join(cache_dir, f"vlm_{method}.jsonl")
+    cache_path = os.path.join(cache_dir, f"vlm_{method}{_tag()}.jsonl")
     done: Dict[int, dict] = {}
     if os.path.exists(cache_path):
         with open(cache_path) as f:

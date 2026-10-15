@@ -50,7 +50,7 @@ TORCH_INDEX=${TORCH_INDEX:-https://download.pytorch.org/whl/cu128}
 uv pip install --python .venv-loc/bin/python --index-url "$TORCH_INDEX" --reinstall-package torch \
   torch torchvision
 uv pip install --python .venv-loc/bin/python -r requirements.txt \
-  mujoco scipy anthropic kornia einops psutil faiss-cpu fast_pytorch_kmeans \
+  mujoco scipy anthropic google-genai kornia einops psutil faiss-cpu fast_pytorch_kmeans \
   pytorch_lightning pytorch_metric_learning \
   "lightglue @ git+https://github.com/cvg/LightGlue.git" \
   -e "$ROOT/LightNav-0/mujoco_demo"
