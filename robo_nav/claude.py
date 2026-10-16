@@ -86,6 +86,20 @@ def usage_summary(calls: Optional[List[dict]] = None) -> dict:
     return out
 
 
+def print_cost(eps: List[dict]):
+    """Planner token usage and list-price cost over the episodes that logged it (incl. outages)."""
+    used = [e["usage"] for e in eps if e.get("usage", {}).get("calls")]
+    if not used:
+        return
+    calls = sum(u["calls"] for u in used)
+    tok = {k: sum(u[k] for u in used) for k in ("input", "output", "cache_read", "cache_write")}
+    costs = [u["cost_usd"] for u in used]
+    cost = f"${sum(costs):.2f} total, ${sum(costs) / len(used):.3f}/episode, ${sum(costs) / calls:.4f}/call" \
+        if None not in costs else "cost unknown (model not in PRICES)"
+    print(f"\nplanner usage over {len(used)} episodes, {calls} calls: {tok['input']:,} in, {tok['output']:,} out, "
+          f"{tok['cache_read']:,} cache read, {tok['cache_write']:,} cache write -> {cost}")
+
+
 def backend() -> str:
     b = os.environ.get("ROBO_NAV_VLM", "claude").lower()
     if b not in ("claude", "gemini", "qwen"):
