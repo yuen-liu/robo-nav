@@ -35,7 +35,11 @@ def backend() -> str:
 def client():
     if backend() == "gemini":
         from google import genai
-        return genai.Client()
+        from google.genai import types
+        # Gemini sheds load with 503s; retry with backoff instead of failing the episode.
+        retry = types.HttpRetryOptions(attempts=10, initial_delay=2.0, max_delay=30.0,
+                                       http_status_codes=[429, 500, 503, 504])
+        return genai.Client(http_options=types.HttpOptions(retry_options=retry))
     import anthropic
     return anthropic.Anthropic()
 
