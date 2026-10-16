@@ -32,7 +32,7 @@ from typing import Dict, List, Optional
 
 import numpy as np
 
-from robo_nav.claude import ask_json, client as make_client, image_block
+from robo_nav.claude import ask_json, client as make_client, image_block, print_cost, usage_summary
 from robo_nav.landmark.planner import PLAN_SCHEMA, planner_system
 
 CAMERA = "about 0.9 m above the floor"
@@ -90,6 +90,7 @@ class Run:
         self.obs, self.info = obs, info
         self.log: List[dict] = []
         self.planner_s = 0.0
+        self.usage: List[dict] = []  # planner token usage, one entry per call
         self.steps = 0  # policy/env steps this subtask
 
     def event(self, kind: str, **kw):
@@ -154,12 +155,12 @@ class Run:
             content.append({"type": "text", "text": "Decide the next action."})
             asked = time.monotonic()
             try:
-                plan = ask_json(cl, content, PLAN_SCHEMA, system, 16000, self.args.effort)
+                plan = ask_json(cl, content, PLAN_SCHEMA, system, 16000, self.args.effort, usage=self.usage)
             except Exception as exc:
                 raise PlannerError(repr(exc)) from exc
             finally:
                 self.planner_s += time.monotonic() - asked
-            self.event("plan", latency_s=round(time.monotonic() - asked, 1), where_am_i=plan["where_am_i"],
+            self.event("plan", latency_s=round(time.monotonic() - asked, 1), out_tokens=self.usage[-1]["output"], where_am_i=plan["where_am_i"],
                        action=plan["action"], instruction=plan["instruction"])
             if plan["action"] in ("arrived", "give_up"):
                 return f"planner_{plan['action']}"
@@ -234,7 +235,7 @@ def main():
                     print(f"   -> subtask {k} {sub['type']}: {'SUCCESS' if score['success'] else 'miss'} "
                           f"{score['distance_to_goal']:.2f} m, SPL {score['spl']:.2f}, {run.steps} steps, {ended}", flush=True)
                 out = {"episode": idx, "scene": scene, "mode": mode, "ended": ended_ep,
-                       "planner_s": round(run.planner_s, 1), "subtasks": results, "log": run.log}
+                       "planner_s": round(run.planner_s, 1), "usage": usage_summary(run.usage), "subtasks": results, "log": run.log}
                 with open(path, "w") as f:
                     json.dump(out, f, indent=1, default=float)
     finally:
@@ -245,6 +246,7 @@ def main():
 def summarize(run_dir: str):
     from glob import glob
     eps = [json.load(open(p)) for p in sorted(glob(os.path.join(run_dir, "ep*.json")))]
+    print_cost(eps)
     outages = [e for e in eps if e["ended"] == "planner_error"]
     if outages:
         print(f"\n{len(outages)} episode(s) cut short by a planner API failure, left out below")
