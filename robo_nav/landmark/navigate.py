@@ -80,6 +80,7 @@ class Episode:
         self.goal, self.goal_obj, self.rooms = goal, goal_obj, rooms
         self.log: List[dict] = []
         self.t0 = time.monotonic()
+        self.planner_s = 0.0  # time blocked on the planner API, robot idle; not charged to --timeout
         self.status: Dict = {"goal_label": goal, "goal_xy": (goal_obj["x"], goal_obj["y"]), "instruction": ""}
         self.min_dist = math.inf
         self.distance = 0.0
@@ -106,8 +107,13 @@ class Episode:
         p = self.sim.pose
         return math.hypot(p["x"] - self.goal_obj["x"], p["y"] - self.goal_obj["y"])
 
-    def elapsed(self) -> float:
+    def wall(self) -> float:
         return time.monotonic() - self.t0
+
+    def elapsed(self) -> float:
+        """Episode time the robot is charged for: wall time minus planner API waits, so a slow API
+        day doesn't count as navigation time."""
+        return self.wall() - self.planner_s
 
     # -- robot I/O (what a real robot would have) ----------------------------------------------
     def camera(self) -> bytes:
@@ -190,9 +196,12 @@ class Episode:
             else:
                 content += [{"type": "text", "text": "Current camera view:"}, image_block(views[0])]
             content.append({"type": "text", "text": "Decide the next action."})
+            asked = time.monotonic()
             plan = await asyncio.to_thread(ask_json, cl, content, PLAN_SCHEMA, system, 16000, self.args.effort)
+            latency = time.monotonic() - asked
+            self.planner_s += latency
             calls += 1
-            self.event("plan", where_am_i=plan["where_am_i"], action=plan["action"], instruction=plan["instruction"],
+            self.event("plan", latency_s=round(latency, 1), where_am_i=plan["where_am_i"], action=plan["action"], instruction=plan["instruction"],
                        plan=plan["plan"])
             if plan["action"] == "arrived":
                 return "claude_arrived"
@@ -221,7 +230,8 @@ class Episode:
         return {"ended": ended, "success": bool(final <= SUCCESS_RADIUS and here is not None and there is not None
                                                 and here["id"] == there["id"]),
                 "final_dist_m": round(final, 2), "min_dist_m": round(self.min_dist, 2),
-                "time_s": round(self.elapsed(), 1), "distance_m": round(self.distance, 2)}
+                "time_s": round(self.elapsed(), 1), "wall_s": round(self.wall(), 1),
+                "planner_s": round(self.planner_s, 1), "distance_m": round(self.distance, 2)}
 
 
 def pick_episodes(args, objects, rooms) -> List[dict]:
@@ -325,7 +335,7 @@ def main():
                         choices=["zeroshot", "zeroshot_retry", "landmark", "landmark_nounstick"])
     parser.add_argument("--out", type=str, required=True)
     parser.add_argument("--sim_ws", type=str, default="ws://127.0.0.1:8088/ws")
-    parser.add_argument("--timeout", type=float, default=600.0, help="Episode limit (s)")
+    parser.add_argument("--timeout", type=float, default=600.0, help="Episode limit (s), excluding planner API waits")
     parser.add_argument("--step_timeout", type=float, default=45.0, help="Limit per LightNav instruction (s)")
     parser.add_argument("--stall_s", type=float, default=12.0, help="End a step after this long without moving")
     parser.add_argument("--max_instructions", type=int, default=6, help="zeroshot_retry re-sends")
