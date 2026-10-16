@@ -16,9 +16,11 @@ Anthropic-style content blocks; the Gemini and Qwen paths translate them.
 """
 
 import base64
+import datetime
 import io
 import json
 import os
+import threading
 from typing import List, Optional, Union
 
 import numpy as np
@@ -33,6 +35,55 @@ QWEN_URL = os.environ.get("ROBO_NAV_QWEN_URL", "http://127.0.0.1:8000/v1")
 QWEN_MODEL = os.environ.get("ROBO_NAV_QWEN_MODEL", "Qwen/Qwen3-VL-8B-Instruct")
 # Prompt + max_tokens must fit the server's --max-model-len; callers' 32k/64k caps are for Claude.
 QWEN_MAX_TOKENS = int(os.environ.get("ROBO_NAV_QWEN_MAX_TOKENS", "16384"))
+
+
+# List prices, $ per 1M tokens (as of 2026-10): input, output, cache read, cache write. Output
+# includes thinking tokens. A model missing here gets tokens logged but no cost.
+PRICES = {
+    "claude-opus-5-5": (4.00, 20.00, 0.20, 5.00),
+    "gemini-4-argon": (4.00, 20.00, None, None),  # $2 / $10 introductory through 2026-11-30
+}
+INTRO_PRICES = {"gemini-4-argon": ((2.00, 10.00, None, None), datetime.date(2026, 11, 30))}
+
+USAGE: List[dict] = []  # every call this process made (see usage_summary)
+_usage_lock = threading.Lock()
+
+
+def _record(usage: Optional[list], model: str, inp: int, out: int, cache_read: int = 0, cache_write: int = 0) -> dict:
+    u = {"model": model, "input": int(inp or 0), "output": int(out or 0),
+         "cache_read": int(cache_read or 0), "cache_write": int(cache_write or 0)}
+    u["cost_usd"] = call_cost(u)
+    with _usage_lock:
+        USAGE.append(u)
+    if usage is not None:
+        usage.append(u)
+    return u
+
+
+def call_cost(u: dict) -> Optional[float]:
+    if backend() == "qwen":
+        return 0.0  # local vLLM: no API bill
+    price = PRICES.get(u["model"])
+    if u["model"] in INTRO_PRICES and datetime.date.today() <= INTRO_PRICES[u["model"]][1]:
+        price = INTRO_PRICES[u["model"]][0]
+    if price is None:
+        return None
+    p_in, p_out, p_read, p_write = price
+    cost = u["input"] * p_in + u["output"] * p_out
+    cost += u["cache_read"] * (p_read if p_read is not None else p_in)
+    cost += u["cache_write"] * (p_write if p_write is not None else p_in)
+    return cost / 1e6
+
+
+def usage_summary(calls: Optional[List[dict]] = None) -> dict:
+    """Totals over `calls` (default: every call this process made)."""
+    calls = USAGE if calls is None else calls
+    out = {"calls": len(calls)}
+    for k in ("input", "output", "cache_read", "cache_write"):
+        out[k] = sum(c[k] for c in calls)
+    costs = [c["cost_usd"] for c in calls]
+    out["cost_usd"] = round(sum(costs), 4) if costs and None not in costs else None
+    return out
 
 
 def backend() -> str:
@@ -77,12 +128,13 @@ def image_block(src: Union[str, bytes, np.ndarray], max_width: int = 768) -> dic
 
 
 def ask_json(cl, content: List[dict], schema: dict, system: Optional[Union[str, List[dict]]] = None,
-             max_tokens: int = 16000, effort: str = "medium") -> dict:
-    """One user turn -> JSON matching `schema`. `system` may be a list of blocks (for caching)."""
+             max_tokens: int = 16000, effort: str = "medium", usage: Optional[list] = None) -> dict:
+    """One user turn -> JSON matching `schema`. `system` may be a list of blocks (for caching).
+    The call's token usage (and list-price cost) is appended to `usage` if given, and to USAGE."""
     if backend() == "gemini":
-        return _ask_json_gemini(cl, content, schema, system, max_tokens, effort)
+        return _ask_json_gemini(cl, content, schema, system, max_tokens, effort, usage)
     if backend() == "qwen":
-        return _ask_json_qwen(cl, content, schema, system, max_tokens)
+        return _ask_json_qwen(cl, content, schema, system, max_tokens, usage)
     kwargs = {"system": system} if system else {}
     with cl.beta.messages.stream(
         model=MODEL,
@@ -94,6 +146,9 @@ def ask_json(cl, content: List[dict], schema: dict, system: Optional[Union[str, 
         **kwargs,
     ) as stream:
         response = stream.get_final_message()
+    u = response.usage
+    _record(usage, response.model, u.input_tokens, u.output_tokens,
+            getattr(u, "cache_read_input_tokens", 0), getattr(u, "cache_creation_input_tokens", 0))
     if response.stop_reason == "refusal":
         raise RuntimeError(f"Claude declined: {response.stop_details}")
     if response.stop_reason == "max_tokens":
@@ -117,7 +172,8 @@ def _gemini_parts(blocks: List[dict]) -> list:
     return parts
 
 
-def _ask_json_gemini(cl, content: List[dict], schema: dict, system, max_tokens: int, effort: str) -> dict:
+def _ask_json_gemini(cl, content: List[dict], schema: dict, system, max_tokens: int, effort: str,
+                     usage: Optional[list] = None) -> dict:
     from google.genai import types
     if isinstance(system, list):
         system = "\n\n".join(b["text"] for b in system)
@@ -129,6 +185,11 @@ def _ask_json_gemini(cl, content: List[dict], schema: dict, system, max_tokens: 
         thinking_config=types.ThinkingConfig(thinking_level=GEMINI_THINKING.get(effort, effort)),
     )
     response = cl.models.generate_content(model=GEMINI_MODEL, contents=_gemini_parts(content), config=config)
+    m = response.usage_metadata
+    if m is not None:  # thinking is billed as output; prompt_token_count includes the cached part
+        cached = m.cached_content_token_count or 0
+        _record(usage, GEMINI_MODEL, (m.prompt_token_count or 0) - cached,
+                (m.candidates_token_count or 0) + (m.thoughts_token_count or 0), cached)
     cand = response.candidates[0] if response.candidates else None
     reason = cand.finish_reason if cand else None
     if reason == types.FinishReason.MAX_TOKENS:
@@ -152,7 +213,8 @@ def _openai_parts(blocks: List[dict]) -> list:
     return parts
 
 
-def _ask_json_qwen(cl, content: List[dict], schema: dict, system, max_tokens: int, retries: int = 5) -> dict:
+def _ask_json_qwen(cl, content: List[dict], schema: dict, system, max_tokens: int,
+                   usage: Optional[list] = None, retries: int = 5) -> dict:
     import time
     if isinstance(system, list):
         system = "\n\n".join(b["text"] for b in system)
@@ -172,7 +234,10 @@ def _ask_json_qwen(cl, content: List[dict], schema: dict, system, max_tokens: in
         time.sleep(2 ** attempt)  # server still loading, or a transient 5xx
     if r.status_code != 200:
         raise RuntimeError(f"Qwen server {r.status_code}: {r.text[:500]}")
-    choice = r.json()["choices"][0]
+    reply = r.json()
+    u = reply.get("usage") or {}
+    _record(usage, QWEN_MODEL, u.get("prompt_tokens", 0), u.get("completion_tokens", 0))
+    choice = reply["choices"][0]
     if choice["finish_reason"] == "length":
         raise RuntimeError("Qwen hit max_tokens before finishing the JSON answer")
     return json.loads(choice["message"]["content"])

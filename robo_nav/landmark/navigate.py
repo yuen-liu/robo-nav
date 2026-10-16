@@ -33,7 +33,7 @@ from typing import Dict, List, Optional
 
 import requests
 
-from robo_nav.claude import ask_json, client as make_client, image_block, obj_schema
+from robo_nav.claude import ask_json, client as make_client, image_block, obj_schema, usage_summary
 from robo_nav.sim.nav import SimSession
 from robo_nav.sim.scene import load_objects, load_rooms, locate
 from robo_nav.sim.video import EpisodeRecorder, FloorPlan
@@ -85,6 +85,7 @@ class Episode:
         self.log: List[dict] = []
         self.t0 = time.monotonic()
         self.planner_s = 0.0  # time blocked on the planner API, robot idle; not charged to --timeout
+        self.usage: List[dict] = []  # planner token usage, one entry per call
         self.status: Dict = {"goal_label": goal, "goal_xy": (goal_obj["x"], goal_obj["y"]), "instruction": ""}
         self.min_dist = math.inf
         self.distance = 0.0
@@ -202,14 +203,15 @@ class Episode:
             content.append({"type": "text", "text": "Decide the next action."})
             asked = time.monotonic()
             try:
-                plan = await asyncio.to_thread(ask_json, cl, content, PLAN_SCHEMA, system, 16000, self.args.effort)
+                plan = await asyncio.to_thread(ask_json, cl, content, PLAN_SCHEMA, system, 16000, self.args.effort,
+                                               usage=self.usage)
             except Exception as exc:
                 self.planner_s += time.monotonic() - asked
                 raise PlannerError(repr(exc)) from exc
             latency = time.monotonic() - asked
             self.planner_s += latency
             calls += 1
-            self.event("plan", latency_s=round(latency, 1), where_am_i=plan["where_am_i"], action=plan["action"], instruction=plan["instruction"],
+            self.event("plan", latency_s=round(latency, 1), out_tokens=self.usage[-1]["output"], where_am_i=plan["where_am_i"], action=plan["action"], instruction=plan["instruction"],
                        plan=plan["plan"])
             if plan["action"] == "arrived":
                 return "claude_arrived"
@@ -239,7 +241,7 @@ class Episode:
                                                 and here["id"] == there["id"]),
                 "final_dist_m": round(final, 2), "min_dist_m": round(self.min_dist, 2),
                 "time_s": round(self.elapsed(), 1), "wall_s": round(self.wall(), 1),
-                "planner_s": round(self.planner_s, 1), "distance_m": round(self.distance, 2)}
+                "planner_s": round(self.planner_s, 1), "usage": usage_summary(self.usage), "distance_m": round(self.distance, 2)}
 
 
 def pick_episodes(args, objects, rooms) -> List[dict]:
@@ -322,11 +324,26 @@ async def run(args):
     summarize(args.out)
 
 
+def print_cost(eps: List[dict]):
+    """Planner token usage and list-price cost over the episodes that logged it (incl. outages)."""
+    used = [e["usage"] for e in eps if e.get("usage", {}).get("calls")]
+    if not used:
+        return
+    calls = sum(u["calls"] for u in used)
+    tok = {k: sum(u[k] for u in used) for k in ("input", "output", "cache_read", "cache_write")}
+    costs = [u["cost_usd"] for u in used]
+    cost = f"${sum(costs):.2f} total, ${sum(costs) / len(used):.3f}/episode, ${sum(costs) / calls:.4f}/call" \
+        if None not in costs else "cost unknown (model not in PRICES)"
+    print(f"\nplanner usage over {len(used)} episodes, {calls} calls: {tok['input']:,} in, {tok['output']:,} out, "
+          f"{tok['cache_read']:,} cache read, {tok['cache_write']:,} cache write -> {cost}")
+
+
 def summarize(run_dir: str):
     from glob import glob
     eps = [json.load(open(p)) for p in sorted(glob(os.path.join(run_dir, "e*.json")))]
     if not eps:
         return
+    print_cost(eps)
     outages = [e for e in eps if e["ended"] == "planner_error"]
     eps = [e for e in eps if e["ended"] != "planner_error"]
     if outages:
