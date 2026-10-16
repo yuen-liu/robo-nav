@@ -230,7 +230,7 @@ class GoatEnv:
     def score(self, subtask: int) -> dict:
         assert self.sub.get("k") == subtask, f"score({subtask}) without begin({subtask})"
         dtg = self._geodesic(self.pose()["position"], self.sub["points"])
-        success = dtg <= SUCCESS_DISTANCE
+        success = dtg < SUCCESS_DISTANCE  # strict, as GoatSuccess
         geo, path = self.sub["geo"], self.sub["path"]
         spl = float(success) * geo / max(path, geo) if math.isfinite(geo) and geo > 0 else float(success)
         return {"success": bool(success), "distance_to_goal": dtg, "spl": spl, "path_m": path,
