@@ -14,3 +14,6 @@ tm4_data 6
 sim_data/
 
 .venv*/
+
+# Matterport3D download script: personal, issued under the MP terms of use; never commit (public repo)
+download_mp.py
