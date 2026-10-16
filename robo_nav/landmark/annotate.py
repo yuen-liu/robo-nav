@@ -21,7 +21,7 @@ import os
 from glob import glob
 from typing import List
 
-from robo_nav.claude import ask_json, client as make_client, image_block, obj_schema
+from robo_nav.claude import ask_json, client as make_client, image_block, obj_schema, usage_summary
 
 NO_ROOMS = ("Never name rooms or room types (no 'kitchen', 'bedroom', 'bathroom', 'living room', "
             "'office', 'hallway'): describe only physical things -- furniture, appliances, objects, "
@@ -185,6 +185,10 @@ def main():
     with open(os.path.join(args.out, "landmark_map.md"), "w") as f:
         f.write(to_markdown(m))
     print(f"{len(m['landmarks'])} landmarks, {len(m['connections'])} connections -> {args.out}/landmark_map.md")
+    usage = usage_summary()  # this run only: chunks cached by an earlier run aren't re-asked
+    with open(os.path.join(args.out, "usage.json"), "w") as f:
+        json.dump(usage, f, indent=1)
+    print(f"usage: {usage}")
 
 
 if __name__ == "__main__":

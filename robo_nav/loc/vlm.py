@@ -19,7 +19,7 @@ from typing import Dict, List
 
 import numpy as np
 
-from robo_nav.claude import ask_json as ask, backend, client as make_client, image_block, model_name
+from robo_nav.claude import ask_json as ask, backend, client as make_client, image_block, model_name, usage_summary
 
 def _tag() -> str:
     """Cache-name suffix so other backends' answers never mix with the existing (Claude) caches,
@@ -121,4 +121,5 @@ def evaluate_vlm(ds: dict, method: str, workers: int = 8) -> List[dict]:
         one(0)
     with ThreadPoolExecutor(workers) as pool:
         recs = list(pool.map(one, range(n)))
+    print(f"[{method}] VLM usage (new queries only; cached answers are free): {usage_summary()}")
     return [{"room": r["room"], "xy": None, "yaw": None, "conf": r["conf"]} for r in recs]
