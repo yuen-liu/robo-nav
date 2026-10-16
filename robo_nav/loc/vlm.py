@@ -19,11 +19,14 @@ from typing import Dict, List
 
 import numpy as np
 
-from robo_nav.claude import ask_json as ask, backend, client as make_client, image_block
+from robo_nav.claude import ask_json as ask, backend, client as make_client, image_block, model_name
 
 def _tag() -> str:
-    """Cache-name suffix so Gemini answers never mix with the existing (Claude) caches."""
-    return "" if backend() == "claude" else f"_{backend()}"
+    """Cache-name suffix so other backends' answers never mix with the existing (Claude) caches,
+    or with each other's models (e.g. gemini-3.8-flash vs gemini-4-argon)."""
+    if backend() == "claude":
+        return ""
+    return f"_{backend()}_" + "".join(c if c.isalnum() else "-" for c in model_name().split("/")[-1])
 
 
 def exemplars(ds: dict, per_room: int) -> Dict[str, List[str]]:
