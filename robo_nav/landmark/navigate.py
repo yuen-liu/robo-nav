@@ -33,7 +33,7 @@ from typing import Dict, List, Optional
 
 import requests
 
-from robo_nav.claude import ask_json, client as make_client, image_block, obj_schema, usage_summary
+from robo_nav.claude import ask_json, client as make_client, image_block, obj_schema, print_cost, usage_summary
 from robo_nav.sim.nav import SimSession
 from robo_nav.sim.scene import load_objects, load_rooms, locate
 from robo_nav.sim.video import EpisodeRecorder, FloorPlan
@@ -322,20 +322,6 @@ async def run(args):
                 print(f"   -> {'SUCCESS' if score['success'] else 'miss'}: final {score['final_dist_m']} m "
                       f"(closest {score['min_dist_m']} m), {score['time_s']} s, ended={ended}", flush=True)
     summarize(args.out)
-
-
-def print_cost(eps: List[dict]):
-    """Planner token usage and list-price cost over the episodes that logged it (incl. outages)."""
-    used = [e["usage"] for e in eps if e.get("usage", {}).get("calls")]
-    if not used:
-        return
-    calls = sum(u["calls"] for u in used)
-    tok = {k: sum(u[k] for u in used) for k in ("input", "output", "cache_read", "cache_write")}
-    costs = [u["cost_usd"] for u in used]
-    cost = f"${sum(costs):.2f} total, ${sum(costs) / len(used):.3f}/episode, ${sum(costs) / calls:.4f}/call" \
-        if None not in costs else "cost unknown (model not in PRICES)"
-    print(f"\nplanner usage over {len(used)} episodes, {calls} calls: {tok['input']:,} in, {tok['output']:,} out, "
-          f"{tok['cache_read']:,} cache read, {tok['cache_write']:,} cache write -> {cost}")
 
 
 def summarize(run_dir: str):
