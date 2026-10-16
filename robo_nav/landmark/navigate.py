@@ -45,6 +45,10 @@ GOALS = {  # what the robot is asked for -> sim object type (each appears once i
     "laundry hamper": "LaundryHamper",
     "side table": "SideTable",
 }
+class PlannerError(RuntimeError):
+    """The planner API failed (after the client's retries): an outage, not a navigation miss."""
+
+
 SUCCESS_RADIUS = 1.5  # m from the goal object's center, and in the same room
 
 PLAN_SCHEMA = obj_schema({
@@ -197,7 +201,11 @@ class Episode:
                 content += [{"type": "text", "text": "Current camera view:"}, image_block(views[0])]
             content.append({"type": "text", "text": "Decide the next action."})
             asked = time.monotonic()
-            plan = await asyncio.to_thread(ask_json, cl, content, PLAN_SCHEMA, system, 16000, self.args.effort)
+            try:
+                plan = await asyncio.to_thread(ask_json, cl, content, PLAN_SCHEMA, system, 16000, self.args.effort)
+            except Exception as exc:
+                self.planner_s += time.monotonic() - asked
+                raise PlannerError(repr(exc)) from exc
             latency = time.monotonic() - asked
             self.planner_s += latency
             calls += 1
@@ -278,8 +286,8 @@ async def run(args):
             for mode in args.modes:
                 name = f"e{i:02d}_{ep['goal'].replace(' ', '_')}_{mode}"
                 path = os.path.join(args.out, name + ".json")
-                if os.path.exists(path):
-                    continue
+                if os.path.exists(path) and json.load(open(path))["ended"] != "planner_error":
+                    continue  # done; planner outages are retried on rerun
                 print(f"== {name}: start q{ep['start']['query_idx']} in {ep['start']['room']} -> {ep['goal']}", flush=True)
                 res = await sim.command({"type": "set_pose", **{k: ep["start"][k] for k in ("x", "y", "yaw")}})
                 if not res.get("ok"):
@@ -296,6 +304,9 @@ async def run(args):
                         ended = await e.run_landmark(cl, system, unstick=mode == "landmark")
                     else:
                         ended = await e.run_zeroshot(retry=mode == "zeroshot_retry")
+                except PlannerError as exc:  # API outage: reported apart from navigation misses
+                    e.event("planner_error", error=str(exc))
+                    ended = "planner_error"
                 except Exception as exc:  # keep the batch going; the episode is recorded as an error
                     e.event("error", error=repr(exc))
                     ended = "error"
@@ -316,6 +327,11 @@ def summarize(run_dir: str):
     eps = [json.load(open(p)) for p in sorted(glob(os.path.join(run_dir, "e*.json")))]
     if not eps:
         return
+    outages = [e for e in eps if e["ended"] == "planner_error"]
+    eps = [e for e in eps if e["ended"] != "planner_error"]
+    if outages:
+        print(f"\n{len(outages)} episode(s) ended by a planner API failure, left out below: "
+              + ", ".join(f"{e['mode']}/{e['goal']}" for e in outages))
     print("\nmode             success   median final dist   median closest   median time")
     for mode in sorted({e["mode"] for e in eps}):
         g = [e for e in eps if e["mode"] == mode]
