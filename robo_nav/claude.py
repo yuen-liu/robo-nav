@@ -1,13 +1,18 @@
 """
 Shared VLM calls for robo-nav: images in, schema-validated JSON out.
 
-Backend is picked by ROBO_NAV_VLM: "claude" (default) or "gemini". Callers always build
-Anthropic-style content blocks; the Gemini path translates them.
+Backend is picked by ROBO_NAV_VLM: "claude" (default), "gemini" or "qwen". Callers always build
+Anthropic-style content blocks; the Gemini and Qwen paths translate them.
 
   claude  ANTHROPIC_API_KEY or an `ant auth login` profile. Requests opt into server-side
           fallback, so a safety decline is retried on Anthropic's recommended fallback model
           instead of failing the experiment.
   gemini  GEMINI_API_KEY (or GOOGLE_API_KEY). Model from ROBO_NAV_GEMINI_MODEL.
+  qwen    a local vLLM OpenAI-compatible server (no API key, no API bill), e.g.
+            vllm serve Qwen/Qwen3-VL-8B-Instruct --port 8000 --max-model-len 65536 \
+                --limit-mm-per-prompt '{"image": 40}'
+          URL from ROBO_NAV_QWEN_URL, model from ROBO_NAV_QWEN_MODEL (must match what is served).
+          JSON is enforced with vLLM structured outputs; --effort is ignored.
 """
 
 import base64
@@ -17,22 +22,33 @@ import os
 from typing import List, Optional, Union
 
 import numpy as np
+import requests
 
 MODEL = "claude-opus-5-5"
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
 GEMINI_MODEL = os.environ.get("ROBO_NAV_GEMINI_MODEL", "gemini-4-argon")
 # Gemini thinking levels are low/medium/high; Claude's xhigh/max map to high.
 GEMINI_THINKING = {"low": "low", "medium": "medium", "high": "high", "xhigh": "high", "max": "high"}
+QWEN_URL = os.environ.get("ROBO_NAV_QWEN_URL", "http://127.0.0.1:8000/v1")
+QWEN_MODEL = os.environ.get("ROBO_NAV_QWEN_MODEL", "Qwen/Qwen3-VL-8B-Instruct")
+# Prompt + max_tokens must fit the server's --max-model-len; callers' 32k/64k caps are for Claude.
+QWEN_MAX_TOKENS = int(os.environ.get("ROBO_NAV_QWEN_MAX_TOKENS", "16384"))
 
 
 def backend() -> str:
     b = os.environ.get("ROBO_NAV_VLM", "claude").lower()
-    if b not in ("claude", "gemini"):
-        raise ValueError(f"ROBO_NAV_VLM must be claude or gemini, got {b!r}")
+    if b not in ("claude", "gemini", "qwen"):
+        raise ValueError(f"ROBO_NAV_VLM must be claude, gemini or qwen, got {b!r}")
     return b
 
 
+def model_name() -> str:
+    return {"claude": MODEL, "gemini": GEMINI_MODEL, "qwen": QWEN_MODEL}[backend()]
+
+
 def client():
+    if backend() == "qwen":
+        return requests.Session()
     if backend() == "gemini":
         from google import genai
         from google.genai import types
@@ -65,6 +81,8 @@ def ask_json(cl, content: List[dict], schema: dict, system: Optional[Union[str, 
     """One user turn -> JSON matching `schema`. `system` may be a list of blocks (for caching)."""
     if backend() == "gemini":
         return _ask_json_gemini(cl, content, schema, system, max_tokens, effort)
+    if backend() == "qwen":
+        return _ask_json_qwen(cl, content, schema, system, max_tokens)
     kwargs = {"system": system} if system else {}
     with cl.beta.messages.stream(
         model=MODEL,
@@ -118,6 +136,46 @@ def _ask_json_gemini(cl, content: List[dict], schema: dict, system, max_tokens: 
     if cand is None or reason != types.FinishReason.STOP:
         raise RuntimeError(f"Gemini declined: finish_reason={reason} feedback={response.prompt_feedback}")
     return json.loads(response.text)
+
+
+def _openai_parts(blocks: List[dict]) -> list:
+    """Anthropic text/image blocks -> OpenAI chat content parts (cache_control dropped)."""
+    parts = []
+    for b in blocks:
+        if b["type"] == "text":
+            parts.append({"type": "text", "text": b["text"]})
+        elif b["type"] == "image":
+            src = b["source"]
+            parts.append({"type": "image_url", "image_url": {"url": f"data:{src['media_type']};base64,{src['data']}"}})
+        else:
+            raise ValueError(f"unsupported content block for Qwen: {b['type']}")
+    return parts
+
+
+def _ask_json_qwen(cl, content: List[dict], schema: dict, system, max_tokens: int, retries: int = 5) -> dict:
+    import time
+    if isinstance(system, list):
+        system = "\n\n".join(b["text"] for b in system)
+    messages = ([{"role": "system", "content": system}] if system else []) + \
+        [{"role": "user", "content": _openai_parts(content)}]
+    body = {"model": QWEN_MODEL, "messages": messages, "max_tokens": min(max_tokens, QWEN_MAX_TOKENS),
+            "temperature": 0.0,
+            "response_format": {"type": "json_schema", "json_schema": {"name": "answer", "schema": schema, "strict": True}}}
+    for attempt in range(retries):
+        try:
+            r = cl.post(f"{QWEN_URL}/chat/completions", json=body, timeout=600)
+            if r.status_code < 500:
+                break
+        except requests.ConnectionError:
+            if attempt == retries - 1:
+                raise
+        time.sleep(2 ** attempt)  # server still loading, or a transient 5xx
+    if r.status_code != 200:
+        raise RuntimeError(f"Qwen server {r.status_code}: {r.text[:500]}")
+    choice = r.json()["choices"][0]
+    if choice["finish_reason"] == "length":
+        raise RuntimeError("Qwen hit max_tokens before finishing the JSON answer")
+    return json.loads(choice["message"]["content"])
 
 
 def obj_schema(properties: dict, required: Optional[list] = None) -> dict:
