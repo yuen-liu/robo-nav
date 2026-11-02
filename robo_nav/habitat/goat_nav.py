@@ -1,6 +1,7 @@
 """
 GOAT-Bench with LightNav-0 driving: zero-shot LightNav vs the landmark planner (Claude or Gemini,
-ROBO_NAV_VLM) handing it one landmark instruction at a time.
+ROBO_NAV_VLM) handing it one landmark instruction at a time, plus VLM-only baselines that drive the
+robot themselves with coarse moves.
 
 Runs in LightNav-0's venv: the policy is built in-process exactly like `lightnav-eval-habitat`
 (vLLM engine, TrajVocabVLNCEPolicy, velocity_control at dt = 1 s); the scene runs in
@@ -8,13 +9,15 @@ Runs in LightNav-0's venv: the policy is built in-process exactly like `lightnav
 
 GOAT episodes are lifelong: subtasks run back to back from wherever the last one ended. A subtask
 ends when the robot stops for good (zeroshot: LightNav's own STOP; landmark: the planner says
-'arrived' or 'give_up') or runs out of --subtask_steps policy steps, and is scored by the env at
+'arrived' or 'give_up'; vlm/vlm_map: the VLM says 'stop' or 'give_up') or runs out of --subtask_steps policy steps, and is scored by the env at
 that pose (GT, 0.25 m to a goal view point). Image-goal subtasks are skipped for now (counted as
 skipped, the robot stays put).
 
 Modes:
   zeroshot   LightNav-0 alone with the subtask text ("Find the bed." / the language description)
   landmark   planner + the scene's landmark map (annotated from its tour) -> LightNav-0
+  vlm        the VLM alone: camera views in, 'forward x m' / 'turn y deg' out, no map, no LightNav
+  vlm_map    as vlm, plus the scene's landmark map
 
 Step budget is policy steps (sim time), so planner API latency never costs the robot anything.
 
@@ -32,10 +35,35 @@ from typing import Dict, List, Optional
 
 import numpy as np
 
-from robo_nav.claude import ask_json, client as make_client, image_block, print_cost, usage_summary
+from robo_nav.claude import ask_json, client as make_client, image_block, obj_schema, print_cost, usage_summary
 from robo_nav.landmark.planner import PLAN_SCHEMA, planner_system
 
 CAMERA = "about 0.9 m above the floor"
+
+DIRECT_SCHEMA = obj_schema({
+    "observation": {"type": "string", "description": "what the robot camera shows right now"},
+    "where_am_i": {"type": "string", "description": "position relative to landmarks seen so far (or in the map), or 'unsure'"},
+    "action": {"type": "string", "enum": ["forward", "turn", "look_around", "stop", "give_up"]},
+    "amount": {"type": "number", "description": "meters for forward (0.25 to 3), degrees for turn (+ = left), 0 otherwise"},
+})
+
+
+def direct_system(map_md: Optional[str]) -> List[dict]:
+    """System prompt for the VLM-only modes; arrival wording matches planner_system for a fair comparison."""
+    text = (
+        f"You drive a wheeled robot through a building to find a goal. Its camera is {CAMERA}, faces "
+        "forward and sees about 120 degrees. You never know its coordinates; work out where it is from what "
+        "the camera shows" + (" and the landmark map below, which you wrote earlier from a video of a walk "
+                              "through this building." if map_md else ".") + "\n\n"
+        "Each turn, pick one move. 'forward' drives straight ahead `amount` meters (0.25 to 3); it stops "
+        "early if something blocks it. 'turn' turns in place `amount` degrees, positive = left "
+        "(counter-clockwise), negative = right, up to 180. Then you see a new camera view.\n\n"
+        "Use 'look_around' to get eight views (45 degrees apart) when you cannot tell where the robot is, "
+        "'stop' only when the goal is right in front of the robot (within about a meter), and 'give_up' "
+        "only if the goal cannot be found.")
+    if map_md:
+        text += "\n\n# Landmark map\n\n" + map_md
+    return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
 
 
 class PlannerError(RuntimeError):
@@ -92,6 +120,7 @@ class Run:
         self.planner_s = 0.0
         self.usage: List[dict] = []  # planner token usage, one entry per call
         self.steps = 0  # policy/env steps this subtask
+        self.last_latency = 0.0  # s, the latest planner call
 
     def event(self, kind: str, **kw):
         self.log.append({"event": kind, **kw})
@@ -137,30 +166,52 @@ class Run:
     def zeroshot(self, text: str) -> str:
         return self.drive(text, self.args.subtask_steps, stall=False)  # as lightnav-eval-habitat: no stall rule
 
+    def forward(self, meters: float) -> str:
+        """Drive straight ahead at full speed; 'blocked' after 2 collided steps in a row."""
+        lo, hi = self.info["lin_vel_range"]
+        alo, ahi = self.info["ang_vel_range"]
+        dt = self.info["habitat_time_step"]
+        ang_raw = 2 * (0.0 - alo) / (ahi - alo) - 1  # 0 deg/s
+        left, stuck = meters, 0
+        while left >= 0.05 and self.steps < self.args.subtask_steps:  # slower than ~0.025 m/s would read as STOP
+            v = min(left / dt, hi)
+            info = self.step({"action": "velocity_control",
+                              "action_args": {"linear_velocity": 2 * (v - lo) / (hi - lo) - 1, "angular_velocity": ang_raw}})
+            left -= v * dt
+            stuck = stuck + 1 if info["collided"] else 0
+            if stuck >= 2:
+                return "blocked"
+        return "done"
+
+    def ask(self, cl, system, schema: dict, text: str, history: List[str], views: List[bytes]) -> dict:
+        """One planner call: goal, step history and the current view(s) -> JSON matching `schema`."""
+        content = [{"type": "text", "text": f"Goal: {text}"}]
+        if history:
+            content.append({"type": "text", "text": "Steps so far:\n" + "\n".join(history)})
+        if len(views) > 1:
+            content.append({"type": "text", "text": "Look-around: view 0 is the current heading; each next view is 45 degrees further left (counter-clockwise). After the look-around the robot faces view 0 again."})
+            for v, img in enumerate(views):
+                content += [{"type": "text", "text": f"view {v}"}, image_block(img)]
+        else:
+            content += [{"type": "text", "text": "Current camera view:"}, image_block(views[0])]
+        content.append({"type": "text", "text": "Decide the next action."})
+        asked = time.monotonic()
+        try:
+            return ask_json(cl, content, schema, system, 16000, self.args.effort, usage=self.usage)
+        except Exception as exc:
+            raise PlannerError(repr(exc)) from exc
+        finally:
+            self.planner_s += time.monotonic() - asked
+            self.last_latency = time.monotonic() - asked
+
     def landmark(self, cl, system, text: str) -> str:
         history: List[str] = []
         views = self.look_around()
         for _ in range(self.args.max_planner_calls):
             if self.steps >= self.args.subtask_steps:
                 return "step_limit"
-            content = [{"type": "text", "text": f"Goal: {text}"}]
-            if history:
-                content.append({"type": "text", "text": "Steps so far:\n" + "\n".join(history)})
-            if len(views) > 1:
-                content.append({"type": "text", "text": "Look-around: view 0 is the current heading; each next view is 45 degrees further left (counter-clockwise). After the look-around the robot faces view 0 again."})
-                for v, img in enumerate(views):
-                    content += [{"type": "text", "text": f"view {v}"}, image_block(img)]
-            else:
-                content += [{"type": "text", "text": "Current camera view:"}, image_block(views[0])]
-            content.append({"type": "text", "text": "Decide the next action."})
-            asked = time.monotonic()
-            try:
-                plan = ask_json(cl, content, PLAN_SCHEMA, system, 16000, self.args.effort, usage=self.usage)
-            except Exception as exc:
-                raise PlannerError(repr(exc)) from exc
-            finally:
-                self.planner_s += time.monotonic() - asked
-            self.event("plan", latency_s=round(time.monotonic() - asked, 1), out_tokens=self.usage[-1]["output"], where_am_i=plan["where_am_i"],
+            plan = self.ask(cl, system, PLAN_SCHEMA, text, history, views)
+            self.event("plan", latency_s=round(self.last_latency, 1), out_tokens=self.usage[-1]["output"], where_am_i=plan["where_am_i"],
                        action=plan["action"], instruction=plan["instruction"])
             if plan["action"] in ("arrived", "give_up"):
                 return f"planner_{plan['action']}"
@@ -176,21 +227,49 @@ class Run:
             views = [jpeg(self.obs["rgb"])]
         return "planner_limit"
 
+    def direct(self, cl, system, text: str) -> str:
+        """VLM-only baseline: the VLM picks every move itself (no LightNav)."""
+        history: List[str] = []
+        views = self.look_around()
+        for _ in range(self.args.max_direct_calls):
+            if self.steps >= self.args.subtask_steps:
+                return "step_limit"
+            plan = self.ask(cl, system, DIRECT_SCHEMA, text, history, views)
+            self.event("plan", latency_s=round(self.last_latency, 1), out_tokens=self.usage[-1]["output"], where_am_i=plan["where_am_i"],
+                       action=plan["action"], amount=plan["amount"])
+            if plan["action"] in ("stop", "give_up"):
+                return f"vlm_{plan['action']}"
+            if plan["action"] == "look_around":
+                history.append(f"{len(history) + 1}. (looked around)")
+                views = self.look_around()
+                continue
+            if plan["action"] == "forward":
+                m = min(max(float(plan["amount"]), 0.25), 3.0)
+                how = self.forward(m)
+                history.append(f"{len(history) + 1}. forward {m:.2f} m -> {how}; you had seen: {plan['observation']}")
+            else:
+                deg = min(max(float(plan["amount"]), -180.0), 180.0)
+                self.turn(deg)
+                history.append(f"{len(history) + 1}. turn {deg:+.0f} deg; you had seen: {plan['observation']}")
+            views = [jpeg(self.obs["rgb"])]
+        return "vlm_limit"
+
 
 def main():
-    parser = argparse.ArgumentParser(description="GOAT-Bench: zero-shot LightNav-0 vs landmark planner + LightNav-0")
+    parser = argparse.ArgumentParser(description="GOAT-Bench: zero-shot LightNav-0 vs landmark planner + LightNav-0 vs VLM-only")
     parser.add_argument("--model_path", required=True)
     parser.add_argument("--backend", default="vllm_local")
     parser.add_argument("--gpu_memory_utilization", type=float, default=0.65)
     parser.add_argument("--env", default="tcp://127.0.0.1:5560")
     parser.add_argument("--maps", help="Dir of landmark.annotate outputs, one per scene: <maps>/<scene>/landmark_map.md")
     parser.add_argument("--episodes", type=int, nargs="+", required=True, help="Episode indices in the env's split")
-    parser.add_argument("--modes", nargs="+", default=["zeroshot", "landmark"], choices=["zeroshot", "landmark"])
+    parser.add_argument("--modes", nargs="+", default=["zeroshot", "landmark"], choices=["zeroshot", "landmark", "vlm", "vlm_map"])
     parser.add_argument("--out", required=True)
     parser.add_argument("--subtask_steps", type=int, default=500, help="Policy steps per subtask (dt = 1 s)")
     parser.add_argument("--instruction_steps", type=int, default=60, help="Policy steps per planner instruction")
     parser.add_argument("--stall_steps", type=int, default=8, help="End an instruction after this many blocked steps")
     parser.add_argument("--max_planner_calls", type=int, default=20, help="Per subtask")
+    parser.add_argument("--max_direct_calls", type=int, default=60, help="VLM calls per subtask in vlm/vlm_map")
     parser.add_argument("--effort", default="medium")
     args = parser.parse_args()
     os.makedirs(args.out, exist_ok=True)
@@ -207,12 +286,17 @@ def main():
                 obs, info = reply["obs"], reply["info"]
                 scene = os.path.basename(os.path.normpath(info["scene_id"])).split(".")[0]
                 print(f"== ep {idx} ({scene}) {mode}: {len(info['subtasks'])} subtasks", flush=True)
-                if policy is None:
+                if policy is None and mode in ("zeroshot", "landmark"):
                     policy = build_policy(args, info)
-                system = None
-                if mode == "landmark":
+                map_md, system = None, None
+                if mode in ("landmark", "vlm_map"):
                     with open(os.path.join(args.maps, scene, "landmark_map.md")) as f:
-                        system = planner_system(f.read(), CAMERA)
+                        map_md = f.read()
+                if mode == "landmark":
+                    system = planner_system(map_md, CAMERA)
+                elif mode in ("vlm", "vlm_map"):
+                    system = direct_system(map_md)
+                if mode != "zeroshot":
                     cl = cl or make_client()
                 run = Run(env, policy, args, obs, info)
                 results, ended_ep = [], "done"
@@ -224,7 +308,12 @@ def main():
                     geo = env.call("begin", {"subtask": k})["geodesic_m"]
                     run.event("subtask", k=k, type=sub["type"], text=sub["text"], geodesic_m=round(geo, 2))
                     try:
-                        ended = run.zeroshot(sub["text"]) if mode == "zeroshot" else run.landmark(cl, system, sub["text"])
+                        if mode == "zeroshot":
+                            ended = run.zeroshot(sub["text"])
+                        elif mode == "landmark":
+                            ended = run.landmark(cl, system, sub["text"])
+                        else:
+                            ended = run.direct(cl, system, sub["text"])
                     except PlannerError as exc:
                         run.event("planner_error", error=str(exc))
                         ended_ep = "planner_error"
@@ -246,7 +335,10 @@ def main():
 def summarize(run_dir: str):
     from glob import glob
     eps = [json.load(open(p)) for p in sorted(glob(os.path.join(run_dir, "ep*.json")))]
-    print_cost(eps)
+    for mode in sorted({e["mode"] for e in eps}):
+        if any(e.get("usage", {}).get("calls") for e in eps if e["mode"] == mode):
+            print(f"\n[{mode}]", end="")
+            print_cost([e for e in eps if e["mode"] == mode])
     outages = [e for e in eps if e["ended"] == "planner_error"]
     if outages:
         print(f"\n{len(outages)} episode(s) cut short by a planner API failure, left out below")
