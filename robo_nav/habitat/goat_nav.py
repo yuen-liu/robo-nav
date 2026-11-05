@@ -36,7 +36,7 @@ from typing import Dict, List, Optional
 import numpy as np
 
 from robo_nav.claude import ask_json, client as make_client, image_block, obj_schema, print_cost, usage_summary
-from robo_nav.landmark.planner import PLAN_SCHEMA, planner_system
+from robo_nav.landmark.planner import ARRIVE, PLAN_SCHEMA, planner_system
 
 CAMERA = "about 0.9 m above the floor"
 
@@ -48,7 +48,7 @@ DIRECT_SCHEMA = obj_schema({
 })
 
 
-def direct_system(map_md: Optional[str]) -> List[dict]:
+def direct_system(map_md: Optional[str], arrive: str = "old") -> List[dict]:
     """System prompt for the VLM-only modes; arrival wording matches planner_system for a fair comparison."""
     text = (
         f"You drive a wheeled robot through a building to find a goal. Its camera is {CAMERA}, faces "
@@ -59,8 +59,7 @@ def direct_system(map_md: Optional[str]) -> List[dict]:
         "early if something blocks it. 'turn' turns in place `amount` degrees, positive = left "
         "(counter-clockwise), negative = right, up to 180. Then you see a new camera view.\n\n"
         "Use 'look_around' to get eight views (45 degrees apart) when you cannot tell where the robot is, "
-        "'stop' only when the goal is right in front of the robot (within about a meter), and 'give_up' "
-        "only if the goal cannot be found.")
+        f"'stop' only when {ARRIVE[arrive]}, and 'give_up' only if the goal cannot be found.")
     if map_md:
         text += "\n\n# Landmark map\n\n" + map_md
     return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
@@ -271,6 +270,8 @@ def main():
     parser.add_argument("--max_planner_calls", type=int, default=20, help="Per subtask")
     parser.add_argument("--max_direct_calls", type=int, default=60, help="VLM calls per subtask in vlm/vlm_map")
     parser.add_argument("--effort", default="medium")
+    parser.add_argument("--arrive_prompt", default="old", choices=sorted(ARRIVE),
+                        help="When the planner/VLM may stop (landmark.planner.ARRIVE); 'old' = the first val_unseen run")
     args = parser.parse_args()
     os.makedirs(args.out, exist_ok=True)
 
@@ -293,9 +294,9 @@ def main():
                     with open(os.path.join(args.maps, scene, "landmark_map.md")) as f:
                         map_md = f.read()
                 if mode == "landmark":
-                    system = planner_system(map_md, CAMERA)
+                    system = planner_system(map_md, CAMERA, args.arrive_prompt)
                 elif mode in ("vlm", "vlm_map"):
-                    system = direct_system(map_md)
+                    system = direct_system(map_md, args.arrive_prompt)
                 if mode != "zeroshot":
                     cl = cl or make_client()
                 run = Run(env, policy, args, obs, info)
@@ -323,7 +324,7 @@ def main():
                     results.append({"subtask": k, **sub, "ended": ended, "steps": run.steps, **score})
                     print(f"   -> subtask {k} {sub['type']}: {'SUCCESS' if score['success'] else 'miss'} "
                           f"{score['distance_to_goal']:.2f} m, SPL {score['spl']:.2f}, {run.steps} steps, {ended}", flush=True)
-                out = {"episode": idx, "scene": scene, "mode": mode, "ended": ended_ep,
+                out = {"episode": idx, "scene": scene, "mode": mode, "arrive_prompt": args.arrive_prompt, "ended": ended_ep,
                        "planner_s": round(run.planner_s, 1), "usage": usage_summary(run.usage), "subtasks": results, "log": run.log}
                 with open(path, "w") as f:
                     json.dump(out, f, indent=1, default=float)

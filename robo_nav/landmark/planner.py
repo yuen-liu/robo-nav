@@ -12,8 +12,16 @@ PLAN_SCHEMA = obj_schema({
     "plan": {"type": "array", "items": {"type": "string"}, "description": "remaining landmark steps after this one"},
 })
 
+# When the planner may declare arrival. 'old' is the wording of the first GOAT val_unseen run; 'new' aims
+# at GOAT's success zone (0.25 m from a view point, i.e. close to the goal with it in view).
+ARRIVE = {
+    "old": "the goal is right in front of the robot (within about a meter)",
+    "new": "the robot is right next to the goal: about an arm's length away, facing it, with the goal "
+           "clearly in view in the center of the camera image",
+}
 
-def planner_system(map_md: str, camera: str = "about 20 cm above the floor") -> List[dict]:
+
+def planner_system(map_md: str, camera: str = "about 20 cm above the floor", arrive: str = "old") -> List[dict]:
     text = (
         "You guide a small wheeled robot through a building using only landmarks. Its camera is "
         f"{camera} and faces forward. You never know its coordinates; work out where it is "
@@ -26,6 +34,6 @@ def planner_system(map_md: str, camera: str = "about 20 cm above the floor") -> 
         "stops when it thinks the instruction is done, then you see a new camera view.\n\n"
         "Rules: describe only physical things -- furniture, appliances, doors, wall corners, colors. Never "
         "name rooms or room types. Use action 'look_around' to get eight views (45 degrees apart) when you "
-        "cannot tell where the robot is, 'arrived' only when the goal is right in front of the robot "
-        "(within about a meter), and 'give_up' only if the goal cannot be found.\n\n# Landmark map\n\n" + map_md)
+        f"cannot tell where the robot is, 'arrived' only when {ARRIVE[arrive]}, and 'give_up' only if the "
+        "goal cannot be found.\n\n# Landmark map\n\n" + map_md)
     return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]

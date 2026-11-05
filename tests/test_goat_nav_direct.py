@@ -88,6 +88,14 @@ class TestDirect(unittest.TestCase):
         self.assertNotIn("Landmark map", goat_nav.direct_system(None)[0]["text"])
         self.assertIn("# Landmark map\n\nfridge", goat_nav.direct_system("fridge")[0]["text"])
 
+    def test_arrive_prompt(self):
+        from robo_nav.landmark.planner import planner_system
+        old = planner_system("m", goat_nav.CAMERA)[0]["text"]
+        self.assertIn("'arrived' only when the goal is right in front of the robot (within about a meter), and", old)
+        self.assertEqual(old, planner_system("m", goat_nav.CAMERA, "old")[0]["text"])
+        self.assertIn("arm's length", planner_system("m", goat_nav.CAMERA, "new")[0]["text"])
+        self.assertIn("'stop' only when the robot is right next to the goal", goat_nav.direct_system(None, "new")[0]["text"])
+
 
 if __name__ == "__main__":
     unittest.main()
