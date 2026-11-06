@@ -154,6 +154,7 @@ class GoatEnv:
             ok = self.sim.recompute_navmesh(self.sim.pathfinder, s)
             logger.info("rebaked navmesh for %s at cell_height=%.2f: ok=%s", scene, self.navmesh_cell_height, ok)
         self.scene = scene
+        self.noise, self.rng = None, np.random.default_rng(0)
         self.vel = habitat_sim.physics.VelocityControl()
         self.vel.controlling_lin_vel = self.vel.lin_vel_is_local = True
         self.vel.controlling_ang_vel = self.vel.ang_vel_is_local = True
@@ -175,7 +176,12 @@ class GoatEnv:
         return float(path.geodesic_distance) if self.sim.pathfinder.find_path(path) else math.inf
 
     # -- commands -------------------------------------------------------------------------------
-    def reset(self, episode: int) -> dict:
+    def reset(self, episode: int, noise: Optional[dict] = None) -> dict:
+        """`noise` (optional, off by default): {"lin": sd, "ang_deg": sd, "seed": int}, Gaussian actuation
+        noise on every moving step -- linear speed x (1 + N(0, lin)), turn rate + N(0, ang_deg) deg/s --
+        seeded per (seed, episode) so a noisy run is reproducible."""
+        self.noise = dict(noise) if noise else None
+        self.rng = np.random.default_rng([int((noise or {}).get("seed", 0)), episode])
         from habitat_sim.utils.common import quat_from_coeffs
         import habitat_sim
         self.ep = self.episodes[episode]
@@ -200,6 +206,9 @@ class GoatEnv:
         self.steps += 1
         if abs(lin) < MIN_ABS_LIN and abs(ang) < MIN_ABS_ANG:
             return {"obs": self._obs(), "info": {"stopped": True, "collided": False, "steps": self.steps}}
+        if self.noise:
+            lin = max(0.0, lin * (1 + self.rng.normal(0, self.noise.get("lin", 0.0))))
+            ang += self.rng.normal(0, self.noise.get("ang_deg", 0.0))
         # Same integration as habitat-lab's VelocityAction (no physics, sliding on the navmesh).
         agent = self.sim.get_agent(0)
         st = agent.get_state()

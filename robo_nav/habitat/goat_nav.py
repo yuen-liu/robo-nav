@@ -331,6 +331,9 @@ def main():
     parser.add_argument("--max_driver_calls", type=int, default=10, help="VLM driver calls per planner instruction in landmark_vlm")
     parser.add_argument("--max_direct_calls", type=int, default=60, help="VLM calls per subtask in vlm/vlm_map")
     parser.add_argument("--effort", default="medium")
+    parser.add_argument("--actuation_noise", type=float, nargs=2, metavar=("LIN_SD", "ANG_SD_DEG"),
+                        help="Gaussian actuation noise in the env: speed x (1 + N(0, LIN_SD)), turn rate + N(0, ANG_SD_DEG) deg/s; off by default")
+    parser.add_argument("--noise_seed", type=int, default=0)
     parser.add_argument("--arrive_prompt", default="old", choices=sorted(ARRIVE),
                         help="When the planner/VLM may stop (landmark.planner.ARRIVE); 'old' = the first val_unseen run")
     args = parser.parse_args()
@@ -344,7 +347,9 @@ def main():
                 path = os.path.join(args.out, f"ep{idx:04d}_{mode}.json")
                 if os.path.exists(path) and json.load(open(path))["ended"] != "planner_error":
                     continue
-                reply = env.call("reset", {"episode": idx})
+                noise = ({"lin": args.actuation_noise[0], "ang_deg": args.actuation_noise[1], "seed": args.noise_seed}
+                         if args.actuation_noise else None)
+                reply = env.call("reset", {"episode": idx, **({"noise": noise} if noise else {})})
                 obs, info = reply["obs"], reply["info"]
                 scene = os.path.basename(os.path.normpath(info["scene_id"])).split(".")[0]
                 print(f"== ep {idx} ({scene}) {mode}: {len(info['subtasks'])} subtasks", flush=True)
@@ -385,7 +390,7 @@ def main():
                     results.append({"subtask": k, **sub, "ended": ended, "steps": run.steps, **score})
                     print(f"   -> subtask {k} {sub['type']}: {'SUCCESS' if score['success'] else 'miss'} "
                           f"{score['distance_to_goal']:.2f} m, SPL {score['spl']:.2f}, {run.steps} steps, {ended}", flush=True)
-                out = {"episode": idx, "scene": scene, "mode": mode, "arrive_prompt": args.arrive_prompt, "ended": ended_ep,
+                out = {"episode": idx, "scene": scene, "mode": mode, "arrive_prompt": args.arrive_prompt, "noise": noise, "ended": ended_ep,
                        "planner_s": round(run.planner_s, 1), "usage": usage_summary(run.usage), "subtasks": results, "log": run.log}
                 with open(path, "w") as f:
                     json.dump(out, f, indent=1, default=float)
