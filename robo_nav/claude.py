@@ -82,7 +82,7 @@ def usage_summary(calls: Optional[List[dict]] = None) -> dict:
     for k in ("input", "output", "cache_read", "cache_write"):
         out[k] = sum(c[k] for c in calls)
     costs = [c["cost_usd"] for c in calls]
-    out["cost_usd"] = round(sum(costs), 4) if costs and None not in costs else None
+    out["cost_usd"] = round(sum(costs), 4) if None not in costs else None  # no calls -> $0, not unknown
     return out
 
 
