@@ -37,6 +37,7 @@ from typing import Dict, List, Optional
 import numpy as np
 
 from robo_nav.claude import ask_json, client as make_client, image_block, obj_schema, print_cost, usage_summary
+from robo_nav.habitat.floors import annotate_map_md, describe_floor
 from robo_nav.landmark.planner import ARRIVE, PLAN_SCHEMA, planner_system
 
 CAMERA = "about 0.9 m above the floor"
@@ -84,6 +85,26 @@ def driver_system() -> List[dict]:
         "early if something blocks it. 'turn' turns in place `amount` degrees, positive = left "
         "(counter-clockwise), negative = right, up to 180. Then you see a new camera view. Say 'done' as soon "
         "as the instruction has been carried out (or cannot be carried out any further).")
+    return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
+
+
+VERIFY_SCHEMA = obj_schema({
+    "observation": {"type": "string", "description": "what the views show near the robot"},
+    "candidate": {"type": "string", "description": "the object in the views that best matches the goal, and which view it is in, or 'none'"},
+    "cues": {"type": "string", "description": "each detail the goal gives (color, material, what it is next to, where it is) and whether the candidate fits it"},
+    "matches": {"type": "boolean", "description": "the candidate is the goal: the right kind of object and, for a description, every detail fits"},
+    "close_enough": {"type": "boolean", "description": "the robot is right next to it: about an arm's length away"},
+    "reason": {"type": "string", "description": "one sentence for the planner if this is not the goal or not close enough"},
+})
+
+
+def verify_system() -> List[dict]:
+    text = (
+        f"You check a robot's claim that it has reached its goal. Its camera is {CAMERA} and sees about 120 "
+        "degrees; you get eight views 45 degrees apart from where it stands. Be strict: a house often has "
+        "several objects of the same kind (mirrors, pictures, dressers, rugs), and a description names one of "
+        "them. Check every detail the goal gives -- color, material, what it is next to or above, where it is -- "
+        "against what the views show. If the views do not show the details, it does not match.")
     return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
 
 
@@ -142,6 +163,7 @@ class Run:
         self.usage: List[dict] = []  # planner token usage, one entry per call
         self.steps = 0  # policy/env steps this subtask
         self.last_latency = 0.0  # s, the latest planner call
+        self.floor_levels: Optional[List[float]] = None  # --floors: tell the planner which floor it is on
 
     def event(self, kind: str, **kw):
         self.log.append({"event": kind, **kw})
@@ -208,6 +230,9 @@ class Run:
     def ask(self, cl, system, schema: dict, text: str, history: List[str], views: List[bytes]) -> dict:
         """One planner call: goal, step history and the current view(s) -> JSON matching `schema`."""
         content = [{"type": "text", "text": f"Goal: {text}"}]
+        if self.floor_levels:
+            y = self.env.call("pose")["pose"]["position"][1]
+            content.append({"type": "text", "text": describe_floor(y, self.floor_levels)})
         if history:
             content.append({"type": "text", "text": "Steps so far:\n" + "\n".join(history)})
         if len(views) > 1:
@@ -262,15 +287,57 @@ class Run:
 
     _driver_system = driver_system()
 
+    def verify(self, cl, text: str, views: List[bytes]) -> dict:
+        """--verify_arrival: a separate VLM call checks the planner's 'arrived' against a fresh look-around."""
+        content = [{"type": "text", "text": f"Goal: {text}"},
+                   {"type": "text", "text": "Look-around from where the robot stands: view 0 is its heading; each next view is 45 degrees further left."}]
+        for v, img in enumerate(views):
+            content += [{"type": "text", "text": f"view {v}"}, image_block(img)]
+        content.append({"type": "text", "text": "Is the robot at the goal?"})
+        asked = time.monotonic()
+        try:
+            out = ask_json(cl, content, VERIFY_SCHEMA, self._verify_system, 16000, self.args.effort, usage=self.usage)
+        except Exception as exc:
+            raise PlannerError(repr(exc)) from exc
+        finally:
+            self.planner_s += time.monotonic() - asked
+        self.usage[-1]["role"] = "verify"
+        return out
+
+    _verify_system = verify_system()
+
+    def approach(self, cl, text: str) -> str:
+        """--final_approach: after an accepted 'arrived', the VLM makes small moves to get right next to the goal."""
+        goal = (f"{text} (The robot should already be near it. Make small moves to get right next to it, "
+                "about an arm's length away and facing it, then stop.)")
+        ended = self.direct(cl, self._approach_system, goal, max_calls=self.args.final_approach, look=False)
+        return "planner_arrived+approach_" + ended.split("_", 1)[1]
+
+    _approach_system = direct_system(None, "new")
+
     def landmark(self, cl, system, text: str, vlm_driver: bool = False) -> str:
         history: List[str] = []
         views = self.look_around()
+        checks = 0
         for _ in range(self.args.max_planner_calls):
             if self.steps >= self.args.subtask_steps:
                 return "step_limit"
             plan = self.ask(cl, system, PLAN_SCHEMA, text, history, views)
             self.event("plan", latency_s=round(self.last_latency, 1), out_tokens=self.usage[-1]["output"], where_am_i=plan["where_am_i"],
                        action=plan["action"], instruction=plan["instruction"])
+            if plan["action"] == "arrived" and checks < self.args.verify_arrival:
+                checks += 1
+                views = self.look_around()
+                v = self.verify(cl, text, views)
+                ok = v["matches"] and (v["close_enough"] or self.args.final_approach > 0)
+                self.event("verify", ok=ok, matches=v["matches"], close_enough=v["close_enough"],
+                           candidate=v["candidate"], reason=v["reason"])
+                if not ok:
+                    history.append(f"{len(history) + 1}. You said 'arrived', but a check of a fresh look-around "
+                                   f"rejected it: {v['reason']} (you had seen: {plan['observation']})")
+                    continue
+            if plan["action"] == "arrived" and self.args.final_approach > 0:
+                return self.approach(cl, text)
             if plan["action"] in ("arrived", "give_up"):
                 return f"planner_{plan['action']}"
             if plan["action"] == "look_around":
@@ -286,11 +353,11 @@ class Run:
             views = [jpeg(self.obs["rgb"])]
         return "planner_limit"
 
-    def direct(self, cl, system, text: str) -> str:
-        """VLM-only baseline: the VLM picks every move itself (no LightNav)."""
+    def direct(self, cl, system, text: str, max_calls: Optional[int] = None, look: bool = True) -> str:
+        """VLM-only baseline: the VLM picks every move itself (no LightNav). Also the --final_approach driver."""
         history: List[str] = []
-        views = self.look_around()
-        for _ in range(self.args.max_direct_calls):
+        views = self.look_around() if look else [jpeg(self.obs["rgb"])]
+        for _ in range(max_calls or self.args.max_direct_calls):
             if self.steps >= self.args.subtask_steps:
                 return "step_limit"
             plan = self.ask(cl, system, DIRECT_SCHEMA, text, history, views)
@@ -334,6 +401,12 @@ def main():
     parser.add_argument("--actuation_noise", type=float, nargs=2, metavar=("LIN_SD", "ANG_SD_DEG"),
                         help="Gaussian actuation noise in the env: speed x (1 + N(0, LIN_SD)), turn rate + N(0, ANG_SD_DEG) deg/s; off by default")
     parser.add_argument("--noise_seed", type=int, default=0)
+    parser.add_argument("--verify_arrival", type=int, default=0,
+                        help="landmark modes: check up to N 'arrived' calls per subtask against a fresh look-around (0 = off)")
+    parser.add_argument("--final_approach", type=int, default=0,
+                        help="landmark modes: after 'arrived', up to N VLM calls of small moves to get right next to the goal (0 = off)")
+    parser.add_argument("--floors", action="store_true",
+                        help="tag map landmarks with floors (<maps>/<scene>/floors.json, robo_nav.habitat.floors) and tell the planner the robot's floor")
     parser.add_argument("--arrive_prompt", default="old", choices=sorted(ARRIVE),
                         help="When the planner/VLM may stop (landmark.planner.ARRIVE); 'old' = the first val_unseen run")
     args = parser.parse_args()
@@ -356,9 +429,14 @@ def main():
                 if policy is None and mode in ("zeroshot", "landmark"):
                     policy = build_policy(args, info)
                 map_md, system = None, None
+                floors = None
                 if mode in ("landmark", "landmark_vlm", "vlm_map"):
                     with open(os.path.join(args.maps, scene, "landmark_map.md")) as f:
                         map_md = f.read()
+                    if args.floors:
+                        with open(os.path.join(args.maps, scene, "floors.json")) as f:
+                            floors = json.load(f)
+                        map_md = annotate_map_md(map_md, floors)
                 if mode in ("landmark", "landmark_vlm"):
                     system = planner_system(map_md, CAMERA, args.arrive_prompt)
                 elif mode in ("vlm", "vlm_map"):
@@ -366,6 +444,8 @@ def main():
                 if mode != "zeroshot":
                     cl = cl or make_client()
                 run = Run(env, policy, args, obs, info)
+                if floors and len(floors["levels"]) > 1:
+                    run.floor_levels = floors["levels"]
                 results, ended_ep = [], "done"
                 for k, sub in enumerate(info["subtasks"]):
                     if sub["text"] is None:
@@ -390,7 +470,8 @@ def main():
                     results.append({"subtask": k, **sub, "ended": ended, "steps": run.steps, **score})
                     print(f"   -> subtask {k} {sub['type']}: {'SUCCESS' if score['success'] else 'miss'} "
                           f"{score['distance_to_goal']:.2f} m, SPL {score['spl']:.2f}, {run.steps} steps, {ended}", flush=True)
-                out = {"episode": idx, "scene": scene, "mode": mode, "arrive_prompt": args.arrive_prompt, "noise": noise, "ended": ended_ep,
+                out = {"episode": idx, "scene": scene, "mode": mode, "arrive_prompt": args.arrive_prompt, "noise": noise,
+                       "verify_arrival": args.verify_arrival, "final_approach": args.final_approach, "floors": args.floors, "ended": ended_ep,
                        "planner_s": round(run.planner_s, 1), "usage": usage_summary(run.usage), "subtasks": results, "log": run.log}
                 with open(path, "w") as f:
                     json.dump(out, f, indent=1, default=float)

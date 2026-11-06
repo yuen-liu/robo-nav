@@ -37,7 +37,9 @@ class FakeEnv:
 
 def make_run(**args):
     env = FakeEnv()
-    a = types.SimpleNamespace(**{"subtask_steps": 500, "max_direct_calls": 60, "effort": "medium", **args})
+    a = types.SimpleNamespace(**{"subtask_steps": 500, "max_direct_calls": 60, "effort": "medium",
+                                   "max_planner_calls": 20, "max_driver_calls": 10, "instruction_steps": 60,
+                                   "verify_arrival": 0, "final_approach": 0, **args})
     return goat_nav.Run(env, None, a, env.obs(), INFO), env
 
 
@@ -136,6 +138,86 @@ class TestDirect(unittest.TestCase):
             env.x = -100.0  # no wall in reach
             self.assertEqual(run.drive_vlm(None, "Go.", budget=7), "step_limit")
         self.assertEqual(run.steps, 7)
+
+    def _patched(self, fake_ask):
+        return (mock.patch.object(goat_nav, "ask_json", fake_ask), mock.patch.object(goat_nav, "jpeg", lambda rgb: b""),
+                mock.patch.object(goat_nav, "image_block", lambda img: {"type": "text", "text": "img"}))
+
+    def test_verify_rejects_then_accepts(self):
+        plans = iter([{"observation": "a mirror", "where_am_i": "x", "action": "arrived", "instruction": "", "plan": []},
+                      {"observation": "another mirror", "where_am_i": "y", "action": "arrived", "instruction": "", "plan": []}])
+        checks = iter([{"observation": "", "candidate": "mirror, view 0", "cues": "", "matches": False, "close_enough": True,
+                        "reason": "this mirror is not above a sink"},
+                       {"observation": "", "candidate": "mirror, view 2", "cues": "", "matches": True, "close_enough": True, "reason": ""}])
+        seen = []
+
+        def fake_ask(cl, content, schema, system, max_tokens, effort, usage):
+            usage.append({"output": 1})
+            seen.append(content)
+            return next(checks) if schema is goat_nav.VERIFY_SCHEMA else next(plans)
+
+        run, env = make_run(verify_arrival=2)
+        p = self._patched(fake_ask)
+        with p[0], p[1], p[2]:
+            ended = run.landmark(None, [{"type": "text", "text": "planner"}], "mirror above the sink.")
+        self.assertEqual(ended, "planner_arrived")
+        self.assertEqual([e["ok"] for e in run.log if e["event"] == "verify"], [False, True])
+        self.assertIn("rejected it: this mirror is not above a sink", seen[2][1]["text"])  # planner sees why
+        self.assertEqual(run.steps, 3 * 16)  # 3 look-arounds (start + one per check), 8 x 45 deg at 30 deg/step = 16 steps
+
+    def test_verify_off_by_default(self):
+        def fake_ask(cl, content, schema, system, max_tokens, effort, usage):
+            usage.append({"output": 1})
+            self.assertIs(schema, goat_nav.PLAN_SCHEMA)
+            return {"observation": "", "where_am_i": "", "action": "arrived", "instruction": "", "plan": []}
+
+        run, env = make_run()
+        p = self._patched(fake_ask)
+        with p[0], p[1], p[2]:
+            self.assertEqual(run.landmark(None, [], "Find the bed."), "planner_arrived")
+
+    def test_final_approach(self):
+        calls = iter([{"observation": "", "where_am_i": "", "action": "arrived", "instruction": "", "plan": []},
+                      {"observation": "bed", "where_am_i": "", "action": "forward", "amount": 0.5},
+                      {"observation": "bed", "where_am_i": "", "action": "stop", "amount": 0}])
+        systems = []
+
+        def fake_ask(cl, content, schema, system, max_tokens, effort, usage):
+            usage.append({"output": 1})
+            systems.append((schema, system, content))
+            return next(calls)
+
+        run, env = make_run(final_approach=4)
+        p = self._patched(fake_ask)
+        with p[0], p[1], p[2]:
+            ended = run.landmark(None, [{"type": "text", "text": "planner"}], "Find the bed.")
+        self.assertEqual(ended, "planner_arrived+approach_stop")
+        self.assertAlmostEqual(env.x, 0.5)
+        self.assertIs(systems[1][0], goat_nav.DIRECT_SCHEMA)
+        self.assertIn("arm's length", systems[1][1][0]["text"])
+        self.assertIn("already be near it", systems[1][2][0]["text"])
+        self.assertEqual(sum(1 for c in systems[1][2] if c.get("text") == "img"), 1)  # no look-around
+
+
+class TestFloors(unittest.TestCase):
+    def test_levels_and_tags(self):
+        from robo_nav.habitat import floors as F
+        ys = [0.0] * 50 + [i * 0.3 for i in range(1, 10)] + [3.0] * 40
+        self.assertEqual(F.levels_from_heights(ys), [0.0, 3.0])
+        self.assertEqual(F.floor_of(0.2, [0.0, 3.0]), 1)
+        self.assertIsNone(F.floor_of(1.5, [0.0, 3.0]))
+        self.assertIn("floor 2 of 2", F.describe_floor(3.1, [0.0, 3.0]))
+        self.assertIn("between floor 1 and floor 2", F.describe_floor(1.5, [0.0, 3.0]))
+        poses = [[0, y, 0] for y in ys]
+        m = {"landmarks": [{"name": "rug", "seen_at": [0, 1, 2]}, {"name": "bed", "seen_at": [8, 9]},
+                           {"name": "stairs", "seen_at": [5, 9]}]}
+        lf = F.landmark_floors(m, poses, every=10)
+        self.assertEqual(lf, {"rug": [1], "bed": [2], "stairs": [1, 2]})
+        md = "# Landmarks\n- **rug**: red.\n- **bed**: big.\n"
+        out = F.annotate_map_md(md, {"levels": [0.0, 3.0], "landmarks": lf})
+        self.assertIn("- **rug** (floor 1): red.", out)
+        self.assertIn("2 floors", out)
+        self.assertEqual(F.annotate_map_md(md, {"levels": [0.0], "landmarks": {}}), md)
 
 
 if __name__ == "__main__":

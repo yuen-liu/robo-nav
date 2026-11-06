@@ -259,7 +259,7 @@ def serve(env: GoatEnv, address: str):
     sock.bind(address)
     logger.info("GOAT env on %s (%d episodes, split %s)", address, len(env.episodes), env.split)
     handlers = {"reset": lambda d: env.reset(**d), "step": env.step, "begin": lambda d: env.begin(**d),
-                "score": lambda d: env.score(**d)}
+                "score": lambda d: env.score(**d), "pose": lambda d: {"pose": env.pose()}}
     try:
         while True:
             msg = pickle.loads(sock.recv())
