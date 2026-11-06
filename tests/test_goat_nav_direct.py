@@ -96,6 +96,47 @@ class TestDirect(unittest.TestCase):
         self.assertIn("arm's length", planner_system("m", goat_nav.CAMERA, "new")[0]["text"])
         self.assertIn("'stop' only when the robot is right next to the goal", goat_nav.direct_system(None, "new")[0]["text"])
 
+    def test_landmark_vlm_driver(self):
+        plans = iter([
+            {"observation": "hall", "where_am_i": "unsure", "action": "instruct", "instruction": "Go to the wall.", "plan": []},
+            {"observation": "wall", "where_am_i": "at wall", "action": "arrived", "instruction": "", "plan": []},
+        ])
+        moves = iter([
+            {"observation": "hall", "action": "forward", "amount": 3.0},
+            {"observation": "wall", "action": "done", "amount": 0},
+        ])
+        driver_contents = []
+
+        def fake_ask(cl, content, schema, system, max_tokens, effort, usage):
+            usage.append({"output": 1})
+            if schema is goat_nav.DRIVER_SCHEMA:
+                self.assertNotIn("Landmark map", system[0]["text"])
+                driver_contents.append(content)
+                return next(moves)
+            return next(plans)
+
+        run, env = make_run(max_planner_calls=20, max_driver_calls=10, instruction_steps=60)
+        with mock.patch.object(goat_nav, "ask_json", fake_ask), \
+                mock.patch.object(goat_nav, "jpeg", lambda rgb: b""), \
+                mock.patch.object(goat_nav, "image_block", lambda img: {"type": "text", "text": "img"}):
+            ended = run.landmark(None, [{"type": "text", "text": "planner"}], "Find the wall.", vlm_driver=True)
+        self.assertEqual(ended, "planner_arrived")
+        self.assertAlmostEqual(env.x, 2.0)
+        self.assertEqual(driver_contents[0][0]["text"], "Instruction: Go to the wall.")
+        self.assertIn("forward 3.00 m -> blocked", driver_contents[1][1]["text"])
+        self.assertEqual([u.get("role") for u in run.usage], [None, "driver", "driver", None])
+        self.assertEqual([e["how"] for e in run.log if e["event"] == "step_end"], ["stopped"])
+
+    def test_driver_respects_instruction_budget(self):
+        run, env = make_run(max_driver_calls=10)
+        with mock.patch.object(goat_nav, "ask_json", lambda *a, usage, **k: usage.append({}) or
+                               {"observation": "", "action": "forward", "amount": 3.0}), \
+                mock.patch.object(goat_nav, "jpeg", lambda rgb: b""), \
+                mock.patch.object(goat_nav, "image_block", lambda img: {}):
+            env.x = -100.0  # no wall in reach
+            self.assertEqual(run.drive_vlm(None, "Go.", budget=7), "step_limit")
+        self.assertEqual(run.steps, 7)
+
 
 if __name__ == "__main__":
     unittest.main()

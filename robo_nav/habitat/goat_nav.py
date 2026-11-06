@@ -16,6 +16,7 @@ skipped, the robot stays put).
 Modes:
   zeroshot   LightNav-0 alone with the subtask text ("Find the bed." / the language description)
   landmark   planner + the scene's landmark map (annotated from its tour) -> LightNav-0
+  landmark_vlm  as landmark, but the VLM drives each instruction with coarse moves instead of LightNav-0
   vlm        the VLM alone: camera views in, 'forward x m' / 'turn y deg' out, no map, no LightNav
   vlm_map    as vlm, plus the scene's landmark map
 
@@ -62,6 +63,27 @@ def direct_system(map_md: Optional[str], arrive: str = "old") -> List[dict]:
         f"'stop' only when {ARRIVE[arrive]}, and 'give_up' only if the goal cannot be found.")
     if map_md:
         text += "\n\n# Landmark map\n\n" + map_md
+    return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
+
+
+DRIVER_SCHEMA = obj_schema({
+    "observation": {"type": "string", "description": "what the robot camera shows right now"},
+    "action": {"type": "string", "enum": ["forward", "turn", "done"]},
+    "amount": {"type": "number", "description": "meters for forward (0.25 to 3), degrees for turn (+ = left), 0 for done"},
+})
+
+
+def driver_system() -> List[dict]:
+    """System prompt for the VLM standing in for LightNav-0 in landmark_vlm: it only sees the planner's
+    instruction and the camera, like LightNav, no goal and no map."""
+    text = (
+        f"You are the local driving policy of a wheeled robot. Its camera is {CAMERA}, faces forward and "
+        "sees about 120 degrees. You get one short instruction at a time, e.g. 'Go forward past the grey "
+        "couch toward the wooden doors.' or 'Turn left and go through the open doorway.', and carry it out.\n\n"
+        "Each turn, pick one move. 'forward' drives straight ahead `amount` meters (0.25 to 3); it stops "
+        "early if something blocks it. 'turn' turns in place `amount` degrees, positive = left "
+        "(counter-clockwise), negative = right, up to 180. Then you see a new camera view. Say 'done' as soon "
+        "as the instruction has been carried out (or cannot be carried out any further).")
     return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
 
 
@@ -165,14 +187,15 @@ class Run:
     def zeroshot(self, text: str) -> str:
         return self.drive(text, self.args.subtask_steps, stall=False)  # as lightnav-eval-habitat: no stall rule
 
-    def forward(self, meters: float) -> str:
+    def forward(self, meters: float, until: Optional[int] = None) -> str:
         """Drive straight ahead at full speed; 'blocked' after 2 collided steps in a row."""
         lo, hi = self.info["lin_vel_range"]
         alo, ahi = self.info["ang_vel_range"]
         dt = self.info["habitat_time_step"]
         ang_raw = 2 * (0.0 - alo) / (ahi - alo) - 1  # 0 deg/s
         left, stuck = meters, 0
-        while left >= 0.05 and self.steps < self.args.subtask_steps:  # slower than ~0.025 m/s would read as STOP
+        until = self.args.subtask_steps if until is None else min(until, self.args.subtask_steps)
+        while left >= 0.05 and self.steps < until:  # slower than ~0.025 m/s would read as STOP
             v = min(left / dt, hi)
             info = self.step({"action": "velocity_control",
                               "action_args": {"linear_velocity": 2 * (v - lo) / (hi - lo) - 1, "angular_velocity": ang_raw}})
@@ -203,7 +226,43 @@ class Run:
             self.planner_s += time.monotonic() - asked
             self.last_latency = time.monotonic() - asked
 
-    def landmark(self, cl, system, text: str) -> str:
+    def drive_vlm(self, cl, instruction: str, budget: int) -> str:
+        """The VLM in LightNav-0's place on one instruction: coarse moves until it says 'done', its call cap,
+        or the step budget (same per-instruction budget as LightNav)."""
+        end = self.steps + budget
+        moves: List[str] = []
+        for _ in range(self.args.max_driver_calls):
+            if self.steps >= end:
+                return "step_limit"
+            content = [{"type": "text", "text": f"Instruction: {instruction}"}]
+            if moves:
+                content.append({"type": "text", "text": "Moves so far:\n" + "\n".join(moves)})
+            content += [{"type": "text", "text": "Current camera view:"}, image_block(jpeg(self.obs["rgb"])),
+                        {"type": "text", "text": "Decide the next move."}]
+            asked = time.monotonic()
+            try:
+                move = ask_json(cl, content, DRIVER_SCHEMA, self._driver_system, 16000, self.args.effort, usage=self.usage)
+            except Exception as exc:
+                raise PlannerError(repr(exc)) from exc
+            finally:
+                self.planner_s += time.monotonic() - asked
+            self.usage[-1]["role"] = "driver"
+            self.event("drive", action=move["action"], amount=move["amount"])
+            if move["action"] == "done":
+                return "stopped"
+            if move["action"] == "forward":
+                m = min(max(float(move["amount"]), 0.25), 3.0)
+                how = self.forward(m, until=end)
+                moves.append(f"{len(moves) + 1}. forward {m:.2f} m -> {how}")
+            else:
+                deg = min(max(float(move["amount"]), -180.0), 180.0)
+                self.turn(deg)
+                moves.append(f"{len(moves) + 1}. turn {deg:+.0f} deg")
+        return "driver_limit"
+
+    _driver_system = driver_system()
+
+    def landmark(self, cl, system, text: str, vlm_driver: bool = False) -> str:
         history: List[str] = []
         views = self.look_around()
         for _ in range(self.args.max_planner_calls):
@@ -218,8 +277,9 @@ class Run:
                 history.append(f"{len(history) + 1}. (looked around)")
                 views = self.look_around()
                 continue
-            ended = self.drive(plan["instruction"], min(self.args.instruction_steps,
-                                                        self.args.subtask_steps - self.steps))
+            budget = min(self.args.instruction_steps, self.args.subtask_steps - self.steps)
+            ended = (self.drive_vlm(cl, plan["instruction"], budget) if vlm_driver
+                     else self.drive(plan["instruction"], budget))
             self.event("step_end", how=ended, steps=self.steps)
             history.append(f"{len(history) + 1}. \"{plan['instruction']}\" -> driver {ended}; "
                            f"you had seen: {plan['observation']}")
@@ -262,12 +322,13 @@ def main():
     parser.add_argument("--env", default="tcp://127.0.0.1:5560")
     parser.add_argument("--maps", help="Dir of landmark.annotate outputs, one per scene: <maps>/<scene>/landmark_map.md")
     parser.add_argument("--episodes", type=int, nargs="+", required=True, help="Episode indices in the env's split")
-    parser.add_argument("--modes", nargs="+", default=["zeroshot", "landmark"], choices=["zeroshot", "landmark", "vlm", "vlm_map"])
+    parser.add_argument("--modes", nargs="+", default=["zeroshot", "landmark"], choices=["zeroshot", "landmark", "landmark_vlm", "vlm", "vlm_map"])
     parser.add_argument("--out", required=True)
     parser.add_argument("--subtask_steps", type=int, default=500, help="Policy steps per subtask (dt = 1 s)")
     parser.add_argument("--instruction_steps", type=int, default=60, help="Policy steps per planner instruction")
     parser.add_argument("--stall_steps", type=int, default=8, help="End an instruction after this many blocked steps")
     parser.add_argument("--max_planner_calls", type=int, default=20, help="Per subtask")
+    parser.add_argument("--max_driver_calls", type=int, default=10, help="VLM driver calls per planner instruction in landmark_vlm")
     parser.add_argument("--max_direct_calls", type=int, default=60, help="VLM calls per subtask in vlm/vlm_map")
     parser.add_argument("--effort", default="medium")
     parser.add_argument("--arrive_prompt", default="old", choices=sorted(ARRIVE),
@@ -290,10 +351,10 @@ def main():
                 if policy is None and mode in ("zeroshot", "landmark"):
                     policy = build_policy(args, info)
                 map_md, system = None, None
-                if mode in ("landmark", "vlm_map"):
+                if mode in ("landmark", "landmark_vlm", "vlm_map"):
                     with open(os.path.join(args.maps, scene, "landmark_map.md")) as f:
                         map_md = f.read()
-                if mode == "landmark":
+                if mode in ("landmark", "landmark_vlm"):
                     system = planner_system(map_md, CAMERA, args.arrive_prompt)
                 elif mode in ("vlm", "vlm_map"):
                     system = direct_system(map_md, args.arrive_prompt)
@@ -311,8 +372,8 @@ def main():
                     try:
                         if mode == "zeroshot":
                             ended = run.zeroshot(sub["text"])
-                        elif mode == "landmark":
-                            ended = run.landmark(cl, system, sub["text"])
+                        elif mode in ("landmark", "landmark_vlm"):
+                            ended = run.landmark(cl, system, sub["text"], vlm_driver=mode == "landmark_vlm")
                         else:
                             ended = run.direct(cl, system, sub["text"])
                     except PlannerError as exc:
