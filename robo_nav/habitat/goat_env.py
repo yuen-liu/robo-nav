@@ -120,6 +120,7 @@ class GoatEnv:
         self.ep: Optional[dict] = None
         self.steps = 0
         self.sub: Dict = {}
+        self.noise, self.rng = None, np.random.default_rng(0)  # set per episode by reset()
 
     # -- simulator ------------------------------------------------------------------------------
     def _config(self, scene: str):
@@ -154,7 +155,6 @@ class GoatEnv:
             ok = self.sim.recompute_navmesh(self.sim.pathfinder, s)
             logger.info("rebaked navmesh for %s at cell_height=%.2f: ok=%s", scene, self.navmesh_cell_height, ok)
         self.scene = scene
-        self.noise, self.rng = None, np.random.default_rng(0)
         self.vel = habitat_sim.physics.VelocityControl()
         self.vel.controlling_lin_vel = self.vel.lin_vel_is_local = True
         self.vel.controlling_ang_vel = self.vel.ang_vel_is_local = True
