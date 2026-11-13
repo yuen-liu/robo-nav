@@ -387,11 +387,18 @@ def main():
     parser.add_argument("--backend", default="vllm_local")
     parser.add_argument("--gpu_memory_utilization", type=float, default=0.65)
     parser.add_argument("--env", default="tcp://127.0.0.1:5560")
+    parser.add_argument("--env_timeout_s", type=int, default=600, help="raise for a shared env server (resets wait for other clients)")
+    parser.add_argument("--shard", type=int, nargs=2, metavar=("I", "N"), help="--goals: run only goals i, i+N, i+2N, ...")
     parser.add_argument("--maps", help="Dir of landmark.annotate outputs, one per scene: <maps>/<scene>/landmark_map.md")
-    parser.add_argument("--episodes", type=int, nargs="+", required=True, help="Episode indices in the env's split")
+    parser.add_argument("--episodes", type=int, nargs="+", help="Episode indices in the env's split")
+    parser.add_argument("--goals", help="JSON list of {episode, subtask, position, heading}: run only that subtask, "
+                                        "starting from that pose (robo_nav.habitat.far_goals); instead of --episodes")
     parser.add_argument("--modes", nargs="+", default=["zeroshot", "landmark"], choices=["zeroshot", "landmark", "landmark_vlm", "vlm", "vlm_map"])
     parser.add_argument("--out", required=True)
     parser.add_argument("--subtask_steps", type=int, default=500, help="Policy steps per subtask (dt = 1 s)")
+    parser.add_argument("--budget_factor", type=float, default=None,
+                        help="Per-subtask step budget = ceil(F x shortest-path time at full speed) = ceil(F x geodesic / 0.25 m/s), "
+                             "instead of --subtask_steps; the env's per-step track rescores any smaller F (goal_report)")
     parser.add_argument("--instruction_steps", type=int, default=60, help="Policy steps per planner instruction")
     parser.add_argument("--stall_steps", type=int, default=8, help="End an instruction after this many blocked steps")
     parser.add_argument("--max_planner_calls", type=int, default=20, help="Per subtask")
@@ -410,20 +417,32 @@ def main():
     parser.add_argument("--arrive_prompt", default="old", choices=sorted(ARRIVE),
                         help="When the planner/VLM may stop (landmark.planner.ARRIVE); 'old' = the first val_unseen run")
     args = parser.parse_args()
+    if bool(args.episodes) == bool(args.goals):
+        parser.error("give exactly one of --episodes / --goals")
     os.makedirs(args.out, exist_ok=True)
+    if args.goals:
+        with open(args.goals) as f:
+            jobs = [(g["episode"], g["subtask"], g) for g in json.load(f)]
+        if args.shard:
+            jobs = jobs[args.shard[0]::args.shard[1]]
+    else:
+        jobs = [(idx, None, None) for idx in args.episodes]
 
-    env = EnvClient(args.env)
+    env = EnvClient(args.env, timeout_ms=args.env_timeout_s * 1000)
     policy, cl = None, None
     try:
-        for idx in args.episodes:
+        for idx, only, start in jobs:
             for mode in args.modes:
-                path = os.path.join(args.out, f"ep{idx:04d}_{mode}.json")
+                name = f"ep{idx:04d}" if only is None else f"g{idx:04d}_{only:02d}"
+                path = os.path.join(args.out, f"{name}_{mode}.json")
                 if os.path.exists(path) and json.load(open(path))["ended"] != "planner_error":
                     continue
                 noise = ({"lin": args.actuation_noise[0], "ang_deg": args.actuation_noise[1], "seed": args.noise_seed}
                          if args.actuation_noise else None)
                 reply = env.call("reset", {"episode": idx, **({"noise": noise} if noise else {})})
                 obs, info = reply["obs"], reply["info"]
+                if start is not None and start.get("position") is not None:
+                    obs = env.call("teleport", {"position": start["position"], "heading": start["heading"]})["obs"]
                 scene = os.path.basename(os.path.normpath(info["scene_id"])).split(".")[0]
                 print(f"== ep {idx} ({scene}) {mode}: {len(info['subtasks'])} subtasks", flush=True)
                 if policy is None and mode in ("zeroshot", "landmark"):
@@ -448,11 +467,15 @@ def main():
                     run.floor_levels = floors["levels"]
                 results, ended_ep = [], "done"
                 for k, sub in enumerate(info["subtasks"]):
+                    if only is not None and k != only:
+                        continue
                     if sub["text"] is None:
                         results.append({"subtask": k, **sub, "ended": "skipped"})
                         continue
                     run.steps = 0
                     geo = env.call("begin", {"subtask": k})["geodesic_m"]
+                    if args.budget_factor:
+                        args.subtask_steps = max(1, math.ceil(args.budget_factor * geo / info["lin_vel_range"][1]))
                     run.event("subtask", k=k, type=sub["type"], text=sub["text"], geodesic_m=round(geo, 2))
                     try:
                         if mode == "zeroshot":
@@ -467,11 +490,12 @@ def main():
                         break
                     score = env.call("score", {"subtask": k})
                     score.pop("status", None)
-                    results.append({"subtask": k, **sub, "ended": ended, "steps": run.steps, **score})
+                    results.append({"subtask": k, **sub, "ended": ended, "steps": run.steps,
+                                    "budget_steps": args.subtask_steps, **score})
                     print(f"   -> subtask {k} {sub['type']}: {'SUCCESS' if score['success'] else 'miss'} "
                           f"{score['distance_to_goal']:.2f} m, SPL {score['spl']:.2f}, {run.steps} steps, {ended}", flush=True)
-                out = {"episode": idx, "scene": scene, "mode": mode, "arrive_prompt": args.arrive_prompt, "noise": noise,
-                       "verify_arrival": args.verify_arrival, "final_approach": args.final_approach, "floors": args.floors, "ended": ended_ep,
+                out = {"episode": idx, "only_subtask": only, "start": start, "scene": scene, "mode": mode, "arrive_prompt": args.arrive_prompt, "noise": noise,
+                       "budget_factor": args.budget_factor, "verify_arrival": args.verify_arrival, "final_approach": args.final_approach, "floors": args.floors, "ended": ended_ep,
                        "planner_s": round(run.planner_s, 1), "usage": usage_summary(run.usage), "subtasks": results, "log": run.log}
                 with open(path, "w") as f:
                     json.dump(out, f, indent=1, default=float)
@@ -482,7 +506,7 @@ def main():
 
 def summarize(run_dir: str):
     from glob import glob
-    eps = [json.load(open(p)) for p in sorted(glob(os.path.join(run_dir, "ep*.json")))]
+    eps = [json.load(open(p)) for p in sorted(glob(os.path.join(run_dir, "ep*.json")) + glob(os.path.join(run_dir, "g*.json")))]
     for mode in sorted({e["mode"] for e in eps}):
         if any(e.get("usage", {}).get("calls") for e in eps if e["mode"] == mode):
             print(f"\n[{mode}]", end="")

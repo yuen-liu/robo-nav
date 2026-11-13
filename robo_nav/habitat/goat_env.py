@@ -9,8 +9,13 @@ same pickle REQ/REP wire format as LightNav-0's habitat_server, plus a few GOAT 
   step         velocity_control     one LightNav-0 action (dt = 1 s)
   begin        {"subtask": k}       start scoring subtask k from the current pose (GOAT is lifelong:
                                     each subtask starts where the previous one ended)
-  score        {"subtask": k}       GT result for subtask k at the current pose (success, SPL)
+  score        {"subtask": k}       GT result for subtask k at the current pose (success, SPL, per-step track)
+  teleport     {"position", "heading"}  move the robot (single-subtask runs from a fixed start)
+  pose
   close
+
+`serve --shared` serves several clients on one sim (one pose per client; scene switches when all wait).
+`--dataset r2r|rxr` serves VLN-CE episodes on MP3D as one-subtask episodes (3 m success).
 
 Agent, camera and velocity control match LightNav-0's HM3D ObjectNav/OVON configs: 0.88 m camera,
 480x270, 120 deg hfov, radius 0.18 m, 0.25 m/s and 30 deg/s max at dt = 1 s, sliding on the navmesh.
@@ -52,6 +57,11 @@ LIN_VEL_RANGE = (0.0, 0.25)  # m/s
 ANG_VEL_RANGE = (-30.0, 30.0)  # deg/s
 MIN_ABS_LIN, MIN_ABS_ANG = 0.025, 1.0  # below both = the policy's STOP
 SUCCESS_DISTANCE = 0.25  # m to the nearest goal view point (GOAT-Bench / OVON standard)
+VLN_SUCCESS_DISTANCE = 3.0  # m to the path's end (VLN-CE standard)
+# VLN-CE (MP3D) episodes as one-subtask GOAT episodes; --split picks the file. RxR: English guide only.
+VLNCE = {"r2r": "datasets/R2R_VLNCE_v1-3_preprocessed/{split}/{split}.json.gz",
+         "rxr": "datasets/RxR_VLNCE_v0/{split}/{split}_guide.json.gz"}
+VLN_PROMPT = "Follow these directions and stop where they end: "
 
 
 def load_episodes(split: str, data: str = DATA) -> List[dict]:
@@ -68,10 +78,28 @@ def load_episodes(split: str, data: str = DATA) -> List[dict]:
     return episodes
 
 
+def load_vlnce(dataset: str, split: str, data: str = DATA) -> List[dict]:
+    """VLN-CE episodes, scene-sorted, each as a GOAT-style episode with a single 'vln' subtask whose
+    goal is the path's end point (scored at VLN_SUCCESS_DISTANCE, geodesic)."""
+    with gzip.open(os.path.join(data, VLNCE[dataset].format(split=split)), "rt") as f:
+        eps = json.load(f)["episodes"]
+    if dataset == "rxr":
+        eps = [e for e in eps if e["instruction"]["language"].startswith("en")]
+    out = []
+    for e in sorted(eps, key=lambda e: (e["scene_id"], e["episode_id"])):
+        e = dict(e)
+        e["tasks"] = [["path_end", "vln", None]]
+        e["_goals"] = {}
+        out.append(e)
+    return out
+
+
 def subtask_goals(ep: dict, task: list) -> List[dict]:
     """Goal objects a subtask accepts: every instance of the category for an object goal,
     the referenced instance for a description / image goal."""
     category, kind, ref = task[0], task[1], task[2]
+    if kind == "vln":
+        return [{"view_points": [{"position": ep["goals"][0]["position"]}]}]
     scene_file = os.path.basename(os.path.normpath(ep["scene_id"]))
     goals = ep["_goals"].get(f"{scene_file}_{category}", [])
     if kind != "object":
@@ -85,6 +113,8 @@ def subtask_text(ep: dict, task: list) -> Optional[str]:
     """What the robot is asked: the category for an object goal, the description for a language
     goal; None for image goals (not supported yet)."""
     category, kind = task[0], task[1]
+    if kind == "vln":
+        return VLN_PROMPT + " ".join(ep["instruction"]["instruction_text"].split())
     if kind == "object":
         return f"Find the {category.replace('_', ' ')}."
     if kind == "description":
@@ -111,8 +141,10 @@ def view_points(goals: List[dict]) -> List[List[float]]:
 
 class GoatEnv:
     def __init__(self, split: str, gpu_id: int = 0, data: str = DATA,
-                 navmesh_cell_height: Optional[float] = None):
-        self.episodes = load_episodes(split, data)
+                 navmesh_cell_height: Optional[float] = None, dataset: str = "goat"):
+        self.dataset = dataset
+        self.episodes = load_episodes(split, data) if dataset == "goat" else load_vlnce(dataset, split, data)
+        self.success_distance = SUCCESS_DISTANCE if dataset == "goat" else VLN_SUCCESS_DISTANCE
         self.split, self.gpu_id, self.data = split, gpu_id, data
         self.navmesh_cell_height = navmesh_cell_height
         self.sim = None
@@ -126,7 +158,8 @@ class GoatEnv:
     def _config(self, scene: str):
         import habitat_sim
         sim_cfg = habitat_sim.SimulatorConfiguration()
-        sim_cfg.scene_dataset_config_file = os.path.join(self.data, SCENE_CONFIG)
+        if self.dataset == "goat":  # MP3D (VLN-CE) loads its .glb + .navmesh with the default config
+            sim_cfg.scene_dataset_config_file = os.path.join(self.data, SCENE_CONFIG)
         sim_cfg.scene_id = scene
         sim_cfg.enable_physics = False
         sim_cfg.gpu_device_id = self.gpu_id
@@ -205,6 +238,8 @@ class GoatEnv:
         ang = ANG_VEL_RANGE[0] + (float(args["angular_velocity"]) + 1) / 2 * (ANG_VEL_RANGE[1] - ANG_VEL_RANGE[0])
         self.steps += 1
         if abs(lin) < MIN_ABS_LIN and abs(ang) < MIN_ABS_ANG:
+            if self.sub:
+                self._track()
             return {"obs": self._obs(), "info": {"stopped": True, "collided": False, "steps": self.steps}}
         if self.noise:
             lin = max(0.0, lin * (1 + self.rng.normal(0, self.noise.get("lin", 0.0))))
@@ -226,24 +261,43 @@ class GoatEnv:
         if self.sub:
             self.sub["path"] += float(np.linalg.norm(final - np.asarray(self.sub["last"])))
             self.sub["last"] = [float(v) for v in final]
+            self._track()
         return {"obs": self._obs(), "info": {"stopped": False, "collided": bool(moved < wanted - 1e-3),
                                              "steps": self.steps}}
+
+    def teleport(self, position: List[float], heading: float) -> dict:
+        """Put the robot at `position` facing `heading` (rad about +y, as pose()) in the current episode's
+        scene -- for single-subtask runs from a fixed start (goat_nav --goals)."""
+        import habitat_sim
+        from habitat_sim.utils.common import quat_from_angle_axis
+        state = habitat_sim.AgentState()
+        state.position = np.asarray(position, dtype=np.float32)
+        state.rotation = quat_from_angle_axis(float(heading), np.array([0.0, 1.0, 0.0]))
+        self.sim.get_agent(0).set_state(state)
+        return {"obs": self._obs(), "pose": self.pose()}
+
+    def _track(self):
+        """Per-step [distance to goal, path so far] of the open subtask, so a run can be rescored at any
+        smaller step budget (the agent never sees its budget, so its first B steps don't depend on it)."""
+        self.sub["track"].append([round(self._geodesic(self.pose()["position"], self.sub["points"]), 3),
+                                  round(self.sub["path"], 3)])
 
     def begin(self, subtask: int) -> dict:
         pts = view_points(subtask_goals(self.ep, self.ep["tasks"][subtask]))
         start = self.pose()["position"]
         self.sub = {"k": subtask, "points": pts, "start": start, "last": start, "path": 0.0,
-                    "geo": self._geodesic(start, pts)}
+                    "geo": self._geodesic(start, pts), "track": []}
         return {"geodesic_m": self.sub["geo"]}
 
     def score(self, subtask: int) -> dict:
         assert self.sub.get("k") == subtask, f"score({subtask}) without begin({subtask})"
         dtg = self._geodesic(self.pose()["position"], self.sub["points"])
-        success = dtg < SUCCESS_DISTANCE  # strict, as GoatSuccess
+        success = dtg < self.success_distance  # strict, as GoatSuccess
         geo, path = self.sub["geo"], self.sub["path"]
         spl = float(success) * geo / max(path, geo) if math.isfinite(geo) and geo > 0 else float(success)
         return {"success": bool(success), "distance_to_goal": dtg, "spl": spl, "path_m": path,
-                "geodesic_m": geo, "pose": self.pose()}
+                "geodesic_m": geo, "pose": self.pose(), "success_distance": self.success_distance,
+                "track": self.sub["track"]}
 
     def close(self):
         if self.sim is not None:
@@ -259,7 +313,8 @@ def serve(env: GoatEnv, address: str):
     sock.bind(address)
     logger.info("GOAT env on %s (%d episodes, split %s)", address, len(env.episodes), env.split)
     handlers = {"reset": lambda d: env.reset(**d), "step": env.step, "begin": lambda d: env.begin(**d),
-                "score": lambda d: env.score(**d), "pose": lambda d: {"pose": env.pose()}}
+                "score": lambda d: env.score(**d), "pose": lambda d: {"pose": env.pose()},
+                "teleport": lambda d: env.teleport(**d)}
     try:
         while True:
             msg = pickle.loads(sock.recv())
@@ -275,6 +330,94 @@ def serve(env: GoatEnv, address: str):
                 logger.exception("%s failed", cmd)
                 reply = {"status": "error", "message": f"{type(exc).__name__}: {exc}"}
             sock.send(pickle.dumps(reply, protocol=4))
+    finally:
+        env.close()
+        sock.close()
+        ctx.term()
+
+
+SLOT_ATTRS = ("ep", "steps", "sub", "noise", "rng")
+
+
+def serve_shared(env: GoatEnv, address: str):
+    """Like serve(), but for several clients at once on one simulator (GPUs in Exclusive_Process mode fit one
+    sim process each, and runs are bound by planner latency, not rendering). Each client (REQ socket) is a
+    slot with its own episode state and robot pose, swapped into the sim around every command. All slots
+    share the loaded scene: a reset that needs another scene is held until every live slot is waiting for a
+    new scene too, then the scene most of them want loads -- so give clients goal lists in the same scene
+    order. A client's 'close' ends its slot; the server exits when the last slot has closed."""
+    import zmq
+    import habitat_sim
+    ctx = zmq.Context()
+    sock = ctx.socket(zmq.ROUTER)
+    sock.setsockopt(zmq.LINGER, 0)
+    sock.bind(address)
+    logger.info("GOAT env on %s (%d episodes, split %s, shared)", address, len(env.episodes), env.split)
+    slots: Dict[bytes, dict] = {}  # client id -> saved state
+    held: Dict[bytes, dict] = {}  # client id -> reset waiting for another scene
+    seen_any = False
+
+    def reply(cid, msg):
+        sock.send_multipart([cid, b"", pickle.dumps(msg, protocol=4)])
+
+    def scene_of(d):
+        ep = env.episodes[d["episode"]]
+        return os.path.normpath(os.path.join(env.data, "scene_datasets", ep["scene_id"]))
+
+    def run(cid, cmd, data):
+        st = slots.setdefault(cid, {})
+        for a in SLOT_ATTRS:
+            setattr(env, a, st.get(a, getattr(GoatEnv, a, None) if a != "rng" else np.random.default_rng(0)))
+        if "agent" in st and cmd != "reset":
+            env.sim.get_agent(0).set_state(st["agent"], reset_sensors=False)
+        handlers = {"reset": lambda d: env.reset(**d), "step": env.step, "begin": lambda d: env.begin(**d),
+                    "score": lambda d: env.score(**d), "pose": lambda d: {"pose": env.pose()},
+                    "teleport": lambda d: env.teleport(**d)}
+        try:
+            if cmd not in handlers:
+                raise ValueError(f"unknown command {cmd!r}")
+            out = {"status": "success", **handlers[cmd](data)}
+        except Exception as exc:
+            logger.exception("%s failed", cmd)
+            out = {"status": "error", "message": f"{type(exc).__name__}: {exc}"}
+        for a in SLOT_ATTRS:
+            st[a] = getattr(env, a, None)
+        if env.sim is not None:
+            st["agent"] = env.sim.get_agent(0).get_state()
+        reply(cid, out)
+
+    def release():
+        """Load the next scene once every live slot is held, and serve the resets that want it."""
+        if not held or any(c not in held for c in slots):
+            return
+        want: Dict[str, int] = {}
+        for d in held.values():
+            want[scene_of(d)] = want.get(scene_of(d), 0) + 1
+        scene = max(sorted(want), key=lambda k: want[k])
+        logger.info("all %d slots waiting: loading %s for %d of them", len(slots), os.path.basename(scene), want[scene])
+        for cid in [c for c, d in held.items() if scene_of(d) == scene]:
+            run(cid, "reset", held.pop(cid))
+
+    try:
+        while True:
+            cid, _, raw = sock.recv_multipart()
+            msg = pickle.loads(raw)
+            cmd, data = msg.get("command"), msg.get("data")
+            seen_any = True
+            if cmd == "close":
+                slots.pop(cid, None)
+                held.pop(cid, None)
+                reply(cid, {"status": "success"})
+                if not slots:
+                    break
+                release()
+                continue
+            slots.setdefault(cid, {})
+            if cmd == "reset" and env.scene is not None and scene_of(data) != env.scene:
+                held[cid] = data
+                release()
+                continue
+            run(cid, cmd, data)
     finally:
         env.close()
         sock.close()
@@ -345,20 +488,23 @@ def main():
     for name in ("serve", "tour"):
         p = sub.add_parser(name)
         p.add_argument("--split", default="val_seen", choices=["val_seen", "val_seen_synonyms", "val_unseen"])
+        p.add_argument("--dataset", default="goat", choices=["goat", *VLNCE],
+                       help="goat (HM3D GOAT-Bench) or a VLN-CE set on MP3D, one 'vln' subtask per episode")
         p.add_argument("--gpu", type=int, default=0)
         p.add_argument("--data", default=DATA)
         p.add_argument("--navmesh_cell_height", type=float, default=None,
                        help="Re-bake each scene's navmesh (0.05 if episodes sit below the shipped mesh)")
         if name == "serve":
             p.add_argument("--port", type=int, default=5560)
+            p.add_argument("--shared", action="store_true", help="serve several clients on one sim (serve_shared)")
         else:
             p.add_argument("--out", required=True, help="Writes <out>/<scene>/frames/")
             p.add_argument("--scenes", nargs="*", help="Scene ids (default: all in the split)")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-    env = GoatEnv(args.split, args.gpu, args.data, args.navmesh_cell_height)
+    env = GoatEnv(args.split, args.gpu, args.data, args.navmesh_cell_height, args.dataset)
     if args.cmd == "serve":
-        serve(env, f"tcp://127.0.0.1:{args.port}")
+        (serve_shared if args.shared else serve)(env, f"tcp://127.0.0.1:{args.port}")
         return
     first = {}  # scene -> first episode index
     for i, ep in enumerate(env.episodes):
