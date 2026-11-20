@@ -1,0 +1,875 @@
+{
+ "landmarks": [
+  {
+   "name": "white marble fireplace",
+   "description": "White mantel and marble tile surround with a black firebox and a stepped-frame mirror above it",
+   "seen_at": [
+    0,
+    2,
+    4,
+    38,
+    106
+   ]
+  },
+  {
+   "name": "cream chaise lounge",
+   "description": "Cream upholstered chaise lounge with dark wood frame next to a tall window",
+   "seen_at": [
+    0,
+    2,
+    3,
+    4,
+    40
+   ]
+  },
+  {
+   "name": "glass-pane double front doors",
+   "description": "White double doors with tall vertical glass panes and a light rug in front, next to a dark metal two-tiered console table under an ornate carved mirror",
+   "seen_at": [
+    1,
+    4,
+    5,
+    12,
+    40,
+    57,
+    77,
+    84,
+    106,
+    124,
+    149
+   ]
+  },
+  {
+   "name": "wooden staircase going up",
+   "description": "Two-flight staircase with dark wood treads, white risers, dark railing with iron balusters, and three round metallic leaf wall sculptures mounted on the stairwell wall",
+   "seen_at": [
+    1,
+    4,
+    31,
+    40,
+    41,
+    42,
+    43,
+    55,
+    56,
+    61,
+    67,
+    75,
+    76,
+    105,
+    108,
+    124,
+    125,
+    126,
+    146,
+    148
+   ]
+  },
+  {
+   "name": "high-backed white dining chairs",
+   "description": "Tall white upholstered chairs with nailhead trim around a dark table on a patterned rug",
+   "seen_at": [
+    3,
+    5,
+    6,
+    9,
+    38
+   ]
+  },
+  {
+   "name": "built-in white glass-front hutch",
+   "description": "White lower cabinets and glass-paned upper cabinets recessed into the wall",
+   "seen_at": [
+    1,
+    5,
+    6,
+    7,
+    38
+   ]
+  },
+  {
+   "name": "dark wood island with white top",
+   "description": "Long dark wood island with a white stone countertop, a built-in microwave, and four dark carved-wood barstools with light cushions",
+   "seen_at": [
+    8,
+    10,
+    32,
+    35,
+    81,
+    82,
+    158,
+    160,
+    162,
+    163
+   ]
+  },
+  {
+   "name": "panel-ready refrigerator and wine cooler",
+   "description": "Tall white cabinet-front double refrigerator and stainless steel unit recessed into the wall with a vertical glass-door wine cooler on its left",
+   "seen_at": [
+    11,
+    82,
+    83,
+    160,
+    163,
+    165
+   ]
+  },
+  {
+   "name": "white corner cabinets and sink",
+   "description": "White shaker lower cabinets and corner sink beneath two windows",
+   "seen_at": [
+    33,
+    35
+   ]
+  },
+  {
+   "name": "stainless steel range with blue knobs",
+   "description": "Large stainless steel stove and oven with blue control knobs under a white range hood",
+   "seen_at": [
+    36,
+    37
+   ]
+  },
+  {
+   "name": "round glass table with four white chairs",
+   "description": "Round glass-top table with four white upholstered wood-framed chairs and a green plant centerpiece in a windowed corner",
+   "seen_at": [
+    160,
+    162
+   ]
+  },
+  {
+   "name": "sectional sofa with orange pillows",
+   "description": "Large light-colored sectional sofa with a beige throw blanket and orange and patterned throw pillows on a white leaf-patterned area rug",
+   "seen_at": [
+    11,
+    32,
+    81,
+    82,
+    153,
+    156,
+    160,
+    162
+   ]
+  },
+  {
+   "name": "stone fireplace with dark built-in shelves",
+   "description": "Floor-to-ceiling stacked stone fireplace with a white mantel, flanked on the right by dark wood built-in shelving",
+   "seen_at": [
+    83,
+    153,
+    159,
+    163,
+    165
+   ]
+  },
+  {
+   "name": "two dark wicker armchairs by corner windows",
+   "description": "Pair of dark woven wicker armchairs with light throw pillows flanking a small round side table in the corner by tall windows",
+   "seen_at": [
+    153,
+    155,
+    159
+   ]
+  },
+  {
+   "name": "three tall woven bottle vases",
+   "description": "Group of three large brown woven bottle-shaped floor vases next to a potted plant in a woven basket near the stairs",
+   "seen_at": [
+    79,
+    104,
+    108,
+    111,
+    123,
+    125,
+    151
+   ]
+  },
+  {
+   "name": "white French doors to dark-paneled space",
+   "description": "Pair of white multi-pane glass French doors opening into a space with dark wood wainscoting and a dark wood desk",
+   "seen_at": [
+    105,
+    111,
+    123
+   ]
+  },
+  {
+   "name": "staircase going down",
+   "description": "Staircase with dark wood handrail descending to a beige stone tile floor",
+   "seen_at": [
+    12,
+    13,
+    15,
+    28,
+    29,
+    30,
+    80,
+    84,
+    85,
+    102,
+    109,
+    110,
+    113,
+    122,
+    151,
+    166,
+    167,
+    169
+   ]
+  },
+  {
+   "name": "multi-panel abstract wall art",
+   "description": "Horizontal series of rectangular abstract canvas panels in brown, gold, and blue tones mounted on the wall opposite the descending staircase",
+   "seen_at": [
+    113,
+    165
+   ]
+  },
+  {
+   "name": "dark vanity under round mirror",
+   "description": "Dark wood cabinet vanity with a round mirror mounted on a stacked-stone tile wall, visible through an open doorway",
+   "seen_at": [
+    114,
+    115
+   ]
+  },
+  {
+   "name": "glass French doors to chalkboard space",
+   "description": "Pair of white multi-pane glass doors opening into a space with a round patterned rug",
+   "seen_at": [
+    114,
+    115,
+    121
+   ]
+  },
+  {
+   "name": "large wall-mounted chalkboard under ART letters",
+   "description": "Wide rectangular blackboard in a white frame with three decorative letters spelling 'ART' above it, near two white A-frame easels, a round dotted rug, and floor-to-ceiling white built-in shelving",
+   "seen_at": [
+    116,
+    118,
+    119
+   ]
+  },
+  {
+   "name": "upholstered bench under two square frames",
+   "description": "Small patterned upholstered bench beneath two square framed pictures and a high horizontal window at the base of the descending stairs",
+   "seen_at": [
+    13,
+    14,
+    28,
+    29,
+    86,
+    100,
+    110,
+    167
+   ]
+  },
+  {
+   "name": "lower white door",
+   "description": "White six-panel door with a keypad on the wall next to it, to the right of the upholstered bench",
+   "seen_at": [
+    14,
+    28,
+    29,
+    86,
+    167
+   ]
+  },
+  {
+   "name": "shelved storage doorway",
+   "description": "Open doorway to the left of the upholstered bench revealing white built-in shelves",
+   "seen_at": [
+    28,
+    29,
+    86,
+    100,
+    167
+   ]
+  },
+  {
+   "name": "two tall brown woven vases",
+   "description": "Pair of tall dark brown textured floor vases standing in a corner of the stone-tiled passage",
+   "seen_at": [
+    15,
+    16,
+    88,
+    91,
+    93,
+    170,
+    183
+   ]
+  },
+  {
+   "name": "wall-mounted TV with sconces",
+   "description": "Flat-screen TV mounted on a light wall, flanked by two rectangular vertical wall sconces above a dark leather armchair in a carpeted space",
+   "seen_at": [
+    89,
+    182
+   ]
+  },
+  {
+   "name": "beige sofa with striped pillows",
+   "description": "Long beige upholstered sofa with dark-and-light striped throw pillows and two dark wood trunks used as a coffee table",
+   "seen_at": [
+    90,
+    172,
+    176,
+    182
+   ]
+  },
+  {
+   "name": "round dark table with four black chairs",
+   "description": "Dark wood round table surrounded by four black leather chairs in the corner beneath two wide windows",
+   "seen_at": [
+    173,
+    175,
+    177
+   ]
+  },
+  {
+   "name": "dark wood bar with three stools",
+   "description": "Dark wood bar counter with a grey top and three metal-legged cushioned barstools on a stone-tiled floor",
+   "seen_at": [
+    174,
+    178,
+    179
+   ]
+  },
+  {
+   "name": "dark wood cabinets with mosaic backsplash",
+   "description": "Dark stained wood upper and lower cabinets with a grey countertop and a small-tile brown and gold mosaic backsplash behind the bar",
+   "seen_at": [
+    180,
+    181
+   ]
+  },
+  {
+   "name": "stone-walled wine rack alcove",
+   "description": "Small open space lined with stone tiles and metal wall-mounted wine racks",
+   "seen_at": [
+    25,
+    26,
+    96,
+    97,
+    187,
+    189,
+    192
+   ]
+  },
+  {
+   "name": "glass-panel door to exercise equipment",
+   "description": "White door with a large upper glass pane propped open along the stone-tiled passage",
+   "seen_at": [
+    94,
+    98,
+    184,
+    188,
+    189
+   ]
+  },
+  {
+   "name": "double white closet doors",
+   "description": "Pair of white paneled closet doors with silver handles along the lower passage",
+   "seen_at": [
+    23,
+    24,
+    184,
+    186
+   ]
+  },
+  {
+   "name": "doorway with toilet and reddish framed art",
+   "description": "Open doorway showing a toilet and towel bar, with a square reddish painting on the wall to its right at the end of the passage",
+   "seen_at": [
+    17,
+    18,
+    95,
+    185
+   ]
+  },
+  {
+   "name": "dark-framed floor mirror",
+   "description": "Tall rectangular mirror in a dark frame leaning against the wall inside the doorway near the end of the lower passage",
+   "seen_at": [
+    19,
+    20,
+    23
+   ]
+  },
+  {
+   "name": "bed with dark metal headboard",
+   "description": "Bed with white and brown bedding and a dark metal grid headboard",
+   "seen_at": [
+    19,
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "metal weight rack and bench",
+   "description": "Grey metal squat rack and black adjustable weight bench on a black rubber floor mat in front of a large wall-mounted mirror",
+   "seen_at": [
+    190,
+    191,
+    192
+   ]
+  },
+  {
+   "name": "treadmill and elliptical machine",
+   "description": "Silver and black treadmill and elliptical machine standing side by side on a light wood floor near a high ledge with a small TV and recessed square window",
+   "seen_at": [
+    190,
+    191,
+    192,
+    193,
+    194,
+    195
+   ]
+  },
+  {
+   "name": "recessed wall niche with art",
+   "description": "White-trimmed square wall cutout containing a vertical textured artwork and a small vase at the top of the main stairs",
+   "seen_at": [
+    43,
+    55,
+    59,
+    68,
+    126
+   ]
+  },
+  {
+   "name": "black console table under mirror",
+   "description": "Dark three-tiered console table beneath a square silver-framed mirror on the upper landing",
+   "seen_at": [
+    43,
+    55,
+    59,
+    61,
+    67,
+    75,
+    127,
+    147
+   ]
+  },
+  {
+   "name": "upstairs double white doors",
+   "description": "Pair of white six-panel doors with silver lever handles on the upper landing",
+   "seen_at": [
+    44,
+    54,
+    60,
+    68,
+    128,
+    147
+   ]
+  },
+  {
+   "name": "patterned armchair under girl painting",
+   "description": "Wide armless upholstered chair with a throw blanket, under a small painting of a girl in a dress",
+   "seen_at": [
+    45,
+    46,
+    52
+   ]
+  },
+  {
+   "name": "wire-shelved closet with small window",
+   "description": "Narrow space lined with white wire shelving on both walls and a small square window at the end",
+   "seen_at": [
+    47,
+    48
+   ]
+  },
+  {
+   "name": "white vanity with mirror and sconces",
+   "description": "White cabinet vanity with a beveled mirror flanked by two vertical wall sconces",
+   "seen_at": [
+    49,
+    50
+   ]
+  },
+  {
+   "name": "bed with arched white headboard",
+   "description": "Single bed with white bedding, a dark throw pillow, and a white arched headboard between two small high windows",
+   "seen_at": [
+    50,
+    51,
+    53
+   ]
+  },
+  {
+   "name": "bed with dark wood headboard and white bedding",
+   "description": "Large bed with a dark wood headboard, white bedding, a grey throw blanket, flanked by dark nightstands and white-shaded lamps under a tray ceiling",
+   "seen_at": [
+    62,
+    66,
+    128,
+    133,
+    136,
+    138,
+    145
+   ]
+  },
+  {
+   "name": "dark dresser under round sunburst mirror",
+   "description": "Low dark wood dresser beneath a large round mirror with a textured gold-and-silver sunburst frame",
+   "seen_at": [
+    129,
+    134,
+    135,
+    138,
+    145
+   ]
+  },
+  {
+   "name": "double glass doors to balcony",
+   "description": "White-framed double glass doors with a transom window above and tall narrow windows on either side, next to a cream armchair in the corner",
+   "seen_at": [
+    135,
+    136,
+    137
+   ]
+  },
+  {
+   "name": "built-in white dresser and shelves",
+   "description": "White built-in lower drawers and upper open shelving recessed into the wall along a short passage with a plush white runner rug and two wire-shelved closets",
+   "seen_at": [
+    63,
+    64,
+    130,
+    131,
+    132,
+    139,
+    140,
+    144
+   ]
+  },
+  {
+   "name": "freestanding oval bathtub under window",
+   "description": "White freestanding oval soaking tub with a grey towel draped over the side beneath a wide window, across from a white vanity",
+   "seen_at": [
+    132,
+    141
+   ]
+  },
+  {
+   "name": "tiled walk-in shower with bench",
+   "description": "Walk-in shower lined with light grey-and-beige striped stone tiles, a built-in tiled bench on the right, and silver fixtures",
+   "seen_at": [
+    142,
+    143
+   ]
+  },
+  {
+   "name": "bed with blue-gray headboard and green throw",
+   "description": "Bed with a patterned blue-gray upholstered headboard, dark bedding, and a light green throw blanket beside a colorful geometric patterned rug and a dark open shelving unit next to a wall-mounted letter 'B'",
+   "seen_at": [
+    69,
+    70,
+    71,
+    72,
+    74
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "white marble fireplace",
+   "to": "built-in white glass-front hutch",
+   "how": "Turn away from the white marble fireplace and cream chaise lounge to face the doorway flanked by the built-in white glass-front hutch on the right and high-backed white dining chairs on the left."
+  },
+  {
+   "from": "built-in white glass-front hutch",
+   "to": "dark wood island with white top",
+   "how": "Pass the built-in white glass-front hutch on your right and high-backed white dining chairs on your left, walking straight through the doorway toward the dark wood island with white top."
+  },
+  {
+   "from": "dark wood island with white top",
+   "to": "built-in white glass-front hutch",
+   "how": "With the dark wood island on your left and stainless steel range on your right, walk straight through the doorway between the high-backed white dining chairs on the right and built-in white glass-front hutch on the left."
+  },
+  {
+   "from": "dark wood island with white top",
+   "to": "staircase going down",
+   "how": "Pass between the dark wood island on the left and panel-ready refrigerator and wine cooler on the right, then turn right through the doorway before the stone fireplace to reach the top of the staircase going down on the left."
+  },
+  {
+   "from": "staircase going down",
+   "to": "dark wood island with white top",
+   "how": "At the top of the staircase going down, turn right and walk through the doorway past the panel-ready refrigerator on your left to reach the dark wood island with white top."
+  },
+  {
+   "from": "staircase going down",
+   "to": "upholstered bench under two square frames",
+   "how": "Walk straight down the staircase to the beige stone tile floor, where the upholstered bench under two square frames is directly ahead between the shelved storage doorway on the left and lower white door on the right."
+  },
+  {
+   "from": "upholstered bench under two square frames",
+   "to": "staircase going down",
+   "how": "Facing the upholstered bench, turn left and climb the staircase going up to the dark wood floor."
+  },
+  {
+   "from": "upholstered bench under two square frames",
+   "to": "two tall brown woven vases",
+   "how": "From the upholstered bench at the bottom of the stairs, turn around to the right around the staircase railing and walk straight down the stone-tiled passage toward the two tall brown woven vases on the left."
+  },
+  {
+   "from": "two tall brown woven vases",
+   "to": "upholstered bench under two square frames",
+   "how": "With the two tall brown woven vases on your right, walk straight down the stone-tiled passage to the upholstered bench under two square frames at the bottom of the stairs."
+  },
+  {
+   "from": "two tall brown woven vases",
+   "to": "doorway with toilet and reddish framed art",
+   "how": "At the two tall brown woven vases, turn left around the corner and walk down the passage past the glass-panel door and double white closet doors on the left toward the open doorway with the toilet and reddish framed art straight ahead."
+  },
+  {
+   "from": "doorway with toilet and reddish framed art",
+   "to": "bed with dark metal headboard",
+   "how": "Just before reaching the doorway with the toilet and reddish framed art, turn right through the open doorway to pass the dark-framed floor mirror on the left and reach the bed with the dark metal headboard."
+  },
+  {
+   "from": "bed with dark metal headboard",
+   "to": "stone-walled wine rack alcove",
+   "how": "Walk out the doorway past the dark-framed floor mirror onto the stone-tiled passage, where the stone-walled wine rack alcove is ahead on the left."
+  },
+  {
+   "from": "stone-walled wine rack alcove",
+   "to": "two tall brown woven vases",
+   "how": "Step out of the stone-walled wine rack alcove and turn right to reach the corner with the two tall brown woven vases."
+  },
+  {
+   "from": "two tall brown woven vases",
+   "to": "stone-walled wine rack alcove",
+   "how": "At the two tall brown woven vases, turn left around the corner and then immediately left into the stone-walled wine rack alcove."
+  },
+  {
+   "from": "dark wood island with white top",
+   "to": "white corner cabinets and sink",
+   "how": "Walk past the dark wood island on your left toward the corner windows to reach the white corner cabinets and sink."
+  },
+  {
+   "from": "white corner cabinets and sink",
+   "to": "stainless steel range with blue knobs",
+   "how": "Turn left at the white corner cabinets and sink to walk between the dark wood island on your left and the stainless steel range with blue knobs on your right."
+  },
+  {
+   "from": "built-in white glass-front hutch",
+   "to": "wooden staircase going up",
+   "how": "From the doorway by the built-in white glass-front hutch, walk forward past the white marble fireplace on the right and curve left around the cream chaise lounge toward the glass-pane double front doors and the wooden staircase going up on the left."
+  },
+  {
+   "from": "wooden staircase going up",
+   "to": "black console table under mirror",
+   "how": "Climb the two-flight wooden staircase past the three metal leaf wall sculptures on the left to reach the upper landing with the recessed wall niche with art and the black console table under mirror."
+  },
+  {
+   "from": "black console table under mirror",
+   "to": "wooden staircase going up",
+   "how": "From the upper landing by the black console table under mirror, turn toward the stairs and walk down the two-flight wooden staircase past the three metal leaf wall sculptures on your right."
+  },
+  {
+   "from": "black console table under mirror",
+   "to": "patterned armchair under girl painting",
+   "how": "At the top of the stairs by the recessed wall niche, turn left and walk past the upstairs double white doors on your left through the end doorway toward the patterned armchair under the girl painting."
+  },
+  {
+   "from": "patterned armchair under girl painting",
+   "to": "wire-shelved closet with small window",
+   "how": "Before reaching the patterned armchair, turn right into the narrow passage and walk straight past the white vanity doorway into the wire-shelved closet with a small window."
+  },
+  {
+   "from": "wire-shelved closet with small window",
+   "to": "bed with arched white headboard",
+   "how": "Turn around in the wire-shelved closet and walk straight out past the white vanity with mirror and sconces on your right to reach the bed with the arched white headboard ahead."
+  },
+  {
+   "from": "bed with arched white headboard",
+   "to": "black console table under mirror",
+   "how": "From the bed with the arched white headboard, walk past the patterned armchair and exit through the doorway, passing the upstairs double white doors on your left to reach the recessed wall niche and black console table under mirror."
+  },
+  {
+   "from": "black console table under mirror",
+   "to": "bed with dark wood headboard and white bedding",
+   "how": "Pass the black console table under mirror and walk through the open double doorway into the space with the bed with the dark wood headboard and white bedding."
+  },
+  {
+   "from": "bed with dark wood headboard and white bedding",
+   "to": "built-in white dresser and shelves",
+   "how": "Just inside the double doorway before the bed with the dark wood headboard, turn toward the narrow passage with the white runner rug to pass the built-in white dresser and shelves and wire-shelved closets on the left."
+  },
+  {
+   "from": "built-in white dresser and shelves",
+   "to": "bed with dark wood headboard and white bedding",
+   "how": "Walk back along the white runner rug with the built-in white dresser and shelves on your right to return to the bed with the dark wood headboard and white bedding."
+  },
+  {
+   "from": "bed with dark wood headboard and white bedding",
+   "to": "black console table under mirror",
+   "how": "Walk out through the open double doorway to return to the upper landing by the black console table under mirror."
+  },
+  {
+   "from": "black console table under mirror",
+   "to": "bed with blue-gray headboard and green throw",
+   "how": "From the black console table under mirror, walk past the recessed wall niche on your right and enter the doorway just before the upstairs double white doors to reach the geometric patterned rug, dark open shelving unit next to letter B, and bed with the blue-gray headboard."
+  },
+  {
+   "from": "bed with blue-gray headboard and green throw",
+   "to": "black console table under mirror",
+   "how": "Walk across the geometric patterned rug past the dark open shelving unit next to letter B on your left, exit the doorway onto the landing, and turn right toward the black console table under mirror."
+  },
+  {
+   "from": "wooden staircase going up",
+   "to": "stone fireplace with dark built-in shelves",
+   "how": "At the bottom of the wooden staircase going up with the glass-pane double front doors on your left, turn right and walk past the three tall woven bottle vases on your left and staircase going down on your right to enter the doorway beside the stone fireplace with dark built-in shelves."
+  },
+  {
+   "from": "stone fireplace with dark built-in shelves",
+   "to": "staircase going down",
+   "how": "Pass between the stone fireplace with dark built-in shelves on your left and the panel-ready refrigerator and wine cooler on your right, stepping through the doorway to reach the staircase going down on your left."
+  },
+  {
+   "from": "two tall brown woven vases",
+   "to": "beige sofa with striped pillows",
+   "how": "Just before reaching the two tall brown woven vases on the left, turn right through the wide opening into the carpeted space with the wall-mounted TV with sconces on the left and the beige sofa with striped pillows on the right."
+  },
+  {
+   "from": "beige sofa with striped pillows",
+   "to": "two tall brown woven vases",
+   "how": "Walk out of the carpeted space past the wall-mounted TV with sconces on your right to return to the stone-tiled passage by the two tall brown woven vases."
+  },
+  {
+   "from": "staircase going down",
+   "to": "glass-pane double front doors",
+   "how": "At the top of the staircase going down, turn left and walk past the three tall woven bottle vases on your right and the white French doors to the dark-paneled space on your left to reach the glass-pane double front doors."
+  },
+  {
+   "from": "glass-pane double front doors",
+   "to": "staircase going down",
+   "how": "Turn away from the glass-pane double front doors and walk past the wooden staircase going up and three tall woven bottle vases on your left and white French doors on your right to reach the staircase going down on the right."
+  },
+  {
+   "from": "staircase going down",
+   "to": "glass French doors to chalkboard space",
+   "how": "With the staircase going down on your left and multi-panel abstract wall art on your right, walk straight down the short passage toward the dark vanity under round mirror and turn right through the glass French doors to the chalkboard space."
+  },
+  {
+   "from": "glass French doors to chalkboard space",
+   "to": "large wall-mounted chalkboard under ART letters",
+   "how": "Step through the glass French doors onto the round patterned rug, with two white A-frame easels by the window ahead, built-in white shelving on the left, and the large wall-mounted chalkboard under ART letters on the right."
+  },
+  {
+   "from": "large wall-mounted chalkboard under ART letters",
+   "to": "wooden staircase going up",
+   "how": "Exit through the glass French doors, turn left past the staircase going down and three tall woven bottle vases on your right, and turn right at the glass-pane double front doors to climb the wooden staircase going up."
+  },
+  {
+   "from": "bed with dark wood headboard and white bedding",
+   "to": "double glass doors to balcony",
+   "how": "Walk past the bed with the dark wood headboard on your left and the dark dresser under round sunburst mirror on your right to reach the double glass doors to the balcony and the cream armchair in the corner."
+  },
+  {
+   "from": "double glass doors to balcony",
+   "to": "built-in white dresser and shelves",
+   "how": "Turn away from the double glass doors to the balcony, walk past the dark dresser on your left and the bed on your right, and turn right into the short passage with the white runner rug and built-in white dresser and shelves."
+  },
+  {
+   "from": "built-in white dresser and shelves",
+   "to": "tiled walk-in shower with bench",
+   "how": "Walk to the end of the white runner rug past the built-in white dresser and second wire-shelved closet on your left, step onto the tiled floor with the freestanding oval bathtub ahead, and turn right into the tiled walk-in shower with bench."
+  },
+  {
+   "from": "tiled walk-in shower with bench",
+   "to": "built-in white dresser and shelves",
+   "how": "Step out of the tiled walk-in shower and walk straight back along the white runner rug with the built-in white dresser and shelves on your right."
+  },
+  {
+   "from": "stone fireplace with dark built-in shelves",
+   "to": "two dark wicker armchairs by corner windows",
+   "how": "In front of the stone fireplace, walk across the leaf-patterned area rug between the fireplace and the sectional sofa with orange pillows toward the two dark wicker armchairs by the corner windows."
+  },
+  {
+   "from": "two dark wicker armchairs by corner windows",
+   "to": "round glass table with four white chairs",
+   "how": "Turn around from the corner windows and walk past the two dark wicker armchairs and sectional sofa on your right toward the dark wood island and the round glass table with four white chairs by the opposite windows."
+  },
+  {
+   "from": "round glass table with four white chairs",
+   "to": "stone fireplace with dark built-in shelves",
+   "how": "Turn left away from the round glass table and walk between the sectional sofa on your left and the dark wood island on your right toward the doorway between the stone fireplace and the panel-ready refrigerator."
+  },
+  {
+   "from": "beige sofa with striped pillows",
+   "to": "round dark table with four black chairs",
+   "how": "Walk deeper into the carpeted space with the beige sofa with striped pillows on your left to reach the round dark table with four black chairs in the windowed corner."
+  },
+  {
+   "from": "round dark table with four black chairs",
+   "to": "dark wood cabinets with mosaic backsplash",
+   "how": "Turn around from the round dark table to face the dark wood bar with three stools, then walk past the stools on your left and turn right behind the bar to reach the dark wood cabinets with mosaic backsplash."
+  },
+  {
+   "from": "dark wood cabinets with mosaic backsplash",
+   "to": "beige sofa with striped pillows",
+   "how": "Walk out from behind the dark wood bar and cross the carpeted space with the beige sofa with striped pillows on your right."
+  },
+  {
+   "from": "doorway with toilet and reddish framed art",
+   "to": "glass-panel door to exercise equipment",
+   "how": "Turn around from the doorway with the toilet and reddish framed art and walk back down the stone-tiled passage past the double white closet doors on your right to the glass-panel door on your right."
+  },
+  {
+   "from": "glass-panel door to exercise equipment",
+   "to": "metal weight rack and bench",
+   "how": "Turn right through the open glass-panel door and turn right again to face the metal weight rack and bench in front of the mirror wall."
+  },
+  {
+   "from": "metal weight rack and bench",
+   "to": "treadmill and elliptical machine",
+   "how": "From the metal weight rack and bench, turn left and walk past the glass-panel doorway toward the treadmill and elliptical machine under the high ledge TV and small window."
+  }
+ ],
+ "walk_summary": [
+  "Start by spinning in place between the white marble fireplace, cream chaise lounge, wooden staircase going up, glass-pane double front doors, high-backed white dining chairs, and built-in white glass-front hutch.",
+  "Walk through the doorway between the high-backed white dining chairs and built-in white glass-front hutch to the dark wood island with white top and panel-ready refrigerator.",
+  "Turn right before the sectional sofa and turn left down the staircase going down to the upholstered bench under two square frames on the stone-tiled floor.",
+  "Make a U-turn to the left around the staircase and walk down the stone-tiled passage past the two tall brown woven vases toward the doorway with the toilet and reddish framed art.",
+  "Turn right through the open doorway past the dark-framed floor mirror, walk around the bed with the dark metal headboard, and exit back into the passage by the stone-walled wine rack alcove.",
+  "Turn right and walk down the stone-tiled passage past the two tall brown woven vases to the upholstered bench, then turn left and climb the staircase back to the wood-floored level.",
+  "Turn right at the top of the stairs, walk past the dark wood island to the white corner cabinets and sink, and turn left around the island past the stainless steel range with blue knobs.",
+  "Walk straight through the doorway between the high-backed white dining chairs and built-in white glass-front hutch, curve left around the cream chaise lounge by the glass-pane double front doors, and climb the two-flight wooden staircase to the upper landing with the recessed wall niche with art and black console table under mirror.",
+  "Turn left past the upstairs double white doors into the end doorway toward the patterned armchair under the girl painting, then curve right into the wire-shelved closet with a small window.",
+  "Turn around and walk out past the white vanity with mirror and sconces to the bed with the arched white headboard, then exit past the patterned armchair and upstairs double white doors to the upper landing.",
+  "Step onto the top of the wooden staircase past the three metal leaf wall sculptures, then turn around and walk past the black console table under mirror through the double doorway toward the bed with the dark wood headboard and white bedding.",
+  "Turn right into the short passage with the white runner rug and built-in white dresser and shelves, then turn around and exit back onto the upper landing.",
+  "Walk past the black console table and recessed wall niche into the doorway before the upstairs double white doors, loop around on the geometric patterned rug by the bed with the blue-gray headboard and dark open shelving unit next to letter B, and exit to the landing.",
+  "Turn right and walk down the wooden staircase toward the glass-pane double front doors, then turn right past the three tall woven bottle vases and staircase going down to enter the space with the dark wood island, sectional sofa with orange pillows, panel-ready refrigerator and wine cooler, and stone fireplace with dark built-in shelves.",
+  "Turn around, exit past the stone fireplace, and walk down the staircase going down to the upholstered bench under two square frames.",
+  "Turn right and walk down the stone-tiled passage toward the two tall brown woven vases, turning right into the carpeted space with the wall-mounted TV with sconces and beige sofa with striped pillows.",
+  "Exit the carpeted space to the two tall brown woven vases, turn left toward the glass-panel door to exercise equipment, and step left into the stone-walled wine rack alcove.",
+  "Step out of the wine rack alcove, turn left past the two tall brown woven vases, walk to the upholstered bench, and climb the staircase going up.",
+  "Turn left at the top of the stairs and walk past the three tall woven bottle vases and white French doors to the dark-paneled space toward the glass-pane double front doors, then turn around and return to the top of the staircase going down.",
+  "Walk past the staircase going down on the left and multi-panel abstract wall art on the right toward the dark vanity under round mirror, then turn right through the glass French doors into the space with the round patterned rug, two white A-frame easels, built-in white shelving, and large wall-mounted chalkboard under ART letters.",
+  "Exit through the glass French doors, turn left past the staircase going down and three tall woven bottle vases, and turn right by the glass-pane double front doors to climb the wooden staircase going up.",
+  "At the upper landing, turn right through the double doorway toward the bed with the dark wood headboard, then turn left onto the white runner rug to look into the wire-shelved closet next to the built-in white dresser and shelves.",
+  "Turn around and walk past the bed with the dark wood headboard and dark dresser under round sunburst mirror to the double glass doors to the balcony and cream armchair in the corner.",
+  "Turn around, walk back past the dark dresser and bed, and turn right along the white runner rug past the built-in white dresser and second wire-shelved closet into the tiled area with the freestanding oval bathtub and tiled walk-in shower with bench.",
+  "Exit the shower, walk back along the white runner rug, pass the bed with the dark wood headboard, and exit onto the upper landing to descend the wooden staircase to the glass-pane double front doors.",
+  "Turn left at the bottom of the stairs, walk past the three tall woven bottle vases and staircase going down, and enter the space with the stone fireplace with dark built-in shelves.",
+  "Walk past the stone fireplace and two dark wicker armchairs by the corner windows, loop around the sectional sofa with orange pillows on the leaf-patterned rug, and walk toward the dark wood island and round glass table with four white chairs.",
+  "Turn left and walk between the sectional sofa and dark wood island, exit between the stone fireplace and panel-ready refrigerator, and descend the staircase going down to the upholstered bench.",
+  "Turn right down the stone-tiled passage past the two tall brown woven vases and turn right into the carpeted space, walking past the beige sofa with striped pillows to the round dark table with four black chairs.",
+  "Turn around and walk past the dark wood bar with three stools to the dark wood cabinets with mosaic backsplash behind the bar.",
+  "Exit the bar and carpeted space back to the two tall brown woven vases, turn right past the glass-panel door and double white closet doors to the doorway with the toilet and reddish framed art, then turn around and enter the glass-panel door on the right to see the metal weight rack and bench, mirror wall, and treadmill and elliptical machine."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/vlnce_tours/TbHJrupSAjP/frames",
+  "n_keyframes": 196,
+  "camera": "held at chest height by a person walking"
+ }
+}

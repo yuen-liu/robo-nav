@@ -1,0 +1,548 @@
+{
+ "landmarks": [
+  {
+   "name": "central marble slab",
+   "description": "Large raised octagonal grey-and-white striped marble platform in the center of the striped marble area.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "name": "floral tile panel with basin",
+   "description": "Vertical blue-and-white floral patterned tile panel on a corner wall with a white marble basin below it.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "name": "doorway to blue-lit area",
+   "description": "Rectangular doorway in the grey-and-white striped marble wall leading into the blue-lit water area.",
+   "seen_at": [
+    0,
+    1,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "name": "raised pool with metal spouts",
+   "description": "Large raised stone-bordered water basin lit in blue, with curved metal water spouts along its edge.",
+   "seen_at": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    40,
+    41,
+    53,
+    54,
+    55,
+    56
+   ]
+  },
+  {
+   "name": "circular lit wall recesses",
+   "description": "Two large round illuminated recesses in the blue-lit textured wall above the raised water basin.",
+   "seen_at": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    40,
+    41,
+    53,
+    54,
+    55,
+    56
+   ]
+  },
+  {
+   "name": "stone bar counter",
+   "description": "Waist-high counter with a light stone-clad front and dark countertop, with shelves and a screen behind it.",
+   "seen_at": [
+    4,
+    5,
+    6,
+    11,
+    12,
+    13,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    50,
+    51,
+    52,
+    56,
+    57,
+    58
+   ]
+  },
+  {
+   "name": "three steps by wooden double doors",
+   "description": "Three wide light-stone steps leading up from the blue-lit area through tall wooden doors.",
+   "seen_at": [
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    20,
+    21,
+    22,
+    39,
+    40,
+    41,
+    54,
+    55,
+    56
+   ]
+  },
+  {
+   "name": "dark armchairs around low table",
+   "description": "Group of dark upholstered barrel armchairs around a small square light-colored table near the stone bar counter.",
+   "seen_at": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+   ]
+  },
+  {
+   "name": "row of three white loungers",
+   "description": "Three white reclining lounge chairs lined up against the far wall near the end of the raised water basin.",
+   "seen_at": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    45,
+    46,
+    47,
+    50,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "pair of white loungers",
+   "description": "Two white reclining lounge chairs with small wooden side tables along the blue-lit stone wall near the near end of the raised water basin.",
+   "seen_at": [
+    54,
+    55
+   ]
+  },
+  {
+   "name": "second set of three steps",
+   "description": "Three wide stone steps in the beige brick-tiled passage leading to the upper level.",
+   "seen_at": [
+    14,
+    15,
+    20,
+    21,
+    22
+   ]
+  },
+  {
+   "name": "potted palm by steps",
+   "description": "Leafy green palm plant in a brown pot set in the corner at the top of the second set of steps.",
+   "seen_at": [
+    19,
+    20,
+    21,
+    22,
+    25,
+    32,
+    38,
+    39
+   ]
+  },
+  {
+   "name": "small potted plant in corner",
+   "description": "Small spindly plant in a white pot with white pebbles around it in the far left corner of the stone passage.",
+   "seen_at": [
+    14,
+    15,
+    25,
+    26
+   ]
+  },
+  {
+   "name": "first right-hand wooden doorway",
+   "description": "Dark wood-framed doorway with a wooden door on the right side of the stone passage.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  {
+   "name": "tall light-wood wardrobe",
+   "description": "Tall two-door light-wood cabinet standing in the corner next to the first right-hand doorway.",
+   "seen_at": [
+    16,
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "padded table with brown base",
+   "description": "Freestanding padded table covered with a beige sheet on a dark wooden base with a lower shelf.",
+   "seen_at": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "white pedestal sink with mirror",
+   "description": "White ceramic pedestal sink with a rectangular mirror above it against tan marble-look wall tiles.",
+   "seen_at": [
+    16,
+    17,
+    18
+   ]
+  },
+  {
+   "name": "doorway at end of stone passage",
+   "description": "Dark wood-framed doorway at the far end of the beige stone passage.",
+   "seen_at": [
+    14,
+    15,
+    23,
+    25,
+    26,
+    27,
+    28,
+    30,
+    31,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "small wooden cabinet with sink",
+   "description": "Low two-door light-wood cabinet with a small sink on top, just inside the doorway at the end of the stone passage.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "white radiator",
+   "description": "White rectangular wall-mounted radiator next to the small wooden cabinet.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    30
+   ]
+  },
+  {
+   "name": "second padded table with white sheet",
+   "description": "Freestanding dark-wood table covered with a white sheet in the half-tiled space.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "second white pedestal sink with mirror",
+   "description": "White ceramic pedestal sink with a rectangular mirror above it next to the doorway in the half-tiled space.",
+   "seen_at": [
+    30,
+    31
+   ]
+  },
+  {
+   "name": "potted plant in black pot",
+   "description": "Tall thin-stemmed green plant in a black square pot against the curved peach-colored wall.",
+   "seen_at": [
+    27,
+    32,
+    33,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "wooden double doors with silver handles",
+   "description": "Closed medium-brown wood-grain double doors with round silver handles in the peach-walled area.",
+   "seen_at": [
+    32,
+    33,
+    34,
+    35,
+    36
+   ]
+  },
+  {
+   "name": "standing banner with woman's face",
+   "description": "Tall vertical roll-up banner showing a woman's face and text against the peach-colored wall.",
+   "seen_at": [
+    32,
+    33,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "upward stone staircase",
+   "description": "Flight of grey-brown stone steps leading upward between peach-colored walls.",
+   "seen_at": [
+    32,
+    33,
+    34,
+    35,
+    36
+   ]
+  },
+  {
+   "name": "red fire extinguisher",
+   "description": "Red cylindrical fire extinguisher on the floor beside the wooden double doors to the blue-lit area.",
+   "seen_at": [
+    38,
+    39
+   ]
+  },
+  {
+   "name": "tall fridge in wooden housing",
+   "description": "Tall white two-door refrigerator enclosed in a light-wood cabinet frame next to the doorway with blue figure icons.",
+   "seen_at": [
+    55,
+    56,
+    57,
+    58
+   ]
+  },
+  {
+   "name": "doorway with blue figure icons",
+   "description": "Wood-framed doorway in the light stone wall at the end of the bar counter, with two small blue figure icons on the wall beside it.",
+   "seen_at": [
+    42,
+    43,
+    46,
+    47,
+    48,
+    49,
+    55,
+    56,
+    57,
+    58,
+    59
+   ]
+  },
+  {
+   "name": "doorway to striped marble area",
+   "description": "Wide rectangular opening in the stone-clad wall to the right of the doorway with blue figure icons, leading toward a dark tiled area.",
+   "seen_at": [
+    55,
+    56,
+    57,
+    58
+   ]
+  },
+  {
+   "name": "two light-wood doors with white vents",
+   "description": "Two side-by-side light-wood doors with white rectangular vent grilles at the bottom, set in a grey-tiled wall.",
+   "seen_at": [
+    48,
+    49,
+    57,
+    58,
+    59,
+    60
+   ]
+  },
+  {
+   "name": "grey-and-beige tiled passage",
+   "description": "Narrow passage with grey floor tiles and two-tone grey and beige wall tiles.",
+   "seen_at": [
+    48,
+    49,
+    57,
+    58,
+    59
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "central marble slab",
+   "to": "doorway to blue-lit area",
+   "how": "Walk between the floral tile panel with basin on your left and the central marble slab on your right to reach the doorway ahead."
+  },
+  {
+   "from": "doorway to blue-lit area",
+   "to": "raised pool with metal spouts",
+   "how": "Step through the doorway into the blue-lit space with the stone bar counter on your left and the raised pool ahead on your right."
+  },
+  {
+   "from": "raised pool with metal spouts",
+   "to": "row of three white loungers",
+   "how": "Walk forward along the edge of the raised pool on your right, passing the three steps by wooden double doors and dark armchairs on your left, toward the white loungers at the far wall."
+  },
+  {
+   "from": "row of three white loungers",
+   "to": "three steps by wooden double doors",
+   "how": "Turn left past the dark armchairs and stone bar counter on your right to face the three steps leading up through the wooden double doors."
+  },
+  {
+   "from": "three steps by wooden double doors",
+   "to": "second set of three steps",
+   "how": "Walk straight up the first three steps through the wooden double doors to the second set of three steps immediately ahead."
+  },
+  {
+   "from": "second set of three steps",
+   "to": "first right-hand wooden doorway",
+   "how": "Go up the second set of three steps with the small potted plant in the corner ahead on your left, and turn right at the first wooden doorway."
+  },
+  {
+   "from": "first right-hand wooden doorway",
+   "to": "white pedestal sink with mirror",
+   "how": "Walk through the doorway, passing the tall light-wood wardrobe and padded table with brown base on your left, to reach the white pedestal sink against the tan tiled wall."
+  },
+  {
+   "from": "white pedestal sink with mirror",
+   "to": "first right-hand wooden doorway",
+   "how": "Turn around 180 degrees and walk past the padded table with brown base and tall light-wood wardrobe on your right to exit through the wooden doorway."
+  },
+  {
+   "from": "first right-hand wooden doorway",
+   "to": "potted palm by steps",
+   "how": "Exit the doorway and turn left toward the top of the second set of three steps, where the potted palm sits on the right."
+  },
+  {
+   "from": "potted palm by steps",
+   "to": "doorway at end of stone passage",
+   "how": "Turn around to face away from the steps and walk down the stone passage, passing the first right-hand wooden doorway on your right and the small potted plant in the corner on your left, to the doorway at the end."
+  },
+  {
+   "from": "doorway at end of stone passage",
+   "to": "second padded table with white sheet",
+   "how": "Walk through the doorway into the half-tiled space, passing the small wooden cabinet with sink and white radiator on your left, to stand beside the white-sheeted padded table on your right."
+  },
+  {
+   "from": "second padded table with white sheet",
+   "to": "doorway at end of stone passage",
+   "how": "Turn around to face the doorway, passing the white radiator, small wooden cabinet with sink on your right, and second white pedestal sink with mirror on your left."
+  },
+  {
+   "from": "doorway at end of stone passage",
+   "to": "upward stone staircase",
+   "how": "Step out through the doorway and turn left into the peach-walled area, passing the potted plant in a black pot and standing banner on your right and the wooden double doors with silver handles on your left, to reach the base of the upward stone staircase."
+  },
+  {
+   "from": "upward stone staircase",
+   "to": "three steps by wooden double doors",
+   "how": "Turn around away from the staircase and walk straight past the standing banner and potted plant in a black pot on your left, continuing down the stone passage past the potted palm on your right and red fire extinguisher on your left to the three steps by the wooden double doors."
+  },
+  {
+   "from": "three steps by wooden double doors",
+   "to": "stone bar counter",
+   "how": "Go down the three steps through the wooden double doors into the blue-lit area and bear left along the stone bar counter."
+  },
+  {
+   "from": "stone bar counter",
+   "to": "doorway with blue figure icons",
+   "how": "Walk forward with the stone bar counter and tall fridge in wooden housing on your left and the dark armchairs around a low table on your right to the doorway with blue figure icons ahead."
+  },
+  {
+   "from": "doorway with blue figure icons",
+   "to": "two light-wood doors with white vents",
+   "how": "Step through the doorway with blue figure icons into the grey-and-beige tiled passage, where the two light-wood doors with white vents are on your left."
+  },
+  {
+   "from": "two light-wood doors with white vents",
+   "to": "dark armchairs around low table",
+   "how": "Step back out through the doorway with blue figure icons into the blue-lit area and turn left toward the stone bar counter and dark armchairs."
+  },
+  {
+   "from": "dark armchairs around low table",
+   "to": "row of three white loungers",
+   "how": "Walk across the blue-lit floor away from the stone bar counter toward the three white loungers at the far wall."
+  },
+  {
+   "from": "row of three white loungers",
+   "to": "pair of white loungers",
+   "how": "Turn right and walk with the raised pool and circular lit wall recesses on your left, passing the pair of white loungers along the wall on your left."
+  },
+  {
+   "from": "pair of white loungers",
+   "to": "doorway with blue figure icons",
+   "how": "Continue past the raised pool on your left and turn right past the three steps by wooden double doors, walking with the dark armchairs, stone bar counter, and tall fridge on your left and the doorway to the striped marble area on your right to reach the doorway with blue figure icons ahead."
+  }
+ ],
+ "walk_summary": [
+  "Start between the floral tile panel with basin on the left and the central marble slab on the right, look around the striped marble space, then walk through the doorway to the blue-lit area.",
+  "Pass the stone bar counter on the left and walk along the raised pool with metal spouts and circular lit wall recesses on the right toward the dark armchairs around a low table and the row of three white loungers.",
+  "Turn left past the stone bar counter and climb the three steps by the wooden double doors, continuing straight up the second set of three steps into the stone passage.",
+  "Turn right through the first right-hand wooden doorway, walking past the tall light-wood wardrobe and padded table with a brown base to the white pedestal sink with mirror.",
+  "Turn around and exit through the first right-hand wooden doorway into the stone passage, step toward the potted palm by the steps, pivot, and walk past the small potted plant in the corner to the doorway at the end of the stone passage.",
+  "Enter the doorway at the end of the stone passage, passing the small wooden cabinet with sink and white radiator on the left alongside the second padded table with a white sheet on the right.",
+  "Turn around past the second white pedestal sink with mirror, exit the doorway at the end of the stone passage, and turn left past the potted plant in a black pot, standing banner with a woman's face, and wooden double doors with silver handles to the base of the upward stone staircase.",
+  "Turn around at the upward stone staircase and walk back past the standing banner, potted plant in a black pot, potted palm by the steps, and red fire extinguisher, descending the steps through the wooden double doors into the blue-lit area.",
+  "Walk along the stone bar counter on the left and dark armchairs on the right toward the doorway with blue figure icons, glance behind the stone bar counter, then step through the doorway with blue figure icons to the two light-wood doors with white vents in the grey-and-beige tiled passage.",
+  "Back out into the blue-lit area, walk across to the row of three white loungers, turn right to walk past the pair of white loungers and raised pool on the left, then turn right again past the dark armchairs, stone bar counter, and tall fridge in wooden housing on the left and doorway to the striped marble area on the right to re-enter the doorway with blue figure icons and face the two light-wood doors with white vents."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/vlnce_tours/x8F5xyUWy9e/frames",
+  "n_keyframes": 61,
+  "camera": "held at chest height by a person walking"
+ }
+}

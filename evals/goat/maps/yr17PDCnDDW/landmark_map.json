@@ -1,0 +1,939 @@
+{
+ "landmarks": [
+  {
+   "name": "round wall relief",
+   "description": "circular 3D architectural model mounted on a white wall on the upper level",
+   "seen_at": [
+    0
+   ]
+  },
+  {
+   "name": "upper tall brown planter",
+   "description": "tall tapered brown floor vase with a green plant near the upper low white cabinets",
+   "seen_at": [
+    0,
+    1,
+    2,
+    4
+   ]
+  },
+  {
+   "name": "upper low white cabinet row",
+   "description": "row of waist-high white storage cabinets dividing the upper floor space",
+   "seen_at": [
+    1,
+    2,
+    178,
+    179
+   ]
+  },
+  {
+   "name": "green bamboo wall art",
+   "description": "large wall graphic on the upper level with green vertical bamboo stalks and angled gray stripes",
+   "seen_at": [
+    3,
+    4,
+    21,
+    22,
+    23,
+    27,
+    28,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "cube bookshelf",
+   "description": "tall white grid shelving unit filled with books and folders on the upper level",
+   "seen_at": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "name": "blue glass partition",
+   "description": "translucent blue-tinted glass wall along the upper edge of the central floor opening",
+   "seen_at": [
+    4,
+    11,
+    12,
+    13,
+    33,
+    36,
+    39,
+    40,
+    62,
+    63,
+    66,
+    68,
+    72,
+    74,
+    75,
+    76,
+    116,
+    119,
+    172,
+    175
+   ]
+  },
+  {
+   "name": "atrium staircase",
+   "description": "two-flight open wooden-tread staircase with metal railings and a mid-landing in the central floor opening",
+   "seen_at": [
+    0,
+    4,
+    7,
+    11,
+    13,
+    15,
+    16,
+    17,
+    19,
+    39,
+    41,
+    43,
+    47,
+    48,
+    60,
+    61,
+    63,
+    67,
+    71,
+    75,
+    76,
+    78,
+    81,
+    83,
+    110,
+    114,
+    115,
+    117,
+    133,
+    134,
+    136,
+    143,
+    148,
+    159,
+    160,
+    170,
+    171,
+    173
+   ]
+  },
+  {
+   "name": "upper white pillar by cube bookshelf",
+   "description": "round white structural column near the cube bookshelf and SYMA wall mural on the upper level",
+   "seen_at": [
+    5,
+    37,
+    71,
+    72
+   ]
+  },
+  {
+   "name": "upper white pillar by blue glass partition",
+   "description": "round white structural column at the corner of the blue glass partition on the upper level",
+   "seen_at": [
+    13,
+    36,
+    63,
+    119,
+    175
+   ]
+  },
+  {
+   "name": "white door by white cabinet",
+   "description": "plain white door in a white wall next to a waist-high white cabinet on the upper level",
+   "seen_at": [
+    6,
+    7
+   ]
+  },
+  {
+   "name": "SYMA wall mural",
+   "description": "large wall-sized poster on the upper level showing two women holding a booklet, a blue band at the bottom, and text 'We build inspiration' and 'SYMA'",
+   "seen_at": [
+    7,
+    8,
+    9,
+    19,
+    20,
+    72,
+    73,
+    133,
+    134,
+    135
+   ]
+  },
+  {
+   "name": "upper restroom doors with blue figures",
+   "description": "two white doors on the upper level at the top of the stairs with large blue male and female silhouettes painted on them",
+   "seen_at": [
+    8,
+    9,
+    10,
+    11,
+    17,
+    18,
+    37,
+    38,
+    64,
+    65,
+    67,
+    68,
+    117,
+    118,
+    119,
+    132,
+    173,
+    174
+   ]
+  },
+  {
+   "name": "blue planter",
+   "description": "dark blue-gray rounded floor pot with a green plant between the two upper blue-figure doors",
+   "seen_at": [
+    10,
+    11,
+    38,
+    64,
+    65,
+    67,
+    68,
+    118,
+    132,
+    174
+   ]
+  },
+  {
+   "name": "upper red fire extinguisher",
+   "description": "red fire extinguisher mounted on the white wall next to the upper blue-figure doors",
+   "seen_at": [
+    17,
+    18,
+    37,
+    70,
+    118,
+    174
+   ]
+  },
+  {
+   "name": "black armchair",
+   "description": "boxy black leather armchair in the corner beneath the green bamboo wall art",
+   "seen_at": [
+    21,
+    22,
+    23,
+    27,
+    28
+   ]
+  },
+  {
+   "name": "desk with dual monitors",
+   "description": "white work desk with two black computer monitors in front of a row of dark windows on the upper level",
+   "seen_at": [
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    179
+   ]
+  },
+  {
+   "name": "village mural above white cabinets",
+   "description": "colorful painting of red-roofed houses and green hills mounted above waist-high white cabinets on the upper level",
+   "seen_at": [
+    25,
+    26,
+    28,
+    31
+   ]
+  },
+  {
+   "name": "cabinet with photo grid",
+   "description": "upper-level white cabinet doors covered with a grid of small rectangular photographs beneath a yellow-striped wall graphic",
+   "seen_at": [
+    25,
+    29,
+    31,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "upper yellow desk partition",
+   "description": "long white desks with bright yellow privacy screens on top on the upper level",
+   "seen_at": [
+    34,
+    66,
+    69,
+    120,
+    131,
+    176,
+    177,
+    178
+   ]
+  },
+  {
+   "name": "SYMA display wall with cabinet",
+   "description": "lower-level partition wall with photos, blue geometric stripes, 'SYMA' logo, and a waist-high white cabinet in front",
+   "seen_at": [
+    43,
+    44,
+    47,
+    80,
+    146
+   ]
+  },
+  {
+   "name": "red swivel chair",
+   "description": "red and black wheeled task chairs at the desks on both levels",
+   "seen_at": [
+    44,
+    45,
+    120,
+    176,
+    177,
+    178,
+    179
+   ]
+  },
+  {
+   "name": "photo-covered white cabinets",
+   "description": "row of waist-high white cabinets on the lower level with photos taped to the doors",
+   "seen_at": [
+    45,
+    46
+   ]
+  },
+  {
+   "name": "square beige planter",
+   "description": "square light-brown floor pot with a leafy green plant near the bottom of the stairs on the lower level",
+   "seen_at": [
+    48,
+    80,
+    81,
+    84,
+    146,
+    148
+   ]
+  },
+  {
+   "name": "lower red fire extinguisher by stairs",
+   "description": "red fire extinguisher mounted on the white wall at the bottom of the atrium staircase",
+   "seen_at": [
+    49,
+    50,
+    51,
+    136,
+    137
+   ]
+  },
+  {
+   "name": "lower restroom doors with blue figures",
+   "description": "white doors in the lower-level passage painted with large blue female and male silhouettes",
+   "seen_at": [
+    51,
+    52,
+    53,
+    54,
+    59,
+    60,
+    78,
+    79,
+    113,
+    114,
+    136,
+    137,
+    138,
+    169,
+    170
+   ]
+  },
+  {
+   "name": "wall-mounted whiteboard",
+   "description": "rectangular white board with a metal marker tray mounted on the white wall opposite the lower blue-figure doors",
+   "seen_at": [
+    52,
+    53,
+    54,
+    58,
+    59,
+    138
+   ]
+  },
+  {
+   "name": "white chairs and table",
+   "description": "table surrounded by white plastic shell chairs on wooden legs near the wooden counters",
+   "seen_at": [
+    55,
+    56,
+    57,
+    162,
+    163,
+    164,
+    165,
+    166
+   ]
+  },
+  {
+   "name": "wooden counter with patchwork art",
+   "description": "long light-wood cabinet counter with a square multi-colored grid artwork on the white wall above it",
+   "seen_at": [
+    54,
+    55,
+    56,
+    161,
+    162,
+    163,
+    166
+   ]
+  },
+  {
+   "name": "blue-and-white sign board",
+   "description": "low rectangular partition or sign with a white top half and blue bottom half on green flooring beneath the stairs",
+   "seen_at": [
+    81,
+    82,
+    83,
+    149
+   ]
+  },
+  {
+   "name": "blue reception counter",
+   "description": "waist-high white counter with a dark blue geometric front panel and glass top shelf near the entrance doors",
+   "seen_at": [
+    84,
+    85,
+    86,
+    90,
+    91,
+    145,
+    150,
+    158
+   ]
+  },
+  {
+   "name": "dark floor mat",
+   "description": "large dark gray rectangular mat inset into the wood floor in front of the glass entrance doors",
+   "seen_at": [
+    85,
+    86,
+    150,
+    158
+   ]
+  },
+  {
+   "name": "lower low white cabinet row",
+   "description": "row of waist-high white storage cabinets dividing the lower wood-floored area from the desks",
+   "seen_at": [
+    86,
+    87,
+    88,
+    91,
+    92,
+    95,
+    96,
+    97
+   ]
+  },
+  {
+   "name": "metal frame around pillar",
+   "description": "square silver metal truss structure surrounding a round white column in the middle of the lower wood floor",
+   "seen_at": [
+    86,
+    87,
+    96,
+    100,
+    103,
+    104,
+    139,
+    140,
+    142,
+    160
+   ]
+  },
+  {
+   "name": "lower tall brown planter",
+   "description": "tall tapered brown floor vase with a green plant at the end of the lower low white cabinet row",
+   "seen_at": [
+    88,
+    89,
+    97,
+    98,
+    99,
+    103
+   ]
+  },
+  {
+   "name": "glass double doors with exit sign",
+   "description": "clear glass doorway in a metal frame with a green exit sign above it, by the dark floor mat",
+   "seen_at": [
+    90,
+    150,
+    151,
+    157
+   ]
+  },
+  {
+   "name": "lower yellow desk partition",
+   "description": "long white desks with bright yellow privacy screens on top on the lower level behind the low white cabinets",
+   "seen_at": [
+    91,
+    92,
+    93,
+    94,
+    95,
+    146,
+    147
+   ]
+  },
+  {
+   "name": "blue curved wall with poster",
+   "description": "curved bright-blue partition wall on the lower level featuring a large poster of two women and green flooring along its base",
+   "seen_at": [
+    99,
+    101,
+    102,
+    103
+   ]
+  },
+  {
+   "name": "green booth with TV",
+   "description": "three-sided green-graphic alcove with green flooring, a wall-mounted flat-screen TV, and a slanted white display stand",
+   "seen_at": [
+    104,
+    105,
+    106,
+    110,
+    111,
+    112,
+    139,
+    140,
+    141,
+    160,
+    161,
+    162
+   ]
+  },
+  {
+   "name": "wavy glass partition",
+   "description": "tall curved wall made of translucent rippled glass panels with a clear display case in front",
+   "seen_at": [
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    143,
+    161,
+    162,
+    167,
+    168
+   ]
+  },
+  {
+   "name": "floor plant by wavy glass",
+   "description": "wide, bushy dark-green potted plant sitting on the wood floor in front of the wavy glass partition",
+   "seen_at": [
+    105,
+    106,
+    107,
+    108,
+    110,
+    111,
+    143,
+    161,
+    162
+   ]
+  },
+  {
+   "name": "Produktion door",
+   "description": "white door in a white wall with large vertical gray lettering reading 'Produktion' and a red fire extinguisher beside it",
+   "seen_at": [
+    107,
+    108,
+    109,
+    162
+   ]
+  },
+  {
+   "name": "red fire extinguisher by Produktion door",
+   "description": "red fire extinguisher mounted on the white wall next to the Produktion door",
+   "seen_at": [
+    108,
+    109
+   ]
+  },
+  {
+   "name": "wood-slat wall with brochure rack",
+   "description": "upper-level wall covered in vertical light-wood slats with a mounted wooden display shelf holding brochures",
+   "seen_at": [
+    120,
+    121,
+    122,
+    123,
+    124,
+    126
+   ]
+  },
+  {
+   "name": "long white table with white chairs",
+   "description": "large rectangular white table surrounded by white ribbed swivel chairs on chrome bases on the upper level",
+   "seen_at": [
+    121,
+    122,
+    123,
+    124,
+    127,
+    128,
+    130
+   ]
+  },
+  {
+   "name": "ribbed dark planter",
+   "description": "tall dark-gray vertically ribbed floor pots with leafy green plants at each end of the wood-slat wall",
+   "seen_at": [
+    121,
+    122,
+    123,
+    124,
+    125
+   ]
+  },
+  {
+   "name": "white flipchart easel",
+   "description": "standing white paper pad on a tripod easel in the corner by the wood-slat wall",
+   "seen_at": [
+    123,
+    124,
+    125
+   ]
+  },
+  {
+   "name": "sliding door with gray squares",
+   "description": "large white sliding partition panel decorated with gray geometric square patterns near the long white table",
+   "seen_at": [
+    124,
+    125,
+    127
+   ]
+  },
+  {
+   "name": "sheer white curtains",
+   "description": "floor-to-ceiling translucent white curtains hanging along the curved window wall beside the long white table",
+   "seen_at": [
+    127,
+    128,
+    129,
+    130,
+    131
+   ]
+  },
+  {
+   "name": "wall-mounted glass board",
+   "description": "rectangular frosted glass writing board mounted on the white wall next to the doorway by the long white table",
+   "seen_at": [
+    128,
+    129
+   ]
+  },
+  {
+   "name": "lower white pillar by stairs",
+   "description": "round white structural column on the lower level beside the atrium staircase and SYMA display wall",
+   "seen_at": [
+    144,
+    145
+   ]
+  },
+  {
+   "name": "silver dome trash can",
+   "description": "cylindrical metallic trash bin with a domed top standing in the corner between the inner and outer glass entrance doors",
+   "seen_at": [
+    151,
+    156
+   ]
+  },
+  {
+   "name": "exterior SYMA sign",
+   "description": "large illuminated wall graphic outside the entrance featuring the SYMA logo, 'We build inspiration' text, and a circular 3D relief",
+   "seen_at": [
+    153,
+    154,
+    155,
+    156
+   ]
+  },
+  {
+   "name": "white drawer counter with wood top",
+   "description": "long waist-high white cabinet counter with horizontal metal bar handles, a light wood countertop, and a round wall clock above it",
+   "seen_at": [
+    164,
+    165,
+    166
+   ]
+  },
+  {
+   "name": "metal shelving unit",
+   "description": "open grey metal utility rack filled with boxes and supplies against a white wall on the upper level",
+   "seen_at": [
+    175,
+    176,
+    177
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "upper tall brown planter",
+   "to": "cube bookshelf",
+   "how": "Turn around with the upper low white cabinet row on your right and walk across the wood floor toward the atrium staircase."
+  },
+  {
+   "from": "cube bookshelf",
+   "to": "SYMA wall mural",
+   "how": "Pass the cube bookshelf on your right and the upper white pillar by cube bookshelf on your left, continuing straight along the edge of the atrium staircase."
+  },
+  {
+   "from": "SYMA wall mural",
+   "to": "upper restroom doors with blue figures",
+   "how": "Keep the SYMA wall mural on your right and the atrium staircase on your left, walking straight ahead to the doors at the end of the floor opening."
+  },
+  {
+   "from": "upper restroom doors with blue figures",
+   "to": "SYMA wall mural",
+   "how": "With the upper restroom doors with blue figures behind you, turn right past the upper red fire extinguisher and walk along the edge of the atrium staircase."
+  },
+  {
+   "from": "SYMA wall mural",
+   "to": "black armchair",
+   "how": "Walk with the SYMA wall mural on your left and the atrium staircase on your right, then bear left past the cube bookshelf toward the green bamboo wall art."
+  },
+  {
+   "from": "black armchair",
+   "to": "desk with dual monitors",
+   "how": "Pass the black armchair and green bamboo wall art on your right, then turn left onto the gray floor toward the windows."
+  },
+  {
+   "from": "desk with dual monitors",
+   "to": "cabinet with photo grid",
+   "how": "From the windows by the desk with dual monitors, turn around and walk past the desk and village mural above white cabinets on your left toward the photo-covered cabinet doors ahead."
+  },
+  {
+   "from": "cabinet with photo grid",
+   "to": "upper yellow desk partition",
+   "how": "Step out past the cabinet with photo grid on your right onto the wood floor, then turn right into the gray-floored area with the green bamboo wall art on your left."
+  },
+  {
+   "from": "upper yellow desk partition",
+   "to": "upper restroom doors with blue figures",
+   "how": "Exit the gray-floored desk area onto the wood floor, turn left past the upper white pillar by cube bookshelf on your left and upper red fire extinguisher on your right, and walk to the doors ahead."
+  },
+  {
+   "from": "upper restroom doors with blue figures",
+   "to": "atrium staircase",
+   "how": "With the upper restroom doors with blue figures and blue planter on your right, turn left and step down onto the top flight of the wooden stairs."
+  },
+  {
+   "from": "atrium staircase",
+   "to": "upper restroom doors with blue figures",
+   "how": "Climb the upper flight of the wooden stairs with the blue glass partition on your left to reach the doors and blue planter directly ahead at the top."
+  },
+  {
+   "from": "atrium staircase",
+   "to": "SYMA display wall with cabinet",
+   "how": "At the bottom of the lower flight of the atrium staircase, turn right and walk past the SYMA display wall with cabinet on your left."
+  },
+  {
+   "from": "SYMA display wall with cabinet",
+   "to": "photo-covered white cabinets",
+   "how": "Walk past the SYMA display wall with cabinet on your left toward the red swivel chair by the windows, then turn right."
+  },
+  {
+   "from": "photo-covered white cabinets",
+   "to": "lower restroom doors with blue figures",
+   "how": "Turn around and walk past the SYMA display wall with cabinet on your right and the bottom of the atrium staircase, then turn left at the lower red fire extinguisher by stairs."
+  },
+  {
+   "from": "atrium staircase",
+   "to": "lower restroom doors with blue figures",
+   "how": "Descend the lower flight of the atrium staircase to the bottom facing the white wall, then turn left into the narrow passage."
+  },
+  {
+   "from": "lower restroom doors with blue figures",
+   "to": "atrium staircase",
+   "how": "Walk along the narrow passage with the lower restroom doors with blue figures on your left and wall-mounted whiteboard on your right, then turn right onto the bottom step of the stairs."
+  },
+  {
+   "from": "lower restroom doors with blue figures",
+   "to": "white chairs and table",
+   "how": "Walk straight down the narrow passage with the lower restroom doors with blue figures on your right and wall-mounted whiteboard on your left, emerging into the open area with the white chairs and table ahead."
+  },
+  {
+   "from": "white chairs and table",
+   "to": "lower restroom doors with blue figures",
+   "how": "With the wooden counter with patchwork art behind you, walk straight into the narrow passage between the white walls with the lower restroom doors with blue figures on your left."
+  },
+  {
+   "from": "SYMA display wall with cabinet",
+   "to": "blue-and-white sign board",
+   "how": "Pass the SYMA display wall with cabinet on your left and square beige planter ahead, curving right to walk underneath the atrium staircase."
+  },
+  {
+   "from": "blue-and-white sign board",
+   "to": "blue reception counter",
+   "how": "Continue forward from under the atrium staircase past the blue-and-white sign board and square beige planter on your left toward the dark floor mat and counter ahead."
+  },
+  {
+   "from": "blue reception counter",
+   "to": "lower low white cabinet row",
+   "how": "Walk past the dark floor mat and blue reception counter on your left, then turn right between the lower low white cabinet row on your left and the metal frame around pillar on your right."
+  },
+  {
+   "from": "lower low white cabinet row",
+   "to": "lower yellow desk partition",
+   "how": "Near the blue reception counter and glass double doors with exit sign, walk into the aisle with the lower low white cabinet row on your left and the lower yellow desk partition on your right."
+  },
+  {
+   "from": "lower yellow desk partition",
+   "to": "lower tall brown planter",
+   "how": "From the window wall, walk back along the aisle with the lower yellow desk partition on your left and lower low white cabinet row on your right until you reach the planter at the end of the cabinets."
+  },
+  {
+   "from": "lower tall brown planter",
+   "to": "blue curved wall with poster",
+   "how": "Turn left at the lower tall brown planter and walk straight toward the curved blue wall ahead."
+  },
+  {
+   "from": "blue curved wall with poster",
+   "to": "metal frame around pillar",
+   "how": "Turn around with the blue curved wall with poster behind you and walk past the lower tall brown planter on your left toward the framed column ahead."
+  },
+  {
+   "from": "metal frame around pillar",
+   "to": "floor plant by wavy glass",
+   "how": "Walk past the metal frame around pillar on your right and the green booth with TV, heading straight toward the wavy glass partition and potted floor plant."
+  },
+  {
+   "from": "floor plant by wavy glass",
+   "to": "Produktion door",
+   "how": "Pass the floor plant by wavy glass and wavy glass partition on your right, walking straight to the white door labeled 'Produktion' and its red fire extinguisher on the left wall."
+  },
+  {
+   "from": "Produktion door",
+   "to": "lower restroom doors with blue figures",
+   "how": "Turn around from the Produktion door, walk past the wavy glass partition and floor plant by wavy glass on your left and the green booth with TV on your right, and curve left into the narrow passage."
+  },
+  {
+   "from": "upper restroom doors with blue figures",
+   "to": "wood-slat wall with brochure rack",
+   "how": "At the top of the atrium staircase, turn left past the blue glass partition on your left, then curve left toward the ribbed dark planter and vertical wood-slat wall."
+  },
+  {
+   "from": "wood-slat wall with brochure rack",
+   "to": "white flipchart easel",
+   "how": "Walk straight with the wood-slat wall with brochure rack on your right and the long white table with white chairs on your left to the easel in the corner."
+  },
+  {
+   "from": "white flipchart easel",
+   "to": "sheer white curtains",
+   "how": "Turn left around the end of the long white table with white chairs, passing the sliding door with gray squares on your right to reach the curved curtain wall."
+  },
+  {
+   "from": "sheer white curtains",
+   "to": "upper restroom doors with blue figures",
+   "how": "Walk with the sheer white curtains on your right and the long white table with white chairs on your left, exit past the wall-mounted glass board on your left, and turn right to the doors at the top of the stairs."
+  },
+  {
+   "from": "lower restroom doors with blue figures",
+   "to": "green booth with TV",
+   "how": "Walk down the narrow passage with the lower restroom doors with blue figures on your right and wall-mounted whiteboard on your left, then turn right past the green booth with TV on your left."
+  },
+  {
+   "from": "green booth with TV",
+   "to": "lower yellow desk partition",
+   "how": "With the green booth with TV behind you and metal frame around pillar on your right, walk straight past the atrium staircase and lower white pillar by stairs on your right, continuing between the SYMA display wall with cabinet on your left and square beige planter on your right."
+  },
+  {
+   "from": "square beige planter",
+   "to": "glass double doors with exit sign",
+   "how": "Turn around near the square beige planter, walk past the atrium staircase on your right and blue reception counter on your right, and go straight through the glass double doors by the dark floor mat."
+  },
+  {
+   "from": "glass double doors with exit sign",
+   "to": "exterior SYMA sign",
+   "how": "Pass through the inner glass double doors with exit sign, pass the silver dome trash can in the vestibule, go through the outer glass doors, and turn around outside."
+  },
+  {
+   "from": "exterior SYMA sign",
+   "to": "glass double doors with exit sign",
+   "how": "With the exterior SYMA sign on your left, walk straight through the outer glass doors, pass the silver dome trash can on your right, and go through the inner glass double doors onto the dark floor mat."
+  },
+  {
+   "from": "glass double doors with exit sign",
+   "to": "white chairs and table",
+   "how": "From the dark floor mat, walk across the wood floor between the metal frame around pillar on your left and atrium staircase on your right, then curve right between the wavy glass partition on your left and green booth with TV on your right."
+  },
+  {
+   "from": "white chairs and table",
+   "to": "white drawer counter with wood top",
+   "how": "Pass the white chairs and table on your left and walk straight toward the white drawer counter with wood top ahead on the right."
+  },
+  {
+   "from": "white drawer counter with wood top",
+   "to": "lower restroom doors with blue figures",
+   "how": "Turn around with the white drawer counter with wood top on your left, pass the white chairs and table and wooden counter with patchwork art on your right, and walk straight past the wavy glass partition on your right into the narrow passage."
+  },
+  {
+   "from": "upper restroom doors with blue figures",
+   "to": "metal shelving unit",
+   "how": "At the top of the atrium staircase, turn left past the blue glass partition and upper white pillar by blue glass partition on your left, then walk straight with the upper yellow desk partition on your right to the metal shelves against the wall ahead."
+  },
+  {
+   "from": "metal shelving unit",
+   "to": "desk with dual monitors",
+   "how": "Before reaching the metal shelving unit, turn right and walk with the upper low white cabinet row on your left and the upper yellow desk partition and red swivel chair on your right toward the window wall."
+  }
+ ],
+ "walk_summary": [
+  "Start on the upper level wood floor near the round wall relief, upper low white cabinet row, and upper tall brown planter, turning around to face the atrium staircase.",
+  "Walk past the cube bookshelf and upper white pillar by cube bookshelf, continuing along the SYMA wall mural to the upper restroom doors with blue figures.",
+  "Turn left at the upper restroom doors with blue figures and blue planter, walk down the upper flight of the atrium staircase to the mid-landing, then turn around and climb back up to the upper restroom doors with blue figures and upper red fire extinguisher.",
+  "Turn right and walk back along the SYMA wall mural and atrium staircase, bearing left past the green bamboo wall art and black armchair into the gray-floored area.",
+  "Walk past the desk with dual monitors and village mural above white cabinets to the windows, turn around toward the cabinet with photo grid, and briefly loop into the area with the upper yellow desk partition and green bamboo wall art.",
+  "Step back onto the wood floor, walk past the upper white pillar by cube bookshelf, upper red fire extinguisher, and upper restroom doors with blue figures, and descend both flights of the atrium staircase to the lower level.",
+  "At the bottom of the stairs, walk right past the SYMA display wall with cabinet toward the red swivel chair and photo-covered white cabinets, then turn around and walk back past the atrium staircase and square beige planter to the lower red fire extinguisher by stairs.",
+  "Turn left into the narrow passage, walking past the lower restroom doors with blue figures on the right and wall-mounted whiteboard on the left to emerge by the white chairs and table and wooden counter with patchwork art.",
+  "Turn around and walk back through the narrow passage past the lower restroom doors with blue figures and wall-mounted whiteboard to the bottom of the atrium staircase.",
+  "Turn right and climb both flights of the atrium staircase past the blue glass partition to the upper restroom doors with blue figures and blue planter.",
+  "Turn left at the top of the stairs toward the upper yellow desk partition, turn back past the blue planter, upper red fire extinguisher, and upper white pillar by cube bookshelf, then turn around and descend the atrium staircase back to the lower level.",
+  "At the bottom of the stairs, turn right past the SYMA display wall with cabinet and square beige planter, ducking under the atrium staircase past the blue-and-white sign board to reach the dark floor mat and blue reception counter.",
+  "Walk past the blue reception counter and turn right between the lower low white cabinet row and metal frame around pillar toward the lower tall brown planter.",
+  "Turn around toward the glass double doors with exit sign and blue reception counter, then walk down the aisle between the lower low white cabinet row and lower yellow desk partition to the windows.",
+  "Turn around at the windows, walk back out of the aisle to the lower tall brown planter, and turn left to approach the blue curved wall with poster.",
+  "Turn around from the blue curved wall with poster, walk across the wood floor past the metal frame around pillar and green booth with TV, and pass the wavy glass partition and floor plant by wavy glass to reach the Produktion door and red fire extinguisher by Produktion door.",
+  "Turn around from the Produktion door, walk between the floor plant by wavy glass and green booth with TV, and follow the narrow passage past the lower restroom doors with blue figures to the bottom of the atrium staircase.",
+  "Turn right and climb both flights of the atrium staircase to the upper restroom doors with blue figures and blue planter.",
+  "Turn left at the top of the stairs past the blue glass partition, curving left past the ribbed dark planter to walk between the wood-slat wall with brochure rack and the long white table with white chairs to the white flipchart easel.",
+  "Turn left around the long white table with white chairs, passing the sliding door with gray squares and walking along the sheer white curtains and wall-mounted glass board to exit the doorway.",
+  "Turn right past the upper restroom doors with blue figures and blue planter, and descend both flights of the atrium staircase to the lower restroom doors with blue figures and lower red fire extinguisher by stairs.",
+  "Turn left down the narrow passage past the lower restroom doors with blue figures and wall-mounted whiteboard, then turn right past the green booth with TV into the open wood-floored area by the metal frame around pillar and rotate in place.",
+  "Walk past the lower white pillar by stairs, SYMA display wall with cabinet, and square beige planter toward the lower yellow desk partition, then turn around to face the blue-and-white sign board under the atrium staircase.",
+  "Walk past the blue reception counter and dark floor mat, exiting through the glass double doors with exit sign and past the silver dome trash can to the exterior SYMA sign outside.",
+  "Turn around and re-enter past the exterior SYMA sign, silver dome trash can, and glass double doors with exit sign onto the dark floor mat by the blue reception counter.",
+  "Walk across the wood floor between the atrium staircase and metal frame around pillar, curving right between the green booth with TV and the wavy glass partition and floor plant by wavy glass to reach the white chairs and table, wooden counter with patchwork art, and white drawer counter with wood top.",
+  "Turn around at the white drawer counter with wood top, walk past the wavy glass partition and through the narrow passage past the lower restroom doors with blue figures to the bottom of the atrium staircase.",
+  "Climb both flights of the atrium staircase past the blue glass partition to the upper restroom doors with blue figures, blue planter, and upper red fire extinguisher.",
+  "Turn left past the upper white pillar by blue glass partition and walk between the white wall and upper yellow desk partition toward the metal shelving unit, then turn right along the upper low white cabinet row toward the red swivel chair and desk with dual monitors by the windows."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/yr17PDCnDDW/frames",
+  "n_keyframes": 180,
+  "camera": "held at chest height by a person walking"
+ }
+}

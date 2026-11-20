@@ -1,0 +1,518 @@
+{
+ "landmarks": [
+  {
+   "name": "bridge mural wall",
+   "description": "Large wall panel with a blue sky and suspension bridge graphic.",
+   "seen_at": [
+    0,
+    1,
+    7,
+    8,
+    25,
+    26,
+    27,
+    65,
+    66,
+    70,
+    71,
+    72,
+    73,
+    75,
+    76
+   ]
+  },
+  {
+   "name": "tan sectional sofa",
+   "description": "Large L-shaped tan leather sofa.",
+   "seen_at": [
+    0,
+    6,
+    7,
+    25,
+    26,
+    50,
+    60,
+    63,
+    76,
+    90,
+    91,
+    92,
+    93,
+    96,
+    97,
+    98,
+    99
+   ]
+  },
+  {
+   "name": "curved bar counter",
+   "description": "Long dark counter with a curved overhang above and metal stools.",
+   "seen_at": [
+    0,
+    1,
+    5,
+    6,
+    9,
+    13,
+    14,
+    15,
+    18,
+    19,
+    22,
+    24,
+    25,
+    97
+   ]
+  },
+  {
+   "name": "grey exit door",
+   "description": "Grey door with a window and green EXIT sign above.",
+   "seen_at": [
+    1,
+    2,
+    3,
+    16,
+    17,
+    23
+   ]
+  },
+  {
+   "name": "stacked wall ovens",
+   "description": "Three stainless steel ovens stacked vertically in brown cabinetry.",
+   "seen_at": [
+    2,
+    16,
+    17,
+    21,
+    22,
+    97
+   ]
+  },
+  {
+   "name": "blue-lit grey wall",
+   "description": "Plain grey wall section lit by spotlights, between the grey exit door and bridge mural wall.",
+   "seen_at": [
+    2,
+    3,
+    4,
+    15,
+    16,
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "name": "central grey pillar",
+   "description": "Thick square grey column near the end of the curved bar counter.",
+   "seen_at": [
+    6,
+    7,
+    9,
+    10,
+    14,
+    15,
+    96,
+    97
+   ]
+  },
+  {
+   "name": "wall-mounted TV",
+   "description": "Large flat-screen TV on a light yellow-green wall above a black media console.",
+   "seen_at": [
+    7,
+    8,
+    26,
+    27,
+    28,
+    63,
+    64,
+    67,
+    68,
+    77,
+    92,
+    94,
+    96
+   ]
+  },
+  {
+   "name": "square dining tables",
+   "description": "Small square tables with tan chairs near the windows.",
+   "seen_at": [
+    10,
+    11,
+    19,
+    20,
+    93,
+    98,
+    99
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "Large double-door stainless steel refrigerator with ice dispenser.",
+   "seen_at": [
+    11,
+    12,
+    13,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "frosted glass upper cabinets",
+   "description": "White-framed upper cabinets with frosted glass doors.",
+   "seen_at": [
+    11,
+    12
+   ]
+  },
+  {
+   "name": "orange accent wall",
+   "description": "Bright orange wall section on the lower level with a framed yellow-and-white painting.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    30,
+    59,
+    60,
+    61,
+    62,
+    78,
+    79,
+    92,
+    94,
+    95,
+    96
+   ]
+  },
+  {
+   "name": "fireplace",
+   "description": "Dark fireplace surround flanked by two large potted plants against the glass exterior wall.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    39,
+    40,
+    68,
+    69,
+    77,
+    78,
+    90,
+    91,
+    98
+   ]
+  },
+  {
+   "name": "glass exterior wall",
+   "description": "Floor-to-ceiling grid of dark-framed windows with a glass door.",
+   "seen_at": [
+    28,
+    29,
+    30,
+    31,
+    50,
+    51,
+    55,
+    56,
+    57,
+    58,
+    59,
+    61,
+    78,
+    79,
+    80,
+    86,
+    88,
+    89,
+    90,
+    93,
+    95,
+    98,
+    99,
+    100,
+    101
+   ]
+  },
+  {
+   "name": "blue armchairs",
+   "description": "Pair of dark blue armchairs with curved wooden armrests facing the wall-mounted TV.",
+   "seen_at": [
+    28,
+    60,
+    63,
+    64,
+    68,
+    69,
+    90,
+    92,
+    94
+   ]
+  },
+  {
+   "name": "metal staircase",
+   "description": "Staircase with dark perforated metal steps, metal handrails, and a mid-level landing against the glass and concrete walls.",
+   "seen_at": [
+    31,
+    32,
+    33,
+    34,
+    48,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    74,
+    80,
+    81,
+    82,
+    83,
+    86,
+    87,
+    88
+   ]
+  },
+  {
+   "name": "corkboard with horse photos",
+   "description": "Large brown corkboard panel on the grey concrete stairwell wall with pictures of horses.",
+   "seen_at": [
+    32,
+    33,
+    47,
+    48,
+    49,
+    53,
+    54,
+    81,
+    82
+   ]
+  },
+  {
+   "name": "orange wall with gymnast poster",
+   "description": "Orange wall section at the top of the stairs with a large poster of a male gymnast on rings.",
+   "seen_at": [
+    35,
+    42,
+    43,
+    46,
+    52,
+    82,
+    83,
+    84,
+    86,
+    87
+   ]
+  },
+  {
+   "name": "dumbbell racks",
+   "description": "Two vertical grey racks holding black dumbbells on the brown rubber floor.",
+   "seen_at": [
+    34,
+    35,
+    36,
+    42,
+    43,
+    44,
+    45,
+    83,
+    84
+   ]
+  },
+  {
+   "name": "yellow-green wall",
+   "description": "Long light yellow-green wall on the upper level with a whiteboard and corkboard.",
+   "seen_at": [
+    36,
+    37,
+    38,
+    40,
+    41,
+    42,
+    84
+   ]
+  },
+  {
+   "name": "blue recycling bin",
+   "description": "Blue plastic recycling bin next to a beige trash can against the yellow-green wall.",
+   "seen_at": [
+    36,
+    37,
+    42,
+    43,
+    45
+   ]
+  },
+  {
+   "name": "treadmills",
+   "description": "Row of grey treadmills and elliptical machines facing the mezzanine railing.",
+   "seen_at": [
+    37,
+    38,
+    40,
+    41,
+    42,
+    44
+   ]
+  },
+  {
+   "name": "mezzanine railing",
+   "description": "Metal and cable railing at the edge of the upper floor overlooking the lower level.",
+   "seen_at": [
+    37,
+    38,
+    39
+   ]
+  },
+  {
+   "name": "wall clock on pillar",
+   "description": "Round white wall clock mounted high on a beige pillar near the treadmills.",
+   "seen_at": [
+    44,
+    45
+   ]
+  },
+  {
+   "name": "cable weight machine",
+   "description": "Tall silver metal frame cable crossover machine near the top of the metal staircase.",
+   "seen_at": [
+    46,
+    47,
+    51,
+    52,
+    85
+   ]
+  },
+  {
+   "name": "green barrel chair",
+   "description": "Round barrel-back chair with a light green outer shell and dark seat cushion near the bridge mural wall.",
+   "seen_at": [
+    65,
+    66,
+    70
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "bridge mural wall",
+   "to": "blue-lit grey wall",
+   "how": "With the bridge mural wall on your right and the tan sectional sofa on your left, walk straight ahead past the curved bar counter toward the grey exit door and blue-lit grey wall."
+  },
+  {
+   "from": "blue-lit grey wall",
+   "to": "central grey pillar",
+   "how": "Turn around with the blue-lit grey wall behind you and walk straight between the curved bar counter on your right and the bridge mural wall on your left toward the central grey pillar."
+  },
+  {
+   "from": "central grey pillar",
+   "to": "stainless steel refrigerator",
+   "how": "Loop around the central grey pillar keeping it on your left and the curved bar counter on your right, passing the square dining tables on your left to reach the stainless steel refrigerator."
+  },
+  {
+   "from": "stainless steel refrigerator",
+   "to": "grey exit door",
+   "how": "With the stainless steel refrigerator on your left, walk along the curved bar counter on your right (or through the narrow passage behind the curved bar counter past the stacked wall ovens on your left) straight toward the grey exit door and blue-lit grey wall."
+  },
+  {
+   "from": "grey exit door",
+   "to": "stainless steel refrigerator",
+   "how": "Turn left into the narrow passage behind the curved bar counter, keeping the counter on your left and passing the stacked wall ovens on your right, to reach the stainless steel refrigerator."
+  },
+  {
+   "from": "blue-lit grey wall",
+   "to": "wall-mounted TV",
+   "how": "With the blue-lit grey wall on your left and the curved bar counter on your right, walk straight past the bridge mural wall on your left and tan sectional sofa on your right to the wall-mounted TV."
+  },
+  {
+   "from": "wall-mounted TV",
+   "to": "glass exterior wall",
+   "how": "Continue straight with the wall-mounted TV and orange accent wall on your left, and the blue armchairs and fireplace on your right, to reach the glass exterior wall."
+  },
+  {
+   "from": "glass exterior wall",
+   "to": "metal staircase",
+   "how": "At the glass exterior wall past the orange accent wall on your left, turn left to reach the bottom of the metal staircase."
+  },
+  {
+   "from": "metal staircase",
+   "to": "orange wall with gymnast poster",
+   "how": "Climb the metal staircase, passing the corkboard with horse photos on your right and turning left at the mid-level landing, to reach the orange wall with gymnast poster at the top."
+  },
+  {
+   "from": "orange wall with gymnast poster",
+   "to": "mezzanine railing",
+   "how": "Turn left at the top of the metal staircase with the orange wall with gymnast poster on your right, and walk straight along the yellow-green wall and blue recycling bin on your right, passing the dumbbell racks and treadmills on your left, to the mezzanine railing."
+  },
+  {
+   "from": "mezzanine railing",
+   "to": "metal staircase",
+   "how": "Turn around at the mezzanine railing and walk back with the yellow-green wall on your left and treadmills on your right, weaving right past the wall clock on pillar and left between the dumbbell racks and cable weight machine toward the orange wall with gymnast poster and metal staircase."
+  },
+  {
+   "from": "metal staircase",
+   "to": "glass exterior wall",
+   "how": "Walk down the metal staircase with the corkboard with horse photos on your left, turning right at the mid-level landing to reach the glass exterior wall at the bottom."
+  },
+  {
+   "from": "glass exterior wall",
+   "to": "wall-mounted TV",
+   "how": "With the glass exterior wall on your left, walk past the orange accent wall on your right and turn right around it to reach the space between the blue armchairs and wall-mounted TV."
+  },
+  {
+   "from": "wall-mounted TV",
+   "to": "bridge mural wall",
+   "how": "With the wall-mounted TV on your right and blue armchairs on your left, walk forward past the green barrel chair to the bridge mural wall."
+  },
+  {
+   "from": "bridge mural wall",
+   "to": "wall-mounted TV",
+   "how": "From the narrow passage beside the bridge mural wall, walk out with the bridge mural wall on your right and turn left past the wall-mounted TV on your left."
+  },
+  {
+   "from": "glass exterior wall",
+   "to": "tan sectional sofa",
+   "how": "From the bottom of the metal staircase, turn right and walk along the glass exterior wall and fireplace on your left to reach the tan sectional sofa on your right."
+  },
+  {
+   "from": "tan sectional sofa",
+   "to": "central grey pillar",
+   "how": "Walk around the end of the tan sectional sofa keeping it on your right to reach the central grey pillar on your left."
+  },
+  {
+   "from": "central grey pillar",
+   "to": "glass exterior wall",
+   "how": "Turn around with the central grey pillar behind you and walk between the tan sectional sofa on your left and the square dining tables on your right toward the fireplace and glass exterior wall ahead."
+  }
+ ],
+ "walk_summary": [
+  "Start between the bridge mural wall on the right and tan sectional sofa on the left, walking past the curved bar counter on the left to the grey exit door and blue-lit grey wall.",
+  "Turn around and walk back between the curved bar counter and tan sectional sofa to the central grey pillar.",
+  "Loop left around the central grey pillar, passing the square dining tables on the left to reach the stainless steel refrigerator and frosted glass upper cabinets.",
+  "Turn around and walk along the outer side of the curved bar counter, passing the central grey pillar on the right, back to the blue-lit grey wall and grey exit door.",
+  "Turn left into the narrow passage behind the curved bar counter and walk past the stainless steel refrigerator on the right toward the square dining tables.",
+  "Turn around in the passage and walk back past the stacked wall ovens on the left to the blue-lit grey wall and grey exit door.",
+  "Turn right and walk straight past the bridge mural wall on the left, tan sectional sofa on the right, wall-mounted TV and orange accent wall on the left, and blue armchairs and fireplace on the right to the glass exterior wall.",
+  "Turn left at the corner past the orange accent wall and climb the metal staircase, passing the corkboard with horse photos on the right, to the orange wall with gymnast poster at the top.",
+  "Turn left at the top of the metal staircase and walk past the dumbbell racks and treadmills on the left, and the yellow-green wall and blue recycling bin on the right, to the mezzanine railing.",
+  "Turn around at the mezzanine railing and walk back along the yellow-green wall, weaving around the treadmills, wall clock on pillar, dumbbell racks, and cable weight machine toward the top of the metal staircase.",
+  "Walk past the metal staircase opening to the upper window corner above the glass exterior wall, then turn around past the cable weight machine.",
+  "Turn right and walk down the metal staircase, passing the corkboard with horse photos on the left, to the glass exterior wall at the bottom.",
+  "Walk past the glass exterior wall on the left and turn right around the orange accent wall, then walk between the blue armchairs on the left and wall-mounted TV on the right toward the green barrel chair and bridge mural wall.",
+  "Turn right into the narrow passage between the bridge mural wall and the back of the wall-mounted TV wall, then turn around and walk back out.",
+  "Walk forward past the wall-mounted TV and orange accent wall on the left and the fireplace on the right to the glass exterior wall.",
+  "Turn left and climb the metal staircase past the corkboard with horse photos and orange wall with gymnast poster to the upper landing by the dumbbell racks and cable weight machine.",
+  "Turn around at the top of the metal staircase and walk back down to the glass exterior wall.",
+  "Turn right at the bottom of the metal staircase and walk along the glass exterior wall and fireplace on the left to the tan sectional sofa.",
+  "Step around the end of the tan sectional sofa toward the square dining tables and central grey pillar, then turn around and walk between the tan sectional sofa and square dining tables back to the glass exterior wall."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/vlnce_tours/8194nk5LbLH/frames",
+  "n_keyframes": 102,
+  "camera": "held at chest height by a person walking"
+ }
+}

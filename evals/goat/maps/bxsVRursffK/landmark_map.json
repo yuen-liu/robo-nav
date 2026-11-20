@@ -1,0 +1,512 @@
+{
+ "landmarks": [
+  {
+   "name": "light wood dresser",
+   "description": "Tall light-oak chest of drawers with dark horizontal handles and a geometric wire ornament on top.",
+   "seen_at": [
+    0,
+    1,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "dark double-sink vanity",
+   "description": "Long dark-wood cabinet with two sinks, light countertop, mosaic tile backsplash, and large mirror.",
+   "seen_at": [
+    1,
+    2,
+    4,
+    5,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "wire shelving with white robe",
+   "description": "White metal wire wall shelves with a white bathrobe hanging on the left.",
+   "seen_at": [
+    2,
+    3
+   ]
+  },
+  {
+   "name": "frosted square window",
+   "description": "Small square frosted-glass window high on a beige wall.",
+   "seen_at": [
+    3,
+    4
+   ]
+  },
+  {
+   "name": "bed with teal accent wall",
+   "description": "Large bed with gray and white bedding against a dark teal wall with a horizontal mirror above the headboard.",
+   "seen_at": [
+    5,
+    47,
+    48,
+    49,
+    50,
+    70
+   ]
+  },
+  {
+   "name": "brown abstract wall art",
+   "description": "Rectangular abstract painting in brown, white, and black tones on a light gray wall next to a white door.",
+   "seen_at": [
+    5,
+    6,
+    47,
+    48,
+    49,
+    51
+   ]
+  },
+  {
+   "name": "white bifold doors",
+   "description": "Tall narrow white paneled bifold doors in the upper corridor.",
+   "seen_at": [
+    6,
+    7,
+    27,
+    28,
+    52,
+    71
+   ]
+  },
+  {
+   "name": "carpeted stairs with dark handrail",
+   "description": "L-shaped beige carpeted staircase with a half-wall and dark wood wall-mounted handrails.",
+   "seen_at": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    24,
+    25,
+    26,
+    34,
+    46,
+    52,
+    53,
+    54,
+    55,
+    58,
+    67,
+    68,
+    69,
+    73,
+    74,
+    75
+   ]
+  },
+  {
+   "name": "colorful square painting on stair landing",
+   "description": "Square abstract canvas with red, orange, yellow, and light blue blocks hanging on the stair landing wall.",
+   "seen_at": [
+    8,
+    9,
+    25,
+    26,
+    53,
+    54,
+    68,
+    69,
+    74,
+    75
+   ]
+  },
+  {
+   "name": "dark dining table with blue chairs",
+   "description": "Dark rectangular table surrounded by upholstered navy blue chairs under two horizontal windows.",
+   "seen_at": [
+    11,
+    12,
+    15,
+    16,
+    55,
+    56,
+    61,
+    62,
+    66,
+    67,
+    75,
+    76
+   ]
+  },
+  {
+   "name": "blue fireplace wall with mirror",
+   "description": "Floor-to-ceiling medium-blue chimney breast with a black fireplace insert, dark wood mantel, and rectangular mirror.",
+   "seen_at": [
+    12,
+    16,
+    55,
+    56,
+    62,
+    63,
+    64,
+    65
+   ]
+  },
+  {
+   "name": "gray sectional sofa",
+   "description": "Low-profile gray fabric L-shaped sofa facing the blue fireplace wall.",
+   "seen_at": [
+    12,
+    13,
+    16,
+    17,
+    18,
+    22,
+    62,
+    63
+   ]
+  },
+  {
+   "name": "small dark console table",
+   "description": "Small dark-wood two-tier stand with potted plants on top, against a light blue-gray wall.",
+   "seen_at": [
+    13,
+    14,
+    22,
+    23,
+    57,
+    66,
+    67
+   ]
+  },
+  {
+   "name": "dark wood island",
+   "description": "Freestanding dark-brown cabinetry island with a light countertop.",
+   "seen_at": [
+    13,
+    14,
+    17,
+    18,
+    19,
+    21,
+    22,
+    62
+   ]
+  },
+  {
+   "name": "sliding glass doors",
+   "description": "Two-panel white-framed sliding glass doors between the gray sofa and dark counters.",
+   "seen_at": [
+    17,
+    18,
+    19
+   ]
+  },
+  {
+   "name": "stainless steel stove and microwave",
+   "description": "Stainless steel range with an over-the-range microwave set into dark wood cabinetry.",
+   "seen_at": [
+    19,
+    20,
+    21
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "Double-door stainless steel refrigerator to the right of the stove, next to a white door.",
+   "seen_at": [
+    20,
+    21,
+    66
+   ]
+  },
+  {
+   "name": "white toilet",
+   "description": "White ceramic toilet visible inside a small doorway with dandelion wall decals above it.",
+   "seen_at": [
+    23
+   ]
+  },
+  {
+   "name": "black wire wall sculpture",
+   "description": "Tangled black metal wire wall art at the top of the stairs.",
+   "seen_at": [
+    26,
+    27,
+    46,
+    47,
+    70
+   ]
+  },
+  {
+   "name": "bed with navy bedspread",
+   "description": "Bed with a dark navy blue cover, orange pillows, and a wood-plank headboard under an orange diamond wall graphic.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    31,
+    32,
+    71,
+    72
+   ]
+  },
+  {
+   "name": "industrial nightstand with lamp",
+   "description": "Metal and wood nightstand with numbered black drawers and a burlap drum-shade lamp above it.",
+   "seen_at": [
+    28,
+    29,
+    30,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "wire wall baskets with yellow hard hat",
+   "description": "Wall-mounted wire baskets holding stuffed animals, a green backpack, and a yellow construction hard hat.",
+   "seen_at": [
+    30,
+    33
+   ]
+  },
+  {
+   "name": "wooden toy chest",
+   "description": "Low light-wood rectangular storage box on the floor under wall text.",
+   "seen_at": [
+    31,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "white washer and dryer",
+   "description": "Side-by-side white laundry machines under a wire shelf in a small alcove.",
+   "seen_at": [
+    34,
+    42,
+    43,
+    44,
+    45
+   ]
+  },
+  {
+   "name": "bed with gray floral bedding",
+   "description": "White wooden bed frame with gray and white patterned coverlet next to a window with a red valance.",
+   "seen_at": [
+    35,
+    36,
+    37,
+    38,
+    39
+   ]
+  },
+  {
+   "name": "blue and yellow wall with dancing text",
+   "description": "Wall painted light blue on top and yellow-green on the bottom with black script lettering.",
+   "seen_at": [
+    35,
+    38,
+    39,
+    40
+   ]
+  },
+  {
+   "name": "white and wood dresser with mirror",
+   "description": "Six-drawer dresser with a white frame, dark wood drawer fronts, and a white-framed mirror above.",
+   "seen_at": [
+    36,
+    37,
+    39,
+    40
+   ]
+  },
+  {
+   "name": "metal flower wall decor",
+   "description": "Round layered metal floral wall sculpture next to the doorway.",
+   "seen_at": [
+    39,
+    40
+   ]
+  },
+  {
+   "name": "dark vanity with teal wall and toilet",
+   "description": "Dark wood cabinet vanity and white toilet against a bright teal wall.",
+   "seen_at": [
+    41
+   ]
+  },
+  {
+   "name": "wash and dry wall sign",
+   "description": "Black cutout lettering reading WASH & DRY on a white, green, and blue striped wall.",
+   "seen_at": [
+    43,
+    44
+   ]
+  },
+  {
+   "name": "blue geometric wallpaper wall",
+   "description": "Wall section covered in light blue and white hexagonal patterned wallpaper near the bottom of the stairs.",
+   "seen_at": [
+    59,
+    60,
+    77,
+    78
+   ]
+  },
+  {
+   "name": "white door with three square windows",
+   "description": "White exterior door with three vertically aligned rectangular glass panes and a narrow vertical window to its left.",
+   "seen_at": [
+    59,
+    60,
+    77,
+    78
+   ]
+  },
+  {
+   "name": "play table with colorful bins and striped wall",
+   "description": "Low light-wood activity table with red, green, and blue storage bins against a wall painted with blue, green, and red horizontal stripes and floating bookshelves.",
+   "seen_at": [
+    71,
+    72
+   ]
+  },
+  {
+   "name": "entry bench with coat hooks",
+   "description": "Wood-base bench with a dark gray cushion against the blue geometric wallpaper wall, below a wooden peg rack holding a backpack, cap, and round straw bag.",
+   "seen_at": [
+    77,
+    78
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "light wood dresser",
+   "to": "dark double-sink vanity",
+   "how": "With the light wood dresser on your right, walk forward through the doorway."
+  },
+  {
+   "from": "dark double-sink vanity",
+   "to": "wire shelving with white robe",
+   "how": "Pass the dark double-sink vanity on your right and continue straight through the second doorway."
+  },
+  {
+   "from": "wire shelving with white robe",
+   "to": "dark double-sink vanity",
+   "how": "Turn around with the frosted square window on your left and walk forward through the doorway."
+  },
+  {
+   "from": "dark double-sink vanity",
+   "to": "brown abstract wall art",
+   "how": "Walk past the dark double-sink vanity on your left, exit the doorway with the bed with teal accent wall on your left, and turn right."
+  },
+  {
+   "from": "brown abstract wall art",
+   "to": "carpeted stairs with dark handrail",
+   "how": "Walk through the doorway next to the brown abstract wall art, pass the white bifold doors on your left, and turn right onto the top of the stairs."
+  },
+  {
+   "from": "carpeted stairs with dark handrail",
+   "to": "dark dining table with blue chairs",
+   "how": "Walk down the carpeted stairs past the colorful square painting on stair landing on your left and continue straight off the bottom step."
+  },
+  {
+   "from": "dark dining table with blue chairs",
+   "to": "dark wood island",
+   "how": "From the dark dining table with blue chairs, pass between the gray sectional sofa on your left and the dark wood island on your right."
+  },
+  {
+   "from": "dark wood island",
+   "to": "stainless steel stove and microwave",
+   "how": "Walk past the dark wood island on your right toward the sliding glass doors, then turn right around the island to face the stainless steel stove and microwave and stainless steel refrigerator."
+  },
+  {
+   "from": "stainless steel stove and microwave",
+   "to": "carpeted stairs with dark handrail",
+   "how": "Turn left and walk past the dark wood island and small dark console table on your left, with the gray sectional sofa on your right and the doorway to the white toilet on your left, straight to the foot of the stairs."
+  },
+  {
+   "from": "carpeted stairs with dark handrail",
+   "to": "bed with navy bedspread",
+   "how": "Climb the carpeted stairs past the colorful square painting on stair landing, turn left at the landing past the black wire wall sculpture on your left and white bifold doors ahead on the left, and go straight through the doorway ahead."
+  },
+  {
+   "from": "bed with navy bedspread",
+   "to": "industrial nightstand with lamp",
+   "how": "With the bed with navy bedspread on your left, turn right to face the industrial nightstand with lamp, wooden toy chest, and wire wall baskets with yellow hard hat."
+  },
+  {
+   "from": "industrial nightstand with lamp",
+   "to": "bed with gray floral bedding",
+   "how": "Turn right past the wooden toy chest and wire wall baskets with yellow hard hat to exit the doorway, walk straight with the carpeted stairs with dark handrail on your left and white washer and dryer on your right, and enter the doorway at the end."
+  },
+  {
+   "from": "bed with gray floral bedding",
+   "to": "dark vanity with teal wall and toilet",
+   "how": "Turn right in a circle past the white and wood dresser with mirror, bed with gray floral bedding, blue and yellow wall with dancing text, and metal flower wall decor, exit the doorway, and look left into the adjacent doorway."
+  },
+  {
+   "from": "dark vanity with teal wall and toilet",
+   "to": "white washer and dryer",
+   "how": "Move forward along the corridor and turn left into the alcove with the white washer and dryer and wash and dry wall sign."
+  },
+  {
+   "from": "white washer and dryer",
+   "to": "bed with teal accent wall",
+   "how": "Exit the alcove, turn left, walk past the carpeted stairs with dark handrail on your left and black wire wall sculpture on your right, and go straight through the doorway at the end."
+  },
+  {
+   "from": "bed with teal accent wall",
+   "to": "carpeted stairs with dark handrail",
+   "how": "Turn around past the brown abstract wall art and light wood dresser, exit the doorway, pass the white bifold doors on your left, and turn right down the stairs."
+  },
+  {
+   "from": "dark dining table with blue chairs",
+   "to": "blue fireplace wall with mirror",
+   "how": "Walk forward past the dark dining table with blue chairs toward the blue fireplace wall with mirror, with the gray sectional sofa on your right."
+  },
+  {
+   "from": "blue fireplace wall with mirror",
+   "to": "carpeted stairs with dark handrail",
+   "how": "Turn around and walk back past the dark dining table with blue chairs on your right and small dark console table on your left to the foot of the stairs."
+  },
+  {
+   "from": "carpeted stairs with dark handrail",
+   "to": "play table with colorful bins and striped wall",
+   "how": "Climb the carpeted stairs past the colorful square painting on stair landing, turn left at the top near the black wire wall sculpture, then turn right past the white bifold doors."
+  },
+  {
+   "from": "play table with colorful bins and striped wall",
+   "to": "carpeted stairs with dark handrail",
+   "how": "Turn around and walk back to the top of the carpeted stairs."
+  },
+  {
+   "from": "dark dining table with blue chairs",
+   "to": "white door with three square windows",
+   "how": "At the bottom of the stairs before reaching the dark dining table with blue chairs, turn left around the blue geometric wallpaper wall and walk past the entry bench with coat hooks on your left to the white door with three square windows."
+  }
+ ],
+ "walk_summary": [
+  "Start by passing the light wood dresser and dark double-sink vanity on your right to reach the wire shelving with white robe.",
+  "Turn around past the frosted square window and dark double-sink vanity on your left, pass the bed with teal accent wall on your left, and turn right toward the brown abstract wall art.",
+  "Exit past the white bifold doors on your left and turn right to go down the carpeted stairs with dark handrail, passing the colorful square painting on stair landing on your left to reach the dark dining table with blue chairs.",
+  "Look right toward the small dark console table and dark wood island, then walk between the gray sectional sofa on your left and dark wood island on your right toward the sliding glass doors, turning right to face the stainless steel stove and microwave and stainless steel refrigerator.",
+  "Turn around and walk past the dark wood island, small dark console table, and doorway with the white toilet on your left back to the carpeted stairs with dark handrail.",
+  "Climb the carpeted stairs with dark handrail past the colorful square painting on stair landing and black wire wall sculpture, pass the white bifold doors on your left, and enter the doorway ahead to the bed with navy bedspread and industrial nightstand with lamp.",
+  "Turn right past the wire wall baskets with yellow hard hat and wooden toy chest to exit the doorway, then walk past the carpeted stairs with dark handrail on your left and white washer and dryer on your right into the doorway ahead with the bed with gray floral bedding.",
+  "Turn in a circle past the white and wood dresser with mirror, blue and yellow wall with dancing text, and metal flower wall decor to exit the doorway.",
+  "Glance left at the dark vanity with teal wall and toilet, then walk forward and turn left into the alcove with the white washer and dryer and wash and dry wall sign.",
+  "Exit the alcove and walk past the carpeted stairs with dark handrail on your left and black wire wall sculpture on your right into the doorway ahead with the bed with teal accent wall and brown abstract wall art.",
+  "Turn around past the light wood dresser, exit past the white bifold doors on your left, and walk down the carpeted stairs with dark handrail past the colorful square painting on stair landing toward the dark dining table with blue chairs.",
+  "Pivot left near the small dark console table, blue geometric wallpaper wall, and white door with three square windows, then turn right and walk past the dark dining table with blue chairs and gray sectional sofa up to the blue fireplace wall with mirror.",
+  "Turn around and walk past the small dark console table on your left and dark dining table with blue chairs on your right back to the carpeted stairs with dark handrail.",
+  "Climb the carpeted stairs with dark handrail past the colorful square painting on stair landing and black wire wall sculpture, and turn right past the white bifold doors to face the play table with colorful bins and striped wall.",
+  "Turn around and descend the carpeted stairs with dark handrail past the colorful square painting on stair landing toward the dark dining table with blue chairs.",
+  "Turn left at the bottom of the stairs past the blue geometric wallpaper wall and entry bench with coat hooks on your left to stop at the white door with three square windows."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/bxsVRursffK/frames",
+  "n_keyframes": 79,
+  "camera": "held at chest height by a person walking"
+ }
+}

@@ -14,7 +14,7 @@ from PIL import Image
 import habitat_sim
 from habitat_sim.utils.common import quat_from_coeffs
 
-DATA = os.path.expanduser("~/robonav/data")
+DATA = os.path.expanduser(os.environ.get("ROBO_NAV_DATA", "~/robonav/data"))
 CONFIG = f"{DATA}/scene_datasets/hm3d/hm3d_annotated_basis.scene_dataset_config.json"
 ep_file, out_dir = sys.argv[1], sys.argv[2]
 os.makedirs(out_dir, exist_ok=True)

@@ -211,8 +211,10 @@ Code layout:
 | `robo_nav/sim/` | MuJoCo-house tooling: `scene.py` (GT rooms/doors/camera), `nav.py` (planner + LightNav loop), `video.py`, `compare.py`, `summary.py`, `record.py` (record while driving), `render.py` (offline GT dataset) |
 | `robo_nav/loc/` | kidnapped-robot localization benchmark: `benchmark.py` (DINOv2 / SALAD / AnyLoc / LightGlue), `vlm.py` (Claude) |
 | `robo_nav/landmark/` | landmark-only navigation (no GT, no room names): LLM-annotated house video + LightNav |
+| `robo_nav/habitat/` | Habitat evals (GOAT-Bench, RxR-CE): `goat_env.py` (habitat-sim server), `goat_nav.py` (controller), `goal_report.py`, `goat_difficulty.py`, `far_goals.py`, `floors.py` (see [Habitat Evals](#habitat-evals-goat-bench-and-rxr-ce)) |
+| `evals/` | fixed eval sets + the landmark maps the Habitat runs used |
 | `patches/lightnav0_sim.patch` | LightNav-0 sim changes: wall/furniture collisions, `set_pose` for evaluation starts |
-| `scripts/` | cluster setup and launch |
+| `scripts/` | cluster setup and launch; `scripts/habitat/` Habitat setup, map building, eval runs |
 
 - `robo_nav/sim/nav.py`: plan → instruct → re-instruct when LightNav stops or a hop times out;
   replans after wrong turns. Episodes end as `success`, `gave_up`, `timeout`, or as
@@ -221,6 +223,123 @@ Code layout:
 - `robo_nav/sim/video.py`: episode MP4s (robot cam + chase cam + floor plan with route/trajectory).
 - `robo_nav/sim/record.py`: records keyframes + GT pose + room label while you drive (mapping data).
 - `robo_nav/lightnav_client.py`: minimal LightNav-0 WebSocket client for open-loop runs on recorded video (`--show` for a live overlay).
+
+## Habitat Evals: GOAT-Bench and RxR-CE
+
+The same LightNav-0 + landmark-planner stack, scored on standard benchmarks in habitat-sim:
+
+| Benchmark | Scenes | Split | Success | Notes |
+|---|---|---|---|---|
+| GOAT-Bench (`hm3d/v1`) | HM3D v0.2 val (36) | `val_unseen` (also `val_seen`, `val_seen_synonyms`) | 0.25 m to a goal view point | lifelong: each subtask starts where the last ended. **Image-goal subtasks are skipped**, so numbers are text-goal-only and not comparable to official GOAT-Bench results |
+| RxR-CE (`RxR_VLNCE_v0`) | MP3D (11 val_unseen) | `val_unseen`, English guide instructions (3,669) | 3 m to the path end | one subtask per episode |
+| R2R-CE (`R2R_VLNCE_v1-3_preprocessed`) | MP3D | `val_unseen` | 3 m | supported, not used in reported runs |
+
+Two processes talk over ZeroMQ, in two environments (habitat-sim and vLLM don't share one):
+
+- `robo_nav/habitat/goat_env.py serve`: the scene, in a micromamba env `habitat` (python 3.7, habitat-sim 0.2.3 headless). It owns all GT, which only shows up in scores, never in observations.
+- `robo_nav.habitat.goat_nav`: the controller, in `LightNav-0/.venv`. It runs LightNav-0 in-process (vLLM) and/or calls the VLM planner (`ROBO_NAV_VLM=claude|gemini`).
+
+Modes (`--modes`): `zeroshot` (LightNav-0 alone with the goal text), `landmark` (planner + the scene's landmark map
+instructs LightNav-0 one hop at a time), `landmark_vlm` (as landmark, but the VLM drives with coarse moves),
+`vlm` / `vlm_map` (VLM drives alone, without or with the map). `zeroshot` and `landmark` need a GPU for LightNav-0;
+the other three only need one for habitat-sim.
+
+### 1. Setup (once per machine)
+
+```bash
+ROOT=~/robonav bash scripts/setup_cluster.sh       # robo-nav + LightNav-0 + its checkpoint (see above)
+cd ~/robonav/robo-nav
+
+# habitat env + datasets into ~/robonav/data (override with DATA=...); each step skips what's already there
+bash scripts/habitat/setup_habitat.sh env
+
+# GOAT-Bench: HM3D needs a Matterport API token (request HM3D access first, see the script header)
+MATTERPORT_TOKEN_ID=... MATTERPORT_TOKEN_SECRET=... bash scripts/habitat/setup_habitat.sh hm3d goat
+
+# RxR-CE: MP3D needs Matterport's personal download_mp.py (sign the MP3D terms of use to get it)
+MP_DOWNLOAD=/path/to/download_mp.py bash scripts/habitat/setup_habitat.sh mp3d rxr
+#   (or MP3D_ZIP=/path/to/mp3d_habitat.zip if you already have it)
+
+bash scripts/habitat/setup_habitat.sh check        # layout + one habitat-sim render
+```
+
+Resulting layout (`goat_env.py` reads `~/robonav/data`, or `$ROBO_NAV_DATA`):
+
+```
+~/robonav/data/
+├── scene_datasets/hm3d/hm3d_annotated_basis.scene_dataset_config.json, val/00800-TEEsavR23oF/...
+├── scene_datasets/mp3d/<scene>/<scene>.glb ...                      (90 scenes)
+├── datasets/goat_bench/hm3d/v1/{val_seen,val_seen_synonyms,val_unseen}/content/<scene>.json.gz
+├── datasets/RxR_VLNCE_v0/val_unseen/val_unseen_guide.json.gz
+└── datasets/R2R_VLNCE_v1-3_preprocessed/val_unseen/val_unseen.json.gz (optional)
+```
+
+API keys: export `GEMINI_API_KEY` and/or `ANTHROPIC_API_KEY`, or point `ROBO_NAV_ENV_FILE` at a `KEY=value` file
+that the run scripts source. The reported runs used `ROBO_NAV_VLM=gemini ROBO_NAV_GEMINI_MODEL=gemini-4-argon`.
+
+### 2. Eval sets and landmark maps (in `evals/`)
+
+| Path | What |
+|---|---|
+| `evals/goat/far_goals_10m.json` | 120 GOAT `val_unseen` text subtasks that start >= 10 m (geodesic) from the goal, with fixed start poses so every mode runs the same goals (built with `robo_nav.habitat.far_goals` from a zeroshot reference run) |
+| `evals/goat/far_goals_smoke.json` | one of those, for a smoke test |
+| `evals/rxr/rxr_far_12m.json` | 120 English RxR-CE `val_unseen` episodes with a geodesic start-goal distance >= 12 m, 12 per scene over 10 scenes |
+| `evals/goat/maps/<scene>/`, `evals/rxr/maps/<scene>/` | the landmark maps the runs used (`landmark_map.md` is what the planner reads; `floors.json` for `--floors`). Text only: keyframes and tour renders are Matterport-derived images, so they stay out of the repo |
+
+To rebuild maps (new scenes or a new annotator model; costs API calls): `bash scripts/habitat/build_maps.sh goat`
+(or `rxr`). This renders each scene's walkthrough tour in habitat, annotates it with the VLM, and adds floor labels, writing into `sim_data/<ds>/maps`.
+
+### 3. Run
+
+`scripts/habitat/run_eval.sh` starts the env server, runs K controller clients against it, then does one resume pass for episodes that hit API errors. Rerunning the same command resumes; finished results are skipped.
+
+```bash
+export ROBO_NAV_VLM=gemini ROBO_NAV_GEMINI_MODEL=gemini-4-argon GEMINI_API_KEY=...
+
+# smoke test: one GOAT goal, VLM-only mode (no LightNav GPU needed)
+bash scripts/habitat/run_eval.sh goat sim_data/goat/runs/smoke --goals evals/goat/far_goals_smoke.json -- --modes vlm
+
+# GOAT far goals, VLM modes, 6 clients sharing one server, step budget 2x shortest-path time
+bash scripts/habitat/run_eval.sh goat sim_data/goat/runs/far10_b2 --goals evals/goat/far_goals_10m.json --clients 6 \
+    -- --modes vlm vlm_map landmark_vlm --budget_factor 2.0
+
+# LightNav-0 modes: habitat on GPU 0, LightNav-0 on GPU 1 (one client per LightNav GPU)
+bash scripts/habitat/run_eval.sh goat sim_data/goat/runs/far10_b2 --goals evals/goat/far_goals_10m.json \
+    --env_gpu 0 --nav_gpu 1 -- --modes zeroshot landmark --budget_factor 2.0
+
+# RxR-CE far episodes
+bash scripts/habitat/run_eval.sh rxr sim_data/vlnce/runs/rxr12_b2 --episode_list evals/rxr/rxr_far_12m.json \
+    --clients 6 -- --modes vlm vlm_map landmark_vlm --budget_factor 2.0
+
+# full lifelong GOAT episodes instead of single goals
+bash scripts/habitat/run_eval.sh goat sim_data/goat/runs/val_unseen --episodes "0 30 60" --env_gpu 0 --nav_gpu 1 \
+    -- --modes zeroshot landmark
+```
+
+Useful `goat_nav` flags (after `--`): `--budget_factor F` (step budget = F x shortest-path time at 0.25 m/s),
+`--subtask_steps N`, `--floors`, `--verify_arrival N`, `--final_approach N`, `--arrive_prompt old|new`,
+`--actuation_noise LIN_SD ANG_SD_DEG`. Run `python -m robo_nav.habitat.goat_nav --help` for the full list.
+
+### 4. Report
+
+```bash
+PY=~/robonav/LightNav-0/.venv/bin/python   # needs torch
+$PY -m robo_nav.habitat.goal_report --runs sim_data/goat/runs/far10_b2 --factors 1.5 2.0
+
+# success by difficulty (start distance, goal visible at start, doorways, floor change); needs the habitat env
+micromamba run -n habitat python -I robo_nav/habitat/goat_difficulty.py --goals evals/goat/far_goals_10m.json \
+    --out sim_data/goat/difficulty_far_10m.json
+$PY -m robo_nav.habitat.goal_report --runs sim_data/goat/runs/far10_b2 --difficulty sim_data/goat/difficulty_far_10m.json
+```
+
+Each result is `<out>/{ep<idx>|g<idx>_<subtask>}_<mode>.json`, with the per-subtask success, SPL, the GT track, and the planner transcript.
+
+### Troubleshooting
+
+- **No EGL device / `unable to create context`** (habitat-sim or MuJoCo): the node's driver may be compute-only, with no `libEGL_nvidia`. Install the matching `libnvidia-gl`. Without root, extract the EGL libs from NVIDIA's `.run` installer for the same driver version, then point `LD_LIBRARY_PATH` and `__EGL_VENDOR_LIBRARY_FILENAMES` at them.
+- **GPUs in Exclusive_Process mode** allow one process per GPU. Put the env server and LightNav-0 on different GPUs (`--env_gpu` / `--nav_gpu`). Run the VLM-only modes with `--nav_gpu` unset.
+- **HM3D navmesh**: GOAT runs use `--navmesh_cell_height 0.05`, the run script sets it. The stock HM3D v0.2 navmeshes sit slightly off the floor, which shifts GT distances. See LightNav-0's `docs/EVAL_HABITAT.md`.
+- **Proxies**: if `http_proxy` is set, keep `localhost` out of it (`no_proxy=localhost,127.0.0.1`), or the ZeroMQ and websocket traffic goes through the proxy. The scripts set this.
 
 ## Repository Layout
 

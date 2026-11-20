@@ -1,0 +1,111 @@
+{
+ "levels": [
+  0.0,
+  2.53
+ ],
+ "landmarks": {
+  "upper open wooden door": [
+   2
+  ],
+  "wall-mounted mirror": [
+   2
+  ],
+  "red patterned runner rug": [
+   2
+  ],
+  "small curtained window": [
+   2
+  ],
+  "bottle-shaped J&B sign": [
+   2
+  ],
+  "metal shower stall": [
+   2
+  ],
+  "white toilet": [
+   2
+  ],
+  "white sink": [
+   2
+  ],
+  "wooden bunk beds": [
+   2
+  ],
+  "wooden staircase": [
+   1,
+   2
+  ],
+  "white pillar": [
+   2
+  ],
+  "low storage alcove with shelves": [
+   2
+  ],
+  "bed under sloped wooden ceiling": [
+   2
+  ],
+  "red patterned rug by bed": [
+   2
+  ],
+  "window under sloped ceiling": [
+   2
+  ],
+  "dining table with bench": [
+   1
+  ],
+  "floral armchairs": [
+   1
+  ],
+  "blue toilet": [
+   1
+  ],
+  "pink floral bedspread": [
+   1
+  ],
+  "small table with lace cloth and lamp": [
+   1
+  ],
+  "window above white radiator": [
+   1
+  ],
+  "tall light-wood wardrobe": [
+   1
+  ],
+  "dark wooden nightstand with lamp": [
+   1
+  ],
+  "glass double doors": [
+   1
+  ],
+  "blue sofa": [
+   1
+  ],
+  "corner fireplace": [
+   1
+  ],
+  "light-wood hutch": [
+   1
+  ],
+  "small white appliance": [
+   1
+  ],
+  "lower open wooden door": [
+   1
+  ],
+  "single bed with blue cover": [
+   1
+  ],
+  "wooden chest of drawers": [
+   1
+  ],
+  "glass-paned exterior door": [
+   1
+  ],
+  "black dishwasher and stove": [
+   1
+  ],
+  "wood-paneled counter": [
+   1
+  ]
+ }
+}

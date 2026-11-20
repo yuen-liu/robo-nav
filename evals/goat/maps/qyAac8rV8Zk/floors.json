@@ -1,0 +1,66 @@
+{
+ "levels": [
+  0.0,
+  1.8
+ ],
+ "landmarks": {
+  "dark brown sofa": [
+   1
+  ],
+  "dark wood coffee table": [
+   1
+  ],
+  "pair of black ottomans": [
+   1
+  ],
+  "white half-wall with recessed TV": [
+   1
+  ],
+  "dark accent wall with two windows": [
+   1
+  ],
+  "wooden dining table and chairs": [
+   1
+  ],
+  "carpeted stairs going up": [
+   1,
+   2
+  ],
+  "carpeted area with beige sofa": [
+   1
+  ],
+  "square dark coffee table": [
+   1
+  ],
+  "tiled fireplace with white mantel": [
+   1
+  ],
+  "white door to toilet and pedestal sink": [
+   1
+  ],
+  "toilet and pedestal sink": [
+   1
+  ],
+  "glass door with blinds": [
+   1
+  ],
+  "corner desk with chair and monitor": [
+   1
+  ],
+  "white double closet doors on landing": [
+   2
+  ],
+  "landing window": [
+   2
+  ],
+  "dark wood cabinets and countertops": [
+   1
+  ],
+  "stainless steel refrigerator": [
+   1
+  ],
+  "white paneled door next to refrigerator": [
+   1
+  ]
+ }
+}

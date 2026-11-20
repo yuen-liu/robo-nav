@@ -1,0 +1,1182 @@
+{
+ "landmarks": [
+  {
+   "name": "red vanity and toilet",
+   "description": "Dark red two-door cabinet sink vanity with mirror and white toilet on wood floor.",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "geometric red and yellow rug",
+   "description": "Small area rug with red, yellow, and brown geometric blocks on hardwood floor.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "dark wood table with chairs",
+   "description": "Carved dark wood dining table and chairs on a dark area rug.",
+   "seen_at": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "half-wall with pass-through",
+   "description": "Textured beige partition wall with a large rectangular cutout and white sill.",
+   "seen_at": [
+    2,
+    3,
+    4,
+    60,
+    61,
+    65,
+    66,
+    67,
+    88,
+    94,
+    95,
+    96
+   ]
+  },
+  {
+   "name": "brown sofa and stone fireplace",
+   "description": "Large brown upholstered sofa facing a corner stone fireplace with a dark painting above.",
+   "seen_at": [
+    3,
+    4,
+    61,
+    62,
+    63,
+    64,
+    89,
+    90,
+    91,
+    93
+   ]
+  },
+  {
+   "name": "red chaise lounge",
+   "description": "Red upholstered armless chaise lounge on hardwood floor near windows and a potted tree.",
+   "seen_at": [
+    61,
+    62,
+    66,
+    90,
+    94
+   ]
+  },
+  {
+   "name": "TV over wood console",
+   "description": "Flat-screen TV mounted on a beige wall above a dark wood media cabinet next to a stained-glass panel.",
+   "seen_at": [
+    64,
+    91,
+    92
+   ]
+  },
+  {
+   "name": "leather sofa with red throw",
+   "description": "Dark brown leather sofa with a red throw blanket draped over the back, facing a wood coffee table.",
+   "seen_at": [
+    91,
+    92
+   ]
+  },
+  {
+   "name": "wood cabinets with arch cutout",
+   "description": "Reddish-brown wood lower and upper cabinets with black countertop and an arched wall opening.",
+   "seen_at": [
+    5,
+    6,
+    7,
+    33,
+    34,
+    67,
+    68,
+    87,
+    96,
+    146,
+    175
+   ]
+  },
+  {
+   "name": "wood island with stools",
+   "description": "Freestanding reddish-brown wood island with dark countertop and high-back stools.",
+   "seen_at": [
+    5,
+    6,
+    8
+   ]
+  },
+  {
+   "name": "stainless double oven and fridge",
+   "description": "Built-in stainless steel wall oven next to a stainless steel French-door refrigerator.",
+   "seen_at": [
+    7,
+    8
+   ]
+  },
+  {
+   "name": "stainless microwave over counter",
+   "description": "Stainless steel microwave mounted under wood cabinets above a dark countertop.",
+   "seen_at": [
+    8,
+    9
+   ]
+  },
+  {
+   "name": "floral chairs and owl painting",
+   "description": "Upholstered floral pattern dining chairs around a wood table near a square owl painting.",
+   "seen_at": [
+    10,
+    72,
+    178,
+    179
+   ]
+  },
+  {
+   "name": "white columns",
+   "description": "Round white decorative pillars flanking a wide arched opening.",
+   "seen_at": [
+    10,
+    178,
+    179,
+    180
+   ]
+  },
+  {
+   "name": "large framed poster",
+   "description": "Large dark vintage poster reading 'MAURIN QUINA' in a black frame on a tan wall.",
+   "seen_at": [
+    11,
+    71,
+    121,
+    177,
+    181
+   ]
+  },
+  {
+   "name": "beige sofa",
+   "description": "Ribbed beige upholstered sofa backed against the staircase.",
+   "seen_at": [
+    11,
+    71,
+    121,
+    177,
+    181
+   ]
+  },
+  {
+   "name": "bay windows with orange curtains",
+   "description": "Three tall windows in an angled alcove with patterned orange-red drapes.",
+   "seen_at": [
+    11,
+    12,
+    27,
+    85,
+    140,
+    176,
+    182
+   ]
+  },
+  {
+   "name": "front door with arched window",
+   "description": "Wood-framed glass entry door with sidelights and a large multi-pane arched window above.",
+   "seen_at": [
+    12,
+    28,
+    29,
+    35,
+    69,
+    70,
+    85,
+    86,
+    97,
+    121,
+    140,
+    141,
+    176,
+    183,
+    184,
+    186
+   ]
+  },
+  {
+   "name": "round mask on red wall",
+   "description": "Dark round sculpted face mask hanging on the red wall near the front door.",
+   "seen_at": [
+    29,
+    30,
+    86,
+    141,
+    184
+   ]
+  },
+  {
+   "name": "french door with books",
+   "description": "White glass-paned door opening into a space lined with floor-to-ceiling bookshelves.",
+   "seen_at": [
+    30,
+    31,
+    142,
+    145,
+    185
+   ]
+  },
+  {
+   "name": "wood desk with computer",
+   "description": "Carved dark wood desk with curved legs, a computer monitor, and a leather chair in a wood-paneled space.",
+   "seen_at": [
+    31,
+    32,
+    143,
+    145
+   ]
+  },
+  {
+   "name": "wood-paneled windows with blinds",
+   "description": "Two adjacent windows with horizontal blinds set in dark wood wainscoting.",
+   "seen_at": [
+    143,
+    144
+   ]
+  },
+  {
+   "name": "red wall with recessed niche",
+   "description": "Bright red wall with a large white-trimmed rectangular display cutout.",
+   "seen_at": [
+    59,
+    68,
+    69,
+    87,
+    88
+   ]
+  },
+  {
+   "name": "open white door to downward stairs",
+   "description": "Open white six-panel door revealing a narrow staircase with tan walls leading down.",
+   "seen_at": [
+    34,
+    35,
+    36,
+    58,
+    59,
+    68,
+    97,
+    98,
+    119,
+    120,
+    146,
+    147,
+    174,
+    175
+   ]
+  },
+  {
+   "name": "wood and carpet stairs",
+   "description": "Staircase with wood treads, white carpet runner, and carved wood banister.",
+   "seen_at": [
+    12,
+    13,
+    14,
+    15,
+    27,
+    28,
+    35,
+    70,
+    71,
+    72,
+    73,
+    84,
+    85,
+    121,
+    122,
+    123,
+    139,
+    140,
+    146,
+    176,
+    186,
+    187,
+    188
+   ]
+  },
+  {
+   "name": "red stairwell wall",
+   "description": "Tall red-painted wall running alongside the stairs and upper landing.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    72,
+    73,
+    83,
+    84,
+    122,
+    123,
+    138,
+    139,
+    187,
+    188,
+    190,
+    196
+   ]
+  },
+  {
+   "name": "closed white six-panel door",
+   "description": "White six-panel door set in a tan wall directly facing the top of the stairs.",
+   "seen_at": [
+    15,
+    21,
+    73,
+    124,
+    188,
+    189,
+    196,
+    197
+   ]
+  },
+  {
+   "name": "bed with striped bedding and two framed pictures",
+   "description": "Large bed with tan and white striped coverlet beneath two small framed pictures on a gold wall.",
+   "seen_at": [
+    16,
+    17,
+    18,
+    19,
+    188,
+    189,
+    197
+   ]
+  },
+  {
+   "name": "tall white five-drawer chest",
+   "description": "White painted wooden chest of drawers with metal pulls near a doorway.",
+   "seen_at": [
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "wood railing overlooking lower level",
+   "description": "Carved wood balustrade along the edge of the upper carpeted landing.",
+   "seen_at": [
+    21,
+    22,
+    26,
+    27,
+    82,
+    83,
+    137,
+    138,
+    190,
+    194,
+    195,
+    196
+   ]
+  },
+  {
+   "name": "framed picture on tan wall",
+   "description": "Medium white-matted framed picture hanging on the tan upper-level wall between doorways.",
+   "seen_at": [
+    22,
+    23,
+    26,
+    138,
+    190
+   ]
+  },
+  {
+   "name": "spindle bed with blue cover and wood dresser with mirror",
+   "description": "Wood spindle-post bed with blue bedding next to a large wood dresser with an arched mirror in a dark gray space.",
+   "seen_at": [
+    24,
+    25,
+    82
+   ]
+  },
+  {
+   "name": "framed Wicked poster",
+   "description": "Black-framed poster for 'Wicked' hanging on a gray wall next to the doorway.",
+   "seen_at": [
+    25
+   ]
+  },
+  {
+   "name": "dark sleigh bed under ceiling fan",
+   "description": "Dark wood sleigh bed with blue and brown plaid bedding under a ceiling fan on a tan carpeted floor, with a framed print on the tan wall.",
+   "seen_at": [
+    190,
+    191,
+    192,
+    193
+   ]
+  },
+  {
+   "name": "white bifold closet doors",
+   "description": "Set of white six-panel folding closet doors on the wall opposite the dark sleigh bed.",
+   "seen_at": [
+    192,
+    193,
+    194,
+    195
+   ]
+  },
+  {
+   "name": "black six-drawer dresser with mirror",
+   "description": "Dark painted six-drawer chest with a rectangular dark-framed mirror mounted on the tan wall above it, next to the doorway.",
+   "seen_at": [
+    193,
+    194
+   ]
+  },
+  {
+   "name": "wide doorway with wall-mounted TV visible",
+   "description": "Wide cased opening on the upper landing showing a black flat-screen TV and a bed inside.",
+   "seen_at": [
+    22,
+    23,
+    26,
+    74,
+    82,
+    125,
+    137,
+    189,
+    197,
+    198
+   ]
+  },
+  {
+   "name": "wall-mounted TV on angled wall",
+   "description": "Black flat-screen TV mounted on a tan angled wall section with white trim.",
+   "seen_at": [
+    75,
+    76,
+    125,
+    126,
+    199
+   ]
+  },
+  {
+   "name": "carved wood bed with red pillows",
+   "description": "Large ornate dark wood bed with a high arched headboard, patterned coverlet, and red pillows against a patterned wallpaper wall.",
+   "seen_at": [
+    75,
+    76,
+    77,
+    81,
+    131,
+    136,
+    199,
+    200
+   ]
+  },
+  {
+   "name": "dark wood dresser with mirror",
+   "description": "Dark wood chest of drawers with a matching rectangular mirror and two small lamps.",
+   "seen_at": [
+    76,
+    77,
+    78,
+    136,
+    199,
+    200
+   ]
+  },
+  {
+   "name": "dark sofa under windows",
+   "description": "Dark upholstered sofa with patterned throw pillows beneath windows with white blinds.",
+   "seen_at": [
+    78,
+    79,
+    80,
+    126,
+    199
+   ]
+  },
+  {
+   "name": "open doorway to tiled vanity area",
+   "description": "Wide white-trimmed double doorway opening onto a light-colored tiled floor with a wood cabinet vanity.",
+   "seen_at": [
+    81,
+    126,
+    127,
+    130,
+    131,
+    135,
+    136
+   ]
+  },
+  {
+   "name": "tiled tub with pillars and leopard bench",
+   "description": "Corner bathtub set in beige tile beneath a canopy supported by two dark columns, with a leopard-print upholstered bench on a brown rug in front.",
+   "seen_at": [
+    127,
+    129,
+    135
+   ]
+  },
+  {
+   "name": "toilet under round mirror",
+   "description": "White toilet against a mottled red wall with a small round mirror above and three framed pictures on the adjacent tan wall.",
+   "seen_at": [
+    128
+   ]
+  },
+  {
+   "name": "large dark-framed floor mirror",
+   "description": "Tall rectangular mirror in a wide ornate dark frame mounted low on a tan wall next to the closet doorway.",
+   "seen_at": [
+    130,
+    135
+   ]
+  },
+  {
+   "name": "glass corner shower",
+   "description": "Tiled shower enclosure with clear glass doors in the corner near the double doorway.",
+   "seen_at": [
+    131,
+    135,
+    136
+   ]
+  },
+  {
+   "name": "wood vanity with mirror",
+   "description": "Reddish-brown wood sink cabinet with a white countertop and wall mirror next to the closet doorway.",
+   "seen_at": [
+    132
+   ]
+  },
+  {
+   "name": "closet with wire shelves and hanging clothes",
+   "description": "Carpeted storage space lined with white wire shelving, hanging clothes rods, and a blue plastic bin on the floor.",
+   "seen_at": [
+    133,
+    134
+   ]
+  },
+  {
+   "name": "pink carpeted stairs",
+   "description": "Enclosed staircase with pink carpet treads and a wood handrail on brown walls.",
+   "seen_at": [
+    55,
+    56,
+    57,
+    58,
+    99,
+    100,
+    117,
+    118,
+    119,
+    148,
+    149,
+    155,
+    171,
+    172,
+    173,
+    174
+   ]
+  },
+  {
+   "name": "illuminated wall niches with models",
+   "description": "Recessed white-lit rectangular wall cutouts in a brown wall displaying model buildings and ships.",
+   "seen_at": [
+    37,
+    38,
+    41,
+    55,
+    56,
+    100,
+    101,
+    116,
+    117,
+    149,
+    150,
+    156,
+    170,
+    171
+   ]
+  },
+  {
+   "name": "white square pillar",
+   "description": "Freestanding white square support column on pink carpet near the bottom of the stairs.",
+   "seen_at": [
+    38,
+    39,
+    54,
+    55,
+    115,
+    116,
+    150,
+    153,
+    158,
+    170
+   ]
+  },
+  {
+   "name": "arched doorway to desk",
+   "description": "Unframed arched wall opening leading to a carpeted area with a desk and black chair.",
+   "seen_at": [
+    101,
+    150,
+    151,
+    154,
+    157
+   ]
+  },
+  {
+   "name": "desk with black chair and low bookshelf",
+   "description": "Dark desk with a high-back black office chair next to a low dark two-shelf bookcase under framed pictures.",
+   "seen_at": [
+    151,
+    152,
+    153
+   ]
+  },
+  {
+   "name": "model ship in glass case on stand",
+   "description": "Display case containing a model ship on a curved dark wood pedestal stand against a stacked stone wall.",
+   "seen_at": [
+    155,
+    158,
+    159
+   ]
+  },
+  {
+   "name": "stacked stone wall",
+   "description": "Full-height gray and tan stacked stone accent wall along the pink-carpeted area.",
+   "seen_at": [
+    39,
+    40,
+    43,
+    53,
+    54,
+    102,
+    103,
+    114,
+    150,
+    153,
+    155,
+    159,
+    160,
+    166,
+    167,
+    169
+   ]
+  },
+  {
+   "name": "recessed white wall shelves",
+   "description": "Built-in white-painted rectangular wall niches with multiple shelves holding small figures.",
+   "seen_at": [
+    159,
+    160,
+    161,
+    162
+   ]
+  },
+  {
+   "name": "wood table under wall shelves with models",
+   "description": "Freestanding wood table on pink carpet beneath dark floating wall shelves holding model buildings.",
+   "seen_at": [
+    162,
+    163
+   ]
+  },
+  {
+   "name": "small window over dark shelf unit",
+   "description": "Small high-set square window with white trim above a low dark cubby shelf unit.",
+   "seen_at": [
+    163,
+    164
+   ]
+  },
+  {
+   "name": "heart-shaped wall shelf",
+   "description": "Dark wood heart-shaped curio shelf mounted on a tan wall beneath a high rectangular window.",
+   "seen_at": [
+    40,
+    41,
+    44,
+    53,
+    54,
+    115,
+    170
+   ]
+  },
+  {
+   "name": "corner wood counter",
+   "description": "Built-in tan corner wall with an overhanging dark countertop.",
+   "seen_at": [
+    40,
+    42,
+    43,
+    103,
+    114,
+    155,
+    159
+   ]
+  },
+  {
+   "name": "pair of dark armchairs",
+   "description": "Two dark upholstered recliners and a matching dark brown sofa on the pink-carpeted floor.",
+   "seen_at": [
+    42,
+    45,
+    53,
+    160,
+    164,
+    165,
+    169
+   ]
+  },
+  {
+   "name": "TV on dark stand against stone wall",
+   "description": "Flat-screen TV on a black media console against a second stacked stone wall with a white built-in shelf.",
+   "seen_at": [
+    45,
+    52,
+    54,
+    114,
+    169
+   ]
+  },
+  {
+   "name": "stone archway",
+   "description": "Wide doorway framed in stacked stone separating the two pink-carpeted areas.",
+   "seen_at": [
+    46,
+    52,
+    53,
+    103,
+    104,
+    107,
+    113,
+    160
+   ]
+  },
+  {
+   "name": "red sectional sofa",
+   "description": "Large plush red upholstered sectional couch with a matching ottoman and wood coffee table.",
+   "seen_at": [
+    47,
+    48,
+    52,
+    104,
+    105,
+    106,
+    108,
+    109,
+    110,
+    113
+   ]
+  },
+  {
+   "name": "wall-mounted TV over fireplace",
+   "description": "Large flat-screen TV mounted on a tan wall above a recessed dark fireplace opening, flanked by two small windows.",
+   "seen_at": [
+    47,
+    48,
+    106,
+    107
+   ]
+  },
+  {
+   "name": "guitars in corner",
+   "description": "Red and black guitars on stands in the corner beneath a small window.",
+   "seen_at": [
+    49,
+    50
+   ]
+  },
+  {
+   "name": "framed Gone with the Wind poster",
+   "description": "Large dark-framed movie poster on the tan wall opposite the red sectional sofa.",
+   "seen_at": [
+    105,
+    107,
+    108,
+    109
+   ]
+  },
+  {
+   "name": "three framed movie posters",
+   "description": "Three dark-framed posters hanging in a row on the tan wall behind the red sofa.",
+   "seen_at": [
+    50,
+    51,
+    105,
+    109,
+    110
+   ]
+  },
+  {
+   "name": "white six-panel door and open doorway to vanity",
+   "description": "Closed white six-panel door next to an open doorway showing a wood cabinet vanity and mirror.",
+   "seen_at": [
+    110,
+    111
+   ]
+  },
+  {
+   "name": "lower-level wood vanity with black counter",
+   "description": "Reddish-brown wood cabinet vanity with a black countertop and large dark-framed mirror on a yellow wall.",
+   "seen_at": [
+    111,
+    112
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "red vanity and toilet",
+   "to": "dark wood table with chairs",
+   "how": "With the red vanity and toilet on your left, walk forward across the geometric red and yellow rug toward the dark wood table with chairs."
+  },
+  {
+   "from": "dark wood table with chairs",
+   "to": "half-wall with pass-through",
+   "how": "Pass the dark wood table with chairs on your left and walk forward to the half-wall with pass-through."
+  },
+  {
+   "from": "half-wall with pass-through",
+   "to": "wood cabinets with arch cutout",
+   "how": "Curve left around the end of the half-wall with pass-through to enter the area with the wood cabinets with arch cutout on your left."
+  },
+  {
+   "from": "wood cabinets with arch cutout",
+   "to": "stainless double oven and fridge",
+   "how": "Walk along the wood cabinets with arch cutout on your left, keeping the wood island with stools on your right, to reach the stainless double oven and fridge."
+  },
+  {
+   "from": "stainless double oven and fridge",
+   "to": "stainless microwave over counter",
+   "how": "Continue past the stainless double oven and fridge on your left to the stainless microwave over counter at the end of the cabinets."
+  },
+  {
+   "from": "stainless microwave over counter",
+   "to": "floral chairs and owl painting",
+   "how": "Turn right past the stainless microwave over counter and walk through the doorway to pass the floral chairs and owl painting on your right."
+  },
+  {
+   "from": "floral chairs and owl painting",
+   "to": "white columns",
+   "how": "With the floral chairs and owl painting on your right, move forward to the white columns on your left."
+  },
+  {
+   "from": "white columns",
+   "to": "beige sofa",
+   "how": "Pass the white columns on your left and walk forward between the beige sofa on your left and the large framed poster on your right."
+  },
+  {
+   "from": "beige sofa",
+   "to": "white columns",
+   "how": "Walk past the beige sofa on your right and the large framed poster on your left to reach the white columns ahead."
+  },
+  {
+   "from": "beige sofa",
+   "to": "bay windows with orange curtains",
+   "how": "Continue past the beige sofa on your left toward the bay windows with orange curtains ahead."
+  },
+  {
+   "from": "bay windows with orange curtains",
+   "to": "front door with arched window",
+   "how": "With the bay windows with orange curtains on your right, walk forward toward the front door with arched window."
+  },
+  {
+   "from": "front door with arched window",
+   "to": "beige sofa",
+   "how": "With the front door with arched window on your left and wood and carpet stairs on your right, walk past the bay windows with orange curtains on your left to the beige sofa on your right."
+  },
+  {
+   "from": "front door with arched window",
+   "to": "wood and carpet stairs",
+   "how": "Near the front door with arched window, turn toward the wood and carpet stairs and climb them along the red stairwell wall."
+  },
+  {
+   "from": "wood and carpet stairs",
+   "to": "front door with arched window",
+   "how": "Descend the wood and carpet stairs along the red stairwell wall to reach the front door with arched window at the bottom."
+  },
+  {
+   "from": "wood and carpet stairs",
+   "to": "closed white six-panel door",
+   "how": "Climb the wood and carpet stairs, turning at the landing against the red stairwell wall, to reach the closed white six-panel door at the top."
+  },
+  {
+   "from": "closed white six-panel door",
+   "to": "bed with striped bedding and two framed pictures",
+   "how": "At the closed white six-panel door at the top of the stairs, turn left through the open doorway to see the bed with striped bedding and two framed pictures on your right and tall white five-drawer chest ahead."
+  },
+  {
+   "from": "bed with striped bedding and two framed pictures",
+   "to": "wood railing overlooking lower level",
+   "how": "Turn around from the bed with striped bedding and two framed pictures and tall white five-drawer chest, and exit the doorway past the closed white six-panel door onto the landing with the wood railing overlooking lower level."
+  },
+  {
+   "from": "wood railing overlooking lower level",
+   "to": "spindle bed with blue cover and wood dresser with mirror",
+   "how": "With the wood railing overlooking lower level on your right, walk past the closed white six-panel door and framed picture on tan wall on your left, and enter the right doorway to the spindle bed with blue cover and wood dresser with mirror."
+  },
+  {
+   "from": "spindle bed with blue cover and wood dresser with mirror",
+   "to": "wood and carpet stairs",
+   "how": "Turn around past the framed Wicked poster, exit the doorway, and walk across the landing with the wood railing overlooking lower level on your left to go down the wood and carpet stairs."
+  },
+  {
+   "from": "wood railing overlooking lower level",
+   "to": "dark sleigh bed under ceiling fan",
+   "how": "Walk along the landing with the wood railing overlooking lower level on your left and framed picture on tan wall on your right, then go straight through the doorway into the space with the dark sleigh bed under ceiling fan."
+  },
+  {
+   "from": "dark sleigh bed under ceiling fan",
+   "to": "wide doorway with wall-mounted TV visible",
+   "how": "Turn around past the white bifold closet doors and black six-drawer dresser with mirror, exit through the right doorway onto the landing with the wood railing overlooking lower level on your right, and walk past the closed white six-panel door on your left to the wide doorway with wall-mounted TV visible ahead."
+  },
+  {
+   "from": "closed white six-panel door",
+   "to": "wide doorway with wall-mounted TV visible",
+   "how": "From the top of the stairs near the closed white six-panel door, walk straight across the landing through the wide doorway with wall-mounted TV visible."
+  },
+  {
+   "from": "wide doorway with wall-mounted TV visible",
+   "to": "carved wood bed with red pillows",
+   "how": "Pass through the wide doorway with wall-mounted TV visible, passing the wall-mounted TV on angled wall on your right, and turn left to the carved wood bed with red pillows and dark wood dresser with mirror."
+  },
+  {
+   "from": "carved wood bed with red pillows",
+   "to": "dark sofa under windows",
+   "how": "Walk past the carved wood bed with red pillows and dark wood dresser with mirror on your left toward the dark sofa under windows."
+  },
+  {
+   "from": "dark sofa under windows",
+   "to": "wood railing overlooking lower level",
+   "how": "Turn around from the dark sofa under windows, walk past the carved wood bed with red pillows on your right and open doorway to tiled vanity area on your left, and exit through the wide doorway with wall-mounted TV visible to the wood railing overlooking lower level."
+  },
+  {
+   "from": "wood railing overlooking lower level",
+   "to": "wood and carpet stairs",
+   "how": "Walk along the wood railing overlooking lower level and turn down the wood and carpet stairs along the red stairwell wall."
+  },
+  {
+   "from": "wide doorway with wall-mounted TV visible",
+   "to": "open doorway to tiled vanity area",
+   "how": "Walk through the wide doorway with wall-mounted TV visible, passing the wall-mounted TV on angled wall and dark sofa under windows on your left, to go straight through the open doorway to tiled vanity area."
+  },
+  {
+   "from": "open doorway to tiled vanity area",
+   "to": "tiled tub with pillars and leopard bench",
+   "how": "Step through the open doorway to tiled vanity area to see the tiled tub with pillars and leopard bench on your right."
+  },
+  {
+   "from": "tiled tub with pillars and leopard bench",
+   "to": "toilet under round mirror",
+   "how": "With the tiled tub with pillars and leopard bench on your right, step left to look through the narrow doorway at the toilet under round mirror."
+  },
+  {
+   "from": "toilet under round mirror",
+   "to": "closet with wire shelves and hanging clothes",
+   "how": "Turn right from the toilet under round mirror, rotating past the large dark-framed floor mirror, open doorway to tiled vanity area, glass corner shower, and wood vanity with mirror, then walk straight into the closet with wire shelves and hanging clothes."
+  },
+  {
+   "from": "closet with wire shelves and hanging clothes",
+   "to": "wide doorway with wall-mounted TV visible",
+   "how": "Turn around in the closet with wire shelves and hanging clothes, walk out past the large dark-framed floor mirror on your left and tiled tub with pillars and leopard bench on your right, go through the open doorway to tiled vanity area past the glass corner shower and carved wood bed with red pillows on your left, and exit the wide doorway with wall-mounted TV visible."
+  },
+  {
+   "from": "front door with arched window",
+   "to": "french door with books",
+   "how": "At the bottom of the stairs near the front door with arched window, turn left past the round mask on red wall to enter the french door with books."
+  },
+  {
+   "from": "french door with books",
+   "to": "wood desk with computer",
+   "how": "Pass through the french door with books to reach the wood desk with computer and wood-paneled windows with blinds."
+  },
+  {
+   "from": "wood desk with computer",
+   "to": "open white door to downward stairs",
+   "how": "Turn around from the wood desk with computer, exit through the french door with books, and walk past the wood and carpet stairs on your left and wood cabinets with arch cutout on your right to the open white door to downward stairs."
+  },
+  {
+   "from": "front door with arched window",
+   "to": "brown sofa and stone fireplace",
+   "how": "From the bottom of the stairs near the front door with arched window, turn left and walk along the hardwood floor between the wood cabinets with arch cutout and half-wall with pass-through on your left and red wall with recessed niche on your right to reach the brown sofa and stone fireplace."
+  },
+  {
+   "from": "open white door to downward stairs",
+   "to": "brown sofa and stone fireplace",
+   "how": "From the top of the stairs at the open white door to downward stairs, turn left past the red wall with recessed niche and walk past the half-wall with pass-through on your left toward the brown sofa and stone fireplace and red chaise lounge."
+  },
+  {
+   "from": "brown sofa and stone fireplace",
+   "to": "TV over wood console",
+   "how": "With the red chaise lounge on your left, curve right around the brown sofa and stone fireplace toward the TV over wood console and leather sofa with red throw."
+  },
+  {
+   "from": "TV over wood console",
+   "to": "half-wall with pass-through",
+   "how": "Turn around from the TV over wood console and walk between the brown sofa and stone fireplace on your left and red chaise lounge on your right back to the half-wall with pass-through."
+  },
+  {
+   "from": "half-wall with pass-through",
+   "to": "open white door to downward stairs",
+   "how": "Pass the half-wall with pass-through and wood cabinets with arch cutout on your right to reach the open white door to downward stairs."
+  },
+  {
+   "from": "open white door to downward stairs",
+   "to": "front door with arched window",
+   "how": "Walk past the open white door to downward stairs on your right and red wall with recessed niche on your left to reach the front door with arched window and wood and carpet stairs."
+  },
+  {
+   "from": "open white door to downward stairs",
+   "to": "pink carpeted stairs",
+   "how": "Pass through the open white door to downward stairs and walk down the pink carpeted stairs."
+  },
+  {
+   "from": "pink carpeted stairs",
+   "to": "open white door to downward stairs",
+   "how": "Climb the pink carpeted stairs with a landing turn to exit through the open white door to downward stairs."
+  },
+  {
+   "from": "pink carpeted stairs",
+   "to": "illuminated wall niches with models",
+   "how": "At the bottom of the pink carpeted stairs, turn left to face the illuminated wall niches with models."
+  },
+  {
+   "from": "illuminated wall niches with models",
+   "to": "white square pillar",
+   "how": "With the illuminated wall niches with models on your right, step onto the pink carpet by the white square pillar."
+  },
+  {
+   "from": "white square pillar",
+   "to": "heart-shaped wall shelf",
+   "how": "Pass the white square pillar on your left and walk toward the stacked stone wall, then turn to face the heart-shaped wall shelf."
+  },
+  {
+   "from": "heart-shaped wall shelf",
+   "to": "corner wood counter",
+   "how": "Turn right from the heart-shaped wall shelf and walk past the stacked stone wall on your left and pair of dark armchairs to the corner wood counter."
+  },
+  {
+   "from": "corner wood counter",
+   "to": "stone archway",
+   "how": "From the corner wood counter and TV on dark stand against stone wall, turn left to pass through the stone archway."
+  },
+  {
+   "from": "illuminated wall niches with models",
+   "to": "stone archway",
+   "how": "From the bottom of the stairs near the illuminated wall niches with models, turn left and walk across the pink carpet between the stacked stone wall on your right and corner wood counter on your left to pass through the stone archway."
+  },
+  {
+   "from": "stone archway",
+   "to": "three framed movie posters",
+   "how": "Walk through the stone archway, passing the red sectional sofa on your right or left and the wall-mounted TV over fireplace and guitars in corner on your left, to reach the three framed movie posters at the far wall."
+  },
+  {
+   "from": "three framed movie posters",
+   "to": "white six-panel door and open doorway to vanity",
+   "how": "With the red sectional sofa on your left and framed Gone with the Wind poster on your right, walk toward the three framed movie posters and turn slightly right to the white six-panel door and open doorway to vanity."
+  },
+  {
+   "from": "white six-panel door and open doorway to vanity",
+   "to": "lower-level wood vanity with black counter",
+   "how": "At the white six-panel door and open doorway to vanity, look left through the open doorway to see the lower-level wood vanity with black counter."
+  },
+  {
+   "from": "three framed movie posters",
+   "to": "stone archway",
+   "how": "Turn around from the three framed movie posters and white six-panel door and open doorway to vanity, and walk past the red sectional sofa back through the stone archway."
+  },
+  {
+   "from": "stone archway",
+   "to": "pink carpeted stairs",
+   "how": "Walk out through the stone archway, passing the corner wood counter, TV on dark stand against stone wall, and pair of dark armchairs on your right and the stacked stone wall, heart-shaped wall shelf, and white square pillar on your left, then turn right at the illuminated wall niches with models to climb the pink carpeted stairs."
+  },
+  {
+   "from": "illuminated wall niches with models",
+   "to": "arched doorway to desk",
+   "how": "Pass the illuminated wall niches with models on your right and white square pillar on your left to walk straight through the arched doorway to desk."
+  },
+  {
+   "from": "arched doorway to desk",
+   "to": "desk with black chair and low bookshelf",
+   "how": "Step through the arched doorway to desk to reach the desk with black chair and low bookshelf."
+  },
+  {
+   "from": "desk with black chair and low bookshelf",
+   "to": "recessed white wall shelves",
+   "how": "Turn around from the desk with black chair and low bookshelf, exit the arched doorway to desk, and walk forward past the white square pillar on your right and model ship in glass case on stand on your left to the recessed white wall shelves."
+  },
+  {
+   "from": "recessed white wall shelves",
+   "to": "wood table under wall shelves with models",
+   "how": "Walk past the recessed white wall shelves on your left through the doorway to the wood table under wall shelves with models and small window over dark shelf unit on your left."
+  },
+  {
+   "from": "wood table under wall shelves with models",
+   "to": "pair of dark armchairs",
+   "how": "Turn right past the wood table under wall shelves with models and small window over dark shelf unit on your left to enter the open area with the pair of dark armchairs and stacked stone wall."
+  },
+  {
+   "from": "pair of dark armchairs",
+   "to": "pink carpeted stairs",
+   "how": "Walk between the pair of dark armchairs on your left and the TV on dark stand against stone wall and stacked stone wall on your right, pass the white square pillar and illuminated wall niches with models on your left, and turn right to the pink carpeted stairs."
+  }
+ ],
+ "walk_summary": [
+  "Start by passing the red vanity and toilet on the left and walking over the geometric red and yellow rug toward the dark wood table with chairs.",
+  "Pass the dark wood table with chairs on the left and curve around the half-wall with pass-through.",
+  "Move between the wood cabinets with arch cutout on the left and the wood island with stools on the right, passing the stainless double oven and fridge and the stainless microwave over counter.",
+  "Turn right through the doorway, passing the floral chairs and owl painting on the right and white columns on the left.",
+  "Walk between the beige sofa on the left and large framed poster on the right toward the bay windows with orange curtains, then turn left to the front door with arched window and wood and carpet stairs.",
+  "Climb the wood and carpet stairs along the red stairwell wall to the closed white six-panel door at the top.",
+  "Turn left through the open doorway to see the tall white five-drawer chest and the bed with striped bedding and two framed pictures, then turn around and exit onto the landing.",
+  "Walk along the wood railing overlooking lower level on the right, passing the closed white six-panel door and framed picture on tan wall on the left, and enter the right doorway to the spindle bed with blue cover and wood dresser with mirror.",
+  "Turn around past the framed Wicked poster, exit onto the landing, and walk down the wood and carpet stairs toward the front door with arched window.",
+  "Turn left at the bottom of the stairs past the round mask on red wall and enter through the french door with books to the wood desk with computer.",
+  "Turn around, exit past the wood cabinets with arch cutout on the right, and turn left to go through the open white door to downward stairs.",
+  "Walk down the pink carpeted stairs, turning left at the bottom past the illuminated wall niches with models and white square pillar.",
+  "Walk toward the stacked stone wall and heart-shaped wall shelf, then turn right past the pair of dark armchairs to the corner wood counter and TV on dark stand against stone wall.",
+  "Turn left through the stone archway, walking past the red sectional sofa, wall-mounted TV over fireplace, and guitars in corner to the three framed movie posters.",
+  "Turn around and walk back past the red sectional sofa, through the stone archway, and past the stacked stone wall, heart-shaped wall shelf, and white square pillar to the illuminated wall niches with models.",
+  "Turn right and climb the pink carpeted stairs, exiting through the open white door to downward stairs past the red wall with recessed niche.",
+  "Turn left and walk past the half-wall with pass-through to the brown sofa and stone fireplace, red chaise lounge, and TV over wood console.",
+  "Turn around and walk back past the half-wall with pass-through, wood cabinets with arch cutout, open white door to downward stairs, and red wall with recessed niche to the front door with arched window.",
+  "Turn right and climb the wood and carpet stairs along the red stairwell wall to the upper landing.",
+  "Walk straight through the wide doorway with wall-mounted TV visible, passing the wall-mounted TV on angled wall, carved wood bed with red pillows, and dark wood dresser with mirror to the dark sofa under windows.",
+  "Turn around, walk past the carved wood bed with red pillows and open doorway to tiled vanity area, exit onto the landing by the wood railing overlooking lower level, and walk down the wood and carpet stairs to the front door with arched window.",
+  "Turn left at the bottom of the stairs and walk between the wood cabinets with arch cutout and half-wall with pass-through on the left and red wall with recessed niche on the right to the brown sofa and stone fireplace.",
+  "Curve right around the brown sofa and stone fireplace past the red chaise lounge to the TV over wood console and leather sofa with red throw, then turn around and walk back past the half-wall with pass-through to the open white door to downward stairs.",
+  "Descend the pink carpeted stairs, pass the illuminated wall niches with models and arched doorway to desk, and turn left to walk past the stacked stone wall and corner wood counter through the stone archway.",
+  "Walk along the red sectional sofa past the framed Gone with the Wind poster and wall-mounted TV over fireplace to the three framed movie posters and the white six-panel door and open doorway to vanity.",
+  "Look left at the lower-level wood vanity with black counter, then turn around and walk back past the red sectional sofa, through the stone archway, and past the corner wood counter, stacked stone wall, heart-shaped wall shelf, and white square pillar to the illuminated wall niches with models.",
+  "Turn right and climb the pink carpeted stairs through the open white door to downward stairs, then turn right at the front door with arched window and climb the wood and carpet stairs to the upper landing.",
+  "Walk straight across the landing through the wide doorway with wall-mounted TV visible, passing the wall-mounted TV on angled wall and dark sofa under windows, and go through the open doorway to tiled vanity area.",
+  "Pass the tiled tub with pillars and leopard bench on the right to look at the toilet under round mirror on the left, then turn right past the large dark-framed floor mirror, glass corner shower, and wood vanity with mirror to walk into the closet with wire shelves and hanging clothes.",
+  "Turn around, walk out of the closet across the tiled floor past the tiled tub with pillars and leopard bench and glass corner shower, go through the open doorway to tiled vanity area past the carved wood bed with red pillows, and exit the wide doorway with wall-mounted TV visible.",
+  "Walk along the wood railing overlooking lower level and descend the wood and carpet stairs to the front door with arched window.",
+  "Turn left through the french door with books to the wood desk with computer and wood-paneled windows with blinds, then turn around and exit past the wood and carpet stairs and wood cabinets with arch cutout to the open white door to downward stairs.",
+  "Go down the pink carpeted stairs, turn left past the illuminated wall niches with models and white square pillar, and enter the arched doorway to desk to see the desk with black chair and low bookshelf.",
+  "Turn around, exit the arched doorway to desk, and walk past the white square pillar and model ship in glass case on stand along the stacked stone wall and recessed white wall shelves.",
+  "Enter the doorway past the recessed white wall shelves to pass the wood table under wall shelves with models and small window over dark shelf unit on the left, turning right toward the pair of dark armchairs.",
+  "Walk between the pair of dark armchairs and the TV on dark stand against stone wall and stacked stone wall, pass the white square pillar and illuminated wall niches with models, and climb the pink carpeted stairs through the open white door to downward stairs.",
+  "Turn right at the front door with arched window and walk past the bay windows with orange curtains, large framed poster, and beige sofa to the white columns and floral chairs and owl painting.",
+  "Turn around and walk back past the beige sofa, large framed poster, and bay windows with orange curtains to the front door with arched window, then climb the wood and carpet stairs to the closed white six-panel door.",
+  "Turn left and walk along the wood railing overlooking lower level and framed picture on tan wall into the doorway to the dark sleigh bed under ceiling fan.",
+  "Turn around past the white bifold closet doors and black six-drawer dresser with mirror, exit onto the landing by the wood railing overlooking lower level, walk past the closed white six-panel door, and enter the wide doorway with wall-mounted TV visible to stop by the carved wood bed with red pillows."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/cvZr5TUy5C5/frames",
+  "n_keyframes": 201,
+  "camera": "held at chest height by a person walking"
+ }
+}

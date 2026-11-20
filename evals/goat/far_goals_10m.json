@@ -1,0 +1,1606 @@
+[
+ {
+  "episode": 2,
+  "subtask": 1,
+  "scene": "4ok3usBNeis",
+  "type": "object",
+  "text": "Find the freezer.",
+  "geodesic_m": 12.055,
+  "position": [
+   7.799029350280762,
+   2.0644748210906982,
+   1.0409958362579346
+  ],
+  "heading": 1.7021851759151179
+ },
+ {
+  "episode": 6,
+  "subtask": 6,
+  "scene": "4ok3usBNeis",
+  "type": "description",
+  "text": "wooden dresser with a mirror on it. it is located to the right of the hunting trophy, above the staircase handrail, and next to the shelf.",
+  "geodesic_m": 10.521,
+  "position": [
+   7.8091654777526855,
+   2.0644748210906982,
+   0.6865037083625793
+  ],
+  "heading": 1.8964164974265791
+ },
+ {
+  "episode": 10,
+  "subtask": 3,
+  "scene": "5cdEh9F2hJL",
+  "type": "description",
+  "text": "mirror in the bathroom. start by locating the bathroom counter and the sink. the mirror should be located near the sink. look for a reflective surface attached to the wall. it is a bathroom mirror.",
+  "geodesic_m": 15.851,
+  "position": [
+   10.23743724822998,
+   0.018403440713882446,
+   -0.9817771315574646
+  ],
+  "heading": 0.7514076029752453
+ },
+ {
+  "episode": 10,
+  "subtask": 5,
+  "scene": "5cdEh9F2hJL",
+  "type": "object",
+  "text": "Find the hanging clothes.",
+  "geodesic_m": 14.888,
+  "position": [
+   2.655817985534668,
+   0.060788050293922424,
+   -1.9330817461013794
+  ],
+  "heading": 2.6497442745681465
+ },
+ {
+  "episode": 11,
+  "subtask": 0,
+  "scene": "5cdEh9F2hJL",
+  "type": "object",
+  "text": "Find the hanging clothes.",
+  "geodesic_m": 10.704,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 12,
+  "subtask": 8,
+  "scene": "5cdEh9F2hJL",
+  "type": "object",
+  "text": "Find the carpet.",
+  "geodesic_m": 11.706,
+  "position": [
+   -5.506929874420166,
+   0.13644663989543915,
+   2.809227228164673
+  ],
+  "heading": 0.4538354714763627
+ },
+ {
+  "episode": 15,
+  "subtask": 3,
+  "scene": "5cdEh9F2hJL",
+  "type": "object",
+  "text": "Find the hanging clothes.",
+  "geodesic_m": 11.842,
+  "position": [
+   4.590120315551758,
+   0.018403440713882446,
+   4.619139194488525
+  ],
+  "heading": -0.7008203559888985
+ },
+ {
+  "episode": 17,
+  "subtask": 2,
+  "scene": "5cdEh9F2hJL",
+  "type": "object",
+  "text": "Find the hanging clothes.",
+  "geodesic_m": 11.855,
+  "position": [
+   4.705704689025879,
+   0.018403440713882446,
+   4.057497978210449
+  ],
+  "heading": 1.6721075811120774
+ },
+ {
+  "episode": 20,
+  "subtask": 1,
+  "scene": "6s7QHgap2fW",
+  "type": "object",
+  "text": "Find the book.",
+  "geodesic_m": 16.313,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 24,
+  "subtask": 5,
+  "scene": "6s7QHgap2fW",
+  "type": "object",
+  "text": "Find the photo mount.",
+  "geodesic_m": 11.373,
+  "position": [
+   2.102323055267334,
+   2.8455960750579834,
+   -3.983905792236328
+  ],
+  "heading": 2.6500092314213677
+ },
+ {
+  "episode": 26,
+  "subtask": 4,
+  "scene": "6s7QHgap2fW",
+  "type": "object",
+  "text": "Find the book.",
+  "geodesic_m": 18.544,
+  "position": [
+   17.320043563842773,
+   0.01817205920815468,
+   -1.6371428966522217
+  ],
+  "heading": 0.16008709673208799
+ },
+ {
+  "episode": 27,
+  "subtask": 5,
+  "scene": "6s7QHgap2fW",
+  "type": "description",
+  "text": "children's book located on the bookstand near the toy.",
+  "geodesic_m": 21.711,
+  "position": [
+   2.96515154838562,
+   2.849435806274414,
+   -0.7227371335029602
+  ],
+  "heading": -0.7142902693368737
+ },
+ {
+  "episode": 29,
+  "subtask": 6,
+  "scene": "6s7QHgap2fW",
+  "type": "object",
+  "text": "Find the book.",
+  "geodesic_m": 25.482,
+  "position": [
+   1.0478395223617554,
+   2.849435806274414,
+   -3.230558395385742
+  ],
+  "heading": 0.10730131652885457
+ },
+ {
+  "episode": 29,
+  "subtask": 7,
+  "scene": "6s7QHgap2fW",
+  "type": "description",
+  "text": "shattered glass on the kitchen counter near the sink.",
+  "geodesic_m": 27.138,
+  "position": [
+   6.228750228881836,
+   2.849435806274414,
+   -1.89076566696167
+  ],
+  "heading": -2.276790834313515
+ },
+ {
+  "episode": 32,
+  "subtask": 3,
+  "scene": "7MXmsvcQjpJ",
+  "type": "description",
+  "text": "piano which is located near the curtain. look for a grand piano in the vicinity of the curtain.",
+  "geodesic_m": 16.906,
+  "position": [
+   -4.249110698699951,
+   1.3296399116516113,
+   -1.3655660152435303
+  ],
+  "heading": 2.2377153871128934
+ },
+ {
+  "episode": 33,
+  "subtask": 3,
+  "scene": "7MXmsvcQjpJ",
+  "type": "description",
+  "text": "book of poetry that is located on top of the desk.",
+  "geodesic_m": 10.171,
+  "position": [
+   -4.73903751373291,
+   4.529640197753906,
+   -1.700921654701233
+  ],
+  "heading": 2.4787780419447896
+ },
+ {
+  "episode": 36,
+  "subtask": 7,
+  "scene": "7MXmsvcQjpJ",
+  "type": "description",
+  "text": "hardcover book that is located on the book rack, which is on the left side of the room.",
+  "geodesic_m": 10.307,
+  "position": [
+   -8.229402542114258,
+   -2.6203603744506836,
+   -1.0662153959274292
+  ],
+  "heading": 1.638294727860955
+ },
+ {
+  "episode": 38,
+  "subtask": 5,
+  "scene": "7MXmsvcQjpJ",
+  "type": "description",
+  "text": "white refrigerator located near a support beam and a duct in a cluttered room.",
+  "geodesic_m": 11.938,
+  "position": [
+   4.340294361114502,
+   -4.019972324371338,
+   -4.959589004516602
+  ],
+  "heading": -2.5081713526770693
+ },
+ {
+  "episode": 38,
+  "subtask": 8,
+  "scene": "7MXmsvcQjpJ",
+  "type": "object",
+  "text": "Find the refrigerator.",
+  "geodesic_m": 12.531,
+  "position": [
+   5.339129447937012,
+   -3.7703604698181152,
+   -4.910752773284912
+  ],
+  "heading": -2.944408164425197
+ },
+ {
+  "episode": 58,
+  "subtask": 1,
+  "scene": "CrMo8WxCyVb",
+  "type": "description",
+  "text": "stainless steel refrigerator located in the kitchen cabinet.",
+  "geodesic_m": 18.13,
+  "position": [
+   -2.8117079734802246,
+   0.027298452332615852,
+   1.3673382997512817
+  ],
+  "heading": 2.035187603037019
+ },
+ {
+  "episode": 58,
+  "subtask": 2,
+  "scene": "CrMo8WxCyVb",
+  "type": "object",
+  "text": "Find the refrigerator.",
+  "geodesic_m": 10.889,
+  "position": [
+   -3.1889419555664062,
+   -0.34993553161621094,
+   5.849892616271973
+  ],
+  "heading": 1.2524745912243256
+ },
+ {
+  "episode": 58,
+  "subtask": 7,
+  "scene": "CrMo8WxCyVb",
+  "type": "description",
+  "text": "stainless steel refrigerator located in the kitchen cabinet.",
+  "geodesic_m": 13.878,
+  "position": [
+   -4.793042182922363,
+   0.0500645637512207,
+   4.583139896392822
+  ],
+  "heading": 2.42120542167889
+ },
+ {
+  "episode": 61,
+  "subtask": 0,
+  "scene": "DYehNKdT76V",
+  "type": "object",
+  "text": "Find the island.",
+  "geodesic_m": 12.752,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 62,
+  "subtask": 2,
+  "scene": "DYehNKdT76V",
+  "type": "description",
+  "text": "built-in microwave oven located near the kitchen cabinet and oven.",
+  "geodesic_m": 13.61,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 63,
+  "subtask": 4,
+  "scene": "DYehNKdT76V",
+  "type": "description",
+  "text": "built-in microwave oven located near the kitchen cabinet and oven.",
+  "geodesic_m": 11.026,
+  "position": [
+   -5.388845443725586,
+   0.036506861448287964,
+   -5.72344446182251
+  ],
+  "heading": 1.712489939094284
+ },
+ {
+  "episode": 72,
+  "subtask": 3,
+  "scene": "Dd4bFSTQ8gi",
+  "type": "object",
+  "text": "Find the refrigerator.",
+  "geodesic_m": 12.211,
+  "position": [
+   8.148496627807617,
+   0.026093164458870888,
+   7.1569952964782715
+  ],
+  "heading": -2.1807368289473805
+ },
+ {
+  "episode": 76,
+  "subtask": 0,
+  "scene": "Dd4bFSTQ8gi",
+  "type": "description",
+  "text": "blue and white striped rug located next to the couch, on the table near the flower vase, and below the picture.",
+  "geodesic_m": 10.92,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 77,
+  "subtask": 4,
+  "scene": "Dd4bFSTQ8gi",
+  "type": "description",
+  "text": "flower vase that is in front of the blanket.",
+  "geodesic_m": 10.297,
+  "position": [
+   -0.01761724054813385,
+   0.018823087215423584,
+   -1.6107267141342163
+  ],
+  "heading": 0.01023034772068338
+ },
+ {
+  "episode": 80,
+  "subtask": 4,
+  "scene": "GLAQ4DNUx5U",
+  "type": "object",
+  "text": "Find the book.",
+  "geodesic_m": 11.219,
+  "position": [
+   -9.33606243133545,
+   1.1571133136749268,
+   7.864207744598389
+  ],
+  "heading": -1.9825795482844886
+ },
+ {
+  "episode": 86,
+  "subtask": 1,
+  "scene": "GLAQ4DNUx5U",
+  "type": "description",
+  "text": "bathroom mirror. start by locating the sink. move towards the sink and then look to the right. you will find the mirror next to the sink.",
+  "geodesic_m": 19.162,
+  "position": [
+   -3.5288851261138916,
+   1.207113265991211,
+   1.1000076532363892
+  ],
+  "heading": -1.9621739615506792
+ },
+ {
+  "episode": 86,
+  "subtask": 5,
+  "scene": "GLAQ4DNUx5U",
+  "type": "description",
+  "text": "shattered mirror near the bar, wardrobe, and lamp.",
+  "geodesic_m": 14.739,
+  "position": [
+   -0.359407514333725,
+   1.207113265991211,
+   7.476473331451416
+  ],
+  "heading": -2.823712914622146
+ },
+ {
+  "episode": 86,
+  "subtask": 6,
+  "scene": "GLAQ4DNUx5U",
+  "type": "description",
+  "text": "white dresser with the stuffed animals on it. the dresser is located to the right of the air conditioner and below the picture.",
+  "geodesic_m": 15.392,
+  "position": [
+   -3.813096284866333,
+   -1.5928866863250732,
+   2.2896509170532227
+  ],
+  "heading": 3.120626426532728
+ },
+ {
+  "episode": 91,
+  "subtask": 1,
+  "scene": "HY1NcmCgn3n",
+  "type": "description",
+  "text": "statue of a man located near the arch and picture.",
+  "geodesic_m": 16.031,
+  "position": [
+   14.000967979431152,
+   0.012179374694824219,
+   -6.172833442687988
+  ],
+  "heading": -2.6463433746390557
+ },
+ {
+  "episode": 92,
+  "subtask": 3,
+  "scene": "HY1NcmCgn3n",
+  "type": "description",
+  "text": "statue of a man located near the arch and picture.",
+  "geodesic_m": 15.297,
+  "position": [
+   18.724788665771484,
+   0.012179374694824219,
+   3.492056369781494
+  ],
+  "heading": -2.227123368568808
+ },
+ {
+  "episode": 99,
+  "subtask": 6,
+  "scene": "HY1NcmCgn3n",
+  "type": "object",
+  "text": "Find the statue.",
+  "geodesic_m": 14.297,
+  "position": [
+   15.065503120422363,
+   0.012179374694824219,
+   1.1939219236373901
+  ],
+  "heading": 1.0130786903145814
+ },
+ {
+  "episode": 121,
+  "subtask": 6,
+  "scene": "Nfvxx8J5NCo",
+  "type": "object",
+  "text": "Find the microwave.",
+  "geodesic_m": 10.985,
+  "position": [
+   -0.32809650897979736,
+   0.03085707128047943,
+   -2.961329221725464
+  ],
+  "heading": 0.08915515658857034
+ },
+ {
+  "episode": 123,
+  "subtask": 0,
+  "scene": "Nfvxx8J5NCo",
+  "type": "object",
+  "text": "Find the mirror.",
+  "geodesic_m": 14.268,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 123,
+  "subtask": 3,
+  "scene": "Nfvxx8J5NCo",
+  "type": "description",
+  "text": "microwave located near the table, to the left of the oven and stove, and above the paper and spice rack. it is a stainless steel microwave.",
+  "geodesic_m": 12.254,
+  "position": [
+   -5.766624450683594,
+   0.03085707128047943,
+   -3.3170876502990723
+  ],
+  "heading": 1.1272129603579613
+ },
+ {
+  "episode": 123,
+  "subtask": 6,
+  "scene": "Nfvxx8J5NCo",
+  "type": "description",
+  "text": "microwave located near the table, to the left of the oven and stove, and above the paper and spice rack. it is a stainless steel microwave.",
+  "geodesic_m": 11.047,
+  "position": [
+   -0.4628519117832184,
+   0.03085707128047943,
+   -2.9558253288269043
+  ],
+  "heading": -0.07256976707744756
+ },
+ {
+  "episode": 127,
+  "subtask": 6,
+  "scene": "Nfvxx8J5NCo",
+  "type": "description",
+  "text": "microwave located near the table, to the left of the oven and stove, and above the paper and spice rack. it is a stainless steel microwave.",
+  "geodesic_m": 11.146,
+  "position": [
+   -0.535590648651123,
+   0.03085707128047943,
+   -3.0233089923858643
+  ],
+  "heading": 0.10460218587361332
+ },
+ {
+  "episode": 135,
+  "subtask": 1,
+  "scene": "QaLdnwvtxbs",
+  "type": "description",
+  "text": "mirror in the bathroom. the mirror is located to the left of the washbasin counter. it is also above the cosmetics and the tap.",
+  "geodesic_m": 10.76,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 137,
+  "subtask": 1,
+  "scene": "QaLdnwvtxbs",
+  "type": "description",
+  "text": "illuminated mirror located on the washbasin counter near the towel, cosmetics, and air vent.",
+  "geodesic_m": 13.183,
+  "position": [
+   4.886085033416748,
+   0.035739123821258545,
+   -2.826293706893921
+  ],
+  "heading": -1.1906309213512203
+ },
+ {
+  "episode": 137,
+  "subtask": 3,
+  "scene": "QaLdnwvtxbs",
+  "type": "description",
+  "text": "illuminated mirror located on the washbasin counter near the towel, cosmetics, and air vent.",
+  "geodesic_m": 12.362,
+  "position": [
+   0.26805365085601807,
+   0.035739123821258545,
+   -3.344249725341797
+  ],
+  "heading": 1.1678844930340235
+ },
+ {
+  "episode": 138,
+  "subtask": 2,
+  "scene": "QaLdnwvtxbs",
+  "type": "description",
+  "text": "picture of a bathroom with a tub and a mirror. the picture is located below the bathtub.",
+  "geodesic_m": 10.801,
+  "position": [
+   -5.479941368103027,
+   0.035739123821258545,
+   -4.6529364585876465
+  ],
+  "heading": 0.41539761013849424
+ },
+ {
+  "episode": 138,
+  "subtask": 6,
+  "scene": "QaLdnwvtxbs",
+  "type": "description",
+  "text": "mirror in the bathroom. the mirror is located to the left of the washbasin counter. it is also above the cosmetics and the tap.",
+  "geodesic_m": 13.251,
+  "position": [
+   -5.703657150268555,
+   0.035739123821258545,
+   -4.5865325927734375
+  ],
+  "heading": 0.3068659987014603
+ },
+ {
+  "episode": 140,
+  "subtask": 4,
+  "scene": "TEEsavR23oF",
+  "type": "object",
+  "text": "Find the pillow.",
+  "geodesic_m": 12.761,
+  "position": [
+   -5.691299915313721,
+   0.013377934694290161,
+   -0.22859519720077515
+  ],
+  "heading": 2.3231997309470778
+ },
+ {
+  "episode": 141,
+  "subtask": 7,
+  "scene": "TEEsavR23oF",
+  "type": "description",
+  "text": "the microwave located in the kitchen cabinet. it is made of stainless steel.",
+  "geodesic_m": 10.106,
+  "position": [
+   -1.3762016296386719,
+   0.013377934694290161,
+   -6.785149574279785
+  ],
+  "heading": 2.9590312994153076
+ },
+ {
+  "episode": 145,
+  "subtask": 3,
+  "scene": "TEEsavR23oF",
+  "type": "object",
+  "text": "Find the dresser.",
+  "geodesic_m": 10.949,
+  "position": [
+   -5.580367565155029,
+   0.013377934694290161,
+   -0.3275625705718994
+  ],
+  "heading": 2.3553623099750283
+ },
+ {
+  "episode": 145,
+  "subtask": 4,
+  "scene": "TEEsavR23oF",
+  "type": "description",
+  "text": "white pillow near the clothes and iron board.",
+  "geodesic_m": 18.728,
+  "position": [
+   -10.87955379486084,
+   0.013377934694290161,
+   -2.772862434387207
+  ],
+  "heading": 1.0249264221592675
+ },
+ {
+  "episode": 146,
+  "subtask": 3,
+  "scene": "TEEsavR23oF",
+  "type": "object",
+  "text": "Find the pillow.",
+  "geodesic_m": 10.138,
+  "position": [
+   -3.8460729122161865,
+   0.013377934694290161,
+   -1.7330902814865112
+  ],
+  "heading": -2.3482768741690947
+ },
+ {
+  "episode": 151,
+  "subtask": 4,
+  "scene": "VBzV5z6i1WS",
+  "type": "description",
+  "text": "dresser which is located below and to the right of the tv.",
+  "geodesic_m": 11.609,
+  "position": [
+   5.181249141693115,
+   -0.0034581124782562256,
+   -2.9622130393981934
+  ],
+  "heading": -1.751906749710805
+ },
+ {
+  "episode": 154,
+  "subtask": 5,
+  "scene": "VBzV5z6i1WS",
+  "type": "object",
+  "text": "Find the piano.",
+  "geodesic_m": 10.225,
+  "position": [
+   4.862152576446533,
+   0.046541884541511536,
+   -7.166959762573242
+  ],
+  "heading": -1.1868079275759758
+ },
+ {
+  "episode": 157,
+  "subtask": 6,
+  "scene": "VBzV5z6i1WS",
+  "type": "description",
+  "text": "dresser which is located below and to the right of the tv.",
+  "geodesic_m": 12.625,
+  "position": [
+   4.584901809692383,
+   0.046541884541511536,
+   -6.918740749359131
+  ],
+  "heading": -1.0365467532654957
+ },
+ {
+  "episode": 159,
+  "subtask": 4,
+  "scene": "VBzV5z6i1WS",
+  "type": "description",
+  "text": "piano that is located to the right of the antique clock, below the picture, and near the book.",
+  "geodesic_m": 13.578,
+  "position": [
+   6.384876251220703,
+   0.046541884541511536,
+   -9.920175552368164
+  ],
+  "heading": -0.058357041901994304
+ },
+ {
+  "episode": 163,
+  "subtask": 2,
+  "scene": "XB4GS9ShBRE",
+  "type": "description",
+  "text": "broken mirror located near the armchair and cabinet.",
+  "geodesic_m": 11.225,
+  "position": [
+   -0.11705213785171509,
+   -0.0038709640502929688,
+   -2.7406935691833496
+  ],
+  "heading": 0.30343978309674946
+ },
+ {
+  "episode": 163,
+  "subtask": 6,
+  "scene": "XB4GS9ShBRE",
+  "type": "description",
+  "text": "broken mirror located near the armchair and cabinet.",
+  "geodesic_m": 12.475,
+  "position": [
+   3.0075736045837402,
+   -0.30387091636657715,
+   1.3427895307540894
+  ],
+  "heading": -3.053628127340708
+ },
+ {
+  "episode": 167,
+  "subtask": 5,
+  "scene": "XB4GS9ShBRE",
+  "type": "description",
+  "text": "broken mirror located near the armchair and cabinet.",
+  "geodesic_m": 11.615,
+  "position": [
+   -3.3952836990356445,
+   -0.0038709640502929688,
+   1.1290056705474854
+  ],
+  "heading": -3.1273476791708483
+ },
+ {
+  "episode": 167,
+  "subtask": 7,
+  "scene": "XB4GS9ShBRE",
+  "type": "description",
+  "text": "broken mirror located near the armchair and cabinet.",
+  "geodesic_m": 11.013,
+  "position": [
+   0.09202298521995544,
+   -0.0038709640502929688,
+   -2.538050889968872
+  ],
+  "heading": -0.3706824027783447
+ },
+ {
+  "episode": 176,
+  "subtask": 4,
+  "scene": "a8BtkwhxdRV",
+  "type": "description",
+  "text": "mirror. the mirror is located near the sink and shower cabin.",
+  "geodesic_m": 13.693,
+  "position": [
+   -4.47487735748291,
+   1.0408084392547607,
+   7.464756488800049
+  ],
+  "heading": -2.466045779965818
+ },
+ {
+  "episode": 190,
+  "subtask": 4,
+  "scene": "bxsVRursffK",
+  "type": "description",
+  "text": "white robes hanging on the clothes hanger rod.",
+  "geodesic_m": 11.675,
+  "position": [
+   -7.678278923034668,
+   0.04848087579011917,
+   -0.4017447233200073
+  ],
+  "heading": 2.933642855984835
+ },
+ {
+  "episode": 194,
+  "subtask": 8,
+  "scene": "bxsVRursffK",
+  "type": "object",
+  "text": "Find the hanging clothes.",
+  "geodesic_m": 10.694,
+  "position": [
+   -5.282751560211182,
+   0.02467513084411621,
+   -0.6451272368431091
+  ],
+  "heading": -1.498648695366534
+ },
+ {
+  "episode": 198,
+  "subtask": 4,
+  "scene": "bxsVRursffK",
+  "type": "object",
+  "text": "Find the refrigerator.",
+  "geodesic_m": 12.494,
+  "position": [
+   -4.865986347198486,
+   0.02467513084411621,
+   -2.3556110858917236
+  ],
+  "heading": -1.7712863476007414
+ },
+ {
+  "episode": 199,
+  "subtask": 5,
+  "scene": "bxsVRursffK",
+  "type": "description",
+  "text": "stainless steel microwave in the kitchen counter area, near the refrigerator.",
+  "geodesic_m": 16.087,
+  "position": [
+   -1.0901107788085938,
+   0.07467508316040039,
+   -3.958814859390259
+  ],
+  "heading": 1.704084395009118
+ },
+ {
+  "episode": 199,
+  "subtask": 7,
+  "scene": "bxsVRursffK",
+  "type": "description",
+  "text": "stainless steel refrigerator in the kitchen counter area.",
+  "geodesic_m": 15.273,
+  "position": [
+   -1.0901107788085938,
+   0.07467508316040039,
+   -3.958814859390259
+  ],
+  "heading": 2.182106870353863
+ },
+ {
+  "episode": 203,
+  "subtask": 2,
+  "scene": "cvZr5TUy5C5",
+  "type": "description",
+  "text": "mirror in the bathroom near the sink cabinet.",
+  "geodesic_m": 11.426,
+  "position": [
+   -8.280509948730469,
+   3.089857578277588,
+   -0.25547388195991516
+  ],
+  "heading": 0.4035016113205538
+ },
+ {
+  "episode": 206,
+  "subtask": 6,
+  "scene": "cvZr5TUy5C5",
+  "type": "description",
+  "text": "berber carpet located near the circular sofa and the pillar.",
+  "geodesic_m": 11.021,
+  "position": [
+   0.43903517723083496,
+   0.022163867950439453,
+   0.5435190200805664
+  ],
+  "heading": -0.84105970866847
+ },
+ {
+  "episode": 206,
+  "subtask": 7,
+  "scene": "cvZr5TUy5C5",
+  "type": "description",
+  "text": "berber carpet located near the circular sofa and the pillar.",
+  "geodesic_m": 11.396,
+  "position": [
+   1.942884922027588,
+   0.022163867950439453,
+   0.6162381172180176
+  ],
+  "heading": -1.8149674431571272
+ },
+ {
+  "episode": 209,
+  "subtask": 0,
+  "scene": "cvZr5TUy5C5",
+  "type": "object",
+  "text": "Find the printer.",
+  "geodesic_m": 12.17,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 210,
+  "subtask": 8,
+  "scene": "eF36g7L6Z9M",
+  "type": "description",
+  "text": "mirror, which is a round mirror, located near the bedside table and pillow.",
+  "geodesic_m": 12.791,
+  "position": [
+   -1.4850897789001465,
+   -3.364170551300049,
+   1.7720298767089844
+  ],
+  "heading": 1.5204643525932904
+ },
+ {
+  "episode": 211,
+  "subtask": 1,
+  "scene": "eF36g7L6Z9M",
+  "type": "description",
+  "text": "table with a painting on it. the table is located below the cabinet and to the right of the tray. the painting is positioned in the middle of the table.",
+  "geodesic_m": 10.704,
+  "position": [
+   4.816433429718018,
+   0.02975153923034668,
+   15.934320449829102
+  ],
+  "heading": -0.45569305597153925
+ },
+ {
+  "episode": 213,
+  "subtask": 5,
+  "scene": "eF36g7L6Z9M",
+  "type": "description",
+  "text": "the large mirror located near the fireplace.",
+  "geodesic_m": 17.579,
+  "position": [
+   1.846295714378357,
+   0.02975153923034668,
+   2.5207748413085938
+  ],
+  "heading": -0.3605547182299182
+ },
+ {
+  "episode": 216,
+  "subtask": 4,
+  "scene": "eF36g7L6Z9M",
+  "type": "object",
+  "text": "Find the picture.",
+  "geodesic_m": 11.486,
+  "position": [
+   2.869701385498047,
+   0.02975153923034668,
+   19.706092834472656
+  ],
+  "heading": 0.9602958438078328
+ },
+ {
+  "episode": 217,
+  "subtask": 0,
+  "scene": "eF36g7L6Z9M",
+  "type": "object",
+  "text": "Find the picture.",
+  "geodesic_m": 16.449,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 218,
+  "subtask": 6,
+  "scene": "eF36g7L6Z9M",
+  "type": "description",
+  "text": "table with a painting on it. the table is located below the cabinet and to the right of the tray. the painting is positioned in the middle of the table.",
+  "geodesic_m": 14.968,
+  "position": [
+   -1.90791916847229,
+   0.02975153923034668,
+   -5.0809245109558105
+  ],
+  "heading": 0.1565917505183816
+ },
+ {
+  "episode": 221,
+  "subtask": 6,
+  "scene": "h1zeeAwLh9Z",
+  "type": "description",
+  "text": "nightstand that has a lamp on it. the nightstand is located next to the bed and there is a pillow on the bed as well. look for the bedside lamp on the nightstand to identify it.",
+  "geodesic_m": 11.231,
+  "position": [
+   -1.7607972621917725,
+   2.549023389816284,
+   -4.24191427230835
+  ],
+  "heading": 0.12705249214184036
+ },
+ {
+  "episode": 221,
+  "subtask": 7,
+  "scene": "h1zeeAwLh9Z",
+  "type": "description",
+  "text": "nightstand with a lamp on it. it is located to the right of the bed and below the pillow.",
+  "geodesic_m": 12.25,
+  "position": [
+   -1.7607972621917725,
+   2.549023389816284,
+   -4.24191427230835
+  ],
+  "heading": 0.167961822276943
+ },
+ {
+  "episode": 230,
+  "subtask": 2,
+  "scene": "k1cupFYWXJ6",
+  "type": "description",
+  "text": "decorative plant cactus located near the armchair, statue, and stairs.",
+  "geodesic_m": 11.254,
+  "position": [
+   -2.8032588958740234,
+   -14.922551155090332,
+   -10.433505058288574
+  ],
+  "heading": 0.36291886644719873
+ },
+ {
+  "episode": 235,
+  "subtask": 3,
+  "scene": "k1cupFYWXJ6",
+  "type": "object",
+  "text": "Find the decorative plant.",
+  "geodesic_m": 12.208,
+  "position": [
+   0.014411062002182007,
+   -10.622550964355469,
+   1.504507303237915
+  ],
+  "heading": -1.1139247516567248
+ },
+ {
+  "episode": 235,
+  "subtask": 6,
+  "scene": "k1cupFYWXJ6",
+  "type": "object",
+  "text": "Find the decorative plant.",
+  "geodesic_m": 12.088,
+  "position": [
+   -0.11944030225276947,
+   -10.622550964355469,
+   1.3458976745605469
+  ],
+  "heading": -1.341622063742328
+ },
+ {
+  "episode": 239,
+  "subtask": 1,
+  "scene": "k1cupFYWXJ6",
+  "type": "description",
+  "text": "decorative plant cactus located near the armchair, statue, and stairs.",
+  "geodesic_m": 10.965,
+  "position": [
+   -2.901191234588623,
+   -14.922551155090332,
+   -10.1124849319458
+  ],
+  "heading": 0.27119488587274443
+ },
+ {
+  "episode": 239,
+  "subtask": 4,
+  "scene": "k1cupFYWXJ6",
+  "type": "description",
+  "text": "decorative plant that is located to the left of the armchair and below the table.",
+  "geodesic_m": 55.427,
+  "position": [
+   -4.632667541503906,
+   3.277449607849121,
+   -2.764221429824829
+  ],
+  "heading": 1.38216433869708
+ },
+ {
+  "episode": 243,
+  "subtask": 2,
+  "scene": "mL8ThkuaVTM",
+  "type": "object",
+  "text": "Find the refrigerator.",
+  "geodesic_m": 10.151,
+  "position": [
+   1.1601873636245728,
+   -2.6760079860687256,
+   0.8741120100021362
+  ],
+  "heading": 0.4553039772697815
+ },
+ {
+  "episode": 244,
+  "subtask": 6,
+  "scene": "mL8ThkuaVTM",
+  "type": "description",
+  "text": "refrigerator next to the kitchen cabinet.",
+  "geodesic_m": 10.848,
+  "position": [
+   5.126720905303955,
+   -2.6760079860687256,
+   -0.21460393071174622
+  ],
+  "heading": -2.809639483564592
+ },
+ {
+  "episode": 246,
+  "subtask": 3,
+  "scene": "mL8ThkuaVTM",
+  "type": "description",
+  "text": "mirror in a bathroom. it is located near a sink and a towel.",
+  "geodesic_m": 14.743,
+  "position": [
+   4.079239368438721,
+   -2.6760079860687256,
+   -1.197716474533081
+  ],
+  "heading": 2.4129347147388827
+ },
+ {
+  "episode": 246,
+  "subtask": 4,
+  "scene": "mL8ThkuaVTM",
+  "type": "description",
+  "text": "mirror in a bathroom. it is located near a sink and a towel.",
+  "geodesic_m": 14.743,
+  "position": [
+   4.079239368438721,
+   -2.6760079860687256,
+   -1.197716474533081
+  ],
+  "heading": 2.4129347147388827
+ },
+ {
+  "episode": 248,
+  "subtask": 9,
+  "scene": "mL8ThkuaVTM",
+  "type": "object",
+  "text": "Find the refrigerator.",
+  "geodesic_m": 11.75,
+  "position": [
+   5.579493045806885,
+   2.7739923000335693,
+   0.6508511900901794
+  ],
+  "heading": 2.383999442265969
+ },
+ {
+  "episode": 250,
+  "subtask": 4,
+  "scene": "mv2HUxq3B53",
+  "type": "description",
+  "text": "stainless steel refrigerator located on the shelf.",
+  "geodesic_m": 10.275,
+  "position": [
+   0.769314706325531,
+   0.00035452842712402344,
+   12.283899307250977
+  ],
+  "heading": -1.3961628053540136
+ },
+ {
+  "episode": 252,
+  "subtask": 2,
+  "scene": "mv2HUxq3B53",
+  "type": "description",
+  "text": "mirror with a tv on it. the mirror is located below the led tv and to the right of the shelf.",
+  "geodesic_m": 13.842,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 253,
+  "subtask": 0,
+  "scene": "mv2HUxq3B53",
+  "type": "description",
+  "text": "mirror located on the right side of the room, close to the lamp and the faucet. it is a large mirror.",
+  "geodesic_m": 24.9,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 253,
+  "subtask": 2,
+  "scene": "mv2HUxq3B53",
+  "type": "description",
+  "text": "mirror that is located above the cabinet.",
+  "geodesic_m": 18.633,
+  "position": [
+   -5.390324592590332,
+   0.03198295831680298,
+   8.319079399108887
+  ],
+  "heading": -1.6891910672065578
+ },
+ {
+  "episode": 256,
+  "subtask": 4,
+  "scene": "mv2HUxq3B53",
+  "type": "object",
+  "text": "Find the microwave.",
+  "geodesic_m": 11.202,
+  "position": [
+   3.4622817039489746,
+   0.028834544122219086,
+   9.634909629821777
+  ],
+  "heading": -1.5758621901309628
+ },
+ {
+  "episode": 262,
+  "subtask": 3,
+  "scene": "p53SfW6mjZe",
+  "type": "object",
+  "text": "Find the dresser.",
+  "geodesic_m": 13.055,
+  "position": [
+   -5.0209736824035645,
+   0.004813194274902344,
+   4.182002067565918
+  ],
+  "heading": -0.8315901381195663
+ },
+ {
+  "episode": 262,
+  "subtask": 6,
+  "scene": "p53SfW6mjZe",
+  "type": "object",
+  "text": "Find the mirror.",
+  "geodesic_m": 23.172,
+  "position": [
+   -14.811249732971191,
+   2.8048131465911865,
+   -9.587787628173828
+  ],
+  "heading": 3.125017846786578
+ },
+ {
+  "episode": 265,
+  "subtask": 0,
+  "scene": "p53SfW6mjZe",
+  "type": "description",
+  "text": "refrigerator located above the cabinet.",
+  "geodesic_m": 17.824,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 266,
+  "subtask": 5,
+  "scene": "p53SfW6mjZe",
+  "type": "object",
+  "text": "Find the dresser.",
+  "geodesic_m": 19.013,
+  "position": [
+   -12.917106628417969,
+   2.8040809631347656,
+   -6.9304656982421875
+  ],
+  "heading": -1.7121519552941835
+ },
+ {
+  "episode": 267,
+  "subtask": 2,
+  "scene": "p53SfW6mjZe",
+  "type": "description",
+  "text": "the mirror located to the right of the picture.",
+  "geodesic_m": 15.105,
+  "position": [
+   -13.559287071228027,
+   0.004813194274902344,
+   1.9882925748825073
+  ],
+  "heading": 1.7152221935546137
+ },
+ {
+  "episode": 273,
+  "subtask": 7,
+  "scene": "q3zU7Yy5E5s",
+  "type": "description",
+  "text": "wool rug located near the armchair and the shelves.",
+  "geodesic_m": 11.287,
+  "position": [
+   -8.725482940673828,
+   2.553048610687256,
+   0.2607369124889374
+  ],
+  "heading": 1.7297012545014188
+ },
+ {
+  "episode": 273,
+  "subtask": 8,
+  "scene": "q3zU7Yy5E5s",
+  "type": "description",
+  "text": "frosted glass. locate the glass by referencing its spatial relation to other objects. the frosted glass is nearby the window curtain and the curtain rod.",
+  "geodesic_m": 14.824,
+  "position": [
+   -9.002486228942871,
+   2.585219621658325,
+   0.16575723886489868
+  ],
+  "heading": 1.643893621399207
+ },
+ {
+  "episode": 283,
+  "subtask": 0,
+  "scene": "q5QZSEeHe5g",
+  "type": "description",
+  "text": "picture in the room. it is located on the wall in the same area as the radiator.",
+  "geodesic_m": 10.973,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 286,
+  "subtask": 1,
+  "scene": "q5QZSEeHe5g",
+  "type": "object",
+  "text": "Find the photo.",
+  "geodesic_m": 10.401,
+  "position": [
+   6.931088447570801,
+   0.011121902614831924,
+   -7.949067115783691
+  ],
+  "heading": -1.0829552452141742
+ },
+ {
+  "episode": 309,
+  "subtask": 4,
+  "scene": "svBbv1Pavdk",
+  "type": "description",
+  "text": "refrigerator located to the left of the cabinet.",
+  "geodesic_m": 11.599,
+  "position": [
+   5.37695837020874,
+   0.02754741907119751,
+   5.8195319175720215
+  ],
+  "heading": 0.8823467782607235
+ },
+ {
+  "episode": 311,
+  "subtask": 6,
+  "scene": "wcojb4TFT35",
+  "type": "object",
+  "text": "Find the footrest.",
+  "geodesic_m": 11.15,
+  "position": [
+   1.8729686737060547,
+   0.04491996765136719,
+   -12.491876602172852
+  ],
+  "heading": -2.465883133671066
+ },
+ {
+  "episode": 316,
+  "subtask": 5,
+  "scene": "wcojb4TFT35",
+  "type": "object",
+  "text": "Find the footrest.",
+  "geodesic_m": 10.488,
+  "position": [
+   0.6380581855773926,
+   0.04491996765136719,
+   -12.13251781463623
+  ],
+  "heading": 0.9874903275036729
+ },
+ {
+  "episode": 325,
+  "subtask": 5,
+  "scene": "y9hTuugGdiq",
+  "type": "object",
+  "text": "Find the mirror.",
+  "geodesic_m": 11.431,
+  "position": [
+   6.055591106414795,
+   -2.745591402053833,
+   1.7459861040115356
+  ],
+  "heading": -2.6392369244878306
+ },
+ {
+  "episode": 326,
+  "subtask": 3,
+  "scene": "y9hTuugGdiq",
+  "type": "object",
+  "text": "Find the mirror.",
+  "geodesic_m": 12.689,
+  "position": [
+   5.159223556518555,
+   -2.750746965408325,
+   4.047476291656494
+  ],
+  "heading": 2.9822231768957415
+ },
+ {
+  "episode": 328,
+  "subtask": 1,
+  "scene": "y9hTuugGdiq",
+  "type": "description",
+  "text": "picture in the kitchen with a fireplace and a painting on the wall. the picture is located on the kitchen counter, to the right of the fireplace and above the ornament.",
+  "geodesic_m": 10.64,
+  "position": [
+   -2.0105316638946533,
+   -2.7386093139648438,
+   3.9782586097717285
+  ],
+  "heading": 1.673940749829231
+ },
+ {
+  "episode": 330,
+  "subtask": 8,
+  "scene": "yr17PDCnDDW",
+  "type": "description",
+  "text": "tall vase located on a shelf with clutter. it contains a lot of books.",
+  "geodesic_m": 11.732,
+  "position": [
+   -7.118191242218018,
+   2.4483883380889893,
+   3.078449010848999
+  ],
+  "heading": 2.1555232835382814
+ },
+ {
+  "episode": 331,
+  "subtask": 0,
+  "scene": "yr17PDCnDDW",
+  "type": "description",
+  "text": "cactus located on the shelf with clutter.",
+  "geodesic_m": 17.885,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 331,
+  "subtask": 1,
+  "scene": "yr17PDCnDDW",
+  "type": "description",
+  "text": "cactus located on the shelf with clutter.",
+  "geodesic_m": 12.591,
+  "position": [
+   -6.214940071105957,
+   2.4483883380889893,
+   -6.290706634521484
+  ],
+  "heading": -1.253104515468327
+ },
+ {
+  "episode": 338,
+  "subtask": 7,
+  "scene": "yr17PDCnDDW",
+  "type": "object",
+  "text": "Find the vase.",
+  "geodesic_m": 10.48,
+  "position": [
+   -2.6750218868255615,
+   -0.9035108089447021,
+   6.329214572906494
+  ],
+  "heading": 3.0567598461617056
+ },
+ {
+  "episode": 339,
+  "subtask": 6,
+  "scene": "yr17PDCnDDW",
+  "type": "description",
+  "text": "cactus near the shelf.",
+  "geodesic_m": 13.571,
+  "position": [
+   -9.934809684753418,
+   2.4483883380889893,
+   -7.3383331298828125
+  ],
+  "heading": 1.3770682811801807
+ },
+ {
+  "episode": 341,
+  "subtask": 2,
+  "scene": "ziup5kvtCCR",
+  "type": "description",
+  "text": "wooden nightstand with a white lamp on it. the nightstand is located to the right of the bed and below the pillow.",
+  "geodesic_m": 10.032,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 343,
+  "subtask": 2,
+  "scene": "ziup5kvtCCR",
+  "type": "description",
+  "text": "stainless steel microwave located on the kitchen counter near the coffee maker and kitchen cabinet.",
+  "geodesic_m": 11.976,
+  "position": [
+   -2.4216063022613525,
+   0.021223172545433044,
+   0.7811755537986755
+  ],
+  "heading": -1.3557464991928072
+ },
+ {
+  "episode": 344,
+  "subtask": 2,
+  "scene": "ziup5kvtCCR",
+  "type": "description",
+  "text": "the mirror located at the bottom right corner of the frame. the mirror has a tv on top of it.",
+  "geodesic_m": 11.913,
+  "position": [
+   4.334659576416016,
+   0.021223172545433044,
+   0.03628765046596527
+  ],
+  "heading": -0.6701034085839039
+ },
+ {
+  "episode": 346,
+  "subtask": 0,
+  "scene": "ziup5kvtCCR",
+  "type": "object",
+  "text": "Find the christmas tree.",
+  "geodesic_m": 11.317,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 346,
+  "subtask": 4,
+  "scene": "ziup5kvtCCR",
+  "type": "object",
+  "text": "Find the microwave.",
+  "geodesic_m": 12.125,
+  "position": [
+   -2.281677484512329,
+   0.021223172545433044,
+   0.7277821898460388
+  ],
+  "heading": -1.3769517232714419
+ },
+ {
+  "episode": 351,
+  "subtask": 0,
+  "scene": "zt1RVoi7PcG",
+  "type": "description",
+  "text": "the side-by-side refrigerator with a keurig coffee maker. the refrigerator is located in the kitchen cabinet below it. the microwave is placed on the left side of the refrigerator.",
+  "geodesic_m": 10.337,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 351,
+  "subtask": 6,
+  "scene": "zt1RVoi7PcG",
+  "type": "description",
+  "text": "the side-by-side refrigerator with a keurig coffee maker. the refrigerator is located in the kitchen cabinet below it. the microwave is placed on the left side of the refrigerator.",
+  "geodesic_m": 11.206,
+  "position": [
+   -3.9369325637817383,
+   -3.0370633602142334,
+   -0.109778493642807
+  ],
+  "heading": 1.0645457606213258
+ },
+ {
+  "episode": 352,
+  "subtask": 0,
+  "scene": "zt1RVoi7PcG",
+  "type": "object",
+  "text": "Find the mirror.",
+  "geodesic_m": 11.465,
+  "position": null,
+  "heading": null
+ },
+ {
+  "episode": 356,
+  "subtask": 1,
+  "scene": "zt1RVoi7PcG",
+  "type": "object",
+  "text": "Find the mirror.",
+  "geodesic_m": 14.644,
+  "position": null,
+  "heading": null
+ }
+]

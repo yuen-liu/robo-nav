@@ -1,0 +1,64 @@
+{
+ "levels": [
+  -2.38
+ ],
+ "landmarks": {
+  "wooden ladder": [
+   1
+  ],
+  "artificial tree": [
+   1
+  ],
+  "blue plastic bins": [
+   1
+  ],
+  "storage doorway": [
+   1
+  ],
+  "tall wooden bookcase": [
+   1
+  ],
+  "wooden bar": [
+   1
+  ],
+  "wooden door": [
+   1
+  ],
+  "white double doors": [
+   1
+  ],
+  "louvered bi-fold doors": [
+   1
+  ],
+  "wooden stairs": [
+   1
+  ],
+  "utility sink": [
+   1
+  ],
+  "blue ironing board": [
+   1
+  ],
+  "water heater": [
+   1
+  ],
+  "washer and dryer": [
+   1
+  ],
+  "white upright appliance": [
+   1
+  ],
+  "metal storage shelves": [
+   1
+  ],
+  "white shelving unit": [
+   1
+  ],
+  "small high windows": [
+   1
+  ],
+  "shop vacuum": [
+   1
+  ]
+ }
+}

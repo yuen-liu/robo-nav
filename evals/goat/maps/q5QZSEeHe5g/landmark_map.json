@@ -1,0 +1,826 @@
+{
+ "landmarks": [
+  {
+   "name": "brown leather sofa",
+   "description": "Large brown leather sofa with a dark throw blanket on the arm on a striped wood floor.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    60,
+    61,
+    63
+   ]
+  },
+  {
+   "name": "red wall art",
+   "description": "Red semicircular wall hanging with circular cutouts on a green wall.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    62,
+    63
+   ]
+  },
+  {
+   "name": "green-walled console table",
+   "description": "Dark wooden console table against a green wall under a long horizontal frame.",
+   "seen_at": [
+    0,
+    1,
+    58,
+    63,
+    64
+   ]
+  },
+  {
+   "name": "striped wood floor",
+   "description": "Hardwood floor with alternating light and dark wood strips in a geometric pattern.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    59,
+    60,
+    61,
+    62
+   ]
+  },
+  {
+   "name": "brown leather armchairs",
+   "description": "Pair of brown leather armchairs with red and white throws against a green wall.",
+   "seen_at": [
+    59,
+    60
+   ]
+  },
+  {
+   "name": "stone fireplace with tv",
+   "description": "Brick and stone fireplace with a black insert and a flat-screen TV mounted on the mantel above.",
+   "seen_at": [
+    61,
+    62
+   ]
+  },
+  {
+   "name": "white staircase",
+   "description": "Staircase with white balusters, a thick white newel post, and dark wood treads.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    12,
+    61,
+    122
+   ]
+  },
+  {
+   "name": "arched iron mirror",
+   "description": "Arched black wrought-iron wall decor above a small wooden shelf.",
+   "seen_at": [
+    3,
+    4,
+    6,
+    7
+   ]
+  },
+  {
+   "name": "blue-floored porch",
+   "description": "Bright area with a solid blue floor and white sheer curtains over windows.",
+   "seen_at": [
+    7,
+    8,
+    10,
+    11
+   ]
+  },
+  {
+   "name": "marble-top side table",
+   "description": "Dark wood table with a white marble top against the staircase wall.",
+   "seen_at": [
+    12
+   ]
+  },
+  {
+   "name": "coat rack with white coat",
+   "description": "Wall-mounted wooden coat rack holding a white jacket.",
+   "seen_at": [
+    12
+   ]
+  },
+  {
+   "name": "long wooden table",
+   "description": "Long dark wood table with a bench and chairs on a light wood floor against orange-brown walls.",
+   "seen_at": [
+    13,
+    24,
+    88,
+    89,
+    90,
+    91,
+    92,
+    95,
+    96,
+    97,
+    122,
+    123,
+    127,
+    132
+   ]
+  },
+  {
+   "name": "brown wooden dresser",
+   "description": "Wooden dresser with a lamp and mirror against an orange-brown wall.",
+   "seen_at": [
+    13,
+    24,
+    88,
+    89,
+    90,
+    96,
+    127,
+    133
+   ]
+  },
+  {
+   "name": "wooden armchair with white throw",
+   "description": "Dark wooden-armed chair with a white cloth draped over the back and a floor lamp behind it in the corner of the orange-brown walled area.",
+   "seen_at": [
+    91,
+    92,
+    95,
+    123,
+    132
+   ]
+  },
+  {
+   "name": "wide doorway to grey-green area",
+   "description": "Wide white-trimmed rectangular opening connecting the orange-brown walled area to the area with the plush brown sofa and wooden desk.",
+   "seen_at": [
+    92,
+    93,
+    123,
+    124
+   ]
+  },
+  {
+   "name": "brown fabric sofa",
+   "description": "Plush brown fabric sofa with throw pillows under a window in a grey-green walled space, with a small wooden coffee table in front.",
+   "seen_at": [
+    93,
+    123,
+    124
+   ]
+  },
+  {
+   "name": "wooden desk with swivel chair",
+   "description": "Medium-toned wooden desk with drawers, a hutch holding books, a black desk lamp, and a wooden swivel armchair.",
+   "seen_at": [
+    125,
+    126
+   ]
+  },
+  {
+   "name": "white double doors by desk",
+   "description": "Pair of tall white paneled closet doors on the wall to the left of the wooden desk.",
+   "seen_at": [
+    125,
+    126
+   ]
+  },
+  {
+   "name": "patterned bed",
+   "description": "Large bed with a patchwork-style patterned bedspread on a red painted floor in a blue-walled space.",
+   "seen_at": [
+    14,
+    15,
+    20,
+    21,
+    22,
+    23,
+    94,
+    128,
+    129,
+    130,
+    131
+   ]
+  },
+  {
+   "name": "tall dark wooden wardrobe",
+   "description": "Tall, two-door dark wood wardrobe in the corner of the blue-walled space.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    21,
+    128,
+    129
+   ]
+  },
+  {
+   "name": "medium wooden chest",
+   "description": "Dark wooden chest of drawers between two shuttered windows in the blue-walled space.",
+   "seen_at": [
+    15,
+    16,
+    17,
+    128,
+    129
+   ]
+  },
+  {
+   "name": "yellow armchair",
+   "description": "Wooden-armed chair with yellow cushions next to a white radiator.",
+   "seen_at": [
+    16,
+    17,
+    18,
+    19,
+    128,
+    129
+   ]
+  },
+  {
+   "name": "frosted glass door",
+   "description": "White door with a large upper pane of frosted glass in the blue-walled space.",
+   "seen_at": [
+    18,
+    19,
+    20,
+    131
+   ]
+  },
+  {
+   "name": "red-topped bench",
+   "description": "Low wooden bench with a bright red cushion at the foot of the patterned bed.",
+   "seen_at": [
+    21,
+    22,
+    130
+   ]
+  },
+  {
+   "name": "wheeled wooden island",
+   "description": "Small movable wooden cart in the center of a yellow-walled space.",
+   "seen_at": [
+    25,
+    56,
+    57,
+    64,
+    65,
+    66,
+    71,
+    82,
+    87,
+    96,
+    98,
+    100,
+    120,
+    121,
+    134
+   ]
+  },
+  {
+   "name": "white refrigerator",
+   "description": "White refrigerator next to an open doorway in the yellow-walled space.",
+   "seen_at": [
+    25,
+    26,
+    64,
+    65,
+    66
+   ]
+  },
+  {
+   "name": "royal oil sign",
+   "description": "Rectangular vintage metal sign reading Royal Oil Co. above a wooden wall shelf and white stove.",
+   "seen_at": [
+    57,
+    82,
+    87,
+    120
+   ]
+  },
+  {
+   "name": "pie safe cabinet",
+   "description": "Medium-sized wooden cabinet with two tin-paneled doors.",
+   "seen_at": [
+    57,
+    64,
+    68,
+    82,
+    86,
+    87,
+    99,
+    121,
+    134
+   ]
+  },
+  {
+   "name": "herbs and seeds sink",
+   "description": "White base cabinets with a brown front panel reading HERBS SEEDS under double windows.",
+   "seen_at": [
+    66,
+    67
+   ]
+  },
+  {
+   "name": "open door with calendar",
+   "description": "White paneled door standing open with a calendar hanging on it.",
+   "seen_at": [
+    26,
+    56,
+    69,
+    82,
+    100,
+    101,
+    135
+   ]
+  },
+  {
+   "name": "striped shower curtain",
+   "description": "Long vertical-striped white and grey curtain hanging along the right side of a narrow blue-and-white tiled space.",
+   "seen_at": [
+    83
+   ]
+  },
+  {
+   "name": "white sink vanity",
+   "description": "White cabinet vanity with a dark top and a wire basket on the side against a half-tiled blue wall.",
+   "seen_at": [
+    83,
+    84,
+    99
+   ]
+  },
+  {
+   "name": "white toilet",
+   "description": "White ceramic toilet at the far end of the narrow tiled space under small wall shelves.",
+   "seen_at": [
+    84,
+    85
+   ]
+  },
+  {
+   "name": "double white closet doors",
+   "description": "Pair of tall white paneled closet doors along a narrow white-walled passage.",
+   "seen_at": [
+    27,
+    55,
+    56,
+    69,
+    70,
+    71,
+    81,
+    101,
+    102,
+    120,
+    135,
+    136
+   ]
+  },
+  {
+   "name": "wall-mounted wooden ladder",
+   "description": "Rustic dark wood ladder mounted horizontally on the wall opposite the double white closet doors.",
+   "seen_at": [
+    55,
+    69,
+    79,
+    80,
+    81,
+    119,
+    120
+   ]
+  },
+  {
+   "name": "white laundry machine",
+   "description": "White appliance with a round trash bin in front of it on a red-painted floor.",
+   "seen_at": [
+    27,
+    28,
+    54,
+    55,
+    70,
+    72,
+    77,
+    78,
+    80,
+    102,
+    118,
+    119,
+    136
+   ]
+  },
+  {
+   "name": "red-painted steps",
+   "description": "Short flight of dark red painted wooden steps with a white wooden railing and balusters.",
+   "seen_at": [
+    28,
+    54,
+    72,
+    73,
+    76,
+    77,
+    78,
+    103,
+    118,
+    137
+   ]
+  },
+  {
+   "name": "red exterior door",
+   "description": "Red paneled door with a half-window at the bottom of the red-painted steps.",
+   "seen_at": [
+    28,
+    29,
+    53,
+    73,
+    75,
+    76,
+    103,
+    104,
+    117,
+    137,
+    138
+   ]
+  },
+  {
+   "name": "downward stairwell",
+   "description": "Steep, narrow wooden-paneled opening leading down to the lower grey-floored level.",
+   "seen_at": [
+    29,
+    30,
+    51,
+    52,
+    74,
+    75,
+    104,
+    105,
+    116,
+    138,
+    139
+   ]
+  },
+  {
+   "name": "propped mattress",
+   "description": "Patterned mattress propped on its side against a mottled white wall near the bottom of the downward stairwell.",
+   "seen_at": [
+    114,
+    115,
+    139,
+    140
+   ]
+  },
+  {
+   "name": "pedestal fan and tv table",
+   "description": "White oscillating pedestal fan standing in front of a wooden table holding a large black flat-screen monitor against a white brick wall.",
+   "seen_at": [
+    106,
+    107,
+    114,
+    140
+   ]
+  },
+  {
+   "name": "framed portrait on floor",
+   "description": "Black-and-white framed drawing leaning against the wall next to a small radiator and cardboard box.",
+   "seen_at": [
+    114,
+    115,
+    140,
+    141
+   ]
+  },
+  {
+   "name": "black treadmill",
+   "description": "Black treadmill on a grey painted floor under exposed ceiling joists.",
+   "seen_at": [
+    31,
+    50,
+    51,
+    106,
+    107,
+    108,
+    111,
+    114,
+    140,
+    141
+   ]
+  },
+  {
+   "name": "basement white refrigerator",
+   "description": "White top-freezer refrigerator next to a stationary exercise bike on the grey painted floor.",
+   "seen_at": [
+    31,
+    32,
+    107,
+    109,
+    110,
+    141
+   ]
+  },
+  {
+   "name": "stationary bike",
+   "description": "Black stationary exercise bike on the grey floor next to the basement white refrigerator and black treadmill.",
+   "seen_at": [
+    31,
+    108,
+    111,
+    112,
+    114,
+    140,
+    141
+   ]
+  },
+  {
+   "name": "teal furnace",
+   "description": "Boxy teal-blue metal furnace unit with white pipes.",
+   "seen_at": [
+    32,
+    33,
+    108,
+    111,
+    112,
+    113
+   ]
+  },
+  {
+   "name": "white stove",
+   "description": "Uninstalled white oven/range sitting against a white wall on the lower level.",
+   "seen_at": [
+    34,
+    35,
+    37,
+    38,
+    41
+   ]
+  },
+  {
+   "name": "yellow-lidded bins",
+   "description": "Stack of black plastic storage totes with yellow lids in a corner.",
+   "seen_at": [
+    34,
+    35,
+    36,
+    37,
+    41
+   ]
+  },
+  {
+   "name": "white-and-wood dresser",
+   "description": "Long nine-drawer dresser with white drawer fronts and wood trim under wall shelves.",
+   "seen_at": [
+    38,
+    39,
+    40
+   ]
+  },
+  {
+   "name": "tall beige tanks",
+   "description": "Cylindrical beige water treatment tanks next to a multi-pane glass frame.",
+   "seen_at": [
+    42,
+    43,
+    49,
+    50
+   ]
+  },
+  {
+   "name": "wooden storage shelves",
+   "description": "Unfinished wooden shelving unit filled with cardboard boxes and jugs.",
+   "seen_at": [
+    43,
+    44,
+    48,
+    49
+   ]
+  },
+  {
+   "name": "electrical panels",
+   "description": "Grey metal breaker boxes mounted on a white brick wall above a wooden workbench.",
+   "seen_at": [
+    43,
+    44,
+    45
+   ]
+  },
+  {
+   "name": "small white cabinet",
+   "description": "Low two-door white cabinet against a mottled white wall below a small high window.",
+   "seen_at": [
+    43,
+    44,
+    45,
+    46,
+    47
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "brown leather sofa",
+   "to": "green-walled console table",
+   "how": "Walk forward along the brown leather sofa on your left with the red wall art on your right toward the green-walled console table ahead."
+  },
+  {
+   "from": "green-walled console table",
+   "to": "white staircase",
+   "how": "With the green-walled console table on your left, step through the doorway ahead to face the white staircase."
+  },
+  {
+   "from": "white staircase",
+   "to": "blue-floored porch",
+   "how": "At the foot of the white staircase, turn around to face the doorway leading to the blue-floored porch."
+  },
+  {
+   "from": "blue-floored porch",
+   "to": "long wooden table",
+   "how": "Turn around from the doorway to the blue-floored porch and walk straight past the white staircase, marble-top side table on the left, and coat rack with white coat on the right into the orange-brown walled space with the long wooden table."
+  },
+  {
+   "from": "long wooden table",
+   "to": "patterned bed",
+   "how": "From between the long wooden table and brown wooden dresser, turn left through the doorway beside the dresser onto the red floor alongside the patterned bed."
+  },
+  {
+   "from": "patterned bed",
+   "to": "yellow armchair",
+   "how": "Walk forward past the patterned bed on your left and tall dark wooden wardrobe on your right toward the medium wooden chest and yellow armchair by the far window."
+  },
+  {
+   "from": "yellow armchair",
+   "to": "patterned bed",
+   "how": "Turn around from the window by the yellow armchair and medium wooden chest and walk back past the red-topped bench and patterned bed on your right."
+  },
+  {
+   "from": "patterned bed",
+   "to": "long wooden table",
+   "how": "With the patterned bed on your right and tall dark wooden wardrobe on your left, walk out through the doorway to the long wooden table and brown wooden dresser."
+  },
+  {
+   "from": "long wooden table",
+   "to": "wheeled wooden island",
+   "how": "With the brown wooden dresser on your left and long wooden table on your right, walk straight through the doorway into the yellow-walled space with the wheeled wooden island."
+  },
+  {
+   "from": "wheeled wooden island",
+   "to": "long wooden table",
+   "how": "From the wheeled wooden island and pie safe cabinet, walk through the doorway into the orange-brown walled space between the brown wooden dresser and long wooden table."
+  },
+  {
+   "from": "wheeled wooden island",
+   "to": "double white closet doors",
+   "how": "Pass the wheeled wooden island and turn past the open door with calendar into the narrow passage with the double white closet doors on the right and wall-mounted wooden ladder on the left."
+  },
+  {
+   "from": "double white closet doors",
+   "to": "wheeled wooden island",
+   "how": "Walk down the narrow passage with the double white closet doors on your left and wall-mounted wooden ladder on your right through the doorway to the wheeled wooden island."
+  },
+  {
+   "from": "double white closet doors",
+   "to": "white laundry machine",
+   "how": "Continue straight down the narrow passage past the double white closet doors to the white laundry machine on the red floor."
+  },
+  {
+   "from": "white laundry machine",
+   "to": "double white closet doors",
+   "how": "From the white laundry machine, walk into the narrow passage keeping the wall-mounted wooden ladder on your right and double white closet doors on your left."
+  },
+  {
+   "from": "white laundry machine",
+   "to": "red exterior door",
+   "how": "At the white laundry machine, turn right and go down the short flight of red-painted steps to the landing by the red exterior door."
+  },
+  {
+   "from": "red exterior door",
+   "to": "white laundry machine",
+   "how": "From the red exterior door, go up the short flight of red-painted steps to the white laundry machine."
+  },
+  {
+   "from": "red exterior door",
+   "to": "downward stairwell",
+   "how": "At the bottom of the red-painted steps with the red exterior door on your left, go straight into the steep downward stairwell."
+  },
+  {
+   "from": "downward stairwell",
+   "to": "red exterior door",
+   "how": "Climb to the top of the steep downward stairwell to reach the landing with the red exterior door on your right."
+  },
+  {
+   "from": "downward stairwell",
+   "to": "black treadmill",
+   "how": "Descend the downward stairwell onto the grey floor, passing the propped mattress and pedestal fan and tv table on your left to reach the black treadmill and stationary bike."
+  },
+  {
+   "from": "black treadmill",
+   "to": "downward stairwell",
+   "how": "Walk past the black treadmill and pedestal fan and tv table on your right and turn left into the upward-leading stairwell."
+  },
+  {
+   "from": "black treadmill",
+   "to": "teal furnace",
+   "how": "Walk forward between the black treadmill on your left and the stationary bike and basement white refrigerator on your right through the opening to the teal furnace."
+  },
+  {
+   "from": "teal furnace",
+   "to": "black treadmill",
+   "how": "Turn around from the teal furnace and walk back through the opening between the stationary bike on your left and black treadmill on your right."
+  },
+  {
+   "from": "teal furnace",
+   "to": "yellow-lidded bins",
+   "how": "Pass the teal furnace on your right and walk straight past the white stove on your left to the yellow-lidded bins in the corner."
+  },
+  {
+   "from": "yellow-lidded bins",
+   "to": "white-and-wood dresser",
+   "how": "Turn around from the yellow-lidded bins and walk past the white stove on your right toward the white-and-wood dresser on your left."
+  },
+  {
+   "from": "white-and-wood dresser",
+   "to": "small white cabinet",
+   "how": "Pass through the narrow doorway next to the white-and-wood dresser, walking between the tall beige tanks and electrical panels on your right and the wooden storage shelves on your left to the small white cabinet at the far wall."
+  },
+  {
+   "from": "small white cabinet",
+   "to": "black treadmill",
+   "how": "Turn around from the small white cabinet, walk back past the wooden storage shelves on your right, and turn right through the doorway before the tall beige tanks to the black treadmill."
+  },
+  {
+   "from": "wheeled wooden island",
+   "to": "green-walled console table",
+   "how": "Walk past the wheeled wooden island and royal oil sign on your left and pie safe cabinet on your right through the doorway to the green-walled console table."
+  },
+  {
+   "from": "green-walled console table",
+   "to": "wheeled wooden island",
+   "how": "With the green-walled console table on your left, turn right through the doorway past the pie safe cabinet to the wheeled wooden island."
+  },
+  {
+   "from": "wheeled wooden island",
+   "to": "herbs and seeds sink",
+   "how": "Walk past the wheeled wooden island and white refrigerator on your left and turn right to face the herbs and seeds sink."
+  },
+  {
+   "from": "herbs and seeds sink",
+   "to": "double white closet doors",
+   "how": "Turn around from the herbs and seeds sink and walk straight past the pie safe cabinet on your left and open door with calendar on your right into the passage with the double white closet doors."
+  },
+  {
+   "from": "wheeled wooden island",
+   "to": "white toilet",
+   "how": "By the pie safe cabinet and open door with calendar, turn into the narrow tiled space and walk past the striped shower curtain on the right and white sink vanity on the left to the white toilet."
+  },
+  {
+   "from": "white toilet",
+   "to": "wheeled wooden island",
+   "how": "Turn around from the white toilet and walk back past the white sink vanity and striped shower curtain out the doorway by the pie safe cabinet to the wheeled wooden island."
+  },
+  {
+   "from": "long wooden table",
+   "to": "wooden desk with swivel chair",
+   "how": "Walk past the long wooden table on your right and wooden armchair with white throw on your left through the wide doorway to grey-green area, then turn left to face the wooden desk with swivel chair and white double doors by desk."
+  },
+  {
+   "from": "wooden desk with swivel chair",
+   "to": "long wooden table",
+   "how": "Step back out through the wide doorway to grey-green area to return to the long wooden table."
+  }
+ ],
+ "walk_summary": [
+  "Start on the striped wood floor and walk past the brown leather sofa and red wall art to the green-walled console table.",
+  "Turn right through the doorway to the white staircase and arched iron mirror, then turn around to face the doorway to the blue-floored porch.",
+  "Turn around and walk past the white staircase, marble-top side table, and coat rack with white coat to the long wooden table and brown wooden dresser.",
+  "Turn left through the doorway beside the brown wooden dresser and walk past the patterned bed and tall dark wooden wardrobe to the medium wooden chest, yellow armchair, and frosted glass door.",
+  "Turn around and walk back past the red-topped bench and patterned bed out to the long wooden table.",
+  "Turn left and walk through the doorway past the wheeled wooden island, white refrigerator, and open door with calendar into the narrow passage with the double white closet doors and white laundry machine.",
+  "Turn down the red-painted steps past the red exterior door and descend the downward stairwell to the grey floor.",
+  "Walk between the black treadmill and basement white refrigerator, pass the teal furnace and white stove, and stop at the yellow-lidded bins in the corner.",
+  "Turn around, walk past the white-and-wood dresser, and go through the doorway between the tall beige tanks, wooden storage shelves, and electrical panels to the small white cabinet.",
+  "Turn around, walk back past the wooden storage shelves, turn right before the tall beige tanks past the black treadmill, and climb the downward stairwell and red-painted steps.",
+  "Turn left at the white laundry machine, walk past the wall-mounted wooden ladder, double white closet doors, wheeled wooden island, royal oil sign, and pie safe cabinet into the space with the green-walled console table.",
+  "Turn in a full circle on the striped wood floor past the brown leather armchairs, brown leather sofa, stone fireplace with tv, and red wall art.",
+  "Walk past the green-walled console table and turn right through the doorway past the wheeled wooden island and white refrigerator to the herbs and seeds sink.",
+  "Turn around and walk past the pie safe cabinet, open door with calendar, wall-mounted wooden ladder, double white closet doors, and white laundry machine down the red-painted steps to the red exterior door and downward stairwell.",
+  "Turn around at the red exterior door, climb back up the red-painted steps past the white laundry machine and double white closet doors, and turn right past the open door with calendar, striped shower curtain, and white sink vanity to the white toilet.",
+  "Turn around at the white toilet, exit past the pie safe cabinet and wheeled wooden island, and walk into the space with the brown wooden dresser and long wooden table.",
+  "Walk around the long wooden table past the wooden armchair with white throw to look through the wide doorway to grey-green area, then circle the long wooden table and exit back to the wheeled wooden island.",
+  "Turn right past the open door with calendar, double white closet doors, and white laundry machine, and descend the red-painted steps and downward stairwell.",
+  "Walk past the pedestal fan and tv table, black treadmill, basement white refrigerator, and stationary bike to the teal furnace.",
+  "Turn around and walk back between the stationary bike and black treadmill, passing the framed portrait on floor and propped mattress, and climb the downward stairwell and red-painted steps.",
+  "Turn left at the white laundry machine, walk past the double white closet doors, wheeled wooden island, pie safe cabinet, white staircase, and long wooden table through the wide doorway to grey-green area past the brown fabric sofa to the wooden desk with swivel chair and white double doors by desk.",
+  "Step back to the long wooden table, turn right into the doorway past the patterned bed to the medium wooden chest and tall dark wooden wardrobe, then turn around and exit past the patterned bed.",
+  "Turn left at the long wooden table, walk past the brown wooden dresser, wheeled wooden island, open door with calendar, double white closet doors, and white laundry machine, and go down the red-painted steps and downward stairwell to the black treadmill and stationary bike."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/q5QZSEeHe5g/frames",
+  "n_keyframes": 142,
+  "camera": "held at chest height by a person walking"
+ }
+}

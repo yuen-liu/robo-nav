@@ -1,0 +1,759 @@
+{
+ "landmarks": [
+  {
+   "name": "white brick fireplace",
+   "description": "Painted white brick fireplace with a raised hearth, black firebox, and large flat-screen TV mounted above it, flanked by wood-paneled shelving.",
+   "seen_at": [
+    0,
+    1,
+    38
+   ]
+  },
+  {
+   "name": "blue leather sofa",
+   "description": "Teal-blue tufted leather three-seat sofa with white throw pillows against a white wall.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "patterned ottoman",
+   "description": "Large square upholstered ottoman with blue, white, and brown circular patterns in front of the blue sofa.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "carved wooden wall relief",
+   "description": "Dark brown rectangular carved wooden panel hanging on the white wall above the blue leather sofa.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "blue leather loveseat",
+   "description": "Smaller teal-blue leather sofa perpendicular to the main blue sofa, backing up to the dark wooden counter.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "sliding glass door with floral valance",
+   "description": "Large patio sliding glass door with a reddish floral fabric valance at the top, opposite the blue sofa.",
+   "seen_at": [
+    3,
+    4,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "name": "dark wooden counter",
+   "description": "Long peninsula counter with dark navy/black paneled base cabinets and a mottled stone countertop.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    37,
+    38,
+    39,
+    63,
+    64
+   ]
+  },
+  {
+   "name": "cow painting on blue background",
+   "description": "Square canvas painting of a cow head on a bright turquoise background, hanging on a white wall segment near the refrigerator.",
+   "seen_at": [
+    9,
+    10,
+    11,
+    12,
+    36,
+    37
+   ]
+  },
+  {
+   "name": "stainless steel range",
+   "description": "Large stainless steel oven and cooktop set into white lower cabinets beneath a multi-colored stone tile backsplash.",
+   "seen_at": [
+    9,
+    10,
+    11,
+    12,
+    39
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "French-door stainless steel refrigerator recessed into white cabinetry next to a doorway.",
+   "seen_at": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    36,
+    37
+   ]
+  },
+  {
+   "name": "white tall cabinets",
+   "description": "Floor-to-ceiling white paneled pantry cabinets next to the stainless steel range and doorway.",
+   "seen_at": [
+    13,
+    14
+   ]
+  },
+  {
+   "name": "sliding glass door with patterned curtains",
+   "description": "Sliding glass door framed by grey-and-white geometric patterned floor-length curtains on a teal wall.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "wooden table with high-back chairs",
+   "description": "Large dark wood table surrounded by tall rustic wooden chairs with leather seats on a floral rug.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    32,
+    33,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "tall dark wooden curio cabinet",
+   "description": "Tall dark wood cabinet with glass-paned doors against a teal wall between the doorway and glass door.",
+   "seen_at": [
+    18
+   ]
+  },
+  {
+   "name": "distressed wooden sideboard",
+   "description": "Long rustic wooden cabinet with glass-inset doors against a cream wall, with a framed painting above it.",
+   "seen_at": [
+    16,
+    17,
+    19,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "brown leather sectional sofa",
+   "description": "Large L-shaped dark brown leather sofa with throw pillows.",
+   "seen_at": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "red floral canvas painting",
+   "description": "Wide horizontal painting of red poppy-like flowers on a yellow/beige background above the brown sectional sofa.",
+   "seen_at": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  {
+   "name": "stained-glass table lamp",
+   "description": "Dome-shaped orange and green stained-glass lamp sitting on a small round wooden table behind the sofa.",
+   "seen_at": [
+    20,
+    21,
+    22,
+    35
+   ]
+  },
+  {
+   "name": "white tufted armchair",
+   "description": "Wide cream/white button-tufted barrel armchair.",
+   "seen_at": [
+    22,
+    23,
+    27,
+    28,
+    29,
+    30,
+    31,
+    33,
+    65,
+    66
+   ]
+  },
+  {
+   "name": "wooden media console with wall-mounted TV",
+   "description": "Rustic wood and blue-gray cabinet beneath a large wall-mounted flat-screen TV and soundbar.",
+   "seen_at": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    65,
+    66
+   ]
+  },
+  {
+   "name": "round turquoise wall art",
+   "description": "Circular teal/turquoise wall hanging with a reddish vertical stripe, mounted to the right of the TV.",
+   "seen_at": [
+    27,
+    28,
+    30,
+    31,
+    66
+   ]
+  },
+  {
+   "name": "white patterned shade floor lamp",
+   "description": "Tall floor lamp with a white patterned drum shade in the corner between the brown sofa and media console.",
+   "seen_at": [
+    24,
+    25,
+    26
+   ]
+  },
+  {
+   "name": "oval wooden coffee table",
+   "description": "Oval wood-and-glass coffee table with a large yellow decorative centerpiece, sitting on a patterned rug.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    30
+   ]
+  },
+  {
+   "name": "carved console table with framed painting",
+   "description": "Ornate light-wood console table with curved legs against a cream wall, beneath a dark-framed landscape painting and next to a wall clock.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    30,
+    65,
+    66,
+    67,
+    68
+   ]
+  },
+  {
+   "name": "white door under skylight",
+   "description": "White six-panel door on a cream wall beneath a rectangular ceiling skylight, to the left of the carved console table, which opens into a dark teal walled space.",
+   "seen_at": [
+    28,
+    29,
+    30,
+    31,
+    68,
+    69
+   ]
+  },
+  {
+   "name": "white glass curio cabinet",
+   "description": "Distressed white cabinet with curved glass doors and shelves, standing in the corner next to the passage opening.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    65,
+    68
+   ]
+  },
+  {
+   "name": "orange and silver wall sculpture on teal wall",
+   "description": "Roundish abstract metal wall art in orange and silver mounted on a teal wall next to the passage opening.",
+   "seen_at": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    64
+   ]
+  },
+  {
+   "name": "gold-framed abstract portrait",
+   "description": "Vertical abstract painting in blue, black, and brown tones in a gold frame on the white passage wall.",
+   "seen_at": [
+    32,
+    33,
+    39,
+    40
+   ]
+  },
+  {
+   "name": "red-framed hallway mirror",
+   "description": "Rectangular mirror with a dark red wooden frame hanging on the white wall at the end of the passage.",
+   "seen_at": [
+    39,
+    40,
+    43,
+    44,
+    45,
+    46,
+    54,
+    55,
+    60,
+    61
+   ]
+  },
+  {
+   "name": "stacked white washer and dryer",
+   "description": "White front-loading washing machine and dryer stacked in an alcove with a white paneled door.",
+   "seen_at": [
+    43,
+    44,
+    45,
+    53,
+    54,
+    55,
+    59,
+    60,
+    62
+   ]
+  },
+  {
+   "name": "wooden vanity with vessel sink and blue rug",
+   "description": "Rustic medium-tone wood vanity cabinet with a red vessel sink, mirror, and a blue rectangular rug on the tiled floor in front of a glass shower.",
+   "seen_at": [
+    45,
+    46,
+    60,
+    61
+   ]
+  },
+  {
+   "name": "bed with wrought-iron frame and floral bedspread",
+   "description": "Large bed with a dark wrought-iron headboard and footboard, covered in a cream and beige patterned bedspread with a white ruffled bedskirt against yellow-green walls.",
+   "seen_at": [
+    41,
+    42,
+    55,
+    56,
+    57,
+    58,
+    59,
+    62
+   ]
+  },
+  {
+   "name": "white three-drawer nightstand",
+   "description": "Distressed white three-drawer chest with a small stained-glass lamp next to the bed.",
+   "seen_at": [
+    41,
+    42
+   ]
+  },
+  {
+   "name": "white paneled closet doors in yellow-green area",
+   "description": "Pair of large white paneled sliding closet doors on the wall opposite the foot of the bed.",
+   "seen_at": [
+    41,
+    42,
+    43,
+    58,
+    59
+   ]
+  },
+  {
+   "name": "craft island with shelves",
+   "description": "White counter-height island table with open storage shelves, drawers, and a patterned side panel on a wood floor.",
+   "seen_at": [
+    40,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53
+   ]
+  },
+  {
+   "name": "white built-in wardrobe with open shelves",
+   "description": "Floor-to-ceiling white cabinet doors with an open shelving and drawer unit at the end near the doorway.",
+   "seen_at": [
+    47,
+    48,
+    49,
+    52,
+    53,
+    54,
+    55
+   ]
+  },
+  {
+   "name": "window with white sheer curtains on blue wall",
+   "description": "Horizontal sliding window framed by white sheer floor-length curtains on a dusty-blue wall.",
+   "seen_at": [
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+   ]
+  },
+  {
+   "name": "white rolling storage cart",
+   "description": "Small white multi-shelf storage unit against the blue wall under track lighting.",
+   "seen_at": [
+    49,
+    50
+   ]
+  },
+  {
+   "name": "white chest with open lower shelf",
+   "description": "Distressed white cabinet with three patterned drawers on top and an open shelf at the bottom, standing against a yellow-green wall.",
+   "seen_at": [
+    56,
+    57,
+    58,
+    59
+   ]
+  },
+  {
+   "name": "window with sheer dotted curtains on yellow-green wall",
+   "description": "Horizontal sliding window framed by floor-length white sheer curtains with a raised dot pattern on a yellow-green wall.",
+   "seen_at": [
+    56,
+    57,
+    58
+   ]
+  },
+  {
+   "name": "dark wood door with glass transom",
+   "description": "Dark brown paneled wooden exterior door with a rectangular decorative glass window at the top, set in a cream wall.",
+   "seen_at": [
+    66,
+    67
+   ]
+  },
+  {
+   "name": "white wooden bed on dark teal wall",
+   "description": "Large distressed white wooden bed with a paneled headboard and footboard, topped with a white and yellow patterned bedspread against a dark teal wall.",
+   "seen_at": [
+    69,
+    70,
+    71,
+    72,
+    73
+   ]
+  },
+  {
+   "name": "mirrored nightstand under crystal pendant",
+   "description": "Small table with mirrored surfaces next to the white wooden bed, beneath a hanging crystal drum pendant light against a dark teal wall.",
+   "seen_at": [
+    69,
+    70,
+    72,
+    73
+   ]
+  },
+  {
+   "name": "distressed white dresser with floral print",
+   "description": "Wide distressed white wooden dresser with multiple drawers and two center doors, with a framed grey floral print hanging on the dark teal wall above it.",
+   "seen_at": [
+    71,
+    72
+   ]
+  },
+  {
+   "name": "tan armless accent chair by sheer curtains",
+   "description": "Small tan upholstered armless chair with dark wooden legs in the corner next to a window with white sheer curtains on a dark teal wall.",
+   "seen_at": [
+    71,
+    72
+   ]
+  },
+  {
+   "name": "white sliding closet doors on teal wall",
+   "description": "Pair of large flat white sliding doors with horizontal panel lines set into a dark teal wall.",
+   "seen_at": [
+    71,
+    72,
+    73
+   ]
+  },
+  {
+   "name": "long white vanity with large mirror",
+   "description": "Long white cabinet vanity with double sinks and a beige stone countertop beneath a wall-to-wall frameless mirror.",
+   "seen_at": [
+    74,
+    75,
+    76,
+    77
+   ]
+  },
+  {
+   "name": "white louvered door",
+   "description": "White wooden door with slatted upper panels leading into a narrow clothing storage space.",
+   "seen_at": [
+    74,
+    75,
+    76,
+    77
+   ]
+  },
+  {
+   "name": "tall vertical shoe rack on floral wall",
+   "description": "Floor-to-ceiling narrow white wire shoe rack filled with shoes against a dark floral-patterned wall between hanging clothes.",
+   "seen_at": [
+    74,
+    75
+   ]
+  },
+  {
+   "name": "corner bathtub under glass block window",
+   "description": "Large white oval soaking tub set into a stone-tile deck in the corner beneath a square glass-block window on tan walls.",
+   "seen_at": [
+    78,
+    79,
+    80,
+    81
+   ]
+  },
+  {
+   "name": "walk-in brown tiled shower with two niches",
+   "description": "Glass-enclosed walk-in shower with horizontal brown-grey wall tiles, mosaic floor tiles, and two recessed square wall niches.",
+   "seen_at": [
+    78,
+    79,
+    80,
+    81
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "white brick fireplace",
+   "to": "blue leather sofa",
+   "how": "Starting with the white brick fireplace on your right, walk forward past the patterned ottoman on your left toward the blue leather sofa and carved wooden wall relief ahead."
+  },
+  {
+   "from": "blue leather sofa",
+   "to": "dark wooden counter",
+   "how": "Turn left near the corner of the blue leather sofa, keeping the sliding glass door with floral valance behind you and the blue leather loveseat on your right, and walk forward along the dark wooden counter."
+  },
+  {
+   "from": "dark wooden counter",
+   "to": "stainless steel refrigerator",
+   "how": "Walk to the end of the dark wooden counter, turn left around its corner with the stainless steel range on your right and the cow painting on blue background ahead, then face the stainless steel refrigerator."
+  },
+  {
+   "from": "stainless steel refrigerator",
+   "to": "dark wooden counter",
+   "how": "Passing through the doorway with the stainless steel refrigerator and cow painting on blue background on your left, walk forward toward the dark wooden counter on your right."
+  },
+  {
+   "from": "stainless steel refrigerator",
+   "to": "wooden table with high-back chairs",
+   "how": "Walk forward through the doorway with the white tall cabinets on your left and the stainless steel refrigerator on your right to enter the teal-walled area with the sliding glass door with patterned curtains on your left and the wooden table with high-back chairs on your right."
+  },
+  {
+   "from": "wooden table with high-back chairs",
+   "to": "stainless steel refrigerator",
+   "how": "With the wooden table with high-back chairs and sliding glass door with patterned curtains on your left, and the brown leather sectional sofa and stained-glass table lamp on your right, walk toward the distressed wooden sideboard and pass through the doorway next to the stainless steel refrigerator."
+  },
+  {
+   "from": "wooden table with high-back chairs",
+   "to": "distressed wooden sideboard",
+   "how": "With the sliding glass door with patterned curtains on your left and the wooden table with high-back chairs on your right, walk straight ahead to the distressed wooden sideboard."
+  },
+  {
+   "from": "distressed wooden sideboard",
+   "to": "brown leather sectional sofa",
+   "how": "Keeping the distressed wooden sideboard on your left, turn right to walk along the back of the brown leather sectional sofa, passing the stained-glass table lamp and red floral canvas painting on your left."
+  },
+  {
+   "from": "brown leather sectional sofa",
+   "to": "white patterned shade floor lamp",
+   "how": "Turn into the seating area with the brown leather sectional sofa on your left and the oval wooden coffee table on your right, and walk straight to the white patterned shade floor lamp in the corner next to the wooden media console with wall-mounted TV."
+  },
+  {
+   "from": "white patterned shade floor lamp",
+   "to": "carved console table with framed painting",
+   "how": "Turn right at the wooden media console with wall-mounted TV, walk past the round turquoise wall art on your left and loop around the white tufted armchair and oval wooden coffee table to face the white door under skylight and carved console table with framed painting."
+  },
+  {
+   "from": "carved console table with framed painting",
+   "to": "white glass curio cabinet",
+   "how": "With the white door under skylight and carved console table with framed painting on your left, walk forward to the white glass curio cabinet and the orange and silver wall sculpture on teal wall at the passage opening."
+  },
+  {
+   "from": "white glass curio cabinet",
+   "to": "wooden table with high-back chairs",
+   "how": "Turn right at the passage opening, keeping the orange and silver wall sculpture on teal wall on your left and the white tufted armchair on your right, and walk toward the wooden table with high-back chairs."
+  },
+  {
+   "from": "dark wooden counter",
+   "to": "gold-framed abstract portrait",
+   "how": "With the dark wooden counter and stainless steel range on your left, turn left at the wall corner to enter the white-walled passage with the gold-framed abstract portrait on your right."
+  },
+  {
+   "from": "gold-framed abstract portrait",
+   "to": "bed with wrought-iron frame and floral bedspread",
+   "how": "Walk forward down the passage past the gold-framed abstract portrait on your right and turn right through the doorway into the yellow-green walled space with the bed with wrought-iron frame and floral bedspread and white three-drawer nightstand."
+  },
+  {
+   "from": "bed with wrought-iron frame and floral bedspread",
+   "to": "stacked white washer and dryer",
+   "how": "Exit the yellow-green walled doorway with the white paneled closet doors in yellow-green area on your left to enter the passage with the stacked white washer and dryer on your left and the red-framed hallway mirror on your right."
+  },
+  {
+   "from": "stacked white washer and dryer",
+   "to": "bed with wrought-iron frame and floral bedspread",
+   "how": "From the passage near the stacked white washer and dryer and red-framed hallway mirror, cross into the doorway on the opposite side to the bed with wrought-iron frame and floral bedspread."
+  },
+  {
+   "from": "stacked white washer and dryer",
+   "to": "wooden vanity with vessel sink and blue rug",
+   "how": "Walk past the stacked white washer and dryer on your left to the end of the passage by the red-framed hallway mirror and turn right to look through the doorway at the wooden vanity with vessel sink and blue rug."
+  },
+  {
+   "from": "wooden vanity with vessel sink and blue rug",
+   "to": "craft island with shelves",
+   "how": "Turn left from the doorway of the wooden vanity with vessel sink and blue rug and walk through the adjacent doorway into the blue-walled space with the craft island with shelves on your left and white built-in wardrobe with open shelves on your right."
+  },
+  {
+   "from": "craft island with shelves",
+   "to": "window with white sheer curtains on blue wall",
+   "how": "Walk around the craft island with shelves, passing the white built-in wardrobe with open shelves on your right and the white rolling storage cart on your left, to reach the window with white sheer curtains on blue wall."
+  },
+  {
+   "from": "window with white sheer curtains on blue wall",
+   "to": "stacked white washer and dryer",
+   "how": "Turn around at the window with white sheer curtains on blue wall and walk past the craft island with shelves on your right and the white built-in wardrobe with open shelves on your left to exit through the doorway toward the stacked white washer and dryer."
+  },
+  {
+   "from": "bed with wrought-iron frame and floral bedspread",
+   "to": "window with sheer dotted curtains on yellow-green wall",
+   "how": "With the bed with wrought-iron frame and floral bedspread on your right and the white chest with open lower shelf on your left, walk forward to the corner with the window with sheer dotted curtains on yellow-green wall."
+  },
+  {
+   "from": "window with sheer dotted curtains on yellow-green wall",
+   "to": "stacked white washer and dryer",
+   "how": "Turn around with the window with sheer dotted curtains on yellow-green wall behind you, walk past the bed with wrought-iron frame and floral bedspread on your left and the white chest with open lower shelf on your right, and exit through the doorway toward the stacked white washer and dryer."
+  },
+  {
+   "from": "wooden vanity with vessel sink and blue rug",
+   "to": "orange and silver wall sculpture on teal wall",
+   "how": "Turn left out of the doorway by the wooden vanity with vessel sink and blue rug, and walk down the tiled passage with the stacked white washer and dryer on your right and the doorway to the bed with wrought-iron frame and floral bedspread on your left, until you reach the orange and silver wall sculpture on teal wall on your right and see the dark wooden counter ahead on your left."
+  },
+  {
+   "from": "orange and silver wall sculpture on teal wall",
+   "to": "dark wood door with glass transom",
+   "how": "Turn right at the end of the passage, passing the white glass curio cabinet and carved console table with framed painting on your right, with the white tufted armchair and wooden media console with wall-mounted TV on your left, to reach the dark wood door with glass transom."
+  },
+  {
+   "from": "dark wood door with glass transom",
+   "to": "white wooden bed on dark teal wall",
+   "how": "Turn left from the dark wood door with glass transom, keeping the carved console table with framed painting on your left, and walk through the open white door under skylight onto the wood floor with the white wooden bed on dark teal wall and mirrored nightstand under crystal pendant on your right."
+  },
+  {
+   "from": "white wooden bed on dark teal wall",
+   "to": "white sliding closet doors on teal wall",
+   "how": "Walk past the foot of the white wooden bed on dark teal wall on your left, with the distressed white dresser with floral print and tan armless accent chair by sheer curtains on your right, toward the white sliding closet doors on teal wall."
+  },
+  {
+   "from": "white sliding closet doors on teal wall",
+   "to": "tall vertical shoe rack on floral wall",
+   "how": "Turn left through the doorway beside the white sliding closet doors on teal wall, pass the long white vanity with large mirror on your left, and walk through the white louvered door to the tall vertical shoe rack on floral wall."
+  },
+  {
+   "from": "tall vertical shoe rack on floral wall",
+   "to": "long white vanity with large mirror",
+   "how": "Turn around at the tall vertical shoe rack on floral wall and walk back out past the white louvered door on your right toward the long white vanity with large mirror."
+  },
+  {
+   "from": "long white vanity with large mirror",
+   "to": "walk-in brown tiled shower with two niches",
+   "how": "Turn right from the long white vanity with large mirror to pass through the doorway, walking past the corner bathtub under glass block window on your left to reach the walk-in brown tiled shower with two niches ahead."
+  }
+ ],
+ "walk_summary": [
+  "Start by the white brick fireplace and walk past the patterned ottoman toward the blue leather sofa and carved wooden wall relief.",
+  "Turn left at the blue leather sofa and walk between the blue leather loveseat and the dark wooden counter, with the sliding glass door with floral valance behind you.",
+  "Round the left corner of the dark wooden counter, passing the stainless steel range and cow painting on blue background, and walk through the doorway between the white tall cabinets and the stainless steel refrigerator.",
+  "Walk forward between the sliding glass door with patterned curtains and the wooden table with high-back chairs toward the distressed wooden sideboard.",
+  "Turn right around the back of the brown leather sectional sofa, passing the stained-glass table lamp and red floral canvas painting, and walk across the rug to the white patterned shade floor lamp beside the wooden media console with wall-mounted TV.",
+  "Turn right past the wooden media console with wall-mounted TV and round turquoise wall art, looping around the white tufted armchair and oval wooden coffee table to face the white door under skylight and carved console table with framed painting.",
+  "Walk past the white glass curio cabinet and orange and silver wall sculpture on teal wall to the passage opening, where the gold-framed abstract portrait is visible.",
+  "Turn right and walk back between the wooden table with high-back chairs and the brown leather sectional sofa, passing through the doorway by the stainless steel refrigerator toward the dark wooden counter.",
+  "Turn left at the corner by the dark wooden counter into the white-walled passage, walk past the gold-framed abstract portrait, and turn right through a doorway to view the bed with wrought-iron frame and floral bedspread, white three-drawer nightstand, and white paneled closet doors in yellow-green area.",
+  "Step back into the passage and walk past the stacked white washer and dryer to the red-framed hallway mirror, looking right into the doorway with the wooden vanity with vessel sink and blue rug.",
+  "Turn left through the opposite doorway into the blue-walled space, circle around the craft island with shelves past the white built-in wardrobe with open shelves and white rolling storage cart to the window with white sheer curtains on blue wall, then exit back to the passage.",
+  "Cross the passage by the stacked white washer and dryer back into the yellow-green walled space, walking past the bed with wrought-iron frame and floral bedspread and white chest with open lower shelf to the window with sheer dotted curtains on yellow-green wall, then turn around and exit to the passage.",
+  "Step to the end of the passage to look at the wooden vanity with vessel sink and blue rug again, then turn left and walk all the way back down the passage past the stacked white washer and dryer to the orange and silver wall sculpture on teal wall.",
+  "Turn right across the tiled floor, passing the white glass curio cabinet and carved console table with framed painting on your right, to reach the dark wood door with glass transom.",
+  "Turn left and walk through the open white door under skylight past the mirrored nightstand under crystal pendant and around the foot of the white wooden bed on dark teal wall, with the distressed white dresser with floral print and tan armless accent chair by sheer curtains on your right, to the white sliding closet doors on teal wall.",
+  "Turn left through the doorway past the long white vanity with large mirror and go through the white louvered door to the tall vertical shoe rack on floral wall.",
+  "Turn around and exit past the white louvered door toward the long white vanity with large mirror, then turn right through a doorway past the corner bathtub under glass block window to end at the walk-in brown tiled shower with two niches."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/5cdEh9F2hJL/frames",
+  "n_keyframes": 82,
+  "camera": "held at chest height by a person walking"
+ }
+}

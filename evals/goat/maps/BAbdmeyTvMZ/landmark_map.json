@@ -1,0 +1,410 @@
+{
+ "landmarks": [
+  {
+   "name": "stone arch",
+   "description": "Wide archway made of stacked stone bricks.",
+   "seen_at": [
+    0,
+    5,
+    6,
+    33,
+    34,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "wheeled cart",
+   "description": "Distressed white wooden cart with large spoked wheels next to the stone arch.",
+   "seen_at": [
+    0,
+    38
+   ]
+  },
+  {
+   "name": "stainless fridge",
+   "description": "Large double-door stainless steel refrigerator with water dispenser.",
+   "seen_at": [
+    0,
+    1,
+    29,
+    30,
+    32
+   ]
+  },
+  {
+   "name": "island counter",
+   "description": "Long counter with white base, dark top, built-in stove, and barstools on the outer side.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    11,
+    28,
+    29,
+    31,
+    32,
+    39
+   ]
+  },
+  {
+   "name": "white cabinets",
+   "description": "L-shaped run of white base and upper cabinets with a white dishwasher and tall pantry.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    12,
+    13,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "trash bin",
+   "description": "Dark trash container with a black plastic liner at the end of the island counter.",
+   "seen_at": [
+    2,
+    3,
+    12,
+    28,
+    29,
+    31
+   ]
+  },
+  {
+   "name": "dark sofas",
+   "description": "Two dark leather sofas on a wood floor near windows.",
+   "seen_at": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    31
+   ]
+  },
+  {
+   "name": "white pillar",
+   "description": "Square white structural column between the dark sofas and the round wooden table.",
+   "seen_at": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "name": "round wooden table",
+   "description": "Small dark round table with high-backed chairs near the white pillar.",
+   "seen_at": [
+    5,
+    6,
+    32,
+    33,
+    39
+   ]
+  },
+  {
+   "name": "stone fireplace",
+   "description": "Floor-to-ceiling stone fireplace with a wood mantel and two red Z-shaped stands.",
+   "seen_at": [
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "name": "carved wood door",
+   "description": "Light-colored wooden exterior door with carved panels, standing open.",
+   "seen_at": [
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "name": "chaise doorway",
+   "description": "White-trimmed doorway with a 6-panel white door leading off the terracotta tile near the tall white cabinet.",
+   "seen_at": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    21,
+    30
+   ]
+  },
+  {
+   "name": "brown chaise",
+   "description": "Plush brown upholstered chaise lounge in front of curtained windows.",
+   "seen_at": [
+    13,
+    14,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "curved dresser",
+   "description": "Reddish-brown wooden dresser with a curved front and a small lamp on top.",
+   "seen_at": [
+    14,
+    15,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "rustic console table",
+   "description": "Long narrow wooden table with X-shaped legs and a lamp on top.",
+   "seen_at": [
+    16,
+    17,
+    18
+   ]
+  },
+  {
+   "name": "framed snow picture",
+   "description": "Framed artwork showing a winter scene on the wall near the chaise doorway.",
+   "seen_at": [
+    17,
+    18
+   ]
+  },
+  {
+   "name": "white bed doorway",
+   "description": "White-trimmed doorway with a 6-panel white door next to the chaise doorway.",
+   "seen_at": [
+    21,
+    22,
+    26,
+    27
+   ]
+  },
+  {
+   "name": "white bed",
+   "description": "Large bed with a white comforter, light blue pillows, and wooden headboard.",
+   "seen_at": [
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  {
+   "name": "windowed white door by white bed",
+   "description": "White exterior door with a large glass upper pane near the foot of the white bed.",
+   "seen_at": [
+    22,
+    23
+   ]
+  },
+  {
+   "name": "patterned rug",
+   "description": "Dark blue and multicolored floral patterned area rug next to the white bed.",
+   "seen_at": [
+    24,
+    25
+   ]
+  },
+  {
+   "name": "rustic wooden chair",
+   "description": "Small rustic wooden chair against the wall near the white bed doorway.",
+   "seen_at": [
+    25,
+    26,
+    27
+   ]
+  },
+  {
+   "name": "closed white door",
+   "description": "Closed 6-panel white door along the terracotta tiled passage.",
+   "seen_at": [
+    27,
+    28
+   ]
+  },
+  {
+   "name": "washer dryer doorway",
+   "description": "Narrow white-trimmed doorway next to the stone arch leading to white laundry appliances.",
+   "seen_at": [
+    32,
+    33,
+    39,
+    41
+   ]
+  },
+  {
+   "name": "sliding glass door",
+   "description": "Large sliding glass patio door with a white frame next to the stone arch.",
+   "seen_at": [
+    34,
+    35,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "grey sofa",
+   "description": "Plush grey upholstered sofa under a row of windows against a wood-paneled wall.",
+   "seen_at": [
+    34,
+    35,
+    36,
+    38
+   ]
+  },
+  {
+   "name": "dark tufted bench",
+   "description": "Low dark tufted bench or daybed against the wood-paneled wall.",
+   "seen_at": [
+    34,
+    36,
+    37
+   ]
+  },
+  {
+   "name": "white side table",
+   "description": "Small distressed white wooden table with curved legs and a dark lamp next to the grey sofa.",
+   "seen_at": [
+    35,
+    36
+   ]
+  },
+  {
+   "name": "white washer and dryer",
+   "description": "Side-by-side white washing machine and dryer beneath dark reddish-brown upper cabinets.",
+   "seen_at": [
+    40
+   ]
+  },
+  {
+   "name": "windowed white door by washer and dryer",
+   "description": "White exterior door with a large glass upper pane next to the white washer and dryer.",
+   "seen_at": [
+    40,
+    41
+   ]
+  },
+  {
+   "name": "electrical panel",
+   "description": "Tall white metal breaker box mounted on the wall between the windowed white door and the washer dryer doorway.",
+   "seen_at": [
+    41
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "stone arch",
+   "to": "white cabinets",
+   "how": "Go straight along the terracotta tiles with the stainless fridge on your left and the island counter on your right toward the white cabinets and trash bin."
+  },
+  {
+   "from": "white cabinets",
+   "to": "stone arch",
+   "how": "With the trash bin behind you, walk straight between the island counter on your left and the stainless fridge on your right to reach the stone arch on your right."
+  },
+  {
+   "from": "white cabinets",
+   "to": "dark sofas",
+   "how": "Turn right past the end of the island counter and trash bin, walking forward past the white pillar onto the wood floor toward the dark sofas."
+  },
+  {
+   "from": "dark sofas",
+   "to": "stone fireplace",
+   "how": "With the dark sofas on your left, walk straight across the wood floor toward the stone fireplace and open carved wood door."
+  },
+  {
+   "from": "stone fireplace",
+   "to": "chaise doorway",
+   "how": "Walk past the island counter and white cabinets on your left to go straight through the chaise doorway near the trash bin."
+  },
+  {
+   "from": "chaise doorway",
+   "to": "brown chaise",
+   "how": "Step through the chaise doorway onto the wood floor; the brown chaise is straight ahead with the curved dresser on your right and rustic console table behind you to the right."
+  },
+  {
+   "from": "brown chaise",
+   "to": "chaise doorway",
+   "how": "Turn around with the curved dresser on your left and the rustic console table and framed snow picture on your right, walking straight out through the chaise doorway."
+  },
+  {
+   "from": "chaise doorway",
+   "to": "white bed doorway",
+   "how": "Exit the chaise doorway onto the terracotta tiles and immediately turn left into the adjacent white bed doorway."
+  },
+  {
+   "from": "white bed doorway",
+   "to": "white bed",
+   "how": "Walk through the white bed doorway; the white bed and patterned rug are on your left with the windowed white door straight ahead."
+  },
+  {
+   "from": "white bed",
+   "to": "white bed doorway",
+   "how": "Turn around and walk across the patterned rug with the white bed on your right and the rustic wooden chair on your left to exit through the white bed doorway."
+  },
+  {
+   "from": "white bed doorway",
+   "to": "white cabinets",
+   "how": "Exit the white bed doorway, turn left along the terracotta tiles passing the closed white door on your left, and walk straight to the trash bin, island counter, and white cabinets."
+  },
+  {
+   "from": "stone arch",
+   "to": "grey sofa",
+   "how": "Turn right through the stone arch, passing the sliding glass door on your left and dark tufted bench on your right, and walk straight to the grey sofa and white side table."
+  },
+  {
+   "from": "grey sofa",
+   "to": "stone arch",
+   "how": "Turn around past the white side table and dark tufted bench on your right, walking toward the sliding glass door and exiting through the stone arch on your left."
+  },
+  {
+   "from": "stone arch",
+   "to": "washer dryer doorway",
+   "how": "Step out of the stone arch with the round wooden table and island counter ahead on your left, then immediately turn right into the narrow washer dryer doorway."
+  },
+  {
+   "from": "washer dryer doorway",
+   "to": "white washer and dryer",
+   "how": "Step through the washer dryer doorway; the white washer and dryer are on your left with the windowed white door and electrical panel on your right."
+  }
+ ],
+ "walk_summary": [
+  "Start by the stone arch and wheeled cart, walking straight along terracotta tiles between the stainless fridge on the left and the island counter on the right toward the white cabinets and trash bin.",
+  "Turn right past the end of the island counter and move past the white pillar and round wooden table toward the dark sofas on the wood floor.",
+  "Approach the stone fireplace and open carved wood door, looking back toward the dark sofas and island counter.",
+  "Walk past the white cabinets and trash bin on the left to pass through the chaise doorway onto a wood floor.",
+  "Approach the brown chaise and curved dresser, then circle around past the rustic console table and framed snow picture before facing the brown chaise again.",
+  "Exit through the chaise doorway onto the terracotta tiles, turn left, and enter the adjacent white bed doorway.",
+  "Walk past the white bed on the left toward the windowed white door, then turn around and walk back across the patterned rug past the rustic wooden chair to exit through the white bed doorway.",
+  "Turn left along the terracotta-tiled passage, passing the closed white door on the left, to return to the trash bin, island counter, stainless fridge, and white cabinets.",
+  "Walk straight between the island counter on the left and the stainless fridge on the right toward the round wooden table, washer dryer doorway, and stone arch.",
+  "Turn right through the stone arch, passing the sliding glass door on the left and dark tufted bench on the right to reach the grey sofa and white side table.",
+  "Turn around past the white side table and dark tufted bench, walking back toward the sliding glass door and wheeled cart to exit through the stone arch.",
+  "Turn right from the stone arch to pass through the narrow washer dryer doorway, stopping beside the white washer and dryer, windowed white door, and electrical panel."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/BAbdmeyTvMZ/frames",
+  "n_keyframes": 42,
+  "camera": "held at chest height by a person walking"
+ }
+}

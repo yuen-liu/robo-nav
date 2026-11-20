@@ -1,0 +1,323 @@
+{
+ "landmarks": [
+  {
+   "name": "dark brown sofa",
+   "description": "Large dark brown plush sofa with tan throw pillows, set against a dark accent wall and window.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    31,
+    32,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "dark wood coffee table",
+   "description": "Rectangular dark wood coffee table on a light area rug in front of the dark brown sofa.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    31,
+    32,
+    33,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "pair of black ottomans",
+   "description": "Two small round black leatherette ottomans sitting side by side against a white wall.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    31,
+    32,
+    33,
+    34
+   ]
+  },
+  {
+   "name": "white half-wall with recessed TV",
+   "description": "Chest-high thick white partition wall in the middle of the hardwood floor, with a flat-screen TV and a display niche recessed into its side.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    24,
+    25,
+    31,
+    32,
+    33,
+    35
+   ]
+  },
+  {
+   "name": "dark accent wall with two windows",
+   "description": "Long charcoal-painted exterior wall featuring two wide horizontal windows.",
+   "seen_at": [
+    0,
+    1,
+    27,
+    29,
+    31
+   ]
+  },
+  {
+   "name": "wooden dining table and chairs",
+   "description": "Medium-brown carved wood dining table with matching high-backed chairs on the hardwood floor behind the white half-wall.",
+   "seen_at": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    17,
+    18,
+    19,
+    24,
+    25,
+    26
+   ]
+  },
+  {
+   "name": "carpeted stairs going up",
+   "description": "Flight of beige-carpeted stairs enclosed by white walls with a white wall-mounted handrail.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    9,
+    10,
+    12,
+    13,
+    18,
+    19,
+    20,
+    21,
+    23,
+    24
+   ]
+  },
+  {
+   "name": "carpeted area with beige sofa",
+   "description": "Beige-carpeted floor section with a brown/beige upholstered sofa under a wide window.",
+   "seen_at": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "name": "square dark coffee table",
+   "description": "Low square dark-wood coffee table in the center of the beige-carpeted area.",
+   "seen_at": [
+    6,
+    7,
+    8,
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "name": "tiled fireplace with white mantel",
+   "description": "Fireplace surround with brown mosaic tile, a white mantel, and an adjacent recessed shelf holding a model ship.",
+   "seen_at": [
+    6,
+    7,
+    8,
+    13,
+    14,
+    16,
+    17
+   ]
+  },
+  {
+   "name": "white door to toilet and pedestal sink",
+   "description": "White paneled door opening into a small tiled space next to the fireplace.",
+   "seen_at": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "name": "toilet and pedestal sink",
+   "description": "White toilet and white pedestal sink with a round mirror on tan floor tiles.",
+   "seen_at": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "name": "glass door with blinds",
+   "description": "White-framed exterior door with a full-length glass pane covered by white horizontal blinds, between the tiled fireplace and the beige sofa.",
+   "seen_at": [
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "name": "corner desk with chair and monitor",
+   "description": "Dark wood desk with a computer monitor and a brown armchair in the corner next to the stair wall.",
+   "seen_at": [
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "name": "white double closet doors on landing",
+   "description": "Pair of white paneled closet doors on the left wall of the stair landing.",
+   "seen_at": [
+    20,
+    21,
+    22
+   ]
+  },
+  {
+   "name": "landing window",
+   "description": "Square window at the stair landing looking out to trees and houses.",
+   "seen_at": [
+    20,
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "dark wood cabinets and countertops",
+   "description": "Galley of dark brown wood base and wall cabinets with speckled granite countertops and a stainless steel microwave above the range.",
+   "seen_at": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    33,
+    35
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "Double-door stainless steel refrigerator next to a white paneled door at the end of the cabinet galley.",
+   "seen_at": [
+    26,
+    28,
+    30,
+    33,
+    35
+   ]
+  },
+  {
+   "name": "white paneled door next to refrigerator",
+   "description": "Closed white six-panel door set in a recessed doorway between the stainless steel refrigerator and the dark wood cabinets.",
+   "seen_at": [
+    26,
+    28,
+    30
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "dark brown sofa",
+   "to": "pair of black ottomans",
+   "how": "Walk forward across the hardwood floor with the dark brown sofa and dark wood coffee table on your left and the white half-wall with recessed TV on your right toward the pair of black ottomans against the white wall ahead."
+  },
+  {
+   "from": "pair of black ottomans",
+   "to": "wooden dining table and chairs",
+   "how": "Turn right around the end of the white half-wall with recessed TV to pass the wooden dining table and chairs on your left and the carpeted stairs going up on your right."
+  },
+  {
+   "from": "wooden dining table and chairs",
+   "to": "carpeted area with beige sofa",
+   "how": "With the wooden dining table and chairs on your left and the carpeted stairs going up on your right, walk straight ahead off the hardwood floor onto the carpeted area with the beige sofa and square dark coffee table."
+  },
+  {
+   "from": "carpeted area with beige sofa",
+   "to": "toilet and pedestal sink",
+   "how": "From the edge of the carpeted area, turn left past the tiled fireplace with white mantel and walk into the short passage through the open white door to the toilet and pedestal sink."
+  },
+  {
+   "from": "toilet and pedestal sink",
+   "to": "glass door with blinds",
+   "how": "Turn around to exit the white door, pass the tiled fireplace with white mantel on your left, and walk across the carpet toward the glass door with blinds next to the beige sofa."
+  },
+  {
+   "from": "glass door with blinds",
+   "to": "corner desk with chair and monitor",
+   "how": "Turn right away from the glass door with blinds, passing between the beige sofa on your right and the square dark coffee table on your left toward the corner desk with chair and monitor."
+  },
+  {
+   "from": "corner desk with chair and monitor",
+   "to": "carpeted stairs going up",
+   "how": "Walk past the corner desk on your right and the square dark coffee table on your left back toward the hardwood floor and wooden dining table, then turn left onto the carpeted stairs going up."
+  },
+  {
+   "from": "carpeted stairs going up",
+   "to": "landing window",
+   "how": "Climb the carpeted stairs to the landing where the white double closet doors are on your left and the landing window is straight ahead."
+  },
+  {
+   "from": "landing window",
+   "to": "carpeted stairs going up",
+   "how": "Turn 180 degrees with the landing window on your left and walk down the carpeted stairs toward the hardwood floor and white half-wall with recessed TV."
+  },
+  {
+   "from": "carpeted stairs going up",
+   "to": "dark wood cabinets and countertops",
+   "how": "At the bottom of the carpeted stairs, go straight past the wooden dining table and chairs on your right and curve left into the narrow passage between the two rows of dark wood cabinets and countertops."
+  },
+  {
+   "from": "dark wood cabinets and countertops",
+   "to": "stainless steel refrigerator",
+   "how": "Between the two rows of dark wood cabinets and countertops, turn toward the end away from the dark accent wall with two windows to face the stainless steel refrigerator and the adjacent white paneled door."
+  },
+  {
+   "from": "dark wood cabinets and countertops",
+   "to": "dark brown sofa",
+   "how": "Walk to the window end of the dark wood cabinets and countertops, turn left around the island counter with the dark accent wall with two windows on your left, and walk forward toward the dark brown sofa and dark wood coffee table."
+  },
+  {
+   "from": "dark brown sofa",
+   "to": "dark wood coffee table",
+   "how": "Walk between the dark brown sofa and the white half-wall with recessed TV, passing the dark wood coffee table and turning to face back toward the dark wood cabinets and stainless steel refrigerator."
+  }
+ ],
+ "walk_summary": [
+  "Start on the hardwood floor between the dark brown sofa and dark wood coffee table on the left and the white half-wall with recessed TV on the right, walking toward the pair of black ottomans.",
+  "Turn right around the end of the white half-wall with recessed TV, passing between the wooden dining table and chairs on the left and the carpeted stairs going up on the right.",
+  "Walk forward onto the carpeted area with the beige sofa and square dark coffee table while passing the tiled fireplace with white mantel on the left.",
+  "Turn left into the short passage next to the tiled fireplace and go through the open white door to view the toilet and pedestal sink.",
+  "Turn around, exit the doorway past the tiled fireplace on the left, and walk across the carpet toward the glass door with blinds next to the beige sofa.",
+  "Turn right away from the glass door, walking between the beige sofa and the square dark coffee table past the corner desk with chair and monitor back toward the wooden dining table.",
+  "Turn left at the bottom of the carpeted stairs going up and climb to the landing with the white double closet doors on the left and the landing window ahead.",
+  "Turn around on the landing and walk back down the carpeted stairs toward the wooden dining table and white half-wall with recessed TV.",
+  "Walk straight from the bottom of the stairs past the wooden dining table on the right and curve left into the narrow aisle between the dark wood cabinets and countertops, turning inside the aisle to face both the dark accent wall with two windows and the stainless steel refrigerator with the white paneled door next to it.",
+  "Exit the cabinet aisle at the window end, turn left around the island counter with the dark accent wall with two windows on the left, and walk past the dark brown sofa and dark wood coffee table before turning to face back toward the dark wood cabinets and stainless steel refrigerator."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/qyAac8rV8Zk/frames",
+  "n_keyframes": 36,
+  "camera": "held at chest height by a person walking"
+ }
+}

@@ -1,0 +1,496 @@
+{
+ "landmarks": [
+  {
+   "name": "canopy bed",
+   "description": "Large four-poster wooden bed with a light green coverlet and dark tattered canopy overhang",
+   "seen_at": [
+    0,
+    1,
+    2,
+    4
+   ]
+  },
+  {
+   "name": "window with dark trim",
+   "description": "Multi-pane window set in a yellow upper wall with dark gray-blue wood paneling below",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "dark radiator",
+   "description": "Dark cast-iron radiator mounted against the dark lower wall paneling under the window",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "brown wooden paneled wall",
+   "description": "Unpainted distressed brown wood-paneled wall with a small fireplace opening in the center",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "gothic wooden chair",
+   "description": "Dark carved wooden chair with a light cushion standing against the brown wood-paneled wall",
+   "seen_at": [
+    3,
+    19
+   ]
+  },
+  {
+   "name": "stacked black cases",
+   "description": "Pile of flat black rectangular cases or trunks on the floor in the corner near the doorway",
+   "seen_at": [
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "name": "open wooden doorway",
+   "description": "Dark wooden doorway with an open paneled door leading to a passage",
+   "seen_at": [
+    4,
+    5,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "dark chest on cabinet",
+   "description": "Dark molded chest sitting atop a wooden cabinet to the right of the open wooden doorway",
+   "seen_at": [
+    4,
+    5
+   ]
+  },
+  {
+   "name": "taxidermy animal heads",
+   "description": "Large mounted deer and moose heads with antlers on yellow walls above a staircase landing",
+   "seen_at": [
+    5,
+    6,
+    23,
+    36,
+    37
+   ]
+  },
+  {
+   "name": "tall white bookshelves",
+   "description": "Floor-to-ceiling white-painted bookshelves packed with books",
+   "seen_at": [
+    6,
+    24,
+    25,
+    26,
+    27,
+    28,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "blue and white robed statue",
+   "description": "Large painted plaster religious statue with a blue veil and white/pink robes near the doorway",
+   "seen_at": [
+    7,
+    9,
+    10,
+    15,
+    17
+   ]
+  },
+  {
+   "name": "large wooden framed mirror",
+   "description": "Freestanding or tilting large mirror in a heavy wooden frame in the corner",
+   "seen_at": [
+    7,
+    8
+   ]
+  },
+  {
+   "name": "portrait over fireplace",
+   "description": "Large framed oil painting of a man in a dark suit hanging above a dark fireplace",
+   "seen_at": [
+    7,
+    8
+   ]
+  },
+  {
+   "name": "floral armchair",
+   "description": "Upholstered armchair with a white and blue/green floral slipcover in front of the fireplace",
+   "seen_at": [
+    7,
+    8,
+    10
+   ]
+  },
+  {
+   "name": "clawfoot bathtub",
+   "description": "Freestanding white clawfoot bathtub in the middle of the floor on patterned rugs",
+   "seen_at": [
+    9,
+    10,
+    11,
+    14,
+    15
+   ]
+  },
+  {
+   "name": "white wall sink",
+   "description": "Wide white porcelain wall-mounted sink surrounded by small framed pictures on a yellow wall",
+   "seen_at": [
+    10,
+    11,
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "name": "wicker trunk",
+   "description": "Large rectangular woven wicker basket or trunk with a flat wooden lid in the corner",
+   "seen_at": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "name": "wall of crosses",
+   "description": "Yellow wall covered with numerous dark wooden and metal crosses of various sizes",
+   "seen_at": [
+    10,
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "name": "window with stained glass hanging",
+   "description": "Dark-trimmed window with a colorful circular stained-glass ornament hanging in front of it",
+   "seen_at": [
+    11,
+    12
+   ]
+  },
+  {
+   "name": "white toilet with high tank",
+   "description": "Old-fashioned white ceramic toilet bowl with a high wall-mounted cistern and pipe",
+   "seen_at": [
+    13
+   ]
+  },
+  {
+   "name": "dark Madonna and Child statue",
+   "description": "Life-size dark-robed statue holding a child, standing in the passage beside a doorway",
+   "seen_at": [
+    16,
+    18
+   ]
+  },
+  {
+   "name": "skylight",
+   "description": "Bright rectangular ceiling skylight illuminating the narrow passage",
+   "seen_at": [
+    16,
+    18
+   ]
+  },
+  {
+   "name": "stone statue by shelves",
+   "description": "Unpainted gray stone statue of a figure holding a child in a narrow passage with shelves",
+   "seen_at": [
+    21
+   ]
+  },
+  {
+   "name": "yellow slotted wooden box",
+   "description": "Long yellow-painted wooden trough or box with vertical slots along its side, mounted at chest height",
+   "seen_at": [
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "framed pictures on passage wall",
+   "description": "Cluster of black-and-white engravings and paintings in dark and gilt frames along the passage wall",
+   "seen_at": [
+    22
+   ]
+  },
+  {
+   "name": "large pink and blue patterned rug",
+   "description": "Large worn oriental rug with a pink field and blue border covering the center of the floor",
+   "seen_at": [
+    24,
+    25,
+    27,
+    31,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "cluttered wooden desk",
+   "description": "Carved dark wooden table/desk piled high with books and papers in the center of the pink rug",
+   "seen_at": [
+    24,
+    25,
+    27,
+    28,
+    29,
+    34
+   ]
+  },
+  {
+   "name": "two windows with portrait between",
+   "description": "Pair of windows with dark wood wainscoting below and a dark framed portrait hanging between them",
+   "seen_at": [
+    24,
+    25,
+    28,
+    29,
+    31,
+    32
+   ]
+  },
+  {
+   "name": "door with oval plaque",
+   "description": "Brown wooden paneled door with a large light-colored horizontal oval plaque mounted at handle height",
+   "seen_at": [
+    27,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "wooden easel",
+   "description": "A-frame wooden artist easel standing on the floor near the windows",
+   "seen_at": [
+    28,
+    29,
+    31,
+    32
+   ]
+  },
+  {
+   "name": "dark bust on desk",
+   "description": "Dark bronze or wood sculpted bust sitting on top of the cluttered wooden desk",
+   "seen_at": [
+    28,
+    29,
+    30
+   ]
+  },
+  {
+   "name": "fireplace with dark overmantel",
+   "description": "Arched cast-iron fireplace with a green-tinted surround and a dark carved wooden overmantel frame above it",
+   "seen_at": [
+    29,
+    30,
+    31,
+    33
+   ]
+  },
+  {
+   "name": "tall glass-front wooden bookcase",
+   "description": "Tall ornate unpainted wooden cabinet with glass doors filled with books, standing to the left of the fireplace",
+   "seen_at": [
+    30,
+    33,
+    34
+   ]
+  },
+  {
+   "name": "wooden ladder",
+   "description": "Tall rustic wooden ladder leaning vertically against the dark wood wall just outside the book-lined area",
+   "seen_at": [
+    36,
+    41,
+    42
+   ]
+  },
+  {
+   "name": "floral bedspread bed",
+   "description": "Large bed with a white-painted headboard and a green, red, and cream floral patterned coverlet",
+   "seen_at": [
+    38,
+    39,
+    40,
+    43,
+    45
+   ]
+  },
+  {
+   "name": "large wooden wardrobe with barley-twist columns",
+   "description": "Massive light-brown wooden armoire with arched panels and carved spiral columns on its vertical edges",
+   "seen_at": [
+    38,
+    39,
+    40,
+    43,
+    45
+   ]
+  },
+  {
+   "name": "small fireplace with armour portrait",
+   "description": "Small dark fireplace opening on a yellow chimney breast with a large framed painting of a man in armour above it",
+   "seen_at": [
+    38,
+    43,
+    44,
+    45
+   ]
+  },
+  {
+   "name": "dark wooden trunk",
+   "description": "Dark brown rectangular chest sitting on the floor in front of the small fireplace",
+   "seen_at": [
+    38,
+    43,
+    45
+   ]
+  },
+  {
+   "name": "frosted window with cross",
+   "description": "Square dark-framed casement window with frosted glass featuring a central cross motif, set in a yellow wall",
+   "seen_at": [
+    43,
+    44
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "canopy bed",
+   "to": "brown wooden paneled wall",
+   "how": "With the window with dark trim and dark radiator on your left and the canopy bed on your right, walk straight ahead to the brown wooden paneled wall."
+  },
+  {
+   "from": "brown wooden paneled wall",
+   "to": "open wooden doorway",
+   "how": "Turn right in place past the gothic wooden chair and stacked black cases on your left to face the open wooden doorway with the canopy bed and dark chest on cabinet on your right."
+  },
+  {
+   "from": "open wooden doorway",
+   "to": "taxidermy animal heads",
+   "how": "Walk forward through the open wooden doorway between the stacked black cases and dark chest on cabinet toward the stairs with taxidermy animal heads ahead on the left."
+  },
+  {
+   "from": "taxidermy animal heads",
+   "to": "blue and white robed statue",
+   "how": "With the doorway to the tall white bookshelves on your right, turn left and walk along the short passage to the blue and white robed statue on your left."
+  },
+  {
+   "from": "blue and white robed statue",
+   "to": "floral armchair",
+   "how": "Pass the blue and white robed statue on your left and step through the doorway toward the large wooden framed mirror on the left and the portrait over fireplace and floral armchair ahead."
+  },
+  {
+   "from": "floral armchair",
+   "to": "wicker trunk",
+   "how": "Turn past the blue and white robed statue, then turn right and walk between the floral armchair on the left and the clawfoot bathtub and white wall sink on the right to reach the wicker trunk, wall of crosses, and window with stained glass hanging."
+  },
+  {
+   "from": "wicker trunk",
+   "to": "blue and white robed statue",
+   "how": "Turn around past the white toilet with high tank on the left, then walk between the white wall sink on the left and the clawfoot bathtub on the right back to the doorway by the blue and white robed statue."
+  },
+  {
+   "from": "blue and white robed statue",
+   "to": "dark Madonna and Child statue",
+   "how": "Step out through the doorway leaving the blue and white robed statue behind on the right, and face down the narrow passage under the skylight with the dark Madonna and Child statue on the left."
+  },
+  {
+   "from": "dark Madonna and Child statue",
+   "to": "open wooden doorway",
+   "how": "Walk forward under the skylight and look left into the open wooden doorway where the gothic wooden chair is visible."
+  },
+  {
+   "from": "open wooden doorway",
+   "to": "stone statue by shelves",
+   "how": "With the open wooden doorway on your left, turn right to face down the narrow passage toward the stone statue by shelves on the left and the yellow slotted wooden box on the right."
+  },
+  {
+   "from": "stone statue by shelves",
+   "to": "taxidermy animal heads",
+   "how": "Turn 180 degrees past the framed pictures on passage wall and walk back along the narrow passage with the yellow slotted wooden box on your left toward the taxidermy animal heads."
+  },
+  {
+   "from": "taxidermy animal heads",
+   "to": "tall white bookshelves",
+   "how": "Before reaching the stairs with the taxidermy animal heads, turn left through the open doorway into the area lined with tall white bookshelves and a large pink and blue patterned rug."
+  },
+  {
+   "from": "tall white bookshelves",
+   "to": "two windows with portrait between",
+   "how": "Cross the large pink and blue patterned rug with the tall white bookshelves on your right and the cluttered wooden desk with the dark bust on desk on your left toward the wooden easel and two windows with portrait between."
+  },
+  {
+   "from": "two windows with portrait between",
+   "to": "fireplace with dark overmantel",
+   "how": "Turn left past the cluttered wooden desk and dark bust on desk to face the fireplace with dark overmantel and the tall glass-front wooden bookcase."
+  },
+  {
+   "from": "fireplace with dark overmantel",
+   "to": "two windows with portrait between",
+   "how": "Turn right and walk forward across the large pink and blue patterned rug with the fireplace with dark overmantel on your left toward the two windows with portrait between and wooden easel."
+  },
+  {
+   "from": "two windows with portrait between",
+   "to": "door with oval plaque",
+   "how": "Turn around to the left past the fireplace with dark overmantel and tall glass-front wooden bookcase, then walk across the large pink and blue patterned rug with the cluttered wooden desk on your right and tall white bookshelves on your left toward the door with oval plaque."
+  },
+  {
+   "from": "door with oval plaque",
+   "to": "taxidermy animal heads",
+   "how": "Exit through the open doorway beside the door with oval plaque, passing the wooden ladder on the left, onto the stair landing below the taxidermy animal heads."
+  },
+  {
+   "from": "taxidermy animal heads",
+   "to": "large wooden wardrobe with barley-twist columns",
+   "how": "Walk straight across the landing from the wooden ladder through the opposite doorway, passing the large wooden wardrobe with barley-twist columns on the right and floral bedspread bed on the left toward the small fireplace with armour portrait and dark wooden trunk."
+  },
+  {
+   "from": "large wooden wardrobe with barley-twist columns",
+   "to": "wooden ladder",
+   "how": "Turn 180 degrees and walk out through the doorway between the large wooden wardrobe with barley-twist columns on your left and floral bedspread bed on your right toward the wooden ladder on the landing."
+  },
+  {
+   "from": "wooden ladder",
+   "to": "frosted window with cross",
+   "how": "With the wooden ladder on your left, turn around and re-enter through the doorway between the floral bedspread bed on the left and large wooden wardrobe with barley-twist columns on the right, walking past the bed and small fireplace with armour portrait to the frosted window with cross in the far left corner."
+  }
+ ],
+ "walk_summary": [
+  "Start between the window with dark trim and dark radiator on the left and the canopy bed on the right, and walk forward to the brown wooden paneled wall.",
+  "Turn right past the gothic wooden chair and stacked black cases to face the open wooden doorway beside the canopy bed and dark chest on cabinet.",
+  "Walk through the open wooden doorway toward the stair landing with taxidermy animal heads on the left and a doorway to tall white bookshelves on the right.",
+  "Turn left and walk past the blue and white robed statue into the area with the large wooden framed mirror, portrait over fireplace, and floral armchair.",
+  "Turn around the blue and white robed statue and walk between the floral armchair on the left and the clawfoot bathtub and white wall sink on the right up to the wicker trunk, wall of crosses, and window with stained glass hanging.",
+  "Turn around past the white toilet with high tank and walk between the white wall sink and clawfoot bathtub back out the doorway past the blue and white robed statue.",
+  "Walk down the narrow passage under the skylight past the dark Madonna and Child statue on the left and look left into the open wooden doorway at the gothic wooden chair.",
+  "Face further down the passage toward the stone statue by shelves and yellow slotted wooden box, then turn 180 degrees past the framed pictures on passage wall and walk back toward the taxidermy animal heads.",
+  "Turn left through the open doorway into the area with tall white bookshelves, a large pink and blue patterned rug, a cluttered wooden desk, and a door with oval plaque.",
+  "Walk alongside the cluttered wooden desk and dark bust on desk toward the wooden easel and two windows with portrait between.",
+  "Turn left to view the fireplace with dark overmantel and tall glass-front wooden bookcase, then walk back toward the two windows with portrait between.",
+  "Turn around and walk past the tall glass-front wooden bookcase, cluttered wooden desk, and tall white bookshelves to the doorway beside the door with oval plaque.",
+  "Exit past the wooden ladder onto the landing with taxidermy animal heads and walk straight through the opposite doorway between the floral bedspread bed and large wooden wardrobe with barley-twist columns toward the small fireplace with armour portrait and dark wooden trunk.",
+  "Turn around and step back out to the landing facing the wooden ladder, then turn around again to re-enter between the floral bedspread bed and large wooden wardrobe with barley-twist columns.",
+  "Walk past the floral bedspread bed to the far corner under the frosted window with cross, then turn around to face the dark wooden trunk, floral bedspread bed, and large wooden wardrobe with barley-twist columns."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/vlnce_tours/oLBMNvg9in8/frames",
+  "n_keyframes": 46,
+  "camera": "held at chest height by a person walking"
+ }
+}

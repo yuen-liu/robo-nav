@@ -1,0 +1,966 @@
+{
+ "landmarks": [
+  {
+   "name": "gallery wall of line drawings",
+   "description": "A grid of six framed black-and-white line drawings with dark frames and white mats on a light grey wall.",
+   "seen_at": [
+    0,
+    1,
+    15,
+    16,
+    44,
+    45,
+    56,
+    57
+   ]
+  },
+  {
+   "name": "walk-in shelving area",
+   "description": "A small space with white wire shelving on the walls, accessed through a white doorway.",
+   "seen_at": [
+    1,
+    2,
+    45,
+    54
+   ]
+  },
+  {
+   "name": "pair of dark-framed square prints",
+   "description": "Two square framed abstract prints with dark frames and white mats hanging side by side.",
+   "seen_at": [
+    2,
+    3,
+    4,
+    54,
+    55
+   ]
+  },
+  {
+   "name": "empty carpeted area with two windows",
+   "description": "An unfurnished space with light beige carpet and two black-framed grid windows.",
+   "seen_at": [
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "name": "dark blue vanity cabinets",
+   "description": "A row of dark navy blue base cabinets with a white countertop in a narrow wood-floored passage.",
+   "seen_at": [
+    9,
+    10,
+    12
+   ]
+  },
+  {
+   "name": "blue and brown abstract canvas",
+   "description": "A large unframed horizontal abstract canvas painting with light blue, grey, and brown brushstrokes.",
+   "seen_at": [
+    10,
+    12
+   ]
+  },
+  {
+   "name": "white bed with blue pillows",
+   "description": "A bed with white and grey patterned bedding, blue accent pillows, and a nightstand with a white lamp.",
+   "seen_at": [
+    11
+   ]
+  },
+  {
+   "name": "five-drawer wooden chest",
+   "description": "A medium-toned wooden chest of five drawers with dark horizontal bar handles and a small mirror and lamp on top.",
+   "seen_at": [
+    13,
+    14
+   ]
+  },
+  {
+   "name": "dark blue armchair",
+   "description": "A dark navy blue upholstered armless chair with dark wooden legs.",
+   "seen_at": [
+    15,
+    16,
+    43,
+    56,
+    57,
+    58,
+    59
+   ]
+  },
+  {
+   "name": "large pink and grey abstract painting",
+   "description": "A large gold-framed horizontal abstract painting with soft pink, white, grey, and black areas near the top of the stairs.",
+   "seen_at": [
+    17,
+    18,
+    42,
+    58,
+    59,
+    60,
+    73,
+    74,
+    176
+   ]
+  },
+  {
+   "name": "dark two-tier console shelf",
+   "description": "A dark wood or metal open console table with two shelves against the wall near the top of the stairs.",
+   "seen_at": [
+    17,
+    42,
+    61,
+    62,
+    70,
+    73
+   ]
+  },
+  {
+   "name": "tiered crystal chandelier",
+   "description": "A round, tiered beaded or crystal chandelier hanging in the stairwell above a small window.",
+   "seen_at": [
+    18,
+    19,
+    60,
+    74
+   ]
+  },
+  {
+   "name": "pair of gold-framed dark abstract prints",
+   "description": "Two large square gold-framed prints with dark brown horizontal abstract shapes on white backgrounds at the bottom of the stairs.",
+   "seen_at": [
+    20,
+    38,
+    39,
+    76,
+    77,
+    88,
+    89,
+    115,
+    116,
+    117,
+    127,
+    143,
+    165,
+    173
+   ]
+  },
+  {
+   "name": "dark wood console table with two blue lamps",
+   "description": "A dark wooden console table with two blue glass base lamps and an abstract painting hanging above it.",
+   "seen_at": [
+    21,
+    22,
+    34,
+    35,
+    77,
+    118,
+    144,
+    146,
+    166,
+    167
+   ]
+  },
+  {
+   "name": "dining table with white chairs",
+   "description": "A dark wood dining table surrounded by white upholstered chairs with dark wooden legs on a grey area rug.",
+   "seen_at": [
+    22,
+    23,
+    28,
+    29,
+    32,
+    33,
+    77,
+    78,
+    79,
+    82,
+    84,
+    86,
+    87,
+    144,
+    145,
+    146
+   ]
+  },
+  {
+   "name": "stone fireplace with mounted TV",
+   "description": "A floor-to-ceiling light stone fireplace with a dark wood mantel and a flat-screen TV mounted above it.",
+   "seen_at": [
+    23,
+    24,
+    29,
+    30,
+    82,
+    84,
+    86,
+    144,
+    145,
+    146
+   ]
+  },
+  {
+   "name": "white built-in shelving units",
+   "description": "White cabinets with open shelves above them flanking both sides of the stone fireplace.",
+   "seen_at": [
+    23,
+    24,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "white sofa with blue and pink pillows",
+   "description": "A light-colored three-seat sofa with navy blue, light pink, and grey throw pillows and an abstract painting above it.",
+   "seen_at": [
+    25,
+    26,
+    27,
+    28,
+    31,
+    32
+   ]
+  },
+  {
+   "name": "round glass coffee table with gold base",
+   "description": "A large round glass-topped coffee table with an organic-shaped gold metal base on a patterned rug.",
+   "seen_at": [
+    25,
+    26
+   ]
+  },
+  {
+   "name": "two light grey armchairs",
+   "description": "A pair of light grey upholstered armchairs with patterned throw pillows facing the fireplace.",
+   "seen_at": [
+    26,
+    27,
+    29,
+    30
+   ]
+  },
+  {
+   "name": "dark double glass doors",
+   "description": "Dark-painted double doors with glass panes and sidelights next to the bottom of the stairs.",
+   "seen_at": [
+    34,
+    35,
+    36,
+    87,
+    88,
+    146,
+    147,
+    166,
+    167,
+    171,
+    172
+   ]
+  },
+  {
+   "name": "wooden staircase with white risers",
+   "description": "A two-flight L-shaped staircase with light wood treads, white risers, and dark metal balusters.",
+   "seen_at": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    60,
+    74,
+    75,
+    76,
+    88,
+    89,
+    117,
+    128,
+    147,
+    166,
+    172,
+    173,
+    174,
+    175,
+    176
+   ]
+  },
+  {
+   "name": "wall-mounted TV over X-frame console",
+   "description": "A flat-screen TV mounted on a white wall above a rustic wooden console table with dark X-shaped supports.",
+   "seen_at": [
+    43,
+    44,
+    177
+   ]
+  },
+  {
+   "name": "tufted bed with two portrait prints",
+   "description": "A bed with a beige tufted headboard, white bedding, flanked by nightstands with lamps, and two square framed portrait prints on the wall beside it.",
+   "seen_at": [
+    46,
+    47,
+    48,
+    49,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "light blue three-drawer dresser",
+   "description": "A light blue painted wooden chest with three drawers, dark round knobs, and a mirror above it.",
+   "seen_at": [
+    46,
+    48,
+    49,
+    53
+   ]
+  },
+  {
+   "name": "white two-door vanity with rectangular mirror",
+   "description": "A small white cabinet vanity with two doors, a bottom drawer, marble top, rectangular mirror, and a white toilet next to it.",
+   "seen_at": [
+    50,
+    51,
+    52
+   ]
+  },
+  {
+   "name": "grey upholstered bed with curved headboard",
+   "description": "A large bed with a light grey upholstered frame, curved headboard, patterned grey bedspread, and white nightstands on light carpet.",
+   "seen_at": [
+    58,
+    59,
+    63,
+    67,
+    68,
+    178
+   ]
+  },
+  {
+   "name": "freestanding white oval tub",
+   "description": "A white freestanding oval soaking tub positioned beneath a double black-framed grid window on a dark grey tiled floor.",
+   "seen_at": [
+    64,
+    65,
+    66,
+    179,
+    180
+   ]
+  },
+  {
+   "name": "glass-enclosed dark-tiled shower",
+   "description": "A walk-in shower with a glass enclosure, dark grey slate wall tiles on one side, and white mosaic tiles on the other.",
+   "seen_at": [
+    64,
+    65,
+    66,
+    179,
+    180
+   ]
+  },
+  {
+   "name": "wooden-framed double mirror vanity",
+   "description": "A long light-wood vanity cabinet with a white countertop and a large warm-toned wooden frame holding two mirrors above it.",
+   "seen_at": [
+    65,
+    67,
+    179,
+    180
+   ]
+  },
+  {
+   "name": "white nine-drawer dresser with mirror",
+   "description": "A white painted wooden dresser with nine drawers, ring pulls, a lamp on top, and a rectangular mirror hanging above it.",
+   "seen_at": [
+    68,
+    69
+   ]
+  },
+  {
+   "name": "white front-loading washer and dryer",
+   "description": "A pair of white front-loading laundry machines side by side beneath a white counter and upper cabinets.",
+   "seen_at": [
+    71,
+    177
+   ]
+  },
+  {
+   "name": "utility sink under grid window",
+   "description": "A white two-door base cabinet with a sink and high-arc faucet directly below a single black-framed grid window.",
+   "seen_at": [
+    71,
+    72
+   ]
+  },
+  {
+   "name": "wood-paneled island with drei stools",
+   "description": "A large rectangular counter island with light horizontal wood paneling, a white countertop, and three wooden saddle stools.",
+   "seen_at": [
+    77,
+    78,
+    79,
+    83,
+    85,
+    86,
+    144,
+    145
+   ]
+  },
+  {
+   "name": "white farmhouse sink under three windows",
+   "description": "A white apron-front sink set into grey base cabinets below a row of three black-framed grid windows flanked by open wooden shelves.",
+   "seen_at": [
+    79,
+    80,
+    81,
+    144,
+    145
+   ]
+  },
+  {
+   "name": "stainless steel double-door refrigerator",
+   "description": "A tall built-in stainless steel side-by-side refrigerator surrounded by light grey cabinetry.",
+   "seen_at": [
+    83
+   ]
+  },
+  {
+   "name": "blue striped settee and armchair",
+   "description": "A small blue-and-white striped upholstered settee and matching armchair on a patterned rug near large grid windows.",
+   "seen_at": [
+    84,
+    85
+   ]
+  },
+  {
+   "name": "carpeted stairs going down",
+   "description": "A flight of carpeted stairs with a wooden handrail leading down to a lower level.",
+   "seen_at": [
+    90,
+    91,
+    92,
+    100,
+    109,
+    111,
+    112,
+    113,
+    114,
+    115,
+    128,
+    129,
+    130,
+    140,
+    141,
+    142,
+    147,
+    148,
+    149,
+    150,
+    162,
+    163,
+    164
+   ]
+  },
+  {
+   "name": "two stacked dark-framed grey prints",
+   "description": "Two rectangular framed grey-and-white abstract prints hanging vertically on the stairwell landing wall.",
+   "seen_at": [
+    91,
+    114,
+    129,
+    142,
+    149,
+    164
+   ]
+  },
+  {
+   "name": "tan sofa with navy pillows",
+   "description": "A light tan three-seat sofa with dark navy blue throw pillows facing a wooden coffee table.",
+   "seen_at": [
+    93,
+    94,
+    97,
+    98,
+    150
+   ]
+  },
+  {
+   "name": "TV on white shiplap wall",
+   "description": "A large flat-screen TV mounted on a white horizontal shiplap paneled wall.",
+   "seen_at": [
+    93,
+    94,
+    105,
+    108,
+    109,
+    140
+   ]
+  },
+  {
+   "name": "two blue swivel chairs with New York prints",
+   "description": "Two navy blue velvet swivel armchairs flanking a small round table beneath two large framed 'New York City' and 'Brooklyn' prints.",
+   "seen_at": [
+    94,
+    95,
+    96,
+    99
+   ]
+  },
+  {
+   "name": "grey wingback armchair",
+   "description": "A slate grey tufted wingback armchair with a small round white-topped side table next to the shiplap wall.",
+   "seen_at": [
+    93,
+    108,
+    109
+   ]
+  },
+  {
+   "name": "dark blue wet bar with glass cabinets",
+   "description": "A built-in wet bar with dark navy blue base cabinets, a beverage fridge, white countertop, and tall dark glass-front upper cabinets.",
+   "seen_at": [
+    97,
+    98,
+    100,
+    101,
+    102,
+    106,
+    107,
+    108
+   ]
+  },
+  {
+   "name": "round wood table on cowhide rug",
+   "description": "A round wooden dining table with four grey upholstered chairs sitting on a light-colored cowhide rug.",
+   "seen_at": [
+    98,
+    100,
+    101,
+    102,
+    104,
+    105,
+    107,
+    110
+   ]
+  },
+  {
+   "name": "black-framed sliding glass patio doors",
+   "description": "Large black-framed grid sliding glass doors leading to a covered outdoor patio, with a potted plant in the corner.",
+   "seen_at": [
+    101,
+    102,
+    103,
+    110
+   ]
+  },
+  {
+   "name": "counter-height table with two white stools",
+   "description": "A rustic wooden counter-height bar table with two white cushioned stools placed behind the tan sofa.",
+   "seen_at": [
+    108
+   ]
+  },
+  {
+   "name": "grid of six framed photos",
+   "description": "A 2-by-3 grid of six square dark-framed photographs with white mats on a white wall near the bottom of the carpeted stairs.",
+   "seen_at": [
+    108,
+    109,
+    110,
+    111,
+    139,
+    140,
+    151,
+    162
+   ]
+  },
+  {
+   "name": "white built-in bench with shiplap and cabinets",
+   "description": "A long built-in wooden bench with a white shiplap backrest, coat hooks, a small high window above, and tall white storage cabinets at both ends.",
+   "seen_at": [
+    118,
+    119,
+    122,
+    125,
+    126
+   ]
+  },
+  {
+   "name": "dark sliding barn door",
+   "description": "A tall dark-stained wooden sliding barn door on a black metal track.",
+   "seen_at": [
+    119,
+    122
+   ]
+  },
+  {
+   "name": "closet with wire rod and white wooden shelves",
+   "description": "A small walk-in storage space with a wire hanging shelf on the left wall and built-in white wooden shelves on the right.",
+   "seen_at": [
+    120,
+    121,
+    126
+   ]
+  },
+  {
+   "name": "dark exterior door with six glass panes",
+   "description": "A dark-painted exterior door with a 2-by-3 grid of glass panes in its upper half.",
+   "seen_at": [
+    123,
+    124
+   ]
+  },
+  {
+   "name": "horizontal blue and gold abstract canvas",
+   "description": "A wide unframed abstract canvas painting with dark blue, gold, and white horizontal textured bands.",
+   "seen_at": [
+    123,
+    124
+   ]
+  },
+  {
+   "name": "vanity with round mirror",
+   "description": "A wooden vanity cabinet with a dark countertop and a large round frameless mirror above it, visible through a doorway at the bottom of the carpeted stairs.",
+   "seen_at": [
+    131,
+    162
+   ]
+  },
+  {
+   "name": "unfurnished carpeted space with single window",
+   "description": "An empty room on the lower level with light beige carpet, grey walls, a single black-framed grid window, and a flush ceiling light.",
+   "seen_at": [
+    132,
+    133,
+    136,
+    137,
+    138,
+    139
+   ]
+  },
+  {
+   "name": "pocket doorway to walk-in closet",
+   "description": "A white doorway with a pocket door leading into a narrow, empty carpeted walk-in closet.",
+   "seen_at": [
+    133,
+    134,
+    135
+   ]
+  },
+  {
+   "name": "large unfurnished carpeted room with high windows",
+   "description": "A large empty room with patterned grey carpet, grey walls, two round flush-mount ceiling lights, and a row of three high horizontal windows along one wall.",
+   "seen_at": [
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160
+   ]
+  },
+  {
+   "name": "wooden trestle desk on plaid carpet",
+   "description": "A light-colored wooden desk with turned legs and a trestle base sitting in the center of a room with beige and grey plaid carpet and a black ceiling.",
+   "seen_at": [
+    169,
+    170
+   ]
+  },
+  {
+   "name": "two rustic wood and metal bookshelves",
+   "description": "Two tall open shelving units with wooden shelves, lower drawers, and X-braced metal sides against a white wall.",
+   "seen_at": [
+    169
+   ]
+  },
+  {
+   "name": "dark leather settee",
+   "description": "A small dark brown leather two-seat sofa with throw pillows in the corner beneath two stacked dark-framed prints.",
+   "seen_at": [
+    169,
+    170
+   ]
+  },
+  {
+   "name": "framed floral line drawing on landing",
+   "description": "A large vertical gold-framed minimalist black line drawing of a flower on a white background hanging on the staircase landing wall.",
+   "seen_at": [
+    174,
+    175
+   ]
+  },
+  {
+   "name": "walk-in closet with built-in white shelves and rods",
+   "description": "A spacious carpeted walk-in closet lined with built-in white wooden shelving units, cubbies, and metal hanging rods, with two small corner windows.",
+   "seen_at": [
+    181,
+    182
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "gallery wall of line drawings",
+   "to": "pair of dark-framed square prints",
+   "how": "Walk forward through the white doorway and bear slightly right past the open door to the walk-in shelving area on the left."
+  },
+  {
+   "from": "pair of dark-framed square prints",
+   "to": "gallery wall of line drawings",
+   "how": "With the two dark-framed prints on your right and the walk-in shelving area on your left, walk forward through the doorway and turn left."
+  },
+  {
+   "from": "pair of dark-framed square prints",
+   "to": "empty carpeted area with two windows",
+   "how": "With the two dark-framed prints on your right, turn left through the white doorway and walk straight toward the black-framed grid windows."
+  },
+  {
+   "from": "empty carpeted area with two windows",
+   "to": "dark blue vanity cabinets",
+   "how": "From the window, turn right and walk through the doorway into the narrow wood-floored passage with the dark blue cabinets on the right."
+  },
+  {
+   "from": "dark blue vanity cabinets",
+   "to": "white bed with blue pillows",
+   "how": "Continue straight through the narrow passage past the dark blue cabinets on your right and the blue and brown abstract canvas on your left into the carpeted space with the bed."
+  },
+  {
+   "from": "white bed with blue pillows",
+   "to": "five-drawer wooden chest",
+   "how": "Inside the carpeted space with the bed, walk past the five-drawer wooden chest on your right toward the exit doorway."
+  },
+  {
+   "from": "five-drawer wooden chest",
+   "to": "gallery wall of line drawings",
+   "how": "Walk past the wooden chest on your right and turn left through the doorway into the carpeted passage with the gallery wall on your left and dark blue armchair on your right."
+  },
+  {
+   "from": "gallery wall of line drawings",
+   "to": "dark two-tier console shelf",
+   "how": "With the gallery wall on your left and the dark blue armchair and wall-mounted TV over X-frame console on your right, walk straight down the carpeted passage."
+  },
+  {
+   "from": "dark two-tier console shelf",
+   "to": "gallery wall of line drawings",
+   "how": "From the top of the stairs with the console shelf on your right and large pink and grey abstract painting on your left, walk straight down the carpeted passage past the open area with the dark blue armchair on your right."
+  },
+  {
+   "from": "dark two-tier console shelf",
+   "to": "wooden staircase with white risers",
+   "how": "Pass between the dark two-tier console shelf on the left and the large pink and grey abstract painting on the right to descend the wooden staircase under the tiered crystal chandelier."
+  },
+  {
+   "from": "wooden staircase with white risers",
+   "to": "pair of gold-framed dark abstract prints",
+   "how": "Walk down the two flights of the wooden staircase, turning at the landing beneath the framed floral line drawing, to face the pair of gold-framed dark abstract prints at the bottom."
+  },
+  {
+   "from": "pair of gold-framed dark abstract prints",
+   "to": "wooden staircase with white risers",
+   "how": "From in front of the gold-framed prints at the bottom of the stairs, step onto the wooden staircase with white risers, climb to the landing with the framed floral line drawing, and turn up the second flight."
+  },
+  {
+   "from": "pair of gold-framed dark abstract prints",
+   "to": "dark wood console table with two blue lamps",
+   "how": "From the bottom of the wooden staircase with the gold-framed prints on your left, walk forward into the open wood-floored area with the dark wood console table and blue lamps on your right."
+  },
+  {
+   "from": "dark wood console table with two blue lamps",
+   "to": "stone fireplace with mounted TV",
+   "how": "Pass the dark wood console table on your right and the dining table with white chairs on your left, then turn right and walk between the white sofa and two light grey armchairs toward the stone fireplace and white built-in shelving units."
+  },
+  {
+   "from": "stone fireplace with mounted TV",
+   "to": "dark double glass doors",
+   "how": "Turn around from the fireplace, walk past the white sofa on your left and the round glass coffee table and two light grey armchairs on your right, circle behind the armchairs, and walk past the dining table toward the dark double glass doors."
+  },
+  {
+   "from": "dark double glass doors",
+   "to": "pair of gold-framed dark abstract prints",
+   "how": "With the dark double glass doors on your right and dark wood console table on your left, walk forward to the base of the wooden staircase with the gold-framed dark abstract prints on the wall ahead."
+  },
+  {
+   "from": "gallery wall of line drawings",
+   "to": "tufted bed with two portrait prints",
+   "how": "Walking down the carpeted passage with the gallery wall on your right and before reaching the walk-in shelving area ahead, turn left through the white doorway into the carpeted space with the tufted bed."
+  },
+  {
+   "from": "tufted bed with two portrait prints",
+   "to": "white two-door vanity with rectangular mirror",
+   "how": "With the tufted bed on your left, walk past the light blue three-drawer dresser on your right and step through the doorway into the small tiled area with the white two-door vanity."
+  },
+  {
+   "from": "white two-door vanity with rectangular mirror",
+   "to": "tufted bed with two portrait prints",
+   "how": "Turn around in the small tiled area and walk back out the doorway past the light blue three-drawer dresser on your left and tufted bed on your right."
+  },
+  {
+   "from": "tufted bed with two portrait prints",
+   "to": "pair of dark-framed square prints",
+   "how": "Walk out the doorway past the tufted bed on your right into the short connecting space with the walk-in shelving area on the left and the pair of dark-framed square prints on the right."
+  },
+  {
+   "from": "dark two-tier console shelf",
+   "to": "grey upholstered bed with curved headboard",
+   "how": "At the end of the carpeted passage near the dark two-tier console shelf and top of the stairs, walk through the white doorway into the carpeted space with the grey upholstered bed."
+  },
+  {
+   "from": "grey upholstered bed with curved headboard",
+   "to": "freestanding white oval tub",
+   "how": "Immediately after entering the carpeted space with the grey bed on your right, turn left through the open doorway onto dark grey floor tiles with the wooden-framed double mirror vanity on your left and the freestanding white oval tub and glass-enclosed dark-tiled shower on your right."
+  },
+  {
+   "from": "freestanding white oval tub",
+   "to": "grey upholstered bed with curved headboard",
+   "how": "Turn around from the tub and glass-enclosed shower and walk back out the doorway past the wooden-framed double mirror vanity on your right into the carpeted space with the grey upholstered bed and white nine-drawer dresser."
+  },
+  {
+   "from": "grey upholstered bed with curved headboard",
+   "to": "white front-loading washer and dryer",
+   "how": "Walk out the doorway from the carpeted space with the grey bed and white nine-drawer dresser, and immediately turn left through the adjacent doorway into the narrow space with the white front-loading washer and dryer on the right and utility sink under the grid window ahead."
+  },
+  {
+   "from": "white front-loading washer and dryer",
+   "to": "dark two-tier console shelf",
+   "how": "Back out of the narrow space with the washer, dryer, and utility sink and turn right into the passage beside the dark two-tier console shelf."
+  },
+  {
+   "from": "pair of gold-framed dark abstract prints",
+   "to": "white farmhouse sink under three windows",
+   "how": "From the bottom of the stairs with the gold-framed prints on your left, walk straight forward between the wood-paneled island with three stools on the left and the dining table with white chairs on the right, then turn left between the island and the white farmhouse sink under three windows."
+  },
+  {
+   "from": "white farmhouse sink under three windows",
+   "to": "blue striped settee and armchair",
+   "how": "Walk out from between the farmhouse sink and the wood-paneled island past the stainless steel double-door refrigerator on your left, and continue past the dining table toward the blue striped settee and armchair near the windows."
+  },
+  {
+   "from": "blue striped settee and armchair",
+   "to": "carpeted stairs going down",
+   "how": "Turn around from the blue striped settee, walk past the wood-paneled island on your right and dining table on your left toward the dark double glass doors and wooden staircase, then turn left after passing the pair of gold-framed dark abstract prints to descend the carpeted stairs."
+  },
+  {
+   "from": "carpeted stairs going down",
+   "to": "two blue swivel chairs with New York prints",
+   "how": "Walk down the carpeted stairs past the two stacked dark-framed grey prints on the landing, step into the lower level past the grey wingback armchair and TV on the white shiplap wall on your right and tan sofa with navy pillows on your left, and walk toward the two blue swivel chairs."
+  },
+  {
+   "from": "two blue swivel chairs with New York prints",
+   "to": "black-framed sliding glass patio doors",
+   "how": "Turn around from the two blue swivel chairs, walk past the tan sofa with navy pillows on your left, and continue alongside the dark blue wet bar with glass cabinets on your left and round wood table on a cowhide rug on your right to the black-framed sliding glass patio doors."
+  },
+  {
+   "from": "black-framed sliding glass patio doors",
+   "to": "carpeted stairs going down",
+   "how": "From the sliding glass patio doors, walk back with the dark blue wet bar on your right and the round wood table on a cowhide rug, counter-height table with two white stools, and TV on the white shiplap wall on your left, then turn right past the grid of six framed photos to the base of the carpeted stairs."
+  },
+  {
+   "from": "carpeted stairs going down",
+   "to": "pair of gold-framed dark abstract prints",
+   "how": "Climb the carpeted stairs from the lower level, turning right on the landing with the two stacked dark-framed grey prints on the left, to emerge facing the pair of gold-framed dark abstract prints."
+  },
+  {
+   "from": "pair of gold-framed dark abstract prints",
+   "to": "white built-in bench with shiplap and cabinets",
+   "how": "At the top of the carpeted stairs with the gold-framed prints on your left and the wooden staircase on your right, turn left and walk straight down the narrow wood-floored passage to the white built-in bench with shiplap and cabinets."
+  },
+  {
+   "from": "white built-in bench with shiplap and cabinets",
+   "to": "closet with wire rod and white wooden shelves",
+   "how": "At the white built-in bench, turn right and step through the doorway on your left beside the dark sliding barn door into the closet with a wire rod and white wooden shelves."
+  },
+  {
+   "from": "closet with wire rod and white wooden shelves",
+   "to": "dark exterior door with six glass panes",
+   "how": "Step out of the closet, turn left past the dark sliding barn door on your left and the white built-in bench on your right, and walk to the dark exterior door with six glass panes and the horizontal blue and gold abstract canvas."
+  },
+  {
+   "from": "dark exterior door with six glass panes",
+   "to": "carpeted stairs going down",
+   "how": "Turn around from the exterior door, walk back with the white built-in bench on your left and the closet on your right, turn left down the narrow wood-floored passage toward the pair of gold-framed dark abstract prints, and turn right down the carpeted stairs."
+  },
+  {
+   "from": "carpeted stairs going down",
+   "to": "unfurnished carpeted space with single window",
+   "how": "At the bottom of the carpeted stairs, turn right past the doorway showing the vanity with a round mirror on the right and walk straight through the doorway into the unfurnished carpeted space with a single window and a pocket doorway to a walk-in closet ahead."
+  },
+  {
+   "from": "unfurnished carpeted space with single window",
+   "to": "carpeted stairs going down",
+   "how": "From the pocket doorway to the walk-in closet, turn around, walk across the unfurnished carpeted space out the white doorway toward the grid of six framed photos ahead, and turn right onto the carpeted stairs."
+  },
+  {
+   "from": "carpeted stairs going down",
+   "to": "large unfurnished carpeted room with high windows",
+   "how": "At the bottom of the carpeted stairs, turn right past the grid of six framed photos on your right and walk forward through the doorway into the large unfurnished carpeted room with three high horizontal windows."
+  },
+  {
+   "from": "large unfurnished carpeted room with high windows",
+   "to": "carpeted stairs going down",
+   "how": "Walk out the doorway of the large unfurnished carpeted room into the short wood-floored passage, pass the vanity with a round mirror on your right and the grid of six framed photos on your left, and turn left onto the carpeted stairs."
+  },
+  {
+   "from": "pair of gold-framed dark abstract prints",
+   "to": "wooden trestle desk on plaid carpet",
+   "how": "From the top of the carpeted stairs facing the gold-framed prints, turn right past the wooden staircase with white risers on your right, walk between the dark wood console table with two blue lamps on your left and dark double glass doors on your right down a narrow passage with windows on the right, and enter the doorway to the wooden trestle desk on plaid carpet with two rustic bookshelves on the left and a dark leather settee on the right."
+  },
+  {
+   "from": "wooden trestle desk on plaid carpet",
+   "to": "wooden staircase with white risers",
+   "how": "Walk out the doorway from the plaid-carpeted room with the wooden trestle desk, continue down the narrow passage past the dark double glass doors on your left, and walk straight to the base of the wooden staircase with white risers."
+  },
+  {
+   "from": "freestanding white oval tub",
+   "to": "walk-in closet with built-in white shelves and rods",
+   "how": "Walk straight across the dark grey tiled floor between the wooden-framed double mirror vanity on your left and the freestanding white oval tub and glass-enclosed dark-tiled shower on your right, and enter the doorway ahead into the walk-in closet with built-in white shelves and rods."
+  }
+ ],
+ "walk_summary": [
+  "Start by walking through a doorway past the gallery wall of line drawings on the right and the walk-in shelving area and pair of dark-framed square prints on the left.",
+  "Turn around so the pair of dark-framed square prints is on the right, then turn left through a doorway into the empty carpeted area with two windows.",
+  "Turn right from the window and walk through the narrow passage past the dark blue vanity cabinets on the right and blue and brown abstract canvas on the left toward the white bed with blue pillows.",
+  "Turn around at the doorway, then walk past the five-drawer wooden chest on the right and turn left through a doorway past the gallery wall of line drawings on the left and dark blue armchair on the right.",
+  "Continue straight past the dark two-tier console shelf on the left and large pink and grey abstract painting on the right, descending the wooden staircase with white risers under the tiered crystal chandelier to the pair of gold-framed dark abstract prints.",
+  "Walk forward past the dark wood console table with two blue lamps on the right and dining table with white chairs on the left, turning right to approach the stone fireplace with mounted TV and white built-in shelving units.",
+  "Turn around in front of the fireplace, walk between the white sofa with blue and pink pillows on the left and the round glass coffee table with gold base and two light grey armchairs on the right, and circle behind the armchairs toward the dark double glass doors.",
+  "Pass the dark double glass doors and pair of gold-framed dark abstract prints to climb the wooden staircase with white risers back to the upper level.",
+  "At the top of the stairs, walk past the large pink and grey abstract painting on the left and dark two-tier console shelf, dark blue armchair, wall-mounted TV over X-frame console, and gallery wall of line drawings on the right.",
+  "Turn left through a doorway before the walk-in shelving area to enter the carpeted space with the tufted bed with two portrait prints and light blue three-drawer dresser.",
+  "Walk past the light blue three-drawer dresser into the small tiled area with the white two-door vanity with rectangular mirror, then turn around and exit past the tufted bed.",
+  "Pass the walk-in shelving area on the left and pair of dark-framed square prints on the right, turning left into the carpeted passage past the gallery wall of line drawings on the left and dark blue armchair on the right.",
+  "Pause near the top of the stairs by the large pink and grey abstract painting, tiered crystal chandelier, and dark two-tier console shelf, then enter the doorway to the grey upholstered bed with curved headboard.",
+  "Immediately turn left onto the dark-tiled floor with the wooden-framed double mirror vanity on the left and the freestanding white oval tub and glass-enclosed dark-tiled shower on the right.",
+  "Turn around to step back onto the carpet past the grey upholstered bed and white nine-drawer dresser with mirror, exit into the passage, and turn left into the narrow space with the white front-loading washer and dryer and utility sink under grid window.",
+  "Exit the laundry space, turn right past the dark two-tier console shelf and large pink and grey abstract painting, and descend the wooden staircase with white risers to the pair of gold-framed dark abstract prints.",
+  "Walk straight forward between the wood-paneled island with three stools on the left and the dining table with white chairs on the right, turning left to the white farmhouse sink under three windows.",
+  "Turn around and walk out past the end of the wood-paneled island and the stainless steel double-door refrigerator toward the blue striped settee and armchair.",
+  "Turn around, walk past the dining table, dark double glass doors, wooden staircase with white risers, and pair of gold-framed dark abstract prints, and turn left down the carpeted stairs going down past the two stacked dark-framed grey prints.",
+  "At the bottom of the stairs, walk past the grey wingback armchair and TV on white shiplap wall on the right and tan sofa with navy pillows on the left to the two blue swivel chairs with New York prints.",
+  "Turn around, walk past the tan sofa, and continue between the dark blue wet bar with glass cabinets on the left and round wood table on cowhide rug on the right to the black-framed sliding glass patio doors.",
+  "Turn around and walk back past the dark blue wet bar on the right and the round wood table, counter-height table with two white stools, and TV on white shiplap wall on the left to the grid of six framed photos at the base of the carpeted stairs.",
+  "Climb the carpeted stairs past the two stacked dark-framed grey prints to the pair of gold-framed dark abstract prints, then turn left down the narrow wood-floored passage to the white built-in bench with shiplap and cabinets.",
+  "Turn right at the bench, step past the dark sliding barn door into the closet with wire rod and white wooden shelves on the left, then step out and walk to the dark exterior door with six glass panes and horizontal blue and gold abstract canvas.",
+  "Turn around, walk back past the white built-in bench and closet, turn left down the narrow passage, and turn right to descend the carpeted stairs a second time.",
+  "At the bottom of the stairs, turn right past the doorway to the vanity with round mirror and enter the unfurnished carpeted space with single window, walking up to the pocket doorway to walk-in closet.",
+  "Turn around, exit the unfurnished carpeted space toward the grid of six framed photos, and turn right to climb the carpeted stairs back to the main level.",
+  "Pause at the top of the stairs looking toward the dining table, wood-paneled island, and stone fireplace, then turn around and descend the carpeted stairs a third time.",
+  "Turn right at the bottom of the stairs past the grid of six framed photos and walk into the large unfurnished carpeted room with high windows.",
+  "Turn around inside the large unfurnished room, walk back out past the vanity with round mirror and grid of six framed photos, and turn left to climb the carpeted stairs to the pair of gold-framed dark abstract prints.",
+  "Turn right at the top of the stairs, walk between the dark wood console table with two blue lamps and the dark double glass doors down a narrow passage, and enter the room with the wooden trestle desk on plaid carpet, two rustic wood and metal bookshelves, and dark leather settee.",
+  "Turn around, exit past the dark double glass doors to the wooden staircase with white risers, and climb the stairs past the framed floral line drawing on landing and large pink and grey abstract painting.",
+  "At the top of the stairs, walk toward the white front-loading washer and dryer, turn left into the space with the grey upholstered bed with curved headboard, and immediately turn left again to walk between the wooden-framed double mirror vanity and the freestanding white oval tub and glass-enclosed dark-tiled shower into the walk-in closet with built-in white shelves and rods."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/LT9Jq6dN3Ea/frames",
+  "n_keyframes": 183,
+  "camera": "held at chest height by a person walking"
+ }
+}

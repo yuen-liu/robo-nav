@@ -1,0 +1,425 @@
+{
+ "landmarks": [
+  {
+   "name": "grey sectional sofa",
+   "description": "Large light-grey L-shaped fabric sofa with patterned throw pillows.",
+   "seen_at": [
+    0,
+    1,
+    13,
+    14,
+    15,
+    16,
+    42,
+    43,
+    44,
+    46,
+    47,
+    48,
+    49,
+    50,
+    52
+   ]
+  },
+  {
+   "name": "dark coffee table",
+   "description": "Dark wood rectangular coffee table in front of the grey sectional sofa.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    13
+   ]
+  },
+  {
+   "name": "blanket ladder",
+   "description": "Leaning black ladder on the wall holding a grey and white patterned blanket.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "doorway by blanket ladder",
+   "description": "White-trimmed doorway with a white paneled door opening inward, next to the blanket ladder.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    7,
+    8,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "name": "wall-mounted TV and black stand",
+   "description": "Large flat-screen TV mounted on a light grey wall above a low black media console.",
+   "seen_at": [
+    0,
+    2,
+    3,
+    4,
+    6,
+    12
+   ]
+  },
+  {
+   "name": "subwoofer by window",
+   "description": "Black box-shaped speaker on the floor in the corner beneath a window with white blinds.",
+   "seen_at": [
+    3,
+    4
+   ]
+  },
+  {
+   "name": "white fireplace with wreath",
+   "description": "White mantel and surround with a round wreath above it, flanked by two windows.",
+   "seen_at": [
+    6,
+    12,
+    13,
+    14,
+    42,
+    49
+   ]
+  },
+  {
+   "name": "teal accent wall",
+   "description": "Bright teal painted wall with a world map picture hung in the center.",
+   "seen_at": [
+    5,
+    7,
+    9,
+    11
+   ]
+  },
+  {
+   "name": "desk with gold legs",
+   "description": "White-top desk with gold legs and computer monitors, sitting on a patterned rug in front of the teal wall.",
+   "seen_at": [
+    5,
+    7,
+    9,
+    11
+   ]
+  },
+  {
+   "name": "photo collage wall",
+   "description": "Recessed white wall covered in rows of small hanging photographs.",
+   "seen_at": [
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "name": "white craft table with monitor",
+   "description": "High white table with a turquoise mat, computer monitor, and wooden stool underneath.",
+   "seen_at": [
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "name": "sliding glass door",
+   "description": "Wide white-framed sliding glass door along the brown wall.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    45,
+    46,
+    48,
+    49,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "white counter island",
+   "description": "White island with barstools in front of white cabinets and stainless steel appliances.",
+   "seen_at": [
+    15,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    45,
+    48,
+    52
+   ]
+  },
+  {
+   "name": "staircase with dark treads",
+   "description": "Staircase with white risers, dark wood treads, and a dark wood banister.",
+   "seen_at": [
+    16,
+    17,
+    18,
+    21,
+    23,
+    27,
+    33,
+    37,
+    43,
+    44,
+    47
+   ]
+  },
+  {
+   "name": "long dark wood table with chairs",
+   "description": "Dark wood table surrounded by dark tufted chairs on a light rug.",
+   "seen_at": [
+    16,
+    17,
+    18,
+    20,
+    22,
+    24,
+    25,
+    33,
+    34,
+    35,
+    36,
+    37
+   ]
+  },
+  {
+   "name": "alcove with black door and white door",
+   "description": "Small narrow recess next to the staircase containing a black door on the left and a narrow white door straight ahead.",
+   "seen_at": [
+    17,
+    18,
+    19
+   ]
+  },
+  {
+   "name": "dark front door",
+   "description": "Dark wood door with a small rectangular glass pane near the top.",
+   "seen_at": [
+    20,
+    27,
+    28,
+    32
+   ]
+  },
+  {
+   "name": "black shoe bench",
+   "description": "Low black cubby bench against a light blue-grey wall.",
+   "seen_at": [
+    21,
+    23,
+    24,
+    27
+   ]
+  },
+  {
+   "name": "white wainscoting wall",
+   "description": "Half-white-paneled, half-tan wall with decorative wooden signs.",
+   "seen_at": [
+    22,
+    25,
+    26,
+    33,
+    34,
+    35,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "dark console table",
+   "description": "Ornate dark wood console table with turned legs against the blue-grey wall near the dark front door.",
+   "seen_at": [
+    27,
+    28,
+    31,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "white French door",
+   "description": "White door with multiple glass panes opening into a carpeted area near the dark front door.",
+   "seen_at": [
+    28,
+    29,
+    30,
+    31,
+    32
+   ]
+  },
+  {
+   "name": "sofa with purple and yellow throw",
+   "description": "Dark grey sofa draped with a purple, yellow, and white blanket.",
+   "seen_at": [
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "TV on dark slatted dresser",
+   "description": "Flat-screen TV sitting on a dark wood horizontal-slatted dresser in front of double windows.",
+   "seen_at": [
+    28,
+    29
+   ]
+  },
+  {
+   "name": "white fretwork cabinet",
+   "description": "Small distressed white cabinet with geometric fretwork doors next to a window with grey curtains.",
+   "seen_at": [
+    35,
+    36
+   ]
+  },
+  {
+   "name": "square mirror with autumn wreath",
+   "description": "Large dark-framed square mirror with a round autumn-leaf wreath hung in the center, above white wainscoting.",
+   "seen_at": [
+    36
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "Double-door stainless steel refrigerator surrounded by white cabinets.",
+   "seen_at": [
+    39,
+    40,
+    41
+   ]
+  },
+  {
+   "name": "stainless steel stove",
+   "description": "Stainless steel range with a white towel on the handle and a stainless steel microwave mounted above it.",
+   "seen_at": [
+    40,
+    41
+   ]
+  },
+  {
+   "name": "covered dog crate",
+   "description": "Wire pet crate with a white cover on top and a patterned bed inside, against the brown wall next to the sliding glass door.",
+   "seen_at": [
+    45,
+    46,
+    48,
+    49,
+    50,
+    51
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "grey sectional sofa",
+   "to": "subwoofer by window",
+   "how": "Walk forward keeping the grey sectional sofa and dark coffee table on your left, passing between the doorway by blanket ladder on the left and the wall-mounted TV and black stand on the right."
+  },
+  {
+   "from": "subwoofer by window",
+   "to": "desk with gold legs",
+   "how": "Turn around and walk straight through the doorway by blanket ladder toward the teal accent wall."
+  },
+  {
+   "from": "desk with gold legs",
+   "to": "white craft table with monitor",
+   "how": "With the teal accent wall in front of you, turn right past the doorway by blanket ladder."
+  },
+  {
+   "from": "white craft table with monitor",
+   "to": "white fireplace with wreath",
+   "how": "Turn toward the doorway by blanket ladder, step out onto the carpet, and walk straight with the wall-mounted TV and black stand on your left."
+  },
+  {
+   "from": "white fireplace with wreath",
+   "to": "staircase with dark treads",
+   "how": "Walk forward between the white fireplace with wreath on your left and the grey sectional sofa on your right onto the dark wood floor, then turn right."
+  },
+  {
+   "from": "staircase with dark treads",
+   "to": "alcove with black door and white door",
+   "how": "Walk forward with the staircase with dark treads on your right and the long dark wood table with chairs on your left, then turn right immediately past the stairs."
+  },
+  {
+   "from": "alcove with black door and white door",
+   "to": "long dark wood table with chairs",
+   "how": "Step back out of the alcove and turn right into the dark-wood-floored area beside the staircase with dark treads."
+  },
+  {
+   "from": "long dark wood table with chairs",
+   "to": "white French door",
+   "how": "Walk past the white wainscoting wall on your left toward the black shoe bench and dark front door, then turn left past the dark console table to pass through the white French door."
+  },
+  {
+   "from": "white French door",
+   "to": "sofa with purple and yellow throw",
+   "how": "Step through the white French door onto the beige carpet; the sofa with purple and yellow throw is immediately on your left opposite the TV on dark slatted dresser."
+  },
+  {
+   "from": "sofa with purple and yellow throw",
+   "to": "white French door",
+   "how": "Turn around with the sofa with purple and yellow throw on your right and walk straight to the white French door."
+  },
+  {
+   "from": "white French door",
+   "to": "long dark wood table with chairs",
+   "how": "Step through the white French door onto the dark wood floor and turn right, passing the dark console table on your left."
+  },
+  {
+   "from": "long dark wood table with chairs",
+   "to": "square mirror with autumn wreath",
+   "how": "Walk forward between the white wainscoting wall on your left and the long dark wood table with chairs on your right, then turn right past the white fretwork cabinet."
+  },
+  {
+   "from": "square mirror with autumn wreath",
+   "to": "stainless steel refrigerator",
+   "how": "Turn around to face the staircase with dark treads in the distance, then turn right into the narrow passage beside the white wainscoting wall and walk straight."
+  },
+  {
+   "from": "stainless steel refrigerator",
+   "to": "white counter island",
+   "how": "Turn left around the stainless steel refrigerator and walk between the white counter island on your left and the stainless steel stove on your right."
+  },
+  {
+   "from": "white counter island",
+   "to": "grey sectional sofa",
+   "how": "Walk straight past the white counter island on your left toward the back of the grey sectional sofa."
+  },
+  {
+   "from": "grey sectional sofa",
+   "to": "covered dog crate",
+   "how": "With the back of the grey sectional sofa on your left and the white counter island behind you, walk straight toward the sliding glass door and covered dog crate."
+  }
+ ],
+ "walk_summary": [
+  "Start by the grey sectional sofa and dark coffee table, and walk forward past the blanket ladder and wall-mounted TV and black stand to the subwoofer by window.",
+  "Turn around and walk through the doorway by blanket ladder toward the desk with gold legs and teal accent wall.",
+  "Turn clockwise inside the small space to view the white craft table with monitor and the photo collage wall.",
+  "Exit through the doorway by blanket ladder and walk forward between the white fireplace with wreath and the grey sectional sofa.",
+  "Turn right onto the dark wood floor between the staircase with dark treads and the long dark wood table with chairs, then turn right into the alcove with black door and white door.",
+  "Step out of the alcove and circle around the long dark wood table with chairs near the black shoe bench and white wainscoting wall.",
+  "Walk toward the dark front door and turn left past the dark console table through the white French door to the sofa with purple and yellow throw and TV on dark slatted dresser.",
+  "Turn around, exit through the white French door, and turn right past the dark console table toward the long dark wood table with chairs.",
+  "Walk between the white wainscoting wall and the long dark wood table with chairs, turning right past the white fretwork cabinet to face the square mirror with autumn wreath.",
+  "Turn around and turn right into the passage beside the white wainscoting wall to reach the stainless steel refrigerator.",
+  "Turn left around the stainless steel refrigerator and walk between the stainless steel stove and the white counter island.",
+  "Walk out past the white counter island to the back of the grey sectional sofa, pivot to look around, and then walk along the back of the grey sectional sofa to the covered dog crate and sliding glass door before turning back toward the white counter island."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/zt1RVoi7PcG/frames",
+  "n_keyframes": 53,
+  "camera": "held at chest height by a person walking"
+ }
+}

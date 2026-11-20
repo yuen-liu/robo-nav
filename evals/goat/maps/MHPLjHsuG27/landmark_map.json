@@ -1,0 +1,238 @@
+{
+ "landmarks": [
+  {
+   "name": "white daybed",
+   "description": "White wooden daybed frame with striped blue and green cushions.",
+   "seen_at": [
+    0,
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "name": "tall wooden shelving unit",
+   "description": "Tall light-wood open shelving unit filled with boxes and items.",
+   "seen_at": [
+    0,
+    12,
+    14,
+    15
+   ]
+  },
+  {
+   "name": "dark chest of drawers",
+   "description": "Tall dark-brown chest of drawers next to the tall wooden shelving unit.",
+   "seen_at": [
+    12,
+    15
+   ]
+  },
+  {
+   "name": "window over white radiator",
+   "description": "Window with patterned curtains above a white slatted radiator near the white daybed.",
+   "seen_at": [
+    13
+   ]
+  },
+  {
+   "name": "floor vase with dried stems",
+   "description": "Light-colored floor vase holding dark dried stems on the carpeted floor outside the doorway.",
+   "seen_at": [
+    1,
+    2,
+    11
+   ]
+  },
+  {
+   "name": "white basin and tub",
+   "description": "White pedestal sink and bathtub visible through an open doorway opposite the floor vase.",
+   "seen_at": [
+    11
+   ]
+  },
+  {
+   "name": "small wooden chest",
+   "description": "Low warm-wood chest sitting on the carpeted floor against the white stair banister.",
+   "seen_at": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    10,
+    16
+   ]
+  },
+  {
+   "name": "white stair banister",
+   "description": "White painted wooden spindle railing at the top of the stairs behind the small wooden chest.",
+   "seen_at": [
+    2,
+    3,
+    4,
+    10
+   ]
+  },
+  {
+   "name": "bed with striped cover",
+   "description": "Double bed with a grey headboard and pink and purple striped cover on a wood-pattern floor.",
+   "seen_at": [
+    5,
+    7,
+    8
+   ]
+  },
+  {
+   "name": "tall wooden dresser",
+   "description": "Tall warm-wood chest of drawers opposite the bed with striped cover.",
+   "seen_at": [
+    5
+   ]
+  },
+  {
+   "name": "large wooden wardrobe",
+   "description": "Tall double-door wooden wardrobe in the corner near the bed with striped cover.",
+   "seen_at": [
+    5
+   ]
+  },
+  {
+   "name": "framed bridge artwork",
+   "description": "Horizontal monochrome bridge artwork on the wall opposite the bed with striped cover.",
+   "seen_at": [
+    6,
+    7
+   ]
+  },
+  {
+   "name": "tiled space doorway",
+   "description": "Narrow doorway next to the grey headboard leading into a tiled space.",
+   "seen_at": [
+    7,
+    8
+   ]
+  },
+  {
+   "name": "round wall opening",
+   "description": "Circular recessed opening high on the wall inside the tiled space.",
+   "seen_at": [
+    8
+   ]
+  },
+  {
+   "name": "striped hanging towels",
+   "description": "Pink and red striped towels hanging on the tiled wall.",
+   "seen_at": [
+    9
+   ]
+  },
+  {
+   "name": "small sink cabinet",
+   "description": "Small open-shelf cabinet with a white basin on top in the tiled space.",
+   "seen_at": [
+    9
+   ]
+  },
+  {
+   "name": "long light-wood dresser",
+   "description": "Long low light-wood chest of drawers under decorative bunting.",
+   "seen_at": [
+    17
+   ]
+  },
+  {
+   "name": "window with blue patterned curtains",
+   "description": "Window framed by blue patterned curtains above a small white radiator.",
+   "seen_at": [
+    17
+   ]
+  },
+  {
+   "name": "toy workbench",
+   "description": "Colorful yellow, red, and blue toy workbench near the doorway.",
+   "seen_at": [
+    18
+   ]
+  },
+  {
+   "name": "framed pirate picture",
+   "description": "Framed colorful illustration of a pirate on the wall above the toy workbench.",
+   "seen_at": [
+    18
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "white daybed",
+   "to": "floor vase with dried stems",
+   "how": "Pass the white daybed on your left and tall wooden shelving unit on your right to exit through the doorway onto the carpeted floor where the floor vase with dried stems is on the right."
+  },
+  {
+   "from": "floor vase with dried stems",
+   "to": "white stair banister",
+   "how": "With the floor vase with dried stems on your right, walk straight ahead along the carpeted floor to the small wooden chest and white stair banister."
+  },
+  {
+   "from": "white stair banister",
+   "to": "bed with striped cover",
+   "how": "With the white stair banister and small wooden chest on your right, turn left and walk through the doorway onto the wood-pattern floor toward the bed with striped cover."
+  },
+  {
+   "from": "bed with striped cover",
+   "to": "tiled space doorway",
+   "how": "Turn left past the doorway and framed bridge artwork to face the tiled space doorway next to the grey headboard of the bed with striped cover."
+  },
+  {
+   "from": "tiled space doorway",
+   "to": "small sink cabinet",
+   "how": "Walk through the tiled space doorway with the bed with striped cover on your right, then turn right beneath the round wall opening to face the striped hanging towels and small sink cabinet."
+  },
+  {
+   "from": "small sink cabinet",
+   "to": "white stair banister",
+   "how": "Turn around and walk back out through the tiled space doorway and the outer doorway toward the small wooden chest and white stair banister."
+  },
+  {
+   "from": "white stair banister",
+   "to": "floor vase with dried stems",
+   "how": "Turn right in front of the small wooden chest and white stair banister and walk along the carpeted floor with the floor vase with dried stems on your left and the doorway to the white basin and tub on your right."
+  },
+  {
+   "from": "floor vase with dried stems",
+   "to": "white daybed",
+   "how": "Walk straight ahead from the floor vase with dried stems through the doorway, passing the tall wooden shelving unit and dark chest of drawers on your left, and turn right toward the window over white radiator and white daybed."
+  },
+  {
+   "from": "white daybed",
+   "to": "long light-wood dresser",
+   "how": "Turn right past the white daybed to face the tall wooden shelving unit, walk out through the doorway with the white daybed on your left, turn right toward the small wooden chest, then immediately turn right through the adjacent open doorway to the long light-wood dresser and window with blue patterned curtains."
+  },
+  {
+   "from": "long light-wood dresser",
+   "to": "toy workbench",
+   "how": "From facing the long light-wood dresser and window with blue patterned curtains, turn right to face the toy workbench and framed pirate picture next to the doorway."
+  }
+ ],
+ "walk_summary": [
+  "Start by passing the white daybed on the left and the tall wooden shelving unit on the right to exit through the doorway onto the carpeted floor.",
+  "Walk past the floor vase with dried stems on the right to reach the small wooden chest and white stair banister ahead.",
+  "Turn left at the white stair banister and walk through the doorway toward the bed with striped cover, tall wooden dresser, and large wooden wardrobe.",
+  "Turn left in place past the framed bridge artwork to face the tiled space doorway next to the bed with striped cover.",
+  "Walk through the tiled space doorway beneath the round wall opening and turn right to face the striped hanging towels and small sink cabinet.",
+  "Exit back through the tiled space doorway and outer doorway toward the small wooden chest and white stair banister.",
+  "Turn right onto the carpeted floor, passing the doorway with the white basin and tub on the right and the floor vase with dried stems on the left.",
+  "Walk straight through the doorway past the tall wooden shelving unit and dark chest of drawers on the left, turning right toward the window over white radiator and white daybed.",
+  "Turn right in place past the white daybed to face the tall wooden shelving unit and dark chest of drawers, then exit through the doorway.",
+  "Turn right toward the small wooden chest, then immediately turn right through the open doorway to face the long light-wood dresser and window with blue patterned curtains.",
+  "Turn right inside the doorway to face the toy workbench and framed pirate picture."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/MHPLjHsuG27/frames",
+  "n_keyframes": 19,
+  "camera": "held at chest height by a person walking"
+ }
+}

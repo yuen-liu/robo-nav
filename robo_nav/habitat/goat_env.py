@@ -44,7 +44,7 @@ import numpy as np
 
 logger = logging.getLogger(__name__)
 
-DATA = os.path.expanduser("~/robonav/data")
+DATA = os.path.expanduser(os.environ.get("ROBO_NAV_DATA", "~/robonav/data"))
 SCENE_CONFIG = "scene_datasets/hm3d/hm3d_annotated_basis.scene_dataset_config.json"
 EPISODES = "datasets/goat_bench/hm3d/v1/{split}/content"
 

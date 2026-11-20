@@ -1,0 +1,203 @@
+{
+ "landmarks": [
+  {
+   "name": "leather sofa with throw blanket",
+   "description": "Brown leather sofa with a patterned light-colored blanket draped over the back, below a large rectangular wall cutout.",
+   "seen_at": [
+    0
+   ]
+  },
+  {
+   "name": "second leather sofa",
+   "description": "Large brown leather sofa in the middle of the beige-carpeted floor.",
+   "seen_at": [
+    0,
+    1,
+    3,
+    4,
+    6
+   ]
+  },
+  {
+   "name": "stairwell opening",
+   "description": "Opening in the light-blue wall on the left leading to stairs.",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "closed white door next to stairwell",
+   "description": "White paneled door set in the light-blue wall right next to the stairwell opening.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "closed white door with bag on handle",
+   "description": "White paneled door facing the sofas, with a yellow and black bag hanging from the handle and a small dark board leaning against the frame.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "pink plastic bin",
+   "description": "Bright pink plastic storage tote filled with items, on the floor behind the second leather sofa.",
+   "seen_at": [
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "name": "open doorway with white door",
+   "description": "Open doorway on the left past the closed door with the yellow bag, showing an open white paneled door inside.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "name": "exercise machine",
+   "description": "Black and silver elliptical or treadmill machine positioned behind the second leather sofa near the far doorway.",
+   "seen_at": [
+    3,
+    4,
+    6,
+    7
+   ]
+  },
+  {
+   "name": "far open doorway",
+   "description": "Open white-trimmed doorway at the end of the light-blue walled area, leading into a space with a ceiling fan and dark wood furniture.",
+   "seen_at": [
+    3,
+    4,
+    7,
+    8
+   ]
+  },
+  {
+   "name": "tall dark wood armoire",
+   "description": "Tall dark brown wooden wardrobe cabinet standing immediately to the left inside the far open doorway.",
+   "seen_at": [
+    7,
+    8,
+    11
+   ]
+  },
+  {
+   "name": "dark wood sleigh bed",
+   "description": "Large dark wood bed with a very tall, ornate carved headboard, curved footboard, white bedspread, and light blue pillows.",
+   "seen_at": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "name": "dark wood dresser with TV",
+   "description": "Dark wood chest of drawers with a large flat-screen TV on top, opposite the foot of the sleigh bed.",
+   "seen_at": [
+    8,
+    11,
+    12
+   ]
+  },
+  {
+   "name": "double white doors",
+   "description": "Pair of white paneled doors on the wall to the left of the sleigh bed.",
+   "seen_at": [
+    9,
+    10
+   ]
+  },
+  {
+   "name": "dark wood nightstand",
+   "description": "Small dark wood side table with two drawers standing between the double white doors and the head of the sleigh bed.",
+   "seen_at": [
+    10
+   ]
+  },
+  {
+   "name": "tan armchair and ottoman",
+   "description": "Plush tan upholstered armchair with a matching ottoman in the corner near a window.",
+   "seen_at": [
+    11,
+    12
+   ]
+  },
+  {
+   "name": "window with blinds",
+   "description": "Rectangular window with white horizontal blinds on the wall beyond the sleigh bed.",
+   "seen_at": [
+    11,
+    12,
+    13
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "leather sofa with throw blanket",
+   "to": "closed white door with bag on handle",
+   "how": "Walk straight forward between the leather sofa with throw blanket on your left and the second leather sofa on your right, passing the stairwell opening on your left, toward the corner with the closed white door next to stairwell and the closed white door with bag on handle."
+  },
+  {
+   "from": "closed white door with bag on handle",
+   "to": "open doorway with white door",
+   "how": "Turn right at the closed white doors and walk forward with the closed white door with bag on handle on your left and the pink plastic bin and second leather sofa on your right until you reach the open doorway with white door on your left."
+  },
+  {
+   "from": "open doorway with white door",
+   "to": "far open doorway",
+   "how": "With the open doorway with white door on your left and the exercise machine on your right, walk straight ahead to the far open doorway."
+  },
+  {
+   "from": "far open doorway",
+   "to": "tall dark wood armoire",
+   "how": "Walk straight through the far open doorway; the tall dark wood armoire is immediately inside on your left."
+  },
+  {
+   "from": "tall dark wood armoire",
+   "to": "double white doors",
+   "how": "Just past the tall dark wood armoire, turn left to face the double white doors and dark wood nightstand next to the head of the dark wood sleigh bed."
+  },
+  {
+   "from": "double white doors",
+   "to": "dark wood dresser with TV",
+   "how": "From facing the double white doors and nightstand, turn right and walk forward between the dark wood sleigh bed on your left and the tall dark wood armoire on your right toward the dark wood dresser with TV and the tan armchair and ottoman."
+  },
+  {
+   "from": "dark wood dresser with TV",
+   "to": "dark wood sleigh bed",
+   "how": "Standing between the dark wood dresser with TV and the footboard of the bed, turn left to face the footboard of the dark wood sleigh bed with the window with blinds on your right."
+  }
+ ],
+ "walk_summary": [
+  "Start between the leather sofa with throw blanket on the left and the second leather sofa on the right, and walk straight past the stairwell opening toward the closed white door next to stairwell and the closed white door with bag on handle.",
+  "Turn right at the closed white doors and walk forward between the closed white door with bag on handle on the left and the pink plastic bin and second leather sofa on the right toward the open doorway with white door.",
+  "Briefly turn left toward the open doorway with white door, then turn back right to face the far open doorway with the exercise machine on the right.",
+  "Walk straight through the far open doorway past the tall dark wood armoire on the left.",
+  "Turn left inside the doorway to face the double white doors, dark wood nightstand, and head of the dark wood sleigh bed.",
+  "Turn right and walk forward between the dark wood sleigh bed on the left and the dark wood dresser with TV on the right toward the tan armchair and ottoman.",
+  "Turn left at the end of the bed to face the footboard of the dark wood sleigh bed with the window with blinds on the right."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/TEEsavR23oF/frames",
+  "n_keyframes": 14,
+  "camera": "held at chest height by a person walking"
+ }
+}

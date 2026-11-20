@@ -1,0 +1,87 @@
+{
+ "levels": [
+  3.1,
+  4.52
+ ],
+ "landmarks": {
+  "red armchair": [
+   2
+  ],
+  "dollhouse": [
+   2
+  ],
+  "wooden dresser": [
+   2
+  ],
+  "tree wallpaper wall": [
+   2
+  ],
+  "blue-bordered rug": [
+   2
+  ],
+  "white bed": [
+   2
+  ],
+  "skylight": [
+   2
+  ],
+  "stair railing": [
+   2
+  ],
+  "white paneled door": [
+   2
+  ],
+  "wooden desk with chair": [
+   2
+  ],
+  "small recessed window": [
+   2
+  ],
+  "wooden bookshelf with file box": [
+   2
+  ],
+  "portable AC unit": [
+   2
+  ],
+  "green wall": [
+   2
+  ],
+  "light wooden armoire": [
+   2
+  ],
+  "gray-covered bed": [
+   2
+  ],
+  "purple patterned rug": [
+   2
+  ],
+  "open-top wooden chest": [
+   2
+  ],
+  "carved wooden bench": [
+   2
+  ],
+  "mirror above bench": [
+   2
+  ],
+  "dark wooden trunk": [
+   2
+  ],
+  "large window with radiator": [
+   2
+  ],
+  "dark low bookcase": [
+   2
+  ],
+  "framed picture on yellow wall": [
+   2
+  ],
+  "checkered bench": [
+   1,
+   2
+  ],
+  "narrow wooden shelves": [
+   1
+  ]
+ }
+}

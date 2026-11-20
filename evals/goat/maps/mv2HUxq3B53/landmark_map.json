@@ -1,0 +1,865 @@
+{
+ "landmarks": [
+  {
+   "name": "canopy bed with orange throw",
+   "description": "Large whitewashed wood four-poster canopy bed with white bedding, an orange throw blanket at the foot, and a framed circular textile above the headboard.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    106,
+    107
+   ]
+  },
+  {
+   "name": "slatted wood dresser with TV (near canopy bed with orange throw)",
+   "description": "Light-colored slatted wood dresser with a flat-screen TV on top, opposite the foot of the canopy bed with the orange throw.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "sheer white curtains (near canopy bed with orange throw)",
+   "description": "Full-height sheer white curtains covering windows along two walls near the canopy bed with the orange throw.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "beige armchair with floor lamp",
+   "description": "Beige upholstered armchair with a small rectangular pillow and a floor lamp behind it in the corner near the canopy bed with the orange throw.",
+   "seen_at": [
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "name": "distressed wood double doors",
+   "description": "Pair of distressed light-wood paneled doors with black handles near the canopy bed with the orange throw.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "name": "tall dark-framed mirror (near woven bench)",
+   "description": "Tall vertical mirror with a thick dark wood frame mounted on the end wall of a short passage near the woven bench.",
+   "seen_at": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    109,
+    110
+   ]
+  },
+  {
+   "name": "gray floating vanity (near woven bench)",
+   "description": "Wall-mounted gray wood vanity cabinet with a stone countertop and a large dark-framed mirror above it, adjacent to a frosted glass shower enclosure.",
+   "seen_at": [
+    6,
+    7,
+    10,
+    106,
+    107,
+    108
+   ]
+  },
+  {
+   "name": "frosted glass shower enclosure (near woven bench)",
+   "description": "Frosted glass shower enclosure next to the gray floating vanity near the woven bench.",
+   "seen_at": [
+    106,
+    107,
+    108
+   ]
+  },
+  {
+   "name": "woven bench",
+   "description": "Small rectangular bench with a woven rush seat and wood legs against a white wall under abstract orange artwork.",
+   "seen_at": [
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "name": "three-light black wall sconce",
+   "description": "Black metal branch-like wall sconce with three candle lights mounted on a narrow wall pier between two angled doorways.",
+   "seen_at": [
+    10,
+    106,
+    107
+   ]
+  },
+  {
+   "name": "white washer and dryer",
+   "description": "Side-by-side white top-control washing machine and dryer under a wall shelf inside an alcove with a gray paneled door.",
+   "seen_at": [
+    11,
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "name": "wall-mounted ironing board",
+   "description": "Upright white fabric-covered ironing board mounted on the wall next to the washer and dryer.",
+   "seen_at": [
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "name": "vessel sink vanity with gold-framed mirror and toilet",
+   "description": "Floating gray wood vanity with open shelves holding folded white towels, a round beige stone vessel sink, a thick gold/brass-framed mirror flanked by wall sconces, and a white ceramic toilet next to it.",
+   "seen_at": [
+    16,
+    104,
+    105
+   ]
+  },
+  {
+   "name": "weathered wood credenza with large urn",
+   "description": "Long weathered gray wood cabinet with a large distressed ceramic urn and a stone-textured wall above it.",
+   "seen_at": [
+    16,
+    17,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    81,
+    82,
+    83
+   ]
+  },
+  {
+   "name": "wood console table with round lamp",
+   "description": "Thick-slab wood console table behind a beige sectional sofa, topped with a round stone lamp with a white shade.",
+   "seen_at": [
+    16,
+    17,
+    42,
+    43,
+    44,
+    45,
+    81,
+    82,
+    83
+   ]
+  },
+  {
+   "name": "orange leather barstools at curved counter",
+   "description": "Row of reddish-orange leather high-back barstools with iron legs tucked under a curved counter.",
+   "seen_at": [
+    18,
+    19,
+    25,
+    26,
+    35,
+    36,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "abstract blue painting above cabinetry",
+   "description": "Large white canvas with a horizontal blue brushstroke mounted in a niche above gray cabinets.",
+   "seen_at": [
+    18,
+    19,
+    34,
+    35,
+    54,
+    55,
+    56,
+    57
+   ]
+  },
+  {
+   "name": "stainless steel double refrigerator",
+   "description": "Large built-in stainless steel side-by-side refrigerator with a top grille.",
+   "seen_at": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  {
+   "name": "built-in desk with stone-patterned chair",
+   "description": "Small recessed desk counter with yellow tile top and a low-back chair with a pebble-like pattern.",
+   "seen_at": [
+    20,
+    25,
+    26,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "stainless steel range with tiled backsplash",
+   "description": "Wide stainless steel oven and gas cooktop with red knobs beneath a range hood and reddish mosaic tile backsplash.",
+   "seen_at": [
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "U-shaped wood cabinetry with yellow counters",
+   "description": "Distressed light-wood base and wall cabinets arranged in a U shape with yellow tiled countertops.",
+   "seen_at": [
+    21,
+    22,
+    23,
+    24,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "dark-framed double window over counter",
+   "description": "Two-pane dark-framed casement window above the yellow tile counter.",
+   "seen_at": [
+    24
+   ]
+  },
+  {
+   "name": "rustic wood console table with driftwood mirror",
+   "description": "Heavy rustic wood console table with glass lanterns on top and a large round mirror framed in dark driftwood pieces above it.",
+   "seen_at": [
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+   ]
+  },
+  {
+   "name": "gray paneled double closet doors",
+   "description": "Pair of tall weathered gray paneled doors set into a white wall near the driftwood mirror.",
+   "seen_at": [
+    27,
+    29,
+    30,
+    31,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "large dark green floor urn",
+   "description": "Oversized dark green glazed ceramic jar standing on the tiled floor in a corner next to the dark carved wood door.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "dark carved wood door with sidelights",
+   "description": "Dark brown wood door with carved geometric panels, flanked by two rectangular windows.",
+   "seen_at": [
+    28,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "wood dining table on blue rug",
+   "description": "Rectangular wood dining table surrounded by tan upholstered chairs, set on a bright blue patterned area rug beneath a rectangular hanging light fixture.",
+   "seen_at": [
+    33,
+    34,
+    35,
+    39,
+    40,
+    54,
+    55,
+    56,
+    77,
+    78
+   ]
+  },
+  {
+   "name": "L-shaped beige sectional sofa",
+   "description": "Large light-beige upholstered L-shaped sectional sofa with blue and turquoise throw pillows, facing a square wood coffee table on a blue-and-brown striped rug.",
+   "seen_at": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    50,
+    51,
+    80,
+    81,
+    82
+   ]
+  },
+  {
+   "name": "fireplace with carved dark wood mantel",
+   "description": "White plaster fireplace with a brown metal screen, a thick dark carved wood mantel beam, and an arched niche above holding yellow coral-like decor.",
+   "seen_at": [
+    45,
+    46,
+    47,
+    78,
+    79,
+    80,
+    81,
+    82
+   ]
+  },
+  {
+   "name": "pair of tan armchairs with round side table",
+   "description": "Two tan upholstered armchairs with wood frames and lumbar pillows, separated by a small round fluted wood side table in front of the glass doors.",
+   "seen_at": [
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    78,
+    79,
+    80
+   ]
+  },
+  {
+   "name": "wall-mounted TV over gray cabinet",
+   "description": "Flat-screen TV mounted over a dark-framed mirror and a four-door weathered gray wood cabinet with X-panel detailing.",
+   "seen_at": [
+    47,
+    48,
+    49,
+    50,
+    51,
+    78,
+    79,
+    80
+   ]
+  },
+  {
+   "name": "black-framed glass doors with sheer curtains (along main tiled space)",
+   "description": "Long wall of tall black-framed glass sliding or folding doors overlooking an outdoor tiled area, flanked by sheer gray-beige curtains.",
+   "seen_at": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    77,
+    78,
+    79
+   ]
+  },
+  {
+   "name": "circular sculpture on pedestal",
+   "description": "Round distressed light-colored disc sculpture mounted on a dark narrow floor pedestal next to a doorway.",
+   "seen_at": [
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    76
+   ]
+  },
+  {
+   "name": "pair of tall metallic floor vases under woven wall baskets",
+   "description": "Two large bronze-toned metallic floor jugs standing against a white wall beneath a cluster of round woven baskets.",
+   "seen_at": [
+    57,
+    58,
+    69
+   ]
+  },
+  {
+   "name": "silver-framed mirror above two white floor jars",
+   "description": "Large rectangular mirror with a thick silver-toned frame mounted on the wall above two round textured white ceramic floor jars.",
+   "seen_at": [
+    59,
+    60,
+    67,
+    68,
+    76
+   ]
+  },
+  {
+   "name": "slatted wood dresser with TV (near bed with dark carved arch headboard)",
+   "description": "Light-colored slatted wood dresser with a flat-screen TV on top, opposite the bed with the dark carved arch headboard.",
+   "seen_at": [
+    60,
+    62,
+    63,
+    64,
+    67
+   ]
+  },
+  {
+   "name": "bed with dark carved arch headboard",
+   "description": "Large bed with white linens, a striped throw at the foot, a white upholstered bench at the end, and a tall dark-gray carved arched headboard flanked by a two-drawer nightstand and a wrought-iron wall sconce.",
+   "seen_at": [
+    61,
+    62,
+    63,
+    64,
+    68
+   ]
+  },
+  {
+   "name": "black-framed glass doors with sheer curtains (near bed with dark carved arch headboard)",
+   "description": "Black-framed glass doors with sheer curtains opposite the doorway near the bed with the dark carved arch headboard.",
+   "seen_at": [
+    62,
+    63,
+    64,
+    65,
+    66
+   ]
+  },
+  {
+   "name": "built-in bathtub with fish wall sculpture",
+   "description": "White oval drop-in bathtub set in a beige tiled deck with a mosaic border, beneath a dark metal wall sculpture of a school of fish.",
+   "seen_at": [
+    70,
+    71,
+    74,
+    75
+   ]
+  },
+  {
+   "name": "gray floating vanity (near fish wall sculpture)",
+   "description": "Wall-mounted gray wood vanity cabinet opposite the built-in bathtub with the fish wall sculpture.",
+   "seen_at": [
+    70,
+    72,
+    73,
+    74
+   ]
+  },
+  {
+   "name": "frosted glass shower enclosure (near fish wall sculpture)",
+   "description": "Curved half-wall topped with frosted glass panels in the corner of the tiled space next to the gray vanity and built-in bathtub.",
+   "seen_at": [
+    70,
+    72,
+    74
+   ]
+  },
+  {
+   "name": "tall dark-framed mirror (near fish wall sculpture)",
+   "description": "Tall dark-framed mirror mounted on the wall outside the doorway to the built-in bathtub with the fish wall sculpture.",
+   "seen_at": [
+    71,
+    75
+   ]
+  },
+  {
+   "name": "pair of dark woven floor vases",
+   "description": "Two tall dark brown woven bottle-shaped floor vases standing in a corner outside a doorway near the X-base console.",
+   "seen_at": [
+    84,
+    96,
+    97
+   ]
+  },
+  {
+   "name": "abstract orange painting over X-base console",
+   "description": "Large square canvas with horizontal pink, orange, and white bands hanging above a narrow wood console table with black X-shaped legs.",
+   "seen_at": [
+    84,
+    85,
+    92,
+    93,
+    94,
+    102,
+    103
+   ]
+  },
+  {
+   "name": "dark four-poster canopy bed with rust throw",
+   "description": "Dark wood four-poster canopy bed with white linens, a rust-orange patterned throw at the foot, and a woven bench in front.",
+   "seen_at": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92
+   ]
+  },
+  {
+   "name": "dark wood dresser with TV",
+   "description": "Dark brown textured wood six-drawer dresser with a flat-screen TV on top, opposite the dark four-poster bed.",
+   "seen_at": [
+    85,
+    86,
+    87,
+    88,
+    91,
+    92
+   ]
+  },
+  {
+   "name": "black-framed glass doors with white curtains (near dark four-poster canopy bed)",
+   "description": "Three-panel black-framed glass door unit flanked by sheer white and beige curtains near the dark four-poster bed.",
+   "seen_at": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90
+   ]
+  },
+  {
+   "name": "striped armchair with floor lamp",
+   "description": "Rust-and-tan striped upholstered armchair with a dark wood frame and a white-shaded floor lamp behind it.",
+   "seen_at": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90
+   ]
+  },
+  {
+   "name": "white textured square wall art",
+   "description": "Large square white relief artwork with a rough, shell- or stone-like texture mounted on the white wall between the doorway and dark dresser.",
+   "seen_at": [
+    91,
+    92
+   ]
+  },
+  {
+   "name": "metal clothes rack and red luggage stand",
+   "description": "Wall-mounted metal closet rod/shelf high on the wall with a folding red-and-black strapped luggage rack on the floor below.",
+   "seen_at": [
+    94,
+    95
+   ]
+  },
+  {
+   "name": "double gray vanity with stone counter and two mirrors",
+   "description": "Long wall-mounted distressed gray vanity with open lower shelves, a thick beige stone countertop, a large horizontal dark-framed mirror, and a narrower vertical mirror over a makeup counter.",
+   "seen_at": [
+    97,
+    98,
+    100,
+    101
+   ]
+  },
+  {
+   "name": "frosted glass shower enclosure (near corner tiled bathtub)",
+   "description": "Frosted glass shower enclosure next to the corner tiled bathtub and double gray vanity.",
+   "seen_at": [
+    97,
+    98,
+    99
+   ]
+  },
+  {
+   "name": "corner tiled bathtub under two windows",
+   "description": "Built-in bathtub set in a beige square-tiled surround in the corner beneath two dark-framed windows with sheer roller shades.",
+   "seen_at": [
+    98,
+    99
+   ]
+  },
+  {
+   "name": "white toilet (near double gray vanity)",
+   "description": "White ceramic toilet in an alcove opposite the double gray vanity.",
+   "seen_at": [
+    100,
+    101
+   ]
+  },
+  {
+   "name": "tall dark-framed mirror (near four-poster bed with blue throw)",
+   "description": "Tall dark-framed mirror in the short passage leading to the four-poster bed with the blue throw.",
+   "seen_at": [
+    111
+   ]
+  },
+  {
+   "name": "carved wood dresser with TV",
+   "description": "Light-wood dresser with ornate geometric fretwork panels on the drawers and a flat-screen TV on top.",
+   "seen_at": [
+    112,
+    113,
+    114,
+    115,
+    116
+   ]
+  },
+  {
+   "name": "four-poster bed with blue throw and round mirror",
+   "description": "Light-wood four-poster bed with white linens, a blue throw blanket at the foot, blue patterned pillows, and a round woven-frame mirror above the headboard, standing on a blue area rug.",
+   "seen_at": [
+    113,
+    114,
+    117,
+    118
+   ]
+  },
+  {
+   "name": "sheer white curtains (near four-poster bed with blue throw)",
+   "description": "Full-height sheer white curtains along the walls near the four-poster bed with the blue throw.",
+   "seen_at": [
+    112,
+    113,
+    114,
+    116,
+    117,
+    118
+   ]
+  },
+  {
+   "name": "wicker armchair with floor lamp",
+   "description": "Brown woven wicker armchair with a white seat cushion, a blue-striped pillow, a round woven ottoman, and a floor lamp in the corner next to sheer white curtains.",
+   "seen_at": [
+    117
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "canopy bed with orange throw",
+   "to": "sheer white curtains (near canopy bed with orange throw)",
+   "how": "Walk between the foot of the canopy bed on your left and the slatted wood dresser with TV on your right toward the sheer white curtains ahead."
+  },
+  {
+   "from": "sheer white curtains (near canopy bed with orange throw)",
+   "to": "distressed wood double doors",
+   "how": "Turn around, walk past the foot of the canopy bed on your right toward the beige armchair with floor lamp ahead on the left, then curve right to face the distressed wood double doors."
+  },
+  {
+   "from": "distressed wood double doors",
+   "to": "gray floating vanity (near woven bench)",
+   "how": "Turn right to pass between the distressed wood double doors on your left and the canopy bed on your right, go through the doorway past the woven bench on your right and tall dark-framed mirror ahead, and turn left to the gray floating vanity."
+  },
+  {
+   "from": "gray floating vanity (near woven bench)",
+   "to": "three-light black wall sconce",
+   "how": "Turn around and walk out past the woven bench on your left and the tall dark-framed mirror on your right, then turn left into the tiled passage facing the three-light black wall sconce between the angled doorways."
+  },
+  {
+   "from": "three-light black wall sconce",
+   "to": "gray floating vanity (near woven bench)",
+   "how": "Go through the doorway to the left of the three-light black wall sconce, passing the tall dark-framed mirror on your right, and step into the space with the gray floating vanity on your left and frosted glass shower enclosure on your right."
+  },
+  {
+   "from": "three-light black wall sconce",
+   "to": "white washer and dryer",
+   "how": "Turn around to face down the tiled passage away from the angled doorways, walk forward, and turn left through the open gray paneled door into the alcove with the white washer and dryer and wall-mounted ironing board."
+  },
+  {
+   "from": "white washer and dryer",
+   "to": "weathered wood credenza with large urn",
+   "how": "Step out of the washer and dryer alcove into the tiled passage, turn left, walk past the doorway with the vessel sink vanity and toilet on your left, and go straight to the weathered wood credenza with the large urn on your right and the wood console table with the round lamp on your left."
+  },
+  {
+   "from": "weathered wood credenza with large urn",
+   "to": "orange leather barstools at curved counter",
+   "how": "Pass between the weathered wood credenza on your right and the wood console table with round lamp on your left, then turn left and walk past the back of the L-shaped beige sectional sofa to the orange leather barstools at the curved counter."
+  },
+  {
+   "from": "orange leather barstools at curved counter",
+   "to": "weathered wood credenza with large urn",
+   "how": "With the orange leather barstools behind you, walk straight along the back of the L-shaped beige sectional sofa on your left toward the wood console table with round lamp and the weathered wood credenza with large urn ahead."
+  },
+  {
+   "from": "orange leather barstools at curved counter",
+   "to": "stainless steel double refrigerator",
+   "how": "Follow the curved counter with the orange leather barstools on your left, then turn left around the end of the counter between the counter and the built-in desk with the stone-patterned chair on your right to reach the stainless steel double refrigerator."
+  },
+  {
+   "from": "stainless steel double refrigerator",
+   "to": "U-shaped wood cabinetry with yellow counters",
+   "how": "Walk past the stainless steel double refrigerator into the center of the U-shaped wood cabinetry with yellow counters, stainless steel range with tiled backsplash, and dark-framed double window."
+  },
+  {
+   "from": "U-shaped wood cabinetry with yellow counters",
+   "to": "orange leather barstools at curved counter",
+   "how": "Walk past the stainless steel double refrigerator and built-in desk with stone-patterned chair on your left, turning right around the end of the curved counter with the orange leather barstools."
+  },
+  {
+   "from": "orange leather barstools at curved counter",
+   "to": "rustic wood console table with driftwood mirror",
+   "how": "Walk past the orange leather barstools on your right and the abstract blue painting on your left, then turn left through the wide opening past the rustic wood console table with the driftwood mirror on your right."
+  },
+  {
+   "from": "rustic wood console table with driftwood mirror",
+   "to": "dark carved wood door with sidelights",
+   "how": "Walk past the rustic wood console table with driftwood mirror and gray paneled double closet doors on your right to the large dark green floor urn ahead and the dark carved wood door with sidelights on your left."
+  },
+  {
+   "from": "dark carved wood door with sidelights",
+   "to": "orange leather barstools at curved counter",
+   "how": "Turn around from the dark carved wood door and large dark green floor urn, walk past the gray paneled double closet doors and rustic wood console table with driftwood mirror on your left, go through the wide opening with the wood dining table on blue rug ahead on your left, and turn right to the orange leather barstools."
+  },
+  {
+   "from": "weathered wood credenza with large urn",
+   "to": "wall-mounted TV over gray cabinet",
+   "how": "At the wood console table with round lamp, turn left and walk between the fireplace with carved dark wood mantel on your right and the L-shaped beige sectional sofa and pair of tan armchairs on your left toward the wall-mounted TV over the gray cabinet and the black-framed glass doors ahead."
+  },
+  {
+   "from": "wall-mounted TV over gray cabinet",
+   "to": "weathered wood credenza with large urn",
+   "how": "With the black-framed glass doors behind you and the wall-mounted TV over gray cabinet on your left, walk forward between the fireplace with carved dark wood mantel on your left and the pair of tan armchairs and L-shaped beige sectional sofa on your right to reach the weathered wood credenza with large urn on your left."
+  },
+  {
+   "from": "wall-mounted TV over gray cabinet",
+   "to": "circular sculpture on pedestal",
+   "how": "Turn to put the wall-mounted TV over gray cabinet behind you, and walk straight along the black-framed glass doors with sheer curtains on your right, passing the pair of tan armchairs and the wood dining table on the blue rug on your left, to the open doorway beside the circular sculpture on the pedestal."
+  },
+  {
+   "from": "circular sculpture on pedestal",
+   "to": "wall-mounted TV over gray cabinet",
+   "how": "Pass through the doorway beside the circular sculpture on the pedestal and walk straight along the black-framed glass doors with sheer curtains on your left, passing the wood dining table on the blue rug and the pair of tan armchairs on your right, to the wall-mounted TV over the gray cabinet ahead."
+  },
+  {
+   "from": "circular sculpture on pedestal",
+   "to": "silver-framed mirror above two white floor jars",
+   "how": "Step through the open doorway beside the circular sculpture on the pedestal toward the pair of tall metallic floor vases under woven wall baskets, then turn right to pass the silver-framed mirror above two white floor jars on your right."
+  },
+  {
+   "from": "silver-framed mirror above two white floor jars",
+   "to": "black-framed glass doors with sheer curtains (near bed with dark carved arch headboard)",
+   "how": "Walk past the silver-framed mirror above two white floor jars on your right, turn left into the opening, and walk straight between the bed with the dark carved arch headboard on your left and the slatted wood dresser with TV on your right toward the black-framed glass doors ahead."
+  },
+  {
+   "from": "black-framed glass doors with sheer curtains (near bed with dark carved arch headboard)",
+   "to": "built-in bathtub with fish wall sculpture",
+   "how": "Turn around at the black-framed glass doors, walk between the slatted wood dresser with TV on your left and the bed with the dark carved arch headboard on your right, pass the silver-framed mirror above two white floor jars on your left, turn left toward the pair of tall metallic floor vases, and turn right through the open gray paneled door past the built-in bathtub with the fish wall sculpture on your right."
+  },
+  {
+   "from": "built-in bathtub with fish wall sculpture",
+   "to": "frosted glass shower enclosure (near fish wall sculpture)",
+   "how": "Walk past the built-in bathtub with the fish wall sculpture on your right to the gray floating vanity on your left and the frosted glass shower enclosure ahead on your right."
+  },
+  {
+   "from": "frosted glass shower enclosure (near fish wall sculpture)",
+   "to": "circular sculpture on pedestal",
+   "how": "Turn around and walk past the gray floating vanity on your right and the built-in bathtub with the fish wall sculpture on your left, exit through the doorway toward the tall dark-framed mirror ahead, turn left past the silver-framed mirror above two white floor jars on your left, and go through the doorway next to the circular sculpture on the pedestal."
+  },
+  {
+   "from": "weathered wood credenza with large urn",
+   "to": "abstract orange painting over X-base console",
+   "how": "Walk past the weathered wood credenza with large urn on your left and the wood console table with round lamp on your right into the tiled passage, then turn left through the open gray paneled doorway with the pair of dark woven floor vases on your left and the abstract orange painting over the X-base console on your right."
+  },
+  {
+   "from": "abstract orange painting over X-base console",
+   "to": "black-framed glass doors with white curtains (near dark four-poster canopy bed)",
+   "how": "Turn left past the abstract orange painting over the X-base console and walk between the dark wood dresser with TV on your left and the dark four-poster canopy bed with rust throw on your right toward the black-framed glass doors with white curtains and the striped armchair with floor lamp ahead."
+  },
+  {
+   "from": "black-framed glass doors with white curtains (near dark four-poster canopy bed)",
+   "to": "metal clothes rack and red luggage stand",
+   "how": "Turn around and walk between the dark four-poster canopy bed on your left and the dark wood dresser with TV and white textured square wall art on your right, pass the abstract orange painting over the X-base console on your right, and continue straight into the small alcove with the metal clothes rack and red luggage stand."
+  },
+  {
+   "from": "metal clothes rack and red luggage stand",
+   "to": "corner tiled bathtub under two windows",
+   "how": "Turn around to exit the alcove, walk past the pair of dark woven floor vases on your left and open gray paneled door on your right, and continue past the double gray vanity with stone counter and two mirrors on your left to the frosted glass shower enclosure ahead and the corner tiled bathtub under two windows on your right."
+  },
+  {
+   "from": "corner tiled bathtub under two windows",
+   "to": "vessel sink vanity with gold-framed mirror and toilet",
+   "how": "Turn around and walk past the double gray vanity on your right and the white toilet alcove on your left, turn right past the abstract orange painting over the X-base console on your left into the main tiled passage, and turn left into the doorway with the vessel sink vanity with gold-framed mirror ahead and white toilet on the right."
+  },
+  {
+   "from": "vessel sink vanity with gold-framed mirror and toilet",
+   "to": "three-light black wall sconce",
+   "how": "Step out of the doorway with the vessel sink vanity and turn left to walk down the tiled passage toward the three-light black wall sconce between the angled doorways."
+  },
+  {
+   "from": "gray floating vanity (near woven bench)",
+   "to": "four-poster bed with blue throw and round mirror",
+   "how": "Turn right and walk out past the tall dark-framed mirror on your left, pass through the doorway into the main tiled passage and immediately go through the adjacent angled doorway on your right, turn right past another tall dark-framed mirror ahead, and walk through the doorway between the carved wood dresser with TV on your left and the four-poster bed with blue throw and round mirror on your right."
+  },
+  {
+   "from": "four-poster bed with blue throw and round mirror",
+   "to": "wicker armchair with floor lamp",
+   "how": "Walk past the carved wood dresser with TV on your right toward the sheer white curtains and the wicker armchair with floor lamp in the corner ahead on your left, then turn right to face the foot of the four-poster bed with the blue throw."
+  }
+ ],
+ "walk_summary": [
+  "Start between the canopy bed with the orange throw on the left and the slatted wood dresser with TV on the right, walking toward the sheer white curtains ahead.",
+  "Turn around and walk past the foot of the canopy bed toward the beige armchair with floor lamp, then curve right to face the distressed wood double doors.",
+  "Turn right to pass between the distressed wood double doors and the canopy bed, go through the doorway past the woven bench and tall dark-framed mirror, and turn left to the gray floating vanity.",
+  "Turn around to exit past the woven bench and tall dark-framed mirror into the tiled passage by the three-light black wall sconce.",
+  "Walk down the tiled passage and turn left through an open gray paneled door into the alcove with the white washer and dryer and wall-mounted ironing board.",
+  "Step back into the tiled passage, turn left past the doorway with the white toilet, and walk between the weathered wood credenza with the large urn on the right and the wood console table with the round lamp on the left.",
+  "Turn left and walk past the orange leather barstools at the curved counter and the abstract blue painting above cabinetry, then turn left around the counter past the built-in desk with the stone-patterned chair and the stainless steel double refrigerator.",
+  "Step into the U-shaped wood cabinetry with yellow counters to view the stainless steel range with tiled backsplash and dark-framed double window, then walk back out past the stainless steel double refrigerator, built-in desk, and orange leather barstools.",
+  "Turn left into the alcove with the rustic wood console table with driftwood mirror and gray paneled double closet doors, walking up to the large dark green floor urn and dark carved wood door with sidelights.",
+  "Turn around, walk back past the gray paneled double closet doors and rustic wood console table with driftwood mirror, pass the wood dining table on the blue rug on the left, and turn right toward the orange leather barstools.",
+  "Turn around near the orange leather barstools and walk along the back of the L-shaped beige sectional sofa toward the wood console table with round lamp and the weathered wood credenza with large urn.",
+  "Turn left at the wood console table with round lamp and walk between the fireplace with the carved dark wood mantel on the right and the L-shaped beige sectional sofa and pair of tan armchairs on the left toward the wall-mounted TV over the gray cabinet and the black-framed glass doors.",
+  "Turn around near the wall-mounted TV over the gray cabinet and walk straight along the black-framed glass doors on the right, passing the pair of tan armchairs and the wood dining table on the blue rug on the left, to the open doorway beside the circular sculpture on the pedestal.",
+  "Pass through the doorway toward the pair of tall metallic floor vases under woven wall baskets, turn right past the silver-framed mirror above two white floor jars, and turn left to walk between the bed with the dark carved arch headboard on the left and the slatted wood dresser with TV on the right to the black-framed glass doors.",
+  "Turn around at the black-framed glass doors, walk back past the slatted wood dresser, bed with the dark carved arch headboard, and silver-framed mirror above two white floor jars, turn left toward the tall metallic floor vases, and turn right through the open gray paneled door past the built-in bathtub with the fish wall sculpture to the gray floating vanity and frosted glass shower enclosure.",
+  "Turn around, exit past the built-in bathtub with the fish wall sculpture toward the tall dark-framed mirror, turn left past the silver-framed mirror above two white floor jars, and pass through the doorway beside the circular sculpture on the pedestal.",
+  "Walk straight along the black-framed glass doors on the left, passing the wood dining table on the blue rug and the pair of tan armchairs on the right, to the wall-mounted TV over the gray cabinet.",
+  "Turn right and walk between the fireplace with the carved dark wood mantel and the L-shaped beige sectional sofa, then pass between the weathered wood credenza with the large urn and the wood console table with the round lamp into the tiled passage.",
+  "Turn left through the open gray paneled door past the pair of dark woven floor vases and the abstract orange painting over the X-base console, then walk between the dark wood dresser with TV on the left and the dark four-poster canopy bed with rust throw on the right to the black-framed glass doors with white curtains and striped armchair with floor lamp.",
+  "Turn around, walk back between the dark four-poster canopy bed and the dark wood dresser with TV and white textured square wall art, pass the abstract orange painting over the X-base console, and walk straight into the alcove with the metal clothes rack and red luggage stand.",
+  "Turn around out of the alcove, pass the pair of dark woven floor vases, and walk past the double gray vanity with stone counter and two mirrors on the left to the frosted glass shower enclosure and the corner tiled bathtub under two windows.",
+  "Turn around, walk past the double gray vanity on the right and white toilet on the left, turn right past the abstract orange painting over the X-base console into the main tiled passage, and turn left to look at the vessel sink vanity with gold-framed mirror and white toilet.",
+  "Exit the vessel sink vanity doorway, turn left down the tiled passage, go through the left angled doorway past the three-light black wall sconce, and step into the space with the gray floating vanity and frosted glass shower enclosure.",
+  "Turn around to exit past the tall dark-framed mirror into the tiled passage, turn right through the adjacent angled doorway past another tall dark-framed mirror, and walk between the carved wood dresser with TV on the left and the four-poster bed with blue throw and round mirror on the right to the sheer white curtains and wicker armchair with floor lamp in the corner."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/mv2HUxq3B53/frames",
+  "n_keyframes": 119,
+  "camera": "held at chest height by a person walking"
+ }
+}

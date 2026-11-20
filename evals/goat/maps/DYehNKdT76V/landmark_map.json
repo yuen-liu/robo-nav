@@ -1,0 +1,283 @@
+{
+ "landmarks": [
+  {
+   "name": "dark-tiled doorway",
+   "description": "Doorway with a dark frame leading from a wood-floored area into a dark brown tiled space.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "name": "white toilet",
+   "description": "Wall-mounted white ceramic toilet against a dark brown tiled wall, next to a bidet.",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "grey floating vanity",
+   "description": "Boxy grey wall-mounted sink cabinet against a dark tiled wall.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "glass partition",
+   "description": "Floor-to-ceiling tinted glass wall separating the dark tiled floor from the wood floor.",
+   "seen_at": [
+    1,
+    2
+   ]
+  },
+  {
+   "name": "striped bed",
+   "description": "Large bed with a grey and white striped comforter and a white headboard.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "name": "sheer curtains",
+   "description": "Floor-to-ceiling white sheer curtains covering a window wall near the striped bed.",
+   "seen_at": [
+    3,
+    4,
+    6,
+    7
+   ]
+  },
+  {
+   "name": "framed geometric art",
+   "description": "Black-framed picture with a dark geometric pattern hanging on the white wall above the striped bed.",
+   "seen_at": [
+    5,
+    7
+   ]
+  },
+  {
+   "name": "glass stair railing",
+   "description": "Frameless glass balustrade along a stairwell opening.",
+   "seen_at": [
+    10,
+    11,
+    12,
+    23,
+    24,
+    25,
+    26
+   ]
+  },
+  {
+   "name": "half-wall cutout",
+   "description": "Large rectangular opening in the white wall opposite the glass stair railing.",
+   "seen_at": [
+    11,
+    12,
+    23,
+    24,
+    26
+   ]
+  },
+  {
+   "name": "wavy patterned wall",
+   "description": "Freestanding partition wall covered in dark grey and blue vertical wavy wallpaper.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    20,
+    21,
+    22
+   ]
+  },
+  {
+   "name": "black armchair",
+   "description": "Low, rounded black upholstered chair in the corner near the curtains.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "name": "wall-mounted TV",
+   "description": "Small flat-screen television mounted high on the white wall above the black armchair.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "name": "white cylindrical pillar",
+   "description": "Floor-to-ceiling round white column standing near the corner sheer curtains.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "name": "white bed",
+   "description": "Large bed with a white coverlet and beige pillows, backed by a dark patterned wall.",
+   "seen_at": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "corner sheer curtains",
+   "description": "Floor-to-ceiling white sheer curtains wrapping around two walls near the white pillar.",
+   "seen_at": [
+    16,
+    17,
+    18
+   ]
+  },
+  {
+   "name": "dark door",
+   "description": "Tall dark-colored door with a silver handle at the end of the wood-floored passage.",
+   "seen_at": [
+    19,
+    20,
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "wooden stairs",
+   "description": "Staircase with wooden treads leading down alongside a white wall and glass railing.",
+   "seen_at": [
+    25
+   ]
+  },
+  {
+   "name": "double sink vanity",
+   "description": "Long grey floating cabinet with two white vessel sinks, a vase of red flowers, and a lit mirror above.",
+   "seen_at": [
+    27,
+    28
+   ]
+  },
+  {
+   "name": "glass shower enclosure",
+   "description": "Clear glass partition enclosing a dark brown tiled shower area with chrome fixtures.",
+   "seen_at": [
+    27,
+    28,
+    29
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "dark-tiled doorway",
+   "to": "grey floating vanity",
+   "how": "Step through the dark-tiled doorway and turn right, passing the white toilet on your left to face the grey floating vanity."
+  },
+  {
+   "from": "grey floating vanity",
+   "to": "striped bed",
+   "how": "Turn left past the glass partition and walk forward along the wood floor with the striped bed on your right."
+  },
+  {
+   "from": "striped bed",
+   "to": "sheer curtains",
+   "how": "Walk past the corner of the striped bed toward the sheer curtains ahead, with the framed geometric art on the wall above the bed."
+  },
+  {
+   "from": "sheer curtains",
+   "to": "dark-tiled doorway",
+   "how": "Turn right away from the sheer curtains and walk forward with the striped bed on your left toward the dark-tiled doorway ahead."
+  },
+  {
+   "from": "dark-tiled doorway",
+   "to": "glass stair railing",
+   "how": "Before reaching the dark-tiled doorway, turn right onto the wood-floored passage with the glass stair railing on your right and the half-wall cutout on your left."
+  },
+  {
+   "from": "glass stair railing",
+   "to": "wavy patterned wall",
+   "how": "Continue straight past the glass stair railing and half-wall cutout until the wavy patterned wall appears on your left."
+  },
+  {
+   "from": "wavy patterned wall",
+   "to": "black armchair",
+   "how": "Walk past the wavy patterned wall on your left toward the black armchair and wall-mounted TV ahead."
+  },
+  {
+   "from": "black armchair",
+   "to": "white cylindrical pillar",
+   "how": "Before reaching the black armchair, bear left toward the white cylindrical pillar and corner sheer curtains."
+  },
+  {
+   "from": "white cylindrical pillar",
+   "to": "white bed",
+   "how": "Turn left past the white cylindrical pillar and corner sheer curtains, keeping the white bed on your left, then turn around its corner so the white bed is on your right."
+  },
+  {
+   "from": "white bed",
+   "to": "wavy patterned wall",
+   "how": "Walk forward along the side of the white bed on your right toward the edge of the wavy patterned wall ahead."
+  },
+  {
+   "from": "wavy patterned wall",
+   "to": "dark door",
+   "how": "Weave right and then left around the wavy patterned wall, keeping it on your left as you approach the dark door ahead."
+  },
+  {
+   "from": "dark door",
+   "to": "glass stair railing",
+   "how": "Turn left in front of the dark door and walk forward along the wood-floored passage with the glass stair railing and wooden stairs on your right and the half-wall cutout on your left."
+  },
+  {
+   "from": "glass stair railing",
+   "to": "double sink vanity",
+   "how": "Continue straight past the end of the glass stair railing through the dark-tiled doorway into the dark-tiled space with the double sink vanity on your right."
+  },
+  {
+   "from": "double sink vanity",
+   "to": "glass shower enclosure",
+   "how": "Walk straight past the double sink vanity on your right to the glass shower enclosure directly ahead."
+  }
+ ],
+ "walk_summary": [
+  "Step through the dark-tiled doorway and look right at the white toilet and grey floating vanity.",
+  "Turn left past the glass partition and walk along the wood floor beside the striped bed and framed geometric art toward the sheer curtains.",
+  "Turn around at the sheer curtains and walk back past the striped bed on your left toward the dark-tiled doorway.",
+  "Turn right before the dark-tiled doorway and walk along the wood-floored passage between the half-wall cutout on the left and the glass stair railing on the right.",
+  "Pass the wavy patterned wall on the left and walk toward the black armchair and wall-mounted TV.",
+  "Turn left past the white cylindrical pillar and corner sheer curtains to walk around the white bed.",
+  "Continue along the side of the white bed on your right, weaving around the wavy patterned wall toward the dark door.",
+  "Turn left at the dark door and walk back along the passage with the half-wall cutout on the left and the glass stair railing and wooden stairs on the right.",
+  "Walk straight into the dark-tiled area, passing the double sink vanity on your right to reach the glass shower enclosure ahead."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/DYehNKdT76V/frames",
+  "n_keyframes": 30,
+  "camera": "held at chest height by a person walking"
+ }
+}

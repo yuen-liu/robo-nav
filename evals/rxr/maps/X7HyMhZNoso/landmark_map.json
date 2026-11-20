@@ -1,0 +1,843 @@
+{
+ "landmarks": [
+  {
+   "name": "stainless steel refrigerator",
+   "description": "Large double-door stainless steel appliance with water dispenser built into white cabinetry.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    63,
+    117
+   ]
+  },
+  {
+   "name": "long white island counter",
+   "description": "Long freestanding counter with white base and beige stone top on wooden flooring.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    63,
+    118,
+    119,
+    120
+   ]
+  },
+  {
+   "name": "built-in oven",
+   "description": "Dark-glass front oven built into lower white cabinets.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "horizontal backsplash window",
+   "description": "Wide, low rectangular window set between upper and lower white cabinets.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "round wall clock",
+   "description": "Large white circular clock mounted on the far wall between two narrow vertical windows.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    61,
+    65,
+    118,
+    119
+   ]
+  },
+  {
+   "name": "wall-mounted intercom panel",
+   "description": "Small white rectangular screen and control boxes mounted on the white wall near the steps.",
+   "seen_at": [
+    3,
+    60
+   ]
+  },
+  {
+   "name": "short wooden steps",
+   "description": "Five light-wood steps leading from the upper wood floor down to the lower wood-floored passage.",
+   "seen_at": [
+    3,
+    4,
+    60,
+    61,
+    117
+   ]
+  },
+  {
+   "name": "white balustrade",
+   "description": "White vertical-baluster railing bordering the stairs and upper landing.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    15,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    33,
+    34,
+    35,
+    48,
+    49,
+    50,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+   ]
+  },
+  {
+   "name": "closed white door",
+   "description": "Flush white interior door with silver lever handle on the wall opposite the staircase.",
+   "seen_at": [
+    4,
+    28,
+    29,
+    30,
+    31,
+    32,
+    59
+   ]
+  },
+  {
+   "name": "slatted dark wood door",
+   "description": "Dark brown door with horizontal glass slats at the far end of the wood-floored passage.",
+   "seen_at": [
+    4,
+    26,
+    27,
+    29,
+    30,
+    31,
+    58
+   ]
+  },
+  {
+   "name": "doorway to toilet",
+   "description": "Open doorway at the end of a short alcove next to the stairs, showing a white toilet and small window.",
+   "seen_at": [
+    5
+   ]
+  },
+  {
+   "name": "carpeted U-turn staircase",
+   "description": "Staircase with brown carpet and a mid-level landing that turns 180 degrees.",
+   "seen_at": [
+    5,
+    6,
+    7,
+    8,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    32,
+    33,
+    34,
+    35,
+    56,
+    57,
+    58,
+    59
+   ]
+  },
+  {
+   "name": "doorway to beige-headboard bed",
+   "description": "Open white doorway off the upper carpeted landing leading to a space with a beige bed.",
+   "seen_at": [
+    9,
+    10,
+    16,
+    17,
+    22,
+    35
+   ]
+  },
+  {
+   "name": "ceiling skylights",
+   "description": "Two rectangular skylights set into the ceiling above the upper stairwell.",
+   "seen_at": [
+    10,
+    11,
+    48,
+    49,
+    54,
+    55
+   ]
+  },
+  {
+   "name": "doorway to freestanding bathtub",
+   "description": "Open doorway on the upper landing leading into a grey-tiled space.",
+   "seen_at": [
+    12,
+    13,
+    15,
+    49
+   ]
+  },
+  {
+   "name": "wooden vanity with mirror",
+   "description": "Wall-mounted light-wood cabinet with white countertop and large frameless mirror against grey wall tiles.",
+   "seen_at": [
+    13,
+    14
+   ]
+  },
+  {
+   "name": "white freestanding bathtub",
+   "description": "Modern white oval tub sitting on brown floor tiles against a dark grey tiled wall.",
+   "seen_at": [
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "name": "white double doors",
+   "description": "Pair of tall white doors with vertical silver handles on the upper landing.",
+   "seen_at": [
+    15,
+    22,
+    23,
+    35,
+    55,
+    56
+   ]
+  },
+  {
+   "name": "doorway to striped-headboard bed",
+   "description": "Open doorway on the upper landing showing a bed with a tall vertical-striped headboard.",
+   "seen_at": [
+    16,
+    35,
+    36,
+    47,
+    54,
+    55
+   ]
+  },
+  {
+   "name": "bed with beige tufted headboard",
+   "description": "Large bed with a light beige upholstered headboard, white bedding, and grey throw blanket.",
+   "seen_at": [
+    17,
+    18,
+    19
+   ]
+  },
+  {
+   "name": "stacked horizontal windows",
+   "description": "Two narrow horizontal windows with white blinds, one above the other on a white wall.",
+   "seen_at": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "doorway to white closet shelves",
+   "description": "Open doorway near the beige-headboard bed, revealing white built-in shelving.",
+   "seen_at": [
+    20,
+    21
+   ]
+  },
+  {
+   "name": "large black TV on dark console",
+   "description": "Wide flat-screen television on a low dark wooden media console between two windows.",
+   "seen_at": [
+    31
+   ]
+  },
+  {
+   "name": "dark square coffee table",
+   "description": "Low square dark-wood table on a grey carpet in front of the TV.",
+   "seen_at": [
+    31,
+    32
+   ]
+  },
+  {
+   "name": "bed with striped headboard",
+   "description": "Large bed with a tall dark-and-light grey vertical-striped headboard, white bedding, blue pillows, and a yellow throw.",
+   "seen_at": [
+    36,
+    37,
+    38,
+    39,
+    46,
+    47
+   ]
+  },
+  {
+   "name": "grey armchairs with blue pillows",
+   "description": "Pair of grey upholstered armchairs with bright blue throw pillows against a white wall.",
+   "seen_at": [
+    36,
+    37,
+    47
+   ]
+  },
+  {
+   "name": "high horizontal window over vertical window",
+   "description": "Wide narrow horizontal window with white blinds above a tall narrow vertical window.",
+   "seen_at": [
+    36,
+    37
+   ]
+  },
+  {
+   "name": "built-in white drawers and shelves",
+   "description": "White shelving units, hanging rods, and chests of drawers lining both sides of a narrow carpeted passage.",
+   "seen_at": [
+    39,
+    40,
+    41,
+    45,
+    46
+   ]
+  },
+  {
+   "name": "towel bar with patterned towel",
+   "description": "Silver wall-mounted bar holding a white towel and a blue-and-white geometric patterned hand towel on beige tiles.",
+   "seen_at": [
+    41,
+    42,
+    43
+   ]
+  },
+  {
+   "name": "glass-enclosed tiled shower",
+   "description": "Walk-in shower with a frameless glass partition and dark grey wall tiles.",
+   "seen_at": [
+    43,
+    44
+   ]
+  },
+  {
+   "name": "bed with yellow patterned bedding",
+   "description": "Bed with a yellow-and-white geometric patterned duvet, white bedskirt, and a small brown teddy bear on the pillows.",
+   "seen_at": [
+    49,
+    50,
+    52,
+    53
+   ]
+  },
+  {
+   "name": "white open shelving alcove",
+   "description": "Walk-in storage space with white horizontal shelves and hanging rods.",
+   "seen_at": [
+    51,
+    52
+   ]
+  },
+  {
+   "name": "freestanding partition wall with recessed TV",
+   "description": "White freestanding central wall column housing a large flat-screen TV and a recessed shelf niche facing the sofa.",
+   "seen_at": [
+    61,
+    62,
+    64,
+    117,
+    121,
+    122
+   ]
+  },
+  {
+   "name": "long wooden table with black chairs",
+   "description": "Large rustic light-wood table surrounded by black upholstered chairs with a white floral centerpiece.",
+   "seen_at": [
+    61,
+    65,
+    113,
+    114,
+    115,
+    117,
+    118,
+    120,
+    121
+   ]
+  },
+  {
+   "name": "grey sofa with blue ottoman",
+   "description": "L-shaped grey fabric sofa with yellow and dark grey cushions, paired with a large rectangular light-blue upholstered ottoman and a grey armchair.",
+   "seen_at": [
+    61,
+    62,
+    63,
+    67,
+    116,
+    122,
+    123
+   ]
+  },
+  {
+   "name": "glass sliding doors to patio",
+   "description": "Wide multi-panel silver-framed glass sliding and bi-fold doors separating the wood-floored interior from the covered tiled patio.",
+   "seen_at": [
+    61,
+    62,
+    65,
+    66,
+    67,
+    68,
+    72,
+    74,
+    105,
+    108,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    120,
+    121,
+    122
+   ]
+  },
+  {
+   "name": "white outdoor table with chairs",
+   "description": "Square white table with six matching white chairs with dark seat cushions on the tiled patio against a dark brick wall.",
+   "seen_at": [
+    67,
+    68,
+    70,
+    71,
+    72,
+    74,
+    88,
+    101,
+    104,
+    105,
+    108,
+    109,
+    113,
+    115,
+    116,
+    124
+   ]
+  },
+  {
+   "name": "outdoor grey lounge set with white frames",
+   "description": "Patio seating group with white metal frames, grey cushions, patterned pillows, and a rectangular white coffee table.",
+   "seen_at": [
+    69,
+    70,
+    74,
+    75,
+    102,
+    103,
+    104,
+    109,
+    110,
+    111,
+    112,
+    114,
+    115,
+    124
+   ]
+  },
+  {
+   "name": "built-in barbecue counter with dark shutters",
+   "description": "Outdoor counter built into a dark brick wall at the end of the patio, with dark grey slatted window shutters above it.",
+   "seen_at": [
+    69,
+    70,
+    75,
+    103,
+    110,
+    111,
+    112,
+    124
+   ]
+  },
+  {
+   "name": "wooden planter box and patio steps",
+   "description": "Low horizontal-slatted brown wooden planter boxes flanking wide wooden steps leading from the tiled patio down to the lawn.",
+   "seen_at": [
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    87,
+    88,
+    100,
+    101,
+    102,
+    106,
+    107,
+    108,
+    109,
+    125,
+    126,
+    127,
+    128,
+    145,
+    149,
+    150
+   ]
+  },
+  {
+   "name": "grassy yard with dark metal fence",
+   "description": "Sloping green lawn bordered by a dark grey corrugated metal fence with lattice topping on one side and a light green metal fence with low hedges at the far end.",
+   "seen_at": [
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    98,
+    99,
+    100,
+    101,
+    106,
+    107,
+    108,
+    125,
+    126,
+    127,
+    128,
+    134,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    151,
+    152,
+    153
+   ]
+  },
+  {
+   "name": "recessed lawn steps",
+   "description": "Short flight of light-colored steps set into a low retaining wall between two sections of low green hedge at the far end of the lawn.",
+   "seen_at": [
+    84,
+    85,
+    108,
+    125,
+    146,
+    147,
+    148,
+    149,
+    150
+   ]
+  },
+  {
+   "name": "stepped grey metal fence on brick base",
+   "description": "Corrugated grey metal fence panels stepping down in height atop an exposed orange-brown brick retaining wall along the side of the lawn.",
+   "seen_at": [
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    125,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    145,
+    146,
+    151,
+    152
+   ]
+  },
+  {
+   "name": "narrow side passage with concrete path",
+   "description": "Narrow exterior walkway between the dark brick building wall and the grey metal fence, with a light grey concrete strip and gravel.",
+   "seen_at": [
+    94,
+    95,
+    96,
+    130,
+    131,
+    132,
+    133,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140
+   ]
+  },
+  {
+   "name": "wall-mounted water heater",
+   "description": "White rectangular metal appliance box with exposed pipes below it, mounted on the dark brick exterior wall in the side passage.",
+   "seen_at": [
+    139,
+    140
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "stainless steel refrigerator",
+   "to": "short wooden steps",
+   "how": "Walk forward with the stainless steel refrigerator on your left and the long white island counter on your right, then turn left past the wall-mounted intercom panel."
+  },
+  {
+   "from": "short wooden steps",
+   "to": "carpeted U-turn staircase",
+   "how": "Go down the short wooden steps with the white balustrade on your right and the closed white door on your left, then turn right at the bottom."
+  },
+  {
+   "from": "carpeted U-turn staircase",
+   "to": "short wooden steps",
+   "how": "At the bottom of the carpeted U-turn staircase facing the closed white door, turn left and go up the short wooden steps past the wall-mounted intercom panel on your right."
+  },
+  {
+   "from": "carpeted U-turn staircase",
+   "to": "doorway to freestanding bathtub",
+   "how": "Walk up the carpeted U-turn staircase, turning 180 degrees at the mid-landing, then at the top loop around the end of the white balustrade to find the doorway on your left."
+  },
+  {
+   "from": "doorway to freestanding bathtub",
+   "to": "white freestanding bathtub",
+   "how": "Step through the doorway to freestanding bathtub into the grey-tiled space with the wooden vanity with mirror ahead and the bathtub on your right."
+  },
+  {
+   "from": "white freestanding bathtub",
+   "to": "doorway to beige-headboard bed",
+   "how": "Turn around to exit through the doorway to freestanding bathtub onto the carpeted landing, then turn left and immediately left again."
+  },
+  {
+   "from": "doorway to beige-headboard bed",
+   "to": "bed with beige tufted headboard",
+   "how": "Step through the doorway to beige-headboard bed and look to your right."
+  },
+  {
+   "from": "bed with beige tufted headboard",
+   "to": "doorway to white closet shelves",
+   "how": "Walk past the bed with beige tufted headboard and the stacked horizontal windows on your left to reach the open closet doorway on your left."
+  },
+  {
+   "from": "doorway to white closet shelves",
+   "to": "carpeted U-turn staircase",
+   "how": "Exit through the doorway to beige-headboard bed toward the white double doors and white balustrade, keeping the white double doors on your left to reach the top of the stairs."
+  },
+  {
+   "from": "carpeted U-turn staircase",
+   "to": "slatted dark wood door",
+   "how": "Descend the carpeted U-turn staircase to the wood-floored passage and walk straight ahead with the stairs on your left and the closed white door on your right."
+  },
+  {
+   "from": "slatted dark wood door",
+   "to": "carpeted U-turn staircase",
+   "how": "Turn 180 degrees near the slatted dark wood door, passing the opening with the large black TV on dark console and dark square coffee table on your right, and walk back to the base of the stairs."
+  },
+  {
+   "from": "carpeted U-turn staircase",
+   "to": "doorway to striped-headboard bed",
+   "how": "Climb the carpeted U-turn staircase to the upper landing, where the doorway to striped-headboard bed is straight ahead."
+  },
+  {
+   "from": "doorway to striped-headboard bed",
+   "to": "bed with striped headboard",
+   "how": "Walk forward through the doorway to striped-headboard bed toward the grey armchairs with blue pillows and high horizontal window over vertical window, with the bed on your right."
+  },
+  {
+   "from": "bed with striped headboard",
+   "to": "built-in white drawers and shelves",
+   "how": "Turn right around the foot of the bed with striped headboard and walk through the open doorway into the narrow passage lined with white drawers and shelves."
+  },
+  {
+   "from": "built-in white drawers and shelves",
+   "to": "glass-enclosed tiled shower",
+   "how": "Walk straight through the passage of built-in white drawers and shelves into the tiled space toward the towel bar with patterned towel, then turn right."
+  },
+  {
+   "from": "glass-enclosed tiled shower",
+   "to": "built-in white drawers and shelves",
+   "how": "Turn around from the glass-enclosed tiled shower and walk back into the narrow passage."
+  },
+  {
+   "from": "built-in white drawers and shelves",
+   "to": "doorway to striped-headboard bed",
+   "how": "Walk straight through the built-in white drawers and shelves, pass the bed with striped headboard and grey armchairs with blue pillows on your right, and exit to the landing."
+  },
+  {
+   "from": "doorway to striped-headboard bed",
+   "to": "bed with yellow patterned bedding",
+   "how": "Walk forward along the upper landing with the white balustrade and ceiling skylights on your left, pass the doorway to freestanding bathtub on your right, and turn right through the end doorway."
+  },
+  {
+   "from": "bed with yellow patterned bedding",
+   "to": "white open shelving alcove",
+   "how": "Just inside the doorway facing the bed with yellow patterned bedding, turn right and step into the white open shelving alcove."
+  },
+  {
+   "from": "white open shelving alcove",
+   "to": "carpeted U-turn staircase",
+   "how": "Step out of the white open shelving alcove, exit the doorway onto the landing, turn left to walk along the white balustrade on your right, and turn right at the white double doors."
+  },
+  {
+   "from": "short wooden steps",
+   "to": "freestanding partition wall with recessed TV",
+   "how": "Climb the short wooden steps into the wood-floored area with the long wooden table with black chairs on your left and walk forward to the partition wall."
+  },
+  {
+   "from": "freestanding partition wall with recessed TV",
+   "to": "glass sliding doors to patio",
+   "how": "Walk past the freestanding partition wall with recessed TV and between the grey sofa with blue ottoman and the long wooden table with black chairs to reach the glass sliding doors."
+  },
+  {
+   "from": "glass sliding doors to patio",
+   "to": "white outdoor table with chairs",
+   "how": "Step through the open glass sliding doors to patio onto the covered tiled patio where the white outdoor table with chairs is ahead."
+  },
+  {
+   "from": "white outdoor table with chairs",
+   "to": "outdoor grey lounge set with white frames",
+   "how": "On the tiled patio, turn toward the built-in barbecue counter with dark shutters to find the outdoor grey lounge set with white frames between the table and the counter."
+  },
+  {
+   "from": "outdoor grey lounge set with white frames",
+   "to": "wooden planter box and patio steps",
+   "how": "Turn toward the grassy yard with dark metal fence to reach the wooden planter box and patio steps at the edge of the tiled patio."
+  },
+  {
+   "from": "wooden planter box and patio steps",
+   "to": "recessed lawn steps",
+   "how": "Walk down the wooden planter box and patio steps and cross the grassy yard with dark metal fence on your right to the recessed steps in the far hedge."
+  },
+  {
+   "from": "recessed lawn steps",
+   "to": "narrow side passage with concrete path",
+   "how": "Turn around and walk back across the grassy yard with dark metal fence, passing the wooden planter box and patio steps on your left, toward the stepped grey metal fence on brick base at the dark brick building corner."
+  },
+  {
+   "from": "narrow side passage with concrete path",
+   "to": "wooden planter box and patio steps",
+   "how": "From the entrance to the narrow side passage with concrete path, turn around the dark brick corner and follow the concrete strip along the base of the wooden planter box to the steps."
+  },
+  {
+   "from": "wooden planter box and patio steps",
+   "to": "built-in barbecue counter with dark shutters",
+   "how": "Climb the wooden planter box and patio steps onto the tiled patio with the white outdoor table with chairs on your right and walk past the outdoor grey lounge set with white frames on your left."
+  },
+  {
+   "from": "built-in barbecue counter with dark shutters",
+   "to": "glass sliding doors to patio",
+   "how": "Turn left from the built-in barbecue counter with dark shutters and walk along the tiled patio past the outdoor grey lounge set with white frames on your left."
+  },
+  {
+   "from": "glass sliding doors to patio",
+   "to": "round wall clock",
+   "how": "Step inside through the glass sliding doors to patio and walk forward with the long wooden table with black chairs on your left toward the far wall."
+  },
+  {
+   "from": "round wall clock",
+   "to": "grey sofa with blue ottoman",
+   "how": "Turn 180 degrees near the round wall clock and walk back with the glass sliding doors to patio on your left and the long wooden table with black chairs and freestanding partition wall with recessed TV on your right."
+  },
+  {
+   "from": "grey sofa with blue ottoman",
+   "to": "wooden planter box and patio steps",
+   "how": "Step out through the glass sliding doors to patio between the white outdoor table with chairs on your right and the outdoor grey lounge set with white frames on your left, and go straight to the patio steps."
+  },
+  {
+   "from": "wooden planter box and patio steps",
+   "to": "narrow side passage with concrete path",
+   "how": "Go down the wooden planter box and patio steps onto the lawn, turn left along the base of the wooden planter box, and turn left around the brick corner beside the stepped grey metal fence on brick base."
+  },
+  {
+   "from": "narrow side passage with concrete path",
+   "to": "grassy yard with dark metal fence",
+   "how": "Turn 180 degrees in the narrow side passage with concrete path and walk back along the concrete path with the stepped grey metal fence on brick base on your left and the wall-mounted water heater on your right."
+  },
+  {
+   "from": "grassy yard with dark metal fence",
+   "to": "recessed lawn steps",
+   "how": "Walk across the grassy yard with dark metal fence away from the wooden planter box and patio steps to the low hedge at the far end, then follow the hedge to the right."
+  }
+ ],
+ "walk_summary": [
+  "Start by walking forward between the stainless steel refrigerator and built-in oven on the left and the long white island counter on the right toward the horizontal backsplash window and round wall clock.",
+  "Turn left past the wall-mounted intercom panel and descend the short wooden steps beside the white balustrade and closed white door.",
+  "At the bottom of the steps, pass the doorway to toilet on the left and turn right to climb the carpeted U-turn staircase to the upper level.",
+  "Loop around the white balustrade beneath the ceiling skylights and enter the doorway to freestanding bathtub to view the wooden vanity with mirror and white freestanding bathtub.",
+  "Exit onto the landing, turn left into the doorway to beige-headboard bed, and circle past the bed with beige tufted headboard, stacked horizontal windows, and doorway to white closet shelves.",
+  "Step back onto the landing past the white double doors and descend the carpeted U-turn staircase to the lower wood-floored passage.",
+  "Walk past the closed white door toward the slatted dark wood door, turn 180 degrees past the large black TV on dark console and dark square coffee table, and climb back up the carpeted U-turn staircase.",
+  "Enter the doorway to striped-headboard bed ahead, walk toward the grey armchairs with blue pillows and high horizontal window over vertical window, then turn right around the bed with striped headboard.",
+  "Pass through the built-in white drawers and shelves to the tiled area with the towel bar with patterned towel and glass-enclosed tiled shower, then retrace your steps back out to the upper landing.",
+  "Walk along the white balustrade to the far end and turn right to see the bed with yellow patterned bedding and step into the white open shelving alcove.",
+  "Exit to the landing, walk back past the white double doors, and descend the carpeted U-turn staircase.",
+  "Turn left up the short wooden steps, pass the freestanding partition wall with recessed TV, grey sofa with blue ottoman, and long wooden table with black chairs, and exit through the glass sliding doors to patio.",
+  "Move past the white outdoor table with chairs and outdoor grey lounge set with white frames, go down the wooden planter box and patio steps, and cross the grassy yard with dark metal fence to the recessed lawn steps.",
+  "Walk back across the lawn to the stepped grey metal fence on brick base to look down the narrow side passage with concrete path, then follow the planter box back up the wooden planter box and patio steps.",
+  "Walk to the built-in barbecue counter with dark shutters, turn left along the glass sliding doors to patio, and step inside past the long wooden table with black chairs toward the round wall clock.",
+  "Turn around, walk back past the freestanding partition wall with recessed TV and grey sofa with blue ottoman, exit onto the patio, and go down the wooden planter box and patio steps.",
+  "Turn left along the planter box and left into the narrow side passage with concrete path alongside the stepped grey metal fence on brick base.",
+  "Turn around, walk past the wall-mounted water heater back out to the grassy yard with dark metal fence, and cross to the recessed lawn steps along the far hedge."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/vlnce_tours/X7HyMhZNoso/frames",
+  "n_keyframes": 154,
+  "camera": "held at chest height by a person walking"
+ }
+}

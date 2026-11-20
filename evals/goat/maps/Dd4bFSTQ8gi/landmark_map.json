@@ -1,0 +1,553 @@
+{
+ "landmarks": [
+  {
+   "name": "bed with circular wall art",
+   "description": "Large bed with gray patterned cover, dark headboard, and round metallic wall art above it.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    45
+   ]
+  },
+  {
+   "name": "horizontal slatted window",
+   "description": "Wide, short window high on the wall with dark horizontal blinds.",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "white paneled door",
+   "description": "Standard white 6-panel interior doors found along the narrow passages and doorways.",
+   "seen_at": [
+    2,
+    3,
+    4,
+    33,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    43,
+    44,
+    55,
+    57,
+    58,
+    60,
+    70,
+    71
+   ]
+  },
+  {
+   "name": "bed with recessed wall art",
+   "description": "Bed with purple/gray cover and white throw, next to a wall with a rectangular recessed niche containing abstract art.",
+   "seen_at": [
+    5,
+    6
+   ]
+  },
+  {
+   "name": "recessed wall niche with abstract art",
+   "description": "Horizontal rectangular cutout in the white wall holding a blue and brown abstract canvas.",
+   "seen_at": [
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "name": "wood-paneled alcove with live-edge shelves",
+   "description": "Alcove lined with vertical reddish-brown wood planks and two thick, natural-edge wooden shelves.",
+   "seen_at": [
+    6,
+    7,
+    44
+   ]
+  },
+  {
+   "name": "red-cushioned bench under window",
+   "description": "Ornate wooden bench or small table with a red cushion, sitting against a wall under windows.",
+   "seen_at": [
+    8,
+    9,
+    33,
+    34,
+    35,
+    39,
+    40
+   ]
+  },
+  {
+   "name": "dining table with white-backed chairs",
+   "description": "Dark wood dining table surrounded by six dark-framed chairs with white upholstered backs and seats.",
+   "seen_at": [
+    9,
+    10,
+    11,
+    12,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    48,
+    49
+   ]
+  },
+  {
+   "name": "bar counter with two white stools",
+   "description": "Wall cutout counter with two tall, white, tufted barstools on one side and a white peninsula counter with a glass-front end cabinet and suspended upper cabinets on the other.",
+   "seen_at": [
+    9,
+    10,
+    32,
+    47,
+    48,
+    49,
+    54,
+    55,
+    72,
+    73,
+    74,
+    75
+   ]
+  },
+  {
+   "name": "potted leafy plant",
+   "description": "Large green leafy houseplant in a round brown basket planter, sitting in a corner.",
+   "seen_at": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "name": "blue-green abstract painting",
+   "description": "Medium-sized canvas painting with teal, blue, white, and orange brushstrokes on the wall near the potted plant.",
+   "seen_at": [
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "name": "white paneled sliding door",
+   "description": "Wide white paneled barn-style door on a metal track next to a step down in the wood floor.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    18,
+    19,
+    24,
+    25,
+    26
+   ]
+  },
+  {
+   "name": "teal sofa with horse painting",
+   "description": "Light teal upholstered sofa with nailhead trim and white/furry throw pillows, beneath a dark painting of white horses.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    20,
+    21
+   ]
+  },
+  {
+   "name": "dark brown tufted armchairs",
+   "description": "Pair of dark brown leather or fabric armchairs with nailhead trim and a rectangular mirror on the wall above them.",
+   "seen_at": [
+    15,
+    16,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "corner brick hearth with black stove",
+   "description": "Corner hearth area with multi-colored brick backing and a black cast-iron wood stove with a vertical stovepipe.",
+   "seen_at": [
+    17,
+    18,
+    22,
+    23,
+    24,
+    25,
+    51,
+    54,
+    75,
+    76
+   ]
+  },
+  {
+   "name": "tall potted cactus in corner",
+   "description": "Tall green columnar cactus in a dark pot standing in the corner between two windows.",
+   "seen_at": [
+    21,
+    22
+   ]
+  },
+  {
+   "name": "smaller teal loveseat",
+   "description": "Two-seater teal sofa with dark pillows, positioned under a wide window.",
+   "seen_at": [
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "name": "recessed wall niche with small sculpture",
+   "description": "Vertical rectangular wall cutout with a small light at the top and a brown abstract sculpture inside, between two doorways.",
+   "seen_at": [
+    25,
+    26,
+    75,
+    76
+   ]
+  },
+  {
+   "name": "rectangular ceiling skylight",
+   "description": "Long rectangular recessed opening in the ceiling above the dining table.",
+   "seen_at": [
+    28,
+    29,
+    30
+   ]
+  },
+  {
+   "name": "dark sofa with teal pillows",
+   "description": "Dark brown sofa with light teal throw pillows and a monochrome abstract painting on the wall above it.",
+   "seen_at": [
+    31,
+    49,
+    55,
+    56,
+    57,
+    71
+   ]
+  },
+  {
+   "name": "pair of blue armless chairs",
+   "description": "Two dark blue upholstered armless accent chairs with dark wooden legs, sitting side by side.",
+   "seen_at": [
+    33,
+    36,
+    37,
+    41,
+    42,
+    43
+   ]
+  },
+  {
+   "name": "interior window above blue chairs",
+   "description": "Wide rectangular interior glass window set into the white wall above the blue chairs, looking toward the dining table.",
+   "seen_at": [
+    36,
+    37,
+    41,
+    42
+   ]
+  },
+  {
+   "name": "dark wood console table with striped painting",
+   "description": "Dark wooden two-tier console table beneath a large horizontal canvas painting with teal, orange, and white stripes.",
+   "seen_at": [
+    45,
+    46,
+    47,
+    56,
+    57,
+    72
+   ]
+  },
+  {
+   "name": "gray and white chevron rug",
+   "description": "Area rug with a gray and white zigzag chevron pattern on the wood floor under a small glass coffee table.",
+   "seen_at": [
+    47,
+    48,
+    49
+   ]
+  },
+  {
+   "name": "wooden door with glass panels",
+   "description": "Reddish-brown wooden door with two vertical decorative glass panels in its upper half.",
+   "seen_at": [
+    50,
+    52,
+    53,
+    54,
+    55
+   ]
+  },
+  {
+   "name": "curved window bench with teal pillows",
+   "description": "Built-in white curved bench seat in a bay window alcove, topped with teal throw pillows.",
+   "seen_at": [
+    50,
+    52,
+    53,
+    72,
+    73
+   ]
+  },
+  {
+   "name": "white refrigerator and cabinets",
+   "description": "Tall white double-door refrigerator surrounded by white paneled cabinetry and drawers.",
+   "seen_at": [
+    52,
+    53,
+    72,
+    73
+   ]
+  },
+  {
+   "name": "white clawfoot bathtub and blue tile floor",
+   "description": "White freestanding bathtub against a white wall with blue-and-white patterned accent tiles, sitting on a bright royal-blue tiled floor.",
+   "seen_at": [
+    58,
+    59,
+    60,
+    70
+   ]
+  },
+  {
+   "name": "white vanity sink with dark-framed mirror",
+   "description": "Small white cabinet sink with a potted plant on the counter and a dark brown rectangular mirror on the tiled wall above.",
+   "seen_at": [
+    59,
+    60
+   ]
+  },
+  {
+   "name": "bed with slatted wood headboard",
+   "description": "Large bed with a gray patterned bedspread, dark wooden headboard with square cutouts, and a horizontal window above the headboard.",
+   "seen_at": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    69
+   ]
+  },
+  {
+   "name": "shuttered window with dark louvers",
+   "description": "Square window with a white frame and dark louvered interior shutters, next to a small blue-and-gray abstract painting.",
+   "seen_at": [
+    61,
+    62,
+    65,
+    69
+   ]
+  },
+  {
+   "name": "square black metal wall grille",
+   "description": "Decorative square black wrought-iron scrollwork piece mounted high on the white wall next to the doorway.",
+   "seen_at": [
+    62,
+    64,
+    65
+   ]
+  },
+  {
+   "name": "dark wood nightstand with white lamp",
+   "description": "Small dark wooden bedside table with a white shaded lamp in the corner next to the bed.",
+   "seen_at": [
+    63,
+    64
+   ]
+  },
+  {
+   "name": "wood-paneled cedar closet with shelves",
+   "description": "Small walk-in alcove lined with horizontal reddish-brown wood planks and wooden shelving.",
+   "seen_at": [
+    66,
+    67
+   ]
+  },
+  {
+   "name": "teal towels and toilet with starfish painting",
+   "description": "Two light teal towels hanging on a white wall under a small window, next to a white toilet with a blue starfish painting above it.",
+   "seen_at": [
+    67,
+    68
+   ]
+  },
+  {
+   "name": "white double wall oven",
+   "description": "Built-in white double oven set into tall white cabinetry, with a patterned dish towel hanging on the lower handle.",
+   "seen_at": [
+    74,
+    76
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "bed with circular wall art",
+   "to": "wood-paneled alcove with live-edge shelves",
+   "how": "Pass the bed with circular wall art on your left, turn left through the doorway into the narrow passage, and enter the doorway on your left."
+  },
+  {
+   "from": "wood-paneled alcove with live-edge shelves",
+   "to": "red-cushioned bench under window",
+   "how": "Exit the doorway by the wood-paneled alcove, turn left into the narrow passage, and walk straight ahead toward the red-cushioned bench under the window."
+  },
+  {
+   "from": "red-cushioned bench under window",
+   "to": "dining table with white-backed chairs",
+   "how": "With the red-cushioned bench on your right, step through the doorway onto the wood floor where the dining table is on your left."
+  },
+  {
+   "from": "dining table with white-backed chairs",
+   "to": "potted leafy plant",
+   "how": "Walk straight past the dining table on your right toward the corner with the potted leafy plant."
+  },
+  {
+   "from": "potted leafy plant",
+   "to": "white paneled sliding door",
+   "how": "Pass the potted leafy plant and blue-green abstract painting on your left to reach the doorway with the white paneled sliding door on your right."
+  },
+  {
+   "from": "white paneled sliding door",
+   "to": "teal sofa with horse painting",
+   "how": "Step down through the white paneled sliding door opening and go straight ahead toward the teal sofa with the horse painting."
+  },
+  {
+   "from": "teal sofa with horse painting",
+   "to": "corner brick hearth with black stove",
+   "how": "With the teal sofa and dark brown tufted armchairs on your left, turn right to face the corner brick hearth with the black stove."
+  },
+  {
+   "from": "corner brick hearth with black stove",
+   "to": "tall potted cactus in corner",
+   "how": "With the corner brick hearth on your left, pan right past the teal sofa to face the tall potted cactus in the window corner."
+  },
+  {
+   "from": "tall potted cactus in corner",
+   "to": "smaller teal loveseat",
+   "how": "From the tall potted cactus in the corner, turn right along the window wall to the smaller teal loveseat."
+  },
+  {
+   "from": "smaller teal loveseat",
+   "to": "white paneled sliding door",
+   "how": "Turn around with the smaller teal loveseat on your left and walk past the corner brick hearth on your left back to the white paneled sliding door."
+  },
+  {
+   "from": "white paneled sliding door",
+   "to": "dining table with white-backed chairs",
+   "how": "Step up through the white paneled sliding door opening and turn right to walk alongside the dining table."
+  },
+  {
+   "from": "dining table with white-backed chairs",
+   "to": "red-cushioned bench under window",
+   "how": "Walk past the dining table on your right under the rectangular ceiling skylight, then go straight through the doorway ahead to the red-cushioned bench."
+  },
+  {
+   "from": "red-cushioned bench under window",
+   "to": "pair of blue armless chairs",
+   "how": "From the red-cushioned bench, turn right to face the pair of blue armless chairs beneath the interior window."
+  },
+  {
+   "from": "pair of blue armless chairs",
+   "to": "dark wood console table with striped painting",
+   "how": "With the pair of blue armless chairs on your left and the white paneled door on your right, walk straight through the narrow passage past the wood-paneled alcove and the bed with circular wall art on your left to reach the dark wood console table ahead on the right."
+  },
+  {
+   "from": "dark wood console table with striped painting",
+   "to": "bar counter with two white stools",
+   "how": "Turn right past the dark wood console table on your left and walk forward to the bar counter with two white stools."
+  },
+  {
+   "from": "bar counter with two white stools",
+   "to": "white refrigerator and cabinets",
+   "how": "Walk around the end of the bar counter and turn left to face the white refrigerator and cabinets, curved window bench, and wooden door with glass panels."
+  },
+  {
+   "from": "white refrigerator and cabinets",
+   "to": "dark wood console table with striped painting",
+   "how": "With the white refrigerator behind you, walk straight past the wooden door with glass panels on your right and the bar counter on your left to the dark wood console table on your right."
+  },
+  {
+   "from": "dark wood console table with striped painting",
+   "to": "white clawfoot bathtub and blue tile floor",
+   "how": "Pass the dark wood console table on your right to enter the narrow passage, then turn right through the first doorway onto the blue tile floor with the white clawfoot bathtub."
+  },
+  {
+   "from": "white clawfoot bathtub and blue tile floor",
+   "to": "bed with slatted wood headboard",
+   "how": "Step out of the doorway from the blue tile floor and turn right through the adjacent doorway past the bed with the slatted wood headboard on your left."
+  },
+  {
+   "from": "bed with slatted wood headboard",
+   "to": "wood-paneled cedar closet with shelves",
+   "how": "Walk forward past the foot of the bed with the slatted wood headboard and the shuttered window on your left, stepping through the doorway onto the beige tile floor to reach the wood-paneled cedar closet ahead."
+  },
+  {
+   "from": "wood-paneled cedar closet with shelves",
+   "to": "teal towels and toilet with starfish painting",
+   "how": "From the wood-paneled cedar closet on your left, turn right to face the teal towels and toilet with the starfish painting."
+  },
+  {
+   "from": "teal towels and toilet with starfish painting",
+   "to": "bed with slatted wood headboard",
+   "how": "Turn around and step out of the beige-tiled area back to the foot of the bed with the slatted wood headboard."
+  },
+  {
+   "from": "bed with slatted wood headboard",
+   "to": "dark wood console table with striped painting",
+   "how": "At the foot of the bed with the slatted wood headboard, turn left out of the doorway into the narrow passage, walk straight past the blue tile floor on your left, and exit past the dark wood console table on your left."
+  },
+  {
+   "from": "dark wood console table with striped painting",
+   "to": "white refrigerator and cabinets",
+   "how": "Turn left past the dark wood console table on your left and walk straight alongside the bar counter on your right toward the white refrigerator and cabinets."
+  },
+  {
+   "from": "white refrigerator and cabinets",
+   "to": "white double wall oven",
+   "how": "Before reaching the white refrigerator, turn right to walk between the white cabinets on your left and the peninsula counter on your right, passing the white double wall oven on your right."
+  },
+  {
+   "from": "white double wall oven",
+   "to": "corner brick hearth with black stove",
+   "how": "Walk past the white double wall oven on your right to the doorway ahead, which looks directly at the corner brick hearth with the black stove."
+  }
+ ],
+ "walk_summary": [
+  "Start by passing the bed with circular wall art on the left and turning left through a doorway with a white paneled door into a narrow passage.",
+  "Step left into the space with the bed with recessed wall art and the wood-paneled alcove with live-edge shelves, then turn around to exit.",
+  "Turn left into the passage and walk past the red-cushioned bench under the window on the right into the wood-floored area with the dining table with white-backed chairs on the left.",
+  "Walk past the dining table on the right and the potted leafy plant and blue-green abstract painting on the left to the white paneled sliding door.",
+  "Step down through the white paneled sliding door opening toward the teal sofa with horse painting and the dark brown tufted armchairs.",
+  "Pan and move around the space past the corner brick hearth with black stove, the tall potted cactus in the corner, and the smaller teal loveseat.",
+  "Turn around and walk back past the corner brick hearth, stepping up through the white paneled sliding door opening toward the recessed wall niche with small sculpture.",
+  "Turn right to walk alongside the dining table with white-backed chairs beneath the rectangular ceiling skylight.",
+  "Continue straight through the doorway ahead to the red-cushioned bench under the window, then pivot around in place between the white paneled doors and the pair of blue armless chairs under the interior window.",
+  "Walk straight through the narrow passage between the pair of blue armless chairs and the white paneled door, passing the wood-paneled alcove and the bed with circular wall art on the left.",
+  "Reach the dark wood console table with striped painting, turn right, and walk past the bar counter with two white stools and the gray and white chevron rug.",
+  "Go around the end of the bar counter toward the white refrigerator and cabinets, the curved window bench with teal pillows, and the wooden door with glass panels.",
+  "Turn around and walk straight past the wooden door with glass panels and the dark wood console table on the right to enter another narrow passage.",
+  "Turn right onto the blue tile floor with the white clawfoot bathtub and the white vanity sink with dark-framed mirror, then turn around and step back out.",
+  "Turn right into the adjacent space with the bed with slatted wood headboard, dark wood nightstand with white lamp, square black metal wall grille, and shuttered window with dark louvers.",
+  "Walk past the foot of the bed onto the beige tile floor to see the wood-paneled cedar closet with shelves on the left and the teal towels and toilet with starfish painting on the right.",
+  "Step back out, turn left at the foot of the bed into the narrow passage, and walk past the blue tile floor on the left.",
+  "Turn left past the dark wood console table on the left and walk toward the white refrigerator and cabinets and the curved window bench.",
+  "Turn right to walk between the white peninsula counter and the white double wall oven on the right, stopping at the doorway facing the corner brick hearth with black stove and the recessed wall niche with small sculpture."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/Dd4bFSTQ8gi/frames",
+  "n_keyframes": 77,
+  "camera": "held at chest height by a person walking"
+ }
+}

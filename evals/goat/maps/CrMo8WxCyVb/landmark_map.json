@@ -1,0 +1,1144 @@
+{
+ "landmarks": [
+  {
+   "name": "bifold closet doors A",
+   "description": "White paneled double bifold closet doors near the entrance to the tiled area with the glass shower enclosure.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    110,
+    111,
+    115,
+    116,
+    130,
+    131,
+    134,
+    135
+   ]
+  },
+  {
+   "name": "canopy bed",
+   "description": "Large four-poster metal canopy bed with white bedding, grey pillows, and sheer white fabric.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    108,
+    109,
+    110,
+    115,
+    116,
+    117,
+    128,
+    129,
+    130,
+    135,
+    136
+   ]
+  },
+  {
+   "name": "tulip painting",
+   "description": "Square black-and-white canvas painting of three tulips near the doorway by the canopy bed.",
+   "seen_at": [
+    0,
+    1,
+    7,
+    8,
+    9,
+    12,
+    13,
+    117,
+    118,
+    136,
+    137
+   ]
+  },
+  {
+   "name": "wooden dresser with mirror",
+   "description": "Light-wood nine-drawer dresser with a dark-framed rectangular mirror above it, opposite the foot of the canopy bed.",
+   "seen_at": [
+    1,
+    2,
+    3,
+    7,
+    8,
+    11,
+    12,
+    13,
+    110,
+    116,
+    117,
+    129,
+    130,
+    135,
+    136
+   ]
+  },
+  {
+   "name": "upholstered bench",
+   "description": "Grey upholstered bench with two square pillows, set between two windows near the canopy bed.",
+   "seen_at": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    110,
+    115,
+    116,
+    129,
+    130,
+    135
+   ]
+  },
+  {
+   "name": "magnolia painting",
+   "description": "Large floral canvas painting hanging above the upholstered bench.",
+   "seen_at": [
+    2,
+    3,
+    4,
+    110,
+    129,
+    130
+   ]
+  },
+  {
+   "name": "open-shelf nightstand A",
+   "description": "Dark wood open-shelf nightstand with a lamp on the right side of the canopy bed.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "name": "open-shelf nightstand B",
+   "description": "Dark wood open-shelf nightstand with a lamp on the left side of the canopy bed.",
+   "seen_at": [
+    8,
+    9,
+    10,
+    11,
+    109,
+    110
+   ]
+  },
+  {
+   "name": "hallway bifold doors",
+   "description": "White paneled bifold closet doors in the upper corridor opposite the staircase railing.",
+   "seen_at": [
+    13,
+    14,
+    28,
+    29,
+    108,
+    109,
+    128
+   ]
+  },
+  {
+   "name": "staircase railing",
+   "description": "Dark wood banister and spindles bordering the stairwell and upper corridor.",
+   "seen_at": [
+    13,
+    14,
+    19,
+    20,
+    21,
+    28,
+    29,
+    30,
+    31,
+    48,
+    49,
+    51,
+    57,
+    59,
+    65,
+    67,
+    68,
+    69,
+    78,
+    79,
+    80,
+    86,
+    87,
+    107,
+    108,
+    118,
+    127,
+    128,
+    136,
+    137,
+    138,
+    139,
+    141
+   ]
+  },
+  {
+   "name": "chevron-bedding bed",
+   "description": "Bed with grey-and-white chevron patterned cover, yellow pillow, and two dark framed posters above.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    78,
+    79,
+    119,
+    120,
+    123,
+    124,
+    125,
+    126,
+    127
+   ]
+  },
+  {
+   "name": "white utility cabinets",
+   "description": "White lower and upper cabinets with a sink on a tiled floor.",
+   "seen_at": [
+    17,
+    18
+   ]
+  },
+  {
+   "name": "round tree wall art",
+   "description": "Large circular wooden-framed wall decor showing a blue-tinted tree in the space with the white utility cabinets.",
+   "seen_at": [
+    17,
+    18,
+    19
+   ]
+  },
+  {
+   "name": "grey-headboard bed",
+   "description": "Bed with a grey upholstered headboard and white textured quilt.",
+   "seen_at": [
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    78
+   ]
+  },
+  {
+   "name": "three-piece city paintings",
+   "description": "Set of three vertical canvas paintings of street scenes above the grey-headboard bed.",
+   "seen_at": [
+    21,
+    22,
+    23,
+    27
+   ]
+  },
+  {
+   "name": "white dresser with mirror",
+   "description": "White six-drawer dresser with a rustic wooden-framed mirror above it, opposite the grey-headboard bed.",
+   "seen_at": [
+    24,
+    25,
+    27,
+    28
+   ]
+  },
+  {
+   "name": "two-tone curtains",
+   "description": "Window curtains that are sheer white on top and dark grey on the bottom near the grey-headboard bed.",
+   "seen_at": [
+    24,
+    25,
+    26
+   ]
+  },
+  {
+   "name": "white nightstand",
+   "description": "White two-drawer nightstand with a lamp and framed photo next to the grey-headboard bed.",
+   "seen_at": [
+    25,
+    26,
+    27
+   ]
+  },
+  {
+   "name": "bifold closet doors B",
+   "description": "White paneled double bifold closet doors near the foot of the grey-headboard bed.",
+   "seen_at": [
+    27,
+    28
+   ]
+  },
+  {
+   "name": "high square window",
+   "description": "Square window high on the wall above the carpeted stairs.",
+   "seen_at": [
+    29,
+    30,
+    69,
+    80,
+    139
+   ]
+  },
+  {
+   "name": "six-panel white door A",
+   "description": "White six-panel exterior-style door with a deadbolt at the bottom of the carpeted stairs.",
+   "seen_at": [
+    30,
+    31,
+    32,
+    48,
+    49,
+    50,
+    57,
+    65,
+    66,
+    80,
+    81,
+    105,
+    106,
+    139,
+    140
+   ]
+  },
+  {
+   "name": "tufted grey settee",
+   "description": "Small grey velvet settee with a striped lumbar pillow against white wainscoting at the bottom of the carpeted stairs.",
+   "seen_at": [
+    31,
+    32,
+    48,
+    49,
+    50,
+    51,
+    57,
+    66,
+    80,
+    81,
+    105,
+    106,
+    139,
+    140
+   ]
+  },
+  {
+   "name": "grey patterned runner rug",
+   "description": "Grey and beige abstract patterned rug on dark wood flooring in front of six-panel white door A.",
+   "seen_at": [
+    31,
+    49,
+    50,
+    57,
+    66,
+    80,
+    81,
+    105,
+    106,
+    140
+   ]
+  },
+  {
+   "name": "wainscoted passage",
+   "description": "Narrow corridor with white wainscoting on the lower walls and wood-look plank flooring leading from the bottom of the stairs to the open counter and dining area.",
+   "seen_at": [
+    32,
+    33,
+    47,
+    48,
+    58,
+    59,
+    60,
+    65,
+    87,
+    88,
+    104,
+    105,
+    141
+   ]
+  },
+  {
+   "name": "bifold closet doors C",
+   "description": "White paneled bifold closet doors in the small alcove off the wainscoted passage.",
+   "seen_at": [
+    33,
+    58,
+    60
+   ]
+  },
+  {
+   "name": "distressed blue console table",
+   "description": "Weathered blue-and-wood open console table with curved supports and two framed prints above it.",
+   "seen_at": [
+    33,
+    34,
+    37,
+    38,
+    47,
+    61,
+    62,
+    64,
+    103,
+    104
+   ]
+  },
+  {
+   "name": "dark island counter",
+   "description": "Dark wood island with a white countertop and black barstools.",
+   "seen_at": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    46,
+    47,
+    61,
+    62,
+    88,
+    89,
+    103,
+    141
+   ]
+  },
+  {
+   "name": "wooden dining table",
+   "description": "Rectangular wooden table surrounded by six brown upholstered chairs.",
+   "seen_at": [
+    33,
+    38,
+    39,
+    40,
+    41,
+    44,
+    45,
+    46,
+    60,
+    64,
+    88,
+    89,
+    95,
+    102,
+    103,
+    141,
+    142
+   ]
+  },
+  {
+   "name": "sliding glass doors",
+   "description": "Glass patio doors flanked by sheer white curtains in a bayed recess near the wooden dining table.",
+   "seen_at": [
+    39,
+    40,
+    88,
+    89,
+    90,
+    91,
+    92,
+    95,
+    142
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "Large French-door stainless steel refrigerator with a bottom freezer drawer.",
+   "seen_at": [
+    34,
+    36,
+    37,
+    61,
+    62,
+    63,
+    103
+   ]
+  },
+  {
+   "name": "stainless steel range",
+   "description": "Stainless steel stove and oven with a microwave mounted above it and grey subway tile backsplash.",
+   "seen_at": [
+    34,
+    35,
+    36,
+    61,
+    62,
+    90
+   ]
+  },
+  {
+   "name": "window above sink",
+   "description": "Horizontal window with blinds and a white valance above a sink and white cabinets.",
+   "seen_at": [
+    34,
+    35,
+    89
+   ]
+  },
+  {
+   "name": "white fireplace",
+   "description": "White mantel fireplace with a dark firebox and a flat-screen TV mounted above it.",
+   "seen_at": [
+    40,
+    41,
+    64,
+    91,
+    93,
+    94,
+    96,
+    97,
+    98,
+    142,
+    143,
+    144,
+    145,
+    146
+   ]
+  },
+  {
+   "name": "six-panel white door B",
+   "description": "White six-panel door with a deadbolt next to the white hall tree bench.",
+   "seen_at": [
+    42,
+    43
+   ]
+  },
+  {
+   "name": "white hall tree bench",
+   "description": "White wooden bench with cubbies below and coat hooks with hanging bags above in a small alcove.",
+   "seen_at": [
+    42,
+    43
+   ]
+  },
+  {
+   "name": "bifold closet doors D",
+   "description": "White paneled bifold closet doors opposite six-panel white door B in the alcove with the white hall tree bench.",
+   "seen_at": [
+    42,
+    43
+   ]
+  },
+  {
+   "name": "glass-paned french doors",
+   "description": "White double doors with glass panes at the bottom of the stairs opening into the space with the dark wood desk.",
+   "seen_at": [
+    51,
+    52,
+    57,
+    66,
+    81,
+    82,
+    84,
+    85
+   ]
+  },
+  {
+   "name": "grey wingback armchair",
+   "description": "Grey upholstered wingback chair with nailhead trim and a small pillow under the three-piece world map art.",
+   "seen_at": [
+    52,
+    53,
+    54,
+    82,
+    85
+   ]
+  },
+  {
+   "name": "three-piece world map art",
+   "description": "Triptych canvas wall art showing a white world map on a dark blue background.",
+   "seen_at": [
+    52,
+    53,
+    54,
+    82,
+    85
+   ]
+  },
+  {
+   "name": "dark wood desk",
+   "description": "Dark wooden desk with a grey tufted chair behind it and a small blue stool in front.",
+   "seen_at": [
+    52,
+    53,
+    55,
+    56,
+    82,
+    83
+   ]
+  },
+  {
+   "name": "round black-framed mirror",
+   "description": "Circular mirror with a dark frame hanging on the wall behind the dark wood desk.",
+   "seen_at": [
+    52,
+    53,
+    55,
+    56,
+    82,
+    83
+   ]
+  },
+  {
+   "name": "potted leafy plant",
+   "description": "Tall green leafy plant in a pot in the corner beside the window and dark wood desk.",
+   "seen_at": [
+    52,
+    53,
+    54,
+    55,
+    82
+   ]
+  },
+  {
+   "name": "forest canvas painting",
+   "description": "Large horizontal canvas painting of birch trees in neutral tones hanging above white wainscoting in the wainscoted passage.",
+   "seen_at": [
+    58,
+    60,
+    65,
+    87,
+    104,
+    105
+   ]
+  },
+  {
+   "name": "white paneled door A",
+   "description": "White paneled interior door with a silver knob located immediately to the right of the stainless steel refrigerator.",
+   "seen_at": [
+    61,
+    62,
+    63
+   ]
+  },
+  {
+   "name": "carpeted stairs",
+   "description": "Staircase with beige carpet treads and white risers leading between the lower level and upper corridor.",
+   "seen_at": [
+    29,
+    30,
+    31,
+    67,
+    68,
+    80,
+    81,
+    85,
+    86,
+    106,
+    107,
+    108,
+    138,
+    139,
+    140,
+    141
+   ]
+  },
+  {
+   "name": "two vertical floral prints",
+   "description": "Pair of square framed prints of flowers in vases, stacked vertically on the wall at the top of the carpeted stairs.",
+   "seen_at": [
+    67,
+    68,
+    78,
+    79,
+    107,
+    108,
+    118,
+    137,
+    138
+   ]
+  },
+  {
+   "name": "tall wooden sample rack",
+   "description": "Tall brown wooden cabinet filled with horizontal slots holding flat sample boards, in the corner near a window.",
+   "seen_at": [
+    70,
+    71,
+    72,
+    75
+   ]
+  },
+  {
+   "name": "glass table with white chairs",
+   "description": "Round glass-top table surrounded by four white molded plastic chairs with wooden legs.",
+   "seen_at": [
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77
+   ]
+  },
+  {
+   "name": "dark sample display rack",
+   "description": "Dark metal and wood display stand holding stacked sample boards against the wall next to the window.",
+   "seen_at": [
+    72,
+    73,
+    74,
+    75
+   ]
+  },
+  {
+   "name": "small wooden side table with bonsai",
+   "description": "Small rustic wooden side table with metal legs holding a small potted bonsai tree in front of the bay windows near the dark wood desk.",
+   "seen_at": [
+    82,
+    83,
+    84
+   ]
+  },
+  {
+   "name": "brown wingback armchair",
+   "description": "Dark brown upholstered wingback armchair with nailhead trim and a lumbar pillow, placed in front of the bay windows opposite the grey wingback armchair.",
+   "seen_at": [
+    83,
+    84
+   ]
+  },
+  {
+   "name": "white sofa",
+   "description": "Large white upholstered sofa with blue-and-white plaid and solid light-blue throw pillows.",
+   "seen_at": [
+    91,
+    93,
+    94,
+    97,
+    98,
+    101,
+    102,
+    142,
+    143
+   ]
+  },
+  {
+   "name": "wood and metal coffee table",
+   "description": "Rectangular coffee table with a chevron-patterned wood top and dark metal frame, resting on a blue-and-grey abstract rug in front of the white sofa.",
+   "seen_at": [
+    91,
+    93,
+    94,
+    96,
+    97,
+    98,
+    101,
+    102,
+    142,
+    143
+   ]
+  },
+  {
+   "name": "two-piece abstract grey art",
+   "description": "Pair of large square abstract canvas paintings with vertical grey, white, and blue brushstrokes hanging above the white sofa.",
+   "seen_at": [
+    93,
+    94,
+    97,
+    98,
+    101,
+    102
+   ]
+  },
+  {
+   "name": "grey chaise lounge",
+   "description": "Wide grey upholstered armchair/chaise lounge with a bolster pillow in front of the windows opposite the white sofa.",
+   "seen_at": [
+    93,
+    95,
+    96,
+    97,
+    98,
+    101,
+    102,
+    142,
+    143,
+    144
+   ]
+  },
+  {
+   "name": "grey armchair with throw",
+   "description": "Grey upholstered armchair with a white textured throw blanket draped over the back, positioned in the corner to the right of the white fireplace.",
+   "seen_at": [
+    97,
+    98,
+    99,
+    100,
+    101,
+    143,
+    144,
+    145,
+    147
+   ]
+  },
+  {
+   "name": "tall potted fig tree",
+   "description": "Tall artificial fiddle-leaf fig tree in a rectangular white planter box in the corner next to the white sofa.",
+   "seen_at": [
+    94,
+    95,
+    101,
+    102,
+    103
+   ]
+  },
+  {
+   "name": "Two-panel white door",
+   "description": "White two-panel interior door on the wall between the wainscoted passage and the wall with the white sofa.",
+   "seen_at": [
+    94,
+    95,
+    103,
+    104
+   ]
+  },
+  {
+   "name": "glass shower enclosure",
+   "description": "Walk-in shower with clear glass walls and grey-and-beige horizontal stone tile.",
+   "seen_at": [
+    111,
+    112,
+    114,
+    115,
+    131,
+    132,
+    133,
+    134
+   ]
+  },
+  {
+   "name": "white double vanity",
+   "description": "Long white cabinet counter with two sinks and a large frameless mirror above it on a tiled floor.",
+   "seen_at": [
+    111,
+    112,
+    114,
+    115,
+    131,
+    132
+   ]
+  },
+  {
+   "name": "tiled bathtub",
+   "description": "Built-in rectangular bathtub surrounded by grey-and-beige wood-look tile under a small window.",
+   "seen_at": [
+    111,
+    112,
+    113,
+    114
+   ]
+  },
+  {
+   "name": "white toilet",
+   "description": "White porcelain toilet situated between the white double vanity and the back wall.",
+   "seen_at": [
+    112,
+    113
+   ]
+  },
+  {
+   "name": "bifold closet doors E",
+   "description": "White paneled double bifold closet doors opposite the chevron-bedding bed.",
+   "seen_at": [
+    119,
+    120,
+    122,
+    123,
+    126
+   ]
+  },
+  {
+   "name": "grey nightstand with lamp",
+   "description": "Weathered grey open-shelf nightstand with a rectangular shade lamp in the corner next to the chevron-bedding bed.",
+   "seen_at": [
+    119,
+    120,
+    121,
+    123,
+    126
+   ]
+  },
+  {
+   "name": "grey patterned curtains",
+   "description": "Floor-length grey curtains with a geometric pattern flanking a sliding window near the chevron-bedding bed.",
+   "seen_at": [
+    119,
+    120,
+    121,
+    122,
+    126,
+    127
+   ]
+  },
+  {
+   "name": "grey dresser with mirror",
+   "description": "Weathered grey six-drawer dresser with a square framed mirror mounted above it near the chevron-bedding bed.",
+   "seen_at": [
+    123,
+    124,
+    125,
+    127,
+    128
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "tulip painting",
+   "to": "upholstered bench",
+   "how": "Turn right and walk between the foot of the canopy bed on your left and the wooden dresser with mirror on your right toward the upholstered bench under the magnolia painting."
+  },
+  {
+   "from": "upholstered bench",
+   "to": "open-shelf nightstand A",
+   "how": "Turn left and walk between the canopy bed on your left and the upholstered bench on your right into the window corner with open-shelf nightstand A."
+  },
+  {
+   "from": "open-shelf nightstand A",
+   "to": "open-shelf nightstand B",
+   "how": "Turn around to pass the upholstered bench on your left, then walk between the canopy bed on your right and the wooden dresser with mirror on your left to the far corner with open-shelf nightstand B."
+  },
+  {
+   "from": "open-shelf nightstand B",
+   "to": "staircase railing",
+   "how": "Turn around in the corner, walk past the wooden dresser with mirror and tulip painting on your left, and exit through the doorway into the corridor with the staircase railing on your right and hallway bifold doors on your left."
+  },
+  {
+   "from": "staircase railing",
+   "to": "chevron-bedding bed",
+   "how": "With the staircase railing on your left and two vertical floral prints behind you on the right, walk straight through the doorway ahead to the chevron-bedding bed on your left."
+  },
+  {
+   "from": "chevron-bedding bed",
+   "to": "white utility cabinets",
+   "how": "Turn around to exit the doorway by the chevron-bedding bed and immediately turn right through the adjacent doorway to the white utility cabinets on your left and round tree wall art on your right."
+  },
+  {
+   "from": "white utility cabinets",
+   "to": "staircase railing",
+   "how": "Turn around, pass the round tree wall art on your left, and step out through the doorway to the staircase railing ahead on your right."
+  },
+  {
+   "from": "staircase railing",
+   "to": "grey-headboard bed",
+   "how": "Walk along the corridor with the staircase railing on your right and turn left through the open doorway to the grey-headboard bed under the three-piece city paintings."
+  },
+  {
+   "from": "grey-headboard bed",
+   "to": "white nightstand",
+   "how": "Walk between the grey-headboard bed on your right and the white dresser with mirror on your left toward the two-tone curtains and white nightstand in the corner."
+  },
+  {
+   "from": "white nightstand",
+   "to": "staircase railing",
+   "how": "Turn around at the white nightstand, walk past the grey-headboard bed and bifold closet doors B on your left and the white dresser with mirror on your right, and exit through the doorway to the staircase railing."
+  },
+  {
+   "from": "staircase railing",
+   "to": "six-panel white door A",
+   "how": "Turn onto the carpeted stairs with the staircase railing on your left and high square window high ahead, and walk down to the grey patterned runner rug, tufted grey settee, and six-panel white door A."
+  },
+  {
+   "from": "six-panel white door A",
+   "to": "wainscoted passage",
+   "how": "With six-panel white door A behind you and the tufted grey settee on your left, walk straight into the wainscoted passage past the forest canvas painting on your left and bifold closet doors C on your right."
+  },
+  {
+   "from": "wainscoted passage",
+   "to": "dark island counter",
+   "how": "Walk straight out of the wainscoted passage past the distressed blue console table on your right to the dark island counter and wooden dining table."
+  },
+  {
+   "from": "dark island counter",
+   "to": "window above sink",
+   "how": "Walk between the dark island counter on your left and the stainless steel refrigerator and stainless steel range on your right toward the window above sink."
+  },
+  {
+   "from": "window above sink",
+   "to": "wooden dining table",
+   "how": "Turn around, walk past the stainless steel range and stainless steel refrigerator on your left and the distressed blue console table, then curve left around the dark island counter toward the wooden dining table."
+  },
+  {
+   "from": "wooden dining table",
+   "to": "white hall tree bench",
+   "how": "From the wooden dining table, walk into the small alcove ahead with the white hall tree bench, six-panel white door B on the left, and bifold closet doors D on the right."
+  },
+  {
+   "from": "white hall tree bench",
+   "to": "wainscoted passage",
+   "how": "Turn 180 degrees to exit the alcove, pass the wooden dining table and dark island counter on your left, and turn right past the distressed blue console table into the wainscoted passage."
+  },
+  {
+   "from": "wainscoted passage",
+   "to": "six-panel white door A",
+   "how": "Walk straight through the wainscoted passage past the forest canvas painting and carpeted stairs on your right to the tufted grey settee, grey patterned runner rug, and six-panel white door A ahead."
+  },
+  {
+   "from": "six-panel white door A",
+   "to": "glass-paned french doors",
+   "how": "Turn around from six-panel white door A, pass the tufted grey settee on your left, and turn right through the glass-paned french doors."
+  },
+  {
+   "from": "glass-paned french doors",
+   "to": "potted leafy plant",
+   "how": "Walk through the glass-paned french doors past the grey wingback armchair and three-piece world map art on your left and the dark wood desk on your right to the potted leafy plant in the far left corner."
+  },
+  {
+   "from": "potted leafy plant",
+   "to": "glass-paned french doors",
+   "how": "Turn around from the potted leafy plant and dark wood desk and walk straight out through the glass-paned french doors."
+  },
+  {
+   "from": "glass-paned french doors",
+   "to": "wainscoted passage",
+   "how": "Exit the glass-paned french doors with six-panel white door A on your left, angle right past the carpeted stairs on your left, and enter the wainscoted passage."
+  },
+  {
+   "from": "dark island counter",
+   "to": "white paneled door A",
+   "how": "Walk between the dark island counter on your left and the distressed blue console table on your right straight to white paneled door A next to the stainless steel refrigerator."
+  },
+  {
+   "from": "white paneled door A",
+   "to": "wainscoted passage",
+   "how": "Turn around from white paneled door A, pass the distressed blue console table on your left and dark island counter on your right, and turn left into the wainscoted passage."
+  },
+  {
+   "from": "six-panel white door A",
+   "to": "two vertical floral prints",
+   "how": "From six-panel white door A and the tufted grey settee, turn toward the carpeted stairs and walk up with the staircase railing on your left to the two vertical floral prints at the top landing."
+  },
+  {
+   "from": "two vertical floral prints",
+   "to": "glass table with white chairs",
+   "how": "At the top of the carpeted stairs by the two vertical floral prints, turn right along the staircase railing and then turn left through the first doorway into the space with the glass table with white chairs, tall wooden sample rack, and dark sample display rack."
+  },
+  {
+   "from": "glass table with white chairs",
+   "to": "two vertical floral prints",
+   "how": "Exit the doorway from the glass table with white chairs and turn left along the staircase railing toward the two vertical floral prints at the top of the carpeted stairs."
+  },
+  {
+   "from": "glass-paned french doors",
+   "to": "small wooden side table with bonsai",
+   "how": "Enter through the glass-paned french doors and walk slightly right past the dark wood desk on your left and brown wingback armchair on your right to the small wooden side table with bonsai by the windows."
+  },
+  {
+   "from": "small wooden side table with bonsai",
+   "to": "glass-paned french doors",
+   "how": "Turn around by the small wooden side table with bonsai, pass the brown wingback armchair on your left and grey wingback armchair on your right, and exit through the glass-paned french doors."
+  },
+  {
+   "from": "wainscoted passage",
+   "to": "sliding glass doors",
+   "how": "Exit the wainscoted passage and walk straight between the wooden dining table on your left and the dark island counter on your right to the sliding glass doors."
+  },
+  {
+   "from": "sliding glass doors",
+   "to": "wood and metal coffee table",
+   "how": "Turn left from the sliding glass doors and walk past the wooden dining table into the seating area with the white sofa, two-piece abstract grey art, grey chaise lounge, and wood and metal coffee table."
+  },
+  {
+   "from": "wood and metal coffee table",
+   "to": "grey armchair with throw",
+   "how": "Walk past the wood and metal coffee table and white fireplace on your left and the grey chaise lounge on your right to the corner window behind the grey armchair with throw."
+  },
+  {
+   "from": "grey armchair with throw",
+   "to": "wainscoted passage",
+   "how": "Turn around in the corner by the grey armchair with throw, walk back between the grey chaise lounge on your left and the wood and metal coffee table and white sofa on your right, pass the tall potted fig tree and Two-panel white door on your right, and turn right into the wainscoted passage."
+  },
+  {
+   "from": "two vertical floral prints",
+   "to": "canopy bed",
+   "how": "At the top of the carpeted stairs facing the two vertical floral prints, turn right to face the hallway bifold doors, then turn left through the doorway to the canopy bed and wooden dresser with mirror."
+  },
+  {
+   "from": "canopy bed",
+   "to": "bifold closet doors A",
+   "how": "Walk between the canopy bed on your left and the wooden dresser with mirror on your right toward the upholstered bench, then veer right to bifold closet doors A."
+  },
+  {
+   "from": "bifold closet doors A",
+   "to": "tiled bathtub",
+   "how": "Turn right past bifold closet doors A and walk between the glass shower enclosure on your left and the white double vanity on your right to the tiled bathtub and white toilet."
+  },
+  {
+   "from": "tiled bathtub",
+   "to": "bifold closet doors A",
+   "how": "Turn 180 degrees from the tiled bathtub and white toilet and walk past the white double vanity on your left and glass shower enclosure on your right to bifold closet doors A."
+  },
+  {
+   "from": "bifold closet doors A",
+   "to": "staircase railing",
+   "how": "With bifold closet doors A on your right, walk toward the canopy bed and turn left between the wooden dresser with mirror on your left and canopy bed on your right, passing the tulip painting on your right to exit to the staircase railing."
+  },
+  {
+   "from": "chevron-bedding bed",
+   "to": "grey nightstand with lamp",
+   "how": "Walk past the chevron-bedding bed on your left and bifold closet doors E on your right to the grey nightstand with lamp and grey patterned curtains."
+  },
+  {
+   "from": "grey nightstand with lamp",
+   "to": "grey dresser with mirror",
+   "how": "Turn around from the grey nightstand with lamp and grey patterned curtains and walk past the chevron-bedding bed on your right and bifold closet doors E on your left to the grey dresser with mirror."
+  },
+  {
+   "from": "grey dresser with mirror",
+   "to": "canopy bed",
+   "how": "Turn left by the grey dresser with mirror, exit through the doorway into the corridor with the staircase railing on your left and hallway bifold doors on your right, and walk straight through the doorway ahead to the canopy bed."
+  },
+  {
+   "from": "wainscoted passage",
+   "to": "white fireplace",
+   "how": "Walk out of the wainscoted passage, curve left past the wooden dining table on your right and tall potted fig tree on your left, and walk between the wood and metal coffee table on your left and grey chaise lounge on your right straight to the white fireplace."
+  }
+ ],
+ "walk_summary": [
+  "Enter through the doorway by the tulip painting, bifold closet doors A, and canopy bed.",
+  "Turn right and walk between the canopy bed on the left and the wooden dresser with mirror on the right toward the upholstered bench and magnolia painting.",
+  "Turn left to open-shelf nightstand A in the corner, then loop around the foot of the canopy bed past the wooden dresser with mirror to open-shelf nightstand B in the far corner.",
+  "Turn around, walk past the wooden dresser with mirror and tulip painting, and exit into the corridor with the staircase railing and hallway bifold doors.",
+  "Walk straight into the doorway at the end of the corridor to see the chevron-bedding bed, then turn right to exit.",
+  "Turn right into the adjacent doorway with the white utility cabinets and round tree wall art, then turn around and exit back to the staircase railing.",
+  "Walk along the staircase railing and turn left through a doorway toward the grey-headboard bed and three-piece city paintings.",
+  "Walk between the white dresser with mirror and grey-headboard bed to the two-tone curtains and white nightstand, then turn around and exit past bifold closet doors B to the staircase railing.",
+  "Turn left and walk down the carpeted stairs beneath the high square window to six-panel white door A, the tufted grey settee, and the grey patterned runner rug.",
+  "Turn left and walk down the wainscoted passage past bifold closet doors C and the distressed blue console table to the dark island counter, stainless steel refrigerator, stainless steel range, and window above sink.",
+  "Turn around, walk around the dark island counter past the wooden dining table and sliding glass doors, and step into the alcove with the white hall tree bench, six-panel white door B, and bifold closet doors D.",
+  "Turn around, walk back past the wooden dining table, dark island counter, and distressed blue console table, and follow the wainscoted passage back to six-panel white door A.",
+  "Turn around, pass the tufted grey settee, and walk through the glass-paned french doors past the grey wingback armchair, three-piece world map art, dark wood desk, and round black-framed mirror to the potted leafy plant in the corner.",
+  "Turn around, exit through the glass-paned french doors, and walk down the wainscoted passage past the forest canvas painting and bifold closet doors C to white paneled door A next to the stainless steel refrigerator.",
+  "Turn around and walk back through the wainscoted passage to six-panel white door A and the tufted grey settee, then turn right and climb the carpeted stairs to the two vertical floral prints.",
+  "Turn right along the staircase railing and left into the doorway with the glass table with white chairs, tall wooden sample rack, and dark sample display rack.",
+  "Exit to the staircase railing, walk past the two vertical floral prints, and descend the carpeted stairs back to six-panel white door A.",
+  "Turn left through the glass-paned french doors and walk past the dark wood desk to the small wooden side table with bonsai and brown wingback armchair by the windows.",
+  "Turn around, exit through the glass-paned french doors, and walk down the wainscoted passage between the wooden dining table and dark island counter to the sliding glass doors.",
+  "Turn left into the seating area with the white sofa, two-piece abstract grey art, wood and metal coffee table, and grey chaise lounge, and walk past the white fireplace and grey armchair with throw into the window corner.",
+  "Turn around, walk past the tall potted fig tree and Two-panel white door, turn right through the wainscoted passage to the carpeted stairs, and climb back up to the two vertical floral prints and hallway bifold doors.",
+  "Turn left into the doorway with the canopy bed, walk between the canopy bed and wooden dresser with mirror, and turn right past bifold closet doors A into the tiled area with the glass shower enclosure, white double vanity, tiled bathtub, and white toilet.",
+  "Turn around, walk back out past bifold closet doors A, the wooden dresser with mirror, the canopy bed, and the tulip painting to the staircase railing.",
+  "Turn left at the two vertical floral prints and enter the doorway to the chevron-bedding bed, walking past bifold closet doors E to the grey nightstand with lamp and grey patterned curtains, then back to the grey dresser with mirror.",
+  "Exit past the grey dresser with mirror and staircase railing, walk straight back past the canopy bed and wooden dresser with mirror, and turn right past bifold closet doors A to look into the glass shower enclosure.",
+  "Turn around, exit past bifold closet doors A, the canopy bed, the wooden dresser with mirror, and the tulip painting, and walk down the carpeted stairs to six-panel white door A.",
+  "Turn left through the wainscoted passage, curve left past the wooden dining table, and walk between the wood and metal coffee table and grey chaise lounge to the corner beside the white fireplace and grey armchair with throw."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/CrMo8WxCyVb/frames",
+  "n_keyframes": 148,
+  "camera": "held at chest height by a person walking"
+ }
+}

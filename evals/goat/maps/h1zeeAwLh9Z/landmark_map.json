@@ -1,0 +1,653 @@
+{
+ "landmarks": [
+  {
+   "name": "wooden staircase",
+   "description": "Open-riser wooden stairs with log railings ascending next to the stone column.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    8,
+    9,
+    10,
+    17,
+    18
+   ]
+  },
+  {
+   "name": "stone column",
+   "description": "Massive central river-rock chimney structure with a black wood stove on one side and a fireplace opening on the other.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    14,
+    15,
+    16,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "red exterior door",
+   "description": "Reddish-brown wooden door with a 9-pane glass window in the upper half.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+   ]
+  },
+  {
+   "name": "dark doormat",
+   "description": "Dark blue or black rectangular mat on the floor in front of the red exterior door.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    27,
+    28,
+    29
+   ]
+  },
+  {
+   "name": "interlocking log corner",
+   "description": "Protruding notched ends of horizontal wall logs forming a vertical corner next to the red door.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "name": "blue area rug",
+   "description": "Large bright blue rectangular rug on the wood floor.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "name": "wooden table with chairs",
+   "description": "Light wood table surrounded by high-backed chairs, sitting on the blue rug.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "name": "corner desk with white lamp",
+   "description": "Small wooden desk in the wall corner between two windows, topped with a small white-shaded lamp.",
+   "seen_at": [
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "name": "large clay pot",
+   "description": "Large reddish-brown urn-shaped planter on the floor at the end of the counter.",
+   "seen_at": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "name": "wooden counter island",
+   "description": "Freestanding light-wood cabinet island with dark-cushioned barstools tucked under one side.",
+   "seen_at": [
+    3,
+    4,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    17,
+    18,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "wooden counter with sink",
+   "description": "Long light-wood cabinetry counter with a white dishwasher, sink beneath a window, and upper cabinets.",
+   "seen_at": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "white oven",
+   "description": "White built-in oven and range with a dark towel hanging on the handle, at the end of the counter.",
+   "seen_at": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "name": "wood-paneled refrigerator",
+   "description": "Tall double-door refrigerator with light wood front panels matching the cabinets.",
+   "seen_at": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    29,
+    30,
+    31,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "black wood stove",
+   "description": "Black cast-iron stove with a stovepipe, sitting on a raised stone hearth at the base of the stone column.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    51,
+    52,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "wooden cabinet wall",
+   "description": "Tall light-wood vertical-plank storage structure with a recessed counter niche.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "wooden piano",
+   "description": "Upright wooden piano with a bench, against the log wall.",
+   "seen_at": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "floral sofa",
+   "description": "Light-colored upholstered sofa with dark throw pillows and wooden end tables at both ends.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+   ]
+  },
+  {
+   "name": "patterned area rug",
+   "description": "Large light-colored rug with floral medallions and a reddish-brown border in front of the sofa.",
+   "seen_at": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+   ]
+  },
+  {
+   "name": "double sash windows",
+   "description": "Pair of multi-pane sash windows in the log wall behind the sofa.",
+   "seen_at": [
+    19,
+    20,
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "yellow-shaded lamp on table",
+   "description": "Table lamp with a bright yellow conical shade on a small table in the corner.",
+   "seen_at": [
+    24,
+    25,
+    26,
+    27
+   ]
+  },
+  {
+   "name": "large picture window",
+   "description": "Wide single-pane window in the log wall looking out onto a covered wooden deck.",
+   "seen_at": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+   ]
+  },
+  {
+   "name": "angled wooden door",
+   "description": "Closed medium-brown paneled wooden door set in an angled white wall section with a log corner.",
+   "seen_at": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    45,
+    46,
+    47,
+    48,
+    51,
+    52,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "white washer and dryer",
+   "description": "Side-by-side white laundry machines under light-wood upper cabinets on a white tiled floor.",
+   "seen_at": [
+    31,
+    32,
+    33,
+    34,
+    51,
+    52,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "wooden vanity with mirror",
+   "description": "Light-wood sink cabinet with a white countertop, wall-mounted mirror, and blue hand towel.",
+   "seen_at": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    51,
+    52,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "curtained window above white heater",
+   "description": "Small multi-pane window with sheer patterned curtains above a white recessed wall heater.",
+   "seen_at": [
+    34,
+    35,
+    36
+   ]
+  },
+  {
+   "name": "glass shower stall",
+   "description": "Clear glass-enclosed shower stall with a white frame next to the doorway.",
+   "seen_at": [
+    36,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "half-glass wooden door",
+   "description": "Interior wooden door with a 9-pane glass upper half and a diagonal wooden cross-brace on the lower half, propped open.",
+   "seen_at": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    45,
+    46,
+    47,
+    48,
+    51,
+    52,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "green carpet",
+   "description": "Wall-to-wall dark green carpeting.",
+   "seen_at": [
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
+   ]
+  },
+  {
+   "name": "reddish-brown armchairs",
+   "description": "Pair of plush, oversized reddish-brown upholstered armchairs.",
+   "seen_at": [
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+   ]
+  },
+  {
+   "name": "dark wooden media console",
+   "description": "Low dark-wood cabinet with glass doors, topped with a white-shaded lamp and a black printer in front of floral curtains.",
+   "seen_at": [
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
+   ]
+  },
+  {
+   "name": "painted cabinet with TV",
+   "description": "Black-and-red cabinet with circular painted motifs on the doors, holding a flat-screen TV between two multi-pane windows.",
+   "seen_at": [
+    38,
+    39,
+    40,
+    41,
+    42,
+    43
+   ]
+  },
+  {
+   "name": "exterior door with X-panel",
+   "description": "Wooden door with a large single glass pane on top and an X-shaped raised panel on the bottom.",
+   "seen_at": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "copper boiler",
+   "description": "Large copper-colored oval tub with handles sitting on the white tiled floor in the corner.",
+   "seen_at": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "small wooden cabinet",
+   "description": "Waist-high light-wood cabinet with a dark mat on top against a log wall.",
+   "seen_at": [
+    48,
+    49,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "tiered corner plant stand",
+   "description": "Black wrought-iron corner stand with multiple shelves holding ceramic pots and a leafy plant.",
+   "seen_at": [
+    48,
+    49,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "metal-framed wooden bench",
+   "description": "Slatted wooden park-style bench with black metal legs on the white tiled floor beneath double windows.",
+   "seen_at": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "wooden staircase",
+   "to": "interlocking log corner",
+   "how": "Step off the bottom of the wooden staircase, passing the stone column on your left and the red exterior door with its dark doormat on your right, and turn right toward the interlocking log corner."
+  },
+  {
+   "from": "interlocking log corner",
+   "to": "blue area rug",
+   "how": "Turn around to the right with the interlocking log corner on your right and walk forward onto the blue area rug with the wooden table with chairs."
+  },
+  {
+   "from": "blue area rug",
+   "to": "corner desk with white lamp",
+   "how": "Walk around the outer edge of the blue area rug keeping the wooden table with chairs on your right to pass the corner desk with white lamp on your left."
+  },
+  {
+   "from": "corner desk with white lamp",
+   "to": "large clay pot",
+   "how": "Continue past the corner desk with white lamp and turn right toward the large clay pot at the end of the counter."
+  },
+  {
+   "from": "large clay pot",
+   "to": "wood-paneled refrigerator",
+   "how": "Pass the large clay pot on your left and walk straight between the wooden counter with sink on your left and the wooden counter island on your right, passing the white oven on your left to reach the wood-paneled refrigerator on your right."
+  },
+  {
+   "from": "wood-paneled refrigerator",
+   "to": "wooden cabinet wall",
+   "how": "Move forward past the wood-paneled refrigerator on your right to enter the passage between the wooden cabinet wall on your left and the black wood stove on the stone column on your right."
+  },
+  {
+   "from": "wooden cabinet wall",
+   "to": "wood-paneled refrigerator",
+   "how": "Walk between the stone column on your left and the wooden cabinet wall on your right, then curve right past the wood-paneled refrigerator on your left."
+  },
+  {
+   "from": "wooden cabinet wall",
+   "to": "wooden piano",
+   "how": "Continue forward past the wooden cabinet wall on your left and the stone column on your right to pass the wooden piano against the log wall on your left."
+  },
+  {
+   "from": "wooden piano",
+   "to": "wooden cabinet wall",
+   "how": "Walk forward keeping the wooden piano and wooden cabinet wall on your right and the stone column on your left."
+  },
+  {
+   "from": "wooden piano",
+   "to": "double sash windows",
+   "how": "Walk past the wooden piano on your left with the floral sofa and patterned area rug on your right to reach the double sash windows ahead."
+  },
+  {
+   "from": "double sash windows",
+   "to": "large picture window",
+   "how": "Turn right in front of the double sash windows and walk forward across the patterned area rug with the floral sofa and yellow-shaded lamp on table on your left and the stone column on your right toward the large picture window."
+  },
+  {
+   "from": "large picture window",
+   "to": "wooden piano",
+   "how": "Turn right in front of the large picture window, passing the red exterior door and dark doormat on your left, and go straight past the stone column on your left toward the wooden piano."
+  },
+  {
+   "from": "wood-paneled refrigerator",
+   "to": "angled wooden door",
+   "how": "Curve right past the wood-paneled refrigerator and wooden counter with sink on your left to face the angled wooden door ahead."
+  },
+  {
+   "from": "angled wooden door",
+   "to": "white washer and dryer",
+   "how": "Before reaching the angled wooden door, turn right through the first doorway onto the white tiled floor with the white washer and dryer on the right."
+  },
+  {
+   "from": "white washer and dryer",
+   "to": "angled wooden door",
+   "how": "Turn left and step out of the doorway to face the angled wooden door."
+  },
+  {
+   "from": "angled wooden door",
+   "to": "wooden vanity with mirror",
+   "how": "With the angled wooden door ahead on your left, step forward and turn right into the next doorway with the wooden vanity with mirror on the left and the curtained window above white heater ahead."
+  },
+  {
+   "from": "wooden vanity with mirror",
+   "to": "angled wooden door",
+   "how": "Turn around past the glass shower stall on your left and step out of the doorway to face the angled wooden door."
+  },
+  {
+   "from": "angled wooden door",
+   "to": "reddish-brown armchairs",
+   "how": "With the angled wooden door and half-glass wooden door on your left, step forward and turn right through the doorway onto the green carpet between the pair of reddish-brown armchairs."
+  },
+  {
+   "from": "reddish-brown armchairs",
+   "to": "painted cabinet with TV",
+   "how": "Walk forward on the green carpet between the reddish-brown armchairs, with the dark wooden media console to your left, and pass the painted cabinet with TV on your left."
+  },
+  {
+   "from": "painted cabinet with TV",
+   "to": "reddish-brown armchairs",
+   "how": "Turn right in the corner and walk back across the green carpet toward the doorway between the reddish-brown armchairs."
+  },
+  {
+   "from": "reddish-brown armchairs",
+   "to": "half-glass wooden door",
+   "how": "Pass between the reddish-brown armchairs out of the doorway and angle right across the wood floor, keeping the angled wooden door on your left, to pass through the open half-glass wooden door."
+  },
+  {
+   "from": "half-glass wooden door",
+   "to": "exterior door with X-panel",
+   "how": "Step through the open half-glass wooden door onto the white tiled floor to face the exterior door with X-panel ahead and the copper boiler on the left, surrounded by the small wooden cabinet, tiered corner plant stand, and metal-framed wooden bench."
+  },
+  {
+   "from": "exterior door with X-panel",
+   "to": "half-glass wooden door",
+   "how": "Turn right past the small wooden cabinet, tiered corner plant stand, and metal-framed wooden bench to walk back out through the half-glass wooden door on your right."
+  },
+  {
+   "from": "half-glass wooden door",
+   "to": "black wood stove",
+   "how": "Step out through the half-glass wooden door, turn right past the doorway to the wooden vanity with mirror and the doorway to the white washer and dryer on your left and the angled wooden door on your right, to face the black wood stove ahead."
+  }
+ ],
+ "walk_summary": [
+  "Start at the bottom of the wooden staircase and walk forward between the stone column on the left and the red exterior door and dark doormat on the right, turning right past the interlocking log corner.",
+  "Turn around to the right to face the blue area rug and the wooden table with chairs.",
+  "Walk around the outer edge of the blue area rug keeping the wooden table with chairs on the right and passing the corner desk with white lamp on the left, then turn right toward the large clay pot.",
+  "Pass the large clay pot on the left and walk forward between the wooden counter with sink on the left and the wooden counter island on the right, passing the white oven on the left and the wood-paneled refrigerator on the right.",
+  "Walk straight between the wooden cabinet wall on the left and the black wood stove on the stone column on the right.",
+  "Continue past the wooden piano on the left and the stone column, floral sofa, and patterned area rug on the right toward the double sash windows.",
+  "Turn right in front of the double sash windows and walk across the patterned area rug between the floral sofa and yellow-shaded lamp on table on the left and the stone column on the right toward the large picture window.",
+  "Turn right in front of the large picture window, passing the red exterior door, dark doormat, and stone column on the left, and walk back past the wooden piano and wooden cabinet wall on the right.",
+  "Curve right past the wooden counter island, wood-paneled refrigerator, and wooden counter with sink on the left toward the angled wooden door.",
+  "Turn right into the first doorway to see the white washer and dryer on the right, then turn left to exit back toward the angled wooden door.",
+  "Move left and turn right into the next doorway with the wooden vanity with mirror on the left and the curtained window above white heater ahead, then turn around past the glass shower stall on the left and step back out toward the angled wooden door.",
+  "With the angled wooden door and half-glass wooden door on the left, step forward and turn right through the doorway onto the green carpet between the reddish-brown armchairs.",
+  "Look left at the dark wooden media console, then walk forward on the green carpet past the painted cabinet with TV on the left to the corner.",
+  "Turn right in the corner and walk back across the green carpet, exiting between the reddish-brown armchairs.",
+  "Angle right across the wood floor past the angled wooden door on the left and walk through the open half-glass wooden door onto the white tiled floor.",
+  "In front of the exterior door with X-panel and the copper boiler, turn right in a circle past the small wooden cabinet, tiered corner plant stand, and metal-framed wooden bench.",
+  "Exit back through the half-glass wooden door and turn right, passing the doorways to the wooden vanity with mirror and white washer and dryer on the left and the angled wooden door on the right, ending facing the black wood stove."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/h1zeeAwLh9Z/frames",
+  "n_keyframes": 55,
+  "camera": "held at chest height by a person walking"
+ }
+}

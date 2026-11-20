@@ -1,0 +1,108 @@
+{
+ "levels": [
+  -2.7,
+  -1.1,
+  0.0
+ ],
+ "landmarks": {
+  "grey sectional sofa": [
+   3
+  ],
+  "wooden staircase going up": [
+   3
+  ],
+  "dark wooden table and chairs": [
+   3
+  ],
+  "wooden railing for downward stairs": [
+   2,
+   3
+  ],
+  "sliding glass door": [
+   3
+  ],
+  "white bi-fold doors": [
+   3
+  ],
+  "wooden door with oval glass": [
+   3
+  ],
+  "toilet": [
+   3
+  ],
+  "stainless steel refrigerator": [
+   3
+  ],
+  "wooden cabinets": [
+   3
+  ],
+  "black dishwasher": [
+   3
+  ],
+  "carpeted stairs": [
+   2
+  ],
+  "black refrigerator": [
+   1,
+   2
+  ],
+  "round wooden table": [
+   1,
+   2
+  ],
+  "bed with white metal headboard": [
+   1
+  ],
+  "striped dresser": [
+   1
+  ],
+  "grey curtains": [
+   1
+  ],
+  "wooden vanity with mirror": [
+   1
+  ],
+  "dark wooden armoire": [
+   1
+  ],
+  "grey armchair": [
+   1
+  ],
+  "white louvered closet doors": [
+   1
+  ],
+  "white and wood wall unit": [
+   3
+  ],
+  "lower sliding glass door": [
+   1
+  ],
+  "dark grey futon": [
+   1
+  ],
+  "round yellow coffee tables": [
+   1
+  ],
+  "yellow-framed shelf unit": [
+   1
+  ],
+  "round grey chairs": [
+   1
+  ],
+  "white lower level cabinets": [
+   1
+  ],
+  "small black cabinet": [
+   1
+  ],
+  "landscape painting": [
+   1
+  ],
+  "white paneled closet doors": [
+   1
+  ],
+  "white paneled door": [
+   1
+  ]
+ }
+}

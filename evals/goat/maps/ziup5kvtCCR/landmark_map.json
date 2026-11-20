@@ -1,0 +1,666 @@
+{
+ "landmarks": [
+  {
+   "name": "round wall clock",
+   "description": "Large round white-faced clock with Roman numerals on a white wall.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    23,
+    24,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "Large stainless steel refrigerator next to a raised white counter.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    31,
+    32,
+    39,
+    40,
+    41,
+    42
+   ]
+  },
+  {
+   "name": "white paneled door with pet flap",
+   "description": "White six-panel door with a small black pet flap at the bottom.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    43
+   ]
+  },
+  {
+   "name": "gray sectional sofa",
+   "description": "Large L-shaped gray fabric sofa with throw pillows.",
+   "seen_at": [
+    4,
+    5,
+    8,
+    9,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    46,
+    47
+   ]
+  },
+  {
+   "name": "raised white counter",
+   "description": "White half-wall counter with a gray top.",
+   "seen_at": [
+    4,
+    5,
+    31,
+    32,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+   ]
+  },
+  {
+   "name": "TV on white distressed cabinet",
+   "description": "Flat-screen TV sitting on a white distressed wood cabinet.",
+   "seen_at": [
+    5,
+    6,
+    9,
+    10,
+    24,
+    25,
+    26,
+    30,
+    47,
+    48,
+    49
+   ]
+  },
+  {
+   "name": "white armchair",
+   "description": "Curved white upholstered armchair with a gray pillow.",
+   "seen_at": [
+    5,
+    6,
+    9,
+    23,
+    24,
+    30,
+    47,
+    48
+   ]
+  },
+  {
+   "name": "glass-paneled door with wreath",
+   "description": "White door with a large glass pane, transom window, and a round wreath.",
+   "seen_at": [
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "name": "mirrored console table",
+   "description": "Light-colored console cabinet with a tall ornate mirror above it.",
+   "seen_at": [
+    6,
+    7
+   ]
+  },
+  {
+   "name": "wall-mounted display box",
+   "description": "Dark-framed rectangular display box protruding from the passage wall.",
+   "seen_at": [
+    10,
+    11,
+    12,
+    22,
+    23,
+    49,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "narrow brown runner rug",
+   "description": "Long brown runner rug on light wood-look flooring in the passage.",
+   "seen_at": [
+    10,
+    11,
+    12,
+    22,
+    23,
+    49,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "dark wood bed",
+   "description": "Large dark wood sleigh-style bed with light-colored bedding.",
+   "seen_at": [
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    59,
+    60,
+    65,
+    66
+   ]
+  },
+  {
+   "name": "tall dark wood dresser",
+   "description": "Tall dark wood chest of drawers with a TV on top.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    20,
+    21,
+    59,
+    60,
+    65,
+    73
+   ]
+  },
+  {
+   "name": "dark wood armchair with white cushions",
+   "description": "Dark wood frame armchair with thick white cushions in a corner.",
+   "seen_at": [
+    16,
+    17,
+    59,
+    60
+   ]
+  },
+  {
+   "name": "dark wood nightstand with white lamp",
+   "description": "Two-drawer dark wood nightstand with a white gourd-shaped lamp on a decorative box.",
+   "seen_at": [
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "glass shower enclosure",
+   "description": "Frameless glass shower enclosure next to a tub, visible through a doorway.",
+   "seen_at": [
+    20,
+    21,
+    61,
+    62,
+    63,
+    64
+   ]
+  },
+  {
+   "name": "square silver-framed mirror",
+   "description": "Small square mirror with a wide silver frame on the wall near the dark wood bed.",
+   "seen_at": [
+    21,
+    65,
+    66
+   ]
+  },
+  {
+   "name": "chandelier",
+   "description": "Round decorative chandelier hanging from the high ceiling.",
+   "seen_at": [
+    23,
+    24
+   ]
+  },
+  {
+   "name": "fireplace with round mirror",
+   "description": "White corner fireplace with a wood mantel and a round mirror above it.",
+   "seen_at": [
+    25,
+    26,
+    27,
+    28
+   ]
+  },
+  {
+   "name": "narrow decorated tree",
+   "description": "Tall slim artificial tree with ornaments standing between the window and fireplace.",
+   "seen_at": [
+    25,
+    26,
+    27,
+    28,
+    29
+   ]
+  },
+  {
+   "name": "small white side table with lamp",
+   "description": "Small distressed white table with a white-shaded lamp at the end of the gray sofa.",
+   "seen_at": [
+    27,
+    28
+   ]
+  },
+  {
+   "name": "window with white blinds and gray curtains",
+   "description": "Large double window with horizontal white blinds and floor-length gray curtains.",
+   "seen_at": [
+    28,
+    29,
+    33,
+    34
+   ]
+  },
+  {
+   "name": "glass-paneled exterior door",
+   "description": "White door with a large glass pane and tan shade, located between two curtained windows.",
+   "seen_at": [
+    33,
+    34,
+    35,
+    36
+   ]
+  },
+  {
+   "name": "wooden table with cream chairs",
+   "description": "Dark wood rectangular table surrounded by cream upholstered chairs and a dark wood bench.",
+   "seen_at": [
+    34,
+    35,
+    36,
+    37
+   ]
+  },
+  {
+   "name": "blue upholstered barstools",
+   "description": "Three tall barstools with distressed wood legs and blue fabric backs at the raised white counter.",
+   "seen_at": [
+    36,
+    37
+   ]
+  },
+  {
+   "name": "large distressed wood-framed mirror",
+   "description": "Large rectangular mirror with a wide, weathered wood frame on the wall near the wooden table.",
+   "seen_at": [
+    36,
+    37
+   ]
+  },
+  {
+   "name": "stainless steel trash can",
+   "description": "Tall cylindrical stainless steel trash can at the end of the white cabinets.",
+   "seen_at": [
+    38,
+    39
+   ]
+  },
+  {
+   "name": "white cabinets with stainless dishwasher and stove",
+   "description": "L-shaped run of white upper and lower cabinets with a stainless steel dishwasher, range, and black microwave.",
+   "seen_at": [
+    38,
+    39,
+    40,
+    41,
+    42
+   ]
+  },
+  {
+   "name": "gray distressed two-door cabinet with wall sconce",
+   "description": "Small freestanding distressed gray cabinet with a burlap-shaded wall lamp above it.",
+   "seen_at": [
+    43,
+    44,
+    46
+   ]
+  },
+  {
+   "name": "white washer and dryer",
+   "description": "Side-by-side white washing machine and dryer under white wall cabinets.",
+   "seen_at": [
+    44,
+    45
+   ]
+  },
+  {
+   "name": "bed with white carved headboard and teal throw",
+   "description": "Bed with white bedding, a teal patterned throw blanket, gray pillows, and a white carved wooden headboard.",
+   "seen_at": [
+    52,
+    53,
+    54,
+    55,
+    67,
+    74,
+    75,
+    76
+   ]
+  },
+  {
+   "name": "small white round nightstand with lamp",
+   "description": "Small distressed white round table with a white lamp next to the carved headboard.",
+   "seen_at": [
+    52,
+    53
+   ]
+  },
+  {
+   "name": "white double doors",
+   "description": "Pair of white six-panel doors on the wall opposite the window near the teal-throw bed.",
+   "seen_at": [
+    52,
+    53
+   ]
+  },
+  {
+   "name": "gray vanity cabinet",
+   "description": "Gray wooden cabinet with a light countertop and rectangular mirror above it.",
+   "seen_at": [
+    54,
+    55,
+    56,
+    57,
+    58
+   ]
+  },
+  {
+   "name": "white toilet",
+   "description": "Standard white porcelain toilet next to the gray vanity.",
+   "seen_at": [
+    54,
+    55,
+    56,
+    57,
+    58
+   ]
+  },
+  {
+   "name": "patterned shower curtain",
+   "description": "Floor-to-ceiling shower curtain with a grey, blue, and beige floral/paisley pattern.",
+   "seen_at": [
+    56,
+    57,
+    58
+   ]
+  },
+  {
+   "name": "small window with blinds",
+   "description": "Small rectangular window with white horizontal blinds above the toilet.",
+   "seen_at": [
+    56,
+    57
+   ]
+  },
+  {
+   "name": "corner bathtub with gray tile",
+   "description": "White built-in bathtub surrounded by large gray tiles under a window, next to the glass shower enclosure.",
+   "seen_at": [
+    61,
+    62,
+    63
+   ]
+  },
+  {
+   "name": "double-sink gray vanity",
+   "description": "Long light-gray cabinet with two sinks, a white countertop, and a large mirror with a light fixture above.",
+   "seen_at": [
+    61,
+    62,
+    63,
+    64
+   ]
+  },
+  {
+   "name": "bed with white tufted bedspread",
+   "description": "Bed with a white textured bedspread, fringed edges, and brown and gray throw pillows.",
+   "seen_at": [
+    68,
+    69,
+    70
+   ]
+  },
+  {
+   "name": "vanity desk with lighted mirror and brown chair",
+   "description": "Small gray desk with a mirror surrounded by light bulbs and a brown upholstered chair in the corner next to a window.",
+   "seen_at": [
+    68,
+    69,
+    70,
+    71,
+    72
+   ]
+  },
+  {
+   "name": "small gray chest of drawers with wall-mounted TV",
+   "description": "Three-drawer distressed gray chest with black handles and a flat-screen TV mounted on the wall above it.",
+   "seen_at": [
+    55,
+    67,
+    68,
+    70,
+    71,
+    72
+   ]
+  },
+  {
+   "name": "tall wood-framed floor mirror",
+   "description": "Tall rectangular mirror with a thick medium-brown wood frame leaning against the wall next to the gray chest.",
+   "seen_at": [
+    71,
+    72
+   ]
+  },
+  {
+   "name": "round woven wall decor",
+   "description": "Round brown textured woven decorative piece hanging on the wall above the white carved headboard.",
+   "seen_at": [
+    74,
+    75
+   ]
+  },
+  {
+   "name": "window with white sheer curtains",
+   "description": "Single window with white horizontal blinds and floor-length white sheer curtains.",
+   "seen_at": [
+    74,
+    75,
+    76
+   ]
+  },
+  {
+   "name": "rectangular distressed-frame wall mirror",
+   "description": "Vertical rectangular mirror with a wide distressed light-colored frame hanging on the gray wall opposite the teal-throw bed.",
+   "seen_at": [
+    76
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "round wall clock",
+   "to": "white paneled door with pet flap",
+   "how": "Walk straight down the short passage with the round wall clock on your left and the stainless steel refrigerator on your right."
+  },
+  {
+   "from": "white paneled door with pet flap",
+   "to": "glass-paneled door with wreath",
+   "how": "Turn around to face out of the short passage, walk forward past the white armchair and TV on white distressed cabinet on your left, and turn right toward the glass-paneled door with wreath."
+  },
+  {
+   "from": "glass-paneled door with wreath",
+   "to": "narrow brown runner rug",
+   "how": "Turn left past the gray sectional sofa, white armchair, and TV on white distressed cabinet until facing down the passage with the narrow brown runner rug."
+  },
+  {
+   "from": "TV on white distressed cabinet",
+   "to": "narrow brown runner rug",
+   "how": "With the TV on white distressed cabinet on your right, walk straight onto the narrow brown runner rug."
+  },
+  {
+   "from": "narrow brown runner rug",
+   "to": "dark wood bed",
+   "how": "Walk forward along the narrow brown runner rug past the wall-mounted display box on your right, then turn left through the first doorway to face the dark wood bed and tall dark wood dresser."
+  },
+  {
+   "from": "dark wood bed",
+   "to": "dark wood nightstand with white lamp",
+   "how": "Walk forward between the dark wood bed on your left and the tall dark wood dresser on your right, then turn left at the corner past the bed."
+  },
+  {
+   "from": "dark wood nightstand with white lamp",
+   "to": "narrow brown runner rug",
+   "how": "Turn left and walk back between the dark wood bed on your right and tall dark wood dresser on your left, passing the square silver-framed mirror on your right, then turn left through the doorway onto the narrow brown runner rug."
+  },
+  {
+   "from": "narrow brown runner rug",
+   "to": "TV on white distressed cabinet",
+   "how": "Walk forward along the narrow brown runner rug with the wall-mounted display box on your left toward the round wall clock and white armchair, then veer right toward the TV on white distressed cabinet."
+  },
+  {
+   "from": "TV on white distressed cabinet",
+   "to": "fireplace with round mirror",
+   "how": "Walk forward with the TV on white distressed cabinet on your right and the gray sectional sofa on your left toward the fireplace with round mirror and narrow decorated tree ahead."
+  },
+  {
+   "from": "fireplace with round mirror",
+   "to": "window with white blinds and gray curtains",
+   "how": "With the fireplace with round mirror on your right and the small white side table with lamp on your left, walk forward to the window with white blinds and gray curtains."
+  },
+  {
+   "from": "window with white blinds and gray curtains",
+   "to": "raised white counter",
+   "how": "Turn right away from the window and walk forward with the gray sectional sofa on your right and the TV on white distressed cabinet and round wall clock on your left toward the raised white counter."
+  },
+  {
+   "from": "raised white counter",
+   "to": "glass-paneled exterior door",
+   "how": "Turn right and walk behind the gray sectional sofa on your right, passing the wooden table with cream chairs on your left, to reach the glass-paneled exterior door."
+  },
+  {
+   "from": "glass-paneled exterior door",
+   "to": "wooden table with cream chairs",
+   "how": "Turn left from the glass-paneled exterior door to face the wooden table with cream chairs and the large distressed wood-framed mirror, with the blue upholstered barstools at the raised white counter on your left."
+  },
+  {
+   "from": "wooden table with cream chairs",
+   "to": "white cabinets with stainless dishwasher and stove",
+   "how": "Walk past the raised white counter on your left and the stainless steel trash can on your right, turning left into the space with the white cabinets with stainless dishwasher and stove."
+  },
+  {
+   "from": "white cabinets with stainless dishwasher and stove",
+   "to": "stainless steel refrigerator",
+   "how": "With the raised white counter on your left and the white cabinets on your right, walk straight ahead to the stainless steel refrigerator."
+  },
+  {
+   "from": "stainless steel refrigerator",
+   "to": "white washer and dryer",
+   "how": "Squeeze past the raised white counter on your left and the stainless steel refrigerator on your right, turn right into the short passage toward the white paneled door with pet flap, then turn right through the doorway past the gray distressed two-door cabinet with wall sconce."
+  },
+  {
+   "from": "white washer and dryer",
+   "to": "TV on white distressed cabinet",
+   "how": "Turn around and exit past the gray distressed two-door cabinet with wall sconce on your right, turn left into the short passage, and walk straight out past the gray sectional sofa toward the TV on white distressed cabinet."
+  },
+  {
+   "from": "narrow brown runner rug",
+   "to": "bed with white carved headboard and teal throw",
+   "how": "Walk straight down the narrow brown runner rug past the wall-mounted display box on your right and turn right through the doorway at the end of the passage."
+  },
+  {
+   "from": "bed with white carved headboard and teal throw",
+   "to": "gray vanity cabinet",
+   "how": "Step back out of the doorway into the passage, turn right, and step straight through the middle doorway into the narrow space with the gray vanity cabinet on the left and white toilet and patterned shower curtain ahead."
+  },
+  {
+   "from": "gray vanity cabinet",
+   "to": "dark wood bed",
+   "how": "Turn around to exit the doorway, then turn left into the passage and walk forward into the doorway on the right between the dark wood bed and tall dark wood dresser."
+  },
+  {
+   "from": "dark wood bed",
+   "to": "corner bathtub with gray tile",
+   "how": "Walk forward between the dark wood bed on your left and tall dark wood dresser on your right, then turn right through the doorway past the glass shower enclosure on your left and double-sink gray vanity on your right."
+  },
+  {
+   "from": "corner bathtub with gray tile",
+   "to": "dark wood bed",
+   "how": "Turn around and walk back past the double-sink gray vanity on your left and glass shower enclosure on your right through the doorway to the space between the tall dark wood dresser and dark wood bed."
+  },
+  {
+   "from": "dark wood bed",
+   "to": "bed with white tufted bedspread",
+   "how": "Walk between the tall dark wood dresser on your left and dark wood bed on your right, turn right through the doorway into the passage, and walk straight ahead through the doorway at the end of the passage."
+  },
+  {
+   "from": "bed with white tufted bedspread",
+   "to": "vanity desk with lighted mirror and brown chair",
+   "how": "Turn right inside the doorway and walk past the bed with white tufted bedspread on your left toward the vanity desk with lighted mirror and brown chair and the small gray chest of drawers with wall-mounted TV."
+  },
+  {
+   "from": "vanity desk with lighted mirror and brown chair",
+   "to": "window with white sheer curtains",
+   "how": "Turn around and exit through the doorway into the passage, turn left through the adjacent doorway, and walk forward alongside the bed with white carved headboard and teal throw on your right to the window with white sheer curtains."
+  },
+  {
+   "from": "window with white sheer curtains",
+   "to": "rectangular distressed-frame wall mirror",
+   "how": "Turn left in place at the window with white sheer curtains to face the rectangular distressed-frame wall mirror opposite the bed."
+  }
+ ],
+ "walk_summary": [
+  "Start in the short passage between the round wall clock on the left and the stainless steel refrigerator on the right, walking forward to the white paneled door with pet flap.",
+  "Turn around 180 degrees and walk out of the passage past the white armchair and TV on white distressed cabinet on the left, turning right to face the glass-paneled door with wreath and mirrored console table.",
+  "Turn left in a full circle past the gray sectional sofa, white armchair, and TV on white distressed cabinet to face the passage with the narrow brown runner rug and wall-mounted display box.",
+  "Walk down the narrow brown runner rug and turn left through the first doorway between the dark wood bed and tall dark wood dresser.",
+  "Loop right briefly, then walk forward between the dark wood bed and tall dark wood dresser toward the dark wood armchair with white cushions, turning left into the corner to face the dark wood nightstand with white lamp.",
+  "Turn around and walk back between the dark wood bed and tall dark wood dresser, passing the glass shower enclosure on the left and square silver-framed mirror on the right, and turn left out the doorway onto the narrow brown runner rug.",
+  "Walk forward down the narrow brown runner rug past the wall-mounted display box toward the round wall clock and chandelier, then veer right past the TV on white distressed cabinet and gray sectional sofa toward the fireplace with round mirror and narrow decorated tree.",
+  "Pass the small white side table with lamp on the left to reach the window with white blinds and gray curtains.",
+  "Turn right and walk between the gray sectional sofa on the right and the TV on white distressed cabinet and round wall clock on the left toward the raised white counter.",
+  "Turn right to walk behind the gray sectional sofa, passing the wooden table with cream chairs on the left, up to the glass-paneled exterior door.",
+  "Turn left to face the wooden table with cream chairs, large distressed wood-framed mirror, and blue upholstered barstools at the raised white counter.",
+  "Walk around the end of the raised white counter past the stainless steel trash can, turning left along the white cabinets with stainless dishwasher and stove toward the stainless steel refrigerator.",
+  "Squeeze between the raised white counter and stainless steel refrigerator, turn right toward the white paneled door with pet flap, and turn right through a doorway past the gray distressed two-door cabinet with wall sconce to face the white washer and dryer.",
+  "Turn around, exit past the gray distressed two-door cabinet with wall sconce, turn left out of the short passage past the gray sectional sofa and TV on white distressed cabinet, and walk straight onto the narrow brown runner rug.",
+  "Walk down the narrow brown runner rug past the wall-mounted display box and turn right through the doorway to see the bed with white carved headboard and teal throw, small white round nightstand with lamp, and white double doors.",
+  "Step back into the passage, turn right, and enter the middle doorway past the gray vanity cabinet on the left toward the white toilet, small window with blinds, and patterned shower curtain.",
+  "Turn around to exit into the passage, turn left, and walk into the doorway on the right between the dark wood bed and tall dark wood dresser.",
+  "Turn right through the inner doorway past the glass shower enclosure on the left and double-sink gray vanity on the right to reach the corner bathtub with gray tile.",
+  "Turn around, exit past the double-sink gray vanity and glass shower enclosure, walk between the tall dark wood dresser and dark wood bed, and turn right into the passage.",
+  "Walk straight down the passage through the end doorway to the bed with white tufted bedspread, turning right toward the vanity desk with lighted mirror and brown chair, small gray chest of drawers with wall-mounted TV, and tall wood-framed floor mirror.",
+  "Exit back into the passage, turn left into the adjacent doorway, and walk past the bed with white carved headboard and teal throw and round woven wall decor on the right to the window with white sheer curtains, then turn left to face the rectangular distressed-frame wall mirror."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/ziup5kvtCCR/frames",
+  "n_keyframes": 77,
+  "camera": "held at chest height by a person walking"
+ }
+}

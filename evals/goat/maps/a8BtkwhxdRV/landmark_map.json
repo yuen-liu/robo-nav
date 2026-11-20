@@ -1,0 +1,359 @@
+{
+ "landmarks": [
+  {
+   "name": "stone pillar between doorways",
+   "description": "thick rough-hewn grey stone wall section separating two doorways off the main stair landing",
+   "seen_at": [
+    0,
+    3,
+    10,
+    22,
+    23,
+    30
+   ]
+  },
+  {
+   "name": "bed with turquoise runner",
+   "description": "large bed with white quilted cover, a turquoise patterned runner at the foot, and a dark brown wooden headboard with vertical slats and a central square panel containing an X motif",
+   "seen_at": [
+    0,
+    1,
+    2,
+    30
+   ]
+  },
+  {
+   "name": "wooden stair railing",
+   "description": "dark stained wooden balustrade with thick flat balusters bordering the stairwell",
+   "seen_at": [
+    3,
+    7,
+    10,
+    20,
+    22,
+    23,
+    30
+   ]
+  },
+  {
+   "name": "bed with red runner",
+   "description": "double bed with a white cover, white painted wooden headboard, and a dark red fringed runner at the foot",
+   "seen_at": [
+    4,
+    5,
+    6,
+    11,
+    12,
+    13,
+    18,
+    19
+   ]
+  },
+  {
+   "name": "white distressed dresser",
+   "description": "chest of drawers painted distressed white with dark handles, topped by a mirror and a small wall-mounted TV nearby",
+   "seen_at": [
+    4,
+    5,
+    11,
+    18,
+    19
+   ]
+  },
+  {
+   "name": "white radiator on stone wall",
+   "description": "white metal panel radiator mounted low on a rough stone wall just inside the doorway near the bed with the red runner",
+   "seen_at": [
+    5,
+    6,
+    19
+   ]
+  },
+  {
+   "name": "red fire extinguisher",
+   "description": "red cylinder fire extinguisher mounted on the wall where the white plaster meets the stone by the stairs",
+   "seen_at": [
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "name": "recessed window with stone sill",
+   "description": "small rectangular window set deep into the thick exterior stone wall at the stair landing, with a small grey jug on the sill",
+   "seen_at": [
+    7,
+    8,
+    9,
+    30
+   ]
+  },
+  {
+   "name": "small white radiator on white wall",
+   "description": "compact white radiator mounted on a plain white wall between a corner and a doorway on the landing",
+   "seen_at": [
+    10,
+    20
+   ]
+  },
+  {
+   "name": "single bed with white cover",
+   "description": "twin bed covered in a plain white bedspread with folded towel swans on top, positioned against a stone wall",
+   "seen_at": [
+    12,
+    13,
+    17,
+    18
+   ]
+  },
+  {
+   "name": "framed flower painting on stone wall",
+   "description": "small square painting of white flowers in a thick rustic wooden frame hung on the stone wall near an inner doorway",
+   "seen_at": [
+    12,
+    14
+   ]
+  },
+  {
+   "name": "white corner bathtub",
+   "description": "white acrylic corner tub against a beige mosaic-tiled wall",
+   "seen_at": [
+    15
+   ]
+  },
+  {
+   "name": "white pedestal sink with stone-framed mirror",
+   "description": "white ceramic pedestal sink mounted on a rough stone wall beneath a rectangular mirror with a light-colored textured frame",
+   "seen_at": [
+    15,
+    16
+   ]
+  },
+  {
+   "name": "white toilet by stone wall",
+   "description": "white ceramic toilet positioned in the corner of two stone walls next to a small metal trash can",
+   "seen_at": [
+    16
+   ]
+  },
+  {
+   "name": "dark wooden sliding closet doors",
+   "description": "tall dark brown wooden doors set flush into the left wall of a narrow passage",
+   "seen_at": [
+    20,
+    21
+   ]
+  },
+  {
+   "name": "two twin beds with orange pillows",
+   "description": "pair of single beds with white covers, dark X-frame headboards against a rough stone wall, and bright orange throw pillows, separated by a small white nightstand",
+   "seen_at": [
+    21,
+    31,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "two twin beds with blue pillows",
+   "description": "pair of single beds with white covers, white horizontal-slat headboards on a stone wall, and dark blue throw pillows",
+   "seen_at": [
+    24,
+    25,
+    29
+   ]
+  },
+  {
+   "name": "window with light blue curtains",
+   "description": "window with dark wooden shutters and sheer light blue curtains tied back, above a white radiator",
+   "seen_at": [
+    24,
+    25,
+    26
+   ]
+  },
+  {
+   "name": "curved glass corner shower",
+   "description": "corner shower stall with curved clear glass doors and pinkish-beige mosaic wall tiles",
+   "seen_at": [
+    27,
+    28
+   ]
+  },
+  {
+   "name": "white toilet with mosaic tile backing",
+   "description": "white ceramic toilet set against a half-wall of pinkish-beige mosaic tiles next to a stone wall",
+   "seen_at": [
+    27,
+    28
+   ]
+  },
+  {
+   "name": "white pedestal sink with wood-framed mirror",
+   "description": "white pedestal sink on a stone wall beneath a rectangular mirror with a warm brown wooden frame",
+   "seen_at": [
+    28
+   ]
+  },
+  {
+   "name": "blue woven basket",
+   "description": "rectangular turquoise-blue woven storage basket sitting on a surface near the doorway by the twin beds with blue pillows",
+   "seen_at": [
+    29
+   ]
+  },
+  {
+   "name": "white radiator by doorway",
+   "description": "white metal panel radiator mounted on a plain white wall between the narrow passage and the twin beds with orange pillows",
+   "seen_at": [
+    31,
+    33
+   ]
+  },
+  {
+   "name": "tall window with white sheer curtains",
+   "description": "tall narrow window with a wooden railing at the bottom, wooden shutters, and white sheer curtains tied back",
+   "seen_at": [
+    32
+   ]
+  },
+  {
+   "name": "white woven basket on red bench",
+   "description": "rectangular white woven storage basket sitting on a red patterned bench against a white wall beneath a wall-mounted TV",
+   "seen_at": [
+    32,
+    33
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "stone pillar between doorways",
+   "to": "bed with turquoise runner",
+   "how": "Go forward through the right-hand doorway with the stone pillar on your left and turn right toward the bed."
+  },
+  {
+   "from": "bed with turquoise runner",
+   "to": "wooden stair railing",
+   "how": "Turn around and exit through the doorway with the stone pillar on your right to face the wooden stair railing on your left."
+  },
+  {
+   "from": "wooden stair railing",
+   "to": "bed with red runner",
+   "how": "With the wooden stair railing behind you, step through the doorway to the left of the stone pillar; the bed with the red runner is on your right and the white distressed dresser is ahead."
+  },
+  {
+   "from": "bed with red runner",
+   "to": "wooden stair railing",
+   "how": "Turn around with the white radiator on the stone wall on your right and walk out the doorway to the wooden stair railing."
+  },
+  {
+   "from": "wooden stair railing",
+   "to": "recessed window with stone sill",
+   "how": "Walk down the stairs with the wooden stair railing on your left toward the red fire extinguisher and the recessed window with the stone sill ahead on the left."
+  },
+  {
+   "from": "recessed window with stone sill",
+   "to": "small white radiator on white wall",
+   "how": "Turn around in the stone corner and walk back up the stairs with the wooden stair railing on your right and the stone pillar on your left to face the small white radiator on the white wall ahead."
+  },
+  {
+   "from": "small white radiator on white wall",
+   "to": "bed with red runner",
+   "how": "Turn left and re-enter the doorway to the left of the stone pillar, passing the white distressed dresser on your left and the bed with the red runner on your right."
+  },
+  {
+   "from": "bed with red runner",
+   "to": "framed flower painting on stone wall",
+   "how": "Walk across the floor past the bed with the red runner and the single bed with the white cover on your right to approach the open wooden doorway next to the framed flower painting on the stone wall."
+  },
+  {
+   "from": "framed flower painting on stone wall",
+   "to": "white corner bathtub",
+   "how": "Step through the doorway beside the flower painting into the tiled space where the white corner bathtub is on your left, and pan right to see the white pedestal sink with the stone-framed mirror and the white toilet by the stone wall."
+  },
+  {
+   "from": "white corner bathtub",
+   "to": "bed with red runner",
+   "how": "Exit the tiled space through the doorway, walking past the single bed with the white cover on your left and toward the bed with the red runner and white distressed dresser."
+  },
+  {
+   "from": "bed with red runner",
+   "to": "small white radiator on white wall",
+   "how": "Walk past the white distressed dresser and white radiator on the stone wall on your right, exiting through the doorway onto the landing with the wooden stair railing on your right and the small white radiator on the white wall on your left."
+  },
+  {
+   "from": "small white radiator on white wall",
+   "to": "dark wooden sliding closet doors",
+   "how": "Enter the doorway to the right of the small white radiator and walk into the narrow passage with the dark wooden sliding closet doors on your left and the two twin beds with orange pillows visible ahead."
+  },
+  {
+   "from": "dark wooden sliding closet doors",
+   "to": "stone pillar between doorways",
+   "how": "Turn around in the narrow passage and walk back out to the landing with the wooden stair railing on your left, facing the stone pillar between doorways ahead."
+  },
+  {
+   "from": "stone pillar between doorways",
+   "to": "two twin beds with blue pillows",
+   "how": "Turn back toward the white wall and enter the doorway to the left of the narrow passage (next to the small white radiator) to face the two twin beds with blue pillows ahead."
+  },
+  {
+   "from": "two twin beds with blue pillows",
+   "to": "window with light blue curtains",
+   "how": "Look left toward the window with light blue curtains, then turn toward the inner doorway beside the curtains."
+  },
+  {
+   "from": "window with light blue curtains",
+   "to": "curved glass corner shower",
+   "how": "Step through the inner doorway beside the light blue curtains into the tiled space with the curved glass corner shower ahead, the white toilet with mosaic tile backing, and the white pedestal sink with the wood-framed mirror on the right."
+  },
+  {
+   "from": "curved glass corner shower",
+   "to": "two twin beds with blue pillows",
+   "how": "Step back out through the doorway with the two twin beds with blue pillows on your left and the blue woven basket on your right."
+  },
+  {
+   "from": "two twin beds with blue pillows",
+   "to": "wooden stair railing",
+   "how": "Walk out through the main doorway onto the landing with the wooden stair railing on your left and turn right."
+  },
+  {
+   "from": "wooden stair railing",
+   "to": "two twin beds with orange pillows",
+   "how": "Turn back toward the narrow passage with the dark wooden sliding closet doors and walk forward past the white radiator by the doorway on your left toward the two twin beds with orange pillows ahead."
+  },
+  {
+   "from": "two twin beds with orange pillows",
+   "to": "tall window with white sheer curtains",
+   "how": "Walk forward between the foot of the twin beds with orange pillows on your left and the white woven basket on the red bench on your right toward the tall window with white sheer curtains ahead."
+  },
+  {
+   "from": "tall window with white sheer curtains",
+   "to": "white radiator by doorway",
+   "how": "Turn around in place near the window to face back between the white woven basket on the red bench on your left and the two twin beds with orange pillows on your right toward the white radiator by the doorway ahead."
+  }
+ ],
+ "walk_summary": [
+  "Pass the stone pillar between doorways on the left to enter the doorway toward the bed with the turquoise runner.",
+  "Turn around and exit back to the wooden stair railing and stone pillar.",
+  "Enter the doorway to the left of the stone pillar past the white radiator on the stone wall to view the bed with the red runner and the white distressed dresser.",
+  "Turn around, exit to the wooden stair railing, and walk partway down the stairs toward the red fire extinguisher and the recessed window with the stone sill.",
+  "Turn around in the stone corner and walk back up the stairs past the wooden stair railing to face the small white radiator on the white wall.",
+  "Re-enter the doorway to the left of the stone pillar, walking past the white distressed dresser and the bed with the red runner toward the single bed with the white cover and the framed flower painting on the stone wall.",
+  "Step through the doorway beside the flower painting to view the white corner bathtub, the white pedestal sink with the stone-framed mirror, and the white toilet by the stone wall.",
+  "Walk back out past the single bed with the white cover, the bed with the red runner, and the white distressed dresser to return to the landing by the wooden stair railing and the small white radiator on the white wall.",
+  "Enter the narrow passage to the right of the small white radiator, passing the dark wooden sliding closet doors on the left with a view of the twin beds with orange pillows ahead.",
+  "Turn around and walk back out to the landing facing the stone pillar between doorways.",
+  "Enter the doorway next to the small white radiator toward the two twin beds with blue pillows and the window with light blue curtains.",
+  "Step through the inner doorway beside the light blue curtains to see the curved glass corner shower, the white toilet with mosaic tile backing, and the white pedestal sink with the wood-framed mirror.",
+  "Step back out past the two twin beds with blue pillows and the blue woven basket, then exit onto the landing by the wooden stair railing.",
+  "Walk back through the narrow passage past the white radiator by the doorway toward the two twin beds with orange pillows.",
+  "Walk between the two twin beds with orange pillows and the white woven basket on the red bench to the tall window with white sheer curtains, then turn around to face the white radiator by the doorway."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/a8BtkwhxdRV/frames",
+  "n_keyframes": 34,
+  "camera": "held at chest height by a person walking"
+ }
+}

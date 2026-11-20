@@ -1,0 +1,664 @@
+{
+ "landmarks": [
+  {
+   "name": "white storage bench",
+   "description": "Low white wooden bench with a yellow cushion on top, under a window on the left in the starting area.",
+   "seen_at": [
+    0
+   ]
+  },
+  {
+   "name": "bathtub",
+   "description": "White tiled built-in bathtub under a double window, with a blue-green towel on its edge.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "double white vanities",
+   "description": "Two white 2-door sink cabinets with rectangular mirrors above them, one on the left wall and one on the far wall.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "shower stall",
+   "description": "Tiled shower enclosure with a glass door to the right of the far vanity.",
+   "seen_at": [
+    1,
+    2
+   ]
+  },
+  {
+   "name": "grey wooden desk",
+   "description": "Greyish-wooden chest of drawers with an upper hutch/cubby section.",
+   "seen_at": [
+    3,
+    84
+   ]
+  },
+  {
+   "name": "dark bookcase",
+   "description": "Dark wooden open-shelf bookcase filled with red and white books, with a potted plant on top.",
+   "seen_at": [
+    3
+   ]
+  },
+  {
+   "name": "wooden staircase and railing",
+   "description": "Straight flight of dark reddish-brown wooden stairs with a matching wooden balustrade and handrail.",
+   "seen_at": [
+    4,
+    5,
+    6,
+    40,
+    41,
+    43,
+    59,
+    60,
+    61,
+    62,
+    63,
+    70,
+    71,
+    72,
+    83,
+    84,
+    85,
+    86,
+    98
+   ]
+  },
+  {
+   "name": "low white cabinet with plant",
+   "description": "Small white cabinet with a dark potted plant on top, against the wall at the bottom of the stairs.",
+   "seen_at": [
+    5,
+    6,
+    41,
+    42,
+    85,
+    86,
+    99
+   ]
+  },
+  {
+   "name": "textured vertical-striped wall",
+   "description": "Light-colored wall with vertical relief stripes along the narrow tiled passage.",
+   "seen_at": [
+    6,
+    7,
+    39,
+    44,
+    58,
+    59,
+    87,
+    97
+   ]
+  },
+  {
+   "name": "table with dark chairs",
+   "description": "Long wooden table surrounded by high-backed dark upholstered chairs in a grey-walled area.",
+   "seen_at": [
+    7,
+    8,
+    9,
+    10,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    38,
+    45,
+    46,
+    58,
+    87,
+    88,
+    95,
+    96
+   ]
+  },
+  {
+   "name": "dark wooden armoire",
+   "description": "Large, tall dark brown wooden wardrobe with two doors and bottom drawers, next to a doorway.",
+   "seen_at": [
+    8,
+    9,
+    11,
+    32,
+    37,
+    87
+   ]
+  },
+  {
+   "name": "wooden table with X-back chairs",
+   "description": "Light-colored wooden table with matching wooden chairs that have X-shaped back rails.",
+   "seen_at": [
+    11,
+    12,
+    13,
+    14,
+    25,
+    26
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "Tall silver refrigerator covered in papers and magnets, in the corner near the wooden table with X-back chairs.",
+   "seen_at": [
+    12,
+    13,
+    26,
+    27
+   ]
+  },
+  {
+   "name": "island counter with brown end",
+   "description": "Counter island with a reddish-brown wooden end panel and a stainless steel range hood hanging above it.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    16,
+    24,
+    25
+   ]
+  },
+  {
+   "name": "built-in black ovens",
+   "description": "Two stacked black/stainless built-in ovens set into a tall cabinet opposite the island counter.",
+   "seen_at": [
+    14,
+    15,
+    24,
+    25
+   ]
+  },
+  {
+   "name": "L-shaped counter with sink",
+   "description": "Cream-colored lower cabinets with a dark countertop, dishwasher, and sink under a wide window.",
+   "seen_at": [
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "name": "round silver trash can",
+   "description": "Cylindrical metallic pedal bin on the floor next to the L-shaped counter and doorway.",
+   "seen_at": [
+    16,
+    17,
+    18
+   ]
+  },
+  {
+   "name": "washer and dryer",
+   "description": "Two white front-loading laundry machines side by side under a counter and shelf piled with bags.",
+   "seen_at": [
+    18,
+    19,
+    20,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "wall-mounted coat rack with radiator below",
+   "description": "Cluster of red and dark jackets hanging on the wall above a white radiator.",
+   "seen_at": [
+    19,
+    20,
+    21
+   ]
+  },
+  {
+   "name": "long window with radiator below",
+   "description": "Wide multi-pane window with a dark red valance above and a long cream radiator beneath the sill.",
+   "seen_at": [
+    27,
+    28,
+    29,
+    30,
+    37,
+    38,
+    88,
+    96
+   ]
+  },
+  {
+   "name": "white changing table and bin",
+   "description": "White open-shelf changing unit with a tall white cylindrical diaper bin in front of it, against the grey wall next to the passage doorway.",
+   "seen_at": [
+    33
+   ]
+  },
+  {
+   "name": "large dark sectional sofa",
+   "description": "Large brown/dark grey upholstered corner sofa with a wooden coffee table in front of it on a hardwood floor.",
+   "seen_at": [
+    34,
+    35,
+    47,
+    48,
+    51,
+    52,
+    53,
+    55,
+    56,
+    57,
+    89,
+    90,
+    93,
+    94,
+    95
+   ]
+  },
+  {
+   "name": "wooden TV console with flat-screen TV",
+   "description": "Long greyish-brown wooden media cabinet with drawers and open shelves, with a flat-screen TV mounted on the wall above it.",
+   "seen_at": [
+    34,
+    47,
+    48,
+    50,
+    53,
+    54,
+    89,
+    90,
+    94,
+    95
+   ]
+  },
+  {
+   "name": "patio glass doors with patterned curtains",
+   "description": "Tall white-framed glass double doors flanked by long curtains with a branch pattern and a beige valance above.",
+   "seen_at": [
+    35,
+    36,
+    52,
+    53,
+    55,
+    57,
+    94,
+    95
+   ]
+  },
+  {
+   "name": "glazed front door",
+   "description": "White exterior door with a rectangular frosted glass pane, at the far end of the narrow tiled passage.",
+   "seen_at": [
+    40,
+    41,
+    59,
+    60,
+    85,
+    98,
+    99,
+    100
+   ]
+  },
+  {
+   "name": "three-part window with radiator below",
+   "description": "Wide three-section window with translucent blinds and a long white radiator underneath, at the far end of the wood-floored area.",
+   "seen_at": [
+    47,
+    48,
+    49,
+    56,
+    89,
+    90,
+    91,
+    92
+   ]
+  },
+  {
+   "name": "play corner with globe and toys",
+   "description": "Collection of children's toys, a small white table/chair, and a blue globe in the far right corner near the three-part window.",
+   "seen_at": [
+    48,
+    49,
+    90,
+    91,
+    92,
+    93
+   ]
+  },
+  {
+   "name": "framed photos cluster",
+   "description": "Group of about ten small black-framed family photos arranged on the light green wall near the doorway of the wood-floored area.",
+   "seen_at": [
+    54,
+    57,
+    88,
+    95
+   ]
+  },
+  {
+   "name": "white radiator near patio doors",
+   "description": "White ribbed radiator mounted on the green wall at the end of the narrow space behind the sectional sofa.",
+   "seen_at": [
+    55,
+    56
+   ]
+  },
+  {
+   "name": "dark blue chest of drawers",
+   "description": "Chest of drawers painted dark navy/purple-blue, standing against the wall of the upper passage next to the stair railing, with a white two-door wall cabinet mounted above it.",
+   "seen_at": [
+    63,
+    69,
+    71,
+    72,
+    82,
+    83,
+    84,
+    85
+   ]
+  },
+  {
+   "name": "grey wide dresser with changing pad",
+   "description": "Wide grey-washed wooden 3-drawer dresser with long metal bar handles, a changing pad on top, and two grey wall shelves above it.",
+   "seen_at": [
+    64,
+    66,
+    67,
+    68
+   ]
+  },
+  {
+   "name": "wooden crib",
+   "description": "Light-colored slatted wooden baby crib against the blue wall.",
+   "seen_at": [
+    64,
+    65,
+    68
+   ]
+  },
+  {
+   "name": "low toddler bed",
+   "description": "Small low wooden bed with blue and white bedding against the corner of the blue-walled area.",
+   "seen_at": [
+    65,
+    68
+   ]
+  },
+  {
+   "name": "round blue rug",
+   "description": "Small circular light-blue rug on the hardwood floor of the blue-walled area.",
+   "seen_at": [
+    65,
+    68
+   ]
+  },
+  {
+   "name": "grey two-door wardrobe",
+   "description": "Tall grey-washed wooden wardrobe with two doors and stuffed animals piled on top, in the blue-walled area.",
+   "seen_at": [
+    66,
+    67,
+    68
+   ]
+  },
+  {
+   "name": "narrow grey 5-drawer chest",
+   "description": "Tall, narrow grey-washed wooden chest of five drawers standing next to the doorway in the blue-walled area.",
+   "seen_at": [
+    66,
+    67
+   ]
+  },
+  {
+   "name": "wooden 3-drawer dresser with shutter mirror",
+   "description": "Medium-brown wooden 3-drawer chest with a white-and-wood louvered shutter mirror on the wall above it and a white wicker hamper to its left.",
+   "seen_at": [
+    73,
+    74,
+    81,
+    82
+   ]
+  },
+  {
+   "name": "dark loveseat",
+   "description": "Small dark brown/grey upholstered two-seater sofa with a patterned cushion, in the corner under the window next to a tall standing mirror.",
+   "seen_at": [
+    73,
+    74,
+    75,
+    81
+   ]
+  },
+  {
+   "name": "double bed with yellow coverlet",
+   "description": "Large bed with a dark headboard, pale yellow bedspread, and small grey-brown nightstands with yellow-lit lamps on either side.",
+   "seen_at": [
+    73,
+    75,
+    78,
+    79,
+    80,
+    81,
+    82
+   ]
+  },
+  {
+   "name": "white louvered wardrobe wall",
+   "description": "Full-wall built-in white wardrobe with louvered upper doors and lower drawers, opposite the foot of the double bed.",
+   "seen_at": [
+    73,
+    75,
+    77,
+    78,
+    79,
+    80
+   ]
+  },
+  {
+   "name": "four-part window with dark patterned curtains",
+   "description": "Wide four-panel window with translucent blinds, a dark brown/grey swirl-patterned curtain in the middle, and a cream radiator below.",
+   "seen_at": [
+    73,
+    75,
+    76,
+    77,
+    79,
+    80,
+    81
+   ]
+  },
+  {
+   "name": "tall grey open bookcase",
+   "description": "Tall grey-brown wooden open shelving unit filled with books and boxes, standing against the left wall next to the three-part window.",
+   "seen_at": [
+    90,
+    91,
+    92
+   ]
+  },
+  {
+   "name": "small white radiator by front door",
+   "description": "Compact white ribbed wall radiator mounted on the right wall just before the glazed front door.",
+   "seen_at": [
+    99,
+    100,
+    101
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "white storage bench",
+   "to": "double white vanities",
+   "how": "With the white storage bench on your left, walk straight through the doorway past the bathtub on your left to reach the double white vanities and shower stall."
+  },
+  {
+   "from": "grey wooden desk",
+   "to": "wooden staircase and railing",
+   "how": "Pass between the grey wooden desk on your left and the dark bookcase on your right, walking straight through the doorway to the top of the wooden staircase and railing."
+  },
+  {
+   "from": "wooden staircase and railing",
+   "to": "low white cabinet with plant",
+   "how": "Go down the wooden staircase with the railing on your right to reach the low white cabinet with plant ahead on the left at the bottom."
+  },
+  {
+   "from": "low white cabinet with plant",
+   "to": "table with dark chairs",
+   "how": "Turn around at the bottom of the stairs so the low white cabinet with plant is behind you, and walk along the tiled passage with the textured vertical-striped wall on your right through the doorway to the table with dark chairs."
+  },
+  {
+   "from": "table with dark chairs",
+   "to": "low white cabinet with plant",
+   "how": "From the doorway by the white changing table and bin, walk into the narrow tiled passage with the textured vertical-striped wall on your left to reach the bottom of the wooden staircase and the low white cabinet with plant."
+  },
+  {
+   "from": "table with dark chairs",
+   "to": "dark wooden armoire",
+   "how": "Walk past the table with dark chairs on your left toward the far wall to reach the dark wooden armoire on your left next to the doorway."
+  },
+  {
+   "from": "dark wooden armoire",
+   "to": "wooden table with X-back chairs",
+   "how": "With the dark wooden armoire on your left, step straight through the adjacent doorway to reach the wooden table with X-back chairs and stainless steel refrigerator on your left."
+  },
+  {
+   "from": "wooden table with X-back chairs",
+   "to": "island counter with brown end",
+   "how": "Walk forward past the wooden table with X-back chairs on your left to reach the island counter with brown end on your left and built-in black ovens on your right."
+  },
+  {
+   "from": "island counter with brown end",
+   "to": "round silver trash can",
+   "how": "Continue straight past the island counter with brown end and the L-shaped counter with sink on your left to the round silver trash can next to the far doorway."
+  },
+  {
+   "from": "round silver trash can",
+   "to": "washer and dryer",
+   "how": "Step through the doorway beside the round silver trash can to reach the washer and dryer on your left and the wall-mounted coat rack with radiator below on your right."
+  },
+  {
+   "from": "washer and dryer",
+   "to": "island counter with brown end",
+   "how": "Turn around to exit through the doorway past the washer and dryer on your right, walking straight to the island counter with brown end on your right and built-in black ovens on your left."
+  },
+  {
+   "from": "island counter with brown end",
+   "to": "wooden table with X-back chairs",
+   "how": "With the island counter with brown end on your right and built-in black ovens on your left, walk straight ahead to the wooden table with X-back chairs and stainless steel refrigerator on your right."
+  },
+  {
+   "from": "wooden table with X-back chairs",
+   "to": "table with dark chairs",
+   "how": "Pass the wooden table with X-back chairs and stainless steel refrigerator on your right and go straight through the doorway to the table with dark chairs on your left and long window with radiator below on your right."
+  },
+  {
+   "from": "table with dark chairs",
+   "to": "large dark sectional sofa",
+   "how": "From the end of the table with dark chairs near the white changing table and bin, go through the right-hand doorway (or turn sharp right if coming out of the narrow tiled passage) past the framed photos cluster on your left to reach the large dark sectional sofa on your right and wooden TV console with flat-screen TV on your left."
+  },
+  {
+   "from": "large dark sectional sofa",
+   "to": "table with dark chairs",
+   "how": "Walk between the large dark sectional sofa on your left and the wooden TV console with flat-screen TV on your right toward the framed photos cluster, then exit through the doorway to the table with dark chairs."
+  },
+  {
+   "from": "large dark sectional sofa",
+   "to": "three-part window with radiator below",
+   "how": "Walk straight between the wooden TV console with flat-screen TV on your left and the large dark sectional sofa on your right to reach the three-part window with radiator below ahead, flanked by the tall grey open bookcase on the left and the play corner with globe and toys on the right."
+  },
+  {
+   "from": "three-part window with radiator below",
+   "to": "large dark sectional sofa",
+   "how": "Turn around with the three-part window with radiator below behind you and walk straight past the play corner with globe and toys on your right to return between the large dark sectional sofa on your left and wooden TV console with flat-screen TV on your right."
+  },
+  {
+   "from": "large dark sectional sofa",
+   "to": "white radiator near patio doors",
+   "how": "Near the doorway with the framed photos cluster, walk into the narrow gap between the back of the large dark sectional sofa on your left and the patio glass doors with patterned curtains on your right to reach the white radiator near patio doors ahead."
+  },
+  {
+   "from": "white radiator near patio doors",
+   "to": "wooden staircase and railing",
+   "how": "Turn around at the white radiator near patio doors, walk out between the patio glass doors with patterned curtains on your left and the large dark sectional sofa on your right, exit through the doorway, and immediately turn right into the narrow tiled passage past the textured vertical-striped wall on your left to reach the foot of the wooden staircase and railing."
+  },
+  {
+   "from": "wooden staircase and railing",
+   "to": "dark blue chest of drawers",
+   "how": "Climb the wooden staircase with the railing on your left, then turn left at the top landing to walk along the upper passage with the wooden stair railing and dark blue chest of drawers on your left."
+  },
+  {
+   "from": "dark blue chest of drawers",
+   "to": "grey wide dresser with changing pad",
+   "how": "Walking along the upper passage with the dark blue chest of drawers on your left, turn right through the open doorway into the blue-walled area with the grey wide dresser with changing pad on your right and wooden crib ahead."
+  },
+  {
+   "from": "grey wide dresser with changing pad",
+   "to": "dark blue chest of drawers",
+   "how": "Exit the blue-walled area with the grey wide dresser with changing pad on your left and narrow grey 5-drawer chest on your right, stepping straight out to face the dark blue chest of drawers in the upper passage."
+  },
+  {
+   "from": "dark blue chest of drawers",
+   "to": "wooden 3-drawer dresser with shutter mirror",
+   "how": "Walk forward along the upper passage with the dark blue chest of drawers on your left and go straight through the doorway at the end into the area with the wooden 3-drawer dresser with shutter mirror on your left and double bed with yellow coverlet on your right."
+  },
+  {
+   "from": "wooden 3-drawer dresser with shutter mirror",
+   "to": "four-part window with dark patterned curtains",
+   "how": "Walk past the wooden 3-drawer dresser with shutter mirror and dark loveseat on your left and the double bed with yellow coverlet on your right to reach the four-part window with dark patterned curtains ahead and the white louvered wardrobe wall on your right."
+  },
+  {
+   "from": "four-part window with dark patterned curtains",
+   "to": "dark blue chest of drawers",
+   "how": "Walk back past the double bed with yellow coverlet on your left and the dark loveseat and wooden 3-drawer dresser with shutter mirror on your right, exiting through the open white door into the upper passage with the dark blue chest of drawers on your right."
+  },
+  {
+   "from": "dark blue chest of drawers",
+   "to": "wooden staircase and railing",
+   "how": "Walk along the upper passage with the dark blue chest of drawers and wooden stair railing on your right, then turn right at the end of the railing to face down the wooden staircase."
+  },
+  {
+   "from": "low white cabinet with plant",
+   "to": "glazed front door",
+   "how": "In the narrow tiled passage, walk past the wooden staircase and low white cabinet with plant on your left to reach the glazed front door ahead and the small white radiator by front door on your right."
+  }
+ ],
+ "walk_summary": [
+  "Start by passing the white storage bench on the left and walking through the doorway past the bathtub to the double white vanities and shower stall.",
+  "Leave the area with the grey wooden desk on the left and dark bookcase on the right, going through the doorway to the top of the wooden staircase and railing.",
+  "Descend the wooden staircase with the railing on the right to the low white cabinet with plant at the bottom on the left.",
+  "Turn around in the narrow tiled passage and walk past the textured vertical-striped wall on the right through the doorway to the table with dark chairs.",
+  "Walk past the table with dark chairs on the left to the dark wooden armoire, then go through the doorway next to it to the wooden table with X-back chairs and stainless steel refrigerator.",
+  "Continue straight past the wooden table with X-back chairs, the island counter with brown end, and the L-shaped counter with sink on the left (passing the built-in black ovens on the right) to the round silver trash can by the far doorway.",
+  "Go through the doorway to the washer and dryer on the left and the wall-mounted coat rack with radiator below on the right, then turn around.",
+  "Walk back out through the doorway and pass the island counter with brown end, built-in black ovens, wooden table with X-back chairs, and stainless steel refrigerator to return through the doorway to the table with dark chairs.",
+  "Walk between the table with dark chairs on the left and the long window with radiator below on the right, turning around near the white changing table and bin.",
+  "Step through the right-hand doorway to look at the large dark sectional sofa, wooden TV console with flat-screen TV, and patio glass doors with patterned curtains, then turn back.",
+  "Exit the doorway and turn right into the narrow tiled passage past the textured vertical-striped wall on the left toward the wooden staircase and railing, with the low white cabinet with plant and glazed front door ahead.",
+  "Turn around by the low white cabinet with plant and walk back down the narrow tiled passage past the textured vertical-striped wall on the right toward the table with dark chairs.",
+  "Turn sharp right through the adjacent doorway and walk between the wooden TV console with flat-screen TV on the left and the large dark sectional sofa on the right toward the three-part window with radiator below and play corner with globe and toys.",
+  "Turn around to face the large dark sectional sofa and patio glass doors with patterned curtains, then walk back past the wooden TV console with flat-screen TV and framed photos cluster into the narrow space behind the sofa to the white radiator near patio doors.",
+  "Turn around at the white radiator near patio doors, exit past the patio glass doors with patterned curtains and framed photos cluster, and turn right into the narrow tiled passage to the foot of the wooden staircase and railing.",
+  "Climb the wooden staircase with the railing on the left, turn left at the top landing, and walk past the dark blue chest of drawers on the left.",
+  "Turn right through the open doorway into the blue-walled area with the grey wide dresser with changing pad, wooden crib, low toddler bed, round blue rug, grey two-door wardrobe, and narrow grey 5-drawer chest, then turn around and exit back to the upper passage.",
+  "Turn right in the upper passage to walk past the dark blue chest of drawers on the left into the end area with the wooden 3-drawer dresser with shutter mirror, dark loveseat, double bed with yellow coverlet, white louvered wardrobe wall, and four-part window with dark patterned curtains.",
+  "Walk around the double bed with yellow coverlet and white louvered wardrobe wall near the four-part window with dark patterned curtains, then exit past the wooden 3-drawer dresser with shutter mirror into the upper passage.",
+  "Walk along the upper passage with the dark blue chest of drawers and wooden stair railing on the right, then turn right and go down the wooden staircase to the low white cabinet with plant at the bottom.",
+  "Turn right at the bottom of the stairs and walk along the narrow tiled passage past the textured vertical-striped wall on the right toward the table with dark chairs.",
+  "Turn right through the doorway past the framed photos cluster and walk between the wooden TV console with flat-screen TV on the left and large dark sectional sofa on the right all the way to the three-part window with radiator below, tall grey open bookcase, and play corner with globe and toys.",
+  "Turn around in front of the three-part window with radiator below and walk back between the large dark sectional sofa on the left and wooden TV console with flat-screen TV on the right, exiting through the doorway by the framed photos cluster.",
+  "Turn left into the narrow tiled passage and walk past the textured vertical-striped wall, wooden staircase and railing, and low white cabinet with plant on the left to reach the glazed front door and turn right toward the small white radiator by front door."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/6s7QHgap2fW/frames",
+  "n_keyframes": 102,
+  "camera": "held at chest height by a person walking"
+ }
+}

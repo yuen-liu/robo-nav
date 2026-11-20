@@ -1,0 +1,637 @@
+{
+ "landmarks": [
+  {
+   "name": "first gold balustrade with purple chairs",
+   "description": "Ornate gold-colored wooden railing and chairs with purple cushions separating the tiled walkway from a large vaulted area at the start of the walk.",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "crucifixion painting",
+   "description": "Small square dark painting of a crucifixion on a white wall near a doorway.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "flagellation painting",
+   "description": "Square painting of a kneeling figure tied to a column, with a smaller face image and text next to it on a white wall.",
+   "seen_at": [
+    2,
+    3,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "name": "golden cross on grey platform",
+   "description": "Ornate carved wooden and golden cross on a low grey display platform alongside a purple floral arrangement.",
+   "seen_at": [
+    4,
+    7
+   ]
+  },
+  {
+   "name": "arched doorway to purple-lit space",
+   "description": "Wide arched opening in the white wall leading into a space lit with purple and red light.",
+   "seen_at": [
+    5,
+    6
+   ]
+  },
+  {
+   "name": "dark wooden chair",
+   "description": "Single dark brown wooden chair with an open backrest standing against the white wall next to a pilaster.",
+   "seen_at": [
+    6,
+    8
+   ]
+  },
+  {
+   "name": "recumbent figure mural partition",
+   "description": "Large freestanding partition wall covered on one side with a dark blue and red mural of a recumbent figure lying on a white cushion, and a full-height close-up image of the face of Christ with a crown of thorns on the reverse side.",
+   "seen_at": [
+    8,
+    9,
+    10,
+    12,
+    17,
+    18,
+    19,
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "first oval ceiling opening",
+   "description": "Large dark oval oculus or opening in the curved white ceiling near the end of the first vaulted section.",
+   "seen_at": [
+    8,
+    9,
+    11
+   ]
+  },
+  {
+   "name": "dark embroidered robe on grey pedestal",
+   "description": "Dark green or black garment with heavy gold embroidery displayed on a small grey pedestal near the wall.",
+   "seen_at": [
+    9,
+    11,
+    13
+   ]
+  },
+  {
+   "name": "first recessed brown wooden door",
+   "description": "Tall closed brown wooden door set into an arched recess in the left white wall near the dark embroidered robe.",
+   "seen_at": [
+    9,
+    11
+   ]
+  },
+  {
+   "name": "seated figure statue on grey platform",
+   "description": "Statue of a seated figure on a large low grey platform at the far end of the first section, next to a purple floral mound.",
+   "seen_at": [
+    13,
+    15,
+    16,
+    18
+   ]
+  },
+  {
+   "name": "Cristo Yacente text wall",
+   "description": "White partition wall at the end of the first section featuring a square photo of a recumbent Christ and a large block of text titled 'CRISTO YACENTE'.",
+   "seen_at": [
+    18,
+    20,
+    21,
+    22
+   ]
+  },
+  {
+   "name": "white and gold robe on stand",
+   "description": "White garment with gold embroidery standing at the end of the central partition wall, with red fabric pooling at its base.",
+   "seen_at": [
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "name": "first doorway with open dark wooden door",
+   "description": "Rectangular doorway in the white wall with a dark reddish-brown wooden door propped open against the inside wall, connecting the Cristo Yacente section to the gold boat-shaped base section.",
+   "seen_at": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    38,
+    45,
+    66
+   ]
+  },
+  {
+   "name": "coat of arms diagram on white partition",
+   "description": "Colorful heraldic crest or coat of arms with a red and yellow canopy printed on a white partition wall.",
+   "seen_at": [
+    26,
+    27,
+    28
+   ]
+  },
+  {
+   "name": "red and gold hanging textile",
+   "description": "Large red velvet or fabric hanging with gold embroidery mounted on the white wall, with its bottom edge pooling on the floor.",
+   "seen_at": [
+    28,
+    29,
+    31,
+    42,
+    56,
+    57,
+    58
+   ]
+  },
+  {
+   "name": "red and gold robe at corner",
+   "description": "Red garment with gold embroidery displayed at the corner of two white partitions.",
+   "seen_at": [
+    28,
+    29,
+    30,
+    56,
+    57
+   ]
+  },
+  {
+   "name": "gold boat-shaped base on grey platform",
+   "description": "Large gilded curved base topped with purple flowers on a low grey platform on a yellow and red checkered tile floor.",
+   "seen_at": [
+    28,
+    29,
+    30,
+    32,
+    34,
+    37,
+    42,
+    45,
+    59,
+    60,
+    62,
+    63
+   ]
+  },
+  {
+   "name": "silver crest on wall",
+   "description": "Ornate dark silver or metallic heraldic relief mounted high on the white wall above the display partitions.",
+   "seen_at": [
+    29,
+    30,
+    59,
+    60,
+    65
+   ]
+  },
+  {
+   "name": "high rectangular window",
+   "description": "Deeply recessed rectangular window high up in the white vaulted wall, appearing dark.",
+   "seen_at": [
+    33,
+    35,
+    64
+   ]
+  },
+  {
+   "name": "50th anniversary logo partition",
+   "description": "White partition wall featuring a large circular emblem with the number '50' and text.",
+   "seen_at": [
+    38,
+    39,
+    67
+   ]
+  },
+  {
+   "name": "tan embroidered robe on stand",
+   "description": "Upright tan and gold embroidered garment on a stand with red fabric at its base, standing next to the wall.",
+   "seen_at": [
+    47,
+    48,
+    49,
+    50,
+    59
+   ]
+  },
+  {
+   "name": "tan and gold hanging textile",
+   "description": "Large tan fabric hanging with white and gold floral embroidery mounted on the white wall, pooling on a red cloth on the floor.",
+   "seen_at": [
+    49,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "second oval ceiling opening",
+   "description": "Large oval opening in the curved white ceiling above the red and gold hanging textile.",
+   "seen_at": [
+    55,
+    57
+   ]
+  },
+  {
+   "name": "pope and church photo partition",
+   "description": "White partition wall with photos of a pope in white, a bishop, and a church facade alongside paragraphs of text.",
+   "seen_at": [
+    60,
+    61,
+    64
+   ]
+  },
+  {
+   "name": "second gold balustrade with purple chairs",
+   "description": "Ornate gold-colored wooden railing with purple-cushioned chairs bordering the walkway with the blue and gold robe.",
+   "seen_at": [
+    68,
+    69,
+    70,
+    71,
+    75,
+    76,
+    77
+   ]
+  },
+  {
+   "name": "blue and gold robe between columns",
+   "description": "Dark blue garment with heavy gold embroidery and light blue and gold side drapes mounted on a grey block between two fluted columns along the balustrade.",
+   "seen_at": [
+    70,
+    71,
+    75,
+    76
+   ]
+  },
+  {
+   "name": "black and white architectural mural partition",
+   "description": "Large partition wall covered with a black-and-white angled architectural photo or drawing.",
+   "seen_at": [
+    70,
+    71,
+    75,
+    76
+   ]
+  },
+  {
+   "name": "sepia mural partition",
+   "description": "Large partition wall covered with a sepia and brown-toned close-up mural.",
+   "seen_at": [
+    72,
+    73,
+    74
+   ]
+  },
+  {
+   "name": "second doorway with open dark wooden door",
+   "description": "Doorway in the white wall at the end of the balustrade walkway with an open dark wooden door leading toward the Virgin Mary partitions.",
+   "seen_at": [
+    77,
+    78,
+    79
+   ]
+  },
+  {
+   "name": "Virgin Mary text partition",
+   "description": "White freestanding partition wall with a multi-panel painting and text just past the second doorway with the open dark wooden door.",
+   "seen_at": [
+    78,
+    79,
+    80,
+    81,
+    84,
+    96,
+    97
+   ]
+  },
+  {
+   "name": "third gold balustrade with purple chairs",
+   "description": "Gold-colored wooden railing and chairs with purple cushions along the right side of the walkway past the Virgin Mary text partition.",
+   "seen_at": [
+    80,
+    81,
+    82,
+    84
+   ]
+  },
+  {
+   "name": "Virgin Mary portrait on wall",
+   "description": "Vertical rectangular image of the Virgin Mary with a golden halo mounted on the white wall between two arched openings.",
+   "seen_at": [
+    81,
+    82,
+    83
+   ]
+  },
+  {
+   "name": "white-covered arched doorway",
+   "description": "Arched doorway in the white wall blocked or covered by a white surface, located to the right of the Virgin Mary portrait.",
+   "seen_at": [
+    82,
+    83
+   ]
+  },
+  {
+   "name": "second recessed brown wooden door",
+   "description": "Closed brown wooden door in an arched recess to the left of the Virgin Mary portrait on the wall.",
+   "seen_at": [
+    82,
+    83,
+    84,
+    85,
+    86,
+    89,
+    96,
+    97
+   ]
+  },
+  {
+   "name": "carved wooden figure with black and gold mantle on grey platform",
+   "description": "Large carved wooden sculpture mounted on a low grey platform with a long black velvet mantle heavily embroidered in gold trailing behind it.",
+   "seen_at": [
+    84,
+    85,
+    86,
+    91,
+    96,
+    97
+   ]
+  },
+  {
+   "name": "large Virgin Mary face mural partition",
+   "description": "Freestanding white partition wall in the center of the tiled area featuring a full-height close-up photo of the Virgin Mary's face on one side and a full-length photo of her in a black and gold robe on the reverse.",
+   "seen_at": [
+    86,
+    87,
+    88,
+    92,
+    93,
+    98,
+    101,
+    104
+   ]
+  },
+  {
+   "name": "Virgin Mary in black and gold robe wall photo",
+   "description": "Large square photograph mounted on the white wall between two arched wooden doors, showing a statue of the Virgin Mary in a black and gold mantle.",
+   "seen_at": [
+    87,
+    88,
+    89
+   ]
+  },
+  {
+   "name": "third recessed brown wooden door",
+   "description": "Closed brown wooden door in an arched recess near the far corner by the Virgen de Soledad end partition.",
+   "seen_at": [
+    89,
+    90,
+    101,
+    102
+   ]
+  },
+  {
+   "name": "Virgen de Soledad end partition",
+   "description": "White partition wall at the far end beneath an oval ceiling opening, featuring text titled 'VIRGEN DE SOLEDAD', a close-up face photo, and a purple floral mound on the floor.",
+   "seen_at": [
+    90,
+    92,
+    95,
+    99,
+    100,
+    101
+   ]
+  },
+  {
+   "name": "black velvet display wall with diamond frames",
+   "description": "Tall black velvet-draped display wall along the left side containing a horizontal case with white diamond-shaped textiles.",
+   "seen_at": [
+    93,
+    94,
+    99,
+    100,
+    103
+   ]
+  },
+  {
+   "name": "first gold fluted pedestal with small figure",
+   "description": "Short fluted gold-colored column pedestal holding a small figure or crown, located in front of the black velvet display wall.",
+   "seen_at": [
+    94,
+    95,
+    99,
+    100
+   ]
+  },
+  {
+   "name": "second gold fluted pedestal with small figure",
+   "description": "Short fluted gold-colored column pedestal holding a small figure or crown, located near the right corner of the Virgen de Soledad end partition.",
+   "seen_at": [
+    101,
+    102,
+    103
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "first gold balustrade with purple chairs",
+   "to": "crucifixion painting",
+   "how": "With the first gold balustrade with purple chairs on your right, walk straight ahead to the crucifixion painting on the end wall."
+  },
+  {
+   "from": "crucifixion painting",
+   "to": "flagellation painting",
+   "how": "Turn left at the crucifixion painting and pass through the opening to face the flagellation painting."
+  },
+  {
+   "from": "flagellation painting",
+   "to": "dark wooden chair",
+   "how": "With the golden cross on grey platform on your left and the flagellation painting on your right, walk forward toward the arched doorway and bear right past the dark wooden chair against the left wall."
+  },
+  {
+   "from": "dark wooden chair",
+   "to": "dark embroidered robe on grey pedestal",
+   "how": "With the dark wooden chair and first recessed brown wooden door on your left and the recumbent figure mural partition on your right, walk straight ahead to the dark embroidered robe on grey pedestal."
+  },
+  {
+   "from": "dark embroidered robe on grey pedestal",
+   "to": "seated figure statue on grey platform",
+   "how": "From the dark embroidered robe on grey pedestal, angle slightly right toward the seated figure statue on grey platform at the end wall."
+  },
+  {
+   "from": "seated figure statue on grey platform",
+   "to": "Cristo Yacente text wall",
+   "how": "Pass between the seated figure statue on grey platform on your left and the end of the recumbent figure mural partition on your right to face the Cristo Yacente text wall."
+  },
+  {
+   "from": "Cristo Yacente text wall",
+   "to": "white and gold robe on stand",
+   "how": "Turn right to walk with the Cristo Yacente text wall on your left and the reverse of the recumbent figure mural partition on your right, continuing straight to the white and gold robe on stand."
+  },
+  {
+   "from": "white and gold robe on stand",
+   "to": "first doorway with open dark wooden door",
+   "how": "Pass the white and gold robe on stand on your right and continue forward to the first doorway with open dark wooden door on the left wall."
+  },
+  {
+   "from": "first doorway with open dark wooden door",
+   "to": "coat of arms diagram on white partition",
+   "how": "Turn left and step through the first doorway with open dark wooden door toward the coat of arms diagram on white partition straight ahead."
+  },
+  {
+   "from": "coat of arms diagram on white partition",
+   "to": "red and gold hanging textile",
+   "how": "Before reaching the coat of arms diagram on white partition, turn left to walk along the red and gold hanging textile on the left wall."
+  },
+  {
+   "from": "red and gold hanging textile",
+   "to": "gold boat-shaped base on grey platform",
+   "how": "Walk past the red and gold hanging textile on your left and turn right through the gap beside the red and gold robe at corner to reach the gold boat-shaped base on grey platform."
+  },
+  {
+   "from": "gold boat-shaped base on grey platform",
+   "to": "50th anniversary logo partition",
+   "how": "Walk along the narrow aisle between the gold boat-shaped base on grey platform and the white partitions toward the 50th anniversary logo partition."
+  },
+  {
+   "from": "50th anniversary logo partition",
+   "to": "tan embroidered robe on stand",
+   "how": "Walk down the narrow passage between the outer wall on the right and the white partitions on the left, jogging around the partition corner to reach the tan embroidered robe on stand."
+  },
+  {
+   "from": "tan embroidered robe on stand",
+   "to": "tan and gold hanging textile",
+   "how": "Continue straight along the wall past the tan embroidered robe on stand on your right to the tan and gold hanging textile."
+  },
+  {
+   "from": "tan and gold hanging textile",
+   "to": "red and gold robe at corner",
+   "how": "Continue past the tan and gold hanging textile to the end wall, turn 180 degrees around, and walk back with the wall on your right to the red and gold robe at corner on your left."
+  },
+  {
+   "from": "red and gold robe at corner",
+   "to": "pope and church photo partition",
+   "how": "Pass between the red and gold robe at corner on your left and the red and gold hanging textile on your right, then turn left and right around the partition corner to pass the pope and church photo partition on your right."
+  },
+  {
+   "from": "pope and church photo partition",
+   "to": "gold boat-shaped base on grey platform",
+   "how": "From the pope and church photo partition, step forward into the aisle alongside the gold boat-shaped base on grey platform."
+  },
+  {
+   "from": "gold boat-shaped base on grey platform",
+   "to": "second gold balustrade with purple chairs",
+   "how": "Turn back toward the outer wall with the silver crest on wall, turn right to walk past the first doorway with open dark wooden door on your left, and pass through the wall opening ahead to reach the second gold balustrade with purple chairs."
+  },
+  {
+   "from": "second gold balustrade with purple chairs",
+   "to": "blue and gold robe between columns",
+   "how": "Walk forward with the second gold balustrade with purple chairs on your left and the black and white architectural mural partition on your right to pass the blue and gold robe between columns on your left."
+  },
+  {
+   "from": "blue and gold robe between columns",
+   "to": "sepia mural partition",
+   "how": "Continue straight past the blue and gold robe between columns on your left to reach the sepia mural partition on your right."
+  },
+  {
+   "from": "sepia mural partition",
+   "to": "blue and gold robe between columns",
+   "how": "Turn around at the sepia mural partition and walk back with the partitions on your left and the second gold balustrade with purple chairs on your right to pass the blue and gold robe between columns."
+  },
+  {
+   "from": "blue and gold robe between columns",
+   "to": "second doorway with open dark wooden door",
+   "how": "With the blue and gold robe between columns and second gold balustrade with purple chairs on your right, continue straight ahead to the second doorway with open dark wooden door."
+  },
+  {
+   "from": "second doorway with open dark wooden door",
+   "to": "Virgin Mary text partition",
+   "how": "Walk straight through the second doorway with open dark wooden door to the Virgin Mary text partition directly ahead."
+  },
+  {
+   "from": "Virgin Mary text partition",
+   "to": "Virgin Mary portrait on wall",
+   "how": "Pass around the right side of the Virgin Mary text partition, keeping the third gold balustrade with purple chairs on your right, and walk forward toward the Virgin Mary portrait on wall between the second recessed brown wooden door and the white-covered arched doorway."
+  },
+  {
+   "from": "Virgin Mary portrait on wall",
+   "to": "carved wooden figure with black and gold mantle on grey platform",
+   "how": "Turn 180 degrees around in front of the Virgin Mary portrait on wall and walk forward with the Virgin Mary text partition on your left and the second recessed brown wooden door on your right to reach the carved wooden figure with black and gold mantle on grey platform on your left."
+  },
+  {
+   "from": "carved wooden figure with black and gold mantle on grey platform",
+   "to": "large Virgin Mary face mural partition",
+   "how": "Pass the carved wooden figure with black and gold mantle on grey platform on your left and continue forward to the large Virgin Mary face mural partition ahead."
+  },
+  {
+   "from": "large Virgin Mary face mural partition",
+   "to": "Virgin Mary in black and gold robe wall photo",
+   "how": "Veer right around the large Virgin Mary face mural partition toward the Virgin Mary in black and gold robe wall photo on the right wall."
+  },
+  {
+   "from": "Virgin Mary in black and gold robe wall photo",
+   "to": "black velvet display wall with diamond frames",
+   "how": "Turn left and walk around the back of the large Virgin Mary face mural partition toward the black velvet display wall with diamond frames on the opposite side."
+  },
+  {
+   "from": "black velvet display wall with diamond frames",
+   "to": "Virgin Mary text partition",
+   "how": "With the black velvet display wall with diamond frames on your left and the large Virgin Mary face mural partition on your right, walk back past the carved wooden figure with black and gold mantle on grey platform toward the Virgin Mary text partition."
+  },
+  {
+   "from": "Virgin Mary text partition",
+   "to": "first gold fluted pedestal with small figure",
+   "how": "Turn around near the Virgin Mary text partition and walk straight along the left side past the black velvet display wall with diamond frames on your left to the first gold fluted pedestal with small figure."
+  },
+  {
+   "from": "first gold fluted pedestal with small figure",
+   "to": "Virgen de Soledad end partition",
+   "how": "Continue straight past the first gold fluted pedestal with small figure on your left to the Virgen de Soledad end partition directly ahead."
+  },
+  {
+   "from": "Virgen de Soledad end partition",
+   "to": "second gold fluted pedestal with small figure",
+   "how": "Turn right in front of the Virgen de Soledad end partition and walk across to the second gold fluted pedestal with small figure near the third recessed brown wooden door."
+  }
+ ],
+ "walk_summary": [
+  "Start with the first gold balustrade with purple chairs on the right and walk forward to the crucifixion painting on the end wall.",
+  "Turn left past the crucifixion painting to enter the area with the flagellation painting and the golden cross on grey platform.",
+  "Walk forward past the dark wooden chair and first recessed brown wooden door on the left, keeping the recumbent figure mural partition on the right, to reach the dark embroidered robe on grey pedestal.",
+  "Move across the back end past the seated figure statue on grey platform on the left and turn around the end of the recumbent figure mural partition to face the Cristo Yacente text wall.",
+  "Turn right and walk with the Cristo Yacente text wall on the left and the reverse side of the recumbent figure mural partition and the white and gold robe on stand on the right toward the first doorway with open dark wooden door.",
+  "Turn left through the first doorway with open dark wooden door toward the coat of arms diagram on white partition, then immediately turn left to walk past the red and gold hanging textile on the left.",
+  "Pass the red and gold robe at corner and step into the central aisle beside the gold boat-shaped base on grey platform.",
+  "Circle in the narrow aisle beside the gold boat-shaped base on grey platform and the 50th anniversary logo partition, then walk down the side passage along the outer wall past the tan embroidered robe on stand and the tan and gold hanging textile.",
+  "Turn around at the end wall and walk back past the red and gold robe at corner and the red and gold hanging textile to emerge by the gold boat-shaped base on grey platform and the pope and church photo partition.",
+  "Walk beside the gold boat-shaped base on grey platform, turn back toward the silver crest on wall, and turn right to pass the first doorway with open dark wooden door on the left.",
+  "Walk straight through the wall opening along the second gold balustrade with purple chairs and the blue and gold robe between columns on the left, passing the black and white architectural mural partition on the right to reach the sepia mural partition.",
+  "Turn around at the sepia mural partition and walk back past the blue and gold robe between columns and second gold balustrade with purple chairs on the right to go through the second doorway with open dark wooden door.",
+  "Pass to the right of the Virgin Mary text partition along the third gold balustrade with purple chairs toward the Virgin Mary portrait on wall between the second recessed brown wooden door and the white-covered arched doorway.",
+  "Turn 180 degrees around and walk past the Virgin Mary text partition and the carved wooden figure with black and gold mantle on grey platform on the left toward the large Virgin Mary face mural partition and the Virgin Mary in black and gold robe wall photo on the right.",
+  "Loop around the back of the large Virgin Mary face mural partition past the black velvet display wall with diamond frames and first gold fluted pedestal with small figure to return toward the Virgin Mary text partition.",
+  "Turn around again and walk straight along the black velvet display wall with diamond frames and first gold fluted pedestal with small figure on the left to reach the Virgen de Soledad end partition.",
+  "Turn right across the front of the Virgen de Soledad end partition to finish at the corner by the second gold fluted pedestal with small figure and the third recessed brown wooden door."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/HY1NcmCgn3n/frames",
+  "n_keyframes": 105,
+  "camera": "held at chest height by a person walking"
+ }
+}

@@ -1,0 +1,1270 @@
+{
+ "landmarks": [
+  {
+   "name": "round wooden table",
+   "description": "Medium round wooden table surrounded by carved wooden chairs on a terracotta tile floor near bay windows.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "name": "bay windows",
+   "description": "Curved wall of dark-framed grid windows overlooking greenery.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "name": "floral painting above green console",
+   "description": "Framed still-life flower painting hanging above a long distressed green wooden console table.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    134
+   ]
+  },
+  {
+   "name": "twin archways with built-in oven",
+   "description": "Two rounded plaster archways separated by a wall section containing a built-in stainless oven and wood cabinet.",
+   "seen_at": [
+    8,
+    9,
+    209,
+    210
+   ]
+  },
+  {
+   "name": "double glass-paned doors to exterior passage",
+   "description": "Pair of open wooden doors with large glass panes leading between the tiled area and the wood-floored area under a coffered ceiling.",
+   "seen_at": [
+    10,
+    11,
+    12,
+    13,
+    50,
+    51,
+    66,
+    67,
+    68,
+    74,
+    75,
+    133,
+    134,
+    135,
+    136,
+    137,
+    139,
+    179,
+    180,
+    210,
+    211
+   ]
+  },
+  {
+   "name": "coffered wood ceiling",
+   "description": "Heavy recessed square wood-beam ceiling above the patterned chairs and adjacent tiled area.",
+   "seen_at": [
+    11,
+    12,
+    13,
+    68,
+    69,
+    70,
+    117,
+    118,
+    119,
+    130,
+    131,
+    132,
+    136,
+    137,
+    180,
+    181,
+    212
+   ]
+  },
+  {
+   "name": "patterned chairs on light rug",
+   "description": "High-back upholstered chairs with dark floral pattern sitting on a large light-colored area rug.",
+   "seen_at": [
+    12,
+    13,
+    68,
+    69,
+    73,
+    74,
+    118,
+    119,
+    131,
+    132,
+    136,
+    137,
+    212,
+    213
+   ]
+  },
+  {
+   "name": "tall stone fireplace",
+   "description": "Large light-colored stone fireplace with a tall angled hood reaching toward the beamed ceiling.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    16,
+    71,
+    72,
+    102,
+    103,
+    104,
+    105,
+    115,
+    116,
+    120,
+    121,
+    137,
+    138,
+    213,
+    214,
+    215,
+    216
+   ]
+  },
+  {
+   "name": "tan sofa with console table",
+   "description": "Light tan upholstered sofa with a narrow wooden table directly behind it on the hardwood floor.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    71,
+    72,
+    117,
+    118,
+    121,
+    130,
+    138,
+    139,
+    140
+   ]
+  },
+  {
+   "name": "inlaid patterned chest",
+   "description": "Rectangular chest with ornate geometric and floral patterned inlay standing against the dark wood-paneled wall.",
+   "seen_at": [
+    117,
+    118,
+    129,
+    130,
+    214,
+    215
+   ]
+  },
+  {
+   "name": "floral arrangement on console table",
+   "description": "Large vase of flowers sitting on a carved wooden console table against dark wood wall paneling.",
+   "seen_at": [
+    104,
+    105,
+    106,
+    107
+   ]
+  },
+  {
+   "name": "wood-paneled archway",
+   "description": "Rounded archway set into dark stained wood wall paneling separating the wood-floored area from the circular mosaic area.",
+   "seen_at": [
+    15,
+    16,
+    49,
+    50,
+    77,
+    78,
+    79,
+    102,
+    103,
+    115,
+    121,
+    139,
+    140,
+    178
+   ]
+  },
+  {
+   "name": "circular floor mosaic",
+   "description": "Round decorative stone mosaic inlaid in the terracotta tile floor of the octagonal area.",
+   "seen_at": [
+    17,
+    46,
+    47,
+    48,
+    49,
+    75,
+    76,
+    77,
+    79,
+    80,
+    81,
+    82,
+    83,
+    88,
+    89,
+    100,
+    101,
+    140,
+    141,
+    142,
+    165,
+    166,
+    167,
+    168,
+    169,
+    177,
+    178
+   ]
+  },
+  {
+   "name": "arched niche with mirror and cabinet",
+   "description": "Recessed wall arch containing a dark wood cabinet and an ornate mirror next to the circular floor mosaic.",
+   "seen_at": [
+    17,
+    48,
+    49,
+    76,
+    77,
+    79,
+    80,
+    88,
+    89,
+    167,
+    168
+   ]
+  },
+  {
+   "name": "carved wooden bench under arched window",
+   "description": "Dark stained wood bench with carved back panels sitting beneath an arched interior window by the circular floor mosaic.",
+   "seen_at": [
+    165,
+    166,
+    167,
+    168,
+    177,
+    178
+   ]
+  },
+  {
+   "name": "arched wooden door with peephole",
+   "description": "Heavy vertical-plank wooden door with a rounded top and a small hinged viewing door adjacent to the circular floor mosaic.",
+   "seen_at": [
+    167,
+    168
+   ]
+  },
+  {
+   "name": "built-in wooden bookshelves",
+   "description": "Floor-to-ceiling dark stained wood shelving and lower cabinets visible from the circular floor mosaic.",
+   "seen_at": [
+    168,
+    169
+   ]
+  },
+  {
+   "name": "curved wooden stairs with iron railing",
+   "description": "Staircase with stained wood treads curving upward to the left, bordered by an ornate wrought-iron balustrade.",
+   "seen_at": [
+    18,
+    19,
+    20,
+    21,
+    44,
+    45,
+    46,
+    47,
+    80,
+    81,
+    82,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    142,
+    143,
+    144,
+    145,
+    146,
+    162,
+    163,
+    164,
+    165,
+    166,
+    169
+   ]
+  },
+  {
+   "name": "stained glass rose panels",
+   "description": "Series of framed rectangular stained-glass artworks depicting a red rose along the curved stair wall.",
+   "seen_at": [
+    45,
+    46,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    143,
+    144,
+    145,
+    163,
+    164,
+    165
+   ]
+  },
+  {
+   "name": "oval standing mirror",
+   "description": "Freestanding oval mirror in a light-colored ornate frame in the corner of the upper stair landing.",
+   "seen_at": [
+    20,
+    21,
+    145,
+    146,
+    161,
+    162,
+    163
+   ]
+  },
+  {
+   "name": "round patterned rug",
+   "description": "Light-colored circular rug on the wood floor at the top of the curved stairs.",
+   "seen_at": [
+    21,
+    42,
+    43,
+    145,
+    146,
+    161,
+    162,
+    163
+   ]
+  },
+  {
+   "name": "wooden balustrade overlooking lower level",
+   "description": "Dark wood railing with turned balusters and potted topiaries along the upper passage.",
+   "seen_at": [
+    22,
+    23,
+    24,
+    41,
+    42,
+    43,
+    115,
+    147,
+    148,
+    149,
+    159,
+    160
+   ]
+  },
+  {
+   "name": "pinkish patterned rug",
+   "description": "Rectangular oriental rug with pink and blue tones on the upper wood floor alongside the wooden balustrade.",
+   "seen_at": [
+    22,
+    23,
+    24,
+    41,
+    42,
+    43,
+    147,
+    148,
+    149,
+    159,
+    160
+   ]
+  },
+  {
+   "name": "large terracotta floor vases",
+   "description": "Cluster of tall reddish-orange distressed pots holding dried branches flanking an upper archway.",
+   "seen_at": [
+    23,
+    24,
+    41,
+    149,
+    150,
+    158,
+    159
+   ]
+  },
+  {
+   "name": "upper arched wooden door",
+   "description": "Heavy plank wood door with a rounded top standing open against the wall just inside the upper archway.",
+   "seen_at": [
+    39,
+    40,
+    150,
+    157,
+    158
+   ]
+  },
+  {
+   "name": "small wooden chest under window",
+   "description": "Low dark-wood box sitting against the wall beneath a rectangular window and a wall-mounted sculpture in the upper passage.",
+   "seen_at": [
+    39,
+    40,
+    157,
+    158
+   ]
+  },
+  {
+   "name": "large leaning framed artwork",
+   "description": "Oversized wood-framed picture/mirror leaning against the right wall under a beamed ceiling.",
+   "seen_at": [
+    25,
+    26,
+    151,
+    152,
+    155,
+    156
+   ]
+  },
+  {
+   "name": "arched stone fireplace with round relief",
+   "description": "Light-colored plaster and stone fireplace with a rounded opening and a circular sunburst medallion on the hood.",
+   "seen_at": [
+    38,
+    39,
+    153,
+    154
+   ]
+  },
+  {
+   "name": "tufted armchairs",
+   "description": "Pair of light-colored upholstered armchairs with tufted backs near the floral-headboard bed.",
+   "seen_at": [
+    26,
+    27,
+    28,
+    37,
+    38,
+    151,
+    152,
+    156,
+    157
+   ]
+  },
+  {
+   "name": "large bed with floral headboard",
+   "description": "Large bed with white bedding, an orange bench at the foot, and a curved floral-patterned headboard.",
+   "seen_at": [
+    26,
+    27,
+    28,
+    29,
+    37,
+    38,
+    151,
+    152
+   ]
+  },
+  {
+   "name": "curtained glass doors",
+   "description": "Open dark wood glass-paned doors flanked by long striped drapes opposite the large bed.",
+   "seen_at": [
+    27,
+    28,
+    35,
+    36,
+    151,
+    152
+   ]
+  },
+  {
+   "name": "narrow arched opening",
+   "description": "Pointed plaster archway to the left of the large bed leading to a wood-floored dresser passage.",
+   "seen_at": [
+    28,
+    29,
+    35,
+    36
+   ]
+  },
+  {
+   "name": "long wood dresser under large mirror",
+   "description": "Long dark-wood multi-drawer cabinet topped with a light counter and a wide wall-mounted mirror.",
+   "seen_at": [
+    33,
+    34,
+    35,
+    36
+   ]
+  },
+  {
+   "name": "dark wood vanities",
+   "description": "Pair of dark stained wood cabinets with light stone countertops flanking a light stone floor.",
+   "seen_at": [
+    30,
+    31,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "built-in tiled bathtub under arched windows",
+   "description": "Oval white bathtub set into a raised beige-and-brown diamond-tiled platform beneath three arched windows.",
+   "seen_at": [
+    30,
+    31
+   ]
+  },
+  {
+   "name": "white toilet in small alcove",
+   "description": "Standard white porcelain toilet inside a narrow doorway next to the right dark wood vanity.",
+   "seen_at": [
+    32,
+    33
+   ]
+  },
+  {
+   "name": "white stone planter with flowers",
+   "description": "Ornate white carved stone urn holding a floral arrangement beneath a framed landscape painting in the arched tiled passage.",
+   "seen_at": [
+    179,
+    180
+   ]
+  },
+  {
+   "name": "cream-colored island with wood countertop",
+   "description": "Large distressed cream cabinetry island with a thick butcher-block top under a coffered ceiling.",
+   "seen_at": [
+    51,
+    52,
+    53,
+    64,
+    65,
+    66,
+    181,
+    182,
+    190,
+    191,
+    192,
+    209,
+    210
+   ]
+  },
+  {
+   "name": "copper range hood over stove",
+   "description": "Large curved metallic range hood flanked by dark wood upper cabinets behind the cream island.",
+   "seen_at": [
+    67,
+    68,
+    210
+   ]
+  },
+  {
+   "name": "dark wood island",
+   "description": "Dark stained wood island with a raised stone bar counter located past the cream-colored island.",
+   "seen_at": [
+    53,
+    54,
+    55,
+    182,
+    183,
+    208,
+    209
+   ]
+  },
+  {
+   "name": "light stone fireplace with carved mantle",
+   "description": "Ornate white stone fireplace with an arched firebox and a dark wood entertainment cabinet to its left.",
+   "seen_at": [
+    53,
+    54,
+    55,
+    193,
+    194,
+    195,
+    196
+   ]
+  },
+  {
+   "name": "tan sofa near carved mantle fireplace",
+   "description": "Light tan sofa with a console table behind it facing the light stone fireplace with carved mantle.",
+   "seen_at": [
+    195,
+    196,
+    207
+   ]
+  },
+  {
+   "name": "dark wood console table",
+   "description": "Narrow rustic wooden table standing against the wall opposite the tan sofa near the carved mantle fireplace.",
+   "seen_at": [
+    54,
+    55,
+    56,
+    207
+   ]
+  },
+  {
+   "name": "arched wooden door at end of passage",
+   "description": "Closed medium-toned wood plank door with a rounded top at the end of a short vaulted passage off the dark wood console table.",
+   "seen_at": [
+    56,
+    57
+   ]
+  },
+  {
+   "name": "built-in wood cabinets with stone counter",
+   "description": "Dark stained wood upper and lower cabinets with a light stone countertop in a narrow passage.",
+   "seen_at": [
+    57,
+    58,
+    59,
+    63,
+    64,
+    193,
+    194
+   ]
+  },
+  {
+   "name": "small arched interior window",
+   "description": "Small dark-framed arched window set high in a beige plaster wall at the corner of the narrow cabinetry passage.",
+   "seen_at": [
+    58,
+    59,
+    60,
+    63,
+    64,
+    191,
+    192
+   ]
+  },
+  {
+   "name": "arched niche with vanity and mirror",
+   "description": "Recessed plaster arch containing a dark wood sink cabinet and an arched mirror in a small tiled room.",
+   "seen_at": [
+    61,
+    62
+   ]
+  },
+  {
+   "name": "white toilet under tiled wainscoting",
+   "description": "White porcelain toilet against a wall with decorative patterned tile trim next to the arched vanity niche.",
+   "seen_at": [
+    61,
+    62
+   ]
+  },
+  {
+   "name": "interior casement windows",
+   "description": "Dark wood-framed grid windows set into the beige plaster wall of the narrow vaulted laundry passage.",
+   "seen_at": [
+    184,
+    185,
+    186,
+    190,
+    191
+   ]
+  },
+  {
+   "name": "white front-loading washer and dryer",
+   "description": "White laundry appliances next to dark wood cabinets and a patterned runner rug in the narrow vaulted passage.",
+   "seen_at": [
+    185,
+    186
+   ]
+  },
+  {
+   "name": "two arched wooden doors in circular alcove",
+   "description": "Pair of dark stained vertical-plank arched wooden doors set into the curved wall at the end of the laundry passage.",
+   "seen_at": [
+    186,
+    187,
+    188,
+    189
+   ]
+  },
+  {
+   "name": "small circular floor inlay",
+   "description": "Small round stone mosaic inlaid in the terracotta tile floor at a three-way arched intersection near the curved stairs.",
+   "seen_at": [
+    90,
+    91,
+    99,
+    100,
+    170,
+    171,
+    176,
+    177
+   ]
+  },
+  {
+   "name": "oversized round wall clock over distressed cabinet",
+   "description": "Very large whitewashed round clock with Roman numerals hanging above a distressed wooden cabinet at the small circular floor inlay.",
+   "seen_at": [
+    99,
+    100,
+    176,
+    177
+   ]
+  },
+  {
+   "name": "dark-framed rectangular mirror",
+   "description": "Large vertical mirror in a dark textured frame mounted on the curved beige plaster wall near the small circular floor inlay.",
+   "seen_at": [
+    91,
+    92,
+    171,
+    172,
+    174,
+    175,
+    176
+   ]
+  },
+  {
+   "name": "lower arched wooden door",
+   "description": "Open arched wooden door leading from the small circular floor inlay into the wood-floored room with the sleigh bed.",
+   "seen_at": [
+    92,
+    93,
+    97,
+    98,
+    172,
+    173,
+    174,
+    175
+   ]
+  },
+  {
+   "name": "patterned brown and cream curtains",
+   "description": "Floor-to-ceiling drapes with a large brown and cream scroll pattern along the wall opposite the sleigh bed.",
+   "seen_at": [
+    93,
+    94,
+    97,
+    98
+   ]
+  },
+  {
+   "name": "wooden sleigh bed with coral bedding",
+   "description": "Large dark wood sleigh bed with coral-orange and floral bedding and a padded bench at the foot.",
+   "seen_at": [
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    172,
+    173
+   ]
+  },
+  {
+   "name": "small dark wood chest under floral painting",
+   "description": "Low rustic wooden chest sitting between two arched doorways beneath a framed still-life flower painting.",
+   "seen_at": [
+    93,
+    94,
+    95
+   ]
+  },
+  {
+   "name": "upholstered armchair with floral pillow",
+   "description": "Tan wingback armchair with a floral cushion next to a small round side table and lamp in the corner past the sleigh bed.",
+   "seen_at": [
+    95,
+    96
+   ]
+  },
+  {
+   "name": "round ornate wall mirror",
+   "description": "Circular mirror in a thick carved frame hanging on the wall beside the sleigh bed.",
+   "seen_at": [
+    95,
+    96
+   ]
+  },
+  {
+   "name": "sliding glass-paned partition doors",
+   "description": "Tall dark-wood framed doors with grid glass panes separating the wood-floored fireplace area from the tiled pool table area.",
+   "seen_at": [
+    103,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    114,
+    115,
+    120,
+    122,
+    123,
+    124,
+    125,
+    127,
+    128,
+    215,
+    216
+   ]
+  },
+  {
+   "name": "pool table with red felt",
+   "description": "Dark wood billiards table with red felt top sitting on a large patterned rug in front of tall arched windows.",
+   "seen_at": [
+    107,
+    108,
+    109,
+    111,
+    112,
+    113,
+    123,
+    126,
+    127,
+    128,
+    216,
+    217
+   ]
+  },
+  {
+   "name": "tall wooden corner cabinet",
+   "description": "Dark stained wood cabinet mounted in the corner next to a tan armless chair near the partition doors.",
+   "seen_at": [
+    109,
+    110,
+    216,
+    217
+   ]
+  },
+  {
+   "name": "round wooden table with upholstered chairs",
+   "description": "Medium round dark wood table surrounded by tan upholstered chairs near the arched glass-paned doors.",
+   "seen_at": [
+    109,
+    110,
+    112,
+    127,
+    128,
+    216,
+    217,
+    218,
+    219
+   ]
+  },
+  {
+   "name": "wall-mounted flat-screen TV",
+   "description": "Large black flat-screen television mounted on the light plaster wall above open media shelves near the pool table.",
+   "seen_at": [
+    111,
+    112,
+    124,
+    125,
+    126,
+    127
+   ]
+  },
+  {
+   "name": "brown sofa in front of arched windows",
+   "description": "Plush brown upholstered sofa with rolled arms and a light-colored rectangular coffee table in front of arched grid windows.",
+   "seen_at": [
+    111,
+    112,
+    113,
+    124,
+    125
+   ]
+  },
+  {
+   "name": "arched glass-paned doors",
+   "description": "Series of tall dark-wood doors with arched glass transoms along the back and right walls behind the round table with upholstered chairs.",
+   "seen_at": [
+    217,
+    218,
+    219,
+    220
+   ]
+  },
+  {
+   "name": "double glass-paned doors near carved fireplace",
+   "description": "Open wooden double doors with glass panes leading from the carved mantle fireplace area into the room with the corner stone fireplace and indoor grill.",
+   "seen_at": [
+    196,
+    197,
+    198,
+    205,
+    206,
+    207
+   ]
+  },
+  {
+   "name": "brown sofa with wooden coffee table",
+   "description": "Dark brown upholstered sofa facing a rustic rectangular wood coffee table on a hide rug.",
+   "seen_at": [
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203
+   ]
+  },
+  {
+   "name": "corner stone fireplace with round mirror",
+   "description": "Light stone arched fireplace set into a corner wall with a circular mirror mounted above the mantle, flanked by white slipcovered armless chairs.",
+   "seen_at": [
+    199,
+    200,
+    201,
+    204,
+    205
+   ]
+  },
+  {
+   "name": "white slipcovered dining chairs and table",
+   "description": "Rectangular wooden table surrounded by tall white fabric-covered chairs under a row of dark-framed windows.",
+   "seen_at": [
+    200,
+    201,
+    202,
+    203
+   ]
+  },
+  {
+   "name": "built-in stainless grill with range hood",
+   "description": "Large stainless steel indoor grill and range hood set into a tiled alcove flanked by dark wood cabinets.",
+   "seen_at": [
+    202,
+    205,
+    206
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "round wooden table",
+   "to": "twin archways with built-in oven",
+   "how": "Circle counter-clockwise around the round wooden table with the bay windows on your right and the floral painting above the green console on your left until facing the twin archways."
+  },
+  {
+   "from": "twin archways with built-in oven",
+   "to": "double glass-paned doors to exterior passage",
+   "how": "Turn right before the archways and walk forward to the open double glass-paned doors."
+  },
+  {
+   "from": "double glass-paned doors to exterior passage",
+   "to": "patterned chairs on light rug",
+   "how": "Pass straight through the open double glass-paned doors under the coffered wood ceiling with the patterned chairs on your left."
+  },
+  {
+   "from": "patterned chairs on light rug",
+   "to": "double glass-paned doors to exterior passage",
+   "how": "With the patterned chairs on your right under the coffered wood ceiling, walk straight through the open double glass-paned doors onto the terracotta tile floor."
+  },
+  {
+   "from": "patterned chairs on light rug",
+   "to": "tall stone fireplace",
+   "how": "Continue forward past the patterned chairs on your left and the tan sofa with console table on your right toward the tall stone fireplace ahead."
+  },
+  {
+   "from": "tall stone fireplace",
+   "to": "patterned chairs on light rug",
+   "how": "With the tall stone fireplace behind you, walk past the inlaid patterned chest on your left and the tan sofa on your right toward the patterned chairs under the coffered wood ceiling."
+  },
+  {
+   "from": "tall stone fireplace",
+   "to": "wood-paneled archway",
+   "how": "With the tall stone fireplace and tan sofa on your right, turn left to face the dark wood-paneled archway."
+  },
+  {
+   "from": "wood-paneled archway",
+   "to": "tall stone fireplace",
+   "how": "Pass through the wood-paneled archway onto the wood floor with the tall stone fireplace ahead on your left and the tan sofa on your right."
+  },
+  {
+   "from": "wood-paneled archway",
+   "to": "circular floor mosaic",
+   "how": "Walk straight through the wood-paneled archway into the octagonal tiled area with the circular floor mosaic and the arched niche with mirror and cabinet ahead on the left."
+  },
+  {
+   "from": "circular floor mosaic",
+   "to": "wood-paneled archway",
+   "how": "From the circular floor mosaic with the arched niche behind you, walk through the dark wood-paneled archway."
+  },
+  {
+   "from": "circular floor mosaic",
+   "to": "curved wooden stairs with iron railing",
+   "how": "Turn right upon entering the circular floor mosaic area (or turn left when facing the arched niche) to face the bottom of the curved wooden stairs."
+  },
+  {
+   "from": "curved wooden stairs with iron railing",
+   "to": "round patterned rug",
+   "how": "Climb the curved wooden stairs with the iron railing on your left and the stained glass rose panels on your right up to the round patterned rug and oval standing mirror on the landing."
+  },
+  {
+   "from": "round patterned rug",
+   "to": "curved wooden stairs with iron railing",
+   "how": "From the round patterned rug with the oval standing mirror on your left, curve right onto the wooden stairs and descend with the stained glass rose panels on your left."
+  },
+  {
+   "from": "curved wooden stairs with iron railing",
+   "to": "circular floor mosaic",
+   "how": "Follow the stairs down as they curve to the right onto the terracotta tile floor at the circular floor mosaic."
+  },
+  {
+   "from": "round patterned rug",
+   "to": "large terracotta floor vases",
+   "how": "Turn left from the stair landing and walk across the pinkish patterned rug with the wooden balustrade on your left toward the archway flanked by large terracotta floor vases."
+  },
+  {
+   "from": "large terracotta floor vases",
+   "to": "round patterned rug",
+   "how": "Pass between the large terracotta floor vases and walk straight across the pinkish patterned rug with the wooden balustrade on your right to the round patterned rug at the top of the stairs."
+  },
+  {
+   "from": "large terracotta floor vases",
+   "to": "large bed with floral headboard",
+   "how": "Walk forward through the archway past the upper arched wooden door and large leaning framed artwork on your right and between the two tufted armchairs toward the large bed."
+  },
+  {
+   "from": "large bed with floral headboard",
+   "to": "large terracotta floor vases",
+   "how": "With the large bed on your left, walk between the tufted armchairs past the arched stone fireplace with round relief and upper arched wooden door on your right and the small wooden chest under the window on your left to the large terracotta floor vases."
+  },
+  {
+   "from": "large bed with floral headboard",
+   "to": "narrow arched opening",
+   "how": "Walk along the left side of the large bed with the curtained glass doors on your left straight into the narrow arched opening."
+  },
+  {
+   "from": "narrow arched opening",
+   "to": "large bed with floral headboard",
+   "how": "Pass through the narrow arched opening with the curtained glass doors ahead on your right and the large bed on your left."
+  },
+  {
+   "from": "narrow arched opening",
+   "to": "built-in tiled bathtub under arched windows",
+   "how": "Step through the narrow arched opening and turn left between the two dark wood vanities onto the stone floor facing the built-in tiled bathtub."
+  },
+  {
+   "from": "built-in tiled bathtub under arched windows",
+   "to": "long wood dresser under large mirror",
+   "how": "Turn around to the right, walking past the dark wood vanity and white toilet in a small alcove on your left, to step onto the wood floor beside the long wood dresser."
+  },
+  {
+   "from": "long wood dresser under large mirror",
+   "to": "narrow arched opening",
+   "how": "Walk with the long wood dresser on your left and turn left at the end to face the narrow arched opening."
+  },
+  {
+   "from": "circular floor mosaic",
+   "to": "cream-colored island with wood countertop",
+   "how": "Bear left past the circular floor mosaic and walk straight through the arched tiled passage with the wood-paneled archway and white stone planter on your left and the double glass-paned doors to the exterior on your right toward the cream-colored island on your left."
+  },
+  {
+   "from": "cream-colored island with wood countertop",
+   "to": "circular floor mosaic",
+   "how": "Walk straight down the arched tiled passage with the copper range hood and wood-paneled openings on your right and the double glass-paned doors to the exterior on your left to reach the circular floor mosaic."
+  },
+  {
+   "from": "cream-colored island with wood countertop",
+   "to": "dark wood island",
+   "how": "Continue straight down the tiled path with the cream-colored island on your left to the dark wood island just beyond it on your left."
+  },
+  {
+   "from": "dark wood island",
+   "to": "cream-colored island with wood countertop",
+   "how": "Walk straight along the tiled path with the dark wood island on your right and the twin archways with built-in oven on your left toward the cream-colored island on your right."
+  },
+  {
+   "from": "dark wood island",
+   "to": "arched wooden door at end of passage",
+   "how": "With the dark wood island on your left and the light stone fireplace with carved mantle ahead to the left, turn right just past the dark wood console table into the narrow vaulted passage facing the arched wooden door."
+  },
+  {
+   "from": "arched wooden door at end of passage",
+   "to": "small arched interior window",
+   "how": "Turn left before reaching the arched wooden door and walk past the built-in wood cabinets with stone counter on your left toward the small arched interior window ahead."
+  },
+  {
+   "from": "small arched interior window",
+   "to": "arched niche with vanity and mirror",
+   "how": "Turn left at the small arched interior window to step through a doorway facing the arched niche with vanity and mirror with the white toilet under tiled wainscoting on the right."
+  },
+  {
+   "from": "arched niche with vanity and mirror",
+   "to": "cream-colored island with wood countertop",
+   "how": "Turn around to exit the small room, turn right past the small arched interior window on your left and the built-in wood cabinets on your right, and walk out toward the cream-colored island."
+  },
+  {
+   "from": "cream-colored island with wood countertop",
+   "to": "two arched wooden doors in circular alcove",
+   "how": "Moving past the cream-colored island on your left, turn right into the narrow vaulted passage and walk past the interior casement windows on your right and the white front-loading washer and dryer on your left to the two arched wooden doors at the end."
+  },
+  {
+   "from": "two arched wooden doors in circular alcove",
+   "to": "small arched interior window",
+   "how": "Turn around in the circular alcove and walk straight back down the narrow vaulted passage with the interior casement windows and small arched interior window on your left."
+  },
+  {
+   "from": "small arched interior window",
+   "to": "light stone fireplace with carved mantle",
+   "how": "Turn right past the built-in wood cabinets with stone counter on your right and emerge facing the light stone fireplace with carved mantle and tan sofa to your left."
+  },
+  {
+   "from": "light stone fireplace with carved mantle",
+   "to": "double glass-paned doors near carved fireplace",
+   "how": "Turn left and walk past the tan sofa and light stone fireplace with carved mantle on your left to pass through the open double glass-paned doors ahead."
+  },
+  {
+   "from": "double glass-paned doors near carved fireplace",
+   "to": "corner stone fireplace with round mirror",
+   "how": "Pass through the double glass-paned doors and angle left past the brown sofa with wooden coffee table and white slipcovered dining chairs on your right toward the corner stone fireplace with round mirror."
+  },
+  {
+   "from": "corner stone fireplace with round mirror",
+   "to": "double glass-paned doors near carved fireplace",
+   "how": "With the corner stone fireplace on your right, walk forward past the built-in stainless grill with range hood on your left through the open double glass-paned doors."
+  },
+  {
+   "from": "double glass-paned doors near carved fireplace",
+   "to": "dark wood island",
+   "how": "Pass through the double glass-paned doors with the dark wood console table ahead on your left and the tan sofa on your right, then continue straight to the dark wood island on your right."
+  },
+  {
+   "from": "circular floor mosaic",
+   "to": "small circular floor inlay",
+   "how": "At the bottom of the curved wooden stairs by the circular floor mosaic, turn right (or walk between the built-in wooden bookshelves on the left and the stairs on the right) into the arched passage with the small circular floor inlay."
+  },
+  {
+   "from": "small circular floor inlay",
+   "to": "circular floor mosaic",
+   "how": "Walk past the oversized round wall clock over the distressed cabinet on your left straight to the circular floor mosaic."
+  },
+  {
+   "from": "small circular floor inlay",
+   "to": "wooden sleigh bed with coral bedding",
+   "how": "Pass over the small circular floor inlay with the dark-framed rectangular mirror on your right, go through the lower arched wooden door on your left, and walk between the patterned brown and cream curtains on your left and the wooden sleigh bed on your right."
+  },
+  {
+   "from": "wooden sleigh bed with coral bedding",
+   "to": "upholstered armchair with floral pillow",
+   "how": "Walk past the small dark wood chest under the floral painting on your left and angle right past the foot of the wooden sleigh bed toward the upholstered armchair and round ornate wall mirror."
+  },
+  {
+   "from": "upholstered armchair with floral pillow",
+   "to": "small circular floor inlay",
+   "how": "Turn around and walk past the foot of the wooden sleigh bed on your left and the patterned brown and cream curtains on your right, exiting through the lower arched wooden door to the small circular floor inlay."
+  },
+  {
+   "from": "tall stone fireplace",
+   "to": "sliding glass-paned partition doors",
+   "how": "Walk past the tall stone fireplace and floral arrangement on the console table on your left and turn right to pass through the sliding glass-paned partition doors."
+  },
+  {
+   "from": "sliding glass-paned partition doors",
+   "to": "tall stone fireplace",
+   "how": "Pass through the sliding glass-paned partition doors onto the hardwood floor with the tall stone fireplace ahead on your right and the wood-paneled archway ahead."
+  },
+  {
+   "from": "sliding glass-paned partition doors",
+   "to": "pool table with red felt",
+   "how": "Step through the sliding glass-paned partition doors onto the tiled floor with the pool table with red felt ahead on your left and the tall wooden corner cabinet on your right."
+  },
+  {
+   "from": "pool table with red felt",
+   "to": "brown sofa in front of arched windows",
+   "how": "Walk around the far end of the pool table on your left, passing the wall-mounted flat-screen TV on your right, toward the brown sofa in front of the arched windows."
+  },
+  {
+   "from": "brown sofa in front of arched windows",
+   "to": "sliding glass-paned partition doors",
+   "how": "Turn around beneath the wall-mounted flat-screen TV and walk along the partition wall with the TV and sliding glass-paned partition doors on your left and the pool table on your right."
+  },
+  {
+   "from": "sliding glass-paned partition doors",
+   "to": "round wooden table with upholstered chairs",
+   "how": "After stepping through the sliding glass-paned partition doors, walk between the pool table on your right and the tall wooden corner cabinet on your left toward the round wooden table with upholstered chairs."
+  },
+  {
+   "from": "round wooden table with upholstered chairs",
+   "to": "arched glass-paned doors",
+   "how": "Continue forward past the round wooden table with upholstered chairs on your left and the pool table on your right to the arched glass-paned doors along the back wall."
+  }
+ ],
+ "walk_summary": [
+  "Enter the terracotta-tiled area and circle counter-clockwise around the round wooden table past the bay windows and the floral painting above the green console toward the twin archways with the built-in oven.",
+  "Turn right and walk through the double glass-paned doors under the coffered wood ceiling, passing the patterned chairs on a light rug on the left and the tan sofa on the right toward the tall stone fireplace.",
+  "Turn left through the wood-paneled archway into the octagonal tiled area with the circular floor mosaic and the arched niche with mirror and cabinet.",
+  "Turn right and climb the curved wooden stairs with the iron railing to the upper landing with the oval standing mirror and round patterned rug.",
+  "Turn left and walk across the pinkish patterned rug alongside the wooden balustrade through the archway flanked by large terracotta floor vases.",
+  "Continue past the large leaning framed artwork and between the tufted armchairs, walking along the left side of the large bed with the floral headboard and past the curtained glass doors into the narrow arched opening.",
+  "Turn left between the dark wood vanities toward the built-in tiled bathtub under the arched windows, then turn right past the white toilet in a small alcove onto the wood floor alongside the long wood dresser under the large mirror.",
+  "Turn left back through the narrow arched opening, walk past the foot of the large bed, the arched stone fireplace with round relief, the small wooden chest under the window, and the upper arched wooden door, and exit between the large terracotta floor vases across the pinkish patterned rug to the round patterned rug.",
+  "Descend the curved wooden stairs past the stained glass rose panels to the circular floor mosaic.",
+  "Bear left through the arched tiled passage past the wood-paneled archway, the double glass-paned doors to the exterior, the cream-colored island with wood countertop, and the dark wood island toward the light stone fireplace with carved mantle.",
+  "Turn right past the dark wood console table into a narrow vaulted passage facing the arched wooden door at the end.",
+  "Turn left past the built-in wood cabinets with stone counter to the small arched interior window, then step left into the small tiled room with the arched niche with vanity and mirror and the white toilet under tiled wainscoting.",
+  "Turn around, exit past the small arched interior window and built-in wood cabinets toward the cream-colored island, and pivot right down the arched tiled passage past the copper range hood and exterior glass-paned doors.",
+  "Step right into the wood-floored area to look at the tall stone fireplace, tan sofa, and patterned chairs on the light rug, then return to the tiled passage and walk to the circular floor mosaic.",
+  "Step through the wood-paneled archway and immediately turn around to re-enter the circular floor mosaic area.",
+  "Turn right to walk partway up the curved wooden stairs past the stained glass rose panels, then turn around and walk back down to the circular floor mosaic.",
+  "Turn right into the passage with the small circular floor inlay, pass the dark-framed rectangular mirror and lower arched wooden door, and walk between the patterned brown and cream curtains and the wooden sleigh bed with coral bedding.",
+  "Walk past the small dark wood chest under the floral painting to the upholstered armchair with floral pillow and the round ornate wall mirror, then turn around and walk back past the sleigh bed and over the small circular floor inlay (passing the oversized round wall clock) to the circular floor mosaic.",
+  "Turn left through the wood-paneled archway, walk past the tall stone fireplace and the floral arrangement on the console table, and pass through the sliding glass-paned partition doors.",
+  "Look right toward the tall wooden corner cabinet and round wooden table with upholstered chairs, then walk left around the pool table with red felt past the wall-mounted flat-screen TV and brown sofa in front of the arched windows.",
+  "Step back through the sliding glass-paned partition doors onto the wood floor, walk past the inlaid patterned chest toward the patterned chairs under the coffered wood ceiling, then turn around and return through the partition doors.",
+  "Turn right past the wall-mounted flat-screen TV and brown sofa, then turn around and walk alongside the pool table and partition doors.",
+  "Turn left through the sliding glass-paned partition doors, walk past the inlaid patterned chest, tan sofa, and patterned chairs, and exit through the double glass-paned doors into the tiled passage.",
+  "Turn around, re-enter through the double glass-paned doors, turn left past the patterned chairs and tan sofa, and go through the wood-paneled archway to the circular floor mosaic.",
+  "Turn right and climb the curved wooden stairs past the stained glass rose panels to the round patterned rug and oval standing mirror.",
+  "Turn left across the pinkish patterned rug alongside the wooden balustrade, pass the large terracotta floor vases and upper arched wooden door, and enter the room with the large bed, curtained glass doors, large leaning framed artwork, and arched stone fireplace with round relief.",
+  "Turn around, exit past the small wooden chest under the window, upper arched wooden door, and large terracotta floor vases, cross the pinkish patterned rug and round patterned rug, and descend the curved wooden stairs to the circular floor mosaic.",
+  "Turn left at the circular floor mosaic (passing the arched niche, arched wooden door with peephole, carved wooden bench, and built-in wooden bookshelves) and walk over the small circular floor inlay past the dark-framed rectangular mirror and lower arched wooden door toward the wooden sleigh bed.",
+  "Turn around in the passage, walk back over the small circular floor inlay past the oversized round wall clock, and curve right through the circular floor mosaic area into the arched tiled passage.",
+  "Walk past the white stone planter with flowers, exterior glass-paned doors, and cream-colored island, then turn right into the narrow vaulted passage past the interior casement windows and white front-loading washer and dryer to the two arched wooden doors in the circular alcove.",
+  "Turn around, walk back past the interior casement windows and small arched interior window, and turn right past the built-in wood cabinets with stone counter.",
+  "Turn left past the tan sofa and the light stone fireplace with carved mantle and walk through the open double glass-paned doors.",
+  "Angle left past the brown sofa with wooden coffee table and white slipcovered dining chairs to the corner stone fireplace with round mirror, scan the built-in stainless grill with range hood, and exit back through the double glass-paned doors.",
+  "Walk straight past the dark wood console table, dark wood island, twin archways with built-in oven, cream-colored island, and copper range hood.",
+  "Turn right into the wood-floored area under the coffered wood ceiling, walk past the patterned chairs and inlaid patterned chest toward the tall stone fireplace, and turn right through the sliding glass-paned partition doors.",
+  "Walk forward between the pool table with red felt on the right and the tall wooden corner cabinet and round wooden table with upholstered chairs on the left to the arched glass-paned doors."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/vlnce_tours/2azQ1b91cZZ/frames",
+  "n_keyframes": 221,
+  "camera": "held at chest height by a person walking"
+ }
+}

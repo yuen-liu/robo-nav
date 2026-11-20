@@ -1,0 +1,410 @@
+{
+ "landmarks": [
+  {
+   "name": "round white ottoman",
+   "description": "Large circular white tufted ottoman in the center of the floor near the open closet and vanity desk.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    21,
+    22
+   ]
+  },
+  {
+   "name": "vanity desk with mirror",
+   "description": "Small white counter with a grey chair, rectangular mirror, and side wall sconces.",
+   "seen_at": [
+    0
+   ]
+  },
+  {
+   "name": "open closet with white robe",
+   "description": "Dark wood open wardrobe recess with a white bathrobe hanging on the left.",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "wooden dresser with two blue paintings",
+   "description": "Four-drawer light wood dresser with two framed blue and yellow abstract paintings on the wall above it.",
+   "seen_at": [
+    1,
+    2
+   ]
+  },
+  {
+   "name": "large bed with wood-paneled headboard",
+   "description": "King-sized bed with white linens set against a full-height vertical wood-paneled wall with mirrored trim.",
+   "seen_at": [
+    0,
+    3,
+    4,
+    5,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    48
+   ]
+  },
+  {
+   "name": "fire extinguisher cabinet",
+   "description": "Recessed white metal wall cabinet with glass window containing a red fire extinguisher.",
+   "seen_at": [
+    3,
+    11
+   ]
+  },
+  {
+   "name": "wall-mounted TV on wood panel",
+   "description": "Flat-screen TV mounted on a raised wooden wall panel above a long white-topped desk counter.",
+   "seen_at": [
+    4,
+    5,
+    6,
+    12,
+    13,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "open wooden door",
+   "description": "Full-height medium-brown wood grain door propped open against a partition wall between the bed area and the dining table area.",
+   "seen_at": [
+    6,
+    7,
+    8,
+    22,
+    23,
+    42,
+    49
+   ]
+  },
+  {
+   "name": "freestanding white tub",
+   "description": "Oval white bathtub on a dark floor against a white marble-tiled wall.",
+   "seen_at": [
+    7,
+    11,
+    42,
+    43,
+    46,
+    47
+   ]
+  },
+  {
+   "name": "large city night painting",
+   "description": "Large horizontal painting with yellow top and dark blue/black abstract city lights on a textured beige wall.",
+   "seen_at": [
+    8,
+    9,
+    23,
+    24,
+    41,
+    49
+   ]
+  },
+  {
+   "name": "dark wood dining table with beige chairs",
+   "description": "Long dark live-edge wooden table surrounded by eight beige upholstered cantilever chairs.",
+   "seen_at": [
+    9,
+    10,
+    24,
+    25,
+    26,
+    40,
+    41,
+    49,
+    50
+   ]
+  },
+  {
+   "name": "yellow upholstered bench",
+   "description": "Two-piece mustard yellow cube bench at the foot of the large bed.",
+   "seen_at": [
+    12,
+    13,
+    20,
+    21,
+    48
+   ]
+  },
+  {
+   "name": "tan swivel desk chair",
+   "description": "Tan leatherette upholstered rolling chair at the white desk counter below the wall-mounted TV.",
+   "seen_at": [
+    13,
+    14,
+    19,
+    20,
+    21
+   ]
+  },
+  {
+   "name": "brown chaise lounge",
+   "description": "Brown fabric sectional chaise sofa positioned near the sheer window curtains beside the large bed.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    18,
+    19
+   ]
+  },
+  {
+   "name": "wooden console table with three fish sculptures",
+   "description": "Long medium-tone wood console table with three small dark fish statues on top and a black bin underneath, placed behind a beige sofa.",
+   "seen_at": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "four-panel blue abstract wall art",
+   "description": "Grid of four rectangular framed blue and grey abstract pictures on the wall near the dining table.",
+   "seen_at": [
+    26,
+    27,
+    30,
+    31,
+    40,
+    50
+   ]
+  },
+  {
+   "name": "sheer white window curtains",
+   "description": "Full-height sheer white patterned curtains along the window wall behind the sofa and dining area.",
+   "seen_at": [
+    27,
+    28,
+    53
+   ]
+  },
+  {
+   "name": "white Counter with mini-fridge",
+   "description": "Recessed alcove with white lower cabinets, a black-and-stainless under-counter mini-fridge, and a white-framed picture above.",
+   "seen_at": [
+    29,
+    30,
+    31,
+    32,
+    39,
+    51,
+    54
+   ]
+  },
+  {
+   "name": "TV on dark wood media console",
+   "description": "Large flat-screen TV sitting on a dark brown wooden cabinet against the wall near the beige sofa.",
+   "seen_at": [
+    32,
+    39,
+    51,
+    52,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "yellow tufted ottoman",
+   "description": "Pair of round mustard-yellow upholstered pouf ottomans on the rug in front of the beige sofa.",
+   "seen_at": [
+    32,
+    39,
+    51,
+    52,
+    54
+   ]
+  },
+  {
+   "name": "entry wooden door with closer",
+   "description": "Flat medium-wood door with a metal door closer at the top, located at the end of the white-tiled floor area.",
+   "seen_at": [
+    33,
+    34,
+    54
+   ]
+  },
+  {
+   "name": "console table with round shell mirror",
+   "description": "Small table with a geometric black metal base, table lamp, and a round mirror framed with dark shells above it on the white-tiled floor.",
+   "seen_at": [
+    34,
+    35,
+    36
+   ]
+  },
+  {
+   "name": "white toilet by grey stone-tiled wall",
+   "description": "White ceramic toilet beside a dark grey stacked-stone textured accent wall, with a blue framed picture above.",
+   "seen_at": [
+    36,
+    37
+   ]
+  },
+  {
+   "name": "floating white sink vanity with backlit mirror",
+   "description": "Wall-mounted rectangular white sink counter with a large backlit mirror on the dark grey textured tile wall.",
+   "seen_at": [
+    38
+   ]
+  },
+  {
+   "name": "double sink vanity with black frame",
+   "description": "Long white double-sink countertop on an open black metal frame with white towels stacked on the lower shelf and a wide backlit mirror.",
+   "seen_at": [
+    43,
+    46,
+    47
+   ]
+  },
+  {
+   "name": "frosted glass wooden door",
+   "description": "Wooden door with a large vertical frosted glass panel next to the double sink vanity and freestanding tub.",
+   "seen_at": [
+    43,
+    46
+   ]
+  },
+  {
+   "name": "glass-enclosed marble shower stall",
+   "description": "Walk-in shower stall with large white and grey veined marble wall tiles and a clear glass door.",
+   "seen_at": [
+    44,
+    45,
+    47
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "round white ottoman",
+   "to": "wooden dresser with two blue paintings",
+   "how": "Turn left past the vanity desk with mirror and open closet with white robe."
+  },
+  {
+   "from": "wooden dresser with two blue paintings",
+   "to": "large bed with wood-paneled headboard",
+   "how": "Turn right and walk forward through the doorway with the round white ottoman on your right and the fire extinguisher cabinet on your left."
+  },
+  {
+   "from": "large bed with wood-paneled headboard",
+   "to": "open wooden door",
+   "how": "Turn right and walk past the wall-mounted TV on wood panel on your left."
+  },
+  {
+   "from": "open wooden door",
+   "to": "dark wood dining table with beige chairs",
+   "how": "Walk forward through the doorway past the large city night painting on your left."
+  },
+  {
+   "from": "dark wood dining table with beige chairs",
+   "to": "open wooden door",
+   "how": "Walk past the dark wood dining table with beige chairs on your right and turn left before the large city night painting."
+  },
+  {
+   "from": "open wooden door",
+   "to": "brown chaise lounge",
+   "how": "Facing into the area with the large bed with wood-paneled headboard, walk straight between the yellow upholstered bench on your left and the wall-mounted TV on wood panel and tan swivel desk chair on your right."
+  },
+  {
+   "from": "brown chaise lounge",
+   "to": "tan swivel desk chair",
+   "how": "Circle around the brown chaise lounge near the window curtains with the large bed with wood-paneled headboard on your left."
+  },
+  {
+   "from": "tan swivel desk chair",
+   "to": "open wooden door",
+   "how": "Walk forward with the tan swivel desk chair and wall-mounted TV on wood panel on your left and the yellow upholstered bench on your right, then turn left before the round white ottoman."
+  },
+  {
+   "from": "dark wood dining table with beige chairs",
+   "to": "wooden console table with three fish sculptures",
+   "how": "Loop around the dark wood dining table with beige chairs with the sheer white window curtains on your left and the four-panel blue abstract wall art on your right."
+  },
+  {
+   "from": "wooden console table with three fish sculptures",
+   "to": "white Counter with mini-fridge",
+   "how": "Walk forward with the wooden console table with three fish sculptures on your left and the four-panel blue abstract wall art on your right."
+  },
+  {
+   "from": "white Counter with mini-fridge",
+   "to": "console table with round shell mirror",
+   "how": "Turn left past the TV on dark wood media console and walk forward onto the white floor tiles toward the entry wooden door with closer, where the console table with round shell mirror is on the right."
+  },
+  {
+   "from": "console table with round shell mirror",
+   "to": "white toilet by grey stone-tiled wall",
+   "how": "Turn right at the console table with round shell mirror and step through the open doorway."
+  },
+  {
+   "from": "white toilet by grey stone-tiled wall",
+   "to": "floating white sink vanity with backlit mirror",
+   "how": "Turn right inside the small tiled area."
+  },
+  {
+   "from": "floating white sink vanity with backlit mirror",
+   "to": "white Counter with mini-fridge",
+   "how": "Step back out through the doorway onto the white floor tiles and turn left."
+  },
+  {
+   "from": "white Counter with mini-fridge",
+   "to": "dark wood dining table with beige chairs",
+   "how": "With the white Counter with mini-fridge and four-panel blue abstract wall art on your left, walk straight ahead."
+  },
+  {
+   "from": "open wooden door",
+   "to": "freestanding white tub",
+   "how": "Pass the open wooden door and step through the doorway on the right."
+  },
+  {
+   "from": "freestanding white tub",
+   "to": "glass-enclosed marble shower stall",
+   "how": "Walk forward past the freestanding white tub on your right and the double sink vanity with black frame on your left, then turn left before the frosted glass wooden door."
+  },
+  {
+   "from": "glass-enclosed marble shower stall",
+   "to": "open wooden door",
+   "how": "Step out of the glass-enclosed marble shower stall, turn right to walk past the double sink vanity with black frame on your right and freestanding white tub on your left, and exit through the doorway."
+  },
+  {
+   "from": "wooden console table with three fish sculptures",
+   "to": "TV on dark wood media console",
+   "how": "Walk forward past the white Counter with mini-fridge on your right and the yellow tufted ottoman on your left."
+  }
+ ],
+ "walk_summary": [
+  "Start at the round white ottoman facing the vanity desk with mirror and open closet with white robe, then turn left to the wooden dresser with two blue paintings.",
+  "Turn right and walk past the round white ottoman and fire extinguisher cabinet toward the large bed with wood-paneled headboard and wall-mounted TV on wood panel.",
+  "Turn right past the wall-mounted TV on wood panel and go through the open wooden door past the large city night painting to the dark wood dining table with beige chairs.",
+  "Return through the open wooden door into the area with the large bed with wood-paneled headboard, walking between the yellow upholstered bench and the tan swivel desk chair to the brown chaise lounge.",
+  "Circle around the brown chaise lounge and tan swivel desk chair, then walk back past the yellow upholstered bench and turn left to exit through the open wooden door.",
+  "Walk past the large city night painting and around the dark wood dining table with beige chairs to the wooden console table with three fish sculptures and four-panel blue abstract wall art.",
+  "Step toward the sheer white window curtains, then turn right and walk past the wooden console table with three fish sculptures to the white Counter with mini-fridge.",
+  "Turn left to look across the TV on dark wood media console and yellow tufted ottoman, then walk onto the white floor tiles toward the entry wooden door with closer and console table with round shell mirror.",
+  "Turn right at the console table with round shell mirror to enter the doorway to the white toilet by grey stone-tiled wall and floating white sink vanity with backlit mirror.",
+  "Exit the doorway onto the white tiles, turn left past the white Counter with mini-fridge and four-panel blue abstract wall art, and walk past the dark wood dining table with beige chairs toward the large city night painting.",
+  "Turn left at the open wooden door and enter the doorway to the freestanding white tub, double sink vanity with black frame, and frosted glass wooden door, stepping into the glass-enclosed marble shower stall on the left.",
+  "Step out of the glass-enclosed marble shower stall, walk past the double sink vanity with black frame and freestanding white tub to exit the doorway, then turn right at the open wooden door.",
+  "Walk past the dark wood dining table with beige chairs, four-panel blue abstract wall art, wooden console table with three fish sculptures, and white Counter with mini-fridge to the TV on dark wood media console and yellow tufted ottoman, then look toward the sheer white window curtains and back toward the entry wooden door with closer."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/QaLdnwvtxbs/frames",
+  "n_keyframes": 55,
+  "camera": "held at chest height by a person walking"
+ }
+}

@@ -1,0 +1,273 @@
+{
+ "landmarks": [
+  {
+   "name": "wooden ladder",
+   "description": "A-frame wooden stepladder leaning near the white cinderblock wall on the grey concrete floor.",
+   "seen_at": [
+    0,
+    1,
+    28,
+    32
+   ]
+  },
+  {
+   "name": "artificial tree",
+   "description": "Dark green artificial pine tree standing in a corner against a white cinderblock wall.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    32
+   ]
+  },
+  {
+   "name": "blue plastic bins",
+   "description": "Blue and clear plastic storage totes stacked along a white cinderblock wall near the open doorway.",
+   "seen_at": [
+    2,
+    3,
+    28,
+    30
+   ]
+  },
+  {
+   "name": "storage doorway",
+   "description": "Open doorway connecting the white cinderblock concrete-floored area to the wood-paneled tiled area.",
+   "seen_at": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    27,
+    30,
+    32
+   ]
+  },
+  {
+   "name": "tall wooden bookcase",
+   "description": "Dark brown open-shelf wooden bookcase standing against the wood-paneled wall next to the storage doorway.",
+   "seen_at": [
+    6,
+    7,
+    27
+   ]
+  },
+  {
+   "name": "wooden bar",
+   "description": "Built-in wood-paneled counter with open shelving above it in a tiled alcove.",
+   "seen_at": [
+    5,
+    24,
+    25
+   ]
+  },
+  {
+   "name": "wooden door",
+   "description": "Closed flush wooden door set into the wood-paneled wall near short white window valances.",
+   "seen_at": [
+    24,
+    25,
+    26
+   ]
+  },
+  {
+   "name": "white double doors",
+   "description": "Flush white double doors set into the wood-paneled wall beside the blue-painted floor.",
+   "seen_at": [
+    8,
+    9,
+    11,
+    23
+   ]
+  },
+  {
+   "name": "louvered bi-fold doors",
+   "description": "Light-colored louvered bi-fold doors opening between the blue-painted floor and the concrete-floored appliance area.",
+   "seen_at": [
+    9,
+    10,
+    12,
+    16,
+    17,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "wooden stairs",
+   "description": "Unpainted wooden staircase with black non-slip treads and a low wooden side rail leading upward.",
+   "seen_at": [
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "name": "utility sink",
+   "description": "White freestanding utility tub on legs against a white cinderblock wall.",
+   "seen_at": [
+    17,
+    18,
+    21
+   ]
+  },
+  {
+   "name": "blue ironing board",
+   "description": "Light blue ironing board standing folded upright against a white wall under wire shelves.",
+   "seen_at": [
+    17,
+    18,
+    21,
+    22
+   ]
+  },
+  {
+   "name": "water heater",
+   "description": "Tall grey cylindrical tank with a yellow energy label.",
+   "seen_at": [
+    18,
+    19
+   ]
+  },
+  {
+   "name": "washer and dryer",
+   "description": "Pair of white laundry machines with a wicker basket on top.",
+   "seen_at": [
+    18,
+    19,
+    20,
+    21
+   ]
+  },
+  {
+   "name": "white upright appliance",
+   "description": "Tall white rectangular freezer or refrigerator against the white wall behind the water heater and laundry machines.",
+   "seen_at": [
+    18,
+    19
+   ]
+  },
+  {
+   "name": "metal storage shelves",
+   "description": "Long grey metal shelving units filled with boxes and bins along the white cinderblock wall.",
+   "seen_at": [
+    28,
+    29,
+    31,
+    32
+   ]
+  },
+  {
+   "name": "white shelving unit",
+   "description": "White plastic and metal storage shelves holding bags and boxes along the white cinderblock wall.",
+   "seen_at": [
+    28,
+    29,
+    30,
+    32
+   ]
+  },
+  {
+   "name": "small high windows",
+   "description": "Small rectangular hopper windows set high in the white cinderblock walls.",
+   "seen_at": [
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "shop vacuum",
+   "description": "Grey and orange cylindrical wet/dry vacuum with a black hose sitting on the grey concrete floor near a small table.",
+   "seen_at": [
+    30,
+    32
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "wooden ladder",
+   "to": "storage doorway",
+   "how": "Walk forward across the grey concrete floor with the wooden ladder on your right and the artificial tree ahead on your right, then turn left past the blue plastic bins on your left to pass through the storage doorway."
+  },
+  {
+   "from": "storage doorway",
+   "to": "wooden ladder",
+   "how": "Pass through the storage doorway onto the grey concrete floor and turn right with the blue plastic bins on your right to reach the wooden ladder on your left."
+  },
+  {
+   "from": "storage doorway",
+   "to": "tall wooden bookcase",
+   "how": "Step through the storage doorway onto the tiled floor; the tall wooden bookcase is immediately to your left against the wood-paneled wall."
+  },
+  {
+   "from": "storage doorway",
+   "to": "white double doors",
+   "how": "From the storage doorway on the tiled floor, walk forward with the tall wooden bookcase behind you and the wooden bar to your left to reach the white double doors on your left at the edge of the blue-painted floor."
+  },
+  {
+   "from": "white double doors",
+   "to": "wooden stairs",
+   "how": "Walk straight across the blue-painted floor with the white double doors on your left and the louvered bi-fold doors on your right to reach the bottom of the wooden stairs."
+  },
+  {
+   "from": "wooden stairs",
+   "to": "louvered bi-fold doors",
+   "how": "Come down the wooden stairs onto the blue-painted floor and turn left to pass through the open louvered bi-fold doors."
+  },
+  {
+   "from": "louvered bi-fold doors",
+   "to": "white upright appliance",
+   "how": "Pass through the louvered bi-fold doors toward the utility sink ahead, passing the blue ironing board on your right, then turn left to walk between the water heater on your left and the washer and dryer on your right toward the white upright appliance."
+  },
+  {
+   "from": "white upright appliance",
+   "to": "louvered bi-fold doors",
+   "how": "Turn around from the white upright appliance, walk between the washer and dryer on your left and the water heater on your right, then turn right past the utility sink on your left and the blue ironing board on your right to exit through the louvered bi-fold doors."
+  },
+  {
+   "from": "louvered bi-fold doors",
+   "to": "wooden door",
+   "how": "Exit through the louvered bi-fold doors onto the blue-painted floor with the white double doors ahead on your right, then turn left onto the tiled floor and walk past the wooden bar on your left to the closed wooden door."
+  },
+  {
+   "from": "wooden door",
+   "to": "storage doorway",
+   "how": "With the closed wooden door on your left, turn left across the tiled floor to face the storage doorway, with the tall wooden bookcase just to its right."
+  },
+  {
+   "from": "wooden ladder",
+   "to": "small high windows",
+   "how": "Walk straight down the grey concrete floor with the wooden ladder and metal storage shelves on your left and the blue plastic bins and white shelving unit on your right toward the small high windows in the far white cinderblock wall."
+  },
+  {
+   "from": "small high windows",
+   "to": "shop vacuum",
+   "how": "From the far white cinderblock wall under the small high windows, turn around and look down the grey concrete floor between the white shelving unit on your left and the metal storage shelves on your right toward the shop vacuum and artificial tree at the far end."
+  }
+ ],
+ "walk_summary": [
+  "Start on the grey concrete floor passing the wooden ladder and artificial tree on the right, and turn left past the blue plastic bins on the left to go through the storage doorway onto the tiled floor.",
+  "Turn around in place on the tiled floor, passing the wooden bar, the tall wooden bookcase, and the storage doorway to face the white double doors.",
+  "Walk forward across the blue-painted floor with the white double doors on the left and the louvered bi-fold doors on the right to reach the wooden stairs.",
+  "Walk halfway up the wooden stairs, turn around, and walk back down to the blue-painted floor.",
+  "Turn left through the open louvered bi-fold doors past the utility sink ahead and the blue ironing board on the right, then turn left between the water heater on the left and the washer and dryer on the right toward the white upright appliance.",
+  "Turn around, walk past the washer and dryer and utility sink on the left and the blue ironing board on the right, and exit through the louvered bi-fold doors onto the blue-painted floor.",
+  "Turn left onto the tiled floor, walk past the wooden bar on the left and the closed wooden door on the right, and turn left toward the storage doorway and tall wooden bookcase.",
+  "Walk through the storage doorway back onto the grey concrete floor, turning right past the blue plastic bins and white shelving unit on the right and the wooden ladder and metal storage shelves on the left toward the small high windows at the far white cinderblock wall.",
+  "Turn around at the far white cinderblock wall to face back down the grey concrete floor between the white shelving unit on the left and the metal storage shelves on the right, looking toward the wooden ladder, artificial tree, shop vacuum, and storage doorway."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/wcojb4TFT35/frames",
+  "n_keyframes": 33,
+  "camera": "held at chest height by a person walking"
+ }
+}

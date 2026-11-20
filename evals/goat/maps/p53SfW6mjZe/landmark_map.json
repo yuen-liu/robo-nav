@@ -1,0 +1,289 @@
+{
+ "landmarks": [
+  {
+   "name": "blue sofa",
+   "description": "light blue upholstered sofa with patterned pillows at the foot of the bed",
+   "seen_at": [
+    0,
+    1,
+    5,
+    6,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "row of windows with dark curtains",
+   "description": "three side-by-side windows flanked by dark floor-length curtains",
+   "seen_at": [
+    0,
+    1,
+    5,
+    25,
+    30
+   ]
+  },
+  {
+   "name": "large bed with white bedding",
+   "description": "wide bed with a beige headboard and white covers",
+   "seen_at": [
+    1,
+    2,
+    3,
+    4,
+    27,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "flower painting",
+   "description": "square painting of a large white flower on a dark background above the headboard",
+   "seen_at": [
+    2,
+    3,
+    4,
+    31
+   ]
+  },
+  {
+   "name": "right turquoise nightstand",
+   "description": "small distressed turquoise cabinet with a lamp on the right side of the bed",
+   "seen_at": [
+    2,
+    3,
+    4,
+    31
+   ]
+  },
+  {
+   "name": "left turquoise nightstand",
+   "description": "matching distressed turquoise cabinet with a lamp on the left side of the bed",
+   "seen_at": [
+    6,
+    7,
+    25,
+    27,
+    28,
+    31
+   ]
+  },
+  {
+   "name": "photo grid wall",
+   "description": "wall with a 3x4 grid of black-and-white framed pictures",
+   "seen_at": [
+    6,
+    30
+   ]
+  },
+  {
+   "name": "shelving area doorway",
+   "description": "doorway leading to a narrow space with white built-in shelves",
+   "seen_at": [
+    6,
+    7,
+    25,
+    27,
+    28,
+    31
+   ]
+  },
+  {
+   "name": "landing doorway",
+   "description": "doorway with a white paneled door leading to the stair landing",
+   "seen_at": [
+    7,
+    10,
+    14,
+    15,
+    20,
+    24,
+    31
+   ]
+  },
+  {
+   "name": "long white vanity",
+   "description": "long white cabinet with a gray countertop and large mirror on a tiled floor",
+   "seen_at": [
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "name": "glass shower enclosure",
+   "description": "walk-in shower with gray tiles and glass doors at the end of the tiled space",
+   "seen_at": [
+    8,
+    9
+   ]
+  },
+  {
+   "name": "wooden stair railing",
+   "description": "balustrade with white spindles and a wooden handrail along the stairs",
+   "seen_at": [
+    11,
+    12,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21
+   ]
+  },
+  {
+   "name": "triple window with exercise gear",
+   "description": "three-section window with a black workout bench, half-ball, and dumbbell rack in front of it",
+   "seen_at": [
+    11,
+    12,
+    13,
+    17,
+    18
+   ]
+  },
+  {
+   "name": "blue exercise ball",
+   "description": "large inflatable blue stability ball on the carpet",
+   "seen_at": [
+    11,
+    12,
+    13,
+    14,
+    24
+   ]
+  },
+  {
+   "name": "leaning yellow board",
+   "description": "tall yellow-brown rectangular board leaning against the wall left of the triple window",
+   "seen_at": [
+    16,
+    17,
+    19
+   ]
+  },
+  {
+   "name": "wainscoted stairwell wall",
+   "description": "white paneled lower wall along the staircase landing",
+   "seen_at": [
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "wall sconces",
+   "description": "warm-lit rectangular wall lights mounted along the stairway",
+   "seen_at": [
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "built-in white shelving and drawers",
+   "description": "tall white storage units with open shelves above and drawers below on both sides",
+   "seen_at": [
+    26,
+    27,
+    29
+   ]
+  },
+  {
+   "name": "hanging clothes",
+   "description": "rods of hanging shirts and garments beside the white shelving",
+   "seen_at": [
+    26,
+    27,
+    29
+   ]
+  },
+  {
+   "name": "gray armchair",
+   "description": "upholstered gray armchair with a white pillow in the corner between the dark curtains and the photo grid wall",
+   "seen_at": [
+    30
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "blue sofa",
+   "to": "right turquoise nightstand",
+   "how": "With the blue sofa on your left and the row of windows with dark curtains on your right, walk forward and turn left past the large bed with white bedding to reach the right turquoise nightstand."
+  },
+  {
+   "from": "right turquoise nightstand",
+   "to": "left turquoise nightstand",
+   "how": "Turn around and walk past the large bed with white bedding and the blue sofa on your right, with the row of windows with dark curtains and the photo grid wall on your left, to reach the left turquoise nightstand."
+  },
+  {
+   "from": "left turquoise nightstand",
+   "to": "landing doorway",
+   "how": "With the left turquoise nightstand on your right and the photo grid wall and shelving area doorway on your left, walk straight ahead to the landing doorway."
+  },
+  {
+   "from": "landing doorway",
+   "to": "long white vanity",
+   "how": "From the landing doorway, step into the tiled space where the long white vanity is on your right and the glass shower enclosure is ahead."
+  },
+  {
+   "from": "long white vanity",
+   "to": "landing doorway",
+   "how": "Turn around with the long white vanity on your left and walk forward to the landing doorway."
+  },
+  {
+   "from": "landing doorway",
+   "to": "triple window with exercise gear",
+   "how": "Pass through the landing doorway and walk forward with the wooden stair railing on your left and the blue exercise ball on your right toward the triple window with exercise gear."
+  },
+  {
+   "from": "triple window with exercise gear",
+   "to": "wainscoted stairwell wall",
+   "how": "Turn away from the triple window with exercise gear and the leaning yellow board, walk past the wooden stair railing on your right, and go halfway down the stairs to the wainscoted stairwell wall under the wall sconces."
+  },
+  {
+   "from": "wainscoted stairwell wall",
+   "to": "landing doorway",
+   "how": "Turn around at the wainscoted stairwell wall and walk up the stairs with the blue exercise ball on your left at the top, turning right to the landing doorway."
+  },
+  {
+   "from": "landing doorway",
+   "to": "shelving area doorway",
+   "how": "Step through the landing doorway toward the left turquoise nightstand on your left and turn immediately right to the shelving area doorway."
+  },
+  {
+   "from": "shelving area doorway",
+   "to": "built-in white shelving and drawers",
+   "how": "Step through the shelving area doorway into the narrow aisle with built-in white shelving and drawers and hanging clothes on both sides."
+  },
+  {
+   "from": "built-in white shelving and drawers",
+   "to": "shelving area doorway",
+   "how": "Turn around between the built-in white shelving and drawers and walk forward with hanging clothes on your right back to the shelving area doorway."
+  },
+  {
+   "from": "shelving area doorway",
+   "to": "row of windows with dark curtains",
+   "how": "Step out through the shelving area doorway and turn left, with the large bed with white bedding and blue sofa on your left and the photo grid wall and gray armchair on your right, facing the row of windows with dark curtains."
+  }
+ ],
+ "walk_summary": [
+  "Start between the blue sofa on the left and the row of windows with dark curtains on the right, walking forward and turning left past the large bed with white bedding and flower painting to the right turquoise nightstand.",
+  "Turn around and walk past the row of windows with dark curtains and blue sofa, continuing between the photo grid wall on the left and the left turquoise nightstand on the right past the shelving area doorway to the landing doorway.",
+  "Enter the tiled area with the long white vanity on the right and glass shower enclosure ahead, then turn around and exit through the landing doorway.",
+  "Walk forward past the wooden stair railing on the left and the blue exercise ball on the right toward the triple window with exercise gear and leaning yellow board.",
+  "Turn around in the area near the blue exercise ball and triple window with exercise gear, then walk past the wooden stair railing and go halfway down the stairs to the wainscoted stairwell wall and wall sconces.",
+  "Turn around on the stairs, walk back up past the blue exercise ball on the left, and go through the landing doorway.",
+  "Turn right through the shelving area doorway into the narrow space with built-in white shelving and drawers and hanging clothes on both sides.",
+  "Turn around to walk back to the shelving area doorway, briefly pivot to look back at the built-in white shelving and drawers, then step out and turn left to face the row of windows with dark curtains and gray armchair.",
+  "Turn left in place to face the large bed with white bedding, flower painting, and left turquoise nightstand, with the shelving area doorway and landing doorway on the left."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/p53SfW6mjZe/frames",
+  "n_keyframes": 32,
+  "camera": "held at chest height by a person walking"
+ }
+}

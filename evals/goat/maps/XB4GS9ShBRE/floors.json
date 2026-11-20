@@ -1,0 +1,131 @@
+{
+ "levels": [
+  0.0,
+  2.72
+ ],
+ "landmarks": {
+  "dark-headboard-bed": [
+   2
+  ],
+  "fluffy-white-rug": [
+   2
+  ],
+  "tall-dark-dresser": [
+   2
+  ],
+  "black-nightstand": [
+   2
+  ],
+  "sheer-curtain-window": [
+   2
+  ],
+  "grey-dresser-with-plant": [
+   2
+  ],
+  "six-panel-door-to-railing": [
+   2
+  ],
+  "upper-stair-railing": [
+   2
+  ],
+  "teal-pillow-bed": [
+   2
+  ],
+  "dark-bedding-bed": [
+   2
+  ],
+  "framed-easel-print": [
+   2
+  ],
+  "carpeted-winding-stairs": [
+   1
+  ],
+  "stair-bottom-door": [
+   1
+  ],
+  "wooden-dining-table": [
+   1
+  ],
+  "dark-wood-corner-cabinet": [
+   1
+  ],
+  "stainless-stove": [
+   1
+  ],
+  "red-pillow-sofa": [
+   1
+  ],
+  "grey-ottoman": [
+   1
+  ],
+  "wide-double-window": [
+   1
+  ],
+  "accent-chair-red-pillow": [
+   1
+  ],
+  "round-wall-decor": [
+   1
+  ],
+  "tiger-print": [
+   1
+  ],
+  "metal-butterfly-art": [
+   1
+  ],
+  "two-wood-steps": [
+   1
+  ],
+  "double-glass-entry-door": [
+   1
+  ],
+  "vanity-with-mirror": [
+   1
+  ],
+  "white-toilet": [
+   1
+  ],
+  "sloped-stair-ceiling": [
+   1
+  ],
+  "white-tiled-tub": [
+   2
+  ],
+  "dark-tall-chest": [
+   2
+  ],
+  "ceiling-fan-light": [
+   2
+  ],
+  "flower-wall-art": [
+   2
+  ],
+  "wooden-nightstand-lamp": [
+   2
+  ],
+  "sheer-curtain-window-2": [
+   2
+  ],
+  "wall-mounted-tv-shelf": [
+   2
+  ],
+  "small-wooden-buffet": [
+   1
+  ],
+  "tv-on-wooden-console": [
+   1
+  ],
+  "wooden-kitchen-cabinets": [
+   1
+  ],
+  "drop-leaf-table": [
+   1
+  ],
+  "sliding-glass-patio-door": [
+   1
+  ],
+  "floral-canvas-prints": [
+   1
+  ]
+ }
+}

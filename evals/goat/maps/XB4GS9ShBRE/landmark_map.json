@@ -1,0 +1,535 @@
+{
+ "landmarks": [
+  {
+   "name": "dark-headboard-bed",
+   "description": "Large bed with dark wooden headboard and light patterned quilt",
+   "seen_at": [
+    0,
+    1,
+    26,
+    27,
+    38
+   ]
+  },
+  {
+   "name": "fluffy-white-rug",
+   "description": "Large white shaggy rug on hardwood floor next to the dark-headboard bed",
+   "seen_at": [
+    0,
+    1,
+    27
+   ]
+  },
+  {
+   "name": "tall-dark-dresser",
+   "description": "Tall dark brown wooden dresser or armoire near the doorway",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "black-nightstand",
+   "description": "Dark nightstand with a small lamp next to the dark-headboard bed",
+   "seen_at": [
+    1
+   ]
+  },
+  {
+   "name": "sheer-curtain-window",
+   "description": "Window with white sheer curtains next to the black nightstand",
+   "seen_at": [
+    1
+   ]
+  },
+  {
+   "name": "grey-dresser-with-plant",
+   "description": "Greyish-blue wooden chest of drawers with a potted plant on top",
+   "seen_at": [
+    2
+   ]
+  },
+  {
+   "name": "six-panel-door-to-railing",
+   "description": "White six-panel door separating the hardwood floor area from the upper stair railing",
+   "seen_at": [
+    3,
+    26,
+    27
+   ]
+  },
+  {
+   "name": "upper-stair-railing",
+   "description": "Wooden banister with spindles along the upper carpeted passage",
+   "seen_at": [
+    3,
+    4,
+    5,
+    24,
+    25,
+    26,
+    38,
+    39
+   ]
+  },
+  {
+   "name": "teal-pillow-bed",
+   "description": "Bed with wooden headboard and bright teal pillows, straight ahead from the top of the stairs, in an area with a tied-back sheer window curtain",
+   "seen_at": [
+    4,
+    24,
+    25,
+    30,
+    31,
+    33
+   ]
+  },
+  {
+   "name": "dark-bedding-bed",
+   "description": "Bed with dark grey comforter, tufted grey headboard, and a window beside it",
+   "seen_at": [
+    4,
+    28,
+    29,
+    34,
+    35,
+    36,
+    37
+   ]
+  },
+  {
+   "name": "framed-easel-print",
+   "description": "Dark-framed picture showing an easel on the wall above the stair landing",
+   "seen_at": [
+    5,
+    39
+   ]
+  },
+  {
+   "name": "carpeted-winding-stairs",
+   "description": "Beige carpeted stairs that wind with a triangular landing",
+   "seen_at": [
+    5,
+    6,
+    13,
+    21,
+    22,
+    23,
+    24,
+    39,
+    40,
+    43,
+    44,
+    48
+   ]
+  },
+  {
+   "name": "stair-bottom-door",
+   "description": "White six-panel door at the bottom of the carpeted stairs",
+   "seen_at": [
+    6,
+    13,
+    21,
+    43,
+    44
+   ]
+  },
+  {
+   "name": "wooden-dining-table",
+   "description": "Rectangular medium-wood table with carved wooden chairs on hardwood floor",
+   "seen_at": [
+    6,
+    8,
+    9,
+    12,
+    18,
+    21,
+    41,
+    43,
+    44,
+    48
+   ]
+  },
+  {
+   "name": "dark-wood-corner-cabinet",
+   "description": "Dark stained wooden cabinet with open upper shelves at the corner of the tiled area",
+   "seen_at": [
+    7
+   ]
+  },
+  {
+   "name": "stainless-stove",
+   "description": "Stainless steel range and hood next to wooden cabinets",
+   "seen_at": [
+    8,
+    49
+   ]
+  },
+  {
+   "name": "red-pillow-sofa",
+   "description": "Light beige sofa with three bright red throw pillows",
+   "seen_at": [
+    9,
+    11,
+    41,
+    42,
+    47
+   ]
+  },
+  {
+   "name": "grey-ottoman",
+   "description": "Square grey upholstered ottoman in front of the beige sofa",
+   "seen_at": [
+    9,
+    10,
+    11,
+    41,
+    42,
+    46,
+    47
+   ]
+  },
+  {
+   "name": "wide-double-window",
+   "description": "Large two-pane window on the wall perpendicular to the beige sofa",
+   "seen_at": [
+    10,
+    45,
+    46
+   ]
+  },
+  {
+   "name": "accent-chair-red-pillow",
+   "description": "Light patterned armless accent chair with a red pillow",
+   "seen_at": [
+    11,
+    41,
+    43,
+    44
+   ]
+  },
+  {
+   "name": "round-wall-decor",
+   "description": "Dark circular wall art hanging between the sofa area and wooden table",
+   "seen_at": [
+    11,
+    41,
+    42
+   ]
+  },
+  {
+   "name": "tiger-print",
+   "description": "Framed picture of a tiger face on the wall near the wooden table",
+   "seen_at": [
+    12,
+    14,
+    41
+   ]
+  },
+  {
+   "name": "metal-butterfly-art",
+   "description": "Dark metal wall sculpture of a butterfly and leaves above two wooden steps",
+   "seen_at": [
+    14,
+    15,
+    18
+   ]
+  },
+  {
+   "name": "two-wood-steps",
+   "description": "Two hardwood steps leading down to a dark-tiled entry area",
+   "seen_at": [
+    15,
+    17,
+    18
+   ]
+  },
+  {
+   "name": "double-glass-entry-door",
+   "description": "White exterior door with two vertical glass panels and a sidelight",
+   "seen_at": [
+    15,
+    16
+   ]
+  },
+  {
+   "name": "vanity-with-mirror",
+   "description": "White cabinet vanity with beige top and dark-framed mirror inside a small area with blue walls",
+   "seen_at": [
+    16
+   ]
+  },
+  {
+   "name": "white-toilet",
+   "description": "White toilet opposite the vanity in the blue-walled area",
+   "seen_at": [
+    17
+   ]
+  },
+  {
+   "name": "sloped-stair-ceiling",
+   "description": "Low angled white ceiling over a narrow enclosed staircase",
+   "seen_at": [
+    19,
+    20
+   ]
+  },
+  {
+   "name": "white-tiled-tub",
+   "description": "White bathtub with white square wall tiles",
+   "seen_at": [
+    26,
+    27
+   ]
+  },
+  {
+   "name": "dark-tall-chest",
+   "description": "Dark brown five-drawer chest next to the tufted-headboard bed",
+   "seen_at": [
+    28,
+    29,
+    37
+   ]
+  },
+  {
+   "name": "ceiling-fan-light",
+   "description": "Three-blade wooden ceiling fan with central light fixture",
+   "seen_at": [
+    28,
+    29,
+    34,
+    35
+   ]
+  },
+  {
+   "name": "flower-wall-art",
+   "description": "Large metal wireframe flower decoration on the grey wall above the teal-pillow bed",
+   "seen_at": [
+    30,
+    31
+   ]
+  },
+  {
+   "name": "wooden-nightstand-lamp",
+   "description": "Small brown two-drawer wooden nightstand with a white-shaded lamp next to the teal-pillow bed",
+   "seen_at": [
+    31,
+    32
+   ]
+  },
+  {
+   "name": "sheer-curtain-window-2",
+   "description": "White-trimmed window with a tied-back sheer white curtain next to the teal-pillow bed",
+   "seen_at": [
+    4,
+    31,
+    32
+   ]
+  },
+  {
+   "name": "wall-mounted-tv-shelf",
+   "description": "Dark flat-screen TV mounted on the wall above a white floating shelf with a vertical cord cover",
+   "seen_at": [
+    34,
+    37
+   ]
+  },
+  {
+   "name": "small-wooden-buffet",
+   "description": "Small medium-brown wooden cabinet with two drawers and two doors beneath the round wall decor",
+   "seen_at": [
+    41,
+    42
+   ]
+  },
+  {
+   "name": "tv-on-wooden-console",
+   "description": "Black flat-screen TV sitting on a long rustic wooden media console with glass-front doors",
+   "seen_at": [
+    44,
+    45
+   ]
+  },
+  {
+   "name": "wooden-kitchen-cabinets",
+   "description": "Medium-brown stained wooden upper and lower cabinets with white countertop and backsplash",
+   "seen_at": [
+    49,
+    50
+   ]
+  },
+  {
+   "name": "drop-leaf-table",
+   "description": "Small dark wood round drop-leaf table with carved wooden chairs under a small framed mirror",
+   "seen_at": [
+    50
+   ]
+  },
+  {
+   "name": "sliding-glass-patio-door",
+   "description": "Sliding glass door with a vertical white sheer curtain leading out to a wooden deck with a blue patterned rug",
+   "seen_at": [
+    50,
+    51
+   ]
+  },
+  {
+   "name": "floral-canvas-prints",
+   "description": "Two colorful unframed canvas paintings of flowers on the light blue wall near the sliding glass door",
+   "seen_at": [
+    50,
+    51
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "dark-headboard-bed",
+   "to": "grey-dresser-with-plant",
+   "how": "walk across the fluffy-white-rug toward the sheer-curtain-window and black-nightstand, passing the tall-dark-dresser on your right, then turn right"
+  },
+  {
+   "from": "grey-dresser-with-plant",
+   "to": "upper-stair-railing",
+   "how": "turn left and walk out through the six-panel-door-to-railing"
+  },
+  {
+   "from": "upper-stair-railing",
+   "to": "six-panel-door-to-railing",
+   "how": "at the top of the carpeted-winding-stairs with the upper-stair-railing on your left, turn right toward the doorway with the white-tiled-tub on your right"
+  },
+  {
+   "from": "upper-stair-railing",
+   "to": "carpeted-winding-stairs",
+   "how": "with the upper-stair-railing on your right, walk forward toward the framed-easel-print and go down the steps"
+  },
+  {
+   "from": "carpeted-winding-stairs",
+   "to": "upper-stair-railing",
+   "how": "climb the carpeted-winding-stairs past the framed-easel-print to the upper carpeted passage"
+  },
+  {
+   "from": "carpeted-winding-stairs",
+   "to": "wooden-dining-table",
+   "how": "at the bottom of the carpeted-winding-stairs, curve left through the doorway with the stair-bottom-door onto the hardwood floor"
+  },
+  {
+   "from": "wooden-dining-table",
+   "to": "carpeted-winding-stairs",
+   "how": "pass the wooden-dining-table and tiger-print on your left to face the stair-bottom-door and carpeted-winding-stairs"
+  },
+  {
+   "from": "wooden-dining-table",
+   "to": "stainless-stove",
+   "how": "with the wooden-dining-table on your left, walk forward past the dark-wood-corner-cabinet on your right into the tiled area"
+  },
+  {
+   "from": "stainless-stove",
+   "to": "wooden-dining-table",
+   "how": "step out of the tiled area back onto the hardwood floor"
+  },
+  {
+   "from": "wooden-dining-table",
+   "to": "wide-double-window",
+   "how": "with the wooden-dining-table on your right, walk forward across the hardwood floor toward the grey-ottoman and wide-double-window"
+  },
+  {
+   "from": "wide-double-window",
+   "to": "red-pillow-sofa",
+   "how": "with the wide-double-window on your left, turn right to face the grey-ottoman, red-pillow-sofa, and accent-chair-red-pillow"
+  },
+  {
+   "from": "red-pillow-sofa",
+   "to": "wooden-dining-table",
+   "how": "turn right past the accent-chair-red-pillow and round-wall-decor toward the wooden-dining-table"
+  },
+  {
+   "from": "carpeted-winding-stairs",
+   "to": "double-glass-entry-door",
+   "how": "at the bottom of the carpeted-winding-stairs, turn left past the tiger-print on your left, walk down the two-wood-steps beneath the metal-butterfly-art, and pass the vanity-with-mirror on your right"
+  },
+  {
+   "from": "double-glass-entry-door",
+   "to": "wooden-dining-table",
+   "how": "turn around at the double-glass-entry-door, pass the white-toilet and metal-butterfly-art on your left, and walk up the two-wood-steps"
+  },
+  {
+   "from": "wooden-dining-table",
+   "to": "sloped-stair-ceiling",
+   "how": "near the bottom of the carpeted-winding-stairs, go down the narrow enclosed stairs under the sloped-stair-ceiling"
+  },
+  {
+   "from": "sloped-stair-ceiling",
+   "to": "carpeted-winding-stairs",
+   "how": "turn around on the narrow enclosed stairs, climb back to the hardwood floor level beside the wooden-dining-table, and turn right past the stair-bottom-door"
+  },
+  {
+   "from": "six-panel-door-to-railing",
+   "to": "dark-bedding-bed",
+   "how": "turn left from the six-panel-door-to-railing and walk forward along the upper passage into the doorway under the ceiling-fan-light with the dark-tall-chest on your right"
+  },
+  {
+   "from": "dark-bedding-bed",
+   "to": "teal-pillow-bed",
+   "how": "turn left at the doorway of the dark-bedding-bed area and step through the adjacent doorway into the area with the teal-pillow-bed and flower-wall-art on your left"
+  },
+  {
+   "from": "teal-pillow-bed",
+   "to": "sheer-curtain-window-2",
+   "how": "walk forward past the teal-pillow-bed and flower-wall-art on your left toward the wooden-nightstand-lamp and sheer-curtain-window-2"
+  },
+  {
+   "from": "sheer-curtain-window-2",
+   "to": "dark-bedding-bed",
+   "how": "turn around from the wooden-nightstand-lamp, walk out past the teal-pillow-bed on your right, cross the upper passage into the doorway under the ceiling-fan-light, and pass the wall-mounted-tv-shelf on your left"
+  },
+  {
+   "from": "dark-bedding-bed",
+   "to": "upper-stair-railing",
+   "how": "turn around at the far corner, walk past the dark-tall-chest and dark-bedding-bed on your left and the wall-mounted-tv-shelf on your right, and exit the doorway to the upper-stair-railing"
+  },
+  {
+   "from": "wooden-dining-table",
+   "to": "small-wooden-buffet",
+   "how": "from the bottom of the carpeted-winding-stairs, walk forward between the wooden-dining-table on your right and the accent-chair-red-pillow on your left toward the round-wall-decor and small-wooden-buffet"
+  },
+  {
+   "from": "small-wooden-buffet",
+   "to": "wide-double-window",
+   "how": "turn around to face the carpeted-winding-stairs, then turn right and walk past the accent-chair-red-pillow and tv-on-wooden-console on your left and the grey-ottoman on your right"
+  },
+  {
+   "from": "red-pillow-sofa",
+   "to": "sliding-glass-patio-door",
+   "how": "turn around from facing the red-pillow-sofa, walk across the hardwood floor with the wooden-dining-table and carpeted-winding-stairs on your left, and continue through the doorway past the stainless-stove, wooden-kitchen-cabinets, and drop-leaf-table on your left and the floral-canvas-prints on your right"
+  }
+ ],
+ "walk_summary": [
+  "Start by the dark-headboard-bed and walk across the fluffy-white-rug past the tall-dark-dresser toward the black-nightstand and sheer-curtain-window, turning right to face the grey-dresser-with-plant.",
+  "Turn left and exit through the six-panel-door-to-railing onto the carpeted passage beside the upper-stair-railing, passing the doorway to the teal-pillow-bed on the left.",
+  "Turn right by the upper-stair-railing and walk down the carpeted-winding-stairs past the framed-easel-print and stair-bottom-door onto the hardwood floor facing the wooden-dining-table.",
+  "Walk forward with the wooden-dining-table on the left and pass the dark-wood-corner-cabinet into the tiled area by the stainless-stove.",
+  "Step back onto the hardwood floor past the wooden-dining-table, walk toward the wide-double-window, and turn right to face the grey-ottoman, red-pillow-sofa, accent-chair-red-pillow, and round-wall-decor.",
+  "Turn right and walk past the wooden-dining-table and tiger-print on the left to face the stair-bottom-door and carpeted-winding-stairs.",
+  "Turn left past the tiger-print and walk down the two-wood-steps beneath the metal-butterfly-art, passing the vanity-with-mirror on the right to reach the double-glass-entry-door.",
+  "Turn around at the double-glass-entry-door, pass the white-toilet and metal-butterfly-art on the left, and climb the two-wood-steps back toward the wooden-dining-table.",
+  "Go down the narrow enclosed staircase under the sloped-stair-ceiling, then turn around and return to the main level.",
+  "Pass the wooden-dining-table on the right and stair-bottom-door on the left, and climb the carpeted-winding-stairs alongside the upper-stair-railing toward the teal-pillow-bed.",
+  "At the top of the carpeted-winding-stairs, turn right to face the six-panel-door-to-railing and dark-headboard-bed with the white-tiled-tub on the right.",
+  "Turn left and walk into the area under the ceiling-fan-light with the dark-bedding-bed ahead and dark-tall-chest on the right.",
+  "Turn left and walk into the adjacent area past the teal-pillow-bed and flower-wall-art on the left to the wooden-nightstand-lamp and sheer-curtain-window-2.",
+  "Turn around, walk past the teal-pillow-bed on the right, and cross straight into the area with the dark-bedding-bed, passing the wall-mounted-tv-shelf on the left.",
+  "Turn around and walk out past the dark-tall-chest and dark-bedding-bed on the left and wall-mounted-tv-shelf on the right toward the upper-stair-railing and dark-headboard-bed.",
+  "Turn left along the upper-stair-railing and walk down the carpeted-winding-stairs past the framed-easel-print.",
+  "At the bottom of the stairs, walk forward between the wooden-dining-table and tiger-print on the right and the accent-chair-red-pillow, grey-ottoman, and red-pillow-sofa on the left toward the round-wall-decor and small-wooden-buffet.",
+  "Turn around to face the carpeted-winding-stairs with the wooden-dining-table on the left and accent-chair-red-pillow and tv-on-wooden-console on the right.",
+  "Turn right, walk past the tv-on-wooden-console on the left and grey-ottoman on the right to the wide-double-window, and turn right to face the red-pillow-sofa.",
+  "Turn around, walk across the hardwood floor past the wooden-dining-table on the left, and continue past the stainless-stove, wooden-kitchen-cabinets, and drop-leaf-table on the left and floral-canvas-prints on the right to the sliding-glass-patio-door."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/XB4GS9ShBRE/frames",
+  "n_keyframes": 52,
+  "camera": "held at chest height by a person walking"
+ }
+}

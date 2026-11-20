@@ -1,0 +1,672 @@
+{
+ "landmarks": [
+  {
+   "name": "red bordered rug",
+   "description": "Large red area rug with beige and brown border stripes on a brown tile floor.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    8,
+    9,
+    57,
+    58
+   ]
+  },
+  {
+   "name": "basement window",
+   "description": "Wide horizontal window with white blinds above a wooden bench.",
+   "seen_at": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "name": "wooden bench",
+   "description": "Small light-wood storage bench sitting directly under the basement window.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "name": "basement doorway",
+   "description": "Unfinished wood-trimmed doorway leading out of the tiled area with the red rug.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "name": "dark wood dresser",
+   "description": "Chest of drawers standing against the wall just right of the basement doorway.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "small dark bookcase",
+   "description": "Low three-shelf wooden bookcase against the grey-green wall.",
+   "seen_at": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "three framed pictures",
+   "description": "Row of three small black-framed prints hung on the grey-green wall above the bookcase.",
+   "seen_at": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "corner wooden shelving unit",
+   "description": "Tall light-wood open shelving unit built into the corner to the right of the basement window.",
+   "seen_at": [
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "name": "wood-paneled wall with door",
+   "description": "Enclosure of vertical knotty-wood paneling with a flush wooden door.",
+   "seen_at": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "name": "low wood-paneled wainscot",
+   "description": "Short section of vertical wood wainscoting in the alcove next to the corner shelving.",
+   "seen_at": [
+    6,
+    7
+   ]
+  },
+  {
+   "name": "white refrigerator and chest freezer",
+   "description": "White top-freezer refrigerator beside two white chest freezers along the back wall.",
+   "seen_at": [
+    9
+   ]
+  },
+  {
+   "name": "lower carpeted stairs",
+   "description": "Short flight of beige-carpeted stairs leading between the lower tiled area and the maroon door landing.",
+   "seen_at": [
+    10,
+    11,
+    37,
+    38,
+    39,
+    58,
+    59
+   ]
+  },
+  {
+   "name": "maroon exterior door with sidelight",
+   "description": "Six-panel dark red door with a narrow vertical glass sidelight at the stair landing.",
+   "seen_at": [
+    11,
+    12,
+    36,
+    37,
+    39,
+    58,
+    59,
+    60
+   ]
+  },
+  {
+   "name": "upper carpeted stairs",
+   "description": "Flight of beige-carpeted stairs with a wooden handrail leading up from the maroon door landing.",
+   "seen_at": [
+    13,
+    14,
+    35,
+    36,
+    60,
+    61
+   ]
+  },
+  {
+   "name": "brass dining chandelier and table",
+   "description": "Ceiling fan/light fixture above a wooden table with chairs on a yellow-brown tile floor near the top of the stairs.",
+   "seen_at": [
+    14,
+    61,
+    68,
+    69,
+    73,
+    74,
+    79,
+    80
+   ]
+  },
+  {
+   "name": "narrow wooden closet door",
+   "description": "Very narrow vertical wood door set in the wall between two doorways.",
+   "seen_at": [
+    15,
+    16,
+    28,
+    29,
+    80,
+    81
+   ]
+  },
+  {
+   "name": "bed with blue and brown quilt",
+   "description": "Double bed with a wooden headboard and a blue, brown, and tan patterned bedspread.",
+   "seen_at": [
+    16,
+    17,
+    21,
+    22,
+    23,
+    24,
+    25,
+    28,
+    29
+   ]
+  },
+  {
+   "name": "window with sheer tan curtains",
+   "description": "Double sliding window with white blinds framed by sheer tan curtains.",
+   "seen_at": [
+    16,
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "twin wood closet doors",
+   "description": "Pair of flush wooden doors set along the white wall near the bed with the blue and brown quilt.",
+   "seen_at": [
+    17,
+    18,
+    20,
+    21,
+    24
+   ]
+  },
+  {
+   "name": "tall five-drawer dresser",
+   "description": "Tall wooden chest of five drawers standing in the corner between the bed and the window.",
+   "seen_at": [
+    18,
+    19
+   ]
+  },
+  {
+   "name": "small two-drawer nightstand",
+   "description": "Small wooden two-drawer bedside table to the left of the bed with the blue and brown quilt.",
+   "seen_at": [
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "name": "wooden vanity cabinet",
+   "description": "Light-wood sink cabinet with a mirror above it.",
+   "seen_at": [
+    26
+   ]
+  },
+  {
+   "name": "blue striped shower curtain",
+   "description": "Vertical blue and white striped curtain covering a shower stall.",
+   "seen_at": [
+    26,
+    27,
+    28,
+    34
+   ]
+  },
+  {
+   "name": "white toilet",
+   "description": "White toilet with a wooden cabinet mounted on the blue wall above it.",
+   "seen_at": [
+    27,
+    28
+   ]
+  },
+  {
+   "name": "purple hanging towels",
+   "description": "Dark purple bath towels hanging on a rack next to the shower curtain.",
+   "seen_at": [
+    27,
+    28
+   ]
+  },
+  {
+   "name": "black office chair and dark desk",
+   "description": "High-backed black swivel chair at a dark desk on a wood-grain floor.",
+   "seen_at": [
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "carved wood bench",
+   "description": "Wooden bench with a carved high back sitting under the window on the wood-grain floor.",
+   "seen_at": [
+    30,
+    31
+   ]
+  },
+  {
+   "name": "curtained window above bench",
+   "description": "Double window with white blinds and sheer tan curtains above the carved wood bench.",
+   "seen_at": [
+    30,
+    31,
+    33,
+    34
+   ]
+  },
+  {
+   "name": "closed wood door by grey bin",
+   "description": "Flush wooden door in the corner of the wood-floored area next to a grey trash bin.",
+   "seen_at": [
+    31,
+    32
+   ]
+  },
+  {
+   "name": "grey plastic trash bin",
+   "description": "Grey plastic wastebasket with a curved lid against the white wall near the doorway.",
+   "seen_at": [
+    31,
+    32,
+    33,
+    34
+   ]
+  },
+  {
+   "name": "tall two-door wooden armoire",
+   "description": "Tall light-wood wardrobe cabinet with two doors standing in the corner on the wood-grain floor.",
+   "seen_at": [
+    33,
+    34
+   ]
+  },
+  {
+   "name": "yellowish wood-paneled wall",
+   "description": "Section of vertical yellow-toned wood paneling on the wall at the bottom of the lower stairs.",
+   "seen_at": [
+    39,
+    40,
+    57,
+    58
+   ]
+  },
+  {
+   "name": "washer and dryer",
+   "description": "White top-load washing machine and front-load dryer side by side under ceiling ductwork.",
+   "seen_at": [
+    41,
+    42,
+    56,
+    57
+   ]
+  },
+  {
+   "name": "white water heater",
+   "description": "Tall cylindrical white tank water heater in the corner to the right of the dryer.",
+   "seen_at": [
+    41,
+    42
+   ]
+  },
+  {
+   "name": "plaid sofa",
+   "description": "Couch with brown, red, and white plaid upholstery against the wall.",
+   "seen_at": [
+    40,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+   ]
+  },
+  {
+   "name": "wood-trimmed window by plaid sofa",
+   "description": "Horizontal sliding window with dark wood trim and white blinds on the wall next to the plaid sofa.",
+   "seen_at": [
+    43,
+    44,
+    45,
+    46,
+    47
+   ]
+  },
+  {
+   "name": "wooden wall coat rack",
+   "description": "Small dark wood strip with hooks mounted on the narrow white wall just inside the doorway.",
+   "seen_at": [
+    49,
+    50
+   ]
+  },
+  {
+   "name": "bed with patterned grey bedspread",
+   "description": "Bed covered in a grey and tan patterned quilt opposite the closed wood closet door.",
+   "seen_at": [
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+   ]
+  },
+  {
+   "name": "closed wood closet door",
+   "description": "Flush wooden door set in the white wall opposite the bed with the grey bedspread.",
+   "seen_at": [
+    50,
+    51,
+    55,
+    56
+   ]
+  },
+  {
+   "name": "recessed wood-trimmed window",
+   "description": "Deep-set horizontal window with wood trim on the back wall past the bed with the grey bedspread.",
+   "seen_at": [
+    51,
+    52,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "black leather sofa",
+   "description": "Plush black leather couch with a camouflage throw blanket on it, sitting against the half-wall.",
+   "seen_at": [
+    62,
+    67,
+    68,
+    75,
+    77,
+    78
+   ]
+  },
+  {
+   "name": "black leather recliner",
+   "description": "Large tufted black leather reclining armchair sitting on the beige carpet opposite the black leather sofa.",
+   "seen_at": [
+    62,
+    63,
+    66,
+    67,
+    68,
+    75,
+    76,
+    77
+   ]
+  },
+  {
+   "name": "corner CRT TV on wooden table",
+   "description": "Black tube television sitting on a curved-leg wooden table in the corner between two windows with white blinds.",
+   "seen_at": [
+    62,
+    63,
+    64,
+    75
+   ]
+  },
+  {
+   "name": "end table with white-shaded lamp by cutout",
+   "description": "Small wooden end table with a white-shaded lamp in the corner next to an interior wall cutout.",
+   "seen_at": [
+    65
+   ]
+  },
+  {
+   "name": "framed landscape picture above recliner",
+   "description": "Horizontal dark-framed picture hanging on the white wall above the black leather recliner and a small wooden side table with a lamp.",
+   "seen_at": [
+    66,
+    67,
+    76
+   ]
+  },
+  {
+   "name": "curtained sliding glass door",
+   "description": "Patio door covered with sheer white lace curtains and grey side drapes behind the wooden dining table.",
+   "seen_at": [
+    69,
+    70
+   ]
+  },
+  {
+   "name": "white dishwasher and wood cabinets",
+   "description": "Built-in white dishwasher under a light countertop next to oak base and wall cabinets and a window over the sink.",
+   "seen_at": [
+    70,
+    71,
+    73
+   ]
+  },
+  {
+   "name": "white stove and black microwave",
+   "description": "White freestanding range with a dish towel on the handle and a black over-the-range microwave mounted in the oak cabinets above.",
+   "seen_at": [
+    71,
+    72
+   ]
+  },
+  {
+   "name": "round wall clock above half-wall",
+   "description": "Large open-frame round clock with Roman numerals mounted on the white wall above the stairwell half-wall.",
+   "seen_at": [
+    74,
+    77,
+    78,
+    79
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "red bordered rug",
+   "to": "wooden bench",
+   "how": "Move toward the basement doorway with the dark wood dresser on the right, then pivot left past the small dark bookcase and three framed pictures on the left wall to face the basement window and wooden bench ahead."
+  },
+  {
+   "from": "wooden bench",
+   "to": "corner wooden shelving unit",
+   "how": "Walk forward past the basement window and wooden bench on the left and the wood-paneled wall with door on the right to reach the corner wooden shelving unit and low wood-paneled wainscot ahead."
+  },
+  {
+   "from": "corner wooden shelving unit",
+   "to": "basement doorway",
+   "how": "Turn right to reverse direction, pass the wood-paneled wall with door on the left and the red bordered rug on the right, and walk straight through the basement doorway."
+  },
+  {
+   "from": "basement doorway",
+   "to": "maroon exterior door with sidelight",
+   "how": "After exiting through the basement doorway, immediately turn left and climb the lower carpeted stairs to the landing facing the maroon exterior door with sidelight."
+  },
+  {
+   "from": "maroon exterior door with sidelight",
+   "to": "brass dining chandelier and table",
+   "how": "At the landing with the maroon exterior door with sidelight on the right, turn left and climb the upper carpeted stairs toward the brass dining chandelier and table at the top."
+  },
+  {
+   "from": "brass dining chandelier and table",
+   "to": "narrow wooden closet door",
+   "how": "From the top of the upper carpeted stairs or moving past the round wall clock above half-wall on the right and the brass dining chandelier and table on the left, go into the narrow carpeted passage to reach the narrow wooden closet door."
+  },
+  {
+   "from": "narrow wooden closet door",
+   "to": "bed with blue and brown quilt",
+   "how": "With the narrow wooden closet door on the right, walk forward and turn right through the open doorway to see the bed with blue and brown quilt on the left and the window with sheer tan curtains ahead."
+  },
+  {
+   "from": "bed with blue and brown quilt",
+   "to": "twin wood closet doors",
+   "how": "Walk toward the window with sheer tan curtains and turn right to face the twin wood closet doors."
+  },
+  {
+   "from": "twin wood closet doors",
+   "to": "small two-drawer nightstand",
+   "how": "Turn left past the tall five-drawer dresser and window with sheer tan curtains, then continue looping past the twin wood closet doors on the left and the bed with blue and brown quilt on the right to the small two-drawer nightstand in the corner."
+  },
+  {
+   "from": "small two-drawer nightstand",
+   "to": "blue striped shower curtain",
+   "how": "Turn around past the bed with blue and brown quilt and twin wood closet doors, exit through the doorway, turn right, and step past the wooden vanity cabinet and white toilet on the left to face the blue striped shower curtain and purple hanging towels."
+  },
+  {
+   "from": "blue striped shower curtain",
+   "to": "narrow wooden closet door",
+   "how": "Turn right past the purple hanging towels and step out through the doorway to face the narrow wooden closet door straight ahead."
+  },
+  {
+   "from": "narrow wooden closet door",
+   "to": "closed wood door by grey bin",
+   "how": "Enter the doorway to the left of the narrow wooden closet door, step onto the wood-grain floor passing the carved wood bench, curtained window above bench, and black office chair and dark desk on the left, and turn right toward the closed wood door by grey bin and grey plastic trash bin."
+  },
+  {
+   "from": "closed wood door by grey bin",
+   "to": "upper carpeted stairs",
+   "how": "Turn right past the tall two-door wooden armoire and curtained window above bench on the right and the grey plastic trash bin on the left, exit the doorway, pass the blue striped shower curtain on the right, and walk to the top of the upper carpeted stairs on the left."
+  },
+  {
+   "from": "upper carpeted stairs",
+   "to": "maroon exterior door with sidelight",
+   "how": "Walk down the upper carpeted stairs to the tiled landing in front of the maroon exterior door with sidelight."
+  },
+  {
+   "from": "maroon exterior door with sidelight",
+   "to": "yellowish wood-paneled wall",
+   "how": "At the landing with the maroon exterior door with sidelight on the right, turn left and walk down the lower carpeted stairs, then turn around at the bottom to face the passage with the yellowish wood-paneled wall on the left."
+  },
+  {
+   "from": "yellowish wood-paneled wall",
+   "to": "washer and dryer",
+   "how": "With the yellowish wood-paneled wall on the left, step through the doorway on the right and turn right to see the washer and dryer on the left and the white water heater ahead."
+  },
+  {
+   "from": "washer and dryer",
+   "to": "plaid sofa",
+   "how": "Exit the doorway with the washer and dryer, turn left down the carpeted passage, and walk straight through the end doorway past the plaid sofa and wood-trimmed window by plaid sofa on the left."
+  },
+  {
+   "from": "plaid sofa",
+   "to": "recessed wood-trimmed window",
+   "how": "Turn around and walk out past the plaid sofa through the doorway, immediately turn left through the adjacent doorway past the wooden wall coat rack and closed wood closet door on the left and the bed with patterned grey bedspread on the right to reach the recessed wood-trimmed window ahead."
+  },
+  {
+   "from": "recessed wood-trimmed window",
+   "to": "closed wood closet door",
+   "how": "In the corner by the recessed wood-trimmed window, turn right past the bed with patterned grey bedspread to face the closed wood closet door."
+  },
+  {
+   "from": "closed wood closet door",
+   "to": "lower carpeted stairs",
+   "how": "Walk past the closed wood closet door on the left and exit through the doorway, turn left into the carpeted passage past the yellowish wood-paneled wall on the right, and turn right to face the lower carpeted stairs."
+  },
+  {
+   "from": "lower carpeted stairs",
+   "to": "maroon exterior door with sidelight",
+   "how": "Walk up the lower carpeted stairs to the landing with the maroon exterior door with sidelight on the right."
+  },
+  {
+   "from": "brass dining chandelier and table",
+   "to": "corner CRT TV on wooden table",
+   "how": "With the brass dining chandelier and table on the right (or behind on the left when coming from the tiled area), walk onto the beige carpet between the black leather sofa on the left and the black leather recliner on the right toward the corner CRT TV on wooden table ahead."
+  },
+  {
+   "from": "corner CRT TV on wooden table",
+   "to": "end table with white-shaded lamp by cutout",
+   "how": "At the corner CRT TV on wooden table, turn right and walk across the beige carpet to the corner with the end table with white-shaded lamp by cutout."
+  },
+  {
+   "from": "end table with white-shaded lamp by cutout",
+   "to": "brass dining chandelier and table",
+   "how": "Turn around at the end table with white-shaded lamp by cutout and walk forward between the black leather recliner and framed landscape picture above recliner on the left and the black leather sofa on the right toward the brass dining chandelier and table on the tiled floor ahead."
+  },
+  {
+   "from": "brass dining chandelier and table",
+   "to": "white stove and black microwave",
+   "how": "Step onto the tile floor passing the brass dining chandelier and table and curtained sliding glass door on the right and the white dishwasher and wood cabinets on the left, then turn left to face the white stove and black microwave."
+  },
+  {
+   "from": "white stove and black microwave",
+   "to": "white dishwasher and wood cabinets",
+   "how": "Turn right from the white stove and black microwave to face the white dishwasher and wood cabinets."
+  },
+  {
+   "from": "white dishwasher and wood cabinets",
+   "to": "corner CRT TV on wooden table",
+   "how": "Walk out from the counter area passing the brass dining chandelier and table on the left and the round wall clock above half-wall ahead, then turn right onto the beige carpet between the black leather sofa on the left and the black leather recliner on the right toward the corner CRT TV on wooden table."
+  },
+  {
+   "from": "corner CRT TV on wooden table",
+   "to": "brass dining chandelier and table",
+   "how": "Near the corner CRT TV on wooden table, turn right in a circle past the black leather recliner and framed landscape picture above recliner to face the black leather sofa and round wall clock above half-wall, then walk past the black leather recliner on the left and black leather sofa on the right toward the brass dining chandelier and table."
+  }
+ ],
+ "walk_summary": [
+  "Start by the red bordered rug, move toward the basement doorway with the dark wood dresser on the right, and turn left past the small dark bookcase and three framed pictures to face the basement window and wooden bench.",
+  "Walk forward past the basement window and wooden bench on the left and the wood-paneled wall with door on the right into the corner with the corner wooden shelving unit and low wood-paneled wainscot.",
+  "Turn around, walk back past the wood-paneled wall with door on the left and red bordered rug on the right, and exit through the basement doorway.",
+  "Turn left immediately after the basement doorway and climb the lower carpeted stairs to the landing with the maroon exterior door with sidelight.",
+  "Turn left at the landing and climb the upper carpeted stairs toward the brass dining chandelier and table, then turn right to the narrow wooden closet door.",
+  "Pass the narrow wooden closet door on the right and turn right through the doorway to enter the area with the bed with blue and brown quilt, walking toward the window with sheer tan curtains and turning right to face the twin wood closet doors.",
+  "Loop left around the perimeter past the tall five-drawer dresser, window with sheer tan curtains, and twin wood closet doors to the small two-drawer nightstand by the bed with blue and brown quilt.",
+  "Turn back past the twin wood closet doors, exit through the doorway, turn right, and step past the wooden vanity cabinet and white toilet to face the blue striped shower curtain and purple hanging towels.",
+  "Turn right to exit past the purple hanging towels, facing the narrow wooden closet door between two open doorways.",
+  "Enter the doorway on the left onto the wood-grain floor, passing the carved wood bench, curtained window above bench, and black office chair and dark desk on the left to reach the closed wood door by grey bin and grey plastic trash bin.",
+  "Turn around past the tall two-door wooden armoire, exit past the grey plastic trash bin on the left and blue striped shower curtain on the right, and walk to the upper carpeted stairs.",
+  "Walk down the upper carpeted stairs to the landing by the maroon exterior door with sidelight, then turn left down the lower carpeted stairs to the bottom by the yellowish wood-paneled wall.",
+  "Step into the doorway on the right and turn right to view the washer and dryer and white water heater.",
+  "Back out into the carpeted passage, turn left, and walk straight into the end doorway past the plaid sofa and wood-trimmed window by plaid sofa.",
+  "Turn around in the corner, walk back out past the plaid sofa, immediately turn left through the next doorway past the wooden wall coat rack, bed with patterned grey bedspread, and closed wood closet door to the recessed wood-trimmed window.",
+  "Turn right in the corner past the bed with patterned grey bedspread, walk past the closed wood closet door on the left to exit the doorway, turn left past the yellowish wood-paneled wall, and turn right onto the lower carpeted stairs.",
+  "Climb the lower carpeted stairs past the maroon exterior door with sidelight and go up the upper carpeted stairs toward the brass dining chandelier and table.",
+  "Turn left at the top of the stairs and walk between the black leather sofa and black leather recliner to the corner CRT TV on wooden table.",
+  "Turn right and walk across the carpet to the end table with white-shaded lamp by cutout, then turn around to face the black leather recliner, framed landscape picture above recliner, and black leather sofa.",
+  "Walk between the black leather recliner on the left and black leather sofa on the right onto the tile floor past the brass dining chandelier and table and curtained sliding glass door.",
+  "Turn left by the white dishwasher and wood cabinets to face the white stove and black microwave, then turn right to face the white dishwasher and wood cabinets.",
+  "Walk out past the brass dining chandelier and table on the left and round wall clock above half-wall ahead, turning right between the black leather sofa and black leather recliner toward the corner CRT TV on wooden table.",
+  "Turn right in a circle past the black leather recliner and framed landscape picture above recliner, then walk past the black leather sofa and round wall clock above half-wall on the right and brass dining chandelier and table on the left to return to the narrow wooden closet door."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/4ok3usBNeis/frames",
+  "n_keyframes": 82,
+  "camera": "held at chest height by a person walking"
+ }
+}

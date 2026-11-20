@@ -1,0 +1,490 @@
+{
+ "landmarks": [
+  {
+   "name": "grey-curtained window",
+   "description": "Double window with white blinds and dark grey curtains.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "light-wood dresser with TV",
+   "description": "Light-colored wooden dresser with dark handles and a flat-screen TV on top.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "patterned bed",
+   "description": "Wooden bed frame with a light wood paneled headboard and a navy, grey, and white patterned blanket.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    52,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "dark nightstand with lamp",
+   "description": "Medium-to-dark wood chest of drawers next to the bed with a lit table lamp.",
+   "seen_at": [
+    1,
+    3,
+    52,
+    53,
+    54
+   ]
+  },
+  {
+   "name": "closed white door next to open doorway",
+   "description": "White six-panel door next to an open doorway leading to a tiled area.",
+   "seen_at": [
+    3
+   ]
+  },
+  {
+   "name": "counter with barstools",
+   "description": "Light-colored island counter with four dark-seated barstools and a black trash can at the end.",
+   "seen_at": [
+    4,
+    9,
+    11,
+    12,
+    13,
+    14,
+    17,
+    18,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+   ]
+  },
+  {
+   "name": "dark wood table with chairs and bench",
+   "description": "High-top dark wood table with slatted chairs and an upholstered bench.",
+   "seen_at": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    49,
+    50
+   ]
+  },
+  {
+   "name": "glass sliding door",
+   "description": "Large sliding glass patio door with vertical blinds and a mat in front.",
+   "seen_at": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    49,
+    50
+   ]
+  },
+  {
+   "name": "pet door",
+   "description": "Small rectangular pet door low on the wall beside the window and table.",
+   "seen_at": [
+    6
+   ]
+  },
+  {
+   "name": "large brown sectional sofa",
+   "description": "Large brown fabric L-shaped sectional sofa with a dark wood coffee table.",
+   "seen_at": [
+    5,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    43,
+    44
+   ]
+  },
+  {
+   "name": "framed BLESSED sign",
+   "description": "Rectangular framed sign reading 'BLESSED' on the wall above the dark wood table.",
+   "seen_at": [
+    7,
+    8,
+    10
+   ]
+  },
+  {
+   "name": "low wood media console with wall-mounted TV",
+   "description": "Low light-wood cabinet on the floor with a large flat-screen TV mounted on the wall above it.",
+   "seen_at": [
+    11,
+    13,
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "name": "abstract blue-and-gold wall art",
+   "description": "Horizontal canvas painting with blue, gold, and grey blocks above the sectional sofa.",
+   "seen_at": [
+    12,
+    14,
+    15,
+    16,
+    43,
+    44
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "Large double-door stainless steel refrigerator next to a white pantry door.",
+   "seen_at": [
+    18,
+    51
+   ]
+  },
+  {
+   "name": "white door with dark handle in passage",
+   "description": "Closed white door on the side of the tiled passage.",
+   "seen_at": [
+    19
+   ]
+  },
+  {
+   "name": "white door with keypad lock",
+   "description": "White six-panel exterior door with a keypad lock and a patterned doormat.",
+   "seen_at": [
+    19,
+    20,
+    27,
+    29
+   ]
+  },
+  {
+   "name": "five-panel wall art",
+   "description": "Set of five vertical canvas panels arranged in a row on the wall near the keypad door.",
+   "seen_at": [
+    20,
+    27,
+    33,
+    34
+   ]
+  },
+  {
+   "name": "foosball table",
+   "description": "Light wood-grain foosball table on a carpeted floor.",
+   "seen_at": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  {
+   "name": "small dark desk with blue chair",
+   "description": "Dark compact desk with laptops on it and a ribbed blue rolling office chair.",
+   "seen_at": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  {
+   "name": "narrow open doorway to small side space",
+   "description": "Open white door leading into a small space at the back of the foosball area.",
+   "seen_at": [
+    22
+   ]
+  },
+  {
+   "name": "open doorway to tiled passage",
+   "description": "Doorway with a white six-panel door leading from the foosball table area to the tiled passage.",
+   "seen_at": [
+    20,
+    23,
+    24,
+    26
+   ]
+  },
+  {
+   "name": "large round wall clock",
+   "description": "Oversized open-frame Roman numeral clock mounted high on the wall.",
+   "seen_at": [
+    28,
+    37,
+    38,
+    39
+   ]
+  },
+  {
+   "name": "distressed white wall cabinet",
+   "description": "Small wall-mounted white distressed wood cabinet with glass panes near a doorway.",
+   "seen_at": [
+    29,
+    33
+   ]
+  },
+  {
+   "name": "bed with peach bedspread",
+   "description": "Large bed with a peach-colored patterned bedspread, black throw blanket, and grey pillows.",
+   "seen_at": [
+    30,
+    35,
+    36
+   ]
+  },
+  {
+   "name": "dark wood dresser",
+   "description": "Dark reddish-brown wooden chest of drawers opposite the peach bed.",
+   "seen_at": [
+    30,
+    35,
+    36
+   ]
+  },
+  {
+   "name": "white-and-grey shower curtain",
+   "description": "White fabric shower curtain with a grey lower border.",
+   "seen_at": [
+    31,
+    32
+   ]
+  },
+  {
+   "name": "white toilet",
+   "description": "Standard white ceramic toilet between the shower curtain and dark vanity.",
+   "seen_at": [
+    31,
+    32
+   ]
+  },
+  {
+   "name": "dark wood vanity with mirror",
+   "description": "Dark brown two-door sink cabinet with a white top and rectangular mirror above.",
+   "seen_at": [
+    31,
+    32
+   ]
+  },
+  {
+   "name": "white double closet doors",
+   "description": "Pair of white six-panel closet doors on the wall next to the peach bed.",
+   "seen_at": [
+    36
+   ]
+  },
+  {
+   "name": "tall dark wood bookcase",
+   "description": "Tall dark brown open shelving unit set into a wall niche at the end of the tiled passage.",
+   "seen_at": [
+    38,
+    39,
+    40,
+    42
+   ]
+  },
+  {
+   "name": "ironing board and white appliance",
+   "description": "Blue-patterned ironing board leaning against a white appliance inside a narrow doorway.",
+   "seen_at": [
+    40,
+    41
+   ]
+  },
+  {
+   "name": "dark wood cabinets with stove and microwave",
+   "description": "Wall of upper and lower dark brown cabinets with a stainless steel stove and over-the-range microwave.",
+   "seen_at": [
+    45,
+    46,
+    49,
+    50
+   ]
+  },
+  {
+   "name": "rectangular numbered wall clock",
+   "description": "Vertical rectangular brown wall clock with large numbers mounted on a wall pillar.",
+   "seen_at": [
+    47,
+    48
+   ]
+  },
+  {
+   "name": "live-edge wooden bench",
+   "description": "Long natural-edge wooden bench against the white wall on a tiled floor.",
+   "seen_at": [
+    55,
+    56
+   ]
+  },
+  {
+   "name": "dark vanity with LOVE YOU MORE sign",
+   "description": "Dark brown sink cabinet with a black 'LOVE YOU MORE' wall sign hanging beside the mirror.",
+   "seen_at": [
+    55,
+    56
+   ]
+  },
+  {
+   "name": "glass-doored shower",
+   "description": "Framed frosted-glass shower enclosure with colourful towels hanging on the bar.",
+   "seen_at": [
+    55,
+    56
+   ]
+  },
+  {
+   "name": "open doorway with hanging clothes",
+   "description": "Doorless rectangular opening next to the glass shower showing racks of hanging clothes inside.",
+   "seen_at": [
+    55,
+    56
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "grey-curtained window",
+   "to": "closed white door next to open doorway",
+   "how": "Turn right 180 degrees at the window and walk past the light-wood dresser with TV on the left and the patterned bed and dark nightstand with lamp on the right."
+  },
+  {
+   "from": "closed white door next to open doorway",
+   "to": "dark wood table with chairs and bench",
+   "how": "Walk forward through the open doorway onto the beige tiled floor and angle left toward the glass sliding door."
+  },
+  {
+   "from": "dark wood table with chairs and bench",
+   "to": "counter with barstools",
+   "how": "With the glass sliding door behind you, walk forward out of the table area toward the island counter."
+  },
+  {
+   "from": "counter with barstools",
+   "to": "large brown sectional sofa",
+   "how": "Pass the counter with barstools and move into the open tiled space alongside the low wood media console with wall-mounted TV toward the sectional sofa under the abstract blue-and-gold wall art."
+  },
+  {
+   "from": "large brown sectional sofa",
+   "to": "stainless steel refrigerator",
+   "how": "Turn around at the sofa, walk past the low wood media console with wall-mounted TV on the left and the counter with barstools on the right, and enter the tiled passage."
+  },
+  {
+   "from": "stainless steel refrigerator",
+   "to": "white door with keypad lock",
+   "how": "Walk straight down the tiled passage past the white door with dark handle in passage on the right toward the white door with keypad lock and five-panel wall art."
+  },
+  {
+   "from": "white door with keypad lock",
+   "to": "foosball table",
+   "how": "Just before reaching the white door with keypad lock, turn left through the open doorway to tiled passage onto the carpeted floor."
+  },
+  {
+   "from": "foosball table",
+   "to": "narrow open doorway to small side space",
+   "how": "Walk past the foosball table on the left and the small dark desk with blue chair on the right to face the narrow open doorway ahead."
+  },
+  {
+   "from": "narrow open doorway to small side space",
+   "to": "white door with keypad lock",
+   "how": "Turn around between the small dark desk with blue chair and the foosball table, then walk out through the open doorway to tiled passage."
+  },
+  {
+   "from": "white door with keypad lock",
+   "to": "distressed white wall cabinet",
+   "how": "With the five-panel wall art behind you and the white door with keypad lock on the right, walk into the short tiled branch under the large round wall clock."
+  },
+  {
+   "from": "distressed white wall cabinet",
+   "to": "dark wood vanity with mirror",
+   "how": "At the end of the short tiled passage by the distressed white wall cabinet, pivot right through the doorway past the white-and-grey shower curtain and white toilet."
+  },
+  {
+   "from": "dark wood vanity with mirror",
+   "to": "distressed white wall cabinet",
+   "how": "Back out through the doorway past the white-and-grey shower curtain into the tiled passage."
+  },
+  {
+   "from": "distressed white wall cabinet",
+   "to": "bed with peach bedspread",
+   "how": "Step straight through the adjacent doorway onto the carpeted floor between the bed with peach bedspread on the left and the dark wood dresser on the right, facing the white double closet doors."
+  },
+  {
+   "from": "bed with peach bedspread",
+   "to": "tall dark wood bookcase",
+   "how": "Turn 180 degrees to exit through the doorway into the tiled passage, then walk straight under the large round wall clock toward the tall dark wood bookcase."
+  },
+  {
+   "from": "tall dark wood bookcase",
+   "to": "ironing board and white appliance",
+   "how": "Just before reaching the tall dark wood bookcase, look left into the narrow open doorway."
+  },
+  {
+   "from": "ironing board and white appliance",
+   "to": "counter with barstools",
+   "how": "Step out past the tall dark wood bookcase into the main tiled area alongside the counter with barstools."
+  },
+  {
+   "from": "counter with barstools",
+   "to": "dark wood cabinets with stove and microwave",
+   "how": "Circle around the end of the counter with barstools near the rectangular numbered wall clock and walk into the gap between the counter and the stove."
+  },
+  {
+   "from": "dark wood cabinets with stove and microwave",
+   "to": "stainless steel refrigerator",
+   "how": "With the dark wood table with chairs and bench and glass sliding door ahead in the distance, turn around beside the stove to face the stainless steel refrigerator."
+  },
+  {
+   "from": "stainless steel refrigerator",
+   "to": "patterned bed",
+   "how": "Walk past the end of the counter with barstools and through the open doorway onto the carpeted floor alongside the patterned bed and dark nightstand with lamp."
+  },
+  {
+   "from": "patterned bed",
+   "to": "glass-doored shower",
+   "how": "Near the dark nightstand with lamp, turn right and walk through the open doorway onto the tiled floor between the dark vanity with LOVE YOU MORE sign on the left and the live-edge wooden bench on the right."
+  }
+ ],
+ "walk_summary": [
+  "Start by walking toward the grey-curtained window between the patterned bed and light-wood dresser with TV, then turn around to face the closed white door next to open doorway.",
+  "Pass the dark nightstand with lamp and walk through the open doorway onto the tiled floor toward the dark wood table with chairs and bench, glass sliding door, and pet door.",
+  "Pivot near the dark wood table with chairs and bench under the framed BLESSED sign, then walk out past the counter with barstools toward the large brown sectional sofa, abstract blue-and-gold wall art, and low wood media console with wall-mounted TV.",
+  "Turn around at the large brown sectional sofa and walk past the low wood media console with wall-mounted TV, counter with barstools, and stainless steel refrigerator into the tiled passage.",
+  "Continue past the white door with dark handle in passage toward the white door with keypad lock and five-panel wall art, then turn left through the open doorway to tiled passage.",
+  "Pass between the foosball table and small dark desk with blue chair to face the narrow open doorway to small side space, then turn around and exit back to the tiled passage.",
+  "Pass the white door with keypad lock and walk under the large round wall clock toward the distressed white wall cabinet.",
+  "Look toward the bed with peach bedspread, then step right into the tiled space with the white-and-grey shower curtain, white toilet, and dark wood vanity with mirror.",
+  "Back out to the distressed white wall cabinet and five-panel wall art, then step into the carpeted space between the bed with peach bedspread and dark wood dresser facing the white double closet doors.",
+  "Turn around and walk out under the large round wall clock toward the tall dark wood bookcase, pausing to look left at the ironing board and white appliance.",
+  "Move past the tall dark wood bookcase into the open tiled space by the counter with barstools, rectangular numbered wall clock, and dark wood cabinets with stove and microwave.",
+  "Walk between the counter with barstools and dark wood cabinets with stove and microwave toward the dark wood table with chairs and bench, then turn around toward the stainless steel refrigerator.",
+  "Re-enter the carpeted space with the patterned bed and dark nightstand with lamp, then turn right and walk through the open doorway between the dark vanity with LOVE YOU MORE sign and live-edge wooden bench toward the glass-doored shower and open doorway with hanging clothes."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/Nfvxx8J5NCo/frames",
+  "n_keyframes": 57,
+  "camera": "held at chest height by a person walking"
+ }
+}

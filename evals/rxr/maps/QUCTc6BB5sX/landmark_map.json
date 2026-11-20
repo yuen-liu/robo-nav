@@ -1,0 +1,463 @@
+{
+ "landmarks": [
+  {
+   "name": "stone staircase",
+   "description": "narrow staircase with light-colored stone steps, a metal handrail on the left going up, and multi-toned brick walls on both sides",
+   "seen_at": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    15
+   ]
+  },
+  {
+   "name": "corner stand with sculpture",
+   "description": "tall, narrow dark metal stand holding a curved dark and metallic object in the brick corner on the stair landing",
+   "seen_at": [
+    2,
+    3
+   ]
+  },
+  {
+   "name": "cylindrical tank in alcove",
+   "description": "large weathered cylindrical metal tank standing at the base of the stairs next to a small arched niche in the brick wall",
+   "seen_at": [
+    5,
+    6,
+    15,
+    43
+   ]
+  },
+  {
+   "name": "brick archway with metal door",
+   "description": "arched opening in the brick wall with a heavy dark metal door standing open",
+   "seen_at": [
+    7,
+    16,
+    20,
+    32,
+    33,
+    42,
+    43
+   ]
+  },
+  {
+   "name": "carved dark wood door",
+   "description": "closed dark wooden door with an arched panel design set into the brick wall",
+   "seen_at": [
+    7,
+    14,
+    21,
+    31,
+    32,
+    44
+   ]
+  },
+  {
+   "name": "light wood double doors",
+   "description": "pair of smooth light-toned wooden doors set into the brick wall between the carved dark wood door and the stone staircase",
+   "seen_at": [
+    32,
+    43
+   ]
+  },
+  {
+   "name": "open wooden door to large open area",
+   "description": "plain flat wooden door standing open in a doorway between the brick-walled area and the large concrete-floored space",
+   "seen_at": [
+    8,
+    9,
+    13,
+    21,
+    24,
+    28,
+    30,
+    44,
+    54,
+    55,
+    56,
+    60,
+    64,
+    67,
+    68,
+    76,
+    77,
+    82,
+    84,
+    105,
+    107,
+    110
+   ]
+  },
+  {
+   "name": "patterned rug",
+   "description": "light-colored rectangular rug with a traditional border pattern on the floor just inside the large open area",
+   "seen_at": [
+    9,
+    31
+   ]
+  },
+  {
+   "name": "series of brick arches",
+   "description": "narrow passage with a sequence of brick archways overhead and terracotta-colored floor tiles",
+   "seen_at": [
+    17,
+    18,
+    33,
+    34,
+    35,
+    39,
+    41
+   ]
+  },
+  {
+   "name": "wooden counter and stools",
+   "description": "high wooden counter with wooden barstools along the wood-panelled wall of the arched passage",
+   "seen_at": [
+    18,
+    34,
+    35,
+    40,
+    41
+   ]
+  },
+  {
+   "name": "barrel table with stools",
+   "description": "wooden barrel supporting a round tabletop with metal stools around it, in front of an arched brick niche holding bottles",
+   "seen_at": [
+    35,
+    36,
+    39
+   ]
+  },
+  {
+   "name": "wooden sink cabinets",
+   "description": "stained wooden base cabinets with a countertop and upper glass-front cabinets set in a brick-walled alcove",
+   "seen_at": [
+    37,
+    38
+   ]
+  },
+  {
+   "name": "grey cabinet row",
+   "description": "long row of tall, two-tiered grey storage cabinets with silver handles against a light-colored wall, with bins stored on top",
+   "seen_at": [
+    10,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    45,
+    46,
+    47,
+    49,
+    56,
+    57,
+    65,
+    73,
+    76,
+    77,
+    78,
+    80,
+    90,
+    93,
+    101,
+    105,
+    107,
+    108,
+    110
+   ]
+  },
+  {
+   "name": "dark overhead roll-up door",
+   "description": "wide dark brown panelled overhead roll-up door at the end of the concrete floor past the grey cabinets",
+   "seen_at": [
+    11,
+    22,
+    25,
+    26,
+    27,
+    46,
+    47,
+    48,
+    50,
+    56,
+    62,
+    72,
+    77,
+    78,
+    80,
+    83,
+    90,
+    95,
+    109
+   ]
+  },
+  {
+   "name": "recessed wooden side door",
+   "description": "single wooden door set into the light-colored wall immediately to the left of the dark overhead roll-up door",
+   "seen_at": [
+    48,
+    51,
+    56,
+    101,
+    109,
+    110
+   ]
+  },
+  {
+   "name": "square support column",
+   "description": "white square vertical structural pillar standing in the middle of the concrete floor",
+   "seen_at": [
+    45,
+    52,
+    54,
+    57,
+    59,
+    62,
+    65,
+    73,
+    74,
+    78,
+    79,
+    81,
+    83,
+    85,
+    96,
+    97,
+    98,
+    101,
+    110
+   ]
+  },
+  {
+   "name": "second grey cabinet row",
+   "description": "another long row of tall two-tiered grey storage cabinets against the far wall of the concrete-floored area, with cardboard boxes on top",
+   "seen_at": [
+    45,
+    50,
+    52,
+    57,
+    59,
+    60,
+    66,
+    70,
+    75,
+    78,
+    79,
+    81,
+    83,
+    85,
+    96,
+    97,
+    98,
+    99,
+    100,
+    102,
+    103,
+    104,
+    106
+   ]
+  },
+  {
+   "name": "dark parked vehicle",
+   "description": "low dark-colored car with silver five-spoke wheels parked along the light-colored wall",
+   "seen_at": [
+    61,
+    63,
+    64,
+    66,
+    71,
+    79,
+    81,
+    83,
+    85,
+    86,
+    87,
+    96,
+    97,
+    98,
+    101,
+    110
+   ]
+  },
+  {
+   "name": "second overhead roll-up door",
+   "description": "dark brown panelled overhead roll-up door located to the left of the open wooden doorway when looking back along the grey cabinets",
+   "seen_at": [
+    28,
+    54,
+    55,
+    60,
+    61,
+    68,
+    69,
+    76,
+    82,
+    83,
+    84,
+    86,
+    88,
+    89,
+    91,
+    92,
+    93,
+    96,
+    97,
+    110
+   ]
+  },
+  {
+   "name": "third grey cabinet row",
+   "description": "row of tall grey storage cabinets with white sides set along the left wall of the alcove leading to the second overhead roll-up door",
+   "seen_at": [
+    69,
+    82,
+    84,
+    86,
+    87,
+    88,
+    91,
+    96
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "stone staircase",
+   "to": "corner stand with sculpture",
+   "how": "walk up the stone steps with the metal handrail on your left to reach the stand in the brick corner at the landing"
+  },
+  {
+   "from": "corner stand with sculpture",
+   "to": "cylindrical tank in alcove",
+   "how": "turn around 180 degrees with the corner stand on your left and walk down the stone staircase to the cylindrical tank at the base"
+  },
+  {
+   "from": "cylindrical tank in alcove",
+   "to": "open wooden door to large open area",
+   "how": "turn left at the base of the stairs, passing the cylindrical tank and brick archway with metal door on your left and the light wood double doors and carved dark wood door on your right, to go through the open wooden door over the patterned rug"
+  },
+  {
+   "from": "open wooden door to large open area",
+   "to": "grey cabinet row",
+   "how": "step through the open wooden doorway over the patterned rug onto the concrete floor, where the grey cabinet row is immediately on your left"
+  },
+  {
+   "from": "grey cabinet row",
+   "to": "open wooden door to large open area",
+   "how": "with the grey cabinet row on your right, walk straight toward the patterned rug and pass through the open wooden doorway"
+  },
+  {
+   "from": "open wooden door to large open area",
+   "to": "brick archway with metal door",
+   "how": "pass through the open wooden doorway into the brick-walled space, with the carved dark wood door ahead on your left, and turn right to go through the brick archway with the open metal door"
+  },
+  {
+   "from": "brick archway with metal door",
+   "to": "series of brick arches",
+   "how": "pass through the brick archway with the open metal door and turn left into the narrow tiled passage beneath the series of brick arches, with the wooden counter and stools on your right"
+  },
+  {
+   "from": "series of brick arches",
+   "to": "barrel table with stools",
+   "how": "walk straight down the tiled passage under the series of brick arches with the wooden counter and stools on your right until you reach the barrel table ahead"
+  },
+  {
+   "from": "barrel table with stools",
+   "to": "wooden sink cabinets",
+   "how": "pass the barrel table on your left and turn right into the brick alcove facing the wooden sink cabinets"
+  },
+  {
+   "from": "wooden sink cabinets",
+   "to": "series of brick arches",
+   "how": "turn left away from the wooden sink cabinets, passing the barrel table on your left, to re-enter the tiled passage under the series of brick arches with the wooden counter and stools on your left"
+  },
+  {
+   "from": "series of brick arches",
+   "to": "brick archway with metal door",
+   "how": "walk along the tiled passage under the brick arches with the wooden counter and stools on your left, then turn right through the brick archway with the metal door"
+  },
+  {
+   "from": "brick archway with metal door",
+   "to": "open wooden door to large open area",
+   "how": "exit the brick archway with the cylindrical tank on your right and light wood double doors ahead, then turn left past the carved dark wood door on your right to go through the open wooden door"
+  },
+  {
+   "from": "grey cabinet row",
+   "to": "dark overhead roll-up door",
+   "how": "walk straight along the concrete floor with the grey cabinet row on your left to reach the dark overhead roll-up door and recessed wooden side door at the far end"
+  },
+  {
+   "from": "dark overhead roll-up door",
+   "to": "grey cabinet row",
+   "how": "turn around 180 degrees at the dark overhead roll-up door and walk back with the grey cabinet row on your right"
+  },
+  {
+   "from": "dark overhead roll-up door",
+   "to": "second grey cabinet row",
+   "how": "from the corner by the dark overhead roll-up door and recessed wooden side door, turn right and walk along the light-colored wall on your left, passing the square support column on your right, toward the second grey cabinet row ahead"
+  },
+  {
+   "from": "second grey cabinet row",
+   "to": "square support column",
+   "how": "turn away from the second grey cabinet row and walk out onto the open concrete floor toward the central square support column"
+  },
+  {
+   "from": "square support column",
+   "to": "dark parked vehicle",
+   "how": "from the square support column, walk toward the wall corner past the end of the second grey cabinet row on your left to reach the dark parked vehicle"
+  },
+  {
+   "from": "dark parked vehicle",
+   "to": "square support column",
+   "how": "turn away from the dark parked vehicle and walk out across the concrete floor to the central square support column"
+  },
+  {
+   "from": "square support column",
+   "to": "second overhead roll-up door",
+   "how": "from the central square support column, walk past the dark parked vehicle on your left and open wooden door on your right into the alcove with the third grey cabinet row on your left to reach the second overhead roll-up door"
+  },
+  {
+   "from": "second overhead roll-up door",
+   "to": "second grey cabinet row",
+   "how": "turn around in the alcove and walk out past the third grey cabinet row on your right, continuing straight across the concrete floor between the square support column on your left and the dark parked vehicle on your right to reach the second grey cabinet row"
+  },
+  {
+   "from": "second grey cabinet row",
+   "to": "recessed wooden side door",
+   "how": "walk along the second grey cabinet row on your right to the corner wall, then turn left and follow the light-colored wall on your right across the floor to the recessed wooden side door and dark overhead roll-up door"
+  }
+ ],
+ "walk_summary": [
+  "Walk up the stone staircase to the corner stand with sculpture on the landing.",
+  "Turn around and walk back down the stone staircase to the cylindrical tank in alcove.",
+  "Turn left, passing the brick archway with metal door on the left and the carved dark wood door on the right, and step through the open wooden door to large open area over the patterned rug to see the grey cabinet row.",
+  "Turn around, exit back through the open wooden door to large open area, and turn right through the brick archway with metal door into the passage with the series of brick arches and wooden counter and stools.",
+  "Turn around, exit the brick archway with metal door, and turn left to go back through the open wooden door to large open area.",
+  "Walk along the grey cabinet row on the left to the dark overhead roll-up door at the far end.",
+  "Turn around at the dark overhead roll-up door, walk back along the grey cabinet row on the right, and exit through the open wooden door to large open area.",
+  "Turn right past the light wood double doors and go through the brick archway with metal door.",
+  "Walk down the passage under the series of brick arches past the wooden counter and stools on the right and the barrel table with stools on the left, turning right into the alcove with the wooden sink cabinets.",
+  "Turn around, walk back past the barrel table with stools and wooden counter and stools under the series of brick arches, and exit through the brick archway with metal door.",
+  "Turn left past the carved dark wood door and go through the open wooden door to large open area onto the concrete floor.",
+  "Walk along the grey cabinet row on the left to the dark overhead roll-up door and recessed wooden side door.",
+  "Turn right and walk along the end wall with the square support column on the right toward the second grey cabinet row.",
+  "Turn right and walk around the central square support column, then pass between the square support column and the second grey cabinet row to approach the dark parked vehicle.",
+  "Walk around near the dark parked vehicle, then move back out to circle around the central square support column.",
+  "From the square support column, walk into the alcove past the third grey cabinet row on the left to reach the second overhead roll-up door.",
+  "Turn around at the second overhead roll-up door, exit the alcove past the third grey cabinet row on the right, and cross the floor between the square support column and dark parked vehicle to reach the second grey cabinet row.",
+  "Walk along the second grey cabinet row on the right to the far wall corner, then turn and walk along the wall on the right to the recessed wooden side door and dark overhead roll-up door, turning around to face the open floor."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/vlnce_tours/QUCTc6BB5sX/frames",
+  "n_keyframes": 111,
+  "camera": "held at chest height by a person walking"
+ }
+}

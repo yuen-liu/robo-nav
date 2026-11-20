@@ -1,0 +1,850 @@
+{
+ "landmarks": [
+  {
+   "name": "tan square ottoman",
+   "description": "large square tan leather ottoman on beige carpet with a tray and magazine on top, placed between two white sofas",
+   "seen_at": [
+    0,
+    1,
+    60,
+    61,
+    63
+   ]
+  },
+  {
+   "name": "white sofa with orange pillows",
+   "description": "white upholstered sofa with orange, black, and patterned throw pillows against a dark grey wall",
+   "seen_at": [
+    0,
+    1,
+    2,
+    52,
+    53,
+    59,
+    60,
+    61,
+    63
+   ]
+  },
+  {
+   "name": "cityscape wall art",
+   "description": "large black-and-white canvas print of a city skyline and bridge on a dark grey wall above the white sofa",
+   "seen_at": [
+    0,
+    1,
+    2,
+    52,
+    53,
+    59,
+    60,
+    61,
+    63
+   ]
+  },
+  {
+   "name": "round wall clock",
+   "description": "large round vintage-style wall clock mounted on a white wall pillar",
+   "seen_at": [
+    1,
+    2,
+    3,
+    19,
+    20,
+    58,
+    59,
+    60,
+    62
+   ]
+  },
+  {
+   "name": "wall cutout with dark counter",
+   "description": "rectangular interior window cutout in a white wall with a dark countertop ledge",
+   "seen_at": [
+    2,
+    54,
+    58,
+    59
+   ]
+  },
+  {
+   "name": "white island counter",
+   "description": "long white waterfall-edge counter with a double sink and three silver pendant lights above it",
+   "seen_at": [
+    3,
+    4,
+    5,
+    14,
+    15,
+    17,
+    18,
+    20,
+    21,
+    22,
+    23,
+    62,
+    64,
+    65,
+    66,
+    67,
+    77,
+    78,
+    96,
+    97,
+    98
+   ]
+  },
+  {
+   "name": "dark L-shaped sectional sofa",
+   "description": "large dark grey L-shaped sofa with yellow and patterned black-and-white pillows on a light tiled floor",
+   "seen_at": [
+    3,
+    4,
+    5,
+    9,
+    10,
+    13,
+    14,
+    15,
+    17,
+    18,
+    64,
+    65,
+    76,
+    77,
+    78
+   ]
+  },
+  {
+   "name": "open bi-fold glass doors to wooden deck",
+   "description": "wide opening with dark-framed bi-fold doors folded back, leading to a covered wooden deck",
+   "seen_at": [
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12,
+    64,
+    65,
+    70,
+    75,
+    76,
+    97
+   ]
+  },
+  {
+   "name": "grey armchair with polka dot pillow",
+   "description": "wide armless grey lounge chair with a white-and-black polka dot pillow near the deck opening",
+   "seen_at": [
+    4,
+    5,
+    6,
+    11,
+    12,
+    70
+   ]
+  },
+  {
+   "name": "recessed dark wood media unit with TV",
+   "description": "built-in dark wood lower cabinet and upper wall cabinets with a flat-screen TV and two floating shelves in a wall niche",
+   "seen_at": [
+    5,
+    6,
+    7,
+    12,
+    13,
+    78
+   ]
+  },
+  {
+   "name": "city names wall art",
+   "description": "black rectangular typographic art print listing city names (New York, Paris, Venice, London) next to a framed '4' and yellow 'Speed Hump Ahead' sign",
+   "seen_at": [
+    6,
+    7,
+    8,
+    52,
+    78
+   ]
+  },
+  {
+   "name": "printed glass-top coffee table",
+   "description": "square coffee table with typography print under a glass top, resting on a distressed area rug by the dark sectional sofa",
+   "seen_at": [
+    7,
+    9,
+    10,
+    12,
+    13
+   ]
+  },
+  {
+   "name": "four framed prints on grey wall",
+   "description": "row of four matching black-and-white framed prints above a low white wall-mounted cabinet on a grey wall",
+   "seen_at": [
+    15,
+    16,
+    65,
+    69,
+    70,
+    77
+   ]
+  },
+  {
+   "name": "dark table with wire chairs",
+   "description": "rectangular dark-topped table surrounded by metal wire-frame chairs near a large window",
+   "seen_at": [
+    15,
+    16,
+    69,
+    70,
+    71,
+    74,
+    75,
+    76
+   ]
+  },
+  {
+   "name": "abstract line art in doorway",
+   "description": "square white canvas with black abstract loops hanging on a white wall visible through a doorway next to the grey wall",
+   "seen_at": [
+    16,
+    21,
+    66,
+    79,
+    80,
+    95,
+    96
+   ]
+  },
+  {
+   "name": "gas cooktop and stainless oven",
+   "description": "built-in gas burner cooktop over a wide stainless-and-black oven with a purple-grey tile backsplash",
+   "seen_at": [
+    22,
+    23,
+    68,
+    79,
+    98
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "tall double-door stainless steel refrigerator recessed into a grey enclosure opposite the cooktop",
+   "seen_at": [
+    23,
+    24,
+    67,
+    68,
+    98,
+    99
+   ]
+  },
+  {
+   "name": "built-in wall ovens",
+   "description": "vertical stack of stainless steel and black glass wall ovens between the main counter and dark pantry shelves",
+   "seen_at": [
+    24,
+    99
+   ]
+  },
+  {
+   "name": "dark open pantry shelves",
+   "description": "floor-to-ceiling dark wood open shelving unit holding small appliances and containers",
+   "seen_at": [
+    23,
+    24,
+    25,
+    27,
+    28,
+    67,
+    68,
+    99,
+    100
+   ]
+  },
+  {
+   "name": "secondary counter with dark tile backsplash",
+   "description": "white countertop with light grey lower cabinets, dark grey brick-tile backsplash, and two dark floating shelves above",
+   "seen_at": [
+    25,
+    99,
+    100
+   ]
+  },
+  {
+   "name": "pocket doorway at end of pantry",
+   "description": "narrow doorway with a dark wood sliding pocket door at the end of the pantry passage",
+   "seen_at": [
+    24,
+    25,
+    26,
+    36,
+    37,
+    51,
+    99,
+    100
+   ]
+  },
+  {
+   "name": "doorway to white vanity counter",
+   "description": "doorway with a dark glass-panel door opening to a floating dark-wood vanity with a white sink counter, wide frameless mirror, and beige wall tiles",
+   "seen_at": [
+    26,
+    27,
+    28,
+    67,
+    68,
+    100,
+    109,
+    110,
+    111,
+    114
+   ]
+  },
+  {
+   "name": "world map wall art",
+   "description": "white-framed print of a grey world map mounted on a dark grey wall above a desk",
+   "seen_at": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    101,
+    112,
+    113
+   ]
+  },
+  {
+   "name": "desk under world map",
+   "description": "light-wood and dark-frame desk with two chairs and a floor lamp against a dark grey wall under the world map print",
+   "seen_at": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    101,
+    112,
+    113
+   ]
+  },
+  {
+   "name": "dark metal cube shelving unit",
+   "description": "tall black metal open cube bookcase with a '6' box on the bottom shelf, standing against a grey wall",
+   "seen_at": [
+    29,
+    30,
+    31,
+    42,
+    43,
+    51,
+    101,
+    114
+   ]
+  },
+  {
+   "name": "boombox wall mural",
+   "description": "floor-to-ceiling black-and-white vertical wall mural of stacked vintage boomboxes next to the cube shelving",
+   "seen_at": [
+    33,
+    34,
+    43
+   ]
+  },
+  {
+   "name": "tan lounge chair by boombox mural",
+   "description": "low armless tan upholstered lounge chair with a typographic pillow and a small wooden crate side table in front of three narrow windows",
+   "seen_at": [
+    33,
+    34
+   ]
+  },
+  {
+   "name": "white double closet doors",
+   "description": "tall flush white double doors with vertical silver handles on the angled passage wall",
+   "seen_at": [
+    36,
+    37,
+    51,
+    112,
+    114
+   ]
+  },
+  {
+   "name": "twin bed with yellow throw",
+   "description": "single bed with dark grey duvet, yellow throw blanket, and light grey headboard against a blue-grey wall",
+   "seen_at": [
+    31,
+    38,
+    39,
+    40,
+    41,
+    42
+   ]
+  },
+  {
+   "name": "New York skyline print above headboard",
+   "description": "horizontal framed print labeled 'NEW YORK' hanging on the blue-grey wall above the twin bed",
+   "seen_at": [
+    38,
+    39,
+    40
+   ]
+  },
+  {
+   "name": "wooden crate shelving with Chinese checkers board",
+   "description": "low rustic wooden crate shelving unit against the blue-grey wall with a yellow star-shaped game board on top and a red-and-white striped garment hanging on the right wall",
+   "seen_at": [
+    39,
+    40
+   ]
+  },
+  {
+   "name": "mirrored sliding wardrobe doors",
+   "description": "floor-to-ceiling mirrored sliding doors on the wall opposite the twin bed",
+   "seen_at": [
+    41,
+    42
+   ]
+  },
+  {
+   "name": "double bed with coral pillows and two alphabet prints",
+   "description": "large bed with white patterned coverlet, coral throw pillows, dark wood nightstands with white lamps, and two framed typographic prints on the grey wall above",
+   "seen_at": [
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    113
+   ]
+  },
+  {
+   "name": "grey armchair with orange cushion",
+   "description": "dark grey upholstered armchair with an orange throw pillow in the corner next to three narrow windows with dark blinds",
+   "seen_at": [
+    44,
+    45
+   ]
+  },
+  {
+   "name": "mirrored sliding wardrobe by double bed",
+   "description": "floor-to-ceiling mirrored sliding closet doors next to the doorway and opposite the foot of the double bed",
+   "seen_at": [
+    46,
+    47,
+    48,
+    49,
+    50
+   ]
+  },
+  {
+   "name": "live-edge wooden console table",
+   "description": "long natural wood-slab console table with metal legs against a dark grey wall beneath two large square abstract paintings",
+   "seen_at": [
+    54,
+    55,
+    57
+   ]
+  },
+  {
+   "name": "slatted wooden front door",
+   "description": "wide dark wood exterior door with horizontal glass slats, a vertical metal pull handle, and a dark welcome mat in front",
+   "seen_at": [
+    54,
+    55,
+    56
+   ]
+  },
+  {
+   "name": "black-framed interior window",
+   "description": "wide horizontal interior window with a thick black frame in a white wall opposite the live-edge wooden console table",
+   "seen_at": [
+    55,
+    57
+   ]
+  },
+  {
+   "name": "eye chart wall art",
+   "description": "square black-framed optometrist-style letter chart ('NOHO AZDKO...') mounted on a white wall corner",
+   "seen_at": [
+    58
+   ]
+  },
+  {
+   "name": "sliding glass door to lawn",
+   "description": "large glass window and sliding door unit behind the dark table, opening onto a small wooden step, tropical plants, and a green lawn",
+   "seen_at": [
+    70,
+    71,
+    72,
+    73,
+    74
+   ]
+  },
+  {
+   "name": "frosted glass wooden door",
+   "description": "dark wood door with a full-height frosted glass panel standing open against the wall just inside the doorway with the abstract line art",
+   "seen_at": [
+    80,
+    94
+   ]
+  },
+  {
+   "name": "mirrored sliding wardrobe with sunburst mirror",
+   "description": "large floor-to-ceiling mirrored sliding closet doors on a white wall, with a round dark sunburst-frame mirror mounted to the side",
+   "seen_at": [
+    81,
+    83,
+    84,
+    86,
+    87,
+    93,
+    94
+   ]
+  },
+  {
+   "name": "sheer curtained window wall",
+   "description": "wide window covered by floor-to-ceiling sheer grey curtains hanging from a black pelmet",
+   "seen_at": [
+    81,
+    82
+   ]
+  },
+  {
+   "name": "dark armchair with orange pillow",
+   "description": "dark upholstered armchair with a bright orange throw pillow and a small side table, placed in the corner by the sheer curtains",
+   "seen_at": [
+    81,
+    82,
+    83
+   ]
+  },
+  {
+   "name": "bed with black throw and grey headboard",
+   "description": "large bed with white bedding, a black throw across the foot, a tall grey upholstered headboard against a dark grey wall, and a floating wooden nightstand",
+   "seen_at": [
+    82,
+    83,
+    84,
+    87,
+    88,
+    92,
+    93
+   ]
+  },
+  {
+   "name": "doorway to dark wood floating vanity",
+   "description": "open doorway next to a vertical grey framed print, leading to a dark wood floating vanity counter with twin white vessel sinks and vertical mirrors",
+   "seen_at": [
+    83,
+    84,
+    88,
+    89,
+    90,
+    91,
+    92
+   ]
+  },
+  {
+   "name": "open closet with white hanging shirts",
+   "description": "recessed open wardrobe niche with a metal hanging rod and white shirts opposite the mirrored sliding wardrobe",
+   "seen_at": [
+    84,
+    85,
+    86
+   ]
+  },
+  {
+   "name": "dark wood double doors with frosted glass",
+   "description": "pair of dark wood doors with vertical frosted glass panels and silver bar handles at the end of a short tiled passage",
+   "seen_at": [
+    85,
+    94,
+    95
+   ]
+  },
+  {
+   "name": "grey stacked-stone feature wall",
+   "description": "full-height accent wall of narrow horizontal grey stone tiles next to a frameless glass shower screen opposite the twin-sink vanity",
+   "seen_at": [
+    90,
+    91
+   ]
+  },
+  {
+   "name": "three vertical black-framed wall circles",
+   "description": "three small round black-framed decorative plates mounted vertically on a short angled white wall",
+   "seen_at": [
+    102,
+    103,
+    108,
+    109,
+    114
+   ]
+  },
+  {
+   "name": "bed with orange pillow and two grey framed prints",
+   "description": "bed with light beige coverlet, dark grey and bright orange throw pillows, dark headboard, rustic crate nightstands, and two dark-framed prints on a grey wall",
+   "seen_at": [
+    103,
+    104,
+    105,
+    106,
+    107,
+    108
+   ]
+  },
+  {
+   "name": "mirrored sliding wardrobe by orange-pillow bed",
+   "description": "floor-to-ceiling mirrored sliding closet doors on the wall opposite the window with the dark roller blind",
+   "seen_at": [
+    103,
+    104,
+    107,
+    108
+   ]
+  },
+  {
+   "name": "wire corner rack with orange signs",
+   "description": "tall narrow black metal wire shelving unit in the corner holding orange decorative signs under a triptych canvas",
+   "seen_at": [
+    105,
+    106
+   ]
+  },
+  {
+   "name": "window with dark roller blind",
+   "description": "wide horizontal sliding window with a dark pelmet and roller blind opposite the mirrored wardrobe",
+   "seen_at": [
+    105,
+    106,
+    107
+   ]
+  },
+  {
+   "name": "vertical newspaper-print wall strip",
+   "description": "narrow floor-to-ceiling vertical decorative strip of black-and-white newspaper print set between large beige wall tiles",
+   "seen_at": [
+    109,
+    110
+   ]
+  },
+  {
+   "name": "small square black-framed print on angled wall",
+   "description": "small square black-framed black-and-white print with a wide white mat mounted at eye level on an angled white wall outside the tiled room",
+   "seen_at": [
+    109,
+    112,
+    114
+   ]
+  },
+  {
+   "name": "glass-enclosed tiled shower with handheld showerhead",
+   "description": "corner shower stall with large beige wall tiles, a chrome handheld showerhead on a vertical slide bar, and a clear glass door",
+   "seen_at": [
+    110,
+    111
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "tan square ottoman",
+   "to": "round wall clock",
+   "how": "walk forward between the tan square ottoman on your left and the white sofa with orange pillows on your right toward the white wall pillar ahead"
+  },
+  {
+   "from": "round wall clock",
+   "to": "white island counter",
+   "how": "turn right around the white wall pillar onto the light tiled floor with the white island counter on your left and the dark L-shaped sectional sofa on your right"
+  },
+  {
+   "from": "white island counter",
+   "to": "round wall clock",
+   "how": "walk between the white island counter on your right and the back of the dark L-shaped sectional sofa on your left toward the white wall pillar with the round clock ahead"
+  },
+  {
+   "from": "white island counter",
+   "to": "recessed dark wood media unit with TV",
+   "how": "walk past the dark L-shaped sectional sofa on your right and turn right past the grey armchair with the polka dot pillow on your left"
+  },
+  {
+   "from": "recessed dark wood media unit with TV",
+   "to": "printed glass-top coffee table",
+   "how": "turn left beside the media unit to face the seating area between the dark L-shaped sectional sofa and the open bi-fold glass doors"
+  },
+  {
+   "from": "printed glass-top coffee table",
+   "to": "dark table with wire chairs",
+   "how": "walk past the end of the dark L-shaped sectional sofa toward the four framed prints on the grey wall and the dark table ahead"
+  },
+  {
+   "from": "dark table with wire chairs",
+   "to": "white island counter",
+   "how": "turn left before the four framed prints on the grey wall to walk along the side of the white island counter"
+  },
+  {
+   "from": "white island counter",
+   "to": "gas cooktop and stainless oven",
+   "how": "loop around the end of the white island counter into the narrow tiled passage with the island counter on your left and the cooktop on your right"
+  },
+  {
+   "from": "gas cooktop and stainless oven",
+   "to": "pocket doorway at end of pantry",
+   "how": "walk straight down the narrow tiled passage with the stainless steel refrigerator and secondary counter on your left, and the built-in wall ovens and dark open pantry shelves on your right"
+  },
+  {
+   "from": "pocket doorway at end of pantry",
+   "to": "desk under world map",
+   "how": "step through the pocket doorway onto the open tiled floor and turn left past the dark metal cube shelving unit toward the dark grey wall with the world map wall art"
+  },
+  {
+   "from": "desk under world map",
+   "to": "tan lounge chair by boombox mural",
+   "how": "walk forward across the grey rug with the desk and world map wall art on your left and the boombox wall mural and tan lounge chair on your right toward the three narrow windows"
+  },
+  {
+   "from": "tan lounge chair by boombox mural",
+   "to": "twin bed with yellow throw",
+   "how": "turn 180 degrees away from the narrow windows, walk back past the desk on your right toward the white double closet doors, and turn right through the first doorway onto beige carpet"
+  },
+  {
+   "from": "twin bed with yellow throw",
+   "to": "double bed with coral pillows and two alphabet prints",
+   "how": "turn around past the mirrored sliding wardrobe doors, exit the doorway onto the tiled floor with the dark metal cube shelving unit ahead, and immediately turn right into the next doorway"
+  },
+  {
+   "from": "double bed with coral pillows and two alphabet prints",
+   "to": "grey armchair with orange cushion",
+   "how": "walk forward past the foot of the double bed on your left toward the three narrow windows and armchair ahead on the right"
+  },
+  {
+   "from": "grey armchair with orange cushion",
+   "to": "white double closet doors",
+   "how": "turn around, walk past the double bed on your left and the mirrored sliding wardrobe on your right, and exit through the doorway onto the tiled passage with the white double closet doors on your right"
+  },
+  {
+   "from": "white double closet doors",
+   "to": "slatted wooden front door",
+   "how": "walk forward down the tiled passage with the dark metal cube shelving unit, pocket doorway, and city names wall art on your left, pass the white sofa on your left, and turn right down the wood-ceilinged passage past the live-edge wooden console table on your right"
+  },
+  {
+   "from": "slatted wooden front door",
+   "to": "tan square ottoman",
+   "how": "turn 180 degrees away from the door, walk straight down the tiled passage with the live-edge wooden console table, eye chart wall art, and wall cutout on your left, and bear right onto the beige carpet by the white sofa"
+  },
+  {
+   "from": "tan square ottoman",
+   "to": "white island counter",
+   "how": "turn left past the round wall clock on your left to enter the tiled area with the white island counter on your left and the dark L-shaped sectional sofa on your right"
+  },
+  {
+   "from": "white island counter",
+   "to": "sliding glass door to lawn",
+   "how": "at the far end of the white island counter, turn right past the four framed prints on the grey wall on your left and the dark table with wire chairs on your right to reach the sliding glass door ahead"
+  },
+  {
+   "from": "sliding glass door to lawn",
+   "to": "abstract line art in doorway",
+   "how": "turn right to loop around the dark table with wire chairs on your right and the open bi-fold glass doors on your left, head back toward the white island counter, and turn right into the doorway beside the grey wall with four framed prints"
+  },
+  {
+   "from": "abstract line art in doorway",
+   "to": "sheer curtained window wall",
+   "how": "step through the doorway past the open frosted glass wooden door on your left, turn right, and walk straight down the carpeted passage with the mirrored sliding wardrobe with sunburst mirror on your right and the bed with the black throw on your left"
+  },
+  {
+   "from": "sheer curtained window wall",
+   "to": "open closet with white hanging shirts",
+   "how": "turn 180 degrees away from the sheer curtains and walk straight with the bed on your right and the mirrored sliding wardrobe with sunburst mirror on your left until you pass the open closet niche on your right"
+  },
+  {
+   "from": "open closet with white hanging shirts",
+   "to": "doorway to dark wood floating vanity",
+   "how": "turn 180 degrees to face back toward the bed and take the open doorway on your left beside the vertical grey framed print"
+  },
+  {
+   "from": "doorway to dark wood floating vanity",
+   "to": "grey stacked-stone feature wall",
+   "how": "walk straight through the doorway with the twin-sink dark wood floating vanity on your right toward the grey stacked-stone wall ahead"
+  },
+  {
+   "from": "grey stacked-stone feature wall",
+   "to": "dark wood double doors with frosted glass",
+   "how": "turn around, walk back out through the vanity doorway with the twin sinks on your left, turn right past the mirrored sliding wardrobe on your left and the open frosted glass door on your right, and walk straight toward the dark wood double doors ahead"
+  },
+  {
+   "from": "dark wood double doors with frosted glass",
+   "to": "white island counter",
+   "how": "before reaching the dark wood double doors, turn right through the doorway with the abstract line art on your right to enter the tiled area with the white island counter ahead on the right"
+  },
+  {
+   "from": "pocket doorway at end of pantry",
+   "to": "bed with orange pillow and two grey framed prints",
+   "how": "step out of the pantry pocket doorway, turn slightly left toward the dark metal cube shelving unit, then turn right through the open doorway past the three vertical black-framed wall circles on your right"
+  },
+  {
+   "from": "bed with orange pillow and two grey framed prints",
+   "to": "window with dark roller blind",
+   "how": "turn right inside the room, passing the mirrored sliding wardrobe on your left and walking alongside the bed on your right toward the wire corner rack and window ahead"
+  },
+  {
+   "from": "window with dark roller blind",
+   "to": "doorway to white vanity counter",
+   "how": "turn around at the window, walk back with the bed on your right and the mirrored sliding wardrobe and three vertical black-framed wall circles on your left, exit the doorway turning left past the small square black-framed print on the angled wall, and immediately turn right into the doorway with the floating dark-wood vanity"
+  },
+  {
+   "from": "doorway to white vanity counter",
+   "to": "glass-enclosed tiled shower with handheld showerhead",
+   "how": "step through the doorway facing the vertical newspaper-print wall strip and pivot right past the floating vanity on your left to see the corner glass shower"
+  },
+  {
+   "from": "glass-enclosed tiled shower with handheld showerhead",
+   "to": "desk under world map",
+   "how": "exit the tiled room past the small square black-framed print on the angled wall ahead, and turn right past the white double closet doors on your left toward the desk and world map wall art"
+  }
+ ],
+ "walk_summary": [
+  "Start on the beige carpet between the tan square ottoman on the left and the white sofa with orange pillows and cityscape wall art on the right, walking toward the round wall clock on the white wall pillar.",
+  "Turn right around the white wall pillar onto the light tiled floor, passing between the white island counter on the left and the dark L-shaped sectional sofa on the right.",
+  "Turn right past the grey armchair with the polka dot pillow on the left to approach the recessed dark wood media unit with TV and the city names wall art.",
+  "Turn left and pivot around the seating area between the printed glass-top coffee table, the open bi-fold glass doors to the wooden deck, and the dark L-shaped sectional sofa.",
+  "Walk past the end of the dark L-shaped sectional sofa toward the four framed prints on the grey wall and the dark table with wire chairs.",
+  "Turn left to walk between the dark L-shaped sectional sofa and the white island counter toward the round wall clock, then loop right around the end of the white island counter.",
+  "Walk straight through the narrow tiled passage with the white island counter, stainless steel refrigerator, and secondary counter on the left, and the gas cooktop, built-in wall ovens, and dark open pantry shelves on the right.",
+  "Exit through the pocket doorway at the end of the pantry, glancing at the doorway to the white vanity counter on the left, then turn left past the dark metal cube shelving unit toward the desk under the world map wall art.",
+  "Walk forward across the grey rug between the desk under the world map on the left and the boombox wall mural and tan lounge chair on the right, up to the three narrow windows.",
+  "Turn 180 degrees to face the white double closet doors, walk across the tiled floor, and turn right into the first doorway to approach the twin bed with the yellow throw, New York skyline print, and wooden crate shelving with the Chinese checkers board.",
+  "Turn around past the mirrored sliding wardrobe doors, exit the doorway onto the tiled floor facing the dark metal cube shelving unit, and turn right into the adjacent doorway.",
+  "Walk past the foot of the double bed with coral pillows and two alphabet prints on the left toward the grey armchair with the orange cushion by the narrow windows.",
+  "Turn around, loop briefly by the double bed and its mirrored sliding wardrobe, and exit the doorway onto the tiled passage.",
+  "Walk straight down the tiled passage with the white double closet doors on the right and the dark metal cube shelving unit, pantry pocket doorway, and city names wall art on the left, heading toward the white sofa with orange pillows.",
+  "Turn right down the wood-ceilinged tiled passage between the wall cutout with the dark counter and black-framed interior window on the left and the live-edge wooden console table on the right, stopping at the slatted wooden front door.",
+  "Turn 180 degrees and walk back down the tiled passage past the live-edge wooden console table, eye chart wall art, and wall cutout on the left, looking into the carpeted area with the tan square ottoman and white sofa on the right.",
+  "Turn left past the round wall clock to walk between the white island counter on the left and the dark L-shaped sectional sofa on the right.",
+  "Pivot left around the end of the white island counter to look down the appliance passage, then turn right and walk past the four framed prints on the grey wall on the left and the dark table with wire chairs on the right to the sliding glass door to the lawn.",
+  "Turn right and walk around the outer side of the dark table with wire chairs, passing the open bi-fold glass doors to the wooden deck on the left, heading back toward the white island counter.",
+  "Turn right into the doorway with the abstract line art beside the grey wall, pass the open frosted glass wooden door on the left, and turn right down the carpeted passage past the mirrored sliding wardrobe with the sunburst mirror on the right and the bed with the black throw on the left to reach the sheer curtained window wall and dark armchair.",
+  "Turn 180 degrees and walk back past the bed on the right and the mirrored sliding wardrobe on the left to the open closet with white hanging shirts on the right.",
+  "Turn around at the open closet and turn left through the doorway into the tiled area with the twin-sink dark wood floating vanity on the right and the grey stacked-stone feature wall ahead.",
+  "Turn around, exit the vanity doorway, turn right past the mirrored sliding wardrobe on the left, and walk toward the dark wood double doors with frosted glass.",
+  "Before reaching the dark wood double doors, turn right through the doorway with the abstract line art to re-enter the tiled area by the white island counter.",
+  "Turn right and walk straight through the narrow passage between the white island counter, stainless steel refrigerator, and secondary counter on the left and the gas cooktop, built-in wall ovens, and dark open pantry shelves on the right, passing through the pocket doorway.",
+  "Step out of the pantry passage, turn slightly left toward the dark metal cube shelving unit, then turn right through an open doorway past three vertical black-framed wall circles on the right.",
+  "Turn right inside the room, walking past the mirrored sliding wardrobe on the left and the bed with the orange pillow and two grey framed prints on the right toward the wire corner rack with orange signs and the window with the dark roller blind.",
+  "Turn around at the window, walk back past the bed on the right and the three vertical black-framed wall circles on the left, and exit the doorway turning left past the small square black-framed print on the angled wall.",
+  "Turn right into the doorway to the white vanity counter, facing the vertical newspaper-print wall strip with the floating dark-wood vanity on the left and the glass-enclosed tiled shower with the handheld showerhead on the right.",
+  "Turn around and exit past the small square black-framed print on the angled wall, turning right past the white double closet doors toward the desk under the world map, then turn 180 degrees by the dark metal cube shelving unit to face back toward the angled walls."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/vlnce_tours/zsNo4HB9uLZ/frames",
+  "n_keyframes": 115,
+  "camera": "held at chest height by a person walking"
+ }
+}

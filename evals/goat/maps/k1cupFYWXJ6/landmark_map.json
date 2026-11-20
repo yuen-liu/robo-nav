@@ -1,0 +1,835 @@
+{
+ "landmarks": [
+  {
+   "name": "purple patterned carpet",
+   "description": "Dark purple floor runner with a white ornate pattern in the center.",
+   "seen_at": [
+    0,
+    1,
+    41,
+    42
+   ]
+  },
+  {
+   "name": "red carpeted stairs",
+   "description": "Staircase with red carpet treads and a dark ornate railing leading up.",
+   "seen_at": [
+    0,
+    1,
+    33,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+   ]
+  },
+  {
+   "name": "green exit sign",
+   "description": "Illuminated green rectangular exit sign mounted on the white wall above the red carpeted stairs.",
+   "seen_at": [
+    40,
+    41
+   ]
+  },
+  {
+   "name": "stacked purple chairs",
+   "description": "Two stacks of purple padded chairs tucked under the red carpeted stairs.",
+   "seen_at": [
+    37,
+    38
+   ]
+  },
+  {
+   "name": "wood floor opening",
+   "description": "Doorless rectangular wall opening leading to a wood-floored area with dark curtains.",
+   "seen_at": [
+    38,
+    39,
+    44,
+    45,
+    46
+   ]
+  },
+  {
+   "name": "upper glass doors",
+   "description": "Dark-framed double glass doors separating the checkered tile area by the red stairs from the top of the dark stone staircase.",
+   "seen_at": [
+    14,
+    15,
+    32,
+    33,
+    34,
+    44,
+    47,
+    48
+   ]
+  },
+  {
+   "name": "checkered tile floor",
+   "description": "Floor area with black and white diagonal checkered tiles spanning both sides of the upper glass doors.",
+   "seen_at": [
+    1,
+    2,
+    3,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    32,
+    33,
+    34,
+    35,
+    36,
+    44,
+    47,
+    48
+   ]
+  },
+  {
+   "name": "upper ship mural",
+   "description": "Large wall mural in a recessed niche at the top level showing a ship mast and a statue.",
+   "seen_at": [
+    1,
+    2,
+    10,
+    11,
+    12,
+    13,
+    14,
+    31,
+    32
+   ]
+  },
+  {
+   "name": "upper elevator door",
+   "description": "Dark door with a vertical rectangular window and silver handle, next to a plain dark door on the top level.",
+   "seen_at": [
+    2,
+    3,
+    11,
+    12,
+    16,
+    35,
+    48,
+    49
+   ]
+  },
+  {
+   "name": "Dark stone stairs",
+   "description": "Multi-flight staircase with dark grey stone treads and a black ornate metal railing connecting all levels.",
+   "seen_at": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    17,
+    18,
+    19,
+    25,
+    28,
+    29,
+    30,
+    31,
+    50,
+    51,
+    52,
+    55,
+    56,
+    57,
+    58,
+    61,
+    63,
+    66,
+    67,
+    68,
+    69,
+    70,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    83,
+    84,
+    85,
+    86,
+    88,
+    92,
+    93,
+    94,
+    95,
+    96,
+    100,
+    101,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    123,
+    134,
+    135,
+    136,
+    137,
+    138,
+    140,
+    141,
+    142,
+    144,
+    145,
+    146,
+    147,
+    149,
+    150,
+    151,
+    152,
+    153
+   ]
+  },
+  {
+   "name": "arched display niches",
+   "description": "Series of tall, round-arched recessed wall niches containing framed pictures, lining the outer walls of the dark stone staircase.",
+   "seen_at": [
+    3,
+    4,
+    5,
+    8,
+    9,
+    10,
+    17,
+    18,
+    29,
+    30,
+    31,
+    50,
+    51,
+    55,
+    56,
+    66,
+    67,
+    73,
+    74,
+    76,
+    79,
+    80,
+    83,
+    84,
+    85,
+    86,
+    94,
+    95,
+    103,
+    104,
+    106,
+    107,
+    136,
+    137,
+    138,
+    140,
+    141,
+    142,
+    144,
+    145,
+    146,
+    149,
+    150,
+    151,
+    152,
+    153
+   ]
+  },
+  {
+   "name": "upper curved white wall",
+   "description": "Smooth curved white plaster wall at the half-landing between the top checkered floor and the statue mural landing.",
+   "seen_at": [
+    5,
+    6,
+    7,
+    17,
+    18,
+    28,
+    29,
+    30,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "statue mural",
+   "description": "Large vertical wall mural in a recessed niche depicting statues and red-brown blocks on the first main landing down.",
+   "seen_at": [
+    20,
+    21,
+    22,
+    26,
+    27,
+    52,
+    53,
+    54,
+    87,
+    89,
+    90,
+    152
+   ]
+  },
+  {
+   "name": "statue landing elevator door",
+   "description": "Dark door with a narrow vertical window next to a plain dark door on the statue mural landing.",
+   "seen_at": [
+    20,
+    21,
+    52,
+    53,
+    54,
+    90,
+    91
+   ]
+  },
+  {
+   "name": "statue landing glass doors",
+   "description": "Dark-framed glass doors and partition wall on the statue mural landing.",
+   "seen_at": [
+    20,
+    23,
+    24,
+    25,
+    28,
+    88,
+    91
+   ]
+  },
+  {
+   "name": "statue landing lantern",
+   "description": "Dark metal hexagonal lantern hanging from the groin-vaulted white ceiling at the statue mural landing.",
+   "seen_at": [
+    19,
+    20,
+    51,
+    52,
+    86,
+    87
+   ]
+  },
+  {
+   "name": "statue-to-map recessed wall panel",
+   "description": "Square recessed rectangular niche low on the curved white wall at the half-landing below the statue mural.",
+   "seen_at": [
+    55,
+    56,
+    83,
+    84,
+    149,
+    150,
+    151,
+    153
+   ]
+  },
+  {
+   "name": "map mural",
+   "description": "Large vertical wall mural in a recessed niche with a yellow-brown map section in the middle and statue photos above and below.",
+   "seen_at": [
+    58,
+    59,
+    60,
+    63,
+    64,
+    65,
+    67,
+    146,
+    147
+   ]
+  },
+  {
+   "name": "map landing elevator door",
+   "description": "Dark door with a narrow vertical window next to a plain dark door on the map mural landing.",
+   "seen_at": [
+    58,
+    59,
+    60,
+    61,
+    64,
+    65,
+    146,
+    147
+   ]
+  },
+  {
+   "name": "map landing glass doors",
+   "description": "Dark-framed glass doors and partition wall on the map mural landing.",
+   "seen_at": [
+    58,
+    60,
+    62,
+    63,
+    147,
+    148
+   ]
+  },
+  {
+   "name": "map landing lantern",
+   "description": "Dark metal hexagonal lantern hanging from the groin-vaulted white ceiling at the map mural landing.",
+   "seen_at": [
+    57,
+    58,
+    146,
+    147
+   ]
+  },
+  {
+   "name": "map-to-green recessed wall panel",
+   "description": "Square recessed rectangular niche low on the curved white wall at the half-landing between the map mural and green blocks mural.",
+   "seen_at": [
+    66,
+    68,
+    144,
+    145
+   ]
+  },
+  {
+   "name": "green blocks mural",
+   "description": "Large vertical wall mural in a recessed niche featuring green geometric shapes and architectural photos.",
+   "seen_at": [
+    70,
+    71,
+    72,
+    74,
+    80,
+    81,
+    82,
+    142,
+    143
+   ]
+  },
+  {
+   "name": "green blocks landing elevator door",
+   "description": "Dark door with a narrow vertical window next to a plain dark door on the green blocks mural landing.",
+   "seen_at": [
+    70,
+    71,
+    72,
+    142,
+    143
+   ]
+  },
+  {
+   "name": "green blocks landing glass doors",
+   "description": "Dark-framed glass doors and partition wall on the green blocks mural landing.",
+   "seen_at": [
+    70,
+    81,
+    82,
+    142,
+    143
+   ]
+  },
+  {
+   "name": "green blocks landing lantern",
+   "description": "Dark metal hexagonal lantern hanging from the groin-vaulted white ceiling at the green blocks mural landing.",
+   "seen_at": [
+    69,
+    70,
+    142
+   ]
+  },
+  {
+   "name": "green-to-ship recessed wall panel",
+   "description": "Square recessed rectangular niche low on the curved white wall at the half-landing above the lower ship mural.",
+   "seen_at": [
+    73,
+    75,
+    78,
+    94,
+    95,
+    140,
+    141
+   ]
+  },
+  {
+   "name": "lower ship mural",
+   "description": "Large vertical wall mural in a recessed niche on the lower level showing a ship mast and a statue.",
+   "seen_at": [
+    76,
+    77,
+    96,
+    97,
+    98,
+    137,
+    138
+   ]
+  },
+  {
+   "name": "lower ship landing elevator door",
+   "description": "Dark door with a narrow vertical window next to a plain dark door on the lower ship mural landing.",
+   "seen_at": [
+    96,
+    97,
+    98,
+    137,
+    138
+   ]
+  },
+  {
+   "name": "lower ship landing glass doors",
+   "description": "Dark-framed glass doors and partition wall on the lower ship mural landing.",
+   "seen_at": [
+    96,
+    99,
+    100,
+    102,
+    138,
+    139
+   ]
+  },
+  {
+   "name": "lower ship landing lantern",
+   "description": "Dark metal hexagonal lantern hanging from the groin-vaulted white ceiling at the lower ship mural landing.",
+   "seen_at": [
+    95,
+    96,
+    137,
+    138
+   ]
+  },
+  {
+   "name": "bottom half-landing recessed wall panel",
+   "description": "Square recessed rectangular niche low on the curved white wall at the lowest stair half-landing.",
+   "seen_at": [
+    103,
+    104,
+    105,
+    108,
+    135,
+    136
+   ]
+  },
+  {
+   "name": "framed wall plaque",
+   "description": "Small dark-framed rectangular plaque mounted on the curved white wall directly above the bottom half-landing recessed wall panel.",
+   "seen_at": [
+    104,
+    105,
+    108,
+    135,
+    136
+   ]
+  },
+  {
+   "name": "stone newel post",
+   "description": "Heavy carved dark grey stone pillar at the base of the stair railing.",
+   "seen_at": [
+    108,
+    109,
+    134,
+    135
+   ]
+  },
+  {
+   "name": "stone archway",
+   "description": "Wide round arch made of dark grey stone blocks leading from the bottom of the dark stone stairs into the lowest level.",
+   "seen_at": [
+    109,
+    110
+   ]
+  },
+  {
+   "name": "silver urn",
+   "description": "Tall silver metallic vase with green foliage on a stone pedestal at the base of the dark stone stairs.",
+   "seen_at": [
+    111,
+    123,
+    134
+   ]
+  },
+  {
+   "name": "lowest elevator door",
+   "description": "Dark door with a vertical window and a white paper sign, to the right of the exit doorway at the base of the stone stairs.",
+   "seen_at": [
+    111,
+    112
+   ]
+  },
+  {
+   "name": "exit doorway",
+   "description": "Rectangular doorway with a green illuminated exit sign above it, next to the lowest elevator door.",
+   "seen_at": [
+    111,
+    112,
+    113
+   ]
+  },
+  {
+   "name": "black trash can",
+   "description": "Black cylindrical bin with a silver dome top next to the brick arch pillar and exit doorway.",
+   "seen_at": [
+    112,
+    113,
+    114
+   ]
+  },
+  {
+   "name": "round wooden table",
+   "description": "Circular wooden table with a large floral arrangement in the center, standing under the brick arches.",
+   "seen_at": [
+    110,
+    114,
+    115,
+    116,
+    120,
+    121,
+    122
+   ]
+  },
+  {
+   "name": "tan wingback armchairs",
+   "description": "Pair of beige patterned wingback armchairs with a small round table between them against the brick wall.",
+   "seen_at": [
+    115,
+    116,
+    117,
+    118,
+    119
+   ]
+  },
+  {
+   "name": "arched double doors",
+   "description": "Dark double doors with multi-pane glass and an ornate arched transom window in the brick wall.",
+   "seen_at": [
+    119,
+    120
+   ]
+  },
+  {
+   "name": "purple high-back chairs",
+   "description": "Pair of tall, narrow-backed purple upholstered armchairs against the white wall near the base of the stone stairs.",
+   "seen_at": [
+    123,
+    124,
+    125,
+    133
+   ]
+  },
+  {
+   "name": "oval collage frame",
+   "description": "Gold-framed picture with a white oval mat containing a circle of small portraits next to the transom doorway.",
+   "seen_at": [
+    124,
+    125,
+    126,
+    130,
+    131
+   ]
+  },
+  {
+   "name": "transom doorway",
+   "description": "Rectangular doorway topped with a semicircular fanlight window, leading to the blue patterned carpet.",
+   "seen_at": [
+    124,
+    125,
+    126,
+    127,
+    130,
+    131,
+    132
+   ]
+  },
+  {
+   "name": "blue patterned carpet",
+   "description": "Large floor covering with a blue, white, and brown swirling abstract pattern.",
+   "seen_at": [
+    126,
+    127,
+    128,
+    129,
+    130
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "purple patterned carpet",
+   "to": "checkered tile floor",
+   "how": "Walk forward off the purple patterned carpet with the red carpeted stairs on your left, or descend the red carpeted stairs to the checkered tile floor."
+  },
+  {
+   "from": "checkered tile floor",
+   "to": "red carpeted stairs",
+   "how": "From the checkered tile floor inside the upper glass doors, walk forward past the wood floor opening on your right and stacked purple chairs on your left to the base of the red carpeted stairs."
+  },
+  {
+   "from": "red carpeted stairs",
+   "to": "wood floor opening",
+   "how": "Walk down the red carpeted stairs to the checkered tile floor and turn left into the wood floor opening."
+  },
+  {
+   "from": "wood floor opening",
+   "to": "upper glass doors",
+   "how": "Exit the wood floor opening onto the checkered tile floor, turn left, and walk through the upper glass doors."
+  },
+  {
+   "from": "upper glass doors",
+   "to": "upper elevator door",
+   "how": "Pass through the upper glass doors across the checkered tile floor with the upper elevator door ahead on your left and the upper ship mural on your right."
+  },
+  {
+   "from": "upper elevator door",
+   "to": "upper curved white wall",
+   "how": "With the upper elevator door on your left, walk down the dark stone stairs with the arched display niches on your left to the upper curved white wall at the half-landing."
+  },
+  {
+   "from": "upper curved white wall",
+   "to": "checkered tile floor",
+   "how": "Turn around at the upper curved white wall and walk up the dark stone stairs with the arched display niches on your right to reach the checkered tile floor by the upper ship mural and upper elevator door."
+  },
+  {
+   "from": "upper curved white wall",
+   "to": "statue mural",
+   "how": "Turn right at the upper curved white wall and walk down the dark stone stairs under the statue landing lantern to the landing with the statue mural ahead, statue landing glass doors on the left, and statue landing elevator door on the right."
+  },
+  {
+   "from": "statue mural",
+   "to": "upper curved white wall",
+   "how": "From the statue mural landing, walk up the dark stone stairs with the statue landing glass doors on your right to the upper curved white wall."
+  },
+  {
+   "from": "statue mural",
+   "to": "statue-to-map recessed wall panel",
+   "how": "Turn right from the statue mural past the statue landing elevator door on your left and walk down the dark stone stairs with the arched display niches on your left to the curved wall with the statue-to-map recessed wall panel."
+  },
+  {
+   "from": "statue-to-map recessed wall panel",
+   "to": "statue mural",
+   "how": "From the statue-to-map recessed wall panel, turn left and walk up the dark stone stairs with the arched display niches on your right toward the statue mural."
+  },
+  {
+   "from": "statue-to-map recessed wall panel",
+   "to": "map mural",
+   "how": "Turn right at the statue-to-map recessed wall panel and walk down the dark stone stairs under the map landing lantern to the landing with the map mural ahead, map landing glass doors on the left, and map landing elevator door on the right."
+  },
+  {
+   "from": "map mural",
+   "to": "statue-to-map recessed wall panel",
+   "how": "From the map mural landing, turn left past the map landing glass doors and walk up the dark stone stairs to the statue-to-map recessed wall panel."
+  },
+  {
+   "from": "map mural",
+   "to": "map-to-green recessed wall panel",
+   "how": "From the map mural landing, turn right past the map landing elevator door and walk down the dark stone stairs with the arched display niches on your left to the map-to-green recessed wall panel."
+  },
+  {
+   "from": "map-to-green recessed wall panel",
+   "to": "map mural",
+   "how": "Turn left at the map-to-green recessed wall panel and walk up the dark stone stairs with the arched display niches on your right to the map mural landing."
+  },
+  {
+   "from": "map-to-green recessed wall panel",
+   "to": "green blocks mural",
+   "how": "Turn right at the map-to-green recessed wall panel and walk down the dark stone stairs under the green blocks landing lantern to the landing with the green blocks mural ahead, green blocks landing glass doors on the left, and green blocks landing elevator door on the right."
+  },
+  {
+   "from": "green blocks mural",
+   "to": "map-to-green recessed wall panel",
+   "how": "From the green blocks mural landing, turn left past the green blocks landing glass doors and walk up the dark stone stairs to the map-to-green recessed wall panel."
+  },
+  {
+   "from": "green blocks mural",
+   "to": "green-to-ship recessed wall panel",
+   "how": "From the green blocks mural landing, turn right and walk down the dark stone stairs with the arched display niches on your left to the green-to-ship recessed wall panel."
+  },
+  {
+   "from": "green-to-ship recessed wall panel",
+   "to": "green blocks mural",
+   "how": "Turn left at the green-to-ship recessed wall panel and walk up the dark stone stairs with the arched display niches on your right to the green blocks mural."
+  },
+  {
+   "from": "green-to-ship recessed wall panel",
+   "to": "lower ship mural",
+   "how": "Turn right at the green-to-ship recessed wall panel and walk down the dark stone stairs under the lower ship landing lantern to the landing with the lower ship mural ahead, lower ship landing glass doors on the left, and lower ship landing elevator door on the right."
+  },
+  {
+   "from": "lower ship mural",
+   "to": "green-to-ship recessed wall panel",
+   "how": "From the lower ship mural landing, turn left past the lower ship landing glass doors and walk up the dark stone stairs to the green-to-ship recessed wall panel."
+  },
+  {
+   "from": "lower ship mural",
+   "to": "bottom half-landing recessed wall panel",
+   "how": "From the lower ship mural landing, turn right and walk down the dark stone stairs with the arched display niches on your left to the curved wall with the bottom half-landing recessed wall panel and framed wall plaque."
+  },
+  {
+   "from": "bottom half-landing recessed wall panel",
+   "to": "lower ship mural",
+   "how": "Turn left at the bottom half-landing recessed wall panel and framed wall plaque, and walk up the dark stone stairs with the arched display niches on your right to the lower ship mural."
+  },
+  {
+   "from": "bottom half-landing recessed wall panel",
+   "to": "stone archway",
+   "how": "Turn right past the stone newel post and walk down the final steps of the dark stone stairs through the stone archway."
+  },
+  {
+   "from": "stone archway",
+   "to": "round wooden table",
+   "how": "Walk forward through the stone archway past the silver urn on the right (with the lowest elevator door, exit doorway, and black trash can further right) to the round wooden table."
+  },
+  {
+   "from": "round wooden table",
+   "to": "tan wingback armchairs",
+   "how": "Walk past the round wooden table on your right toward the brick wall with the tan wingback armchairs and arched double doors."
+  },
+  {
+   "from": "tan wingback armchairs",
+   "to": "transom doorway",
+   "how": "Loop around the round wooden table, exit the brick arch area with the dark stone stairs and purple high-back chairs on your left, and walk straight past the oval collage frame on your right through the transom doorway."
+  },
+  {
+   "from": "transom doorway",
+   "to": "blue patterned carpet",
+   "how": "Walk forward through the transom doorway onto the blue patterned carpet."
+  },
+  {
+   "from": "blue patterned carpet",
+   "to": "Dark stone stairs",
+   "how": "Turn around on the blue patterned carpet, walk back through the transom doorway past the purple high-back chairs and silver urn on your right, and turn right past the stone newel post to climb the dark stone stairs toward the bottom half-landing recessed wall panel."
+  }
+ ],
+ "walk_summary": [
+  "Start on the purple patterned carpet and walk forward onto the checkered tile floor, turning right past the red carpeted stairs and upper ship mural toward the upper elevator door.",
+  "Descend the dark stone stairs with the arched display niches on the left to the upper curved white wall, then turn around and climb back up to the checkered tile floor.",
+  "Turn around on the checkered tile floor past the upper ship mural and upper glass doors, and descend the dark stone stairs past the upper curved white wall to the landing with the statue landing lantern, statue mural, statue landing elevator door, and statue landing glass doors.",
+  "Turn around near the statue landing glass doors and climb the dark stone stairs past the upper curved white wall back to the checkered tile floor.",
+  "Pass through the upper glass doors, walk past the stacked purple chairs and wood floor opening, and climb partway up the red carpeted stairs under the green exit sign toward the purple patterned carpet.",
+  "Turn around, descend the red carpeted stairs, and turn left into the wood floor opening.",
+  "Turn around, exit the wood floor opening, and walk back through the upper glass doors past the upper elevator door onto the dark stone stairs.",
+  "Descend the dark stone stairs past the upper curved white wall and statue mural, then continue down past the statue-to-map recessed wall panel to the landing with the map mural, map landing elevator door, and map landing glass doors.",
+  "Turn around on the map mural landing, then continue descending the dark stone stairs past the map-to-green recessed wall panel to the landing with the green blocks mural.",
+  "Continue descending past the green blocks mural to the green-to-ship recessed wall panel, where the lower ship mural is visible below.",
+  "Turn around at the green-to-ship recessed wall panel, climb back up past the green blocks mural to the half-landing above it, then turn around again and descend all the way past the lower ship mural to the bottom half-landing recessed wall panel and framed wall plaque.",
+  "Turn right past the stone newel post and descend the final steps through the stone archway, looking right toward the silver urn, lowest elevator door, exit doorway, and black trash can.",
+  "Walk forward and loop around the round wooden table past the tan wingback armchairs and arched double doors.",
+  "Walk out past the purple high-back chairs and oval collage frame through the transom doorway onto the blue patterned carpet.",
+  "Turn around on the blue patterned carpet, walk back through the transom doorway past the purple high-back chairs and silver urn, and turn right onto the dark stone stairs.",
+  "Climb the dark stone stairs continuously through the bottom half-landing recessed wall panel, lower ship mural landing, green-to-ship recessed wall panel, green blocks mural landing, map-to-green recessed wall panel, and map mural landing up to the statue-to-map recessed wall panel just below the statue mural."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/k1cupFYWXJ6/frames",
+  "n_keyframes": 154,
+  "camera": "held at chest height by a person walking"
+ }
+}

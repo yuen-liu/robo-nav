@@ -1,0 +1,64 @@
+{
+ "levels": [
+  3.3
+ ],
+ "landmarks": {
+  "dark-tiled doorway": [
+   1
+  ],
+  "white toilet": [
+   1
+  ],
+  "grey floating vanity": [
+   1
+  ],
+  "glass partition": [
+   1
+  ],
+  "striped bed": [
+   1
+  ],
+  "sheer curtains": [
+   1
+  ],
+  "framed geometric art": [
+   1
+  ],
+  "glass stair railing": [
+   1
+  ],
+  "half-wall cutout": [
+   1
+  ],
+  "wavy patterned wall": [
+   1
+  ],
+  "black armchair": [
+   1
+  ],
+  "wall-mounted TV": [
+   1
+  ],
+  "white cylindrical pillar": [
+   1
+  ],
+  "white bed": [
+   1
+  ],
+  "corner sheer curtains": [
+   1
+  ],
+  "dark door": [
+   1
+  ],
+  "wooden stairs": [
+   1
+  ],
+  "double sink vanity": [
+   1
+  ],
+  "glass shower enclosure": [
+   1
+  ]
+ }
+}

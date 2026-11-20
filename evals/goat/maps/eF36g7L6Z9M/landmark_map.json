@@ -1,0 +1,884 @@
+{
+ "landmarks": [
+  {
+   "name": "upstairs stone fireplace",
+   "description": "Tall grey stone fireplace with a mounted TV and wooden mantel under a vaulted wood ceiling.",
+   "seen_at": [
+    0,
+    70,
+    109,
+    113,
+    118,
+    123,
+    125,
+    172
+   ]
+  },
+  {
+   "name": "round mirror and grey trunk",
+   "description": "Circular frameless mirror hanging on white shiplap above a grey textured storage trunk.",
+   "seen_at": [
+    2,
+    4,
+    71,
+    117,
+    126,
+    127,
+    174
+   ]
+  },
+  {
+   "name": "upstairs stair railing",
+   "description": "Dark wood railing and white half-wall with a cushioned bench beside the top of the stairs.",
+   "seen_at": [
+    2,
+    5,
+    7,
+    66,
+    67,
+    70,
+    116,
+    128,
+    146,
+    173,
+    201
+   ]
+  },
+  {
+   "name": "upstairs white sofa",
+   "description": "White slipcovered sofa with a dark console table behind it.",
+   "seen_at": [
+    1,
+    65,
+    104,
+    106,
+    109,
+    110,
+    113,
+    115,
+    120,
+    123,
+    124,
+    146,
+    148,
+    172,
+    201
+   ]
+  },
+  {
+   "name": "mirror grid wall",
+   "description": "Wall of square paned mirrors visible through a doorway at the end of the upper passage.",
+   "seen_at": [
+    3,
+    42,
+    43,
+    51,
+    71,
+    116,
+    128,
+    175
+   ]
+  },
+  {
+   "name": "tall stairwell window",
+   "description": "Tall, narrow black-framed window set in a dark grey shiplap wall at the stair landing.",
+   "seen_at": [
+    6,
+    8,
+    40,
+    73,
+    102,
+    128,
+    130,
+    144,
+    176,
+    198
+   ]
+  },
+  {
+   "name": "black exterior door",
+   "description": "Black paneled door with a dark floor mat at the bottom of the stairs.",
+   "seen_at": [
+    9,
+    11,
+    100,
+    131,
+    142,
+    195
+   ]
+  },
+  {
+   "name": "oval mirror wall",
+   "description": "White shiplap wall featuring a built-in oval mirror with a thick white frame.",
+   "seen_at": [
+    10,
+    12,
+    18,
+    37,
+    74,
+    131,
+    132,
+    178,
+    195
+   ]
+  },
+  {
+   "name": "open-riser staircase",
+   "description": "Wooden staircase with open risers and dark metal stringers.",
+   "seen_at": [
+    10,
+    13,
+    17,
+    38,
+    40,
+    73,
+    100,
+    102,
+    130,
+    141,
+    144,
+    176,
+    197
+   ]
+  },
+  {
+   "name": "mudroom corner bench",
+   "description": "Built-in wooden L-shaped bench with cushions, coat hooks, and a high shelf.",
+   "seen_at": [
+    13,
+    18,
+    100,
+    141,
+    195,
+    196
+   ]
+  },
+  {
+   "name": "downstairs white fireplace",
+   "description": "White-painted fireplace with a dark firebox and a large TV mounted above the mantel.",
+   "seen_at": [
+    14,
+    76,
+    80,
+    95,
+    134,
+    137,
+    139,
+    179
+   ]
+  },
+  {
+   "name": "grey sectional sofa",
+   "description": "Dark grey L-shaped sectional sofa with a white wicker trunk behind it and a wooden coffee table.",
+   "seen_at": [
+    15,
+    75,
+    80,
+    92,
+    94,
+    134,
+    137,
+    179,
+    195
+   ]
+  },
+  {
+   "name": "blue-grey shiplap wet bar",
+   "description": "Light wood base cabinet and wine fridge against a blue-grey shiplap wall with open shelves and a small oval mirror.",
+   "seen_at": [
+    16,
+    37,
+    76,
+    98,
+    99,
+    137,
+    140,
+    179,
+    180,
+    194
+   ]
+  },
+  {
+   "name": "yellow sleigh bed",
+   "description": "Bed with a pale yellow wooden sleigh frame and grey-and-white geometric patterned bedding.",
+   "seen_at": [
+    19,
+    23
+   ]
+  },
+  {
+   "name": "double white closet doors",
+   "description": "Pair of tall white paneled closet doors with black handles opposite the yellow bed.",
+   "seen_at": [
+    19,
+    24
+   ]
+  },
+  {
+   "name": "black-framed double window",
+   "description": "Two-pane black-framed window looking out at a stone wall and snow next to the yellow sleigh bed.",
+   "seen_at": [
+    20,
+    21
+   ]
+  },
+  {
+   "name": "metal-frame bed",
+   "description": "Bed with a thin black metal frame, white bedding, and dark wood nightstands with lamps.",
+   "seen_at": [
+    26,
+    28,
+    30,
+    31,
+    33,
+    35
+   ]
+  },
+  {
+   "name": "rustic wooden dresser and mirror",
+   "description": "Three-drawer distressed wood dresser with a large thick-framed rectangular mirror above it.",
+   "seen_at": [
+    26,
+    27,
+    32
+   ]
+  },
+  {
+   "name": "second double white closet doors",
+   "description": "Pair of white paneled closet doors with black handles beside the metal-frame bed.",
+   "seen_at": [
+    28,
+    29,
+    35
+   ]
+  },
+  {
+   "name": "checkered-floor doorway",
+   "description": "Open doorway leading to a space with a black-and-white checkered floor and a high horizontal window.",
+   "seen_at": [
+    28,
+    32,
+    33,
+    79,
+    82,
+    91,
+    193
+   ]
+  },
+  {
+   "name": "dark wood vanity on checkered floor",
+   "description": "Dark wood vanity cabinet with a white countertop and a wood-framed rectangular mirror above a black-and-white checkered floor.",
+   "seen_at": [
+    34
+   ]
+  },
+  {
+   "name": "white four-poster bed",
+   "description": "Bed with a white-painted four-poster frame and white textured bedding.",
+   "seen_at": [
+    44,
+    49
+   ]
+  },
+  {
+   "name": "white slipcovered chaise lounge",
+   "description": "White slipcovered chaise lounge with a faux-fur throw placed in a corner between black-framed windows.",
+   "seen_at": [
+    45,
+    46,
+    48
+   ]
+  },
+  {
+   "name": "black-framed double glass doors",
+   "description": "Pair of tall black-framed glass doors leading out to a deck with a dark railing beside the four-poster bed.",
+   "seen_at": [
+    44,
+    46,
+    49
+   ]
+  },
+  {
+   "name": "white vanity table with oval mirror",
+   "description": "Small white table with an open lower shelf and a white-framed oval mirror mounted on the shiplap wall above it.",
+   "seen_at": [
+    47,
+    50
+   ]
+  },
+  {
+   "name": "white double-sink vanity",
+   "description": "White cabinet vanity with black handles, a large frameless mirror, and two dark metal sconce lights above.",
+   "seen_at": [
+    52,
+    53,
+    55,
+    61
+   ]
+  },
+  {
+   "name": "tan tiled walk-in shower",
+   "description": "Walk-in shower with large tan rectangular wall tiles, a half-wall partition, and a recessed wall niche.",
+   "seen_at": [
+    52,
+    53,
+    54,
+    62
+   ]
+  },
+  {
+   "name": "freestanding white soaking tub",
+   "description": "Oval freestanding white bathtub positioned beneath a tall black-framed window.",
+   "seen_at": [
+    52,
+    55,
+    56,
+    60
+   ]
+  },
+  {
+   "name": "white desk with drawers",
+   "description": "White desk with three drawers on the left side and a white furry stool tucked underneath, beneath a black-framed window.",
+   "seen_at": [
+    57,
+    59
+   ]
+  },
+  {
+   "name": "tall rectangular wall mirror",
+   "description": "Tall vertical mirror with a thick silver frame mounted on a white shiplap wall next to the white desk.",
+   "seen_at": [
+    57,
+    58
+   ]
+  },
+  {
+   "name": "open dark paneled door",
+   "description": "Dark wood or black paneled door propped open against a white shiplap wall near the mirror grid.",
+   "seen_at": [
+    62,
+    175
+   ]
+  },
+  {
+   "name": "glass-paneled dark door",
+   "description": "Dark-framed door with two large clear glass panels propped open at a doorway near the top of the stairs.",
+   "seen_at": [
+    63,
+    71,
+    104,
+    174
+   ]
+  },
+  {
+   "name": "acrylic-leg desk and white chair",
+   "description": "Long white-topped table with ornate clear acrylic legs, a white slipcovered chair, and a white hide rug underneath.",
+   "seen_at": [
+    64,
+    65,
+    199
+   ]
+  },
+  {
+   "name": "black-framed glass doors to balcony",
+   "description": "Pair of tall black-framed glass doors looking out to a balcony railing behind the acrylic-leg desk.",
+   "seen_at": [
+    64,
+    65
+   ]
+  },
+  {
+   "name": "white front door with sidelights",
+   "description": "White vertical-plank exterior door with a black handle, flanked by two rectangular black-framed windows and a dark doormat.",
+   "seen_at": [
+    66,
+    68,
+    69,
+    115,
+    127,
+    173
+   ]
+  },
+  {
+   "name": "entryway double white closet doors",
+   "description": "Pair of white paneled closet doors with black handles located in an alcove beside the white front door.",
+   "seen_at": [
+    68,
+    105,
+    114,
+    149,
+    171,
+    202
+   ]
+  },
+  {
+   "name": "white iron bed with wreath",
+   "description": "Bed with a white metal frame, a white wicker trunk at the foot, and a round wooden wreath hanging on the wall above the headboard.",
+   "seen_at": [
+    85,
+    190,
+    192
+   ]
+  },
+  {
+   "name": "wicker armchair in corner",
+   "description": "Brown woven wicker armchair with a white seat cushion and a patterned throw pillow, tucked into a corner beside a window.",
+   "seen_at": [
+    86,
+    88,
+    192
+   ]
+  },
+  {
+   "name": "paired botanical prints on half-wall",
+   "description": "Two large vertical framed grey-and-white leaf prints hanging side-by-side on the white shiplap wall behind the upstairs white sofa.",
+   "seen_at": [
+    107,
+    108,
+    114,
+    119,
+    148,
+    201
+   ]
+  },
+  {
+   "name": "gabled window wall",
+   "description": "Wall of tall black-framed windows under a dark gabled upper section looking out onto snow, with double glass doors in the corner.",
+   "seen_at": [
+    110,
+    112,
+    120,
+    122
+   ]
+  },
+  {
+   "name": "beige armchairs and round white table",
+   "description": "Group of four beige slipcovered armchairs and a low round white table in front of the gabled window wall.",
+   "seen_at": [
+    111,
+    120,
+    122
+   ]
+  },
+  {
+   "name": "silver tripod floor lamp",
+   "description": "Floor lamp with three angled chrome legs and a large white drum shade at the corner of the upstairs white sofa.",
+   "seen_at": [
+    115,
+    125,
+    148,
+    171,
+    202
+   ]
+  },
+  {
+   "name": "downstairs black-framed glass doors",
+   "description": "Four-panel black-framed glass door unit next to the grey sectional sofa and downstairs white fireplace.",
+   "seen_at": [
+    135,
+    136,
+    137,
+    179
+   ]
+  },
+  {
+   "name": "wooden island with stools",
+   "description": "Large wooden counter with X-brace side panels, white top, and four dark metal-and-wood stools.",
+   "seen_at": [
+    150,
+    155,
+    170,
+    203
+   ]
+  },
+  {
+   "name": "range and copper hood",
+   "description": "Stainless steel double oven range beneath a tapered copper range hood and patterned tile backsplash.",
+   "seen_at": [
+    152,
+    154,
+    203
+   ]
+  },
+  {
+   "name": "white slipcovered chairs at long table",
+   "description": "Long table surrounded by tall white slipcovered chairs beneath three black-framed windows.",
+   "seen_at": [
+    151,
+    156,
+    164,
+    168,
+    169,
+    203,
+    205,
+    207,
+    209
+   ]
+  },
+  {
+   "name": "dark glass-paneled double doors",
+   "description": "Pair of dark wood doors with large glass panes set in a grey-trimmed frame next to the long table with white slipcovered chairs.",
+   "seen_at": [
+    157,
+    207,
+    208
+   ]
+  },
+  {
+   "name": "long wood table with dark chairs",
+   "description": "Long light-wood table with dark metal-framed chairs in a wood-paneled space surrounded by windows.",
+   "seen_at": [
+    159,
+    163,
+    165,
+    168
+   ]
+  },
+  {
+   "name": "metal-frame sofa",
+   "description": "Light grey cushioned sofa with an exposed dark metal frame facing the windows.",
+   "seen_at": [
+    160,
+    162,
+    165,
+    167
+   ]
+  },
+  {
+   "name": "dark shiplap wall",
+   "description": "Interior wall clad in dark grey horizontal wood planks with vertical natural wood trim posts.",
+   "seen_at": [
+    160,
+    163,
+    165,
+    167
+   ]
+  },
+  {
+   "name": "half-glass wooden exterior door",
+   "description": "Natural wood door with an X-brace lower panel and a dark upper window, set between tall windows.",
+   "seen_at": [
+    161,
+    162,
+    163
+   ]
+  },
+  {
+   "name": "second half-glass wooden door",
+   "description": "Natural wood door with an X-brace lower panel and clear upper glass, set at the far corner of the dark shiplap wall.",
+   "seen_at": [
+    165,
+    166
+   ]
+  },
+  {
+   "name": "dark mesh lounge chairs",
+   "description": "Row of low, curved dark mesh lounge chairs facing the tall gabled windows.",
+   "seen_at": [
+    165
+   ]
+  },
+  {
+   "name": "white sideboard under landscape painting",
+   "description": "White distressed cabinet on a thin metal frame beneath a framed tree painting on a dark grey shiplap accent wall.",
+   "seen_at": [
+    170,
+    205,
+    206,
+    209
+   ]
+  },
+  {
+   "name": "open white paneled doors",
+   "description": "Two white two-panel doors with black lever handles propped open on opposite sides of the narrow white passage.",
+   "seen_at": [
+    182,
+    183,
+    190,
+    192
+   ]
+  },
+  {
+   "name": "twin metal beds with blue striped bedding",
+   "description": "Two white metal-frame twin beds with blue-and-white striped bedding and framed turtle prints above the headboards.",
+   "seen_at": [
+    184,
+    188,
+    189
+   ]
+  },
+  {
+   "name": "third double white closet doors",
+   "description": "Pair of white paneled closet doors with black handles on the wall opposite the twin metal beds.",
+   "seen_at": [
+    185,
+    187
+   ]
+  },
+  {
+   "name": "window under deck",
+   "description": "Two-pane black-framed window with white trim looking out beneath wooden deck joists.",
+   "seen_at": [
+    185,
+    186,
+    189
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "upstairs white sofa",
+   "to": "round mirror and grey trunk",
+   "how": "With the upstairs white sofa on your right and the upstairs stair railing on your left, walk straight ahead to the round mirror and grey trunk."
+  },
+  {
+   "from": "round mirror and grey trunk",
+   "to": "open-riser staircase",
+   "how": "Turn left beside the round mirror and grey trunk to face the open-riser staircase."
+  },
+  {
+   "from": "open-riser staircase",
+   "to": "tall stairwell window",
+   "how": "Walk down the first flight of the open-riser staircase to the landing beneath the tall stairwell window."
+  },
+  {
+   "from": "tall stairwell window",
+   "to": "oval mirror wall",
+   "how": "Turn left at the tall stairwell window, walk down the lower flight of the open-riser staircase past the black exterior door on your left, and step straight toward the oval mirror wall."
+  },
+  {
+   "from": "oval mirror wall",
+   "to": "grey sectional sofa",
+   "how": "With the oval mirror wall on your left, walk forward into the open space with the grey sectional sofa on the left and the downstairs white fireplace on the right."
+  },
+  {
+   "from": "grey sectional sofa",
+   "to": "oval mirror wall",
+   "how": "Turn around and walk past the blue-grey shiplap wet bar on your left into the narrow passage between the mudroom corner bench on your left and the oval mirror wall on your right."
+  },
+  {
+   "from": "oval mirror wall",
+   "to": "yellow sleigh bed",
+   "how": "In the narrow passage past the oval mirror wall, turn right through the first doorway and walk between the yellow sleigh bed on your right and the double white closet doors on your left."
+  },
+  {
+   "from": "yellow sleigh bed",
+   "to": "metal-frame bed",
+   "how": "Walk past the yellow sleigh bed on your left and double white closet doors on your right out the doorway, then turn right through the doorway at the end of the passage to pass the metal-frame bed on your left."
+  },
+  {
+   "from": "metal-frame bed",
+   "to": "checkered-floor doorway",
+   "how": "Walk around the foot of the metal-frame bed toward the open checkered-floor doorway opposite the rustic wooden dresser and mirror."
+  },
+  {
+   "from": "checkered-floor doorway",
+   "to": "dark wood vanity on checkered floor",
+   "how": "Step through the checkered-floor doorway and look right to see the dark wood vanity on checkered floor."
+  },
+  {
+   "from": "checkered-floor doorway",
+   "to": "open-riser staircase",
+   "how": "Turn back from the checkered-floor doorway, cross past the foot of the metal-frame bed, exit through the corner doorway by the second double white closet doors, walk past the oval mirror wall on your left, and turn right to the open-riser staircase."
+  },
+  {
+   "from": "open-riser staircase",
+   "to": "mirror grid wall",
+   "how": "Climb the open-riser staircase, turn right at the landing with the tall stairwell window, and continue to the top of the stairs to face the mirror grid wall through the doorway ahead."
+  },
+  {
+   "from": "mirror grid wall",
+   "to": "white four-poster bed",
+   "how": "Walk past the mirror grid wall on your left and turn right into the space with the white four-poster bed on your left."
+  },
+  {
+   "from": "white four-poster bed",
+   "to": "white slipcovered chaise lounge",
+   "how": "With the white four-poster bed on your left and the black-framed double glass doors ahead on your right, walk forward to the white slipcovered chaise lounge in the corner."
+  },
+  {
+   "from": "white slipcovered chaise lounge",
+   "to": "mirror grid wall",
+   "how": "Turn around at the white slipcovered chaise lounge, walk between the black-framed double glass doors on your left and the white four-poster bed on your right, exit past the white vanity table with oval mirror on your right, and turn left to pass the mirror grid wall on your right."
+  },
+  {
+   "from": "mirror grid wall",
+   "to": "tan tiled walk-in shower",
+   "how": "With the mirror grid wall on your right, walk straight through the doorway at the end of the passage and step right into the tan tiled walk-in shower beside the white double-sink vanity."
+  },
+  {
+   "from": "tan tiled walk-in shower",
+   "to": "freestanding white soaking tub",
+   "how": "Step out of the tan tiled walk-in shower and walk past the white double-sink vanity on your right toward the freestanding white soaking tub ahead."
+  },
+  {
+   "from": "freestanding white soaking tub",
+   "to": "white desk with drawers",
+   "how": "Before reaching the freestanding white soaking tub, turn right through the doorway beside the white double-sink vanity to reach the white desk with drawers and tall rectangular wall mirror."
+  },
+  {
+   "from": "white desk with drawers",
+   "to": "acrylic-leg desk and white chair",
+   "how": "Exit the doorway from the white desk with drawers, walk straight past the freestanding white soaking tub on your right and the white double-sink vanity and tan tiled walk-in shower on your left, pass the open dark paneled door on your left, and turn left through the doorway with the glass-paneled dark door on your right to face the acrylic-leg desk and white chair."
+  },
+  {
+   "from": "acrylic-leg desk and white chair",
+   "to": "white front door with sidelights",
+   "how": "Turn right to exit past the glass-paneled dark door and walk straight with the upstairs stair railing on your right toward the white front door with sidelights and entryway double white closet doors."
+  },
+  {
+   "from": "white front door with sidelights",
+   "to": "open-riser staircase",
+   "how": "Turn right at the white front door with sidelights, walk along the upstairs stair railing on your left and the upstairs stone fireplace and round mirror and grey trunk on your right, and turn left at the end of the railing onto the open-riser staircase."
+  },
+  {
+   "from": "open-riser staircase",
+   "to": "blue-grey shiplap wet bar",
+   "how": "Walk down the open-riser staircase past the tall stairwell window, turn left at the bottom past the oval mirror wall on your left, and walk forward past the blue-grey shiplap wet bar on your right."
+  },
+  {
+   "from": "blue-grey shiplap wet bar",
+   "to": "checkered-floor doorway",
+   "how": "At the end of the blue-grey shiplap wet bar, turn right into the narrow passage and turn right again at the checkered-floor doorway."
+  },
+  {
+   "from": "checkered-floor doorway",
+   "to": "white iron bed with wreath",
+   "how": "From the checkered-floor doorway, turn left to walk down the narrow wood-floored passage and step left through the open doorway to see the white iron bed with wreath and wicker armchair in corner."
+  },
+  {
+   "from": "white iron bed with wreath",
+   "to": "grey sectional sofa",
+   "how": "Exit the doorway from the white iron bed with wreath, turn right down the narrow passage toward the checkered-floor doorway, and turn left into the open area with the grey sectional sofa and downstairs white fireplace."
+  },
+  {
+   "from": "grey sectional sofa",
+   "to": "open-riser staircase",
+   "how": "Walk past the downstairs white fireplace and blue-grey shiplap wet bar on your left toward the mudroom corner bench ahead, then turn left onto the open-riser staircase."
+  },
+  {
+   "from": "open-riser staircase",
+   "to": "upstairs white sofa",
+   "how": "Climb the two flights of the open-riser staircase past the tall stairwell window and turn right at the top to reach the upstairs white sofa."
+  },
+  {
+   "from": "upstairs white sofa",
+   "to": "gabled window wall",
+   "how": "Walk behind the upstairs white sofa with the sofa on your left and the paired botanical prints on half-wall on your right straight toward the gabled window wall and beige armchairs and round white table."
+  },
+  {
+   "from": "gabled window wall",
+   "to": "round mirror and grey trunk",
+   "how": "Turn around at the gabled window wall, walk with the paired botanical prints on half-wall on your left and the upstairs white sofa and silver tripod floor lamp on your right, then turn right around the sofa toward the round mirror and grey trunk."
+  },
+  {
+   "from": "round mirror and grey trunk",
+   "to": "beige armchairs and round white table",
+   "how": "With the round mirror and grey trunk on your left, curve right past the upstairs stone fireplace on your left and the upstairs white sofa on your right toward the beige armchairs and round white table in front of the gabled window wall."
+  },
+  {
+   "from": "beige armchairs and round white table",
+   "to": "open-riser staircase",
+   "how": "Turn around at the beige armchairs and round white table, walk between the upstairs white sofa on your left and the upstairs stone fireplace on your right, turn right then left past the round mirror and grey trunk on your right to the top of the open-riser staircase."
+  },
+  {
+   "from": "oval mirror wall",
+   "to": "downstairs black-framed glass doors",
+   "how": "With the oval mirror wall on your left, walk forward between the grey sectional sofa on your left and the downstairs white fireplace on your right to the downstairs black-framed glass doors ahead."
+  },
+  {
+   "from": "downstairs black-framed glass doors",
+   "to": "open-riser staircase",
+   "how": "Turn right in front of the downstairs black-framed glass doors and walk straight past the downstairs white fireplace and blue-grey shiplap wet bar on your left toward the mudroom corner bench, then turn left onto the open-riser staircase."
+  },
+  {
+   "from": "upstairs white sofa",
+   "to": "wooden island with stools",
+   "how": "With the upstairs white sofa, paired botanical prints on half-wall, and silver tripod floor lamp on your left and the entryway double white closet doors on your right, walk straight ahead to the wooden island with stools."
+  },
+  {
+   "from": "wooden island with stools",
+   "to": "range and copper hood",
+   "how": "Pass the wooden island with stools on your left and curve left to face the range and copper hood."
+  },
+  {
+   "from": "range and copper hood",
+   "to": "white slipcovered chairs at long table",
+   "how": "Turn right with the range and copper hood on your left and walk around the wooden island with stools on your right toward the white slipcovered chairs at long table and dark glass-paneled double doors."
+  },
+  {
+   "from": "white slipcovered chairs at long table",
+   "to": "half-glass wooden exterior door",
+   "how": "Pass through the open doorway beside the white slipcovered chairs at long table, walk between the long wood table with dark chairs on your right and the dark shiplap wall and metal-frame sofa on your left, and continue straight to the half-glass wooden exterior door."
+  },
+  {
+   "from": "half-glass wooden exterior door",
+   "to": "second half-glass wooden door",
+   "how": "With the half-glass wooden exterior door and dark mesh lounge chairs on your right and the metal-frame sofa and dark shiplap wall on your left, walk forward to the second half-glass wooden door."
+  },
+  {
+   "from": "second half-glass wooden door",
+   "to": "white slipcovered chairs at long table",
+   "how": "Turn around from the second half-glass wooden door, walk with the dark shiplap wall on your right and the metal-frame sofa and long wood table with dark chairs on your left, and turn right through the wide opening to the white slipcovered chairs at long table."
+  },
+  {
+   "from": "white slipcovered chairs at long table",
+   "to": "open-riser staircase",
+   "how": "With the white slipcovered chairs at long table, white sideboard under landscape painting, entryway double white closet doors, white front door with sidelights, and upstairs stair railing on your left, and the wooden island with stools, silver tripod floor lamp, upstairs white sofa, and round mirror and grey trunk on your right, walk straight ahead and turn left onto the open-riser staircase."
+  },
+  {
+   "from": "blue-grey shiplap wet bar",
+   "to": "twin metal beds with blue striped bedding",
+   "how": "At the end of the blue-grey shiplap wet bar, turn left then right into the narrow white passage between the open white paneled doors, and turn left through the doorway to walk between the twin metal beds with blue striped bedding on your left and the third double white closet doors on your right toward the window under deck."
+  },
+  {
+   "from": "twin metal beds with blue striped bedding",
+   "to": "open-riser staircase",
+   "how": "Walk past the twin metal beds with blue striped bedding on your right out the doorway, turn right between the open white paneled doors down the narrow passage past the checkered-floor doorway and blue-grey shiplap wet bar on your left, and turn left in front of the mudroom corner bench onto the open-riser staircase."
+  },
+  {
+   "from": "wooden island with stools",
+   "to": "white sideboard under landscape painting",
+   "how": "Walking past the entryway double white closet doors on your right and the wooden island with stools on your left toward the white slipcovered chairs at long table, turn right to face the white sideboard under landscape painting."
+  },
+  {
+   "from": "white sideboard under landscape painting",
+   "to": "dark glass-paneled double doors",
+   "how": "Turn left from the white sideboard under landscape painting and walk straight with the white slipcovered chairs at long table on your left to the dark glass-paneled double doors ahead."
+  }
+ ],
+ "walk_summary": [
+  "Start by walking past the upstairs white sofa and round mirror and grey trunk on the right and the upstairs stair railing on the left toward the mirror grid wall.",
+  "Turn left at the end of the upstairs stair railing and walk down the open-riser staircase past the tall stairwell window and black exterior door toward the oval mirror wall.",
+  "Turn right to check the open-riser staircase and mudroom corner bench, then walk into the open area toward the downstairs white fireplace and grey sectional sofa.",
+  "Turn around, walk past the blue-grey shiplap wet bar on the left, and enter the narrow passage between the mudroom corner bench and oval mirror wall.",
+  "Turn right through the first doorway and walk between the yellow sleigh bed and double white closet doors to the black-framed double window, then turn around and exit.",
+  "Turn right into the end room and walk past the metal-frame bed to the rustic wooden dresser and mirror, then walk back along the second double white closet doors and around the bed to look through the checkered-floor doorway at the dark wood vanity on checkered floor.",
+  "Exit past the second double white closet doors, walk past the oval mirror wall, and climb the open-riser staircase past the tall stairwell window to the upper level.",
+  "Walk past the mirror grid wall on the left and turn right past the white four-poster bed and black-framed double glass doors to the white slipcovered chaise lounge.",
+  "Turn around, exit past the white four-poster bed and white vanity table with oval mirror, turn left past the mirror grid wall, and walk into the tan tiled walk-in shower.",
+  "Step out of the tan tiled walk-in shower past the white double-sink vanity toward the freestanding white soaking tub, then turn right through the doorway to the white desk with drawers and tall rectangular wall mirror.",
+  "Turn around and walk straight out past the freestanding white soaking tub, white double-sink vanity, tan tiled walk-in shower, and open dark paneled door, then turn left past the glass-paneled dark door to the acrylic-leg desk and white chair and black-framed glass doors to balcony.",
+  "Turn right to exit and walk along the upstairs stair railing to the white front door with sidelights and entryway double white closet doors.",
+  "Turn right and walk past the upstairs stair railing, upstairs stone fireplace, and round mirror and grey trunk, then turn left down the open-riser staircase past the tall stairwell window and oval mirror wall.",
+  "Walk past the blue-grey shiplap wet bar, turn right into the narrow passage to look into the checkered-floor doorway, then turn around and walk down the adjacent narrow passage into the doorway with the white iron bed with wreath and wicker armchair in corner.",
+  "Exit the doorway, turn right then left into the open area with the grey sectional sofa and downstairs white fireplace, then turn around and walk past the blue-grey shiplap wet bar and mudroom corner bench to climb the open-riser staircase.",
+  "At the top of the stairs, turn right and walk behind the upstairs white sofa along the paired botanical prints on half-wall toward the gabled window wall and beige armchairs and round white table.",
+  "Turn around at the gabled window wall, walk back past the paired botanical prints on half-wall and silver tripod floor lamp, turn right past the round mirror and grey trunk, and curve right past the upstairs stone fireplace to the beige armchairs and round white table.",
+  "Turn around between the beige armchairs and round white table, walk between the upstairs white sofa and upstairs stone fireplace, and go past the round mirror and grey trunk down the open-riser staircase.",
+  "At the bottom of the stairs, walk past the oval mirror wall, grey sectional sofa, and downstairs white fireplace to the downstairs black-framed glass doors.",
+  "Turn right and walk back past the downstairs white fireplace and blue-grey shiplap wet bar to climb the open-riser staircase to the upper floor.",
+  "Walk straight past the upstairs white sofa, paired botanical prints on half-wall, silver tripod floor lamp, and entryway double white closet doors to the wooden island with stools and range and copper hood.",
+  "Turn right around the wooden island with stools, walk past the white slipcovered chairs at long table and dark glass-paneled double doors through the doorway into the wood-paneled space, and pass the long wood table with dark chairs, dark shiplap wall, and metal-frame sofa to the half-glass wooden exterior door and second half-glass wooden door.",
+  "Turn around and walk back along the dark shiplap wall, turn right past the white slipcovered chairs at long table, wooden island with stools, white sideboard under landscape painting, entryway double white closet doors, white front door with sidelights, and round mirror and grey trunk, and descend the open-riser staircase.",
+  "Curve left past the oval mirror wall and blue-grey shiplap wet bar, turn into the narrow passage between the open white paneled doors, and enter the room on the left to walk between the twin metal beds with blue striped bedding and third double white closet doors to the window under deck.",
+  "Turn around, exit into the narrow passage, glance at the white iron bed with wreath and wicker armchair in corner, and walk out past the checkered-floor doorway and blue-grey shiplap wet bar to climb the open-riser staircase.",
+  "Turn right at the top of the stairs, walk past the upstairs white sofa, entryway double white closet doors, and wooden island with stools, turn right to face the white sideboard under landscape painting, and then walk along the white slipcovered chairs at long table to the dark glass-paneled double doors."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/eF36g7L6Z9M/frames",
+  "n_keyframes": 210,
+  "camera": "held at chest height by a person walking"
+ }
+}

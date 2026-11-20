@@ -1,0 +1,390 @@
+{
+ "landmarks": [
+  {
+   "name": "ping pong table",
+   "description": "Gray-topped table with white base sitting on a chevron-patterned rug.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    48,
+    49,
+    50,
+    51
+   ]
+  },
+  {
+   "name": "live-edge wooden coffee table",
+   "description": "Long natural wood slab coffee table on the tan tile floor.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "gray sectional sofa",
+   "description": "Dark gray L-shaped sofa along the windowed wall.",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "tall black cabinet",
+   "description": "Black rectangular cabinet against the wall near the windows.",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "round table with white chairs",
+   "description": "Small table flanked by white upholstered chairs.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    48,
+    49
+   ]
+  },
+  {
+   "name": "built-in bench with blue cushion",
+   "description": "White L-shaped corner seating with dark blue cushions behind the round table.",
+   "seen_at": [
+    8,
+    9,
+    10,
+    14,
+    48,
+    49
+   ]
+  },
+  {
+   "name": "stainless trash can",
+   "description": "Rectangular metal trash bin at the end of the black-topped counter.",
+   "seen_at": [
+    2,
+    3,
+    23,
+    24,
+    48,
+    49
+   ]
+  },
+  {
+   "name": "stainless refrigerator",
+   "description": "Double-door stainless steel fridge recessed in white cabinetry.",
+   "seen_at": [
+    2,
+    3,
+    4,
+    5,
+    9,
+    10,
+    11,
+    13
+   ]
+  },
+  {
+   "name": "black-topped counter",
+   "description": "White base cabinets with a dark countertop and bar overhang.",
+   "seen_at": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    48,
+    49,
+    50
+   ]
+  },
+  {
+   "name": "white oven",
+   "description": "Built-in white oven under a cooktop in the white cabinetry.",
+   "seen_at": [
+    4,
+    5,
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "name": "gray barstools",
+   "description": "Three gray cushioned metal-legged stools under the counter overhang.",
+   "seen_at": [
+    6,
+    7,
+    8,
+    9,
+    49,
+    50,
+    53
+   ]
+  },
+  {
+   "name": "fireplace",
+   "description": "Light stone fireplace opening under a rectangular painting.",
+   "seen_at": [
+    6,
+    7,
+    49,
+    50,
+    51,
+    52
+   ]
+  },
+  {
+   "name": "spiral staircase",
+   "description": "Chrome and dark-tread spiral stairs with white vertical railing in an alcove off the narrow passage.",
+   "seen_at": [
+    14,
+    15,
+    19,
+    20,
+    21,
+    22,
+    23,
+    38,
+    39,
+    44,
+    45,
+    46,
+    47
+   ]
+  },
+  {
+   "name": "dark brown door",
+   "description": "Dark wood-paneled door with a keypad lock next to the base of the spiral staircase.",
+   "seen_at": [
+    21,
+    22,
+    23,
+    24,
+    44,
+    45
+   ]
+  },
+  {
+   "name": "white bunk beds with dark curtains",
+   "description": "First set of two white wooden bunk beds flanking dark brown window curtains opposite the spiral staircase.",
+   "seen_at": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    40,
+    41,
+    42,
+    43
+   ]
+  },
+  {
+   "name": "diagonal wood-and-white wall",
+   "description": "Wall split diagonally between tan wood grain below and white above, inside the first bunk bed space.",
+   "seen_at": [
+    16,
+    17,
+    19,
+    20,
+    40,
+    41
+   ]
+  },
+  {
+   "name": "mirrored closet doors",
+   "description": "Sliding mirror doors spanning the wall opposite the first set of white bunk beds.",
+   "seen_at": [
+    42,
+    43
+   ]
+  },
+  {
+   "name": "pink-and-black text canvas",
+   "description": "Square wall art with black lettering over pink ribbons, next to a white electrical panel in the narrow passage.",
+   "seen_at": [
+    25,
+    26,
+    27
+   ]
+  },
+  {
+   "name": "square black-framed mirror",
+   "description": "Small square mirror with a thick dark frame next to a white door at the end of the narrow passage.",
+   "seen_at": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "second set of white bunk beds",
+   "description": "Second pair of white wooden bunk beds with a ladder and dark curtains at the end of the narrow passage.",
+   "seen_at": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "striped wall hanging",
+   "description": "Vertical multi-colored horizontal-striped textile next to the side doorway, with an upright vacuum in front of it.",
+   "seen_at": [
+    32,
+    33,
+    34
+   ]
+  },
+  {
+   "name": "white vanity with mirror",
+   "description": "White cabinet vanity visible through an open side doorway near the second set of bunk beds.",
+   "seen_at": [
+    28,
+    29,
+    33,
+    34,
+    35,
+    36
+   ]
+  },
+  {
+   "name": "tiled shower enclosure",
+   "description": "Walk-in shower with tan stone tiles, decorative diamond border tile, and glass doors opposite the white vanity.",
+   "seen_at": [
+    35,
+    36
+   ]
+  },
+  {
+   "name": "framed yellow jersey",
+   "description": "Yellow sports jersey with number 10 in a black frame on the corner wall beside the window.",
+   "seen_at": [
+    51,
+    52,
+    53
+   ]
+  },
+  {
+   "name": "wall-mounted TV and white console",
+   "description": "Large flat-screen TV mounted above a distressed white open-shelf media console next to the fireplace.",
+   "seen_at": [
+    51,
+    52,
+    53
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "ping pong table",
+   "to": "stainless trash can",
+   "how": "Cross the tan tile floor between the ping pong table on your left and the live-edge wooden coffee table and gray sectional sofa on your right, heading toward the round table with white chairs and the end of the black-topped counter."
+  },
+  {
+   "from": "stainless trash can",
+   "to": "white oven",
+   "how": "Step past the stainless trash can and turn left between the black-topped counter on your left and the stainless refrigerator on your right."
+  },
+  {
+   "from": "black-topped counter",
+   "to": "stainless refrigerator",
+   "how": "Circle around the outside of the black-topped counter with the gray barstools on your left and the ping pong table and built-in bench with blue cushion on your right until facing the stainless refrigerator."
+  },
+  {
+   "from": "stainless refrigerator",
+   "to": "spiral staircase",
+   "how": "With the black-topped counter and stainless trash can behind you and the built-in bench with blue cushion on your right, walk forward into the narrow white-walled passage where the spiral staircase opens on your left."
+  },
+  {
+   "from": "spiral staircase",
+   "to": "white bunk beds with dark curtains",
+   "how": "From the spiral staircase on the left of the narrow passage, turn into the open doorway on the right-hand side (when facing back toward the passage) or left-hand side (when coming from the built-in bench) past the diagonal wood-and-white wall."
+  },
+  {
+   "from": "white bunk beds with dark curtains",
+   "to": "spiral staircase",
+   "how": "Pass the mirrored closet doors and diagonal wood-and-white wall and step straight out through the doorway toward the spiral staircase and dark brown door."
+  },
+  {
+   "from": "spiral staircase",
+   "to": "second set of white bunk beds",
+   "how": "With the spiral staircase and dark brown door behind you on the left, turn into the narrow white-walled passage, pass the pink-and-black text canvas on the left, go through the doorway by the square black-framed mirror, and turn right."
+  },
+  {
+   "from": "second set of white bunk beds",
+   "to": "white vanity with mirror",
+   "how": "Turn around from between the second set of white bunk beds, pass the square black-framed mirror on your right, and walk past the striped wall hanging through the open doorway on the right."
+  },
+  {
+   "from": "white vanity with mirror",
+   "to": "second set of white bunk beds",
+   "how": "With the tiled shower enclosure on your right and the white vanity with mirror on your left, step out through the doorway toward the second set of white bunk beds."
+  },
+  {
+   "from": "second set of white bunk beds",
+   "to": "spiral staircase",
+   "how": "Exit the doorway beside the second set of white bunk beds by turning right into the narrow passage and walking straight ahead to the spiral staircase."
+  },
+  {
+   "from": "spiral staircase",
+   "to": "fireplace",
+   "how": "With the spiral staircase and dark brown door on your right, walk out of the narrow passage between the round table with white chairs on your left and the stainless trash can and black-topped counter on your right, then angle right past the gray barstools."
+  },
+  {
+   "from": "fireplace",
+   "to": "wall-mounted TV and white console",
+   "how": "Walk forward with the fireplace on your right and the ping pong table behind on your left toward the corner with the framed yellow jersey and the wall-mounted TV and white console."
+  }
+ ],
+ "walk_summary": [
+  "Start between the ping pong table on the left and the live-edge wooden coffee table and gray sectional sofa on the right, and walk across the tan tile floor toward the stainless trash can and round table with white chairs.",
+  "Turn left between the black-topped counter and the stainless refrigerator toward the white oven.",
+  "Circle around the black-topped counter and gray barstools past the ping pong table, fireplace, and built-in bench with blue cushion to face the stainless refrigerator again.",
+  "Step between the black-topped counter and the white oven, then turn around to face the stainless refrigerator.",
+  "Walk past the built-in bench with blue cushion on the right into the narrow passage, passing the spiral staircase on the left.",
+  "Turn through the doorway past the diagonal wood-and-white wall to the white bunk beds with dark curtains, circle inside, and look back out at the spiral staircase.",
+  "Step out to the alcove with the spiral staircase and dark brown door, then turn into the narrow passage.",
+  "Walk down the narrow passage past the pink-and-black text canvas on the left toward the square black-framed mirror.",
+  "Pass the open doorway showing the white vanity with mirror on the left and turn right to walk between the second set of white bunk beds.",
+  "Turn around, walk past the second set of white bunk beds and the square black-framed mirror toward the striped wall hanging, and step through the doorway between the tiled shower enclosure and the white vanity with mirror.",
+  "Turn around to exit past the white vanity with mirror and turn right through the doorway past the second set of white bunk beds back into the narrow passage.",
+  "Walk down the passage toward the spiral staircase and detour into the space with the diagonal wood-and-white wall, white bunk beds with dark curtains, and mirrored closet doors.",
+  "Exit the bunk bed doorway to the spiral staircase and dark brown door, climb a few treads up the spiral staircase, and turn back down.",
+  "Walk out of the narrow passage between the round table with white chairs and built-in bench with blue cushion on the left and the stainless trash can, black-topped counter, and gray barstools on the right.",
+  "Continue past the fireplace on the right and ping pong table on the left to the corner with the framed yellow jersey and the wall-mounted TV and white console, then turn right toward the gray barstools."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/y9hTuugGdiq/frames",
+  "n_keyframes": 54,
+  "camera": "held at chest height by a person walking"
+ }
+}

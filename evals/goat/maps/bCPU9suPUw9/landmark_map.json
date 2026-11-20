@@ -1,0 +1,435 @@
+{
+ "landmarks": [
+  {
+   "name": "grey sectional sofa",
+   "description": "Large L-shaped grey fabric sofa with patterned throw pillows on a wood floor.",
+   "seen_at": [
+    0,
+    1,
+    2,
+    6,
+    30,
+    31,
+    32
+   ]
+  },
+  {
+   "name": "wooden staircase going up",
+   "description": "Unbanistered wooden steps with dark brown wooden handrails leading to an upper level.",
+   "seen_at": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    12,
+    33,
+    34
+   ]
+  },
+  {
+   "name": "dark wooden table and chairs",
+   "description": "Dark wood rectangular table with matching chairs on the wood floor.",
+   "seen_at": [
+    4,
+    5,
+    29,
+    30,
+    32,
+    33
+   ]
+  },
+  {
+   "name": "wooden railing for downward stairs",
+   "description": "Dark stained wooden railing bordering the stairwell going down.",
+   "seen_at": [
+    3,
+    5,
+    6,
+    13,
+    14,
+    28,
+    29,
+    33,
+    34
+   ]
+  },
+  {
+   "name": "sliding glass door",
+   "description": "Wide glass patio door on the far wall past the grey sectional sofa.",
+   "seen_at": [
+    6,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "white bi-fold doors",
+   "description": "White paneled bi-fold closet doors on the left wall of the white tiled area.",
+   "seen_at": [
+    7,
+    8,
+    34
+   ]
+  },
+  {
+   "name": "wooden door with oval glass",
+   "description": "Brown wood exterior door featuring an oval decorative glass insert.",
+   "seen_at": [
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "name": "toilet",
+   "description": "White toilet visible inside a small room with beige wall and floor tiles.",
+   "seen_at": [
+    8,
+    9
+   ]
+  },
+  {
+   "name": "stainless steel refrigerator",
+   "description": "Double-door stainless steel refrigerator next to a recessed window.",
+   "seen_at": [
+    10,
+    11
+   ]
+  },
+  {
+   "name": "wooden cabinets",
+   "description": "Light brown wood upper and lower cabinets with a tiled backsplash, oven, and microwave.",
+   "seen_at": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "name": "black dishwasher",
+   "description": "Black front-panel dishwasher under the counter next to the sink.",
+   "seen_at": [
+    11
+   ]
+  },
+  {
+   "name": "carpeted stairs",
+   "description": "Beige carpeted staircase with a dark wooden handrail leading between the wood-floored level and the lower tiled level.",
+   "seen_at": [
+    13,
+    14,
+    15,
+    27,
+    28,
+    29,
+    35,
+    36,
+    39
+   ]
+  },
+  {
+   "name": "black refrigerator",
+   "description": "Full-size black refrigerator at the bottom of the carpeted stairs next to a doorway.",
+   "seen_at": [
+    14,
+    15,
+    16,
+    35,
+    40,
+    47,
+    48
+   ]
+  },
+  {
+   "name": "round wooden table",
+   "description": "Round wooden table with four chairs on a tiled floor in the lower level.",
+   "seen_at": [
+    14,
+    15,
+    26,
+    27,
+    35,
+    36,
+    41,
+    42,
+    46,
+    47
+   ]
+  },
+  {
+   "name": "bed with white metal headboard",
+   "description": "Bed with a white scrolled metal headboard and light purple coverlet.",
+   "seen_at": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    39
+   ]
+  },
+  {
+   "name": "striped dresser",
+   "description": "Chest of drawers with a vertical multi-colored striped finish.",
+   "seen_at": [
+    17,
+    19,
+    20
+   ]
+  },
+  {
+   "name": "grey curtains",
+   "description": "Floor-length dark grey curtains hanging on the wall beside the bed with white metal headboard.",
+   "seen_at": [
+    17,
+    18
+   ]
+  },
+  {
+   "name": "wooden vanity with mirror",
+   "description": "Brown wooden cabinet with a sink and oval mirror, visible through an open doorway.",
+   "seen_at": [
+    19
+   ]
+  },
+  {
+   "name": "dark wooden armoire",
+   "description": "Tall reddish-brown wooden wardrobe standing in the corner near the bed with white metal headboard.",
+   "seen_at": [
+    20,
+    21,
+    24,
+    25
+   ]
+  },
+  {
+   "name": "grey armchair",
+   "description": "Tufted grey fabric armchair near the doorway by the bed.",
+   "seen_at": [
+    22,
+    23
+   ]
+  },
+  {
+   "name": "white louvered closet doors",
+   "description": "Tall white slatted bi-fold doors next to the striped dresser.",
+   "seen_at": [
+    22,
+    23
+   ]
+  },
+  {
+   "name": "white and wood wall unit",
+   "description": "Large white and wood-trimmed entertainment center against the wall near the sliding glass door.",
+   "seen_at": [
+    31
+   ]
+  },
+  {
+   "name": "lower sliding glass door",
+   "description": "Glass sliding door on the lower level with a black frame.",
+   "seen_at": [
+    36,
+    37,
+    42,
+    43
+   ]
+  },
+  {
+   "name": "dark grey futon",
+   "description": "Arched-back dark grey fabric futon sofa against the white brick-patterned wall.",
+   "seen_at": [
+    36,
+    37,
+    41,
+    42,
+    44
+   ]
+  },
+  {
+   "name": "round yellow coffee tables",
+   "description": "Pair of small round light-wood/yellowish nesting tables on a striped rug.",
+   "seen_at": [
+    36,
+    37,
+    41
+   ]
+  },
+  {
+   "name": "yellow-framed shelf unit",
+   "description": "Low wooden shelf unit with a yellow top/frame holding light-colored storage baskets.",
+   "seen_at": [
+    36,
+    37,
+    38
+   ]
+  },
+  {
+   "name": "round grey chairs",
+   "description": "Two dark grey rounded tub chairs with cutout backs against the stair wall.",
+   "seen_at": [
+    38,
+    39
+   ]
+  },
+  {
+   "name": "white lower level cabinets",
+   "description": "White upper and lower cabinets with a countertop next to the black refrigerator.",
+   "seen_at": [
+    40,
+    41,
+    47,
+    48
+   ]
+  },
+  {
+   "name": "small black cabinet",
+   "description": "Small black wooden floor cabinet in the corner next to the lower sliding glass door.",
+   "seen_at": [
+    42,
+    43
+   ]
+  },
+  {
+   "name": "landscape painting",
+   "description": "Square green and blue painting hanging on the wall above the small black cabinet.",
+   "seen_at": [
+    42,
+    43
+   ]
+  },
+  {
+   "name": "white paneled closet doors",
+   "description": "Row of white six-panel closet doors along the wall near the round wooden table.",
+   "seen_at": [
+    43,
+    44,
+    45,
+    46
+   ]
+  },
+  {
+   "name": "white paneled door",
+   "description": "Closed white six-panel interior door between the black refrigerator and the white lower level cabinets.",
+   "seen_at": [
+    48,
+    49
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "grey sectional sofa",
+   "to": "wooden staircase going up",
+   "how": "Turn left from the grey sectional sofa to face the wooden staircase going up."
+  },
+  {
+   "from": "wooden staircase going up",
+   "to": "dark wooden table and chairs",
+   "how": "Turn right with the wooden staircase going up on your left to see the dark wooden table and chairs."
+  },
+  {
+   "from": "dark wooden table and chairs",
+   "to": "wooden door with oval glass",
+   "how": "Turn left past the wooden railing for downward stairs and walk straight over the white floor tiles, passing the white bi-fold doors on your left and the toilet through a doorway on your left."
+  },
+  {
+   "from": "wooden door with oval glass",
+   "to": "stainless steel refrigerator",
+   "how": "Step forward into the tiled area with wooden cabinets on the right and black dishwasher on the left to reach the stainless steel refrigerator."
+  },
+  {
+   "from": "stainless steel refrigerator",
+   "to": "carpeted stairs",
+   "how": "Turn around and exit past the wooden cabinets, then turn left at the wooden railing for downward stairs to go down the carpeted stairs."
+  },
+  {
+   "from": "carpeted stairs",
+   "to": "black refrigerator",
+   "how": "Walk down the carpeted stairs to the tiled floor at the bottom, where the black refrigerator is ahead on the left."
+  },
+  {
+   "from": "black refrigerator",
+   "to": "bed with white metal headboard",
+   "how": "Turn left through the doorway right next to the black refrigerator to find the bed with white metal headboard."
+  },
+  {
+   "from": "bed with white metal headboard",
+   "to": "grey curtains",
+   "how": "Walk forward past the bed with white metal headboard on your right and the striped dresser on your left to reach the grey curtains."
+  },
+  {
+   "from": "grey curtains",
+   "to": "dark wooden armoire",
+   "how": "Turn around and walk back along the side of the bed with white metal headboard on your left, passing the striped dresser and open doorway to the wooden vanity with mirror on your right, toward the dark wooden armoire in the corner."
+  },
+  {
+   "from": "dark wooden armoire",
+   "to": "white louvered closet doors",
+   "how": "Turn around to face across the room past the grey armchair on your left toward the white louvered closet doors."
+  },
+  {
+   "from": "white louvered closet doors",
+   "to": "carpeted stairs",
+   "how": "Turn right past the bed with white metal headboard and dark wooden armoire, exit through the doorway toward the round wooden table, and turn right to face the carpeted stairs."
+  },
+  {
+   "from": "carpeted stairs",
+   "to": "dark wooden table and chairs",
+   "how": "Walk up the carpeted stairs with the wooden railing for downward stairs on your left to reach the dark wooden table and chairs at the top."
+  },
+  {
+   "from": "dark wooden table and chairs",
+   "to": "sliding glass door",
+   "how": "At the top of the stairs, turn right past the grey sectional sofa to face the sliding glass door and the white and wood wall unit."
+  },
+  {
+   "from": "sliding glass door",
+   "to": "carpeted stairs",
+   "how": "Turn left past the grey sectional sofa, dark wooden table and chairs, and wooden staircase going up, then turn left at the white bi-fold doors and wooden railing for downward stairs to go down the carpeted stairs."
+  },
+  {
+   "from": "carpeted stairs",
+   "to": "dark grey futon",
+   "how": "Walk down the carpeted stairs passing the black refrigerator and round wooden table on the left, continuing straight into the area with the lower sliding glass door, yellow-framed shelf unit, round yellow coffee tables, and dark grey futon."
+  },
+  {
+   "from": "dark grey futon",
+   "to": "lower sliding glass door",
+   "how": "After rotating past the yellow-framed shelf unit, round grey chairs, carpeted stairs, black refrigerator, and white lower level cabinets, walk forward past the round wooden table on the left toward the lower sliding glass door and small black cabinet with the landscape painting above it."
+  },
+  {
+   "from": "lower sliding glass door",
+   "to": "white paneled door",
+   "how": "Turn right past the dark grey futon, then turn right again to walk past the white paneled closet doors, round wooden table, and white lower level cabinets on the right and the black refrigerator on the left to reach the closed white paneled door ahead."
+  }
+ ],
+ "walk_summary": [
+  "Start by moving toward the grey sectional sofa with the wooden staircase going up on the left.",
+  "Turn left toward the wooden staircase going up, right toward the dark wooden table and chairs, and briefly back toward the sliding glass door.",
+  "Turn around and walk across the white tiled floor past the white bi-fold doors and the doorway showing a toilet on the left to the wooden door with oval glass.",
+  "Step into the tiled area with wooden cabinets, a black dishwasher, and a stainless steel refrigerator, then turn around and exit.",
+  "Turn left at the wooden railing for downward stairs and walk down the carpeted stairs toward the black refrigerator and round wooden table.",
+  "Turn left through the doorway next to the black refrigerator, walking past the bed with white metal headboard and striped dresser to the grey curtains.",
+  "Turn around and walk past the bed with white metal headboard and the doorway to the wooden vanity with mirror toward the dark wooden armoire.",
+  "Circle past the grey armchair and white louvered closet doors, then exit the doorway toward the round wooden table.",
+  "Turn right and walk up the carpeted stairs to the wood-floored level by the dark wooden table and chairs and grey sectional sofa.",
+  "Pan right toward the sliding glass door and white and wood wall unit, then turn back left past the wooden staircase going up and white bi-fold doors.",
+  "Turn left at the landing and walk back down the carpeted stairs past the black refrigerator and round wooden table.",
+  "Enter the area with the lower sliding glass door, dark grey futon, round yellow coffee tables, and yellow-framed shelf unit, and turn in a full clockwise circle past the round grey chairs, carpeted stairs, black refrigerator, and white lower level cabinets.",
+  "Walk past the round wooden table toward the lower sliding glass door, small black cabinet, and landscape painting.",
+  "Turn right past the white paneled closet doors, round wooden table, white lower level cabinets, and black refrigerator to stop at the closed white paneled door."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/bCPU9suPUw9/frames",
+  "n_keyframes": 50,
+  "camera": "held at chest height by a person walking"
+ }
+}

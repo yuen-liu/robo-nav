@@ -1,0 +1,308 @@
+{
+ "landmarks": [
+  {
+   "name": "red armchair",
+   "description": "wooden armchair with red cushioned seat",
+   "seen_at": [
+    0
+   ]
+  },
+  {
+   "name": "dollhouse",
+   "description": "large white and black model house in the corner",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "wooden dresser",
+   "description": "tall brown wooden chest of drawers",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "tree wallpaper wall",
+   "description": "wall with blue-gray birch tree patterned wallpaper and a doorway",
+   "seen_at": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "blue-bordered rug",
+   "description": "large light-colored area rug with a blue border",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "white bed",
+   "description": "bed with white coverlet",
+   "seen_at": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "skylight",
+   "description": "rectangular window in the sloped ceiling above the stairs",
+   "seen_at": [
+    3
+   ]
+  },
+  {
+   "name": "stair railing",
+   "description": "rustic dark wood railing bordering the stairwell",
+   "seen_at": [
+    3,
+    8,
+    10,
+    20,
+    21
+   ]
+  },
+  {
+   "name": "white paneled door",
+   "description": "light-colored paneled wooden door opening into a small space",
+   "seen_at": [
+    4,
+    5
+   ]
+  },
+  {
+   "name": "wooden desk with chair",
+   "description": "medium-brown wooden desk with a chair in front of it",
+   "seen_at": [
+    5,
+    6
+   ]
+  },
+  {
+   "name": "small recessed window",
+   "description": "small square window set deep in an orange-toned wall with a curtain",
+   "seen_at": [
+    6,
+    7
+   ]
+  },
+  {
+   "name": "wooden bookshelf with file box",
+   "description": "small wooden shelving unit topped with a cardboard file holder",
+   "seen_at": [
+    6,
+    7
+   ]
+  },
+  {
+   "name": "portable AC unit",
+   "description": "white freestanding air conditioning unit on the floor",
+   "seen_at": [
+    7
+   ]
+  },
+  {
+   "name": "green wall",
+   "description": "light green painted wall alongside the stairwell",
+   "seen_at": [
+    8,
+    20,
+    21
+   ]
+  },
+  {
+   "name": "light wooden armoire",
+   "description": "tall, light-colored wooden cabinet with two doors",
+   "seen_at": [
+    9,
+    10,
+    19
+   ]
+  },
+  {
+   "name": "gray-covered bed",
+   "description": "double bed with a gray bedspread under a sloped ceiling with a wooden beam",
+   "seen_at": [
+    9,
+    13,
+    16
+   ]
+  },
+  {
+   "name": "purple patterned rug",
+   "description": "colorful rug with purple, pink, and blue geometric patterns",
+   "seen_at": [
+    9,
+    11,
+    12,
+    13,
+    18
+   ]
+  },
+  {
+   "name": "open-top wooden chest",
+   "description": "tall wooden chest of drawers with a hinged top section open",
+   "seen_at": [
+    10,
+    11,
+    13,
+    19
+   ]
+  },
+  {
+   "name": "carved wooden bench",
+   "description": "dark wood bench with vertical cutouts in the backrest",
+   "seen_at": [
+    11,
+    12,
+    13,
+    15,
+    18
+   ]
+  },
+  {
+   "name": "mirror above bench",
+   "description": "rectangular mirror in a distressed frame hanging above the wooden bench",
+   "seen_at": [
+    11
+   ]
+  },
+  {
+   "name": "dark wooden trunk",
+   "description": "low dark-colored chest at the foot of the gray-covered bed",
+   "seen_at": [
+    12,
+    13
+   ]
+  },
+  {
+   "name": "large window with radiator",
+   "description": "large square window with a metal radiator directly beneath it",
+   "seen_at": [
+    11,
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "name": "dark low bookcase",
+   "description": "long, low dark wood shelving unit and cabinet along the sloped wall",
+   "seen_at": [
+    14,
+    16,
+    17,
+    18
+   ]
+  },
+  {
+   "name": "framed picture on yellow wall",
+   "description": "horizontal framed artwork on the yellow wall facing the top of the stairs",
+   "seen_at": [
+    21
+   ]
+  },
+  {
+   "name": "checkered bench",
+   "description": "low bench or platform with a beige and white checkered cushion on the stair landing",
+   "seen_at": [
+    21,
+    23
+   ]
+  },
+  {
+   "name": "narrow wooden shelves",
+   "description": "tall, narrow unpainted wooden shelving unit built into the corner of the stair landing",
+   "seen_at": [
+    22,
+    23
+   ]
+  }
+ ],
+ "connections": [
+  {
+   "from": "red armchair",
+   "to": "wooden dresser",
+   "how": "With the red armchair on your left and white bed on your right, walk forward across the blue-bordered rug toward the dollhouse and wooden dresser."
+  },
+  {
+   "from": "wooden dresser",
+   "to": "stair railing",
+   "how": "Turn right past the wooden dresser on your left and walk through the doorway in the tree wallpaper wall to reach the stair railing and skylight."
+  },
+  {
+   "from": "stair railing",
+   "to": "wooden desk with chair",
+   "how": "With the stair railing on your right, turn left and pass through the open white paneled door on your left to reach the wooden desk with chair."
+  },
+  {
+   "from": "wooden desk with chair",
+   "to": "small recessed window",
+   "how": "Walk forward past the wooden desk with chair on your left toward the small recessed window and wooden bookshelf with file box, with the portable AC unit to your right."
+  },
+  {
+   "from": "small recessed window",
+   "to": "stair railing",
+   "how": "Turn around and walk back out past the wooden desk with chair and through the white paneled door to face the stair railing and green wall."
+  },
+  {
+   "from": "stair railing",
+   "to": "open-top wooden chest",
+   "how": "Step through the doorway adjacent to the stair railing, passing the light wooden armoire on your left, and turn around to face the open-top wooden chest on your left."
+  },
+  {
+   "from": "open-top wooden chest",
+   "to": "carved wooden bench",
+   "how": "Turn left from the open-top wooden chest and walk across the purple patterned rug toward the carved wooden bench and mirror above bench."
+  },
+  {
+   "from": "carved wooden bench",
+   "to": "large window with radiator",
+   "how": "Walk past the carved wooden bench on your right, with the dark wooden trunk and gray-covered bed to your left, toward the large window with radiator."
+  },
+  {
+   "from": "large window with radiator",
+   "to": "dark low bookcase",
+   "how": "With the large window with radiator on your right, walk forward and turn left along the dark low bookcase beside the gray-covered bed."
+  },
+  {
+   "from": "dark low bookcase",
+   "to": "carved wooden bench",
+   "how": "Turn around with the dark low bookcase on your left and face the carved wooden bench across the purple patterned rug."
+  },
+  {
+   "from": "carved wooden bench",
+   "to": "stair railing",
+   "how": "Walk past the carved wooden bench and exit through the doorway between the open-top wooden chest on your left and light wooden armoire on your right to reach the stair railing."
+  },
+  {
+   "from": "stair railing",
+   "to": "narrow wooden shelves",
+   "how": "Turn left at the stair railing and green wall, then walk down the steps toward the framed picture on yellow wall and checkered bench, turning left at the landing to face the narrow wooden shelves."
+  }
+ ],
+ "walk_summary": [
+  "Start with the red armchair on the left and white bed on the right, walking across the blue-bordered rug toward the wooden dresser and tree wallpaper wall.",
+  "Turn right past the wooden dresser and exit through the doorway in the tree wallpaper wall to the stair railing beneath the skylight.",
+  "Turn left at the stair railing and enter through the open white paneled door to the wooden desk with chair.",
+  "Walk past the wooden desk with chair to the small recessed window, wooden bookshelf with file box, and portable AC unit.",
+  "Exit back out past the wooden desk with chair to the stair railing and green wall.",
+  "Enter the adjacent doorway past the light wooden armoire toward the gray-covered bed and purple patterned rug, then turn around to face the open-top wooden chest.",
+  "Turn left past the open-top wooden chest and walk around the carved wooden bench toward the gray-covered bed, dark wooden trunk, and large window with radiator.",
+  "Move past the large window with radiator to the dark low bookcase next to the gray-covered bed, then turn around to face the carved wooden bench across the purple patterned rug.",
+  "Walk out the doorway past the open-top wooden chest and light wooden armoire to the stair railing and green wall.",
+  "Turn left and walk down the stairs past the framed picture on yellow wall and checkered bench to the narrow wooden shelves."
+ ],
+ "source": {
+  "video": null,
+  "frames": "~/robonav/data/goat_tours/7MXmsvcQjpJ/frames",
+  "n_keyframes": 24,
+  "camera": "held at chest height by a person walking"
+ }
+}

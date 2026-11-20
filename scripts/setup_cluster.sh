@@ -13,7 +13,7 @@
 set -euo pipefail
 
 ROOT=${ROOT:-$HOME/robonav}
-BRANCH=${BRANCH:-lightnav-sim-nav}
+BRANCH=${BRANCH:-main}
 LIGHTNAV_COMMIT=3015508
 mkdir -p "$ROOT"
 cd "$ROOT"
